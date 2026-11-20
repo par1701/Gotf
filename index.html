@@ -185,7 +185,7 @@ function renderGuide(){
 
 /* ---------- Creador (reglas del Cypher Character Rulebook) ---------- */
 const BLANK=()=>({name:'',desc:'',desc2:'',dskill:'',dskill2:'',dpool:0,sp:'',type:'',focus:'',dominion:'',bg:'',bgc:'',tier:1,alloc:[2,2,2],edge:0,sk:['',''],sk3:'',inab:'',fa:[],genre:[],dom:{},shifts:{},adv:{}});
-let S=BLANK();
+let S=BLANK();const TITLE=document.title;
 try{Object.assign(S,JSON.parse(localStorage.getItem('gotf-pj2')||'{}'))}catch(e){}
 const save=()=>{try{localStorage.setItem('gotf-pj2',JSON.stringify(S))}catch(e){}};
 const LIB=()=>{try{return JSON.parse(localStorage.getItem('gotf-pjs')||'{}')}catch(e){return {}}};
@@ -290,7 +290,7 @@ function renderForm(){
   const a=S.alloc.reduce((x,y)=>x+(+y||0),0);$('#allocnote').textContent=a===6?'':`Has repartido ${a} de 6.`;
 }
 function bgTxt(ty){if(S.bg==='custom')return S.bgc;if(S.bg&&ty)return D.bg_gotf[ty.arch][+S.bg-1];return ''}
-function renderSheet(){
+function renderSheet(){if(document.body.classList.contains('psheet'))document.title=fname();
   const ty=D.types.find(x=>x.id===S.type),de=D.descriptors.find(x=>x.id===S.desc),f=D.foci.find(x=>x.id===S.focus),sp=D.species.find(x=>x.id===S.sp);
   const c=calc(),t=+S.tier;
   const sent=`Soy ${ty?esc(nmTxt(ty)):'[tipo]'} ${sp?esc(nmTxt(sp))+' ':''}${de?esc(nmTxt(de)):'[descriptor]'} que ${f?esc(nmTxt(f)):'[foco]'}${S.dominion?', dios de '+esc(S.dominion):''}.`;
@@ -366,7 +366,7 @@ function bind(){
     if(e.target.id==='pload'){const id=$('#plist').value,l=LIB();if(!id||!l[id])return msg('Elige un personaje.');S=Object.assign(BLANK(),l[id].data);save();renderForm();renderSheet();msg('Personaje cargado.')}
     if(e.target.id==='pdel'){const id=$('#plist').value,l=LIB();if(!id||!l[id])return msg('Elige un personaje.');const n=l[id].name;delete l[id];setLIB(l);if(S._id===id)delete S._id;save();renderSheet();msg(`«${n}» borrado.`)}
     if(e.target.id==='pexp'){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify({gotf:1,data:S},null,1)],{type:'application/json'}));a.download=fname()+'.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
-    if(e.target.id==='pdf'){document.body.classList.add('psheet');const t=document.title;document.title=fname();print();document.title=t;document.body.classList.remove('psheet')}});
+    if(e.target.id==='pdf'){document.title=fname();print()}});
   $('#sheet').addEventListener('change',async e=>{if(e.target.id!=='pimp'||!e.target.files[0])return;
     try{const j=JSON.parse(await e.target.files[0].text());if(!j||!j.gotf||typeof j.data!=='object')throw 0;S=Object.assign(BLANK(),j.data);delete S._id;save();renderForm();renderSheet();$('#copymsg').textContent='Personaje importado. Pulsa «Guardar» para añadirlo a tu lista.'}
     catch(err){$('#copymsg').textContent='El archivo no es una ficha válida de este creador.'}});
@@ -381,7 +381,7 @@ function trimPicks(){
   S.genre=S.genre.filter(id=>{const g=D.genre.find(x=>x.id===id);if(!g)return false;if(g.level==='mid'){if(t<3||m>=mid)return false;m++;return true}return t>=6});
   for(const r of Object.keys(S.dom))if(+r>t)delete S.dom[r];
 }
-function route(){const v=location.hash==='#creador'?'creador':'guia';$('#guia').hidden=v!=='guia';$('#creador').hidden=v!=='creador';
+function route(){const v=location.hash==='#creador'?'creador':'guia';document.body.classList.toggle('psheet',v==='creador');document.title=v==='creador'?fname():TITLE;$('#guia').hidden=v!=='guia';$('#creador').hidden=v!=='creador';
   $('#t-guia').toggleAttribute('aria-current',v==='guia');$('#t-creador').toggleAttribute('aria-current',v==='creador');
   if(v==='guia')$('#t-guia').setAttribute('aria-current','page');else $('#t-creador').setAttribute('aria-current','page')}
 fetch('data.json').then(r=>r.json()).then(d=>{D=d;SK={};d.skills_fantasy.forEach(k=>SK[k]=d.skills_es[k]);
