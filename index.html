@@ -334,6 +334,46 @@ function drawNimbus(t,shifts){
   h+=`<circle cx="110" cy="92" r="7" fill="var(--gold)"/>`;
   s.innerHTML=h;
 }
+async function exportSheetPDF(){
+  const {PDFDocument,StandardFonts}=await import('./pdf-lib.esm.min.js');
+  const doc=await PDFDocument.load(await (await fetch('hoja_es.pdf')).arrayBuffer());
+  const form=doc.getForm(),helv=await doc.embedFont(StandardFonts.Helvetica);
+  const ty=D.types.find(x=>x.id===S.type),de=D.descriptors.find(x=>x.id===S.desc),f=D.foci.find(x=>x.id===S.focus),sp=D.species.find(x=>x.id===S.sp);
+  const c=calc(),t=+S.tier,T=(k,v)=>{try{form.getTextField(k).setText(String(v??''))}catch(e){}},X=k=>{try{form.getCheckBox(k).check()}catch(e){}};
+  const FS=(k,n)=>{try{form.getTextField(k).acroField.setDefaultAppearance(`/Helv ${n} Tf 0 g`)}catch(e){}};
+  const txt=a=>a.text_es||a.text_en||'',cst=a=>{const k=a.cost_es||a.cost;return k?` (${k})`:''};
+  T('Name',S.name);const es=x=>x.es||x.en;T('Descriptor or Species',ty?es(ty):'');T('Type',[sp&&es(sp),de&&es(de)].filter(Boolean).join(' '));T('Focus',f?es(f):'');['Name','Descriptor or Species','Type','Focus'].forEach(k=>FS(k,9));
+  ['Might','Speed','Intellect'].forEach((k,i)=>{T(k+'_Pool',c.p[i]);T(k+'_Scratch',c.p[i]);T(k+'_Edge',c.edge[i])});
+  T('Tier',t);T('Effort',c.effort);T('Recovery_Amount',t+c.rec);T('Cypher_Limit',c.cyphers);T('Resource_Points',t>1?c.rp:'');
+  c.skills.slice(0,14).forEach(([k,v],i)=>{T('Skills'+(i+1),skEs(v));FS('Skills'+(i+1),7.5);FS('Skills'+(i+1)+'-Training',7.5);T('Skills'+(i+1)+'-Training',{T:'E',S:'ES',I:'I'}[k]||k)});
+  const W=c.weapons,A=c.armor;
+  if(/Todas/.test(W))['Light','Medium','Heavy'].forEach(k=>X('Weapon_Use_'+k));else if(/ligeras y medias/.test(W)){X('Weapon_Use_Light');X('Weapon_Use_Medium')}else if(W==='Armas ligeras')X('Weapon_Use_Light');
+  if(/Todas|todo tipo/.test(A))['Light','Medium','Heavy'].forEach(k=>X('Armor_Use_'+k));else if(/ligeras y medias/.test(A)){X('Armor_Use_Light');X('Armor_Use_Medium')}else if(/ligeras/.test(A))X('Armor_Use_Light');else X('Armor_Use_None');
+  const ab=[];
+  if(sp)ab.push('ESPECIE: '+nmTxt(sp),...sp.traits_es.map(x=>'• '+x),'');
+  if(ty)ab.push('TIPO: '+nmTxt(ty),...ty.abilities.map(a=>`• ${nmTxt(a)}${cst(a)}. ${txt(a)}`),'');
+  if(f)ab.push('FOCO: '+nmTxt(f),...S.fa.map(id=>abById(f,id)).sort((a,b)=>a.tier-b.tier).map(a=>`• R${a.tier} · ${nmTxt(a)}${cst(a)}. ${txt(a)}`),'');
+  const g=S.genre.map(id=>D.genre.find(x=>x.id===id)).filter(Boolean);if(g.length)ab.push('FANTASÍA',...g.map(a=>`• ${nmTxt(a)}${cst(a)}. ${txt(a)}`),'');
+  ab.push('DOMINIO'+(S.dominion?': '+S.dominion:''),'• '+nmTxt(D.dominion.find(x=>x.tier===1))+'. '+txt(D.dominion.find(x=>x.tier===1)));
+  for(let r=2;r<=t;r++){const a=D.dominion.find(x=>x.id===S.dom[r]);if(a)ab.push(`• R${r} · ${nmTxt(a)}${cst(a)}. ${txt(a)}`)}
+  const sh=Object.entries(S.shifts).filter(([k,v])=>+v>0);if(sh.length)ab.push('','DESPLAZAMIENTOS DIVINOS: '+sh.map(([k,v])=>`${SHIFTS[k]} ×${v}`).join(', '));
+  // reparte el texto entre «Habilidades especiales» y «Cifras/habilidades (cont.)»
+  const fit=(fld,size)=>{const r=form.getTextField(fld).acroField.getWidgets()[0].getRectangle();return {w:r.width-4,n:Math.floor((r.height-4)/(size*1.16))}};
+  const lines=(p,size,w)=>{let n=0;for(const par of p.split('\n')){let cur=0,l=1;for(const word of par.split(' ')){const ww=helv.widthOfTextAtSize(word+' ',size);if(cur+ww>w&&cur>0){l++;cur=ww}else cur+=ww}n+=l}return n};
+  let size=7,parts;
+  for(;size>=5;size-=0.5){const a=fit('Special_Abilities',size),b=fit('Cyphers_Abilities_Cont',size);parts=[[],[]];let used=0,k=0;
+    for(const e of ab){const n=lines(e||' ',size,a.w);if(k===0&&used+n>a.n){k=1;used=0}used+=lines(e||' ',size,k?b.w:a.w);parts[k].push(e)}
+    if(k===0||used<=b.n)break}
+  [['Special_Abilities',parts[0]],['Cyphers_Abilities_Cont',parts[1]]].forEach(([k,v])=>{T(k,v.join('\n'));FS(k,size)});
+  const sent=`Soy ${ty?nmTxt(ty):'[tipo]'} ${sp?nmTxt(sp)+' ':''}${de?nmTxt(de):'[descriptor]'} que ${f?nmTxt(f):'[foco]'}${S.dominion?', dios de '+S.dominion:''}.`;
+  const notes=[sent,''];if(bgTxt(ty))notes.push('Trasfondo: '+bgTxt(ty),'');
+  notes.push(`Heridas: ${c.w[0]} leves · ${c.w[1]} moderadas · ${c.w[2]} graves`,`Armas: ${W} · Armadura: ${A}`);
+  if(de){notes.push('','DESCRIPTOR: '+nmTxt(de));if(de.desc_es||de.desc_en)notes.push(de.desc_es||de.desc_en)}
+  T('Notes_Background',notes.join('\n'));FS('Notes_Background',7.5);
+  const eq=[ty&&(ty.bundle_es||ty.bundle_en),f&&(f.eq_es||f.eq_en)].filter(Boolean);T('Equipment',eq.join('\n'));FS('Equipment',7.5);
+  form.updateFieldAppearances(helv);
+  const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([await doc.save()],{type:'application/pdf'}));a.download=fname()+'.pdf';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),2000);
+}
 function sheetText(){
   const el=$('#sheet').cloneNode(true);el.querySelectorAll('button,#copymsg').forEach(x=>x.remove());return el.innerText.trim();
 }
@@ -366,7 +406,7 @@ function bind(){
     if(e.target.id==='pload'){const id=$('#plist').value,l=LIB();if(!id||!l[id])return msg('Elige un personaje.');S=Object.assign(BLANK(),l[id].data);save();renderForm();renderSheet();msg('Personaje cargado.')}
     if(e.target.id==='pdel'){const id=$('#plist').value,l=LIB();if(!id||!l[id])return msg('Elige un personaje.');const n=l[id].name;delete l[id];setLIB(l);if(S._id===id)delete S._id;save();renderSheet();msg(`«${n}» borrado.`)}
     if(e.target.id==='pexp'){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify({gotf:1,data:S},null,1)],{type:'application/json'}));a.download=fname()+'.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
-    if(e.target.id==='pdf'){document.title=fname();print()}});
+    if(e.target.id==='pdf'){e.target.disabled=true;msg('Generando la hoja…');try{await exportSheetPDF();msg('Hoja descargada.')}catch(err){msg('No se pudo generar la hoja: '+err.message)}e.target.disabled=false}});
   $('#sheet').addEventListener('change',async e=>{if(e.target.id!=='pimp'||!e.target.files[0])return;
     try{const j=JSON.parse(await e.target.files[0].text());if(!j||!j.gotf||typeof j.data!=='object')throw 0;S=Object.assign(BLANK(),j.data);delete S._id;save();renderForm();renderSheet();$('#copymsg').textContent='Personaje importado. Pulsa «Guardar» para añadirlo a tu lista.'}
     catch(err){$('#copymsg').textContent='El archivo no es una ficha válida de este creador.'}});
