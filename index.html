@@ -58,7 +58,7 @@ input[type=search],input[type=text],select,input[type=number]{font:16px "Source 
 @media(max-width:860px){.two{grid-template-columns:minmax(0,1fr)}.sheet{position:static}}
 @media(max-width:600px){header.band{grid-template-columns:minmax(0,1fr)}#nimbus{width:160px;height:130px;order:-1}table{font-size:13px}.stack thead{display:none}.stack tr{display:grid;padding-block:10px}.stack td{display:flow-root;border:0;padding:3px 0;padding-inline-start:8em;text-align:start}.stack td::before{content:attr(data-l);float:inline-start;width:7.5em;margin-inline-start:-8em;white-space:normal}.stack td:empty{display:none}}
 @media(prefers-reduced-motion:no-preference){#nimbus .orb{transition:opacity .6s}}
-@media print{nav,.scroll,#creador,header svg{display:none!important}body{background:#fff;color:#000}.card,details{break-inside:avoid}details>div{display:block}}
+@media print{body.psheet>*:not(main),body.psheet main>*:not(#creador),body.psheet #form,body.psheet .noprint{display:none!important}body.psheet #creador{display:block!important}body.psheet .two{display:block}body.psheet .sheet{position:static;border:0;box-shadow:none;max-height:none;overflow:visible}body:not(.psheet) #creador,nav,.scroll,header svg{display:none!important}body{background:#fff;color:#000}.card,details{break-inside:avoid}details>div{display:block}}
 </style>
 <script>new MutationObserver(()=>{for(const c of document.querySelectorAll('.stack td:not([data-l])')){let i=0,p=c;while(p=p.previousElementSibling)i+=p.colSpan;c.dataset.l=c.closest('table').rows[0].cells[i]?.textContent||''}}).observe(document,{childList:true,subtree:true})</script>
 </head>
@@ -188,6 +188,9 @@ const BLANK=()=>({name:'',desc:'',desc2:'',dskill:'',dskill2:'',dpool:0,sp:'',ty
 let S=BLANK();
 try{Object.assign(S,JSON.parse(localStorage.getItem('gotf-pj2')||'{}'))}catch(e){}
 const save=()=>{try{localStorage.setItem('gotf-pj2',JSON.stringify(S))}catch(e){}};
+const LIB=()=>{try{return JSON.parse(localStorage.getItem('gotf-pjs')||'{}')}catch(e){return {}}};
+const setLIB=l=>{try{localStorage.setItem('gotf-pjs',JSON.stringify(l));return true}catch(e){return false}};
+const fname=()=>(S.name||'personaje').replace(/[^\p{L}\p{N}]+/gu,'-').replace(/^-|-$/g,'').toLowerCase()||'personaje';
 const POOL=['Potencia','Velocidad','Intelecto'],PEN=['Might','Speed','Intellect'];
 let SK={};
 const skEs=k=>{const es=(D&&D.skills_es[k])||SK[k];return es?`${es} (${k})`:k};
@@ -313,7 +316,11 @@ function renderSheet(){
   const sh=Object.entries(S.shifts).filter(([k,v])=>+v>0);
   if(sh.length)h+=`<h3>Desplazamientos</h3>`+sh.map(([k,v])=>`<span class="pill">${SHIFTS[k]} ×${v}</span>`).join('');
   if(ty)h+=`<h3>Equipo</h3><p>${tx(ty,'bundle')}</p>`;
-  h+=`<p style="margin-top:16px"><button id="copy">Copiar ficha</button> <button id="reset">Empezar de nuevo</button></p><p class="note" id="copymsg"></p>`;
+  const lib=LIB(),ids=Object.keys(lib).sort((a,b)=>lib[a].name.localeCompare(lib[b].name,'es'));
+  h+=`<div class="noprint" style="margin-top:16px"><p><button id="psave">Guardar</button> <button id="pdf">Exportar PDF</button> <button id="copy">Copiar ficha</button> <button id="reset">Nuevo personaje</button></p>
+   <p><label for="plist">Personajes guardados</label><br><select id="plist"><option value="">— elige —</option>${ids.map(i=>`<option value="${i}" ${S._id===i?'selected':''}>${esc(lib[i].name)}</option>`).join('')}</select> <button id="pload">Cargar</button> <button id="pdel">Borrar</button></p>
+   <p><button id="pexp">Exportar archivo</button> <label class="btn" style="cursor:pointer"><input id="pimp" type="file" accept=".json,application/json" hidden>Importar archivo</label></p>
+   <p class="note" id="copymsg"></p></div>`;
   $('#sheet').innerHTML=h;
   drawNimbus(t,sh.reduce((a,[k,v])=>a+ +v,0));
 }
@@ -353,7 +360,16 @@ function bind(){
   $('#form').addEventListener('click',e=>{if(e.target.id==='c-bgroll'){S.bg=String(1+Math.floor(Math.random()*20));save();renderForm();renderSheet()}});
   $('#sheet').addEventListener('click',async e=>{
     if(e.target.id==='copy'){try{await navigator.clipboard.writeText(sheetText());$('#copymsg').textContent='Ficha copiada.'}catch(err){$('#copymsg').textContent='No se pudo copiar; selecciona el texto de la ficha.'}}
-    if(e.target.id==='reset'){S=BLANK();save();renderForm();renderSheet()}});
+    if(e.target.id==='reset'){S=BLANK();save();renderForm();renderSheet()}
+    const msg=t=>{const m=$('#copymsg');if(m)m.textContent=t};
+    if(e.target.id==='psave'){const l=LIB();if(!S._id)S._id='pj'+Date.now();l[S._id]={name:S.name||'Personaje sin nombre',data:S};save();if(setLIB(l)){renderSheet();msg('Personaje guardado en este navegador.')}else msg('No se pudo guardar (el navegador no permite almacenamiento).')}
+    if(e.target.id==='pload'){const id=$('#plist').value,l=LIB();if(!id||!l[id])return msg('Elige un personaje.');S=Object.assign(BLANK(),l[id].data);save();renderForm();renderSheet();msg('Personaje cargado.')}
+    if(e.target.id==='pdel'){const id=$('#plist').value,l=LIB();if(!id||!l[id])return msg('Elige un personaje.');const n=l[id].name;delete l[id];setLIB(l);if(S._id===id)delete S._id;save();renderSheet();msg(`«${n}» borrado.`)}
+    if(e.target.id==='pexp'){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify({gotf:1,data:S},null,1)],{type:'application/json'}));a.download=fname()+'.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
+    if(e.target.id==='pdf'){document.body.classList.add('psheet');const t=document.title;document.title=fname();print();document.title=t;document.body.classList.remove('psheet')}});
+  $('#sheet').addEventListener('change',async e=>{if(e.target.id!=='pimp'||!e.target.files[0])return;
+    try{const j=JSON.parse(await e.target.files[0].text());if(!j||!j.gotf||typeof j.data!=='object')throw 0;S=Object.assign(BLANK(),j.data);delete S._id;save();renderForm();renderSheet();$('#copymsg').textContent='Personaje importado. Pulsa «Guardar» para añadirlo a tu lista.'}
+    catch(err){$('#copymsg').textContent='El archivo no es una ficha válida de este creador.'}});
 }
 function trimPicks(){
   const t=+S.tier;
