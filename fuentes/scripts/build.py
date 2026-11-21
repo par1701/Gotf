@@ -40,7 +40,7 @@ for f in json.load(open(G+'conv_foci.json')):
 # types
 TY=json.load(open(G+'ccr_types.json'))
 arch={'Champion':['Fighter','Barbarian','Paladin','Monk','Axe Fighter','Sword Fighter','Two-Weapon Fighter','Noble Warrior','Warrior'],'Shaper':['Mage','Druid','Necromancer','Sorcerer','Witch','Wizard'],'Destroyer':['Rogue','Ranger','Archer','Knife Fighter','Thief','Burglar','Swashbuckler'],'Savior':['Bard','Cleric','Priest']}
-sub={n:('Dungeon fantasy' if p<62 else 'Swords & sorcery' if p<74 else 'Epic fantasy') for n,p in json.load(open(G+'types_raw.json'))['pages'].items()}
+sub={n:('Dungeon fantasy' if t['page']<62 else 'Swords & sorcery' if t['page']<74 else 'Epic fantasy') for n,t in TY.items()}
 for n,t in TY.items():
     tid='type-'+slug(n)
     data['types'].append({'id':tid,'en':n,'es':tr(tid,'n'),'page':t['page'],'sub':sub[n],'arch':[a for a,l in arch.items() if n in l][0],
@@ -109,6 +109,21 @@ for f in data['foci']:
             if a['id']=='changes-shape/movement': a['en']='Movement Adaptation'
         for o in ['bigger-animal-shape','animal-scrying','enhanced-animal-shape','not-dead-yet']:
             f['edges'].append(['changes-shape/movement','changes-shape/'+o])
+# --- Superhéroes (CCR cap. 8) ---
+SH=json.load(open(G+'sh_types.json'))
+for t in SH['types']:
+    tid='type-'+slug(t['en']);ab=[]
+    for a in t['abilities']:
+        b=dict(SH['_shared'][a['ref']]) if a.get('ref') in SH['_shared'] else dict(a)
+        ab.append({'id':tid+'/'+slug(b['en']),'en':b['en'],'es':b['es'],'cost':'','cost_es':b['cost_es'],'text_es':b['text_es']+((' '+a['note']) if a.get('note') else '')})
+    data['types'].append({'id':tid,'genre':'super','en':t['en'],'es':t['es'],'page':t['page'],'sub':'Rank %d'%t['rank'],'rank':t['rank'],'shifts':t['shifts'],'sup':t['sup'],
+      'intro_es':t['intro_es'],'ben_en':t['ben_en'],'ben_es':t['ben_es'],'bg_es':t['bg_es'],'bundle_es':SH['bundle_es'],'abilities':ab})
+data['sh_superheroics']=dict(SH['_shared']['superheroics'],id='type-super/superheroics',cost='')
+data['origin']=[dict(o,id='orig-'+slug(o['en']),cost='') for o in sorted(json.load(open(G+'sh_origin.json')),key=lambda o:o['en'])]
+for f in data['foci']:
+    if f.get('genres'): f['genres'].append('super')
+data['skills_super']=['animal care','astronomy','athletics','attacking','biology','charm','chemistry','crafting','deception','defending','disguise','driving','engineering','escaping','farming','firefighting','forensics','gathering information','geology','gunnery','gymnastics','hacking','healing','heavy equipment operation','history','identifying','initiative','intimidation','lockpicking','magic lore','mathematics','mechanics','mining','navigation','outdoor survival','perception','performance','philosophy','physics','pickpocketing','piloting','psychic lore','psychology','publishing','recognizing motive','religious lore','riding','scavenging','skilled trade','stealth','systems operation','tracking']
+assert all(k in data['skills_es'] for k in data['skills_super'])
 data['bg_gotf']=json.load(open('/home/claude/gotf/bg_gotf.json'))
 json.dump(data,open('/home/claude/site/data.json','w'),ensure_ascii=False,separators=(',',':'))
 print(data['stats'], os.path.getsize('/home/claude/site/data.json'))
