@@ -1,0 +1,3567 @@
+{
+ "ABIDES IN STONE": {
+  "requires": [],
+  "edges": [
+   [
+    "Deep Reserves",
+    "Golem Stomp"
+   ],
+   [
+    "Deep Reserves",
+    "Improved Stone Body"
+   ],
+   [
+    "Deep Reserves",
+    "Still As a Statue"
+   ],
+   [
+    "Deep Reserves",
+    "Structural Brace"
+   ],
+   [
+    "Earthshake",
+    "Structural Brace"
+   ],
+   [
+    "Field of Stones",
+    "Golem Stomp"
+   ],
+   [
+    "Field of Stones",
+    "Stone Body"
+   ],
+   [
+    "Field of Stones",
+    "Stoneknowing"
+   ],
+   [
+    "Golem Grip",
+    "Golem Stomp"
+   ],
+   [
+    "Golem Grip",
+    "Improved Stone Body"
+   ],
+   [
+    "Golem Grip",
+    "Stone Body"
+   ],
+   [
+    "Golem Stomp",
+    "Rolling Stone"
+   ],
+   [
+    "Heavy Hands",
+    "Improved Stone Body"
+   ],
+   [
+    "Heavy Hands",
+    "Still As a Statue"
+   ],
+   [
+    "Improved Stone Body",
+    "Stone Bash"
+   ],
+   [
+    "Intimidating Presence",
+    "Stone Bash"
+   ],
+   [
+    "Intimidating Presence",
+    "Stone Body"
+   ],
+   [
+    "Mineralization",
+    "Still As a Statue"
+   ],
+   [
+    "Rolling Stone",
+    "Structural Brace"
+   ],
+   [
+    "Stone Bash",
+    "Stone Body"
+   ],
+   [
+    "Stone Body",
+    "Stoneknowing"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "BLAZES WITH FIRE": {
+  "requires": [],
+  "edges": [
+   [
+    "Desperate Flame",
+    "Enhanced Flames"
+   ],
+   [
+    "Desperate Flame",
+    "Fiery Hand of Doom"
+   ],
+   [
+    "Desperate Flame",
+    "Flameblade"
+   ],
+   [
+    "Desperate Flame",
+    "Hurl Flame"
+   ],
+   [
+    "Desperate Flame",
+    "Spreading Fire"
+   ],
+   [
+    "Desperate Flame",
+    "Wings of Fire"
+   ],
+   [
+    "Enhanced Flames",
+    "Fiery Hand of Doom"
+   ],
+   [
+    "Enhanced Flames",
+    "Fire Tendrils"
+   ],
+   [
+    "Enhanced Flames",
+    "Plasma Field"
+   ],
+   [
+    "Enhanced Flames",
+    "Wings of Fire"
+   ],
+   [
+    "Fiery Hand of Doom",
+    "Flameblade"
+   ],
+   [
+    "Fiery Hand of Doom",
+    "Spreading Fire"
+   ],
+   [
+    "Fire Servant",
+    "Fire Tendrils"
+   ],
+   [
+    "Flameblade",
+    "Shroud of Flame"
+   ],
+   [
+    "Flameblade",
+    "Wings of Fire"
+   ],
+   [
+    "Gentle Warmth",
+    "Shroud of Flame"
+   ],
+   [
+    "Hurl Flame",
+    "Shroud of Flame"
+   ],
+   [
+    "Hurl Flame",
+    "Wings of Fire"
+   ],
+   [
+    "Inferno Trail",
+    "Plasma Field"
+   ],
+   [
+    "Shroud of Flame",
+    "Spreading Fire"
+   ],
+   [
+    "Shroud of Flame",
+    "Warm Air"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "BUILDS ALLIES": {
+  "requires": [],
+  "edges": [
+   [
+    "Automaton Armor Upgrade",
+    "Automaton Assistant"
+   ],
+   [
+    "Automaton Armor Upgrade",
+    "Expert Automaton"
+   ],
+   [
+    "Automaton Assistant",
+    "Automaton Cypher Upgrade"
+   ],
+   [
+    "Automaton Assistant",
+    "Charm Machine"
+   ],
+   [
+    "Automaton Assistant",
+    "Efficient Builder"
+   ],
+   [
+    "Automaton Assistant",
+    "Identify Machine"
+   ],
+   [
+    "Automaton Cypher Upgrade",
+    "Expert Automaton"
+   ],
+   [
+    "Automaton Cypher Upgrade",
+    "Quick Control"
+   ],
+   [
+    "Automaton Evolution",
+    "Automaton Fleet"
+   ],
+   [
+    "Automaton Evolution",
+    "Automaton Force Field Upgrade"
+   ],
+   [
+    "Automaton Fleet",
+    "Automaton Flight Upgrade"
+   ],
+   [
+    "Automaton Fleet",
+    "Automaton Heavy Armor Upgrade"
+   ],
+   [
+    "Automaton Fleet",
+    "Automaton Turret Upgrade"
+   ],
+   [
+    "Automaton Flight Upgrade",
+    "Automaton Force Field Upgrade"
+   ],
+   [
+    "Automaton Flight Upgrade",
+    "Expert Automaton"
+   ],
+   [
+    "Automaton Flight Upgrade",
+    "Quick Control"
+   ],
+   [
+    "Automaton Force Field Upgrade",
+    "Automaton Heavy Armor Upgrade"
+   ],
+   [
+    "Automaton Force Field Upgrade",
+    "Automaton Turret Upgrade"
+   ],
+   [
+    "Automaton Turret Upgrade",
+    "Expert Automaton"
+   ],
+   [
+    "Automaton Turret Upgrade",
+    "Quick Control"
+   ],
+   [
+    "Charm Machine",
+    "Quick Control"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "CARRIES A GUN": {
+  "requires": [],
+  "edges": [
+   [
+    "Arc Spray",
+    "Lethal Capability"
+   ],
+   [
+    "Arc Spray",
+    "Shot Collision"
+   ],
+   [
+    "Arc Spray",
+    "Sniper"
+   ],
+   [
+    "Arc Spray",
+    "Special Shot"
+   ],
+   [
+    "Careful Shot",
+    "Concealed Carry"
+   ],
+   [
+    "Careful Shot",
+    "Damage Dealer"
+   ],
+   [
+    "Careful Shot",
+    "Keen Eye"
+   ],
+   [
+    "Concealed Carry",
+    "Excellent Gunner"
+   ],
+   [
+    "Concealed Carry",
+    "Keen Eye"
+   ],
+   [
+    "Concealed Carry",
+    "Reload"
+   ],
+   [
+    "Concealed Carry",
+    "Sneak Attack"
+   ],
+   [
+    "Damage Dealer",
+    "Reload"
+   ],
+   [
+    "Damage Dealer",
+    "Snap Shot"
+   ],
+   [
+    "Damage Dealer",
+    "Special Shot"
+   ],
+   [
+    "Excellent Gunner",
+    "Reload"
+   ],
+   [
+    "Excellent Gunner",
+    "Sneak Attack"
+   ],
+   [
+    "Keen Eye",
+    "Reload"
+   ],
+   [
+    "Lethal Capability",
+    "Sniper"
+   ],
+   [
+    "Reload",
+    "Spray"
+   ],
+   [
+    "Shot Collision",
+    "Sniper"
+   ],
+   [
+    "Snap Shot",
+    "Sniper"
+   ],
+   [
+    "Snap Shot",
+    "Spray"
+   ],
+   [
+    "Sneak Attack",
+    "Spray"
+   ],
+   [
+    "Special Shot",
+    "Spray"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "CASTS SPELLS": {
+  "requires": [],
+  "edges": [
+   [
+    "Arcane Flight",
+    "Arcane Teleportation"
+   ],
+   [
+    "Arcane Flight",
+    "Confusion Ray"
+   ],
+   [
+    "Arcane Flight",
+    "Hover"
+   ],
+   [
+    "Arcane Flight",
+    "Identify Magic"
+   ],
+   [
+    "Arcane Flight",
+    "Soul Interrogation"
+   ],
+   [
+    "Arcane Teleportation",
+    "Fireball"
+   ],
+   [
+    "Arcane Teleportation",
+    "Granite Wall"
+   ],
+   [
+    "Blast",
+    "Enchant Object"
+   ],
+   [
+    "Blast",
+    "Prepare Spell"
+   ],
+   [
+    "Confusion Ray",
+    "Enchant Object"
+   ],
+   [
+    "Confusion Ray",
+    "Fireball"
+   ],
+   [
+    "Confusion Ray",
+    "Hedge Magic"
+   ],
+   [
+    "Confusion Ray",
+    "Hover"
+   ],
+   [
+    "Confusion Ray",
+    "Identify Magic"
+   ],
+   [
+    "Confusion Ray",
+    "Prepare Spell"
+   ],
+   [
+    "Conjure Supernatural Creature",
+    "Divination"
+   ],
+   [
+    "Divination",
+    "Granite Wall"
+   ],
+   [
+    "Divination",
+    "Soul Interrogation"
+   ],
+   [
+    "Enchant Object",
+    "Fireball"
+   ],
+   [
+    "Enchant Object",
+    "Hedge Magic"
+   ],
+   [
+    "Enchant Object",
+    "Prepare Spell"
+   ],
+   [
+    "Enchant Object",
+    "Summon Giant Spider"
+   ],
+   [
+    "Fireball",
+    "Soul Interrogation"
+   ],
+   [
+    "Fireball",
+    "Summon Giant Spider"
+   ],
+   [
+    "Granite Wall",
+    "Word of Death"
+   ],
+   [
+    "Hedge Magic",
+    "Hover"
+   ],
+   [
+    "Hedge Magic",
+    "Prepare Spell"
+   ],
+   [
+    "Hedge Magic",
+    "Sense Magic"
+   ],
+   [
+    "Hover",
+    "Identify Magic"
+   ],
+   [
+    "Hover",
+    "Prepare Spell"
+   ],
+   [
+    "Hover",
+    "Sense Magic"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "CHANGES SHAPE": {
+  "requires": [],
+  "edges": [
+   [
+    "Animal Scrying",
+    "Bigger Animal Shape"
+   ],
+   [
+    "Animal Scrying",
+    "Not Dead Yet"
+   ],
+   [
+    "Animal Scrying",
+    "Shapechanger Healing"
+   ],
+   [
+    "Animal Shape",
+    "Beast Communication"
+   ],
+   [
+    "Animal Shape",
+    "Keen Eye"
+   ],
+   [
+    "Animal Shape",
+    "Scent Transformation"
+   ],
+   [
+    "Animal Shape",
+    "Soothe the Savage"
+   ],
+   [
+    "Beast Communication",
+    "Bigger Animal Shape"
+   ],
+   [
+    "Beast Communication",
+    "Shapechanger Healing"
+   ],
+   [
+    "Bigger Animal Shape",
+    "Soothe the Savage"
+   ],
+   [
+    "Enhanced Animal Shape",
+    "Hard to See"
+   ],
+   [
+    "Enhanced Animal Shape",
+    "Lend Animal Shape"
+   ],
+   [
+    "Enhanced Animal Shape",
+    "Lethal Capability"
+   ],
+   [
+    "Enhanced Animal Shape",
+    "Not Dead Yet"
+   ],
+   [
+    "Hard to See",
+    "Not Dead Yet"
+   ],
+   [
+    "Lethal Capability",
+    "Not Dead Yet"
+   ],
+   [
+    "Shapechanger Healing",
+    "Soothe the Savage"
+   ]
+  ],
+  "badlabels": [
+   "MOVEMENT ADAPTATION"
+  ],
+  "unmatched": [
+   [
+    "MOVEMENT ADAPTATION",
+    "BIGGER ANIMAL SHAPE"
+   ],
+   [
+    "ENHANCED ANIMAL SHAPE",
+    "MOVEMENT ADAPTATION"
+   ],
+   [
+    "MOVEMENT ADAPTATION",
+    "ANIMAL SCRYING"
+   ],
+   [
+    "MOVEMENT ADAPTATION",
+    "NOT DEAD YET"
+   ]
+  ]
+ },
+ "COMMANDS MENTAL POWERS": {
+  "requires": [],
+  "edges": [
+   [
+    "Empathic Sense",
+    "Telepathic"
+   ],
+   [
+    "Empathic Sense",
+    "Telepathic Bond"
+   ],
+   [
+    "Extended Range",
+    "Identify Psionics"
+   ],
+   [
+    "Extended Range",
+    "Precognition"
+   ],
+   [
+    "Extended Range",
+    "Psychic Burst"
+   ],
+   [
+    "Extended Range",
+    "Psychic Suggestion"
+   ],
+   [
+    "Extended Range",
+    "Use Senses of Others"
+   ],
+   [
+    "Identify Psionics",
+    "Mind Reading"
+   ],
+   [
+    "Identify Psionics",
+    "Use Senses of Others"
+   ],
+   [
+    "Mind Control",
+    "Precognition"
+   ],
+   [
+    "Mind Reading",
+    "Psychic Burst"
+   ],
+   [
+    "Mind Reading",
+    "Sense Psionics"
+   ],
+   [
+    "Mind Reading",
+    "Telepathic"
+   ],
+   [
+    "Precognition",
+    "Telepathic Network"
+   ],
+   [
+    "Precognition",
+    "Use Senses of Others"
+   ],
+   [
+    "Psychic Burst",
+    "Telepathic Bond"
+   ],
+   [
+    "Psychic Burst",
+    "Use Senses of Others"
+   ],
+   [
+    "Psychic Suggestion",
+    "Telepathic Bond"
+   ],
+   [
+    "Psychic Suggestion",
+    "Use Senses of Others"
+   ],
+   [
+    "Sense Psionics",
+    "Telepathic"
+   ],
+   [
+    "Telepathic",
+    "Telepathic Bond"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "CONSORTS WITH THE DEAD": {
+  "requires": [
+   [
+    "Improved Necromancy",
+    "REQUIRES BASIC NECROMANCY"
+   ]
+  ],
+  "edges": [
+   [
+    "Basic Necromancy",
+    "Blood Sorcery"
+   ],
+   [
+    "Basic Necromancy",
+    "Bone Lore"
+   ],
+   [
+    "Basic Necromancy",
+    "Speaker for the Dead"
+   ],
+   [
+    "Blood Sorcery",
+    "Bone Lore"
+   ],
+   [
+    "Blood Sorcery",
+    "Reading the Room"
+   ],
+   [
+    "Blood Sorcery",
+    "Repair Flesh"
+   ],
+   [
+    "Blood Sorcery",
+    "Speaker for the Dead"
+   ],
+   [
+    "Bone Lore",
+    "Improved Necromancy"
+   ],
+   [
+    "Greater Necromancy",
+    "Repair Flesh"
+   ],
+   [
+    "Greater Necromancy",
+    "Wall of Bones"
+   ],
+   [
+    "Improved Necromancy",
+    "Repair Flesh"
+   ],
+   [
+    "Improved Speaker",
+    "Reading the Room"
+   ],
+   [
+    "Improved Speaker",
+    "Speaker for the Dead"
+   ],
+   [
+    "Reading the Room",
+    "Wraith Cloak"
+   ],
+   [
+    "Repair Flesh",
+    "Wraith Cloak"
+   ],
+   [
+    "Terrifying Gaze",
+    "Word of Death"
+   ],
+   [
+    "Terrifying Gaze",
+    "Wraith Cloak"
+   ],
+   [
+    "True Necromancy",
+    "Wall of Bones"
+   ],
+   [
+    "Wall of Bones",
+    "Word of Death"
+   ],
+   [
+    "Wall of Bones",
+    "Wraith Cloak"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "CONTROLS BEASTS": {
+  "requires": [],
+  "edges": [
+   [
+    "Armored Beast",
+    "Beast Betterment"
+   ],
+   [
+    "Beast Betterment",
+    "Beast Eyes"
+   ],
+   [
+    "Beast Betterment",
+    "Control the Savage"
+   ],
+   [
+    "Beast Call",
+    "Beast Eyes"
+   ],
+   [
+    "Beast Call",
+    "Control the Savage"
+   ],
+   [
+    "Beast Call",
+    "Improved Companion"
+   ],
+   [
+    "Beast Communication",
+    "Beast Companion"
+   ],
+   [
+    "Beast Communication",
+    "Mount"
+   ],
+   [
+    "Beast Communication",
+    "Stronger Together"
+   ],
+   [
+    "Beast Companion",
+    "Friend to Small Creatures"
+   ],
+   [
+    "Beast Companion",
+    "Soothe the Savage"
+   ],
+   [
+    "Beast Companion",
+    "Understand Beast"
+   ],
+   [
+    "Beast Eyes",
+    "Mount"
+   ],
+   [
+    "Improved Companion",
+    "Mount"
+   ],
+   [
+    "Improved Companion",
+    "Stronger Together"
+   ],
+   [
+    "Soothe the Savage",
+    "Stronger Together"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "CRAFTS ILLUSIONS": {
+  "requires": [],
+  "edges": [
+   [
+    "Cast Illusion",
+    "Illusory Disguise"
+   ],
+   [
+    "Cast Illusion",
+    "Illusory Selves"
+   ],
+   [
+    "Cast Illusion",
+    "Major Illusion"
+   ],
+   [
+    "Cast Illusion",
+    "Reveal Illusion"
+   ],
+   [
+    "Grandiose Illusion",
+    "Permanent Illusion"
+   ],
+   [
+    "Grandiose Illusion",
+    "Terrifying Image"
+   ],
+   [
+    "Hedge Magic",
+    "Illusory Disguise"
+   ],
+   [
+    "Hedge Magic",
+    "Minor Illusion"
+   ],
+   [
+    "Illusion Cocoon",
+    "Invisibility"
+   ],
+   [
+    "Illusion Cocoon",
+    "Major Illusion"
+   ],
+   [
+    "Illusion Cocoon",
+    "Terrifying Image"
+   ],
+   [
+    "Illusory Disguise",
+    "Major Illusion"
+   ],
+   [
+    "Illusory Selves",
+    "Invisibility"
+   ],
+   [
+    "Invisibility",
+    "Permanent Illusion"
+   ],
+   [
+    "Major Illusion",
+    "Reveal Illusion"
+   ],
+   [
+    "Minor Illusion",
+    "Reveal Illusion"
+   ],
+   [
+    "Minor Illusion",
+    "Sense Magic"
+   ],
+   [
+    "Reveal Illusion",
+    "Sense Magic"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "DOESNT DO MUCH": {
+  "requires": [],
+  "edges": [
+   [
+    "Agile Wit",
+    "Attention to Detail"
+   ],
+   [
+    "Agile Wit",
+    "Extra Padding"
+   ],
+   [
+    "Agile Wit",
+    "Improvise"
+   ],
+   [
+    "Attention to Detail",
+    "Drawing on Life’s Experiences"
+   ],
+   [
+    "Attention to Detail",
+    "Gather Your Strength"
+   ],
+   [
+    "Extra Padding",
+    "Gather Your Strength"
+   ],
+   [
+    "Extra Padding",
+    "Totally Chill"
+   ],
+   [
+    "Gather Your Strength",
+    "Improvise"
+   ],
+   [
+    "Improvise",
+    "Inspiring Ease"
+   ],
+   [
+    "Inspiring Ease",
+    "Joy in Small Things"
+   ],
+   [
+    "Inspiring Ease",
+    "Life Lessons"
+   ],
+   [
+    "Joy in Small Things",
+    "Life Lessons"
+   ],
+   [
+    "Joy in Small Things",
+    "Picking Up the Slack"
+   ],
+   [
+    "Joy in Small Things",
+    "Totally Chill"
+   ],
+   [
+    "Life Lessons",
+    "Totally Chill"
+   ],
+   [
+    "Picking Up the Slack",
+    "Totally Chill"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "EMPLOYS MAGNETISM": {
+  "requires": [],
+  "edges": [
+   [
+    "Command Metal",
+    "Iron Punch"
+   ],
+   [
+    "Command Metal",
+    "Iron in the Blood"
+   ],
+   [
+    "Command Metal",
+    "Magnetize"
+   ],
+   [
+    "Craft Metal",
+    "Move Metal"
+   ],
+   [
+    "Diamagnetism",
+    "Iron in the Blood"
+   ],
+   [
+    "Electromagnetic Eyes",
+    "Move Metal"
+   ],
+   [
+    "Electromagnetic Eyes",
+    "Rend Metal"
+   ],
+   [
+    "Electromagnetically Charge",
+    "Guide Bolt"
+   ],
+   [
+    "Electromagnetically Charge",
+    "Move Metal"
+   ],
+   [
+    "Guide Bolt",
+    "Magnetic Field"
+   ],
+   [
+    "Guide Bolt",
+    "Magnetize"
+   ],
+   [
+    "Guide Bolt",
+    "Rend Metal"
+   ],
+   [
+    "Iron in the Blood",
+    "Magnetic Field"
+   ],
+   [
+    "Magnetic Field",
+    "Rend Metal"
+   ],
+   [
+    "Magnetize",
+    "Rend Metal"
+   ],
+   [
+    "Move Metal",
+    "Repel Metal"
+   ],
+   [
+    "Move Metal",
+    "Sense Metal"
+   ],
+   [
+    "Rend Metal",
+    "Repel Metal"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "ENTERTAINS": {
+  "requires": [
+   [
+    "Master Entertainer",
+    "REQUIRES INSPIRING"
+   ]
+  ],
+  "edges": [
+   [
+    "Anecdote",
+    "Knowing the Audience"
+   ],
+   [
+    "Anecdote",
+    "Rising Courage"
+   ],
+   [
+    "Calm",
+    "Find Motivation"
+   ],
+   [
+    "Calm",
+    "Perfect Stranger"
+   ],
+   [
+    "Calm",
+    "Willing Sacrifice"
+   ],
+   [
+    "Captivate or Inspire",
+    "Find Motivation"
+   ],
+   [
+    "Captivate or Inspire",
+    "Perfect Stranger"
+   ],
+   [
+    "Captivate or Inspire",
+    "Willing Sacrifice"
+   ],
+   [
+    "Find Motivation",
+    "Inspiring Ease"
+   ],
+   [
+    "Inspiring Ease",
+    "Inspiring Suggestion"
+   ],
+   [
+    "Inspiring Ease",
+    "Knowing the Audience"
+   ],
+   [
+    "Inspiring Suggestion",
+    "Knowing the Audience"
+   ],
+   [
+    "Knowing the Audience",
+    "Rising Courage"
+   ],
+   [
+    "Master Entertainer",
+    "Willing Sacrifice"
+   ],
+   [
+    "Perfect Stranger",
+    "Rising Courage"
+   ],
+   [
+    "Vindictive Performance",
+    "Willing Sacrifice"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "EXPLORES": {
+  "requires": [],
+  "edges": [
+   [
+    "Animal Senses and Sensibilities",
+    "Experienced Explorer"
+   ],
+   [
+    "Animal Senses and Sensibilities",
+    "Wild Camouflage"
+   ],
+   [
+    "Animal Senses and Sensibilities",
+    "Wilderness Awareness"
+   ],
+   [
+    "Animal Senses and Sensibilities",
+    "Wilderness Encouragement"
+   ],
+   [
+    "Beast Companion",
+    "Exploration Survivor"
+   ],
+   [
+    "Beast Companion",
+    "Untamed Recovery"
+   ],
+   [
+    "Beast Companion",
+    "Wilderness Encouragement"
+   ],
+   [
+    "Experienced Explorer",
+    "Exploration Survivor"
+   ],
+   [
+    "Experienced Explorer",
+    "Untamed Recovery"
+   ],
+   [
+    "Exploration Survivor",
+    "Tough"
+   ],
+   [
+    "Explorer’s Awareness",
+    "One With the Wild"
+   ],
+   [
+    "Explorer’s Awareness",
+    "Survivor"
+   ],
+   [
+    "Explorer’s Awareness",
+    "The Wild Is on Your Side"
+   ],
+   [
+    "Explorer’s Awareness",
+    "Wilderness Awareness"
+   ],
+   [
+    "One With the Wild",
+    "The Wild Is on Your Side"
+   ],
+   [
+    "Survivor",
+    "The Wild Is on Your Side"
+   ],
+   [
+    "The Wild Is on Your Side",
+    "Wild Camouflage"
+   ],
+   [
+    "Tough",
+    "Untamed Recovery"
+   ],
+   [
+    "Wild Camouflage",
+    "Wilderness Encouragement"
+   ],
+   [
+    "Wilderness Awareness",
+    "Wilderness Encouragement"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "FIGHTS DIRTY": {
+  "requires": [],
+  "edges": [
+   [
+    "Despite My Wounds",
+    "Dirty Trick"
+   ],
+   [
+    "Despite My Wounds",
+    "Fast Kill"
+   ],
+   [
+    "Dirty Trick",
+    "Go for the Eyes"
+   ],
+   [
+    "Dirty Trick",
+    "Scratching and Kicking"
+   ],
+   [
+    "Dirty Trick",
+    "Sneak Attack"
+   ],
+   [
+    "Dirty Trick",
+    "When the Deal Bombs"
+   ],
+   [
+    "Fast Kill",
+    "Feint"
+   ],
+   [
+    "Fast Kill",
+    "Mind Games"
+   ],
+   [
+    "Fast Kill",
+    "Sneak Attack"
+   ],
+   [
+    "Feint",
+    "Incapacitating Attack"
+   ],
+   [
+    "Feint",
+    "Knock Out"
+   ],
+   [
+    "Incapacitating Attack",
+    "Mind Games"
+   ],
+   [
+    "Incapacitating Attack",
+    "Sneak Attack"
+   ],
+   [
+    "Incapacitating Attack",
+    "When the Deal Bombs"
+   ],
+   [
+    "Knock Out",
+    "Lethal Strike"
+   ],
+   [
+    "Knock Out",
+    "Twisting the Knife"
+   ],
+   [
+    "Lethal Strike",
+    "Using the Environment"
+   ],
+   [
+    "Mind Games",
+    "Using the Environment"
+   ],
+   [
+    "Twisting the Knife",
+    "Using the Environment"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "FIGHTS UNARMED": {
+  "requires": [],
+  "edges": [
+   [
+    "Advantage to Disadvantage",
+    "Moving Like Water"
+   ],
+   [
+    "Advantage to Disadvantage",
+    "No Need for Weapons"
+   ],
+   [
+    "Body as a Tool",
+    "No Need for Weapons"
+   ],
+   [
+    "Divert Attacks",
+    "Moving Like Water"
+   ],
+   [
+    "Divert Attacks",
+    "Stunning Attack"
+   ],
+   [
+    "Fearsome Reputation",
+    "No Need for Weapons"
+   ],
+   [
+    "Fearsome Reputation",
+    "Throw"
+   ],
+   [
+    "High and Low",
+    "Moving Like Water"
+   ],
+   [
+    "High and Low",
+    "No Need for Weapons"
+   ],
+   [
+    "High and Low",
+    "Throw"
+   ],
+   [
+    "Knock Out",
+    "Stunning Attack"
+   ],
+   [
+    "Knock Out",
+    "Throw"
+   ],
+   [
+    "Lethal Capability",
+    "Stunning Attack"
+   ],
+   [
+    "Master of Unarmed Fighting Style",
+    "Stunning Attack"
+   ],
+   [
+    "No Need for Weapons",
+    "Resilience"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "FIGHTS WITH PANACHE": {
+  "requires": [],
+  "edges": [
+   [
+    "Acrobatic Attack",
+    "Dashing Defense"
+   ],
+   [
+    "Acrobatic Attack",
+    "Improved Dashing Defense"
+   ],
+   [
+    "Acrobatic Attack",
+    "Quick Adjustment"
+   ],
+   [
+    "Acrobatic Attack",
+    "Wounded Fury"
+   ],
+   [
+    "Again and Again",
+    "Agile Wit"
+   ],
+   [
+    "Again and Again",
+    "Return to Sender"
+   ],
+   [
+    "Agile Wit",
+    "Improved Dashing Defense"
+   ],
+   [
+    "Agile Wit",
+    "Misdirect"
+   ],
+   [
+    "Attack Flourish",
+    "Dashing Defense"
+   ],
+   [
+    "Attack Flourish",
+    "Roguish Smile"
+   ],
+   [
+    "Attack Flourish",
+    "Wounded Fury"
+   ],
+   [
+    "Dashing Defense",
+    "Roguish Smile"
+   ],
+   [
+    "Dashing Defense",
+    "Wounded Fury"
+   ],
+   [
+    "Fast Kill",
+    "Flamboyant Boast"
+   ],
+   [
+    "Fast Kill",
+    "Roguish Smile"
+   ],
+   [
+    "Fast Kill",
+    "Taunting Defense"
+   ],
+   [
+    "Fast Kill",
+    "Wounded Fury"
+   ],
+   [
+    "Flamboyant Boast",
+    "Misdirect"
+   ],
+   [
+    "Flamboyant Boast",
+    "Quick Adjustment"
+   ],
+   [
+    "Flamboyant Boast",
+    "Wounded Fury"
+   ],
+   [
+    "Improved Dashing Defense",
+    "Using the Environment"
+   ],
+   [
+    "Misdirect",
+    "Using the Environment"
+   ],
+   [
+    "Quick Adjustment",
+    "Wounded Fury"
+   ],
+   [
+    "Return to Sender",
+    "Using the Environment"
+   ],
+   [
+    "Roguish Smile",
+    "Taunting Defense"
+   ],
+   [
+    "Taunting Defense",
+    "Wounded Fury"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "FUSES FLESH AND STEEL": {
+  "requires": [],
+  "edges": [
+   [
+    "Bolts of Power",
+    "Cybernetic Alacrity"
+   ],
+   [
+    "Bolts of Power",
+    "Deep Reserves"
+   ],
+   [
+    "Bolts of Power",
+    "Embedded Drone"
+   ],
+   [
+    "Closed Loop Body",
+    "Cybernetic Alacrity"
+   ],
+   [
+    "Closed Loop Body",
+    "Embedded Drone"
+   ],
+   [
+    "Closed Loop Body",
+    "Fusion"
+   ],
+   [
+    "Deep Reserves",
+    "Fusion"
+   ],
+   [
+    "Deep Reserves",
+    "Weaponization"
+   ],
+   [
+    "Defensive Cybernetics",
+    "High-Speed Interface"
+   ],
+   [
+    "Defensive Cybernetics",
+    "Powered Cybernetics"
+   ],
+   [
+    "Enhanced Self-Repair",
+    "Fusion"
+   ],
+   [
+    "Enhanced Self-Repair",
+    "HUD"
+   ],
+   [
+    "Enhanced Self-Repair",
+    "High-Speed Interface"
+   ],
+   [
+    "HUD",
+    "Hidden Shield"
+   ],
+   [
+    "HUD",
+    "Weaponization"
+   ],
+   [
+    "Hidden Shield",
+    "Powered Cybernetics"
+   ],
+   [
+    "High-Speed Interface",
+    "Weaponization"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "FUSES MIND AND MACHINE": {
+  "requires": [
+   [
+    "Action Processor",
+    "REQUIRES DATA PROCESSOR"
+   ],
+   [
+    "Expanded Wireless",
+    "REQUIRES WIRELESS INTERFACE"
+   ]
+  ],
+  "edges": [
+   [
+    "Action Processor",
+    "Analytic Processor"
+   ],
+   [
+    "Action Processor",
+    "Awareness"
+   ],
+   [
+    "Action Processor",
+    "Locked Skill"
+   ],
+   [
+    "Action Processor",
+    "Machine Reading"
+   ],
+   [
+    "Analytic Processor",
+    "Think Fast"
+   ],
+   [
+    "Analytic Processor",
+    "Wireless Interface"
+   ],
+   [
+    "Awareness",
+    "Expanded Wireless"
+   ],
+   [
+    "Awareness",
+    "Machine Reading"
+   ],
+   [
+    "Data Processor",
+    "Think Fast"
+   ],
+   [
+    "Data Processor",
+    "Wireless Interface"
+   ],
+   [
+    "Expanded Wireless",
+    "Precognition"
+   ],
+   [
+    "Locked Skill",
+    "Precognition"
+   ],
+   [
+    "Machine Enhancement",
+    "Precognition"
+   ],
+   [
+    "Machine Reading",
+    "Think Fast"
+   ],
+   [
+    "Machine Reading",
+    "Wireless Interface"
+   ],
+   [
+    "Mind Surge",
+    "Precognition"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "GROWS TO TOWERING HEIGHTS": {
+  "requires": [],
+  "edges": [
+   [
+    "Bigger",
+    "Huge"
+   ],
+   [
+    "Bigger",
+    "Preternaturally Strong"
+   ],
+   [
+    "Bigger",
+    "Scary Big"
+   ],
+   [
+    "Bigger",
+    "Towering Throw"
+   ],
+   [
+    "Colossal",
+    "Gargantuan"
+   ],
+   [
+    "Colossal",
+    "Grab"
+   ],
+   [
+    "Enlarge",
+    "Longstrider"
+   ],
+   [
+    "Enlarge",
+    "Mighty Leap"
+   ],
+   [
+    "Enlarge",
+    "Preternaturally Strong"
+   ],
+   [
+    "Enlarge",
+    "Scary Big"
+   ],
+   [
+    "Gargantuan",
+    "Huge"
+   ],
+   [
+    "Gargantuan",
+    "Might for Mind"
+   ],
+   [
+    "Grab",
+    "Might for Mind"
+   ],
+   [
+    "Huge",
+    "Towering Strike"
+   ],
+   [
+    "Might for Mind",
+    "Towering Strike"
+   ],
+   [
+    "Preternaturally Strong",
+    "Towering Throw"
+   ],
+   [
+    "Scary Big",
+    "Towering Throw"
+   ],
+   [
+    "Towering Strike",
+    "Towering Throw"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "HOWLS AT THE MOON": {
+  "requires": [],
+  "edges": [
+   [
+    "Beast Form",
+    "Beast Senses"
+   ],
+   [
+    "Beast Form",
+    "Call Upon the Beast"
+   ],
+   [
+    "Beast Form",
+    "Controlled Change"
+   ],
+   [
+    "Beast Form",
+    "Keen Eye"
+   ],
+   [
+    "Beast Form",
+    "Scales"
+   ],
+   [
+    "Beast Form",
+    "Talons or Claws"
+   ],
+   [
+    "Beast Healing",
+    "Bigger Beast Form"
+   ],
+   [
+    "Beast Healing",
+    "Brute Squad"
+   ],
+   [
+    "Beast Healing",
+    "Sleeker Beast Form"
+   ],
+   [
+    "Beast Senses",
+    "Sleeker Beast Form"
+   ],
+   [
+    "Bigger Beast Form",
+    "Controlled Change"
+   ],
+   [
+    "Bigger Beast Form",
+    "Greater Controlled Change"
+   ],
+   [
+    "Bigger Beast Form",
+    "Poison Bite"
+   ],
+   [
+    "Bigger Beast Form",
+    "Scales"
+   ],
+   [
+    "Brute Squad",
+    "Lethal Capability"
+   ],
+   [
+    "Brute Squad",
+    "Perfect Control"
+   ],
+   [
+    "Brute Squad",
+    "Wings"
+   ],
+   [
+    "Constrict",
+    "Enhanced Beast Form"
+   ],
+   [
+    "Enhanced Beast Form",
+    "Greater Controlled Change"
+   ],
+   [
+    "Enhanced Beast Form",
+    "Perfect Control"
+   ],
+   [
+    "Enhanced Beast Form",
+    "Poison Bite"
+   ],
+   [
+    "Greater Controlled Change",
+    "Sleeker Beast Form"
+   ],
+   [
+    "Poison Bite",
+    "Wounded Fury"
+   ],
+   [
+    "Scales",
+    "Wounded Fury"
+   ],
+   [
+    "Sleeker Beast Form",
+    "Talons or Claws"
+   ],
+   [
+    "Sleeker Beast Form",
+    "Wings"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "HUNTS": {
+  "requires": [
+   [
+    "Better Sneak Attack",
+    "REQUIRES SNEAK ATTACK"
+   ],
+   [
+    "Hunter’s Drive",
+    "REQUIRES QUARRY"
+   ]
+  ],
+  "edges": [
+   [
+    "Awareness",
+    "Better Sneak Attack"
+   ],
+   [
+    "Awareness",
+    "Fast Kill"
+   ],
+   [
+    "Awareness",
+    "Horde Fighting"
+   ],
+   [
+    "Better Sneak Attack",
+    "Damage Dealer"
+   ],
+   [
+    "Better Sneak Attack",
+    "Horde Fighting"
+   ],
+   [
+    "Better Sneak Attack",
+    "Sprint and Grab"
+   ],
+   [
+    "Damage Dealer",
+    "Escape Plan"
+   ],
+   [
+    "Damage Dealer",
+    "Lethal Strike"
+   ],
+   [
+    "Damage Dealer",
+    "Sprint and Grab"
+   ],
+   [
+    "Fast Kill",
+    "Horde Fighting"
+   ],
+   [
+    "Fast Kill",
+    "Hunter’s Determination"
+   ],
+   [
+    "Fast Kill",
+    "Sneak Attack"
+   ],
+   [
+    "Horde Fighting",
+    "Quarry"
+   ],
+   [
+    "Horde Fighting",
+    "Sprint and Grab"
+   ],
+   [
+    "Hunter’s Determination",
+    "Knowledge of Nature"
+   ],
+   [
+    "Hunter’s Determination",
+    "Quarry"
+   ],
+   [
+    "Hunter’s Drive",
+    "Lethal Strike"
+   ],
+   [
+    "Hunter’s Drive",
+    "Multiple Quarries"
+   ],
+   [
+    "Hunter’s Drive",
+    "Sprint and Grab"
+   ],
+   [
+    "Knowledge of Nature",
+    "Sneak Attack"
+   ],
+   [
+    "Poison Crafter",
+    "Quarry"
+   ],
+   [
+    "Poison Crafter",
+    "Sprint and Grab"
+   ],
+   [
+    "Quarry",
+    "Sneak Attack"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "INFILTRATES": {
+  "requires": [],
+  "edges": [
+   [
+    "Awareness",
+    "Defend and Respond"
+   ],
+   [
+    "Awareness",
+    "Master of Disguise"
+   ],
+   [
+    "Awareness",
+    "Natural Sneak"
+   ],
+   [
+    "Awareness",
+    "Scrutinize Defenses"
+   ],
+   [
+    "Blend In",
+    "Flight Not Fight"
+   ],
+   [
+    "Blend In",
+    "Scrutinize Defenses"
+   ],
+   [
+    "Brainwashing",
+    "Persistence Training"
+   ],
+   [
+    "Convenient Device",
+    "Invisibility"
+   ],
+   [
+    "Convenient Device",
+    "Persistence Training"
+   ],
+   [
+    "Convenient Device",
+    "Scrutinize Defenses"
+   ],
+   [
+    "Defend and Respond",
+    "Scrutinize Defenses"
+   ],
+   [
+    "Fast Talk",
+    "Letting Their Guard Down"
+   ],
+   [
+    "Fast Talk",
+    "Master of Disguise"
+   ],
+   [
+    "Flight Not Fight",
+    "Master of Disguise"
+   ],
+   [
+    "Flight Not Fight",
+    "Natural Sneak"
+   ],
+   [
+    "Flight Not Fight",
+    "Scrutinize Defenses"
+   ],
+   [
+    "Invisibility",
+    "Spring Away"
+   ],
+   [
+    "Letting Their Guard Down",
+    "Natural Sneak"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "LEADS": {
+  "requires": [
+   [
+    "Improved Follower",
+    "REQUIRES BASIC AND/O R EXPERT FOLLOWER"
+   ]
+  ],
+  "edges": [
+   [
+    "Advanced Command",
+    "Basic Follower"
+   ],
+   [
+    "Advanced Command",
+    "Calm"
+   ],
+   [
+    "Advanced Command",
+    "Natural Leader"
+   ],
+   [
+    "Always Witty",
+    "Inspiring Suggestion"
+   ],
+   [
+    "Always Witty",
+    "Lighting a Fire Under Them"
+   ],
+   [
+    "Band of Followers",
+    "Improved Follower"
+   ],
+   [
+    "Band of Followers",
+    "Stimulate"
+   ],
+   [
+    "Basic Follower",
+    "Expert Follower"
+   ],
+   [
+    "Basic Follower",
+    "Inspiring Suggestion"
+   ],
+   [
+    "Basic Follower",
+    "Lighting a Fire Under Them"
+   ],
+   [
+    "Basic Follower",
+    "Natural Leader"
+   ],
+   [
+    "Calm",
+    "Expert Follower"
+   ],
+   [
+    "Calm",
+    "Stimulate"
+   ],
+   [
+    "Captivate or Inspire",
+    "Expert Follower"
+   ],
+   [
+    "Captivate or Inspire",
+    "Improved Follower"
+   ],
+   [
+    "Captivate or Inspire",
+    "Stimulate"
+   ],
+   [
+    "Improved Follower",
+    "Mind of a Leader"
+   ],
+   [
+    "Inspiring Suggestion",
+    "Natural Leader"
+   ],
+   [
+    "Lighting a Fire Under Them",
+    "Natural Leader"
+   ],
+   [
+    "Mind of a Leader",
+    "Stimulate"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "MASTERS TELEKINESIS": {
+  "requires": [
+   [
+    "Improved Apportation",
+    "REQUIRES APPORTATION"
+   ]
+  ],
+  "edges": [
+   [
+    "Apportation",
+    "Armoring Debris"
+   ],
+   [
+    "Apportation",
+    "Enhance Strength"
+   ],
+   [
+    "Apportation",
+    "Psychokinetic Attack"
+   ],
+   [
+    "Armoring Debris",
+    "Energize Object"
+   ],
+   [
+    "Armoring Debris",
+    "Mind for Speed"
+   ],
+   [
+    "Deflect Attacks",
+    "Enhance Strength"
+   ],
+   [
+    "Deflect Attacks",
+    "Push"
+   ],
+   [
+    "Deflect Attacks",
+    "Telekinesis"
+   ],
+   [
+    "Energize Object",
+    "Steady Hand"
+   ],
+   [
+    "Energize Object",
+    "Telekinesis"
+   ],
+   [
+    "Enhance Strength",
+    "Mind for Speed"
+   ],
+   [
+    "Improved Apportation",
+    "Psychokinetic Attack"
+   ],
+   [
+    "Mind for Speed",
+    "Psychokinetic Attack"
+   ],
+   [
+    "Psychokinetic Attack",
+    "Reshape"
+   ],
+   [
+    "Push",
+    "Telekinesis"
+   ],
+   [
+    "Steady Hand",
+    "Telekinesis"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "MASTERS WEAPONRY": {
+  "requires": [],
+  "edges": [
+   [
+    "Arc Spray",
+    "Rival Talent"
+   ],
+   [
+    "Arc Spray",
+    "Shot Collision"
+   ],
+   [
+    "Arc Spray",
+    "Special Shot"
+   ],
+   [
+    "Battle Competence",
+    "Display of Skill"
+   ],
+   [
+    "Battle Competence",
+    "Perfect Attack"
+   ],
+   [
+    "Careful Shot",
+    "Rapid Attack"
+   ],
+   [
+    "Careful Shot",
+    "Spray"
+   ],
+   [
+    "Careful Shot",
+    "Weapon Master"
+   ],
+   [
+    "Disarming Strike",
+    "Never Fumble"
+   ],
+   [
+    "Disarming Strike",
+    "Perfect Attack"
+   ],
+   [
+    "Disarming Strike",
+    "Throw Weapon"
+   ],
+   [
+    "Display of Skill",
+    "Throw Weapon"
+   ],
+   [
+    "Display of Skill",
+    "Weapon Master"
+   ],
+   [
+    "Lethal Strike",
+    "That Was a Feint"
+   ],
+   [
+    "Never Fumble",
+    "That Was a Feint"
+   ],
+   [
+    "Perfect Attack",
+    "Rapid Attack"
+   ],
+   [
+    "Perfect Follow-Through",
+    "That Was a Feint"
+   ],
+   [
+    "Rapid Attack",
+    "Rival Talent"
+   ],
+   [
+    "Rapid Attack",
+    "Special Shot"
+   ],
+   [
+    "Rapid Attack",
+    "Throw Weapon"
+   ],
+   [
+    "Rival Talent",
+    "That Was a Feint"
+   ],
+   [
+    "Shot Collision",
+    "That Was a Feint"
+   ],
+   [
+    "Special Shot",
+    "Spray"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "MOVES LIKE THE WIND": {
+  "requires": [],
+  "edges": [
+   [
+    "Blink of an Eye",
+    "Hard to See"
+   ],
+   [
+    "Blink of an Eye",
+    "Incredible Running Speed"
+   ],
+   [
+    "Escape",
+    "Fleet of Foot"
+   ],
+   [
+    "Escape",
+    "Speedy Threat"
+   ],
+   [
+    "Fleet of Foot",
+    "Get Out"
+   ],
+   [
+    "Fleet of Foot",
+    "Obstacle Running"
+   ],
+   [
+    "Fleet of Foot",
+    "Recover Faster"
+   ],
+   [
+    "Get Out",
+    "Obstacle Running"
+   ],
+   [
+    "Go to Ground",
+    "Increasing Determination"
+   ],
+   [
+    "Go to Ground",
+    "Speed Surge"
+   ],
+   [
+    "Go to Ground",
+    "Speed for Mind"
+   ],
+   [
+    "Hard to See",
+    "Up to Speed"
+   ],
+   [
+    "Increasing Determination",
+    "Incredible Running Speed"
+   ],
+   [
+    "Increasing Determination",
+    "Speedy Threat"
+   ],
+   [
+    "Incredible Running Speed",
+    "Obstacle Running"
+   ],
+   [
+    "Incredible Running Speed",
+    "Up to Speed"
+   ],
+   [
+    "Obstacle Running",
+    "Speedy Threat"
+   ],
+   [
+    "Speed for Mind",
+    "Speedy Threat"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "NEVER SAYS DIE": {
+  "requires": [],
+  "edges": [
+   [
+    "Always Mighty",
+    "Hidden Reserves"
+   ],
+   [
+    "Always Mighty",
+    "Push on Through"
+   ],
+   [
+    "Always Mighty",
+    "Safe Fall"
+   ],
+   [
+    "Blood Fever",
+    "Hidden Reserves"
+   ],
+   [
+    "Blood Fever",
+    "Ignore the Pain"
+   ],
+   [
+    "Blood Fever",
+    "Increasing Determination"
+   ],
+   [
+    "Determination",
+    "Push on Through"
+   ],
+   [
+    "Determination",
+    "Safe Fall"
+   ],
+   [
+    "Final Defiance",
+    "Not Dead Yet"
+   ],
+   [
+    "Hidden Reserves",
+    "Outlast the Foe"
+   ],
+   [
+    "Ignore Affliction",
+    "Not Dead Yet"
+   ],
+   [
+    "Ignore the Pain",
+    "Push on Through"
+   ],
+   [
+    "Ignore the Pain",
+    "Safe Fall"
+   ],
+   [
+    "Increasing Determination",
+    "Not Dead Yet"
+   ],
+   [
+    "Not Dead Yet",
+    "Outlast the Foe"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "PERFORMS FEATS OF STRENGTH": {
+  "requires": [],
+  "edges": [
+   [
+    "Always Mighty",
+    "Desperate Feat"
+   ],
+   [
+    "Always Mighty",
+    "Feat of Strength"
+   ],
+   [
+    "Always Mighty",
+    "Hitting Harder"
+   ],
+   [
+    "Amazing Strength",
+    "Brute Strike"
+   ],
+   [
+    "Amazing Strength",
+    "Deep Reserves"
+   ],
+   [
+    "Brute Squad",
+    "Brute Strike"
+   ],
+   [
+    "Brute Strike",
+    "Jump Attack"
+   ],
+   [
+    "Brute Strike",
+    "Throw"
+   ],
+   [
+    "Deep Reserves",
+    "Desperate Feat"
+   ],
+   [
+    "Deep Reserves",
+    "Feat of Strength"
+   ],
+   [
+    "Desperate Feat",
+    "Hitting Harder"
+   ],
+   [
+    "Desperate Feat",
+    "Inspiring Display"
+   ],
+   [
+    "Desperate Feat",
+    "Iron Fist"
+   ],
+   [
+    "Hitting Harder",
+    "Inspiring Display"
+   ],
+   [
+    "Inspiring Display",
+    "Naturally Strong"
+   ],
+   [
+    "Iron Fist",
+    "Naturally Strong"
+   ],
+   [
+    "Iron Fist",
+    "Throw"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "QUELLS EVIL": {
+  "requires": [],
+  "edges": [
+   [
+    "Blast Evil",
+    "Invisibility to Evil"
+   ],
+   [
+    "Blast Evil",
+    "Rebuke Evil"
+   ],
+   [
+    "Blast Evil",
+    "Unearth Evil"
+   ],
+   [
+    "Fence Out Evil",
+    "Shrug Off Evil"
+   ],
+   [
+    "Inspiring Trust",
+    "Sense Evil"
+   ],
+   [
+    "Inspiring Trust",
+    "Tribulation"
+   ],
+   [
+    "Invisibility to Evil",
+    "Sense Evil"
+   ],
+   [
+    "Invisibility to Evil",
+    "Tribulation"
+   ],
+   [
+    "Rebuke Evil",
+    "Shrug Off Evil"
+   ],
+   [
+    "Righteous Cloak",
+    "Shrug Off Evil"
+   ],
+   [
+    "Righteous Cloak",
+    "Unearth Evil"
+   ],
+   [
+    "Sense Evil",
+    "Shield Against Evil"
+   ],
+   [
+    "Shield Against Evil",
+    "Tribulation"
+   ],
+   [
+    "Shield Against Evil",
+    "Unearth Evil"
+   ],
+   [
+    "Shrug Off Evil",
+    "Supreme Retribution"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "REVERES A SUPERNATURAL FORCE": {
+  "requires": [],
+  "edges": [
+   [
+    "Acrobatic Attack",
+    "Desperate Feat"
+   ],
+   [
+    "Acrobatic Attack",
+    "Telekinesis"
+   ],
+   [
+    "Acrobatic Attack",
+    "Telekinetic Crush"
+   ],
+   [
+    "Acrobatic Attack",
+    "Unbalancing Strike"
+   ],
+   [
+    "Defensive Precognition",
+    "Telepathic Message"
+   ],
+   [
+    "Defensive Precognition",
+    "Use the Force"
+   ],
+   [
+    "Desperate Feat",
+    "Psychic Suggestion"
+   ],
+   [
+    "Desperate Feat",
+    "Use the Force"
+   ],
+   [
+    "Lethal Capability",
+    "Telekinetic Throw"
+   ],
+   [
+    "Lethal Capability",
+    "Total Awareness"
+   ],
+   [
+    "Psychic Suggestion",
+    "Telekinetic Crush"
+   ],
+   [
+    "Psychic Suggestion",
+    "Telepathic Message"
+   ],
+   [
+    "Psychic Suggestion",
+    "Unbalancing Strike"
+   ],
+   [
+    "Push",
+    "Use the Force"
+   ],
+   [
+    "Return to Sender",
+    "Telekinetic Throw"
+   ],
+   [
+    "Return to Sender",
+    "Total Awareness"
+   ],
+   [
+    "Telekinesis",
+    "Use the Force"
+   ],
+   [
+    "Telekinetic Crush",
+    "Telekinetic Throw"
+   ],
+   [
+    "Telepathic Message",
+    "Use the Force"
+   ],
+   [
+    "Total Awareness",
+    "Unbalancing Strike"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "RIDES THE LIGHTNING": {
+  "requires": [],
+  "edges": [
+   [
+    "Bolt Rider",
+    "Deafening Bolt"
+   ],
+   [
+    "Bolt Rider",
+    "Electric Armor"
+   ],
+   [
+    "Bolt Rider",
+    "Lightning Hand"
+   ],
+   [
+    "Bolts of Power",
+    "Deafening Bolt"
+   ],
+   [
+    "Bolts of Power",
+    "Discharge"
+   ],
+   [
+    "Control Electric Device",
+    "Lightning Hand"
+   ],
+   [
+    "Control Electric Device",
+    "Radiohead"
+   ],
+   [
+    "Deafening Bolt",
+    "Resist the Storm"
+   ],
+   [
+    "Discharge",
+    "Flash Across the Miles"
+   ],
+   [
+    "Discharge",
+    "Subsonic Rumble"
+   ],
+   [
+    "Discharge",
+    "Wall of Lightning"
+   ],
+   [
+    "Electric Armor",
+    "Radiohead"
+   ],
+   [
+    "Electric Armor",
+    "Subsonic Rumble"
+   ],
+   [
+    "Electric Flight",
+    "Flash Across the Miles"
+   ],
+   [
+    "Electric Flight",
+    "Subsonic Rumble"
+   ],
+   [
+    "Electric Flight",
+    "Wall of Lightning"
+   ],
+   [
+    "Lightning Hand",
+    "Radiohead"
+   ],
+   [
+    "Lightning Hand",
+    "Resist the Storm"
+   ],
+   [
+    "Lightning Hand",
+    "Thunder Crash"
+   ],
+   [
+    "Resist the Storm",
+    "Thunder Crash"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "SNEAKS THROUGH THE SHADOWS": {
+  "requires": [
+   [
+    "Slippery Customer",
+    "REQUIRES EYES ADJUSTED"
+   ]
+  ],
+  "edges": [
+   [
+    "Again and Again",
+    "Dirty Fighter"
+   ],
+   [
+    "Again and Again",
+    "Slippery Customer"
+   ],
+   [
+    "Alley Rat",
+    "Dirty Fighter"
+   ],
+   [
+    "Alley Rat",
+    "Slippery Customer"
+   ],
+   [
+    "Always Speedy",
+    "Natural Sneak"
+   ],
+   [
+    "Always Speedy",
+    "Underworld Contacts"
+   ],
+   [
+    "Dirty Fighter",
+    "Hard-Won Resilience"
+   ],
+   [
+    "Dirty Fighter",
+    "Unbalancing Strike"
+   ],
+   [
+    "Eyes Adjusted",
+    "Natural Sneak"
+   ],
+   [
+    "Eyes Adjusted",
+    "Safe Fall"
+   ],
+   [
+    "Hard-Won Resilience",
+    "Nine Lives"
+   ],
+   [
+    "Hard-Won Resilience",
+    "Slippery Customer"
+   ],
+   [
+    "Natural Sneak",
+    "Safe Fall"
+   ],
+   [
+    "Natural Sneak",
+    "Underworld Contacts"
+   ],
+   [
+    "Nine Lives",
+    "Retaliatory Swipe"
+   ],
+   [
+    "Nine Lives",
+    "Safe Fall"
+   ],
+   [
+    "Nine Lives",
+    "Underworld Contacts"
+   ],
+   [
+    "Retaliatory Swipe",
+    "Safe Fall"
+   ],
+   [
+    "Retaliatory Swipe",
+    "Unbalancing Strike"
+   ],
+   [
+    "Retaliatory Swipe",
+    "Underworld Contacts"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "SOLVES MYSTERIES": {
+  "requires": [],
+  "edges": [
+   [
+    "Combat Prowess",
+    "Defend and Respond"
+   ],
+   [
+    "Combat Prowess",
+    "Master of Disguise"
+   ],
+   [
+    "Combat Prowess",
+    "Out of Harm’s Way"
+   ],
+   [
+    "Defend and Respond",
+    "Defuse Situation"
+   ],
+   [
+    "Defuse Situation",
+    "Infer Thoughts"
+   ],
+   [
+    "Defuse Situation",
+    "Knowing the Unknown"
+   ],
+   [
+    "Defuse Situation",
+    "Lead by Inquiry"
+   ],
+   [
+    "Ditch Assumption",
+    "Lead by Inquiry"
+   ],
+   [
+    "Ditch Assumption",
+    "Master of Disguise"
+   ],
+   [
+    "Ditch Assumption",
+    "Out of Harm’s Way"
+   ],
+   [
+    "Investigative Knack",
+    "Master of Disguise"
+   ],
+   [
+    "Investigative Knack",
+    "Sense Weakness"
+   ],
+   [
+    "Master of Disguise",
+    "Sense Weakness"
+   ],
+   [
+    "Out of Harm’s Way",
+    "Sense Weakness"
+   ],
+   [
+    "Out of Harm’s Way",
+    "Sleuthing"
+   ],
+   [
+    "Sense Weakness",
+    "Sleuthing"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "SPEAKS FOR THE LAND": {
+  "requires": [],
+  "edges": [
+   [
+    "Call the Storm",
+    "Insect Eruption"
+   ],
+   [
+    "Communication",
+    "Healing Fruit"
+   ],
+   [
+    "Communication",
+    "Nature’s Grip"
+   ],
+   [
+    "Communication",
+    "Seeds of Fury"
+   ],
+   [
+    "Communication",
+    "Wild Affinity"
+   ],
+   [
+    "Earthshake",
+    "Insect Eruption"
+   ],
+   [
+    "Healing Fruit",
+    "Wild Affinity"
+   ],
+   [
+    "Healing Fruit",
+    "Wilderness Experience"
+   ],
+   [
+    "Insect Eruption",
+    "Moon Shape"
+   ],
+   [
+    "Insect Eruption",
+    "Wilderness Encouragement"
+   ],
+   [
+    "Moon Shape",
+    "Nature’s Grip"
+   ],
+   [
+    "Moon Shape",
+    "Nature’s Voice"
+   ],
+   [
+    "Nature’s Grip",
+    "Nature’s Voice"
+   ],
+   [
+    "Nature’s Grip",
+    "Wilderness Encouragement"
+   ],
+   [
+    "Nature’s Voice",
+    "Wilderness Encouragement"
+   ],
+   [
+    "Nature’s Voice",
+    "Wilderness Experience"
+   ],
+   [
+    "Seeds of Fury",
+    "Wild Affinity"
+   ],
+   [
+    "Seeds of Fury",
+    "Wilderness Experience"
+   ],
+   [
+    "Wild Affinity",
+    "Wilderness Experience"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "STANDS LIKE A BASTION": {
+  "requires": [],
+  "edges": [
+   [
+    "Attenuate Threat",
+    "Tower of Will"
+   ],
+   [
+    "Battle Competence",
+    "Imperturbable"
+   ],
+   [
+    "Battle Competence",
+    "Nothing but Defend"
+   ],
+   [
+    "Battle Competence",
+    "Resist the Elements"
+   ],
+   [
+    "Battle Competence",
+    "Shield Master"
+   ],
+   [
+    "Bouncing Shield",
+    "Tower of Will"
+   ],
+   [
+    "Defend and Respond",
+    "Hard-Won Resilience"
+   ],
+   [
+    "Defend and Respond",
+    "Resist the Elements"
+   ],
+   [
+    "Hard-Won Resilience",
+    "Unmovable"
+   ],
+   [
+    "Hard-Won Resilience",
+    "Weave an Iron Wall"
+   ],
+   [
+    "Imperturbable",
+    "Shield Master"
+   ],
+   [
+    "Inspiring Defense",
+    "Throw Shield"
+   ],
+   [
+    "Inspiring Defense",
+    "Tower of Will"
+   ],
+   [
+    "Inspiring Defense",
+    "Weave an Iron Wall"
+   ],
+   [
+    "Lethal Capability",
+    "Weave an Iron Wall"
+   ],
+   [
+    "Nothing but Defend",
+    "Resist the Elements"
+   ],
+   [
+    "Resist the Elements",
+    "Unmovable"
+   ],
+   [
+    "Shield Master",
+    "Throw Shield"
+   ],
+   [
+    "Shield Master",
+    "Unmovable"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "STRIKES WITH MYSTIC MIGHT": {
+  "requires": [],
+  "edges": [
+   [
+    "Exploding Hand",
+    "Lethal Strike"
+   ],
+   [
+    "Exploding Hand",
+    "Mystic Step"
+   ],
+   [
+    "Exploding Hand",
+    "Perfected Form"
+   ],
+   [
+    "Lethal Strike",
+    "Resonant Palm"
+   ],
+   [
+    "Mystic Flurry",
+    "Mystic Step"
+   ],
+   [
+    "Mystic Flurry",
+    "Perfecting the Body"
+   ],
+   [
+    "Mystic Flurry",
+    "Surging Hand"
+   ],
+   [
+    "Mystic Hand",
+    "No Need for Weapons"
+   ],
+   [
+    "Mystic Hand",
+    "Safe Fall"
+   ],
+   [
+    "Mystic Hand",
+    "Supernatural Leap"
+   ],
+   [
+    "Mystic Hand",
+    "Surging Hand"
+   ],
+   [
+    "Mystic Step",
+    "Perfecting the Body"
+   ],
+   [
+    "Mystic Step",
+    "Resonant Palm"
+   ],
+   [
+    "No Need for Weapons",
+    "Safe Fall"
+   ],
+   [
+    "No Need for Weapons",
+    "Surging Hand"
+   ],
+   [
+    "Perfected Form",
+    "Resonant Palm"
+   ],
+   [
+    "Perfecting the Body",
+    "Safe Fall"
+   ],
+   [
+    "Supernatural Leap",
+    "Surging Hand"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "TALKS TO MACHINES": {
+  "requires": [],
+  "edges": [
+   [
+    "Charm Machine",
+    "Coaxing Power"
+   ],
+   [
+    "Charm Machine",
+    "Control Electric Device"
+   ],
+   [
+    "Charm Machine",
+    "Friend to Intelligent Machines"
+   ],
+   [
+    "Charm Machine",
+    "Locate Machine"
+   ],
+   [
+    "Charm Machine",
+    "Machine Control"
+   ],
+   [
+    "Coaxing Power",
+    "Friend to Intelligent Machines"
+   ],
+   [
+    "Coaxing Power",
+    "Quick Control"
+   ],
+   [
+    "Compile Robotic Offense",
+    "Disable Mechanism"
+   ],
+   [
+    "Compile Robotic Offense",
+    "Information Gathering"
+   ],
+   [
+    "Compile Robotic Offense",
+    "Quick Control"
+   ],
+   [
+    "Control Electric Device",
+    "Locate Machine"
+   ],
+   [
+    "Control Electric Device",
+    "Machine Control"
+   ],
+   [
+    "Disable Mechanism",
+    "Locate Machine"
+   ],
+   [
+    "Disable Mechanism",
+    "Machine Companion"
+   ],
+   [
+    "Disable Mechanism",
+    "Machine Control"
+   ],
+   [
+    "Friend to Intelligent Machines",
+    "Machine Control"
+   ],
+   [
+    "Improved Machine Companion",
+    "Information Gathering"
+   ],
+   [
+    "Information Gathering",
+    "Machine Companion"
+   ],
+   [
+    "Information Gathering",
+    "Recompile Machine"
+   ],
+   [
+    "Machine Control",
+    "Quick Control"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "TENDS TO THE WOUNDED": {
+  "requires": [],
+  "edges": [
+   [
+    "Alleviate Malady",
+    "Font of Recovery"
+   ],
+   [
+    "Alleviate Malady",
+    "Healing Beacon"
+   ],
+   [
+    "Alleviate Malady",
+    "Healing Hand"
+   ],
+   [
+    "Alleviate Malady",
+    "Resilience"
+   ],
+   [
+    "Easing the Pain",
+    "Healing Beacon"
+   ],
+   [
+    "Easing the Pain",
+    "Healing Hand"
+   ],
+   [
+    "Font of Healing",
+    "Healing Beacon"
+   ],
+   [
+    "Font of Healing",
+    "Healing Shield"
+   ],
+   [
+    "Font of Healing",
+    "Resuscitate"
+   ],
+   [
+    "Font of Recovery",
+    "Healing Shield"
+   ],
+   [
+    "Font of Recovery",
+    "Resuscitate"
+   ],
+   [
+    "Greater Healing Hand",
+    "Ranged Healer"
+   ],
+   [
+    "Greater Healing Hand",
+    "Rewind Time"
+   ],
+   [
+    "Healing Beacon",
+    "Healing Hand"
+   ],
+   [
+    "Healing Hand",
+    "Resilience"
+   ],
+   [
+    "Healing Shield",
+    "Rewind Time"
+   ],
+   [
+    "Ranged Healer",
+    "Resuscitate"
+   ],
+   [
+    "Ranged Healer",
+    "Superior Healer"
+   ],
+   [
+    "Rewind Time",
+    "Superior Healer"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "WALKS THROUGH WALLS": {
+  "requires": [
+   [
+    "Selective Phase Attack",
+    "REQUIRES PHASED ATTACK"
+   ]
+  ],
+  "edges": [
+   [
+    "Defensive Phasing",
+    "Faster Phase"
+   ],
+   [
+    "Defensive Phasing",
+    "Walk Through Walls"
+   ],
+   [
+    "Faster Phase",
+    "Phase Door"
+   ],
+   [
+    "Faster Phase",
+    "Phase Friend"
+   ],
+   [
+    "Faster Phase",
+    "Phase Grasp"
+   ],
+   [
+    "Light Step",
+    "Walk Through Walls"
+   ],
+   [
+    "Phase Door",
+    "Phased Attack"
+   ],
+   [
+    "Phase Door",
+    "Untouchable"
+   ],
+   [
+    "Phase Foe",
+    "Quick Phase"
+   ],
+   [
+    "Phase Foe",
+    "Untouchable"
+   ],
+   [
+    "Phase Friend",
+    "Phased Attack"
+   ],
+   [
+    "Phase Friend",
+    "Quick Phase"
+   ],
+   [
+    "Phase Grasp",
+    "Phased Attack"
+   ],
+   [
+    "Phase Grasp",
+    "Walk Through Walls"
+   ],
+   [
+    "Phased Attack",
+    "Slip Into Shadow"
+   ],
+   [
+    "Quick Phase",
+    "Selective Phase Attack"
+   ],
+   [
+    "Selective Phase Attack",
+    "Untouchable"
+   ],
+   [
+    "Slip Into Shadow",
+    "Walk Through Walls"
+   ],
+   [
+    "Soft Whisper",
+    "Walk Through Walls"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "WEARS A SHEEN OF ICE": {
+  "requires": [],
+  "edges": [
+   [
+    "Cold Burst",
+    "Ice Monster"
+   ],
+   [
+    "Cold Burst",
+    "Improved Ice Armor"
+   ],
+   [
+    "Cold Burst",
+    "Winter Gauntlets"
+   ],
+   [
+    "Cool Water",
+    "Ice Armor"
+   ],
+   [
+    "Frost Bolt",
+    "Ice Armor"
+   ],
+   [
+    "Frost Bolt",
+    "Ice Creation"
+   ],
+   [
+    "Frost Bolt",
+    "Winter’s Grip"
+   ],
+   [
+    "Ice Armor",
+    "Ice Slide"
+   ],
+   [
+    "Ice Armor",
+    "Lower Temperature"
+   ],
+   [
+    "Ice Creation",
+    "Ice Slide"
+   ],
+   [
+    "Ice Creation",
+    "Improved Ice Armor"
+   ],
+   [
+    "Ice Slide",
+    "Winter’s Grip"
+   ],
+   [
+    "Improved Ice Armor",
+    "Winter’s Grip"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ },
+ "WORKS FOR A LIVING": {
+  "requires": [],
+  "edges": [
+   [
+    "Danger Instinct",
+    "Eye for Detail"
+   ],
+   [
+    "Danger Instinct",
+    "Fitting In"
+   ],
+   [
+    "Danger Instinct",
+    "Improvise"
+   ],
+   [
+    "Danger Instinct",
+    "Muscles of Iron"
+   ],
+   [
+    "Device Insight",
+    "Eye for Detail"
+   ],
+   [
+    "Device Insight",
+    "Polymath"
+   ],
+   [
+    "Endurance",
+    "Eye for Detail"
+   ],
+   [
+    "Endurance",
+    "Fitting In"
+   ],
+   [
+    "Endurance",
+    "Handy"
+   ],
+   [
+    "Endurance",
+    "Improvise"
+   ],
+   [
+    "Expert Handyman",
+    "Polymath"
+   ],
+   [
+    "Fitting In",
+    "Handy"
+   ],
+   [
+    "Fitting In",
+    "Muscles of Iron"
+   ],
+   [
+    "Hard-Won Resilience",
+    "Improvise"
+   ],
+   [
+    "Hard-Won Resilience",
+    "Polymath"
+   ],
+   [
+    "On the Crew",
+    "Polymath"
+   ]
+  ],
+  "badlabels": [],
+  "unmatched": []
+ }
+}

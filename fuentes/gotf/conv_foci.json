@@ -1,0 +1,2769 @@
+[
+ {
+  "name_en": "Finds the Flaw in All Things",
+  "source": "GotF",
+  "meta": [
+   [
+    "Intrusiones del DJ",
+    "reconoces un defecto en ti mismo; sueltas un defecto de un aliado y se enfada; alguien resentido por algo que señalaste te encuentra."
+   ],
+   [
+    "Equipo adicional",
+    "un artefacto, una pluma mágica que pinta una runa en un objeto o criatura y la vuelve invisible a tu capacidad de ver defectos durante un año (Agotamiento: 1 en 1d20)."
+   ],
+   [
+    "Conexiones y sugerencias de efecto menor/mayor",
+    "se quedan en GotF (p. 130–131); los focos del CCR no las usan."
+   ]
+  ],
+  "notes": [
+   "Las conexiones entre habilidades son nuestras [Adaptación]: hay una rama de combate (Perfect Submission → Reckoning → Flaw of Mortal Flesh) y otra de percepción (Find the Flaw → Fly in the Ointment → Flaw of Worldly Works), y las dos llevan a Flaw in Everything.",
+   "Habilidades añadidas del CCR [Adaptación: se copian de otros focos del CCR, en su mismo rango; el árbol pasa de 7 a 13 habilidades]",
+   "Se descartó Sense Weakness (Solves Mysteries) porque repite casi exactamente Find the Flaw, y el CCR desaconseja coger habilidades duplicadas (p. 145)."
+  ],
+  "abilities": [
+   {
+    "tier": 1,
+    "name_en": "Find the Flaw",
+    "cost": "",
+    "src": null,
+    "req": [],
+    "text": "Si un oponente tiene una debilidad sencilla (recibe daño extra del fuego, no ve por el ojo izquierdo…), el DJ te dice cuál es. *Enabler*. [Adaptación: se quita la referencia al descriptor Sharp-Eyed, que no existe en el CCR.]"
+   },
+   {
+    "tier": 1,
+    "name_en": "Perfect Submission",
+    "cost": "1+ Intelecto",
+    "src": null,
+    "req": [],
+    "text": "Sabes dónde agarrar o presionar a una criatura para retener toda su atención. Mientras no hagas otra acción física ni te muevas salvo para mantenerla, la criatura no puede hacer acciones físicas, aunque pasen varios asaltos. Si alguien la ataca, el efecto termina. Afecta a criaturas de hasta el doble de tu tamaño. *Esfuerzo:* cada nivel extra permite afectar a una criatura un tamaño mayor (el triple de tu tamaño requiere dos niveles). *Acción*."
+   },
+   {
+    "tier": 2,
+    "name_en": "Reckoning",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Perfect Submission"
+    ],
+    "text": "Si atacas a un oponente al que has observado combatir al menos un asalto, tu siguiente ataque contra él queda facilitado y, si aciertas, inflige 2 de daño adicional. *Enabler*."
+   },
+   {
+    "tier": 3,
+    "name_en": "Fly in the Ointment",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Find the Flaw"
+    ],
+    "text": "Quedan facilitadas en dos pasos todas las tareas de detectar mentiras y disfraces y de reconocer falacias, argumentos débiles y malos planes. *Enabler*."
+   },
+   {
+    "tier": 4,
+    "name_en": "Flaw of Worldly Works",
+    "cost": "5 Intelecto",
+    "src": null,
+    "req": [
+     "Fly in the Ointment"
+    ],
+    "text": "Ves por dónde se romperá un objeto. Cualquier tarea que normalmente dependería de la fuerza bruta, pero que haces con un toque aparentemente ligero, queda facilitada en tres pasos: abrir una puerta atrancada sin romperla, mover un objeto pesado sin levantarlo, abrir un hueco en un muro encontrando la piedra clave… *Enabler*."
+   },
+   {
+    "tier": 5,
+    "name_en": "Flaw of Mortal Flesh",
+    "cost": "6+ Intelecto",
+    "src": null,
+    "req": [
+     "Reckoning"
+    ],
+    "text": "Golpeas a un enemigo en un punto vital con un ataque rápido. Si es de nivel 3 o inferior, muere en el acto. *Esfuerzo:* cada dos niveles aumentan en 1 el nivel máximo del objetivo. *Acción*."
+   },
+   {
+    "tier": 6,
+    "name_en": "Flaw in Everything",
+    "cost": "3 Intelecto",
+    "src": null,
+    "req": [
+     "Flaw of Worldly Works",
+     "Flaw of Mortal Flesh"
+    ],
+    "text": "Alzas por un momento el velo de tu mirada. Tira 1d6: con un par, la tarea que intentas queda facilitada en dos pasos; con un 1, queda dificultada un paso. *Enabler*."
+   },
+   {
+    "tier": 1,
+    "name_en": "Go for the Eyes",
+    "cost": "2 Velocidad",
+    "src": "Fights Dirty, p. 178",
+    "req": [],
+    "text": "Intentas herir el ojo del enemigo, arrancándoselo o echándole tierra a la cara. Haces un ataque cuerpo a cuerpo dificultado; si aciertas, su visión queda dañada hasta que hagas una recuperación de diez minutos o más, y sus tareas que dependen de la vista (casi todas) quedan dificultadas. *Acción*."
+   },
+   {
+    "tier": 2,
+    "name_en": "Sneak Attack",
+    "cost": "1 Velocidad",
+    "src": "Fights Dirty, p. 178",
+    "req": [
+     "Go for the Eyes",
+     "Perfect Submission"
+    ],
+    "text": "Si atacas en alguna de estas condiciones, tu ataque con arma ligera cuerpo a cuerpo o a distancia hace 5 de daño adicional: atacas por sorpresa; un aliado usa su acción para facilitarte el ataque; las defensas del enemigo están dificultadas por otra distracción directa; o el enemigo no puede hacer su siguiente turno por un ataque o situación incapacitante. No funciona con armas medias o pesadas. *Primera acción*."
+   },
+   {
+    "tier": 3,
+    "name_en": "Scrutinize Defenses",
+    "cost": "3+ Intelecto",
+    "src": "Infiltrates, p. 196",
+    "req": [
+     "Find the Flaw"
+    ],
+    "text": "Si pasas una hora explorando a fondo una zona de hasta una distancia larga de diámetro (directamente, con planos o preguntando a quien la conoce), puedes hacer al DJ una pregunta sobre sus defensas y procedimientos, y debe responderte con la verdad. Se renueva con una recuperación de diez horas. *Esfuerzo:* una pregunta más. *Acción para iniciar; una hora para completar*."
+   },
+   {
+    "tier": 3,
+    "name_en": "Ditch Assumption",
+    "cost": "4 Intelecto",
+    "src": "Solves Mysteries, p. 218",
+    "req": [
+     "Find the Flaw"
+    ],
+    "text": "Tras observar e investigar con cuidado, el DJ te señala una suposición falsa que tienes sobre tu investigación actual, o descarta a uno de tus sospechosos. Si no trabajas con información falsa ni tienes sospechosos erróneos, no averiguas nada. Se renueva con una recuperación de diez horas. *Diez minutos para iniciar*."
+   },
+   {
+    "tier": 5,
+    "name_en": "Knock Out",
+    "cost": "5+ Potencia",
+    "src": "Fights Dirty, p. 178",
+    "req": [
+     "Sneak Attack",
+     "Reckoning"
+    ],
+    "text": "Haces un ataque cuerpo a cuerpo dificultado contra un enemigo de nivel 3 o inferior. Si aciertas, en vez de daño lo dejas inconsciente hasta que hagas una recuperación de diez minutos o más, o hasta que alguien gaste una acción en reanimarlo. *Esfuerzo:* aumenta en 1 el nivel máximo del enemigo. *Acción*."
+   },
+   {
+    "tier": 6,
+    "name_en": "Twisting the Knife",
+    "cost": "4 Velocidad",
+    "src": "Fights Dirty, p. 178",
+    "req": [
+     "Flaw of Mortal Flesh",
+     "Knock Out"
+    ],
+    "text": "Si ya has golpeado a un enemigo con un arma cuerpo a cuerpo en este combate, vuelves a golpearlo automáticamente con la misma arma (sin tirada) y le haces el daño normal. No sirve con ataques especiales ni con Esfuerzo para aumentar el daño, pero sí se aplican las habilidades que aumentan el daño automáticamente. *Acción*."
+   }
+  ],
+  "desc": "Ves los puntos débiles de los objetos, de las personas y de su forma de pensar [GotF, p. 130]."
+ },
+ {
+  "name_en": "Revels in Trickery",
+  "source": "GotF",
+  "meta": [
+   [
+    "Intrusiones del DJ",
+    "el engañado se enfurece al descubrirlo; una víctima de un truco anterior te encuentra; un funcionario te reconoce por una trastada pasada."
+   ],
+   [
+    "Equipo adicional",
+    "un disfraz a tu elección y 10 lunas (monedas de plata)."
+   ],
+   [
+    "Conexiones y sugerencias de efecto menor/mayor",
+    "se quedan en GotF (p. 131–132)."
+   ]
+  ],
+  "notes": [
+   "Las conexiones son nuestras [Adaptación]: una rama social (Legerdemain → Impersonate / Wit or Menace → Calm) y otra de combate (Opportunist → Poke and Run → Trap Trick), que se unen en Fake-Out.",
+   "Habilidades añadidas del CCR [Adaptación: se copian de otros focos del CCR, en su mismo rango; el árbol pasa de 8 a 13 habilidades]",
+   "Con las añadidas, el árbol queda con tres ramas: social (Fast Talk, Wit or Menace, Calm), engaño (Legerdemain, Impersonate, Blend In, Invisibility) y combate (Opportunist, Poke and Run, Feint, Trap Trick, Spring Away). Fake-Out sigue cerrando el árbol."
+  ],
+  "abilities": [
+   {
+    "tier": 1,
+    "name_en": "Legerdemain",
+    "cost": "1 Velocidad",
+    "src": null,
+    "req": [],
+    "text": "Haces trucos pequeños pero aparentemente imposibles: hacer desaparecer un objeto pequeño de tus manos y que aparezca en un lugar a tu alcance (tu bolsillo, por ejemplo), hacer creer a alguien que tiene algo que no tiene (o al revés), o cambiar dos objetos parecidos delante de sus ojos. *Acción*."
+   },
+   {
+    "tier": 1,
+    "name_en": "Opportunist",
+    "cost": "",
+    "src": null,
+    "req": [],
+    "text": "Tienes un recurso a favor al atacar a una criatura a alcance inmediato que ya ha sido atacada en ese asalto. *Enabler*."
+   },
+   {
+    "tier": 2,
+    "name_en": "Impersonate",
+    "cost": "2 Intelecto",
+    "src": null,
+    "req": [
+     "Legerdemain"
+    ],
+    "text": "Cambias tu voz, postura y gestos, improvisas un disfraz y tienes un recurso a favor al hacerte pasar por otra persona, sea alguien concreto o un papel genérico (un guardia de la ciudad). *Acción para iniciar*."
+   },
+   {
+    "tier": 2,
+    "name_en": "Wit or Menace",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Legerdemain",
+     "Fast Talk"
+    ],
+    "text": "Quedas entrenado en charm o en intimidation, a tu elección. [Adaptación: GotF decía «interacciones sociales agradables» o «negativas».]"
+   },
+   {
+    "tier": 3,
+    "name_en": "Poke and Run",
+    "cost": "3 Velocidad",
+    "src": null,
+    "req": [
+     "Opportunist"
+    ],
+    "text": "Atacas a una criatura que tenga ojos con el ataque dificultado. Si aciertas, durante la hora siguiente le cuesta ver: sus tareas que dependen de la vista quedan dificultadas. Además, como parte de la misma acción puedes moverte o intentar esconderte. *Acción*."
+   },
+   {
+    "tier": 4,
+    "name_en": "Calm",
+    "cost": "3 Intelecto",
+    "src": null,
+    "req": [
+     "Wit or Menace"
+    ],
+    "text": "Con chistes, canciones u otro arte impides que un enemigo ataque a nadie ni a nada durante un asalto. *Acción*."
+   },
+   {
+    "tier": 5,
+    "name_en": "Trap Trick",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Poke and Run"
+    ],
+    "text": "Estás entrenado en crear trampas sencillas con lo que hay en el entorno, y montas una en menos de un minuto. Decides si retiene a la víctima (lazo) o le hace daño (trampa de caída). Haces una tarea de Intelecto de dificultad 3 para el lazo, o igual al daño que quieres causar para la trampa de caída; tu entrenamiento facilita la tarea. Si tienes éxito, la trampa es de nivel 3 para que no la detecten y para liberarse de ella; nivel 4 si estás entrenado en stealth, disguise o similar, y nivel 5 si estás especializado. *Un minuto de acciones*."
+   },
+   {
+    "tier": 6,
+    "name_en": "Fake-Out",
+    "cost": "8 Intelecto",
+    "src": null,
+    "req": [
+     "Calm",
+     "Trap Trick"
+    ],
+    "text": "¡En realidad no te han hecho nada! Elige una opción: recuperas todos los puntos de una reserva, eliminas una herida, te quitas un estado (maldición, sueño, petrificación u otro efecto continuo) o conviertes una tirada fallida en un 20 natural. Un 20 puede no bastar si la dificultad es superior a 6, y no puedes cambiar un 1 natural. No vuelves a tenerla hasta después de una recuperación de diez horas. *Enabler*. [Adaptación: «subir un paso en el registro de daño» pasa a «eliminar una herida»; se quita la excepción de Wrest From Chance, que no está en el CCR.]"
+   },
+   {
+    "tier": 1,
+    "name_en": "Fast Talk",
+    "cost": "1 Intelecto",
+    "src": "Infiltrates, p. 196",
+    "req": [],
+    "text": "Al hablar con una criatura inteligente que te entiende y no es hostil, la convences de hacer una acción razonable en el asalto siguiente. El DJ decide qué es razonable: no debe poner en peligro evidente a la criatura ni a sus aliados ni ser muy impropio de ella. *Acción*."
+   },
+   {
+    "tier": 3,
+    "name_en": "Blend In",
+    "cost": "4 Intelecto",
+    "src": "Infiltrates, p. 196",
+    "req": [
+     "Impersonate"
+    ],
+    "text": "Cambiando postura, expresión y quizá ropa, pareces alguien sin importancia pero no fuera de lugar (un criado en un palacio, un escribiente en un archivo). Quien sea de nivel 3 o inferior no le da importancia a tu presencia; contra alguien de nivel superior que se fije en ti, haces una tarea de Intelecto contra su nivel para mantenerla. Mientras dure, tienes dos recursos a favor en esquivar y en stealth. Termina si llamas la atención (atacar, usar una habilidad, mover algo grande…) o al hacer una recuperación de diez minutos o más. Engañar a un animal (un perro guardián) queda dificultado. *Acción para iniciar*."
+   },
+   {
+    "tier": 4,
+    "name_en": "Feint",
+    "cost": "2 Velocidad",
+    "src": "Fights Dirty, p. 178",
+    "req": [
+     "Opportunist",
+     "Poke and Run"
+    ],
+    "text": "Si gastas una acción en crear una distracción, en el asalto siguiente aprovechas la guardia baja del enemigo: haces un ataque cuerpo a cuerpo con un recurso a favor y, si aciertas, hace 4 de daño adicional. *Acción*."
+   },
+   {
+    "tier": 5,
+    "name_en": "Invisibility",
+    "cost": "4+ Intelecto",
+    "src": "Infiltrates, p. 196",
+    "req": [
+     "Blend In",
+     "Impersonate"
+    ],
+    "text": "Te vuelves invisible. Termina si haces algo que revele tu presencia o posición (atacar, usar una habilidad, mover un objeto grande…). *Esfuerzo:* lo usas sobre una criatura que tocas; le dura hasta que se revele o hasta que tú hagas una recuperación de diez minutos o más. *Acción para iniciar*."
+   },
+   {
+    "tier": 6,
+    "name_en": "Spring Away",
+    "cost": "5 Velocidad",
+    "src": "Infiltrates, p. 196",
+    "req": [
+     "Feint",
+     "Trap Trick"
+    ],
+    "text": "Tras esquivar con éxito un ataque u otro peligro, puedes moverte de inmediato hasta una distancia corta (ese movimiento no dificulta tus tareas). No puedes volver a usarla hasta tu siguiente turno. *Enabler*."
+   }
+  ],
+  "desc": "Disfrutas encandilando, engañando, desconcertando y sorprendiendo a los demás [GotF, p. 131]."
+ },
+ {
+  "name_en": "Speaks Curses",
+  "source": "GotF",
+  "meta": [
+   [
+    "Intrusiones del DJ",
+    "tu maldición alcanza por error a un aliado; tu maldición te afecta a ti por error."
+   ],
+   [
+    "Equipo adicional",
+    "un amuleto de metal negro fundido, extraído en Soulrest, que inspira tus maldiciones. Quien lo tenga (si se lo das por voluntad propia) es inmune a ellas."
+   ],
+   [
+    "Conexiones y sugerencias de efecto menor/mayor",
+    "se quedan en GotF (p. 132–133)."
+   ],
+   [
+    "Regla común a todas las maldiciones",
+    "si el objetivo no puede oírte y entender tu idioma (o tu intención), tu ataque de maldición queda dificultado."
+   ]
+  ],
+  "notes": [
+   "Las conexiones son nuestras [Adaptación]. Curse of Incapacity requiere Curse of Disability porque la amplía, y el CCR no deja coger una habilidad que modifica otra que no tienes (p. 145). La otra rama es la de borrar rasgos: boca → gusanos → ojos.",
+   "Habilidades añadidas del CCR [Adaptación: se copian de otros focos del CCR, en su mismo rango; el árbol pasa de 7 a 12 habilidades]",
+   "Sense Magic y Blood Sorcery no son maldiciones, pero encajan con el foco: la primera detecta maldiciones y magia activa, y la segunda refleja la duda de GotF sobre si tu poder viene de una maldición sobre ti. Con las añadidas hay tres ramas: debilitar (Disability, Incapacity, Mind Games, Terrifying Gaze, Word of Death), borrar rasgos (boca, gusanos, ojos) y cuerpo maldito (Cursed Ink, Blood Sorcery)."
+  ],
+  "abilities": [
+   {
+    "tier": 1,
+    "name_en": "Curse of Baleful Blistering",
+    "cost": "1 Intelecto",
+    "src": null,
+    "req": [],
+    "text": "Maldices a una criatura a alcance corto y la cubres de forúnculos y pústulas. Si hace una acción enérgica (atacar a otra criatura o moverse más allá de distancia inmediata), las pústulas revientan, le hacen 2 de daño que ignora la Armadura y el efecto termina. *Acción*."
+   },
+   {
+    "tier": 1,
+    "name_en": "Cursed Ink",
+    "cost": "1 Intelecto",
+    "src": null,
+    "req": [],
+    "text": "Tu piel se cubre con un tatuaje de cuerpo entero, de tu diseño, durante un máximo de diez minutos. Solo se ve si llevas ropa que deje piel a la vista. Se vea o no, quien intente tocarte o golpearte cuerpo a cuerpo recibe 1 de daño que ignora la Armadura. Mientras dure, tus tiradas de bloqueo quedan facilitadas. *Enabler*. [Adaptación: GotF daba +1 a Armadura.]"
+   },
+   {
+    "tier": 2,
+    "name_en": "Curse of Disability",
+    "cost": "2 Intelecto",
+    "src": null,
+    "req": [
+     "Curse of Baleful Blistering"
+    ],
+    "text": "Maldices a una criatura a alcance corto con una de estas discapacidades: todas sus tareas quedan dificultadas durante un minuto; su velocidad se reduce a la mitad; no puede actuar durante un asalto; o hace 2 de daño menos (mínimo 1) durante un minuto. *Acción*."
+   },
+   {
+    "tier": 3,
+    "name_en": "Curse of Mouthless Muttering",
+    "cost": "3 Intelecto",
+    "src": null,
+    "req": [
+     "Curse of Disability"
+    ],
+    "text": "Maldices a una criatura a alcance corto y le borras la boca. No le vuelve hasta que te haga daño, hasta que la liberes o durante un día, lo que pase antes. Pierde el habla (si tenía idioma) y los ataques con la boca, y todas sus demás tareas quedan dificultadas. *Acción*."
+   },
+   {
+    "tier": 4,
+    "name_en": "Crown of Burrowing Worms",
+    "cost": "5 Intelecto",
+    "src": null,
+    "req": [
+     "Curse of Mouthless Muttering"
+    ],
+    "text": "Maldices a una criatura a alcance corto y le infestas la cabeza de gusanos escarlata que comen carne. Duran hasta que te haga daño, hasta que la liberes o durante un día, lo que pase antes. Si tienes éxito, queda aturdida un asalto, no puede actuar y recibe 2 de daño que ignora la Armadura. El asalto siguiente queda atontada y no puede actuar, sus tareas quedan dificultadas y recibe 1 de daño que ignora la Armadura. En los asaltos posteriores recibe 1 de daño. *Acción*. [El original dice a la vez que en el segundo asalto no puede actuar y que sus tareas quedan dificultadas; se traduce tal cual.]"
+   },
+   {
+    "tier": 5,
+    "name_en": "Curse of Incapacity",
+    "cost": "6 Intelecto",
+    "src": null,
+    "req": [
+     "Curse of Disability"
+    ],
+    "text": "Maldices a una criatura a alcance corto con las cuatro discapacidades de Curse of Disability a la vez. *Acción*."
+   },
+   {
+    "tier": 6,
+    "name_en": "Curse of Eyeless Anguish",
+    "cost": "5 Intelecto",
+    "src": null,
+    "req": [
+     "Curse of Mouthless Muttering",
+     "Crown of Burrowing Worms"
+    ],
+    "text": "Maldices a una criatura a alcance corto y le borras los ojos. No le vuelven hasta que te haga daño, hasta que la liberes o durante un día, lo que pase antes. Queda ciega a efectos prácticos y actúa como en oscuridad total cuando ataca o la atacan: sus tiradas quedan dificultadas en dos pasos y las tiradas contra ella, facilitadas en dos pasos. *Acción*."
+   },
+   {
+    "tier": 1,
+    "name_en": "Sense Magic",
+    "cost": "1 Intelecto",
+    "src": "Crafts Illusions, p. 168",
+    "req": [],
+    "text": "Si hay magia de cualquier tipo actuando a alcance corto, lo sabes (pero no los detalles). *Última acción*."
+   },
+   {
+    "tier": 2,
+    "name_en": "Blood Sorcery",
+    "cost": "",
+    "src": "Consorts With the Dead, p. 164",
+    "req": [
+     "Cursed Ink"
+    ],
+    "text": "Alimentas tus habilidades con tu propia sangre, espíritu o energía vital: recibes una herida moderada y sumas +1 de Ventaja a la reserva que elijas mientras conserves esa herida. *Enabler*."
+   },
+   {
+    "tier": 4,
+    "name_en": "Mind Games",
+    "cost": "4 Intelecto",
+    "src": "Fights Dirty, p. 178",
+    "req": [
+     "Curse of Disability"
+    ],
+    "text": "Usas mentiras, burlas y quizá lenguaje odioso y obsceno contra un enemigo que te entienda. Si tienes éxito, queda confuso, furioso o tan distraído que pierde su siguiente turno, y en el turno posterior sus tareas quedan dificultadas. *Acción*."
+   },
+   {
+    "tier": 5,
+    "name_en": "Terrifying Gaze",
+    "cost": "6 Intelecto",
+    "src": "Consorts With the Dead, p. 164",
+    "req": [
+     "Mind Games",
+     "Crown of Burrowing Worms"
+    ],
+    "text": "Lanzas una mirada temible a hasta cinco criaturas vivas a alcance corto que puedan verte. Haces un ataque de Intelecto contra cada una; las que fallen quedan paralizadas de miedo, sin moverse ni actuar, hasta que hagas una recuperación de diez minutos o más, las ataquen o salgas de su campo de visión. Las criaturas sin mente pueden ser inmunes. *Acción*."
+   },
+   {
+    "tier": 6,
+    "name_en": "Word of Death",
+    "cost": "6 Intelecto",
+    "src": "Consorts With the Dead, p. 164",
+    "req": [
+     "Curse of Incapacity",
+     "Terrifying Gaze"
+    ],
+    "text": "Pronuncias una palabra mágica tan poderosa que puede matar en el acto: haces un ataque de Intelecto contra un enemigo a alcance corto y, si aciertas, le haces 10 de daño. *Acción*."
+   }
+  ],
+  "desc": "Pronuncias maldiciones abominables y las lanzas sobre quien merece castigo; los animales se apartan de ti y las plantas se marchitan [GotF, p. 132]."
+ },
+ {
+  "name_en": "Walks With the Night",
+  "source": "GotF",
+  "meta": [
+   [
+    "Intrusiones del DJ",
+    "un enemigo tiene una cifra que crea una luz intensa que podría aturdirte un asalto; una de tus sombras cobra voluntad propia; un aliado te confunde con un enemigo."
+   ],
+   [
+    "Equipo adicional",
+    "una gran capa negra y una máscara."
+   ],
+   [
+    "Habilidades de sombra",
+    "si tienes otras habilidades visibles (conjuros, poderes psíquicos…), casi no hacen ruido y sus efectos visuales son oscuros y sombríos. Solo cambia su aspecto."
+   ],
+   [
+    "Conexiones y sugerencias de efecto menor/mayor",
+    "se quedan en GotF (p. 134–135)."
+   ]
+  ],
+  "notes": [
+   "Las conexiones son nuestras [Adaptación]: una rama de criaturas (Summon Creature of the Night → Nightmare), otra de atravesar barreras (Creeping Shadow → Shadow) y otra de ataque (Create Shadow → Foreboding Strike). Become the Night cierra las dos últimas.",
+   "Habilidades añadidas del CCR [Adaptación: se copian de otros focos del CCR, en su mismo rango; el árbol pasa de 8 a 12 habilidades]",
+   "Slippery Customer se solapa en parte con Night Eyes (las dos te ayudan en la oscuridad), pero no la repite: Night Eyes es ver, y Slippery Customer es moverte y esconderte."
+  ],
+  "abilities": [
+   {
+    "tier": 1,
+    "name_en": "Create Shadow",
+    "cost": "2 Intelecto",
+    "src": null,
+    "req": [],
+    "text": "Haces brotar sombras en un punto a alcance corto durante un máximo de un minuto, dentro de un cubo de 3 m. Puedes atenuar la luz intensa o crear oscuridad total (cegando a quien no vea en la oscuridad). Como parte de otra acción puedes mover la zona hasta una distancia corta cada asalto. También puedes crear escenas con sombras, desde proyectar una sombra en la pared hasta representar una escena gastando una acción cada asalto. *Acción para iniciar*."
+   },
+   {
+    "tier": 1,
+    "name_en": "Creeping Shadow",
+    "cost": "1 Intelecto",
+    "src": null,
+    "req": [],
+    "text": "Si una sombra puede pasar por una barrera física (bajo una puerta, por una grieta o una cerradura), tú también, aunque despacio: 3 cm por asalto, con un mínimo de un asalto por barrera. No puedes actuar (salvo moverte) ni percibir nada hasta atravesarla del todo. No atraviesas barreras completamente selladas a la luz. *Acción*."
+   },
+   {
+    "tier": 1,
+    "name_en": "Night Eyes",
+    "cost": "",
+    "src": null,
+    "req": [],
+    "text": "Ves con luz muy tenue como con luz intensa, y en la oscuridad total como con luz tenue. *Enabler*. [Es una excepción a la regla del CCR de que los PJ no ven en la oscuridad total (p. 85).]"
+   },
+   {
+    "tier": 2,
+    "name_en": "Summon Creature of the Night",
+    "cost": "2 Intelecto",
+    "src": null,
+    "req": [
+     "Create Shadow",
+     "Night Eyes"
+    ],
+    "text": "Invocas una criatura de la noche de nivel 3 (un lobo, un fantasma, una araña gigante) o una horda de animales pequeños (murciélagos, ratas) para que te ayuden temporalmente. Te obedecen mientras les prestes atención, pero tienes que gastar tu acción cada asalto en dirigirlos. Son criaturas de la zona que llegan por su propio pie: si estás en un lugar inaccesible, no funciona. Con luz intensa no se quedan más de un par de asaltos. *Acción*."
+   },
+   {
+    "tier": 3,
+    "name_en": "Foreboding Strike",
+    "cost": "4 Intelecto",
+    "src": null,
+    "req": [
+     "Create Shadow"
+    ],
+    "text": "Al atacar, una oscuridad pasa por los ojos del enemigo y no ve: tu ataque queda facilitado en dos pasos si es una criatura que depende de la vista. Sirve con cualquier tipo de ataque. *Enabler*."
+   },
+   {
+    "tier": 4,
+    "name_en": "Shadow",
+    "cost": "4 Intelecto",
+    "src": null,
+    "req": [
+     "Creeping Shadow"
+    ],
+    "text": "Durante diez minutos adquieres rasgos de una sombra: eres una silueta oscura y quedas entrenado en stealth. Atraviesas barreras sólidas, incluso las selladas a la luz (pero no las de energía), a 30 cm por asalto, y puedes percibir mientras lo haces, así que puedes mirar a través de muros. No puedes afectar a la materia normal ni ella a ti: no puedes atacar ni tocar nada. Los ataques y efectos de luz sí te afectan, y un destello repentino puede hacerte perder el siguiente turno. *Acción para iniciar*."
+   },
+   {
+    "tier": 5,
+    "name_en": "Nightmare",
+    "cost": "5 Intelecto",
+    "src": null,
+    "req": [
+     "Summon Creature of the Night"
+    ],
+    "text": "Creas una criatura terrorífica de sombra goteante y la lanzas contra tus enemigos. Dura mientras gastes tu acción en concentrarte en ella, hasta que la disipes o la destruyan. Cada vez que ataca, eliges una opción: *Horrify*, el objetivo cae de rodillas, recibe 3 de daño que ignora la Armadura y pierde su siguiente turno; *Confusion*, en su siguiente acción el objetivo ataca a un aliado; *Curse of the Nightcaul*, una película de oscuridad le cubre los ojos y queda ciego hasta que se la arranque, lo que le hace 5 de daño que ignora la Armadura. *Acción*."
+   },
+   {
+    "tier": 6,
+    "name_en": "Become the Night",
+    "cost": "6 Intelecto",
+    "src": null,
+    "req": [
+     "Shadow",
+     "Foreboding Strike"
+    ],
+    "text": "Te vuelves sombra de forma selectiva: tu ataque de este turno ignora la Armadura del enemigo, lo atraviesa en parte y le hace 5 de daño adicional. Sirve con cualquier tipo de ataque. *Enabler*."
+   },
+   {
+    "tier": 2,
+    "name_en": "Slip Into Shadow",
+    "cost": "0+ Intelecto",
+    "src": "Walks Through Walls, p. 230",
+    "req": [
+     "Creeping Shadow",
+     "Create Shadow"
+    ],
+    "text": "Aunque estés a la vista de una criatura, una tarea de stealth con éxito te permite escabullirte y esconderte en una sombra cercana, tras un árbol o un mueble, o en la habitación de al lado, como tu acción. *Esfuerzo:* una criatura más de la que esconderte (tarea de stealth aparte contra cada una). *Enabler*. *En el rango 3:* puedes esconderte de tres criaturas de base."
+   },
+   {
+    "tier": 4,
+    "name_en": "Wraith Cloak",
+    "cost": "4 Intelecto",
+    "src": "Consorts With the Dead, p. 164",
+    "req": [
+     "Summon Creature of the Night",
+     "Slip Into Shadow"
+    ],
+    "text": "A tu orden, un espíritu no muerto cercano te envuelve hasta que hagas una recuperación de diez minutos o más. Quien intente tocarte o golpearte cuerpo a cuerpo recibe 4 de daño automáticamente (sin tirada), y mientras dure tus tareas de stealth quedan facilitadas. *Enabler*."
+   },
+   {
+    "tier": 5,
+    "name_en": "Slippery Customer",
+    "cost": "",
+    "src": "Sneaks Through the Shadows, p. 216",
+    "req": [
+     "Shadow",
+     "Slip Into Shadow"
+    ],
+    "text": "Ignoras todas las penalizaciones por luz muy tenue y oscuridad, y por actuar en espacios estrechos. Tienes un recurso a favor en stealth con luz tenue, muy tenue y oscuridad."
+   },
+   {
+    "tier": 6,
+    "name_en": "Again and Again",
+    "cost": "6 Velocidad",
+    "src": "Sneaks Through the Shadows, p. 216",
+    "req": [
+     "Slippery Customer",
+     "Nightmare"
+    ],
+    "text": "Puedes hacer una acción extra en tu turno. *Enabler*."
+   }
+  ],
+  "desc": "Tienes poder sobre la oscuridad; no tienes nada que temer en ella, pero otros sí pueden temerte a ti [GotF, p. 134]."
+ },
+ {
+  "name_en": "Operates Undercover",
+  "source": "CSR15",
+  "meta": [
+   [
+    "Intrusiones del DJ",
+    "a la gente no le gusta que la manipulen; hasta el mejor disfraz tiene un fallo; cuando no eres lo que pareces, a veces los demás tampoco."
+   ],
+   [
+    "Equipo adicional",
+    "un kit de disfraz."
+   ],
+   [
+    "Conexiones y sugerencias de efecto menor/mayor",
+    "se quedan en el CSR15 (p. 155)."
+   ]
+  ],
+  "notes": [
+   "Las conexiones son nuestras [Adaptación]: una rama de engaño (Investigate / Letting Their Guard Down → Disguise → Pull a Fast One → Trust to Luck o Brainwashing) y otra de oficio (Investigate / Natural Sneak → Agent Provocateur → Convenient Device → Using What's Available, y Assassin). Las habilidades añadidas del CCR van marcadas con su foco y página; el árbol pasa de 7 a 12 habilidades. Se descartó Master of Disguise porque repite Disguise. Trust to Luck es la misma regla que Flaw in Everything."
+  ],
+  "abilities": [
+   {
+    "tier": 1,
+    "name_en": "Investigate",
+    "cost": "",
+    "src": null,
+    "req": [],
+    "text": "Quedas entrenado en perception, deception, criptografía y hacking. *Enabler*. [La criptografía no está en la lista del CCR y el hacking (entrar en ordenadores) no tiene uso en GotF; se traducen tal cual.]"
+   },
+   {
+    "tier": 1,
+    "name_en": "Letting Their Guard Down",
+    "cost": "1 Intelecto",
+    "src": "Infiltrates, p. 196",
+    "req": [],
+    "text": "Si tratas con un PNJ inteligente y usas con éxito disguise o deception contra él, te revela algo más de información menor: qué puerta nunca se cierra con llave, cuántos guardias hay en el piso de arriba o cómo piensa fallar el rey en un asunto. *Enabler*."
+   },
+   {
+    "tier": 1,
+    "name_en": "Natural Sneak",
+    "cost": "2+ Intelecto",
+    "src": "Infiltrates, p. 196",
+    "req": [],
+    "text": "Si en una tarea de lockpicking, perception, pickpocketing o stealth sacas menos de 6, cuenta como un 6 (así que un 1 no provoca intrusión del DJ). Se renueva al hacer una recuperación. *Esfuerzo:* sube en 3 el mínimo. *Enabler*. *En el rango 3:* el mínimo pasa a 9."
+   },
+   {
+    "tier": 2,
+    "name_en": "Disguise",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Investigate",
+     "Letting Their Guard Down"
+    ],
+    "text": "Quedas entrenado en disguise. Cambiando postura, voz, gestos y pelo pareces otra persona mientras mantengas el disfraz. Imitar a alguien concreto sin un kit de disfraz es extremadamente difícil. *Enabler*."
+   },
+   {
+    "tier": 3,
+    "name_en": "Agent Provocateur",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Investigate",
+     "Natural Sneak"
+    ],
+    "text": "Quedas entrenado en una de estas opciones: atacar con un arma a tu elección, demolición, o stealth y lockpicking (las dos). *Enabler*. [Adaptación: «atacar con un arma» pasa a attacking con ese tipo de arma, p. 20.]"
+   },
+   {
+    "tier": 3,
+    "name_en": "Scrutinize Defenses",
+    "cost": "3+ Intelecto",
+    "src": "Infiltrates, p. 197",
+    "req": [
+     "Investigate"
+    ],
+    "text": "Si pasas una hora explorando a fondo una zona de hasta una distancia larga de diámetro (directamente, con planos o preguntando a quien la conoce), puedes hacer al DJ una pregunta sobre sus defensas y procedimientos, y debe responderte con la verdad. Se renueva con una recuperación de diez horas. *Esfuerzo:* una pregunta más. *Acción para iniciar; una hora para completar*."
+   },
+   {
+    "tier": 4,
+    "name_en": "Pull a Fast One",
+    "cost": "3 Intelecto",
+    "src": null,
+    "req": [
+     "Disguise"
+    ],
+    "text": "Cuando haces un timo, robas una bolsa, engañas a un incauto, cuelas algo delante de un guardia o similar, la tarea queda facilitada. *Enabler*."
+   },
+   {
+    "tier": 4,
+    "name_en": "Convenient Device",
+    "cost": "Intelecto variable",
+    "src": "Infiltrates, p. 197",
+    "req": [
+     "Agent Provocateur"
+    ],
+    "text": "Porque lo planeaste o te dieron la herramienta adecuada, sacas un objeto que elimina un estado dañino o negativo que te afecta a ti o a un aliado a alcance inmediato: un antídoto si te han envenenado, un ungüento si a un aliado le han echado algo a los ojos, una ganzúa diminuta si te han maniatado. Funciona una sola vez (puedes volver a usar la habilidad para sacar otro). Cuesta tantos puntos de Intelecto como el nivel del efecto que quieres superar. *Acción*."
+   },
+   {
+    "tier": 5,
+    "name_en": "Using What's Available",
+    "cost": "4 Intelecto",
+    "src": null,
+    "req": [
+     "Agent Provocateur",
+     "Convenient Device"
+    ],
+    "text": "Si tienes tiempo y libertad para rebuscar materiales corrientes a tu alrededor, fabricas un recurso temporal que te ayuda una vez en una tarea concreta: algo para trepar un muro, algo que sirva de ganzúa para salir de una celda, algo que haga ruido y destello para distraer… Dura un minuto como máximo o hasta que lo uses. *Un minuto para reunir materiales; acción para fabricarlo*."
+   },
+   {
+    "tier": 6,
+    "name_en": "Trust to Luck",
+    "cost": "3 Intelecto",
+    "src": null,
+    "req": [
+     "Pull a Fast One",
+     "Using What's Available"
+    ],
+    "text": "Tira 1d6: con un par, la tarea que intentas queda facilitada en dos pasos; con un 1, queda dificultada un paso. *Enabler*."
+   },
+   {
+    "tier": 6,
+    "name_en": "Assassin",
+    "cost": "5 Potencia",
+    "src": null,
+    "req": [
+     "Agent Provocateur"
+    ],
+    "text": "Si golpeas a un enemigo de nivel 3 o inferior con un arma que puedes usar libremente o con la que estás entrenado, lo matas en el acto. *Acción*. [Adaptación: «practicado» pasa a «usar libremente» (CCR, p. 13).]"
+   },
+   {
+    "tier": 6,
+    "name_en": "Brainwashing",
+    "cost": "6+ Intelecto",
+    "src": "Infiltrates, p. 197",
+    "req": [
+     "Pull a Fast One"
+    ],
+    "text": "Con engaños, mentiras bien dichas y drogas (o magia) controlas los actos de una criatura de nivel 3 o inferior que tocas, si aciertas un ataque de Intelecto contra ella. Dura hasta que hagas una recuperación de diez minutos o más; si la ves, decides en cada momento si obedece o actúa libremente. Al acabar, no recuerda haber estado controlada ni lo que hizo. *Esfuerzo:* aumenta en 1 el nivel máximo de la criatura. *Acción para iniciar*."
+   }
+  ],
+  "desc": "Eres espía o agente encubierto: averiguas lo que otros quieren mantener en secreto [CSR15, p. 155]."
+ },
+ {
+  "name_en": "Channels Divine Blessings",
+  "source": "CSR15",
+  "meta": [
+   [
+    "Intrusiones del DJ",
+    "la fe de un espíritu, demonio o criatura similar supera tu bendición; un PNJ queda poseído por un demonio; un aliado de tu fe resulta ser corrupto; tu símbolo sagrado se agrieta sin motivo."
+   ],
+   [
+    "Equipo adicional",
+    "un símbolo de tu fe tallado en hierro."
+   ],
+   [
+    "Conexiones y sugerencias de efecto menor/mayor",
+    "se quedan en el CSR15 (p. 106)."
+   ]
+  ],
+  "notes": [
+   "-",
+   "*Authority/Law/Peace (3 Intelecto):* un enemigo que te oye y te entiende no puede atacar a nadie ni a nada durante un asalto. Acción.",
+   "-",
+   "*Benevolence/Righteousness/Spirit (2+ Intelecto):* destruyes o destierras un demonio, espíritu o criatura similar de nivel 1 a alcance corto. En vez de facilitar la tarea, el Esfuerzo sube el nivel máximo del objetivo (un objetivo de nivel 5 requiere cuatro niveles de Esfuerzo). Acción.",
+   "-",
+   "*Death/Darkness (2 Intelecto):* un objetivo a alcance corto se marchita y recibe 3 de daño. Acción.",
+   "-",
+   "*Desire/Love/Health (3 Intelecto):* con un toque devuelves 1d6 puntos a una reserva de cualquier criatura, incluido tú. Es una tarea de Intelecto de dificultad 2, que sube un paso cada vez que curas a la misma criatura y vuelve a 2 cuando ella descansa diez horas. Acción. [Devuelve puntos de reserva, no cura heridas; para eso está Healing Hand (Tends to the Wounded).]",
+   "-",
+   "*Earth/Stone:* quedas entrenado en trepar, cantería y espeleología. Enabler. [Adaptación: en el CCR, athletics y crafting (cantería); la espeleología no tiene habilidad propia.]",
+   "-",
+   "*Knowledge/Wisdom (3 Intelecto):* eliges hasta tres criaturas (tú puedes ser una). Durante un minuto, un tipo de tarea concreto (no ataques ni defensas) les queda facilitado mientras sigan a alcance inmediato de ti. Acción.",
+   "-",
+   "*Nature/Animals/Plants:* quedas entrenado en botánica y en tratar animales. Enabler. [Adaptación: en el CCR, biology y animal care.]",
+   "-",
+   "*Protection/Silence (3 Intelecto):* creas a tu alrededor una burbuja de protección de radio inmediato durante un minuto, que se mueve contigo. Las tiradas de defensa tuyas y de quien elijas dentro quedan facilitadas, y ningún ruido suena más fuerte que una voz normal. Acción para iniciar.",
+   "-",
+   "*Sky/Air (2 Intelecto):* una criatura que tocas es inmune a toxinas y contaminantes del aire durante diez minutos. Acción.",
+   "-",
+   "*Sun/Light/Fire (2 Intelecto):* una criatura u objeto a alcance corto se prende y recibe 1 de daño por asalto hasta que alguien gaste una acción en apagarlo. Acción.",
+   "-",
+   "*Trickery/Greed/Commerce:* quedas entrenado en detectar engaños. Enabler. [Adaptación: en el CCR, recognizing motive.]",
+   "-",
+   "*War (1 Intelecto):* un objetivo a alcance corto (tú incluido) hace 2 de daño adicional con su siguiente ataque con arma que acierte. Acción.",
+   "-",
+   "*Water/The Sea (2 Intelecto):* un objetivo que tocas respira bajo el agua durante diez minutos. Acción.",
+   "Las conexiones son nuestras [Adaptación]: una rama de milagros (Blessing of the Gods → Divine Radiance → Overawe → Divine Symbol), otra de fe (Divine Knowledge → Divine Fortitude → Divine Intervention) y otra contra el mal (Sense Evil → Shield Against Evil / Unearth Evil → Rebuke Evil). El árbol pasa de 7 a 12 habilidades. No se añaden Tribulation ni Supreme Retribution porque equivalen a Divine Radiance y Divine Symbol."
+  ],
+  "abilities": [
+   {
+    "tier": 1,
+    "name_en": "Divine Knowledge",
+    "cost": "",
+    "src": null,
+    "req": [],
+    "text": "Quedas entrenado en todas las tareas de conocimiento de seres divinos. *Enabler*. [Adaptación: en el CCR es religious lore.]"
+   },
+   {
+    "tier": 1,
+    "name_en": "Blessing of the Gods",
+    "cost": "",
+    "src": null,
+    "req": [],
+    "text": "Como siervo de los dioses invocas bendiciones en su nombre, según el carácter y la esfera de tu dios. Eliges dos de estas:"
+   },
+   {
+    "tier": 1,
+    "name_en": "Inspiring Trust",
+    "cost": "1 Intelecto",
+    "src": "Quells Evil, p. 210",
+    "req": [],
+    "text": "Los aliados en tu presencia que comparten tu idea del bien y el mal suman +1 a sus recuperaciones. *Enabler*."
+   },
+   {
+    "tier": 1,
+    "name_en": "Sense Evil",
+    "cost": "2+ Intelecto",
+    "src": "Quells Evil, p. 210",
+    "req": [],
+    "text": "Cuando usas una acción para percibir muertos vivientes, demonios (o poseídos por demonios) o criaturas similares a alcance inmediato, si sacas 9 o menos cuenta como un 9 (así que un 1 no provoca intrusión). Dura hasta que hagas una recuperación de diez minutos o más. *Esfuerzo:* sube en 3 el mínimo. *Acción para iniciar*. *En el rango 3:* el mínimo pasa a 12."
+   },
+   {
+    "tier": 2,
+    "name_en": "Divine Fortitude",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Divine Knowledge",
+     "Blessing of the Gods"
+    ],
+    "text": "Tu fe te da reservas extra: +4 a tu reserva de Intelecto. *Enabler*."
+   },
+   {
+    "tier": 2,
+    "name_en": "Shield Against Evil",
+    "cost": "1 Intelecto",
+    "src": "Quells Evil, p. 210",
+    "req": [
+     "Sense Evil",
+     "Blessing of the Gods"
+    ],
+    "text": "Te bendices a ti o a un aliado que tocas contra muertos vivientes, demonios o criaturas similares hasta que hagas una recuperación de diez minutos o más: las tiradas de defensa contra ellos quedan facilitadas, y es inmune a la influencia mental, el miedo y la posesión (de cualquier origen). *Acción*."
+   },
+   {
+    "tier": 3,
+    "name_en": "Divine Radiance",
+    "cost": "2 Intelecto",
+    "src": null,
+    "req": [
+     "Blessing of the Gods"
+    ],
+    "text": "Tu plegaria hace caer resplandor divino sobre un objetivo indigno a alcance largo y le hace 4 de daño. Si es un demonio, espíritu o similar, además queda sobrecogido y no puede actuar en su siguiente turno; después no puede volver a quedar sobrecogido por este ataque durante varias horas. *Acción*."
+   },
+   {
+    "tier": 3,
+    "name_en": "Unearth Evil",
+    "cost": "4+ Intelecto",
+    "src": "Quells Evil, p. 211",
+    "req": [
+     "Sense Evil",
+     "Divine Knowledge"
+    ],
+    "text": "Formas un «mapa de calor» mental de los muertos vivientes, demonios y criaturas similares en un radio de 16 km, con su posición aproximada (unos 30 m). Te lleva entre una hora y un día de concentración, según decida el DJ, y no sabes de antemano cuánto. Las criaturas de nivel 4 o superior notan que algo las ha detectado. *Esfuerzo:* con dos niveles, sigues sabiendo dónde están aunque se muevan hasta que hagas una recuperación de una hora o más. *Acción para iniciar*."
+   },
+   {
+    "tier": 4,
+    "name_en": "Overawe",
+    "cost": "5 Intelecto",
+    "src": null,
+    "req": [
+     "Divine Radiance"
+    ],
+    "text": "Un haz de resplandor divino ilumina a un objetivo a alcance largo, lo pone de rodillas y lo deja indefenso hasta diez minutos o hasta que se libere: no puede defenderse, atacar ni hacer nada salvo intentar librarse cada asalto. Si es un demonio, espíritu o similar, recibe además 1 de daño que ignora la Armadura cada asalto que siga afectado. *Acción para iniciar*."
+   },
+   {
+    "tier": 4,
+    "name_en": "Rebuke Evil",
+    "cost": "4+ Intelecto",
+    "src": "Quells Evil, p. 211",
+    "req": [
+     "Shield Against Evil",
+     "Divine Radiance"
+    ],
+    "text": "Increpas a un muerto viviente, demonio o criatura similar a alcance corto; si aciertas un ataque de Intelecto, hace lo posible por cumplir el objetivo que le marques, aunque le perjudique a él o a sus aliados, hasta que hagas una recuperación de diez minutos o más. *Esfuerzo:* afecta a un enemigo más (tirada aparte contra cada uno; la orden es la misma para todos). *Última acción*."
+   },
+   {
+    "tier": 5,
+    "name_en": "Divine Intervention",
+    "cost": "2 Intelecto, o 2 Intelecto + 4 PX",
+    "src": null,
+    "req": [
+     "Overawe",
+     "Divine Fortitude"
+    ],
+    "text": "Pides a tu dios que intervenga, normalmente sobre una criatura a alcance largo, y le cambia la vida un poco: se produce un efecto especial mayor, como al sacar un 20 natural en un ataque. Si quieres algo de más alcance y el DJ lo permite, puedes pedir una intervención parecida a una intrusión del DJ: cuesta 4 PX, puede no salir como esperas y no puedes volver a pedirla en una semana. *Acción*."
+   },
+   {
+    "tier": 6,
+    "name_en": "Divine Symbol",
+    "cost": "5+ Intelecto",
+    "src": null,
+    "req": [
+     "Overawe",
+     "Rebuke Evil"
+    ],
+    "text": "Trazas en el aire un símbolo luminoso y columnas de resplandor divino caen sobre hasta cinco objetivos a alcance largo. Cada ataque con éxito hace 5 de daño; cada ataque después del primero es una acción extra en tu turno (CCR, p. 305) [Adaptación]. Si usas Esfuerzo para aumentar el daño, cada nivel suma 2 (no 3), pero los objetivos reciben 1 de daño aunque falles. *Acción*."
+   }
+  ],
+  "desc": "Eres sacerdote: el poder de tu dios fluye por ti y te permite obrar milagros en su nombre [CSR15, p. 105–106]."
+ },
+ {
+  "name_en": "Awakens Dreams",
+  "source": "CSR15",
+  "meta": [
+   [
+    "Intrusiones del DJ",
+    "un sueño suelto escapa y va a por ti; empiezas a caminar dormido; tu doble onírico intenta suplantarte; tus aliados tienen pesadillas después de que uses ciertas habilidades."
+   ],
+   [
+    "Equipo adicional",
+    "ninguno."
+   ],
+   [
+    "Conexiones y sugerencias de efecto menor/mayor",
+    "se quedan en el CSR15 (p. 95)."
+   ]
+  ],
+  "notes": [
+   "Las conexiones son nuestras [Adaptación]: una rama de sueños ajenos (Oneirochemy / Empathic Sense → Dream Thief → Daydream → Chamber of Dreams o Precognition) y otra de sueños hechos realidad (Dreamcraft → Illusory Disguise / Dream Becomes Reality → Illusory Selves → Nightmare o Grandiose Illusion). El árbol pasa de 8 a 13 habilidades. No se añaden Minor Illusion ni Terrifying Image porque equivalen a Dreamcraft y Nightmare."
+  ],
+  "abilities": [
+   {
+    "tier": 1,
+    "name_en": "Dreamcraft",
+    "cost": "1 Intelecto",
+    "src": null,
+    "req": [],
+    "text": "Sacas una imagen de un sueño y la colocas a alcance largo durante un minuto como máximo: puede ser diminuta o llenar un área de distancia inmediata de diámetro. Parece sólida pero es intangible. El sueño (una escena, una criatura o un objeto) está quieto salvo que gastes tu acción cada asalto en animarlo; así puedes moverlo hasta una distancia corta por asalto, dentro del alcance largo, y hacer que suene, pero no que huela. Tocarlo o interactuar con él un rato lo deshace en niebla: atacarlo, o que un PNJ lo atraviese o hable con una criatura soñada más de un par de asaltos. *Acción para iniciar; acción para animar*."
+   },
+   {
+    "tier": 1,
+    "name_en": "Oneirochemy",
+    "cost": "",
+    "src": null,
+    "req": [],
+    "text": "Quedas entrenado en tareas relacionadas con el sueño y en mezclar elixires naturales que ayudan a dormir. *Enabler*."
+   },
+   {
+    "tier": 1,
+    "name_en": "Empathic Sense",
+    "cost": "",
+    "src": "Commands Mental Powers, p. 162",
+    "req": [],
+    "text": "Percibes el estado mental general de un ser a alcance corto: su emoción general y, sobre todo, lo que siente por ti. *Última acción*."
+   },
+   {
+    "tier": 2,
+    "name_en": "Dream Thief",
+    "cost": "2 Intelecto",
+    "src": null,
+    "req": [
+     "Oneirochemy",
+     "Empathic Sense"
+    ],
+    "text": "Robas un sueño pasado a una criatura viva a alcance corto. Pierde 2 puntos de Intelecto (ignora la Armadura) y averiguas algo que el DJ decida revelarte: su naturaleza, parte de sus planes, un recuerdo… *Acción*. [Contra un PNJ son 2 de daño; contra un PJ es daño de Intelecto, que sigue existiendo en el CCR (p. 299).]"
+   },
+   {
+    "tier": 2,
+    "name_en": "Illusory Disguise",
+    "cost": "2+ Intelecto",
+    "src": "Crafts Illusions, p. 168",
+    "req": [
+     "Dreamcraft"
+    ],
+    "text": "Pareces otra persona o cosa de tu tamaño y forma aproximados hasta que hagas una recuperación de una hora o más, sin necesidad de concentrarte. *Esfuerzo:* disfrazas a una criatura más (1 Intelecto); si la pierdes de vista, pierde el disfraz. *Acción*."
+   },
+   {
+    "tier": 3,
+    "name_en": "Dream Becomes Reality",
+    "cost": "4 Intelecto",
+    "src": null,
+    "req": [
+     "Dreamcraft"
+    ],
+    "text": "Creas un objeto soñado de la forma que imagines, de tu tamaño o menor, con cuerpo y peso aparentes. Es tosco y sin piezas móviles: una espada, un escudo, una escalera corta… Puede tener la masa del objeto real, si quieres, y es tan resistente como el hierro, pero si no te quedas a alcance largo solo dura un minuto. *Acción*."
+   },
+   {
+    "tier": 3,
+    "name_en": "Consummate Dreamer",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Dream Thief",
+     "Oneirochemy"
+    ],
+    "text": "+2 a tu reserva de Intelecto. *Enabler*."
+   },
+   {
+    "tier": 4,
+    "name_en": "Daydream",
+    "cost": "4 Intelecto",
+    "src": null,
+    "req": [
+     "Dream Thief"
+    ],
+    "text": "Sumes a alguien en una ensoñación y cambias su realidad por un sueño tuyo durante un minuto como máximo. Puedes afectar a un objetivo a alcance largo que veas, o a uno a 16 km si tienes pelo o restos de su piel. Por fuera, el objetivo se queda inmóvil; por dentro vive la realidad sustituida (o un sueño dentro del sueño, si dormía). Si está en apuros, puede repetir la defensa de Intelecto cada asalto para liberarse, aunque quizá no sepa lo que le pasa. El sueño sigue un guión que preparas al usar la habilidad o, si gastas tus acciones (y quedas en un estado parecido al suyo), lo diriges asalto a asalto. Contra un objetivo dormido, tu ataque inicial queda facilitado. *Acción para iniciar; si diriges el sueño, una acción por asalto*."
+   },
+   {
+    "tier": 4,
+    "name_en": "Illusory Selves",
+    "cost": "4 Intelecto",
+    "src": "Crafts Illusions, p. 169",
+    "req": [
+     "Illusory Disguise",
+     "Dream Becomes Reality"
+    ],
+    "text": "Creas cuatro ilusiones de ti a alcance corto que duran hasta que hagas una recuperación de diez minutos o más. Diriges sus actos mentalmente; no son reflejos, cada una puede hacer algo distinto. Si golpean a una con violencia, eliges si se queda inmóvil o desaparece. *Acción para iniciar*."
+   },
+   {
+    "tier": 5,
+    "name_en": "Nightmare",
+    "cost": "5 Intelecto",
+    "src": null,
+    "req": [
+     "Dream Becomes Reality",
+     "Daydream"
+    ],
+    "text": "Traes al mundo una criatura horrible de tu peor pesadilla (nivel 5; salud 15; 5 de daño) y la lanzas contra tus enemigos. Dura cada asalto que gastes tu acción en concentrarte en ella, o hasta que la disipes o la destruyan. Al llamarla eliges una de estas habilidades, que usa en vez de su ataque normal: *Horrify*, el objetivo cae de rodillas, recibe 3 de daño que ignora la Armadura y queda aturdido un asalto, con sus tareas dificultadas; *Confusion*, en su siguiente acción el objetivo ataca a un aliado; *Pustule Eruption*, al objetivo le salen pústulas durante un minuto y, si hace una acción enérgica (atacar o moverse más allá de distancia inmediata), revientan y le hacen 5 de daño que ignora la Armadura. *Acción*. [Contra un PJ, los 5 de daño son una herida moderada.]"
+   },
+   {
+    "tier": 5,
+    "name_en": "Precognition",
+    "cost": "6 Intelecto",
+    "src": "Commands Mental Powers, p. 163",
+    "req": [
+     "Daydream",
+     "Consummate Dreamer"
+    ],
+    "text": "Intuyes el futuro hasta que hagas una recuperación de diez minutos o más: tienes un recurso a favor en las defensas; otro para descubrir engaños y traiciones y evitar trampas y emboscadas; y otro en todas las tareas de interacción, porque sabes lo que la gente va a decir. *Enabler*."
+   },
+   {
+    "tier": 6,
+    "name_en": "Chamber of Dreams",
+    "cost": "8+ Intelecto",
+    "src": null,
+    "req": [
+     "Daydream",
+     "Consummate Dreamer"
+    ],
+    "text": "Tú y tus aliados entráis en una cámara de sueños decorada a tu gusto, con varias puertas. Cada puerta da a un lugar que has visitado o conoces bastante bien, y cruzarla os lleva allí. Es una tarea de Intelecto de dificultad 2 (el DJ puede subirla si el lugar está protegido). *Acción para entrar en la cámara; acción para cruzar una puerta*."
+   },
+   {
+    "tier": 6,
+    "name_en": "Grandiose Illusion",
+    "cost": "8 Intelecto",
+    "src": "Crafts Illusions, p. 169",
+    "req": [
+     "Illusory Selves",
+     "Nightmare"
+    ],
+    "text": "Creas una escena de imágenes enorme que cabe en un cubo de 1,6 km, con el borde más cercano a alcance inmediato. Tienes que ver las imágenes al crearlas. Se mueven y actúan como quieras, y reaccionan con lógica (al fuego, a los ataques) aunque no las mires. Tienen sonido y olor: ejércitos que chocan con apoyo de criaturas voladoras sobre un terreno inventado. Dura hasta que dejes de concentrarte o hagas una recuperación de una hora o más. *Última acción para iniciar*."
+   }
+  ],
+  "desc": "Tus sueños son más vívidos que los de los demás, perduran y puedes soltarlos en la realidad; conoces el oficio del oniromante [CSR15, p. 95–96]."
+ },
+ {
+  "name_en": "Defends the Weak",
+  "source": "CSR15",
+  "meta": [
+   [
+    "Intrusiones del DJ",
+    "quien se centra en proteger a otros a veces se deja expuesto a los ataques."
+   ],
+   [
+    "Equipo adicional",
+    "un escudo."
+   ],
+   [
+    "Conexiones y sugerencias de efecto menor/mayor",
+    "se quedan en el CSR15 (p. 116–117)."
+   ]
+  ],
+  "notes": [
+   "Las conexiones son nuestras [Adaptación]: una rama del protector (Courageous / Imperturbable → Devoted Defender → Willing Sacrifice → True Defender), otra del escudo (Warding Shield → Shield Master / True Guardian → Hard-Won Resilience → Attenuate Threat) y otra de desafío (True Guardian / Astute → Combat Challenge → Drive Back). True Defender requiere Devoted Defender porque lo amplía (CCR, p. 145). El árbol pasa de 9 a 13 habilidades. No se añade Nothing but Defend porque equivale a True Guardian."
+  ],
+  "abilities": [
+   {
+    "tier": 1,
+    "name_en": "Courageous",
+    "cost": "",
+    "src": null,
+    "req": [],
+    "text": "Quedas entrenado en las defensas de Intelecto y en iniciativa. *Enabler*."
+   },
+   {
+    "tier": 1,
+    "name_en": "Warding Shield",
+    "cost": "",
+    "src": null,
+    "req": [],
+    "text": "Mientras empuñas un escudo, tus tiradas de bloqueo quedan facilitadas. *Enabler*. [Adaptación: el CSR15 daba +1 a Armadura con escudo; el escudo del CCR ya puede absorber heridas (p. 304).]"
+   },
+   {
+    "tier": 1,
+    "name_en": "Imperturbable",
+    "cost": "",
+    "src": "Stands Like a Bastion, p. 222",
+    "req": [],
+    "text": "Transmites calma. No pueden obligarte a huir contra tu voluntad (por ejemplo, con miedo mágico), y las defensas de tus aliados a alcance inmediato contra esos ataques quedan facilitadas. *Enabler*."
+   },
+   {
+    "tier": 2,
+    "name_en": "Devoted Defender",
+    "cost": "2 Intelecto",
+    "src": null,
+    "req": [
+     "Courageous",
+     "Imperturbable"
+    ],
+    "text": "Eliges a un personaje que veas como tu protegido. Quedas entrenado en todas las tareas de encontrarlo, curarlo, tratar con él y protegerlo. Solo puedes tener un protegido a la vez. *Acción para iniciar*."
+   },
+   {
+    "tier": 2,
+    "name_en": "Astute",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Courageous"
+    ],
+    "text": "Quedas entrenado en adivinar los motivos de otros y su naturaleza general; tienes buen ojo para saber si alguien es inocente de verdad. *Enabler*. [Adaptación: en el CCR es recognizing motive.]"
+   },
+   {
+    "tier": 2,
+    "name_en": "Shield Master",
+    "cost": "",
+    "src": "Stands Like a Bastion, p. 222",
+    "req": [
+     "Warding Shield"
+    ],
+    "text": "Tu escudo aguanta una herida moderada más de lo normal antes de romperse. *Enabler*."
+   },
+   {
+    "tier": 3,
+    "name_en": "True Guardian",
+    "cost": "2 Potencia",
+    "src": null,
+    "req": [
+     "Warding Shield",
+     "Devoted Defender"
+    ],
+    "text": "Cuando haces guardia como acción, las defensas de los personajes que elijas adyacentes a ti quedan facilitadas hasta el final de tu siguiente turno. *Enabler*. [Hacer guardia: CCR, p. 306.]"
+   },
+   {
+    "tier": 4,
+    "name_en": "Combat Challenge",
+    "cost": "",
+    "src": null,
+    "req": [
+     "True Guardian",
+     "Astute"
+    ],
+    "text": "Quedas entrenado en intimidation y en las tareas de Intelecto para atraer un ataque. *Enabler*. [Atraer el ataque: CCR, p. 306.]"
+   },
+   {
+    "tier": 4,
+    "name_en": "Willing Sacrifice",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Devoted Defender"
+    ],
+    "text": "Cuando recibes un ataque en lugar de otro personaje, no sufres la herida leve adicional. *Enabler*. [Adaptación: en el CSR15 era 1 punto de daño adicional; en el CCR, recibir el ataque causa una herida leve adicional (p. 306).]"
+   },
+   {
+    "tier": 4,
+    "name_en": "Hard-Won Resilience",
+    "cost": "",
+    "src": "Stands Like a Bastion, p. 223",
+    "req": [
+     "Shield Master",
+     "True Guardian"
+    ],
+    "text": "Has visto de todo y te has endurecido: puedes recibir una herida moderada más de lo normal. *Enabler*."
+   },
+   {
+    "tier": 5,
+    "name_en": "Drive Back",
+    "cost": "4 Potencia",
+    "src": null,
+    "req": [
+     "Combat Challenge",
+     "True Guardian"
+    ],
+    "text": "Cuando haces daño con un ataque, alejas a la criatura de tus compañeros: hasta el final del asalto siguiente, todos los personajes menos tú tienen un recurso a favor en las defensas de Velocidad (esquivar) contra sus ataques. *Enabler*."
+   },
+   {
+    "tier": 6,
+    "name_en": "True Defender",
+    "cost": "6 Intelecto",
+    "src": null,
+    "req": [
+     "Devoted Defender"
+    ],
+    "text": "Funciona como Devoted Defender, pero con hasta tres protegidos. Si eliges a uno solo, quedas especializado en las tareas de Devoted Defender. *Acción para iniciar*."
+   },
+   {
+    "tier": 6,
+    "name_en": "Attenuate Threat",
+    "cost": "",
+    "src": "Stands Like a Bastion, p. 223",
+    "req": [
+     "Hard-Won Resilience",
+     "Drive Back"
+    ],
+    "text": "Si este asalto haces tu ataque como última acción (en vez de como acción o primera acción), puedes ignorar una herida que recibas antes de que empiece tu siguiente turno. *Enabler*."
+   }
+  ],
+  "desc": "Alguien tiene que dar la cara por los indefensos, y crees que te toca a ti: eres el primero en acudir cuando alguien está en apuros [CSR15, p. 116–117]."
+ },
+ {
+  "name_en": "Separates Mind From Body",
+  "source": "CSR15",
+  "meta": [
+   [
+    "Intrusiones del DJ",
+    "reunir mente y cuerpo puede desorientar, y el personaje necesita unos momentos para situarse."
+   ],
+   [
+    "Equipo adicional",
+    "una bola plateada de unos 8 cm cuya superficie no refleja lo que te rodea, sino otro lugar que aún no has encontrado; en ella has visto cosas extrañas e inquietantes."
+   ],
+   [
+    "Conexiones y sugerencias de efecto menor/mayor",
+    "se quedan en el CSR15 (p. 162)."
+   ]
+  ],
+  "notes": [
+   "Las conexiones son nuestras [Adaptación]: una rama del tercer ojo (Third Eye → Roaming Third Eye → Sensor → Improved Sensor), otra de percepción (Third Eye / Sense Psionics → Open Mind / Sharp Senses) y otra de mente a mente (Telepathic → Mind Reading → Psychic Passenger → Mental Projection o Telepathic Network). Roaming Third Eye e Improved Sensor requieren la habilidad que modifican (CCR, p. 145). El árbol pasa de 8 a 12 habilidades. No se añade Use Senses of Others porque equivale a Psychic Passenger."
+  ],
+  "abilities": [
+   {
+    "tier": 1,
+    "name_en": "Third Eye",
+    "cost": "1 Intelecto",
+    "src": null,
+    "req": [],
+    "text": "Visualizas un lugar a alcance corto y proyectas allí tu mente: creas un sensor inmóvil e invisible durante un minuto o hasta que lo termines. Ves a través del sensor en vez de con tus ojos; con los demás sentidos percibes lo que rodea a tu cuerpo. *Acción*."
+   },
+   {
+    "tier": 1,
+    "name_en": "Telepathic",
+    "cost": "1+ Intelecto",
+    "src": "Commands Mental Powers, p. 162",
+    "req": [],
+    "text": "Hablas telepáticamente con otros a alcance largo. La comunicación es en los dos sentidos, pero el otro tiene que querer y poder comunicarse. No necesitas verlo, pero sí saber que está a alcance. Puedes tener varios contactos a la vez, estableciendo cada uno por separado; cada contacto dura hasta que hagas una recuperación de diez minutos o más. *Esfuerzo:* dura hasta una recuperación de diez horas. *Acción para establecer contacto*."
+   },
+   {
+    "tier": 1,
+    "name_en": "Sense Psionics",
+    "cost": "1 Intelecto",
+    "src": "Commands Mental Powers, p. 162",
+    "req": [],
+    "text": "Si hay poderes mentales, psíquicos o fenómenos similares actuando a alcance corto, lo sabes (pero no los detalles). *Última acción*."
+   },
+   {
+    "tier": 2,
+    "name_en": "Open Mind",
+    "cost": "3 Intelecto",
+    "src": null,
+    "req": [
+     "Third Eye",
+     "Sense Psionics"
+    ],
+    "text": "Abres tu mente: durante una hora, todas tus tareas de percepción quedan facilitadas y, mientras estés consciente y puedas actuar, nadie obtiene ventaja por sorprenderte. *Acción*."
+   },
+   {
+    "tier": 2,
+    "name_en": "Sharp Senses",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Third Eye"
+    ],
+    "text": "Quedas entrenado en perception. *Enabler*."
+   },
+   {
+    "tier": 2,
+    "name_en": "Mind Reading",
+    "cost": "2 Intelecto",
+    "src": "Commands Mental Powers, p. 162",
+    "req": [
+     "Telepathic"
+    ],
+    "text": "Lees los pensamientos superficiales de una criatura que ves a alcance corto. Si no quiere, tienes que acertar un ataque de Intelecto contra ella. Una vez establecido el contacto, puedes leerla hasta que hagas una recuperación de diez minutos o más. *Acción para iniciar*."
+   },
+   {
+    "tier": 3,
+    "name_en": "Roaming Third Eye",
+    "cost": "3 Intelecto",
+    "src": null,
+    "req": [
+     "Third Eye"
+    ],
+    "text": "Al usar Third Eye puedes colocar el sensor en cualquier punto a alcance largo y, mientras dure, moverlo con una acción a cualquier punto a alcance corto de donde empezó. *Enabler*."
+   },
+   {
+    "tier": 4,
+    "name_en": "Sensor",
+    "cost": "4 Intelecto",
+    "src": null,
+    "req": [
+     "Roaming Third Eye",
+     "Open Mind"
+    ],
+    "text": "Creas un sensor inmóvil e invisible a alcance inmediato que dura veinticuatro horas. Mientras dure, puedes concentrarte para ver, oír y oler a través de él, estés donde estés. No te da sentidos mejores de lo normal. Si ya tienes la habilidad de sensor por otra vía, dura 48 horas. *Acción para crearlo; acción para mirar*."
+   },
+   {
+    "tier": 4,
+    "name_en": "Improved Sensor",
+    "cost": "2 Intelecto",
+    "src": null,
+    "req": [
+     "Sensor"
+    ],
+    "text": "Al usar Sensor puedes colocar el sensor en cualquier punto a alcance largo. *Enabler*."
+   },
+   {
+    "tier": 5,
+    "name_en": "Psychic Passenger",
+    "cost": "6 Intelecto",
+    "src": null,
+    "req": [
+     "Sensor",
+     "Mind Reading"
+    ],
+    "text": "Metes tu mente en el cuerpo de una criatura que acepte, a alcance corto, durante una hora como máximo. Tu cuerpo cae insensible hasta que termina. Percibes con todos los sentidos de la criatura. Cuando hablas, las palabras salen de tu cuerpo indefenso, y la criatura las oye en su mente. Puede usar tu Ventaja de Intelecto en vez de la suya, y los dos tenéis un recurso a favor en las tareas de percepción. Cuando actúas, usas su cuerpo si te deja. *Acción para iniciar*."
+   },
+   {
+    "tier": 6,
+    "name_en": "Mental Projection",
+    "cost": "6+ Intelecto",
+    "src": null,
+    "req": [
+     "Psychic Passenger",
+     "Roaming Third Eye"
+    ],
+    "text": "Tu mente sale del todo de tu cuerpo y aparece donde quieras a alcance inmediato, hasta veinticuatro horas. Termina antes si tu reserva de Intelecto llega a 0 o si tu proyección toca tu cuerpo. Tu mente tiene tu aspecto, con poca sustancia y bordes que se deshilachan en la nada. La controlas como tu cuerpo normal, salvo que atraviesas objetos sólidos y no te frena el terreno. Tus ataques hacen la mitad de daño, las heridas que recibes de fuentes físicas bajan un paso de gravedad (una leve no te afecta) y el daño a reservas que recibes es siempre daño de Intelecto. Puedes alejarte hasta 2 km de tu cuerpo; en vez de facilitar la tarea, cada nivel de Esfuerzo añade 2 km. Tu cuerpo queda indefenso y no percibes nada a través de él. Si tu cuerpo recibe una herida moderada o grave, tu mente vuelve de golpe y quedas aturdido hasta el final del asalto siguiente. *Acción para iniciar*. [Adaptación: en el CSR15 la mente volvía cuando el daño al cuerpo dejaba a 0 Potencia y Velocidad; en el CCR el daño físico son heridas. También recibías la mitad del daño físico, y todo como daño de Intelecto; ahora las heridas físicas bajan un paso. Tus ataques siguen haciendo la mitad de daño, porque los PNJ tienen salud en puntos.]"
+   },
+   {
+    "tier": 6,
+    "name_en": "Telepathic Network",
+    "cost": "0+ Intelecto",
+    "src": "Commands Mental Powers, p. 163",
+    "req": [
+     "Mind Reading",
+     "Psychic Passenger"
+    ],
+    "text": "Creas una red telepática entre tú y diez criaturas que conoces y aceptan, estén donde estén: todos pueden hablar entre sí y oír lo que se dice en la red. Crearla o usarla no cuesta acción ni puntos, y dura hasta que la termines. *Esfuerzo:* veinte personas (5 Intelecto), hasta que hagas una recuperación de diez minutos o más; cada diez más cuestan 1 Intelecto. *Enabler para crear la red; acción para crear una red ampliada*."
+   }
+  ],
+  "desc": "Tu mente gobierna tu cuerpo como un capitán su barco, y cuando quieres se suelta de él y explora el mundo por su cuenta [CSR15, p. 162–163]."
+ },
+ {
+  "name_en": "Moves Like a Cat",
+  "source": "CSR15",
+  "meta": [
+   [
+    "Intrusiones del DJ",
+    "hasta un gato es torpe a veces, sobre todo si se confía; un salto bien calculado no es tan fácil como parece; una huida demasiado entusiasta te lleva directo al peligro."
+   ],
+   [
+    "Equipo adicional",
+    "ninguno."
+   ],
+   [
+    "Conexiones y sugerencias de efecto menor/mayor",
+    "se quedan en el CSR15 (p. 150–151)."
+   ]
+  ],
+  "notes": [
+   "Las conexiones son nuestras [Adaptación]: una rama de reflejos (Reflexes → Greater Reflexes → Phenomenal Reflexes), otra acrobática (Balance / Get Out → Movement, Safe Fall, Obstacle Running → Acrobatic Attack → Quick Strike) y otra de esquiva (Hard to Touch → Slippery). Burst of Action cierra el árbol. El árbol pasa de 10 a 13 habilidades. No se añaden Escape (equivale a Slippery) ni Again and Again (equivale a Burst of Action)."
+  ],
+  "abilities": [
+   {
+    "tier": 1,
+    "name_en": "Reflexes",
+    "cost": "",
+    "src": null,
+    "req": [],
+    "text": "+3 a tu reserva de Velocidad. *Enabler*."
+   },
+   {
+    "tier": 1,
+    "name_en": "Balance",
+    "cost": "",
+    "src": null,
+    "req": [],
+    "text": "Quedas entrenado en equilibrio. *Enabler*. [Adaptación: en el CCR, gymnastics.]"
+   },
+   {
+    "tier": 1,
+    "name_en": "Get Out",
+    "cost": "",
+    "src": "Moves Like the Wind, p. 204",
+    "req": [],
+    "text": "Si te alejas al menos una distancia inmediata de la amenaza más evidente, o te acercas a lo que parece un sitio seguro, una tarea que hagas el asalto siguiente queda facilitada. *Enabler*."
+   },
+   {
+    "tier": 2,
+    "name_en": "Movement",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Balance",
+     "Reflexes"
+    ],
+    "text": "Quedas entrenado en trepar y saltar. *Enabler*. [Adaptación: en el CCR, athletics.]"
+   },
+   {
+    "tier": 2,
+    "name_en": "Safe Fall",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Balance"
+    ],
+    "text": "Cuando recibes una herida por una caída, su gravedad baja un paso. *Enabler*. [Adaptación: en el CSR15 reducía en 5 el daño de la caída; se usa el texto de Safe Fall del CCR (Never Says Die, p. 206), porque ahora las caídas causan heridas.]"
+   },
+   {
+    "tier": 2,
+    "name_en": "Obstacle Running",
+    "cost": "3 Velocidad",
+    "src": "Moves Like the Wind, p. 204",
+    "req": [
+     "Get Out",
+     "Movement"
+    ],
+    "text": "Este asalto te mueves sin que te frene casi ningún terreno difícil: escombros, vallas, mesas… Puedes deslizarte por una barandilla, correr un momento por una pared o apoyarte en una criatura para saltar algo. Si un obstáculo pide normalmente una tarea de Potencia o Velocidad (balancearte en una cuerda, saltar un hueco), queda facilitada. *Enabler*."
+   },
+   {
+    "tier": 3,
+    "name_en": "Greater Reflexes",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Reflexes"
+    ],
+    "text": "+1 a tu Ventaja de Velocidad. *Enabler*."
+   },
+   {
+    "tier": 3,
+    "name_en": "Hard to Touch",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Reflexes",
+     "Get Out"
+    ],
+    "text": "Quedas entrenado en las defensas de Velocidad (esquivar). *Enabler*."
+   },
+   {
+    "tier": 3,
+    "name_en": "Acrobatic Attack",
+    "cost": "1+ Velocidad",
+    "src": "Fights With Panache, p. 183",
+    "req": [
+     "Movement",
+     "Obstacle Running"
+    ],
+    "text": "Saltas al ataque girando o dando una voltereta en el aire. Si usas Esfuerzo en la tirada de ataque, tienes un nivel de Esfuerzo gratis. Con un 17 o 18 natural, en vez de daño extra puedes elegir un efecto menor. No puedes usarla si no puedes usar libremente la armadura que llevas. *Enabler*."
+   },
+   {
+    "tier": 4,
+    "name_en": "Quick Strike",
+    "cost": "4 Velocidad",
+    "src": null,
+    "req": [
+     "Hard to Touch",
+     "Acrobatic Attack"
+    ],
+    "text": "Haces un ataque cuerpo a cuerpo tan rápido que cuesta defenderse y desequilibra al enemigo: el ataque queda facilitado en dos pasos y, si aciertas, el enemigo queda aturdido y sus tareas del asalto siguiente quedan dificultadas. *Acción*."
+   },
+   {
+    "tier": 5,
+    "name_en": "Phenomenal Reflexes",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Greater Reflexes"
+    ],
+    "text": "+5 a tu reserva de Velocidad. *Enabler*."
+   },
+   {
+    "tier": 5,
+    "name_en": "Slippery",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Movement",
+     "Hard to Touch"
+    ],
+    "text": "Quedas entrenado en escapar de cualquier atadura o presa. *Enabler*. [Adaptación: en el CCR, escaping.]"
+   },
+   {
+    "tier": 6,
+    "name_en": "Burst of Action",
+    "cost": "6 Velocidad",
+    "src": null,
+    "req": [
+     "Quick Strike",
+     "Phenomenal Reflexes"
+    ],
+    "text": "Puedes hacer dos acciones separadas este asalto. *Enabler*."
+   }
+  ],
+  "desc": "Eres extraordinariamente ágil: te mueves rápido y con suavidad, caes sin hacerte daño y esquivas el peligro [CSR15, p. 150–151]."
+ },
+ {
+  "name_en": "Looks for Trouble",
+  "source": "CSR15",
+  "meta": [
+   [
+    "Intrusiones del DJ",
+    "las armas se rompen o salen volando hasta de la mano más firme; los peleones tropiezan y caen; hasta el campo de batalla puede jugar en tu contra."
+   ],
+   [
+    "Equipo adicional",
+    "un arma cuerpo a cuerpo a tu elección."
+   ],
+   [
+    "Conexiones y sugerencias de efecto menor/mayor",
+    "se quedan en el CSR15 (p. 145)."
+   ]
+  ],
+  "notes": [
+   "Las conexiones son nuestras [Adaptación]: una rama de pelea (Brawler → Straightforward / Fearsome Reputation → Lethal Battler → Knock Out / Epic Fighter → Juggernaut o Lethal Capability), otra de aguante (Ignore the Pain → Blood Fever) y otra de cuidar a los tuyos (Wound Tender → Protector, True Healer). En el CSR15, True Healer era la alternativa a Juggernaut en el rango 6. El árbol pasa de 9 a 13 habilidades. Knock Out usa la versión del CCR, que está en el mismo rango en Fights Unarmed."
+  ],
+  "abilities": [
+   {
+    "tier": 1,
+    "name_en": "Brawler",
+    "cost": "",
+    "src": null,
+    "req": [],
+    "text": "Haces 1 de daño adicional cuerpo a cuerpo (también con los puños). *Enabler*."
+   },
+   {
+    "tier": 1,
+    "name_en": "Wound Tender",
+    "cost": "",
+    "src": null,
+    "req": [],
+    "text": "Quedas entrenado en healing. *Enabler*."
+   },
+   {
+    "tier": 2,
+    "name_en": "Protector",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Brawler",
+     "Wound Tender"
+    ],
+    "text": "Eliges a un personaje como tu protegido; puedes cambiarlo cada asalto, pero solo puedes tener uno a la vez. Mientras esté a alcance inmediato, tiene un recurso a favor en las defensas de Velocidad (esquivar), porque le cubres las espaldas. *Enabler*."
+   },
+   {
+    "tier": 2,
+    "name_en": "Straightforward",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Brawler"
+    ],
+    "text": "Quedas entrenado en una de estas tareas: romper cosas, trepar, saltar o correr. *Enabler*. [Adaptación: en el CCR las cuatro caen dentro de athletics.]"
+   },
+   {
+    "tier": 2,
+    "name_en": "Fearsome Reputation",
+    "cost": "3 Potencia o Intelecto",
+    "src": "Fights Unarmed, p. 180",
+    "req": [
+     "Brawler"
+    ],
+    "text": "Te presentas (quizá recordando alguna de tus hazañas) ante todos los enemigos a alcance largo que te oigan y entiendan, con un ataque de Intelecto aparte contra cada uno. Los que fallen te temen, y tus tareas contra ellos quedan facilitadas hasta que hagas una recuperación de diez minutos o más. *Acción*."
+   },
+   {
+    "tier": 2,
+    "name_en": "Ignore the Pain",
+    "cost": "",
+    "src": "Never Says Die, p. 206",
+    "req": [
+     "Brawler",
+     "Wound Tender"
+    ],
+    "text": "Ignoras un paso de dificultad causado por una herida grave o por tener todas tus heridas moderadas. Puedes elegirla hasta tres veces; cada vez ignoras otro paso. *Enabler*."
+   },
+   {
+    "tier": 3,
+    "name_en": "Lethal Battler",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Straightforward",
+     "Protector"
+    ],
+    "text": "Eliges un tipo de ataque en el que no estés entrenado: contundente ligero, cortante ligero, contundente medio, cortante medio, contundente pesado o cortante pesado. Quedas entrenado en él (attacking). *Enabler*."
+   },
+   {
+    "tier": 3,
+    "name_en": "Blood Fever",
+    "cost": "",
+    "src": "Never Says Die, p. 206",
+    "req": [
+     "Ignore the Pain",
+     "Fearsome Reputation"
+    ],
+    "text": "Mientras una de tus reservas esté a 0, o tengas al menos dos heridas moderadas o una grave, tienes un recurso a favor en ataques o en defensas (a tu elección) y en intimidation. *Enabler*."
+   },
+   {
+    "tier": 4,
+    "name_en": "Knock Out",
+    "cost": "5+ Potencia",
+    "src": "Fights Unarmed, p. 181",
+    "req": [
+     "Lethal Battler",
+     "Blood Fever"
+    ],
+    "text": "Haces un ataque cuerpo a cuerpo dificultado contra un enemigo de nivel 3 o inferior. Si aciertas, en vez de daño lo dejas inconsciente hasta que hagas una recuperación de diez minutos o más, o hasta que alguien gaste una acción en reanimarlo. *Esfuerzo:* aumenta en 1 el nivel máximo del enemigo. *Acción*. [Adaptación: sustituye al Knock Out del CSR15 (ataque normal, segunda tirada de Potencia, un minuto de inconsciencia).]"
+   },
+   {
+    "tier": 5,
+    "name_en": "Epic Fighter",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Lethal Battler"
+    ],
+    "text": "Eliges un tipo de ataque en el que ya estés entrenado (de los de Lethal Battler) y quedas especializado en él. *Enabler*."
+   },
+   {
+    "tier": 6,
+    "name_en": "Juggernaut",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Epic Fighter",
+     "Knock Out"
+    ],
+    "text": "+5 a tu reserva de Potencia y 1 de daño adicional en ataques cuerpo a cuerpo. *Enabler*."
+   },
+   {
+    "tier": 6,
+    "name_en": "True Healer",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Wound Tender"
+    ],
+    "text": "Quedas especializado en healing. *Enabler*."
+   },
+   {
+    "tier": 6,
+    "name_en": "Lethal Capability",
+    "cost": "",
+    "src": "Fights Unarmed, p. 181",
+    "req": [
+     "Epic Fighter"
+    ],
+    "text": "Dominas una forma de matar: haces 5 de daño adicional con un tipo de ataque concreto que elijas. Puedes cogerla más de una vez, con un ataque distinto cada vez. *Enabler*."
+   }
+  ],
+  "desc": "Eres un luchador, un camorrista: te gusta enfrentarte a los problemas de cara y por las bravas, y tus amigos se sienten más seguros contigo al lado [CSR15, p. 145–146]."
+ },
+ {
+  "name_en": "Explores Dark Places",
+  "source": "CSR15",
+  "meta": [
+   [
+    "Intrusiones del DJ",
+    "a veces se caen cosas de los bolsillos o la bolsa en la oscuridad y no vuelven a aparecer (al menos, para quien las perdió)."
+   ],
+   [
+    "Equipo adicional",
+    "un equipo de explorador con cuerda, raciones para dos días, saco de dormir y otras herramientas de supervivencia."
+   ],
+   [
+    "Habilidades de sombra",
+    "si tienes otras habilidades visibles (conjuros, poderes psíquicos…), casi no hacen ruido y sus efectos son oscuros y sombríos. Solo cambia su aspecto."
+   ],
+   [
+    "Conexiones y sugerencias de efecto menor/mayor",
+    "se quedan en el CSR15 (p. 123–124)."
+   ]
+  ],
+  "notes": [
+   "Las conexiones son nuestras [Adaptación]: una rama de oscuridad (Trained Explorer → Eyes Adjusted → Dark Explorer → Blinding Attack), otra de infiltración (Trained Infiltrator → Slippery Customer → Resilient) y otra de supervivencia (Exploration Survivor / Tough → Experienced Explorer / Nine Lives → Resilient o Explorer's Awareness). Dark Explorer requiere Eyes Adjusted porque se combina con ella. El árbol pasa de 7 a 12 habilidades. No se añade el Slippery Customer del CCR porque equivale a Dark Explorer."
+  ],
+  "abilities": [
+   {
+    "tier": 1,
+    "name_en": "Trained Explorer",
+    "cost": "",
+    "src": null,
+    "req": [],
+    "text": "Quedas entrenado en buscar, escuchar, trepar, equilibrio y saltar. *Enabler*. [Adaptación: en el CCR, perception, athletics y gymnastics.]"
+   },
+   {
+    "tier": 1,
+    "name_en": "Exploration Survivor",
+    "cost": "",
+    "src": "Explores, p. 176",
+    "req": [],
+    "text": "Sabes sobrevivir en lugares nuevos y extraños. Tras al menos diez minutos en una región y una tarea de outdoor survival con éxito (normalmente de dificultad 2), encuentras algo útil que buscabas: refugio, material para hacer fuego, agua potable, una presa fácil, plantas y setas comestibles, o algo contra una hemorragia o un veneno. Puedes alimentarte a ti y a cinco aliados mientras sigas en esa región. Cuando has estado en un lugar notable de la región (tu campamento, un hito), sabes en qué dirección y a qué distancia está. *Enabler*."
+   },
+   {
+    "tier": 1,
+    "name_en": "Tough",
+    "cost": "",
+    "src": "Explores, p. 176",
+    "req": [],
+    "text": "Puedes recibir una herida leve más. *Enabler*."
+   },
+   {
+    "tier": 2,
+    "name_en": "Trained Infiltrator",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Trained Explorer"
+    ],
+    "text": "Quedas entrenado en lockpicking y en manipular mecanismos. *Enabler*. [Adaptación: «manipular mecanismos» puede ser mechanics o disarming traps en el CCR; lo decide el DJ.]"
+   },
+   {
+    "tier": 2,
+    "name_en": "Eyes Adjusted",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Trained Explorer",
+     "Exploration Survivor"
+    ],
+    "text": "Ves con luz muy tenue como con luz intensa, y en la oscuridad total como con luz muy tenue. *Enabler*. [El texto es igual que Eyes Adjusted del CCR (Sneaks Through the Shadows, p. 216), donde es de rango 1.]"
+   },
+   {
+    "tier": 2,
+    "name_en": "Experienced Explorer",
+    "cost": "",
+    "src": "Explores, p. 176",
+    "req": [
+     "Exploration Survivor",
+     "Tough"
+    ],
+    "text": "Tus defensas contra venenos quedan facilitadas y las heridas por veneno bajan un paso (grave a moderada, moderada a leve, leve a nada). Eres inmune a las enfermedades naturales. En la naturaleza, la hierba alta, la maleza, el terreno abrupto, los desprendimientos y el mal tiempo no te dificultan ni te frenan, y sus heridas bajan un paso. Si tienes una hora para explorar, encuentras comida y agua para ti y unos pocos más. *Enabler*."
+   },
+   {
+    "tier": 3,
+    "name_en": "Slippery Customer",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Trained Infiltrator",
+     "Eyes Adjusted"
+    ],
+    "text": "Quedas entrenado en escapar de ataduras, meterte en sitios estrechos y otras tareas de contorsionista y, gracias a tu experiencia, en las defensas de Velocidad (esquivar) mientras lleves armadura ligera o ninguna. *Enabler*. [Adaptación: en el CCR, escaping. Es distinta del Slippery Customer del CCR.]"
+   },
+   {
+    "tier": 3,
+    "name_en": "Nine Lives",
+    "cost": "",
+    "src": "Sneaks Through the Shadows, p. 216",
+    "req": [
+     "Tough"
+    ],
+    "text": "Puedes usar Esfuerzo de Potencia o de Velocidad en las tiradas de bloqueo. *Enabler*."
+   },
+   {
+    "tier": 4,
+    "name_en": "Resilient",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Slippery Customer",
+     "Nine Lives",
+     "Experienced Explorer"
+    ],
+    "text": "Te has expuesto a toda clase de cosas terribles y vas cogiendo resistencia: tus tiradas de bloqueo quedan facilitadas y quedas entrenado en las defensas de Potencia. *Enabler*. [Adaptación: el CSR15 daba +1 a Armadura.]"
+   },
+   {
+    "tier": 5,
+    "name_en": "Dark Explorer",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Eyes Adjusted"
+    ],
+    "text": "No sufres penalizaciones en ninguna acción (tampoco al luchar) con luz muy tenue ni en espacios estrechos. Junto con Eyes Adjusted, actúas sin penalización incluso en oscuridad total. Además, quedas entrenado en stealth con luz tenue o sin luz. *Enabler*."
+   },
+   {
+    "tier": 5,
+    "name_en": "Explorer's Awareness",
+    "cost": "",
+    "src": "Explores, p. 177",
+    "req": [
+     "Experienced Explorer",
+     "Slippery Customer"
+    ],
+    "text": "Estás siempre alerta ante amenazas, enemigos, obstáculos y peligros a la vista: cuando usas Esfuerzo en iniciativa y percepción, tienes dos niveles de Esfuerzo gratis. *Enabler*."
+   },
+   {
+    "tier": 6,
+    "name_en": "Blinding Attack",
+    "cost": "3 Velocidad",
+    "src": null,
+    "req": [
+     "Dark Explorer"
+    ],
+    "text": "Si tienes una fuente de luz, la usas para hacer un ataque cuerpo a cuerpo. Si aciertas, no haces daño, pero el objetivo queda cegado un minuto. *Acción*."
+   }
+  ],
+  "desc": "Exploras ruinas, mazmorras, cavernas y lugares antiguos: eres el cazador de tesoros por excelencia, y de tanto vivir en la oscuridad te has adaptado a ella [CSR15, p. 123–124]."
+ },
+ {
+  "name_en": "Explores Deep Waters",
+  "source": "CSR15",
+  "meta": [
+   [
+    "Intrusiones del DJ",
+    "pasar mucho tiempo bajo el agua puede hacerte más vulnerable a la deshidratación y el agotamiento en lugares áridos."
+   ],
+   [
+    "Equipo adicional",
+    "un artilugio que, puesto en la boca, te deja respirar bajo el agua hasta cuatro horas seguidas; después hay que esperar cuatro horas para volver a usarlo."
+   ],
+   [
+    "Habilidades de agua",
+    "si tienes poderes que usarían fuerza u otra energía, usan agua o hielo (una ráfaga de energía se convierte en una ola que cae sobre el objetivo)."
+   ],
+   [
+    "Conexiones y sugerencias de efecto menor/mayor",
+    "se quedan en el CSR15 (p. 124)."
+   ]
+  ],
+  "notes": [
+   "Las conexiones son nuestras [Adaptación]: una rama de combate acuático (Trained Swimmer / Resist Underwater Hazards → Aquatic Combatant → Nimble Swimmer → Elusive → Master of the Deep Waters), otra de cuerpo (Diver / Hold Breath → Athletic Conditioning → Swim → Water Adaptation) y otra de guía (Swim → Communication → Deep Water Guide). Este foco ya tenía 14 habilidades en el CSR15 (15 con Create Water), así que no se añade ninguna del CCR."
+  ],
+  "abilities": [
+   {
+    "tier": 1,
+    "name_en": "Diver",
+    "cost": "",
+    "src": null,
+    "req": [],
+    "text": "Te zambulles sin peligro desde hasta 30 m de altura y aguantas la presión del agua hasta 30 m de profundidad. *Enabler*."
+   },
+   {
+    "tier": 1,
+    "name_en": "Hold Breath",
+    "cost": "",
+    "src": null,
+    "req": [],
+    "text": "Aguantas la respiración hasta cinco minutos. *Enabler*."
+   },
+   {
+    "tier": 1,
+    "name_en": "Trained Swimmer",
+    "cost": "",
+    "src": null,
+    "req": [],
+    "text": "Bajo el agua, quedas entrenado en escapar, percepción, sigilo y nadar, y en identificar criaturas y accidentes geográficos acuáticos. *Enabler*. [Adaptación: en el CCR, escaping, perception, stealth, athletics e identifying, solo bajo el agua.]"
+   },
+   {
+    "tier": 1,
+    "name_en": "Create Water",
+    "cost": "2 Intelecto",
+    "src": null,
+    "req": [],
+    "text": "Haces brotar agua de un punto del suelo que ves. Mana durante un minuto y deja unos 4 litros. *Acción*. [Adaptación: en el CSR15 se podía cambiar por una habilidad de tipo; como los tipos del CCR ya no tienen habilidades intercambiables, pasa a ser opción de rango 1.]"
+   },
+   {
+    "tier": 2,
+    "name_en": "Eyes Adjusted",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Diver",
+     "Trained Swimmer"
+    ],
+    "text": "Ves con luz muy tenue como con luz intensa, y en la oscuridad total como con luz muy tenue. *Enabler*. [Igual que Eyes Adjusted del CCR (Sneaks Through the Shadows, p. 216).]"
+   },
+   {
+    "tier": 2,
+    "name_en": "Resist Underwater Hazards",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Diver",
+     "Hold Breath"
+    ],
+    "text": "Tanto si resistes la presión de las profundidades como la picadura de un pez venenoso, todas tus defensas sumergido quedan facilitadas. *Enabler*."
+   },
+   {
+    "tier": 3,
+    "name_en": "Aquatic Combatant",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Trained Swimmer",
+     "Resist Underwater Hazards"
+    ],
+    "text": "No sufres penalizaciones en ninguna acción bajo el agua, tampoco al luchar. *Enabler*."
+   },
+   {
+    "tier": 3,
+    "name_en": "Athletic Conditioning",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Hold Breath",
+     "Diver"
+    ],
+    "text": "+1 a tus reservas de Potencia y Velocidad. *Enabler*."
+   },
+   {
+    "tier": 4,
+    "name_en": "Nimble Swimmer",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Aquatic Combatant"
+    ],
+    "text": "Bajo el agua quedas entrenado en todas las defensas. *Enabler*."
+   },
+   {
+    "tier": 4,
+    "name_en": "Swim",
+    "cost": "1+ Intelecto",
+    "src": null,
+    "req": [
+     "Athletic Conditioning",
+     "Trained Swimmer"
+    ],
+    "text": "Nadas como un pez por el agua y líquidos parecidos durante una hora, a unos 16 km por hora, sin que te afecten las corrientes. *Esfuerzo:* una hora más por nivel. *Acción para iniciar*."
+   },
+   {
+    "tier": 5,
+    "name_en": "Communication",
+    "cost": "2 Intelecto",
+    "src": null,
+    "req": [
+     "Swim",
+     "Trained Swimmer"
+    ],
+    "text": "Transmites una idea básica o haces una pregunta sencilla a una criatura que vive bajo el agua y no habla ni entiende el habla, y te da una respuesta básica. *Acción*."
+   },
+   {
+    "tier": 5,
+    "name_en": "Elusive",
+    "cost": "2 Velocidad",
+    "src": null,
+    "req": [
+     "Nimble Swimmer"
+    ],
+    "text": "Cuando superas una defensa de Velocidad (esquivar), ganas una acción inmediata que solo puedes usar para moverte. *Enabler*."
+   },
+   {
+    "tier": 6,
+    "name_en": "Deep Water Guide",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Swim",
+     "Communication"
+    ],
+    "text": "Bajo el agua, las criaturas que elijas y que te vean tienen un recurso a favor al nadar. *Enabler*."
+   },
+   {
+    "tier": 6,
+    "name_en": "Master of the Deep Waters",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Aquatic Combatant",
+     "Elusive"
+    ],
+    "text": "Bajo el agua, tus Ventajas de Potencia, Velocidad e Intelecto suben 1. *Enabler*."
+   },
+   {
+    "tier": 6,
+    "name_en": "Water Adaptation",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Hold Breath",
+     "Swim"
+    ],
+    "text": "Respiras agua tan bien como aire. *Enabler*."
+   }
+  ],
+  "desc": "No temes a las profundidades: nadas, aguantas la respiración y bajas más hondo que nadie, y las aguas acaban siendo parte de quien eres [CSR15, p. 124–125]."
+ },
+ {
+  "name_en": "Hunts Outcasts",
+  "source": "CSR15",
+  "meta": [
+   [
+    "Intrusiones del DJ",
+    "los marginados pueden empezar a cazar al cazador; a veces manifiestan poderes que no sabían que tenían; a veces no hay forma de saber si alguien es un marginado."
+   ],
+   [
+    "Equipo adicional",
+    "una pequeña colección de objetos (amuletos, sustancias) que crees que te ayudan a cazar y destruir marginados."
+   ],
+   [
+    "Conexiones y sugerencias de efecto menor/mayor",
+    "se quedan en el CSR15 (p. 136–137)."
+   ]
+  ],
+  "notes": [
+   "Las conexiones son nuestras [Adaptación]: una rama contra marginados (Outcast Fighter → Outcast Tracker → Defense Against Outcast Powers / Awareness → Outcast Disruption → Fire With Fire, y True Defense) y otra de caza (Hunter's Determination → Quarry → Hunter's Drive / Multiple Quarries). True Defense, Hunter's Drive y Multiple Quarries requieren la habilidad que modifican (CCR, p. 145). El árbol pasa de 6 a 11 habilidades."
+  ],
+  "abilities": [
+   {
+    "tier": 1,
+    "name_en": "Outcast Fighter",
+    "cost": "",
+    "src": null,
+    "req": [],
+    "text": "Haces 3 de daño adicional cuando luchas contra marginados. *Enabler*."
+   },
+   {
+    "tier": 1,
+    "name_en": "Hunter's Determination",
+    "cost": "",
+    "src": "Hunts, p. 194",
+    "req": [],
+    "text": "Cuando atacas a un enemigo y fallas, tienes un recurso a favor en tus ataques y defensas contra él; si vuelves a fallar, un segundo recurso. Los pierdes si cambias de objetivo o termina el combate. *Enabler*."
+   },
+   {
+    "tier": 2,
+    "name_en": "Outcast Tracker",
+    "cost": "2+ Intelecto",
+    "src": null,
+    "req": [
+     "Outcast Fighter"
+    ],
+    "text": "Percibes la presencia de un marginado a alcance largo. Cuando has encontrado a uno concreto, con un nivel de Esfuerzo puedes intentar «fijarlo»; si lo consigues, siempre sabes a qué distancia y en qué dirección está. *Enabler*."
+   },
+   {
+    "tier": 2,
+    "name_en": "Quarry",
+    "cost": "2 Intelecto",
+    "src": "Hunts, p. 194",
+    "req": [
+     "Hunter's Determination",
+     "Outcast Fighter"
+    ],
+    "text": "Eliges como presa a una criatura que ves y tienes un recurso a favor en todas las tareas de seguirla, entenderla, tratar con ella, atacarla o defenderte de ella (y en las de caza, como despellejar o conservar la carne). Solo puedes tener una presa a la vez. *Acción para iniciar*."
+   },
+   {
+    "tier": 3,
+    "name_en": "Defense Against Outcast Powers",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Outcast Fighter",
+     "Outcast Tracker"
+    ],
+    "text": "Los poderes de los marginados adoptan muchas formas: quedas entrenado en todas las defensas. *Enabler*."
+   },
+   {
+    "tier": 3,
+    "name_en": "Awareness",
+    "cost": "3 Intelecto",
+    "src": "Hunts, p. 194",
+    "req": [
+     "Outcast Tracker"
+    ],
+    "text": "Estás hiperalerta hasta que hagas una recuperación de diez minutos o más: sabes dónde están, más o menos, todos los seres vivos a alcance largo. Con una acción de concentración puedes elegir uno e intentar averiguar su salud y su poder en general. *Acción*."
+   },
+   {
+    "tier": 4,
+    "name_en": "Outcast Disruption",
+    "cost": "4 Intelecto",
+    "src": null,
+    "req": [
+     "Defense Against Outcast Powers",
+     "Outcast Tracker"
+    ],
+    "text": "Un marginado que tocas no puede usar ninguno de los beneficios de sus poderes durante diez minutos. *Acción*."
+   },
+   {
+    "tier": 5,
+    "name_en": "Fire With Fire",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Outcast Disruption"
+    ],
+    "text": "Con magia, drogas u otras alteraciones te das poderes: ganas dos habilidades de nivel medio de fantasía (CCR, p. 82), con el visto bueno del DJ. Siempre te apresuras a aclarar que no son mutaciones ni nada que te convierta en un marginado. *Enabler*. [Adaptación: en el CSR15 eran dos habilidades de rango 2 o inferior de cualquier tipo; en el CCR los tipos no tienen habilidades por rango.]"
+   },
+   {
+    "tier": 5,
+    "name_en": "Hunter's Drive",
+    "cost": "5 Intelecto",
+    "src": "Hunts, p. 195",
+    "req": [
+     "Quarry"
+    ],
+    "text": "Si tu presa está a 16 km o menos, tu velocidad de movimiento se duplica mientras intentas alcanzarla, y tienes otro recurso a favor en las tareas relacionadas con ella. Dura hasta que hagas una recuperación de diez minutos o más. *Enabler*."
+   },
+   {
+    "tier": 6,
+    "name_en": "True Defense Against Outcast Powers",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Defense Against Outcast Powers"
+    ],
+    "text": "Quedas especializado en todas las defensas. *Enabler*."
+   },
+   {
+    "tier": 6,
+    "name_en": "Multiple Quarries",
+    "cost": "",
+    "src": "Hunts, p. 195",
+    "req": [
+     "Quarry"
+    ],
+    "text": "Al activar Quarry puedes elegir hasta cuatro criaturas que veas como presas; cada presa adicional suma 2 de Intelecto al coste. *Enabler*."
+   }
+  ],
+  "desc": "Cazas a los marginados: seres con poderes más allá de los humanos normales (brujos, feéricos, fantasmas, vampiros…), que para ti son una plaga. Al crear el personaje eliges qué tipo de marginado cazas [CSR15, p. 136–137]."
+ },
+ {
+  "name_en": "Masters the Swarm",
+  "source": "CSR15",
+  "meta": [
+   [
+    "Intrusiones del DJ",
+    "crees que controlas del todo la mente de tus criaturas, pero no siempre es así; las conexiones telepáticas se rompen; un enjambre recibe una señal equivocada; hay picaduras o mordiscos accidentales."
+   ],
+   [
+    "Equipo adicional",
+    "ninguno."
+   ],
+   [
+    "Enjambres",
+    "normalmente no tienen estadísticas; si hacen falta, un enjambre típico es de nivel 2 y solo le afectan los ataques de área."
+   ],
+   [
+    "Conexiones y sugerencias de efecto menor/mayor",
+    "se quedan en el CSR15 (p. 147)."
+   ]
+  ],
+  "notes": [
+   "Las conexiones son nuestras [Adaptación]: una rama del enjambre (Influence Swarm → Control Swarm → Living Armor / Call Swarm → Deadly Swarm) y otra de bestias (Understand Beast → Beast Communication → Companion / Beast Call → Armored Beast). El árbol pasa de 6 a 10 habilidades. No se añade Friend to Small Creatures porque equivale a Influence Swarm, ni las habilidades del CCR que mejoran un compañero antes del rango 5, porque aquí el compañero llega en ese rango."
+  ],
+  "abilities": [
+   {
+    "tier": 1,
+    "name_en": "Influence Swarm",
+    "cost": "1 Intelecto",
+    "src": null,
+    "req": [],
+    "text": "Tus criaturas a alcance corto no os harán daño a ti ni a quien designes como aliado durante una hora. *Acción para iniciar*."
+   },
+   {
+    "tier": 1,
+    "name_en": "Understand Beast",
+    "cost": "2 Intelecto",
+    "src": "Controls Beasts, p. 166",
+    "req": [],
+    "text": "Percibes el nivel, la naturaleza y las habilidades especiales de una criatura no humana a alcance inmediato. *Última acción*."
+   },
+   {
+    "tier": 2,
+    "name_en": "Control Swarm",
+    "cost": "2 Intelecto",
+    "src": null,
+    "req": [
+     "Influence Swarm"
+    ],
+    "text": "Tus criaturas a alcance corto hacen lo que les ordenes telepáticamente durante diez minutos. Incluso los insectos comunes (nivel 0), si son bastantes, pueden rodear a una criatura y dificultarle las tareas. *Acción para iniciar*."
+   },
+   {
+    "tier": 2,
+    "name_en": "Beast Communication",
+    "cost": "2 Intelecto",
+    "src": "Controls Beasts, p. 167",
+    "req": [
+     "Understand Beast",
+     "Influence Swarm"
+    ],
+    "text": "Transmites una idea básica a una criatura que normalmente no habla ni entiende el habla, y te puede dar una respuesta muy básica a una pregunta sencilla. *Acción*."
+   },
+   {
+    "tier": 3,
+    "name_en": "Living Armor",
+    "cost": "4 Intelecto",
+    "src": null,
+    "req": [
+     "Control Swarm"
+    ],
+    "text": "Si tus criaturas pueden llegar adonde estás, llamas a un enjambre que te rodea durante una hora, trepando por tu cuerpo o volando en nube a tu alrededor. Mientras tanto, tus tiradas de esquivar y de bloqueo quedan facilitadas. *Acción para iniciar*. [Adaptación: el CSR15 facilitaba las defensas de Velocidad y daba +1 a Armadura.]"
+   },
+   {
+    "tier": 4,
+    "name_en": "Call Swarm",
+    "cost": "4 Intelecto",
+    "src": null,
+    "req": [
+     "Control Swarm"
+    ],
+    "text": "Si tus criaturas pueden llegar adonde estás, llamas a un enjambre durante una hora. Hace lo que le ordenes telepáticamente mientras esté a alcance largo: puede rodear a uno o a todos los enemigos y dificultarles las tareas. Mientras esté a alcance largo, puedes hablarle telepáticamente y percibir a través de sus sentidos. *Acción para iniciar*."
+   },
+   {
+    "tier": 5,
+    "name_en": "Companion",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Call Swarm",
+     "Beast Communication"
+    ],
+    "text": "Tienes un ejemplar especial como compañero permanente: nivel 4 (número objetivo 12, salud 12, 4 de daño), probablemente del tamaño de un perro pequeño, que obedece tus órdenes telepáticas. Definís los detalles tú y el DJ; seguramente tirarás tú por él en combate o cuando actúe, y actúa en tu turno. Si muere, puedes buscar otro en la naturaleza durante 1d6 días. *Enabler*."
+   },
+   {
+    "tier": 5,
+    "name_en": "Beast Call",
+    "cost": "5 Intelecto",
+    "src": "Controls Beasts, p. 167",
+    "req": [
+     "Call Swarm",
+     "Beast Communication"
+    ],
+    "text": "Invocas temporalmente una bestia de nivel 4, o una horda de bestias pequeñas que juntas funcionan como una criatura de nivel 4. Hacen lo que les pidas mientras les prestes atención, pero tienes que gastar tu acción cada turno en dirigirlas. Son de la zona y llegan por su pie, así que en un lugar inaccesible no funciona. *Acción*."
+   },
+   {
+    "tier": 6,
+    "name_en": "Deadly Swarm",
+    "cost": "6 Intelecto",
+    "src": null,
+    "req": [
+     "Call Swarm"
+    ],
+    "text": "Si tus criaturas pueden llegar adonde estás, llamas a un enjambre durante diez minutos. Hace lo que le ordenes telepáticamente mientras esté a alcance largo: puede dificultar las tareas de uno o de todos los enemigos o concentrarse y atacar a todos los enemigos que estén a alcance inmediato entre sí (y a alcance largo de ti), haciendo 4 de daño. Puedes hablarle telepáticamente y percibir a través de sus sentidos. *Acción para iniciar*."
+   },
+   {
+    "tier": 6,
+    "name_en": "Armored Beast",
+    "cost": "",
+    "src": "Controls Beasts, p. 167",
+    "req": [
+     "Companion"
+    ],
+    "text": "La Armadura de tu compañero sube 2. *Enabler*."
+   }
+  ],
+  "desc": "Dominas a un tipo de criatura pequeña (insectos, ratas, murciélagos, incluso pájaros) y acuden a ti en masa. Al crear el personaje eliges cuál [CSR15, p. 147–148]."
+ },
+ {
+  "name_en": "Controls Gravity",
+  "source": "CSR15",
+  "meta": [
+   [
+    "Intrusiones del DJ",
+    "mucha gente teme estar cerca de alguien que controla la gravedad; perder el control de estos poderes puede mandar objetos volando hacia el cielo."
+   ],
+   [
+    "Equipo adicional",
+    "un artilugio del tamaño de una pluma que indica el peso de lo que apuntas (a alcance corto), en una placa de vidrio con letras que solo tú entiendes."
+   ],
+   [
+    "Conexiones y sugerencias de efecto menor/mayor",
+    "se quedan en el CSR15 (p. 113)."
+   ]
+  ],
+  "notes": [
+   "Las conexiones son nuestras [Adaptación]: una rama de vuelo (Hover → Lessening Gravity's Pull → Field of Gravity → Flight), otra de ataque (Push / Hover → Gravity Cleave → Weight of the World) y otra de defensa (Armoring Debris → Field of Gravity). El árbol pasa de 6 a 10 habilidades. No se añaden Deflect Attacks (equivale a Field of Gravity) ni Psychokinetic Attack (equivale a Gravity Cleave)."
+  ],
+  "abilities": [
+   {
+    "tier": 1,
+    "name_en": "Hover",
+    "cost": "1 Intelecto",
+    "src": null,
+    "req": [],
+    "text": "Te elevas despacio en el aire. Con tu acción puedes concentrarte para quedarte quieto o flotar hasta una distancia corta; si no, te lleva el viento o tu propio impulso. Dura hasta diez minutos. Si tienes esta habilidad de otra fuente, flotas veinte minutos y te mueves a tu velocidad normal. *Acción para iniciar*. [Es distinta del Hover del CCR (Casts Spells, p. 155).]"
+   },
+   {
+    "tier": 1,
+    "name_en": "Push",
+    "cost": "2 Intelecto",
+    "src": "Masters Telekinesis, p. 200",
+    "req": [],
+    "text": "Empujas a un objetivo a alcance corto una distancia inmediata en cualquier dirección. Tienes que verlo, debe ser de tu tamaño o menor y no estar sujeto a nada. El empujón es rápido y tan tosco como una patada o un puñetazo. *Acción*."
+   },
+   {
+    "tier": 1,
+    "name_en": "Steady Hand",
+    "cost": "1 Intelecto",
+    "src": "Masters Telekinesis, p. 200",
+    "req": [],
+    "text": "Te estabilizas o mejoras tu agarre y ganas un nivel de Esfuerzo gratis en una tarea física que no sea de combate. No puedes volver a usarla hasta que hagas una recuperación. *Enabler*."
+   },
+   {
+    "tier": 2,
+    "name_en": "Lessening Gravity's Pull",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Hover",
+     "Steady Hand"
+    ],
+    "text": "Manipulando la atracción de la gravedad sobre ti, +1 a tu Ventaja de Velocidad. *Enabler*."
+   },
+   {
+    "tier": 3,
+    "name_en": "Gravity Cleave",
+    "cost": "3 Intelecto",
+    "src": null,
+    "req": [
+     "Push",
+     "Hover"
+    ],
+    "text": "Dañas a un objetivo a alcance corto aumentando de golpe la gravedad sobre una parte de él y reduciéndola en otra: 6 de daño. *Acción*."
+   },
+   {
+    "tier": 3,
+    "name_en": "Armoring Debris",
+    "cost": "5 Intelecto",
+    "src": "Masters Telekinesis, p. 200",
+    "req": [
+     "Push",
+     "Lessening Gravity's Pull"
+    ],
+    "text": "Usas objetos pequeños del entorno (piedras, cascotes, terrones) para interceptar ataques hasta que hagas una recuperación de diez minutos o más: tus tiradas de bloqueo quedan facilitadas un paso más (las de esquivar, no). *Acción para iniciar*."
+   },
+   {
+    "tier": 4,
+    "name_en": "Field of Gravity",
+    "cost": "4 Intelecto",
+    "src": null,
+    "req": [
+     "Armoring Debris",
+     "Lessening Gravity's Pull"
+    ],
+    "text": "Cuando quieres, un campo de gravedad a tu alrededor tira al suelo los proyectiles que te lanzan: eres inmune a ellos hasta tu turno del asalto siguiente. Tienes que saber que te atacan. No funciona contra ataques de energía. *Enabler*."
+   },
+   {
+    "tier": 4,
+    "name_en": "Mind for Speed",
+    "cost": "",
+    "src": "Masters Telekinesis, p. 201",
+    "req": [
+     "Lessening Gravity's Pull"
+    ],
+    "text": "Cuando una tarea te pediría gastar puntos de Intelecto, puedes gastarlos de Velocidad, y al revés. *Enabler*."
+   },
+   {
+    "tier": 5,
+    "name_en": "Flight",
+    "cost": "4+ Intelecto",
+    "src": null,
+    "req": [
+     "Hover",
+     "Field of Gravity"
+    ],
+    "text": "Flotas y vuelas durante una hora. Cada nivel de Esfuerzo te permite dar el vuelo a una criatura más de tu tamaño o menor que toques; tú diriges su movimiento y, si te pierde de vista, cae. En viaje, una criatura voladora recorre unos 32 km por hora sin que le afecte el terreno. *Acción para iniciar*."
+   },
+   {
+    "tier": 6,
+    "name_en": "Weight of the World",
+    "cost": "6+ Intelecto",
+    "src": null,
+    "req": [
+     "Gravity Cleave",
+     "Flight"
+    ],
+    "text": "Aumentas muchísimo el peso de un objetivo a alcance corto: cae al suelo y no puede moverse por sí mismo durante un minuto. Cada nivel de Esfuerzo te permite afectar a una criatura más. *Acción*."
+   }
+  ],
+  "desc": "Por un capricho del destino, algún artilugio o pura devoción, has aprendido a manejar la gravedad [CSR15, p. 113]."
+ },
+ {
+  "name_en": "Metes Out Justice",
+  "source": "CSR15",
+  "meta": [
+   [
+    "Intrusiones del DJ",
+    "la culpa y la inocencia pueden ser complicadas; a algunos les molesta que alguien se erija en juez; juzgar crea enemigos."
+   ],
+   [
+    "Equipo adicional",
+    "un escudo para protegerte a ti y a los inocentes."
+   ],
+   [
+    "Conexiones y sugerencias de efecto menor/mayor",
+    "se quedan en el CSR15 (p. 149)."
+   ]
+  ],
+  "notes": [
+   "Las conexiones son nuestras [Adaptación]: una rama de proteger (Designation → Defend the Innocent → Defend and Respond / Defend All the Innocent), otra de castigar (Designation → Punish the Guilty / Greater Designation → Punish All the Guilty) y otra de perseguir (Make Judgment → Quarry → Find the Guilty). Greater Designation requiere Designation porque la amplía (CCR, p. 145). El árbol pasa de 8 a 11 habilidades. Punish All the Guilty pasa de «una sola acción con un único límite de Esfuerzo» (CSR) a la regla de ataques de área del CCR: cada ataque después del primero es una acción extra (p. 305)."
+  ],
+  "abilities": [
+   {
+    "tier": 1,
+    "name_en": "Make Judgment",
+    "cost": "",
+    "src": null,
+    "req": [],
+    "text": "Quedas entrenado en averiguar la verdad de una situación, ver a través de las mentiras y superar engaños. *Enabler*. [Adaptación: en el CCR, recognizing motive.]"
+   },
+   {
+    "tier": 1,
+    "name_en": "Designation",
+    "cost": "",
+    "src": null,
+    "req": [],
+    "text": "Etiquetas como «inocente» o «culpable» a una criatura a alcance inmediato, según tu valoración de la situación o lo que sientes: inocente o culpable de algo concreto, o de crímenes terribles en general. No importa si aciertas mientras lo creas; el DJ puede pedirte que lo justifiques. Desde entonces, tus tareas de interacción social con los inocentes y tus ataques contra los culpables quedan facilitados. Puedes cambiar la etiqueta con otra acción de designación. Dura hasta que la cambies o te demuestren que te equivocas. *Acción*."
+   },
+   {
+    "tier": 1,
+    "name_en": "Inspiring Trust",
+    "cost": "1 Intelecto",
+    "src": "Quells Evil, p. 210",
+    "req": [],
+    "text": "Los aliados en tu presencia que comparten tu idea del bien y el mal suman +1 a sus recuperaciones. *Enabler*."
+   },
+   {
+    "tier": 2,
+    "name_en": "Defend the Innocent",
+    "cost": "2 Velocidad",
+    "src": null,
+    "req": [
+     "Designation"
+    ],
+    "text": "Durante diez minutos, si alguien que has designado inocente está a tu lado, comparte las ventajas defensivas que tengas, salvo la armadura normal (por ejemplo, lo que te da el escudo o un campo de fuerza), y sus defensas de Velocidad (esquivar) quedan facilitadas. Solo puedes proteger a un inocente a la vez. *Acción para iniciar*."
+   },
+   {
+    "tier": 2,
+    "name_en": "Quarry",
+    "cost": "2 Intelecto",
+    "src": "Hunts, p. 194",
+    "req": [
+     "Make Judgment",
+     "Designation"
+    ],
+    "text": "Eliges como presa a una criatura que ves y tienes un recurso a favor en todas las tareas de seguirla, entenderla, tratar con ella, atacarla o defenderte de ella. Solo puedes tener una presa a la vez. *Acción para iniciar*."
+   },
+   {
+    "tier": 3,
+    "name_en": "Punish the Guilty",
+    "cost": "2 Potencia",
+    "src": null,
+    "req": [
+     "Designation"
+    ],
+    "text": "Durante diez minutos, cuando atacas a alguien que has designado culpable, haces 2 de daño adicional. *Acción para iniciar*."
+   },
+   {
+    "tier": 3,
+    "name_en": "Defend and Respond",
+    "cost": "3 Potencia o Velocidad",
+    "src": "Stands Like a Bastion, p. 223",
+    "req": [
+     "Defend the Innocent"
+    ],
+    "text": "Si bloqueas o esquivas un ataque cuerpo a cuerpo, puedes atacar de inmediato cuerpo a cuerpo a quien te atacó. Solo una vez por turno. *Enabler*."
+   },
+   {
+    "tier": 4,
+    "name_en": "Find the Guilty",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Make Judgment",
+     "Quarry"
+    ],
+    "text": "Quedas entrenado en rastrear, descubrir cuando se esconde o encontrar de cualquier otro modo a alguien que hayas designado culpable. *Enabler*."
+   },
+   {
+    "tier": 4,
+    "name_en": "Greater Designation",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Designation"
+    ],
+    "text": "Puedes etiquetar como «inocentes» o «culpables» (como en Designation) a todas las criaturas a alcance inmediato. *Acción*."
+   },
+   {
+    "tier": 5,
+    "name_en": "Punish All the Guilty",
+    "cost": "3 Velocidad",
+    "src": null,
+    "req": [
+     "Punish the Guilty",
+     "Greater Designation"
+    ],
+    "text": "Atacas a todos los enemigos a alcance inmediato que hayas designado culpables, con una tirada por enemigo; cada ataque después del primero es una acción extra en tu turno (CCR, p. 305) [Adaptación]. *Acción*."
+   },
+   {
+    "tier": 6,
+    "name_en": "Defend All the Innocent",
+    "cost": "",
+    "src": null,
+    "req": [
+     "Defend the Innocent",
+     "Greater Designation"
+    ],
+    "text": "Proteges a todos los que hayas designado inocentes a alcance inmediato: sus defensas de Velocidad (esquivar) quedan facilitadas. *Enabler*."
+   }
+  ],
+  "desc": "Eres un justiciero: te has propuesto deshacer entuertos, proteger a los inocentes y castigar a los culpables, como un caballero andante [CSR15, p. 149–150]."
+ },
+ {
+  "name_en": "Blazes With Radiance",
+  "source": "CSR15",
+  "meta": [
+   [
+    "Intrusiones del DJ",
+    "una luz repentina puede deslumbrar o incluso cegar a otros sin que quieras."
+   ],
+   [
+    "Equipo adicional",
+    "una lente de cristal; la luz que pasa por ella llega el doble de lejos."
+   ],
+   [
+    "Habilidades radiantes",
+    "si tienes poderes que usarían fuerza u otra energía, usan luz y calor (por ejemplo, una protección se ve como destellos de luz sobre tu cuerpo)."
+   ],
+   [
+    "Conexiones y sugerencias de efecto menor/mayor",
+    "se quedan en el CSR15 (p. 99)."
+   ]
+  ],
+  "notes": [
+   "Las conexiones son nuestras [Adaptación]: una rama de ataque (Illuminating Touch / Enlightened → Dazzling Radiance → Burning Light / Blast Evil → Righteous Cloak) y otra de dominio de la luz (Illuminating Touch → Sunlight → Disappear → Living Light). El árbol pasa de 7 a 9 habilidades. Las añadidas son habilidades de luz de Quells Evil. Fence Out Evil no se añade porque depende de Rebuke Evil, que no está en este árbol, e Invisibility tampoco, porque equivale a Disappear."
+  ],
+  "abilities": [
+   {
+    "tier": 1,
+    "name_en": "Enlightened",
+    "cost": "",
+    "src": null,
+    "req": [],
+    "text": "Quedas entrenado en las tareas de percepción que dependen de la vista. *Enabler*."
+   },
+   {
+    "tier": 1,
+    "name_en": "Illuminating Touch",
+    "cost": "1 Intelecto",
+    "src": null,
+    "req": [],
+    "text": "Tocas un objeto y emite luz que ilumina todo a alcance corto, hasta que lo vuelvas a tocar con una acción. *Acción*."
+   },
+   {
+    "tier": 2,
+    "name_en": "Dazzling Radiance",
+    "cost": "2 Intelecto",
+    "src": null,
+    "req": [
+     "Illuminating Touch",
+     "Enlightened"
+    ],
+    "text": "Lanzas una ráfaga de colores deslumbrantes a una criatura a alcance corto: 2 de daño y, hasta el final del asalto siguiente, las defensas contra sus ataques quedan facilitadas (salvo que no dependa de la vista). *Acción*."
+   },
+   {
+    "tier": 3,
+    "name_en": "Burning Light",
+    "cost": "3 Intelecto",
+    "src": null,
+    "req": [
+     "Dazzling Radiance"
+    ],
+    "text": "Lanzas un haz de luz a una criatura a alcance largo y lo estrechas hasta que quema: 5 de daño. *Acción*."
+   },
+   {
+    "tier": 3,
+    "name_en": "Blast Evil",
+    "cost": "4 Intelecto",
+    "src": "Quells Evil, p. 211",
+    "req": [
+     "Dazzling Radiance",
+     "Illuminating Touch"
+    ],
+    "text": "Llenas un área inmediata adyacente de resplandor purificador: 3 de daño a hasta tres objetivos, con una tirada por objetivo, o 6 si son muertos vivientes, demonios o similares. Un poseído tiene otra oportunidad de resistir y expulsar a quien lo posee. *Acción*."
+   },
+   {
+    "tier": 4,
+    "name_en": "Sunlight",
+    "cost": "3 Intelecto",
+    "src": null,
+    "req": [
+     "Illuminating Touch",
+     "Burning Light"
+    ],
+    "text": "Una mota de luz viaja de ti a un punto a 30 m y allí estalla: luz intensa en 61 m de radio, y la oscuridad hasta 305 m pasa a luz tenue. Dura una hora o hasta que la disipes con una acción. *Acción*."
+   },
+   {
+    "tier": 4,
+    "name_en": "Righteous Cloak",
+    "cost": "4 Intelecto",
+    "src": "Quells Evil, p. 211",
+    "req": [
+     "Blast Evil",
+     "Burning Light"
+    ],
+    "text": "Brillas con una luz sana: quien intente tocarte o golpearte cuerpo a cuerpo recibe 4 de daño automáticamente (sin tirada). Si quieres, iluminas con luz intensa un área corta a tu alrededor. Dura hasta que hagas una recuperación de diez minutos o más. *Enabler*."
+   },
+   {
+    "tier": 5,
+    "name_en": "Disappear",
+    "cost": "4 Intelecto",
+    "src": null,
+    "req": [
+     "Enlightened",
+     "Sunlight"
+    ],
+    "text": "Desvías la luz que te llega y pareces desaparecer: eres invisible durante diez minutos y, mientras tanto, estás especializado en stealth y en las defensas de Velocidad (esquivar). Termina si revelas tu presencia o posición (atacar, usar una habilidad, mover algo grande…), pero puedes recuperar el resto de la invisibilidad con una acción para ocultarte. *Acción para iniciar o reiniciar*."
+   },
+   {
+    "tier": 6,
+    "name_en": "Living Light",
+    "cost": "5 Intelecto",
+    "src": null,
+    "req": [
+     "Disappear",
+     "Sunlight"
+    ],
+    "text": "Tu cuerpo se deshace en una nube de fotones que viaja al instante a un espacio libre que ves a alcance largo y allí se rehace. Hasta el comienzo del asalto siguiente no eres del todo sólido: las heridas que recibas de fuentes físicas bajan un paso de gravedad. *Acción*. [Adaptación: en el CSR15 recibías la mitad de daño (mínimo 1); se usa la misma solución que en Mental Projection.]"
+   }
+  ],
+  "desc": "Creas y moldeas la luz: la apartas de ti o la concentras como arma. Amas la luz y maldices la oscuridad [CSR15, p. 99–100]."
+ },
+ {
+  "name_en": "Sees Beyond",
+  "source": "CSR15",
+  "meta": [
+   [
+    "Intrusiones del DJ",
+    "no todo lo que se puede ver debería verse; a veces ver demasiado abruma."
+   ],
+   [
+    "Equipo adicional",
+    "ninguno."
+   ],
+   [
+    "Conexiones y sugerencias de efecto menor/mayor",
+    "se quedan en el CSR15 (p. 160)."
+   ]
+  ],
+  "notes": [
+   "Las conexiones son nuestras [Adaptación]: una rama de ver a través (See the Unseen → See Through Matter / Reveal Illusion → Find the Hidden → Remote Viewing → See Through Time) y otra de intuición (Awareness → Precognition), que se unen en Total Awareness. El árbol pasa de 6 a 10 habilidades."
+  ],
+  "abilities": [
+   {
+    "tier": 1,
+    "name_en": "See the Unseen",
+    "cost": "",
+    "src": null,
+    "req": [],
+    "text": "Percibes criaturas y objetos normalmente invisibles, desfasados o que solo están en parte en este universo. Al buscar cosas ocultas de forma más convencional, la tarea también queda facilitada. *Enabler*."
+   },
+   {
+    "tier": 1,
+    "name_en": "Sense Magic",
+    "cost": "1 Intelecto",
+    "src": "Crafts Illusions, p. 168",
+    "req": [],
+    "text": "Si hay magia de cualquier tipo actuando a alcance corto, lo sabes (pero no los detalles). *Última acción*."
+   },
+   {
+    "tier": 2,
+    "name_en": "See Through Matter",
+    "cost": "3 Intelecto",
+    "src": null,
+    "req": [
+     "See the Unseen"
+    ],
+    "text": "Ves a través de la materia como si fuera transparente, hasta 15 cm de grosor, durante un asalto; algunos materiales cuestan más que otros. *Acción*."
+   },
+   {
+    "tier": 2,
+    "name_en": "Reveal Illusion",
+    "cost": "2+ Intelecto",
+    "src": "Crafts Illusions, p. 168",
+    "req": [
+     "See the Unseen",
+     "Sense Magic"
+    ],
+    "text": "Cuando tiras para descubrir una ilusión o un objetivo invisible a alcance corto y sacas menos de 12, cuenta como un 12 (así que un 1 no provoca intrusión). Dura hasta que hagas una recuperación de diez minutos o más. *Esfuerzo:* sube en 3 el mínimo. *Acción para iniciar*. *En el rango 3:* el mínimo pasa a 15."
+   },
+   {
+    "tier": 2,
+    "name_en": "Awareness",
+    "cost": "3 Intelecto",
+    "src": "Infiltrates, p. 196",
+    "req": [
+     "See the Unseen"
+    ],
+    "text": "Estás hiperalerta hasta que hagas una recuperación de diez minutos o más: sabes dónde están, más o menos, todos los seres vivos a alcance largo. Con una acción de concentración puedes elegir uno e intentar averiguar su salud y su poder en general. *Acción*."
+   },
+   {
+    "tier": 3,
+    "name_en": "Find the Hidden",
+    "cost": "4+ Intelecto",
+    "src": null,
+    "req": [
+     "See Through Matter",
+     "Reveal Illusion"
+    ],
+    "text": "Ves el rastro de los objetos a través del espacio y el tiempo: sabes a qué distancia y en qué dirección está un objeto inanimado concreto que tocaste alguna vez. Te lleva entre una acción y horas de concentración, según decida el DJ, y no sabes de antemano cuánto. Con al menos dos niveles de Esfuerzo, una vez localizado sigues en contacto con él una hora por nivel, así que sabes si se mueve. *Acción para iniciar; acción cada asalto para concentrarte*."
+   },
+   {
+    "tier": 4,
+    "name_en": "Remote Viewing",
+    "cost": "6 Intelecto",
+    "src": null,
+    "req": [
+     "Find the Hidden",
+     "Awareness"
+    ],
+    "text": "La distancia es una ilusión. Con mucha concentración ves otro lugar, de una de estas dos formas: eliges un punto a una distancia y dirección concretas, o piensas en un lugar que ya has visto (de forma normal o con esta habilidad). Durante un minuto ves desde allí como si estuvieras. Te lleva entre una acción y horas de concentración, según decida el DJ, y no sabes de antemano cuánto. *Acción para iniciar; acción cada asalto para concentrarte*."
+   },
+   {
+    "tier": 5,
+    "name_en": "See Through Time",
+    "cost": "7 Intelecto",
+    "src": null,
+    "req": [
+     "Remote Viewing"
+    ],
+    "text": "El tiempo es una ilusión. Con mucha concentración ves otra época del lugar donde estás. Lo más fácil es ver unos cien años atrás o adelante (dificultad 5); un millón de años, o unos momentos antes o después del presente, es dificultad 10. Te lleva entre una acción y horas de concentración, según decida el DJ, y no sabes de antemano cuánto. *Acción para iniciar; acción cada asalto para concentrarte*."
+   },
+   {
+    "tier": 5,
+    "name_en": "Precognition",
+    "cost": "6 Intelecto",
+    "src": "Commands Mental Powers, p. 163",
+    "req": [
+     "Remote Viewing",
+     "Awareness"
+    ],
+    "text": "Intuyes el futuro hasta que hagas una recuperación de diez minutos o más: tienes un recurso a favor en las defensas; otro para descubrir engaños y traiciones y evitar trampas y emboscadas; y otro en todas las tareas de interacción. *Enabler*."
+   },
+   {
+    "tier": 6,
+    "name_en": "Total Awareness",
+    "cost": "",
+    "src": null,
+    "req": [
+     "See Through Time",
+     "Precognition"
+    ],
+    "text": "Tienes tal nivel de alerta que es muy difícil sorprenderte, esconderse de ti o acercarse sin que lo notes: tus tareas de iniciativa y percepción quedan facilitadas en tres pasos. *Enabler*. [Es distinta del Total Awareness del CCR (Reveres a Supernatural Force, p. 213).]"
+   }
+  ],
+  "desc": "Sabes que hay más de tres dimensiones y más cosas en el mundo de las que la mayoría puede ver; con práctica y ayuda (drogas, lentes, magia, herencia) percibes lo que otros no [CSR15, p. 160–161]."
+ }
+]

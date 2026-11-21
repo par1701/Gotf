@@ -1,0 +1,132 @@
+{
+"dom-manifest-nimbus": {
+"n": "Manifestar nimbo",
+"c": "",
+"t": "Las criaturas y objetos tocados por una chispa divina (o que tienen desplazamientos divinos) manifiestan un nimbo, que normalmente solo ven otras criaturas con nimbo. El tuyo aparece como uno o más puntos de luz brillante, quizá runas resplandecientes, que flotan cerca de tu cabeza; a medida que ganas desplazamientos divinos, pueden aumentar. Con el DJ puedes diseñar otro estilo de nimbo, como una sombra o llamas. Así, los PJ y otras criaturas tocadas por lo divino siempre se reconocen entre sí, igual que reconocen las cifras, los artefactos y otros objetos de origen divino. Como parte de cualquier otra acción puedes hacer visible tu nimbo a las criaturas normales, o apagarlo. Si lo haces visible a criaturas no divinas, a veces sirve de recurso a favor en tareas de interacción, si el DJ lo considera apropiado; aunque los no creyentes pueden decidir colgar al falso dios ahí mismo. Enabler."
+},
+"dom-steal-name": {
+"n": "Robar el nombre",
+"c": "2 puntos de reserva",
+"t": "Intentas averiguar el nombre común y propio de una persona u objeto a alcance corto, y tienes un recurso a favor en las tareas relacionadas con esa persona u objeto durante una hora. También puedes robar el nombre de una criatura viva a alcance corto sacándolo directamente de sus pensamientos: deja de actuar hasta un minuto mientras intenta recordarlo, o mientras uses tu acción cada asalto en concentrarte para ocultárselo. Si la atacan, la ponen en peligro o la provocan seriamente, deja de preocuparse por su nombre y actúa con normalidad. Acción."
+},
+"dom-self-aware": {
+"n": "Consciente de sí",
+"c": "3+ puntos de reserva",
+"t": "Durante el día siguiente sabes cuándo alguien pronuncia tu nombre en algún lugar del Más Allá (Afterworld), y la dirección y distancia aproximadas, si superas una tarea de Intelecto de dificultad igual al nivel de quien habla. Con un nivel de Esfuerzo tienes además una visión de quien te nombró y de lo que le rodea a alcance corto. Acción para iniciar."
+},
+"dom-divine-combatant": {
+"n": "Combatiente divino",
+"c": "",
+"t": "Cuando luchas contra un serafín o un raver, estás entrenado en ataques y defensa. Además, puedes elegir a un serafín o raver a alcance inmediato y favorecerlo con tu atención divina, lo que facilita sus tareas, o entorpecerlo con tu desfavor divino, lo que las dificulta. Solo puedes favorecer o desfavorecer a un objetivo a la vez. Enabler."
+},
+"dom-call-seraph": {
+"n": "Llamar a un serafín",
+"c": "",
+"t": "Un serafín de nivel 3 de tu tamaño acude desde el Éter, te acompaña y sigue tus instrucciones. Definís los detalles con el DJ, aunque tiene los rasgos generales de su tipo de criatura, incluida la capacidad de volar una distancia corta cada asalto (aunque, como criatura de nivel 3, no tiene fuerza para llevarte más allá de una distancia corta cada vez, por ejemplo para cruzar un pequeño abismo). Seguramente tirarás tú por él cuando actúe. En combate no suele atacar por su cuenta, sino que te ayuda: en tu acción, si está a tu lado, es un recurso a favor en un ataque de tu turno. Si lo destruyen, normalmente se rehace a partir de sus restos en tres días; si se impide, puedes llamar a otro tras unos días proyectando tu mente en el Éter. Cada vez que subes de rango, tu serafín sube un nivel. Enabler. [Funciona como un seguidor del CCR (p. 307), con el nivel que fija GotF.]"
+},
+"dom-bolster-nimbus": {
+"n": "Reforzar el nimbo",
+"c": "2+ puntos de reserva",
+"t": "Refuerzas tu nimbo y lo haces visible a todas las criaturas durante un minuto. Mientras tu aura divina está alzada, puedes afectar de varias formas a criaturas de hasta nivel 2 a alcance inmediato; cada nivel de Esfuerzo sube en 1 el nivel máximo. Asombro (Awe): las criaturas te miran asombradas durante un minuto, sin hacer nada hasta que acabe el efecto o las ataquen o las saquen violentamente de su fascinación. Acción. Terror (Terror): las criaturas te temen hasta un minuto y huyen, o se encogen de miedo si no pueden huir. Acción. Confianza (Confidence): las criaturas aliadas tienen un recurso a favor en sus tareas hasta un minuto, mientras sigan a alcance inmediato de ti. Acción. Protección (Protection): durante un minuto, tus tiradas de bloqueo quedan facilitadas y puedes bloquear incluso ataques que normalmente no se bloquean. Acción. [Adaptación: Protección daba +1 a Armadura contra todos los ataques.]"
+},
+"dom-divine-conveyance": {
+"n": "Montura divina",
+"c": "",
+"t": "Aparece ante ti una criatura o vehículo de nivel 4 que te sirve de montura: un león, un mono gigante, un águila gigante, un elefante, un carro que se conduce solo u otra cosa que acordéis con el DJ. Llega enjaezada como solo lo estaría la montura de un dios, con bardas que le dan +1 a Armadura. Cuando no la necesitas se disuelve en el Éter, y vuelve en diez minutos cuando la llamas. Seguramente tirarás tú por ella cuando actúe. En combate no suele atacar por su cuenta, sino que te ayuda: en tu acción, si vas montado, es un recurso a favor en un ataque de tu turno. Si la matan, su alma y su cuerpo se regeneran en una semana, devueltos a la vida por tu aura. Cada vez que subes de rango, tu montura sube un nivel. Enabler."
+},
+"dom-disciple": {
+"n": "Discípulo",
+"c": "",
+"t": "Ganas un discípulo PNJ de nivel 3 completamente entregado a ti. Definís los detalles con el DJ. Seguramente tirarás tú por él cuando actúe. En combate no suele atacar por su cuenta, sino que te ayuda: en tu acción, si está a tu lado, es un recurso a favor en un ataque de tu turno. Si muere, ganas otro tras al menos dos semanas y algo de proselitismo. Cada vez que subes de rango, tu discípulo sube un nivel. Enabler. [Funciona como un seguidor del CCR (p. 307), con el nivel que fija GotF.]"
+},
+"dom-omniscience-lesser": {
+"n": "Omnisciencia menor",
+"c": "2 puntos de reserva",
+"t": "Obtienes un conocimiento superficial de una zona del tamaño de un cubo de 3 m a alcance corto, incluidos todos sus objetos y criaturas y su nivel. También averiguas los datos que el DJ considere pertinentes sobre la materia y la energía de la zona, pero no sus consecuencias. Por ejemplo, puedes saber que la caja de madera contiene un artilugio de metal y cristal, o que el cilindro de vidrio está lleno de gas venenoso y que las runas del suelo que lo rodean son mágicas. Pero no sabes qué significa: no sabes qué hace el artilugio ni si pisar el suelo activa las runas ni qué hacen. Algunos efectos mágicos resisten o impiden la omnisciencia. Acción."
+},
+"dom-command-the-hosts": {
+"n": "Mandar a las huestes",
+"c": "6 puntos de reserva",
+"t": "Durante diez minutos mandas a un serafín o raver a alcance corto; si no hay ninguno, aparece uno en un minuto. Lo controlas por completo: puedes ver y oír a través de sus sentidos como si fueran tuyos y dirigir sus movimientos. Acción."
+},
+"dom-create": {
+"n": "Crear",
+"c": "7 puntos de reserva",
+"t": "Creas algo de la nada: cualquier objeto que normalmente tendría una dificultad de fabricación de 5 o menos. Dura tantas horas como 6 menos esa dificultad; por ejemplo, un carro (dificultad 5) dura una hora. Acción. [En el CCR la artesanía normal funciona con puntos de recurso (p. 315); se usa la dificultad 5 o inferior como dice GotF.]"
+},
+"dom-immortality": {
+"n": "Inmortalidad",
+"c": "",
+"t": "No puedes morir por causas naturales. No envejeces ni necesitas comer, dormir ni respirar (aunque puedes hacerlo si quieres, y sigues necesitando descansar en calma para recuperarte). Solo puedes morir por violencia, magia, traumatismo u otras circunstancias especiales. Enabler."
+},
+"dom-mask": {
+"n": "Máscara",
+"c": "5 puntos de reserva",
+"t": "Transformas tu cuerpo en el de otra persona: puedes cambiar cualquier rasgo físico, incluidos color, altura, peso, sexo y marcas distintivas, y también el aspecto de lo que llevas encima. Tus estadísticas y las de tus objetos no cambian. Mantienes esa forma hasta veinticuatro horas o hasta que uses una acción para recuperar tu aspecto. Acción para iniciar."
+},
+"dom-band-of-disciples": {
+"n": "Banda de discípulos",
+"c": "",
+"t": "Ganas seis discípulos PNJ de nivel 2 completamente entregados a ti. Definís los detalles con el DJ. Si uno muere, ganas otro tras al menos dos semanas y un reclutamiento adecuado. Cada vez que subes de rango, tu banda sube un nivel. Enabler. [Funcionan como seguidores del CCR (p. 307).]"
+},
+"dom-confer-ability": {
+"n": "Conferir habilidad",
+"c": "6 puntos de reserva",
+"t": "Confieres a un discípulo u otro seguidor, durante una semana como máximo, una habilidad especial de rango 3 o inferior de tu tipo o tu foco. Puede usarla una vez al día, sin pagar su coste. Solo puedes conferir una habilidad a la vez. Acción para iniciar. [Recuerda que los tipos del CCR solo dan habilidades en el rango 1.]"
+},
+"dom-divine-knowledge": {
+"n": "Conocimiento divino",
+"c": "6 puntos de reserva",
+"t": "Trascendiéndote, haces una pregunta al DJ y recibes una respuesta general. El DJ asigna un nivel a la pregunta: cuanto más oscura la respuesta, más difícil la tarea. Por lo general, lo que podrías averiguar buscando en otro lugar distinto de donde estás es de nivel 1, y el conocimiento oscuro del pasado es de nivel 7. Es imposible conocer el futuro. Acción."
+},
+"dom-conjuration": {
+"n": "Conjuración",
+"c": "7 puntos de reserva",
+"t": "Haces aparecer, como de la nada, una criatura de nivel 5 de una clase que ya hayas encontrado. Se queda un minuto y luego vuelve a su hogar. Mientras está, actúa como le indicas, sin que te cueste ninguna acción. Acción."
+},
+"dom-fast-travel": {
+"n": "Viaje veloz",
+"c": "7 puntos de reserva",
+"t": "Retuerces el tiempo y el espacio para que tú y hasta otras diez criaturas a distancia inmediata viajéis por tierra a diez veces la velocidad normal durante hasta ocho horas. A esa velocidad se evitan casi todos los encuentros peligrosos y terrenos difíciles, aunque el DJ puede declarar excepciones. Las barreras infranqueables siguen siendo un problema. Acción para iniciar."
+},
+"dom-inspired-seraph": {
+"n": "Serafín inspirado",
+"c": "",
+"t": "Ganas los beneficios de la habilidad de rango 2 Llamar a un serafín y además bendices a tu serafín con dos capacidades nuevas; estas son algunas opciones (acuerda otra con el DJ si lo prefieres). Bendición de protección (Blessing of Protection): el serafín alza un aura de protección a su alrededor y en 3 m durante un minuto (o hasta que lo destruyan); no puede repetirla hasta después de tu siguiente recuperación. A los PJ protegidos les facilita el bloqueo; a los PNJ y criaturas les da +1 a Armadura. Acción. Bendición de cifra (Cypher Blessing): el serafín puede llevar una cifra más por ti. Enabler. Duro (Tough): tu serafín suma 15 de salud y +1 a Armadura. Virtud (Virtue): tu serafín puede manifestar una de las éticas de los serafines de la virtud (valor, humildad…), pero no gana desplazamientos divinos. [Adaptación: la Bendición de protección daba +1 a Armadura a todos.]"
+},
+"dom-control-weather": {
+"n": "Controlar el clima",
+"c": "10 puntos de reserva",
+"t": "Cambias el tiempo en tu región. En interiores, solo efectos menores, como niebla o cambios suaves de temperatura. Al aire libre puedes crear lluvia, niebla, nieve, viento u otro tiempo normal (no extremo), que dura lo natural: una tormenta, una hora; la niebla, dos o tres; la nieve, unas horas (o diez minutos si no es su estación). Durante los diez primeros minutos puedes crear efectos más espectaculares y concretos, como rayos, granizo gigante, tornados o vientos huracanados, a 300 m de ti como máximo. Tienes que dedicar tu turno a concentrarte para crear un efecto o mantenerlo otro asalto. Estos efectos hacen 6 de daño cada asalto. Acción. [Contra un PJ: herida moderada.]"
+},
+"dom-dominion-sense": {
+"n": "Sentido del dominio",
+"c": "9 puntos de reserva",
+"t": "Percibes un suceso actual relacionado con tu dominio que será importante durante el día siguiente, si superas una tarea de Intelecto de dificultad 3. La importancia se mide por el número de personas implicadas: si son varios cientos o más, probablemente es importante (aunque el DJ puede juzgarlo de otro modo). Con un nivel de Esfuerzo tienes además una visión del suceso de hasta diez minutos. Por ejemplo, si eres dios de la Caza y en Cryserech sueltan en la naturaleza una prisión llena de esclavos para que nobles hastiados los cacen, seguramente te enteras. Acción para iniciar."
+},
+"dom-earthquake": {
+"n": "Terremoto",
+"c": "10 puntos de reserva",
+"t": "Desatas un terremoto centrado en un punto que ves a 300 m o menos. El suelo en 76 m alrededor se agita durante cinco minutos y causa grandes daños a estructuras y terreno: se derrumban edificios de madera, piedra o ladrillo, caen muros, se desmoronan acantilados, se hunden techos, unas zonas se alzan y otras se hunden. Las criaturas dentro de un edificio derrumbado o bajo un acantilado o muro que cae sufren un aplastamiento (3 de daño) o un gran aplastamiento (6 de daño) y quizá tengan que desenterrarse, según decida el DJ. Además, la fuerza del seísmo derriba a las criaturas y les impide levantarse hasta que pare. Acción para iniciar. [Contra un PJ: herida leve o moderada.]"
+},
+"dom-master-the-hosts": {
+"n": "Dominar a las huestes",
+"c": "8 puntos de reserva",
+"t": "Durante una semana controlas a un serafín o raver; si no hay ninguno al alcance, aparece uno en un minuto. Si usas una acción para concentrarte en él, sabes lo que pasa a su alrededor (ves y oyes como si estuvieras a su lado, por lejos que esté). Tienes que tocarlo para crear el vínculo, pero después no hay límite de alcance. Solo puedes dominar a un serafín o raver a la vez. Acción para iniciar."
+},
+"dom-omniscience-greater": {
+"n": "Omnisciencia mayor",
+"c": "10 puntos de reserva",
+"t": "Obtienes un conocimiento completo de una zona del tamaño de un cubo de 30 m a alcance corto, incluidos todos sus objetos y criaturas y su nivel. También averiguas los detalles, propósitos e intenciones concretos de las criaturas y objetos de la zona: por ejemplo, sabes que las runas invisibles del suelo son mágicas, cómo se activan exactamente y qué maldición lanzan si se activan. Algunos efectos mágicos resisten o impiden la omnisciencia. Acción."
+},
+"dom-twist-of-fate": {
+"n": "Giro del destino",
+"c": "",
+"t": "Cuando sacas un 1, puedes repetir la tirada. Tienes que quedarte con el nuevo resultado, aunque sea otro 1. Enabler."
+},
+"dom-usurp-cypher": {
+"n": "Usurpar cifra",
+"c": "",
+"t": "Destruyes una cifra que llevas y te quedas con su poder, que funciona para ti de forma continua. Su efecto no puede ser instantáneo. Puedes elegir la cifra al ganar esta habilidad o esperar y elegirla más tarde, pero una vez usurpado un poder no puedes cambiarlo por otro: la habilidad solo funciona una vez. Acción para iniciar."
+}
+}

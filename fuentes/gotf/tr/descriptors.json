@@ -1,0 +1,200 @@
+{
+"desc-appealing": {
+"n": "Atractivo",
+"p": "+2 a la reserva de Intelecto",
+"s": "Entrenado en encanto (charm) o reconocer intenciones (recognizing motive)",
+"d": "Resultas atractivo, pero sobre todo eres simpático y carismático. Tienes ese «algo especial» que atrae a los demás. Sueles saber qué decir para hacer reír a alguien, tranquilizarlo o animarlo a actuar. La gente te aprecia, quiere ayudarte y ser tu amiga."
+},
+"desc-bookish": {
+"n": "Estudioso",
+"p": "+2 a la reserva de Intelecto",
+"s": "Entrenado en historia (history), filosofía (philosophy), psicología (psychology) o similar",
+"d": "Has pasado casi toda tu vida en actividades sedentarias (leer, mirar las estrellas, escribir poesía…) en vez de activas. Dominas todo tipo de saberes académicos o intelectuales. No eres necesariamente débil (aunque es un buen descriptor para personajes ancianos), pero no tienes experiencia en actividades físicas."
+},
+"desc-brash": {
+"n": "Descarado",
+"p": "+2 a la reserva de Velocidad",
+"s": "Entrenado en piratería informática (hacking) o iniciativa (initiative)",
+"d": "Eres seguro de ti mismo, enérgico y quizá algo irreverente con las ideas que no compartes. Hay quien te llama audaz y valiente, y quien te ha visto poner a otros en su sitio te llama engreído y arrogante. Da igual: no te importa lo que piensen de ti, salvo tus amigos o tu familia. Hasta alguien tan descarado como tú sabe que a veces los amigos van primero."
+},
+"desc-calm": {
+"n": "Sereno",
+"p": "+2 a la reserva de Intelecto",
+"s": "Entrenado en encanto (charm) o oficio (skilled trade)",
+"d": "Eres firme y no te alteras ante el estrés o la adversidad. Buscas la calma interior para reaccionar con reflexión y no por impulso. Tu presencia también serena a quienes ven tu temple y escuchan tus pacientes consejos."
+},
+"desc-cautious": {
+"n": "Cauto",
+"p": "+2 a la reserva de Velocidad",
+"s": "Entrenado en recabar información (gathering information) o percepción (perception)",
+"d": "No te lanzas a una situación nueva sin pensarlo bien. Te preocupa lo que pueda pasar si no estudias a fondo los detalles de un trabajo, una oportunidad o una investigación. Los menos precavidos te llamarán timorato, pero sospechas que la valentía es otra forma de decir temeridad."
+},
+"desc-chaotic": {
+"n": "Caótico",
+"p": "+2 a la reserva de Velocidad",
+"s": "Entrenado en iniciativa (initiative) o interpretación (performance)",
+"d": "El peligro no te dice gran cosa, sobre todo porque no piensas mucho en las consecuencias. De hecho, disfrutas sembrando sorpresas solo por ver qué pasa: cuanto más inesperado el resultado, más contento estás. A veces te pones especialmente frenético y, por el bien de tus compañeros, te contienes ante actos que sabes que acabarán en desastre."
+},
+"desc-charming": {
+"n": "Encantador",
+"p": "+2 a la reserva de Intelecto",
+"s": "Entrenado en encanto (charm) o engaño (deception)",
+"d": "Tienes labia y encanto. Ya sea por medios casi sobrenaturales o por tu manera de hablar, convences a los demás de que hagan lo que quieres. Seguramente eres atractivo, o al menos muy carismático, y a la gente le gusta oír tu voz. Cuidas tu aspecto y haces amigos con facilidad. Explotas la faceta de personalidad de tu Intelecto; la inteligencia no es tu fuerte."
+},
+"desc-clever": {
+"n": "Listo",
+"p": "+2 a la reserva de Intelecto",
+"s": "Entrenado en engaño (deception) o reconocer intenciones (recognizing motive)",
+"d": "Eres agudo y piensas rápido. Entiendes a la gente, así que puedes engañarla y rara vez te engañan. Como ves las cosas tal como son, te haces enseguida una idea del terreno, calibras amenazas y aliados y evalúas las situaciones con acierto. Quizá eres atractivo, quizá usas el ingenio para superar cualquier imperfección física o mental, o quizá te has dedicado a vulnerar aparatos digitales, porque eres así de listo."
+},
+"desc-compassionate": {
+"n": "Compasivo",
+"p": "+2 a la reserva de Intelecto",
+"s": "Entrenado en cuidado de animales (animal care) o curación (healing)",
+"d": "Ayudar a los demás es tu vocación; para eso estás aquí. Los demás disfrutan de tu carácter abierto y caritativo, y tú de su felicidad. Das lo mejor de ti ayudando, ya sea curando heridas, echando una mano en una tarea o poniendo buena cara a una mala situación para levantar la moral."
+},
+"desc-creative": {
+"n": "Creativo",
+"p": "+2 a la reserva de Intelecto",
+"s": "Entrenado en interpretación (performance) o edición (publishing)",
+"d": "Quizá llevas un cuaderno donde apuntas ideas para desarrollarlas más tarde. Quizá te envías por correo las ideas que te asaltan de repente para ordenarlas en un documento electrónico. O quizá te sientas ante la página o la pantalla en blanco y, a pura fuerza de voluntad, sacas algo de la nada. Funcione como funcione tu don, eres creativo: escribes, compones, esculpes, diseñas, diriges, programas o creas de otro modo historias que cautivan a los demás con tu visión."
+},
+"desc-empathic": {
+"n": "Empático",
+"p": "+2 a la reserva de Intelecto",
+"s": "Entrenado en recabar información (gathering information) o reconocer intenciones (recognizing motive)",
+"d": "Los demás son un libro abierto para ti. Puede que sepas leer los gestos sutiles que delatan el ánimo y la disposición de alguien, o que sientas sus emociones como algo tangible que te roza la mente. Tu don te ayuda a manejar las situaciones sociales, evitar malentendidos e impedir conflictos inútiles."
+},
+"desc-fast": {
+"n": "Veloz",
+"p": "+2 a la reserva de Velocidad",
+"s": "Entrenado en engaño (deception) o iniciativa (initiative)",
+"d": "Eres ligero de pies. Como eres rápido, haces las cosas antes que los demás. Y no solo de pies: eres rápido de manos, piensas y reaccionas rápido. Hasta hablas rápido."
+},
+"desc-gloomy": {
+"n": "Sombrío",
+"p": "+2 a la reserva de Velocidad o de Potencia",
+"s": "Entrenado en historia (history) o reconocer intenciones (recognizing motive)",
+"d": "Sospechas que el destino, si no te lleva activamente a un final terrible, al menos se empeña en enseñarte las miserias del mundo con una serie de desgracias. Quizá solo tú te sientes señalado, o quizá es el mundo entero. Es más fácil esperar lo peor y sorprenderse cuando no sale tan mal que al revés."
+},
+"desc-graceful": {
+"n": "Grácil",
+"p": "+2 a la reserva de Velocidad",
+"s": "Entrenado en gimnasia (gymnastics) o iniciativa (initiative)",
+"d": "Tienes un equilibrio perfecto y te mueves y hablas con gracia y belleza. Eres rápido, ágil, flexible y diestro. Tu cuerpo está hecho para la danza, y aprovechas esa ventaja en combate para esquivar golpes. Puede que vistas prendas que realcen tus movimientos y tu estilo."
+},
+"desc-guarded": {
+"n": "Reservado",
+"p": "+2 a la reserva de Intelecto",
+"s": "Entrenado en engaño (deception) o disfraz (disguise)",
+"d": "Ocultas tu verdadera naturaleza tras una máscara y no te gusta que nadie vea cómo eres de verdad. Lo que más te importa es protegerte, física y emocionalmente, y prefieres mantener a los demás a una distancia prudente. Quizá desconfías de todo el mundo y esperas lo peor para no llevarte sorpresas, o quizá solo eres algo retraído y te cuesta dejar ver lo que hay tras tu exterior hosco."
+},
+"desc-honorable": {
+"n": "Honorable",
+"p": "+2 a la reserva de Potencia",
+"s": "Entrenado en encanto (charm) o filosofía (philosophy)",
+"d": "Eres digno de confianza, justo y franco. Intentas hacer lo correcto, ayudar a los demás y tratarlos bien. Mentir y hacer trampas no es manera de prosperar: eso es para débiles, vagos o despreciables. Seguramente piensas mucho en tu honor, en cómo mantenerlo y en cómo defenderlo si lo ponen en duda. En combate eres directo y das cuartel a cualquier enemigo."
+},
+"desc-inquisitive": {
+"n": "Curioso",
+"p": "+2 a la reserva de Intelecto",
+"s": "Entrenado en recabar información (gathering information) o identificar (identifying)",
+"d": "El mundo es vasto y misterioso, con maravillas y secretos para asombrarte varias vidas. Sientes la llamada de explorar las ruinas de civilizaciones pasadas y descubrir pueblos, lugares y rarezas por el camino. Pero sabes que hay peligros de sobra, y tomas precauciones: investigar, prepararte y estar listo te ayudará a vivir lo bastante para verlo y hacerlo todo."
+},
+"desc-intelligent": {
+"n": "Inteligente",
+"p": "+2 a la reserva de Intelecto",
+"s": "Entrenado en química (chemistry), ingeniería (engineering), matemáticas (mathematics) o similar",
+"d": "Eres muy listo. Tienes buena memoria y captas con facilidad conceptos que a otros les cuestan. No significa necesariamente que hayas tenido años de educación formal, pero has aprendido mucho en la vida, sobre todo porque aprendes rápido y retienes mucho."
+},
+"desc-intuitive": {
+"n": "Intuitivo",
+"p": "+2 a la reserva de Intelecto",
+"s": "Entrenado en psicología (psychology) o reconocer intenciones (recognizing motive)",
+"d": "A menudo te asalta la sensación de saber qué va a decir alguien, cómo reaccionará o cómo se desarrollarán los acontecimientos. Quizá tengas un sentido especial, quizá veas unos instantes del futuro o quizá solo sepas leer a la gente y deducir. Sea como sea, muchos apartan la mirada cuando te miran a los ojos, como si temieran lo que puedas ver en su expresión."
+},
+"desc-jovial": {
+"n": "Jovial",
+"p": "+2 a la reserva de Intelecto",
+"s": "Entrenado en encanto (charm) o interpretación (performance)",
+"d": "Eres alegre, simpático y extrovertido. Tranquilizas a los demás con una gran sonrisa y un chiste, quizá a tu costa, aunque tomar el pelo con cariño a los compañeros que lo aguantan es uno de tus pasatiempos favoritos. Hay quien dice que no te tomas nada en serio. No es verdad, pero has aprendido que regodearse en lo malo le roba la alegría al mundo. Siempre tienes un chiste nuevo guardado, porque los coleccionas como otros coleccionan vinos."
+},
+"desc-kind": {
+"n": "Amable",
+"p": "+2 a la reserva de Intelecto",
+"s": "Entrenado en encanto (charm) o curación (healing)",
+"d": "Siempre te ha resultado fácil ver las cosas desde el punto de vista de los demás, y eso te hace comprender lo que de verdad quieren o necesitan. Para ti es aplicar el refrán de que se cazan más moscas con miel que con hiel, pero los demás lo ven como amabilidad. Claro que tu tiempo es limitado: unos pocos (sádicos, narcisistas y gente así) no merecen tu amabilidad, así que despachas rápido con ellos y la guardas para quien la merece."
+},
+"desc-mechanical": {
+"n": "Mecánico",
+"p": "+2 a la reserva de Intelecto",
+"s": "Entrenado en ingeniería (engineering), manejo de maquinaria pesada (heavy equipment operation) o manejo de sistemas (systems operation)",
+"d": "Tienes un talento especial con las máquinas de todo tipo: sabes entenderlas y, si hace falta, repararlas. Quizá seas algo inventor y crees máquinas nuevas de vez en cuando. Te llaman «técnico», «manitas», «mecánico», «loco de los motores» o cualquier otro apodo. Los mecánicos suelen llevar ropa de trabajo práctica y cargar con muchas herramientas."
+},
+"desc-mysterious": {
+"n": "Misterioso",
+"p": "+2 a la reserva de Intelecto o de Velocidad",
+"s": "Entrenado en engaño (deception) o sigilo (stealth)",
+"d": "¿La figura oscura que acecha callada en el rincón? Eres tú. Nadie sabe de dónde vienes ni qué te mueve: no enseñas tus cartas. Tu forma de ser desconcierta a los demás, pero eso no te hace mal amigo ni mal aliado. Simplemente se te da bien guardarte las cosas, moverte sin que te vean y ocultar tu presencia e identidad."
+},
+"desc-mystical": {
+"n": "Místico",
+"p": "+2 a la reserva de Intelecto",
+"s": "Entrenado en saber mágico (magic lore), saber psíquico (psychic lore) o saber religioso (religious lore)",
+"d": "Te consideras místico, en sintonía con lo misterioso y lo paranormal; tu verdadero talento es lo sobrenatural. Seguramente conoces saberes antiguos, y puedes percibir y manejar lo sobrenatural, llámese «magia», «fenómenos psíquicos» o de otra forma. Los místicos suelen llevar joyas, como un anillo o un amuleto, o tatuajes y marcas que muestran sus intereses."
+},
+"desc-perceptive": {
+"n": "Perspicaz",
+"p": "+2 a la reserva de Intelecto",
+"s": "Entrenado en percepción (perception) o reconocer intenciones (recognizing motive)",
+"d": "Se te escapa poco. Te fijas en los pequeños detalles del mundo que te rodea y sacas conclusiones de ellos con habilidad. Tu talento te hace un detective excepcional o un explorador muy capaz."
+},
+"desc-resilient": {
+"n": "Resiliente",
+"p": "+2 a la reserva de Potencia",
+"s": "Entrenado en atletismo (athletics) o escapar (escaping)",
+"d": "Eres más duro que la mayoría: aguantas castigo y vuelves a por más. Y si los acontecimientos te desbordan, no te dejas llevar por el pánico: te concentras en librarte de lo que te retiene. Ser resiliente es, en parte, saber salir de una mala situación."
+},
+"desc-rugged": {
+"n": "Agreste",
+"p": "+2 a la reserva de Potencia",
+"s": "Entrenado en cuidado de animales (animal care) o supervivencia (outdoor survival)",
+"d": "Amas la naturaleza, estás acostumbrado a vivir a la intemperie y a medir tu ingenio contra los elementos. Seguramente eres buen cazador, recolector o naturalista. Los años en la naturaleza te han dejado marcas: un rostro curtido, el pelo revuelto o cicatrices. Tu ropa es mucho menos refinada que la de la gente de ciudad."
+},
+"desc-skeptical": {
+"n": "Escéptico",
+"p": "+2 a la reserva de Intelecto",
+"s": "Entrenado en identificar (identifying) o reconocer intenciones (recognizing motive)",
+"d": "Cuestionas lo que otros dan por sentado. No eres un «santo Tomás» que no cree nada sin verlo con sus ojos, pero a menudo te ha ido bien poner en duda lo que otros afirman, opinan o te transmiten como sabido."
+},
+"desc-stealthy": {
+"n": "Sigiloso",
+"p": "+2 a la reserva de Velocidad",
+"s": "Entrenado en robar bolsillos (pickpocketing) o sigilo (stealth)",
+"d": "Eres furtivo, escurridizo y rápido. Esos talentos te ayudan a esconderte, moverte sin ruido y pasar desapercibido. Quizá eres menudo y fibroso; lo importante es que sabes usar sombras, coberturas y distracciones para que no te vean ni te oigan, y moverte de forma fluida y deliberada. Tu pericia te da ventaja para observar a escondidas, infiltrarte o tender emboscadas, o para aliviar a alguien de sus objetos de valor con un juego de manos."
+},
+"desc-strong": {
+"n": "Fuerte",
+"p": "+2 a la reserva de Potencia",
+"s": "Entrenado en atletismo (athletics) o intimidación (intimidation)",
+"d": "Eres muy fuerte y poderoso físicamente, y lo aprovechas bien, ya sea con violencia, con proezas atléticas o aguantando castigo. Seguramente tienes una complexión robusta y músculos impresionantes, aunque también podrías ser fuerte y fibroso."
+},
+"desc-strong-willed": {
+"n": "Decidido",
+"p": "+2 a la reserva de Intelecto",
+"s": "Entrenado en encanto (charm) o intimidación (intimidation)",
+"d": "Eres de mente firme, voluntarioso e independiente. Nadie te convence de nada ni te hace cambiar de opinión si no quieres. Eso no te hace necesariamente listo, pero sí un bastión de voluntad y determinación. Seguramente vistes y actúas con un estilo propio, sin importarte lo que piensen los demás."
+},
+"desc-tough": {
+"n": "Duro",
+"p": "+2 a la reserva de Potencia",
+"s": "Entrenado en atletismo (athletics) o supervivencia (outdoor survival)",
+"d": "Eres fuerte y aguantas castigo físico extra: sigues adelante y te sacudes golpes y heridas que frenarían o incapacitarían a otros. Quizá tienes una gran envergadura y la mandíbula cuadrada. Los personajes duros suelen tener cicatrices visibles."
+},
+"desc-virtuous": {
+"n": "Virtuoso",
+"p": "+2 a la reserva de Potencia",
+"s": "Entrenado en filosofía (philosophy) o saber religioso (religious lore)",
+"d": "Hacer lo correcto es tu forma de vida. Vives según un código y lo atiendes cada día. Cuando flaqueas, te reprochas tu debilidad y vuelves enseguida al buen camino. Tu código probablemente incluye la moderación, el respeto a los demás y la limpieza, entre otras cosas que la mayoría consideraría virtudes, y rehúyes sus contrarios: pereza, codicia, gula…"
+}
+}

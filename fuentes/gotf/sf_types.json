@@ -1,0 +1,997 @@
+{
+ "Diplomat": {
+  "page": 92,
+  "sub": "Hard science fiction",
+  "es": "Diplomático",
+  "intro_es": "Tú juegas a largo plazo mientras todos los demás reaccionan a la última provocación. Sabes sonreír, halagar y ofrecer regalos a tu posible nuevo aliado, aunque preferirías saltar por encima de la mesa y estrangularlo. A veces la negociación exige medios menos evidentes. Cuando puedes, intentas averiguar todo lo posible sobre con quién vas a hablar. Si al principio no hacen lo que pides, quizá acepten un trato a la luz de algo que necesitan y que tú puedes ayudar a conseguir, o, si no estás por encima de las amenazas veladas, porque sabes algo que preferirían que no saliera a la luz. Entiendes a los demás, así que seguramente eres quien puede aconsejar y ayudar a sus compañeros y hacer de intermediario entre tus aliados y los extraños. Muchas veces, un poco de diplomacia (o de distracción verbal) es lo que permite al resto del equipo llegar a un lugar delicado, salir de él con palabras o, cuando hay mucho en juego, evitar que la tensión vaya a más.",
+  "bg_es": [
+   "Tu familia formaba parte de una cooperativa de un asteroide, pero tu bocaza hizo que te expulsaran por votación y ahora buscas mejorar.",
+   "El mes pasado negociaste un acuerdo entre dos corporaciones multiplanetarias que acabó con años de hostilidad.",
+   "Tus padres, tus hermanos y tú sufristeis un accidente de lanzadera lunar cuando eras pequeño. Siempre has sospechado que detrás había una conspiración, pero no has encontrado pruebas sólidas. Todavía.",
+   "Hace poco te despidió el nuevo jefe de la agencia gubernamental para la que trabajabas.",
+   "Hace poco acusaron de traición a uno de tus colegas, un analista de una agencia de espionaje.",
+   "Fuiste el último de tu promoción, despreciado por todos tus compañeros, y sin embargo aquí estás, decidido a cambiar las cosas y demostrarles que se equivocaban.",
+   "No puedes decir nada de tu mayor éxito diplomático sin arriesgarte a que vuelva la guerra.",
+   "Tu nieto te ayuda a seguir haciendo lo que haces: merece un futuro mejor."
+  ],
+  "ben_en": [
+   "Able to take two more minor wounds and one more moderate wound",
+   "Add +1 to Speed Pool",
+   "Add +3 to Intellect Pool",
+   "Add +1 Edge in Pool of your choice",
+   "Freely use light and medium weapons",
+   "Freely use light armor",
+   "At tier 3 and tier 6, choose an ability from the Science Fiction Genre Abilities list"
+  ],
+  "ben_es": [
+   "Puedes recibir dos heridas leves más y una moderada más",
+   "+1 a la reserva de Velocidad",
+   "+3 a la reserva de Intelecto",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente armas ligeras y medias",
+   "Usas libremente armaduras ligeras",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género ciencia ficción"
+  ],
+  "abilities": [
+   {
+    "en": "Connected",
+    "es": "Bien relacionado",
+    "cost_es": "2+ Intelecto",
+    "text_es": "Conoces a gente que hace que las cosas pasen: no solo personas respetadas con cargos de autoridad, sino también una variedad de piratas informáticos y delincuentes callejeros corrientes. No son necesariamente tus amigos y quizá no sean de fiar, pero te deben un favor o dos. Al usar esta habilidad, recuerdas o estableces de otro modo un contacto de nivel 2 al que puedes recurrir en un lugar concreto. Tú y el DJ podéis acordar los detalles. Esfuerzo: sube en 1 el nivel del nuevo contacto. Esta habilidad se renueva cuando llegas a un lugar nuevo o cuando ha pasado al menos un mes en el mismo lugar donde la usaste por última vez. Capacitador. En el rango 3: puedes establecer a la vez dos contactos en un lugar concreto. (Puedes usar Bien relacionado en lugar de puntos de recurso para conseguir un contacto [CCR, p. 315].)"
+   },
+   {
+    "en": "Fast Talk",
+    "es": "Labia",
+    "cost_es": "1 Intelecto",
+    "text_es": "Al hablar con una criatura inteligente que pueda entenderte y no sea hostil, la convences de hacer una acción razonable en el asalto siguiente. El DJ debe estar de acuerdo en que es razonable: no debe poner a la criatura ni a sus aliados en peligro evidente ni ser totalmente impropia de ella. Acción."
+   },
+   {
+    "en": "Inspiring Suggestion",
+    "es": "Sugerencia inspiradora",
+    "cost_es": "2 Intelecto",
+    "text_es": "Elige un aliado que pueda verte y entenderte con facilidad. Sugiérele una acción concreta, como «ataca al líder» o «trepa el muro». Si decide hacer exactamente esa acción en su siguiente turno, gana dos recursos en esa tarea. Primera acción."
+   }
+  ],
+  "bundle_es": "Un maletín (resistente al vacío), un cierre de seguridad (para que nadie más abra tu maletín), ropa adecuada, un juego extra de ropa muy elegante, un dispositivo inteligente (gafas, insignia, anillo o similar), un respirador, una tienda ambiental, una luz perenne, raciones y agua para dos días, un neceser de aseo y un antifaz y dinero suficiente para comprar un objeto de precio moderado.",
+  "notes": []
+ },
+ "Engineer": {
+  "page": 93,
+  "sub": "Hard science fiction",
+  "es": "Ingeniero",
+  "intro_es": "¡Escucha cómo zumban esos motores! Un momento, ¿esos armónicos están dentro de especificaciones? Para ti, cada máquina es una oportunidad de aprender algo, arreglar algo o incluso fabricar algo nuevo (aunque sea temporal) con sus piezas. Si no sabes algo, sabes qué archivos es más probable que contengan los planos u otras respuestas que necesitas, aunque ese conocimiento esté cifrado en bases de datos restringidas. Eres alguien que fabrica y arregla, un profesional del conocimiento curtido con experiencia real en toda clase de situaciones. Gracias a ti, la misión de tu equipo tiene más probabilidades de salir bien en vez de fracasar por falta de un turboencabulador.",
+  "bg_es": [
+   "Tras sobrevivir por los pelos a un fallo de sistemas en el hábitat de asteroide donde pasaste tu infancia, te has dedicado a la técnica para evitar desastres parecidos en el futuro.",
+   "La semana pasada las noticias contaron que habían asesinado a un profesor de ingeniería con el que estudiaste.",
+   "Cuando los disidentes atacaron, cortaron la energía principal y tus padres murieron. Has jurado encontrar algún día a sus líderes y devolverles el favor.",
+   "Tu artículo sobre una mejora del motor iónico hace que aún te reconozcan en ciertos círculos.",
+   "Hace diez años despertaste de un coma inducido sin recuerdos de tu pasado ni documentos de identidad. Después de tanto tiempo, sigues sin respuestas.",
+   "El mes pasado explotaron los motores de un carguero vagabundo que intentabas reparar.",
+   "Hace poco volviste de una misión de tres años en las refinerías de deuterio de los planetas exteriores.",
+   "Cuando se averió el depurador de radiación de la colonia hace un mes, lograste arreglarlo de forma rápida."
+  ],
+  "ben_en": [
+   "Able to take two more minor wounds and one more moderate wound",
+   "Add +1 to Speed Pool",
+   "Add +3 to Intellect Pool",
+   "Add +1 Edge in Pool of your choice",
+   "Freely use light and medium weapons",
+   "Freely use light and medium armor",
+   "At tier 3 and tier 6, choose an ability from the Science Fiction Genre Abilities list"
+  ],
+  "ben_es": [
+   "Puedes recibir dos heridas leves más y una moderada más",
+   "+1 a la reserva de Velocidad",
+   "+3 a la reserva de Intelecto",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente armas ligeras y medias",
+   "Usas libremente armaduras ligeras y medias",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género ciencia ficción"
+  ],
+  "abilities": [
+   {
+    "en": "Connected Knowledge",
+    "es": "Conocimiento conectado",
+    "cost_es": "1 Intelecto",
+    "text_es": "Puedes conectarte a datos restringidos (con un implante, un dispositivo de mano, un dron robótico ayudante o similar) que no son de acceso público. Hazle una pregunta al DJ y obtén una respuesta breve pero exacta si superas una tarea de Intelecto. La dificultad es rutinaria si es algo que cualquiera podría saber con su propio medio de acceso, de nivel 3 si el conocimiento delicado o secreto es sobre todo de ingeniería o ciencia, y de nivel 5 o superior si el DJ decide que la información es especialmente delicada o secreta, sea o no de naturaleza científica. Última acción."
+   },
+   {
+    "en": "Expert Engineer",
+    "es": "Ingeniero experto",
+    "cost_es": "",
+    "text_es": "Quedas entrenado en ingeniería. En el rango 6: puedes hacerte experto en ingeniería si ya estás especializado, pero tienes que ganar la habilidad de la forma normal (por ejemplo, con un avance)."
+   },
+   {
+    "en": "Modify Device",
+    "es": "Modificar artefacto",
+    "cost_es": "3 Intelecto",
+    "text_es": "Apañas rápidamente un equipo o una fuente de energía para repararlo o mejorarlo. Necesitas acceso a piezas y herramientas adecuadas. Reparar: si superas una tarea de ingeniería (dificultad igual al nivel del artefacto + 1), reparas temporalmente un equipo roto o una fuente de energía inactiva para sacarle unos cuantos usos más. Mejorar: si superas una tarea de ingeniería de dificultad 3, haces que el artefacto funcione un 25 % por encima de sus especificaciones. Cuando haces una recuperación de diez horas, el artefacto se rompe y necesita una reparación completa (no otra tarea de Modificar artefacto) para recuperar su funcionamiento original. Por ejemplo, podrías forzar un desintegrador medio para que haga 1 de daño adicional, modificar una impresora de comida para que cada taza de café salga más rica, modificar el motor de una nave espacial para mejorar su aceleración un 25 %, etc. Tanto si lo reparas como si lo mejoras, el artefacto pasa a tener un agotamiento de 1–6 en 1d20 (compruébalo en cada uso). Diez minutos para completar. En el rango 3: el agotamiento del artefacto modificado mejora a 1–2 en 1d20. (Reparar del todo un artefacto, en lugar del apaño de Modificar artefacto, suele ser posible, pero normalmente requiere al menos unos días, herramientas y piezas especializadas y gastar puntos de recurso [CCR, p. 314].)"
+   }
+  ],
+  "bundle_es": "Un juego de herramientas de ingeniería, ropa adecuada, una mochila, un dispositivo inteligente (gafas, insignia, anillo o similar), un respirador, una tienda ambiental, un cortapernos, una luz perenne, raciones y agua para dos días, un neceser de aseo y un antifaz y dinero suficiente para comprar un objeto de precio moderado.",
+  "notes": []
+ },
+ "Medic": {
+  "page": 94,
+  "sub": "Hard science fiction",
+  "es": "Médico",
+  "intro_es": "Tú arreglas a la gente: vuelves a tejer su carne, parcheas sus órganos reventados y convences a sus huesos destrozados de volver a unirse. Tu trato con los pacientes no importa mucho, sobre todo cuando te llaman en un desastre o una guerra. Y tus modales importan aún menos cuando usas tus conocimientos y suministros médicos para incapacitar enemigos: a veces nadie espera que un médico se defienda. Tu papel en un equipo que se enfrenta a menudo a entornos difíciles o a conflictos es crucial. Sin tu experiencia y tus cuidados, el siguiente trabajo del grupo podría ser el último. Por suerte, también sabes defenderte en una pelea. De hecho, la dura experiencia o la formación profesional hacen que no seas alguien a quien haya que proteger cuando las cosas se tuercen.",
+  "bg_es": [
+   "Unos anarquistas rebeldes expulsaron al vacío a tu pequeña comunidad minera y te reclutaron a la fuerza en sus filas. Escapaste, pero aún buscas vengarte de lo que queda de ellos.",
+   "Fuiste médico en un hospital quirúrgico orbital (HQO) hasta que lo destruyeron hace poco.",
+   "Tu clado espacial cazaba cuerpos helados en el cinturón de Kuiper, pero un error tuyo causó la muerte del hijo del administrador, y ahora buscas la absolución.",
+   "La semana pasada acusaron de venta ilegal de órganos a un médico a cuyas órdenes trabajaste.",
+   "Tu familia ayudó a fundar un hábitat en Marte, pero una banda criminal lo asaltó y mató a casi todos. Aún sueñas con la venganza.",
+   "De vez en cuando, el ejército solicita tu experiencia en un campo del saber médico.",
+   "Hace poco terminaste un curso de actualización de medicina espacial en el nuevo hospital lunar.",
+   "Tu intervención médica salvó a alguien que resultó ser un funcionario corrupto del gobierno."
+  ],
+  "ben_en": [
+   "Able to take two more minor wounds and one more moderate wound",
+   "Add +1 to Speed Pool",
+   "Add +3 to Intellect Pool",
+   "Add +1 Edge in Pool of your choice",
+   "Freely use light and medium weapons",
+   "Freely use light and medium armor",
+   "At tier 3 and tier 6, choose an ability from the Science Fiction Genre Abilities list"
+  ],
+  "ben_es": [
+   "Puedes recibir dos heridas leves más y una moderada más",
+   "+1 a la reserva de Velocidad",
+   "+3 a la reserva de Intelecto",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente armas ligeras y medias",
+   "Usas libremente armaduras ligeras y medias",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género ciencia ficción"
+  ],
+  "abilities": [
+   {
+    "en": "Bad Medicine",
+    "es": "Mala medicina",
+    "cost_es": "2+ Intelecto o Velocidad",
+    "text_es": "Con acceso a un botiquín de campo (o equipo similar), usas mal a propósito una medicación pensada para curar, como un aerosol cutáneo, un inyector o un artefacto parecido. Haz un ataque contra una criatura a alcance inmediato; el artefacto médico es un arma ligera (el ataque se facilita). Si aciertas, no puede hacer ninguna acción en su siguiente turno. Esfuerzo: en su lugar, la dejas inconsciente hasta que uses una recuperación (requiere dos niveles de Esfuerzo). Acción para preparar la medicina; acción para atacar. (Mala medicina no te permite superar tu límite normal de Esfuerzo. Cuando una habilidad deja elegir entre dos reservas, cada vez que la usas decides de cuál gastas; no puedes repartir el coste entre ambas.)"
+   },
+   {
+    "en": "Expert Doctor",
+    "es": "Doctor experto",
+    "cost_es": "",
+    "text_es": "Quedas entrenado en curación. En el rango 6: puedes hacerte experto en curación si ya estás especializado, pero tienes que ganar la habilidad de la forma normal (por ejemplo, con un avance)."
+   },
+   {
+    "en": "Prepared Medic",
+    "es": "Médico preparado",
+    "cost_es": "2+ Intelecto",
+    "text_es": "Con acceso a un botiquín de campo (o equipo similar), puedes aplicar un tratamiento en la mitad del tiempo normal o tratar el doble de heridas de un personaje en el tiempo normal. Capacitador."
+   }
+  ],
+  "bundle_es": "Un botiquín de campo, ropa adecuada, un mono blindado, un dispositivo inteligente (gafas, insignia, anillo o similar), un respirador, una tienda ambiental, un traje de vacío de un solo uso, una luz perenne, raciones y agua para dos días, un neceser de aseo y un antifaz y dinero suficiente para comprar un objeto de precio moderado.",
+  "notes": [
+   "Un botiquín de campo permite tratar a los pacientes con rapidez y eficacia. Según la ambientación (y con permiso del DJ), puedes tener en su lugar otra tecnología que funcione igual, como orgánulos artificiales en tus células, equipo subcutáneo en las manos o edición genética dirigida que crea microherramientas y medicación según haga falta."
+  ]
+ },
+ "Operative": {
+  "page": 95,
+  "sub": "Hard science fiction",
+  "es": "Agente",
+  "intro_es": "Te imaginas como el fallo del sistema, el «fantasma en la máquina» que entra y sale sin alertar a la vigilancia automática hasta que ya estás en otro sitio. Para tus enemigos, eres uno de ellos: te confundes con todos los demás para que nadie sospeche que eres un agente que trabaja para el bando contrario. Pero si te descubren, no dudas: eliminas a quienes te reconocen tan deprisa que no pueden dar la alarma. Algunas situaciones se benefician de tener a alguien del equipo ya dentro, y eso es perfecto para ti. O al menos de tener a alguien que no atraiga el fuego enemigo hasta que puedas burlar la seguridad del perímetro para desactivar la vigilancia o acabar con guardias que no se dan cuenta de que eres un enemigo.",
+  "bg_es": [
+   "Huérfano, sobreviviste en los rincones ocultos del hábitat espacial giratorio y pasaste casi toda tu vida solo. Hoy intentas romper con esa vida y esa mentalidad, con la esperanza de encontrar amigos aunque todo lo que has aprendido te empuje en contra.",
+   "En tu último trabajo descubriste que la corporación se dedicaba a actividades abiertamente ilegales.",
+   "Hace poco se tambaleó la creencia de tus padres de que eres un músico que toca en distintos bolos.",
+   "Una megacorporación se apoderó ilegalmente de la mina lunar de tu familia. Ahora trabajas para destapar y desmantelar megacorporaciones siempre que puedes.",
+   "Los módulos de datos sueltos que cogiste en tu último trabajo resultaron contener información clasificada.",
+   "Te contrataron como doble, pero huiste cuando te dijeron que primero asesinaras a tu objetivo.",
+   "Criado desde niño para ser asesino, escapaste de las torturas diarias para empezar una nueva vida. Esperas encontrar y castigar algún día a quienes te hicieron daño.",
+   "El mes pasado descubriste que quienes te contratan trabajan a su vez para un misterioso grupo secreto."
+  ],
+  "ben_en": [
+   "Able to take two more minor wounds and one more moderate wound",
+   "Add +2 to Speed Pool",
+   "Add +2 to Intellect Pool",
+   "Add +1 Edge in Pool of your choice",
+   "Freely use light and medium weapons",
+   "Freely use light and medium armor",
+   "Gain one weapon of your choice (or accept the equipment bundle weapon)",
+   "At tier 3 and tier 6, choose an ability from the Science Fiction Genre Abilities list"
+  ],
+  "ben_es": [
+   "Puedes recibir dos heridas leves más y una moderada más",
+   "+2 a la reserva de Velocidad",
+   "+2 a la reserva de Intelecto",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente armas ligeras y medias",
+   "Usas libremente armaduras ligeras y medias",
+   "Ganas un arma a tu elección (o aceptas la del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género ciencia ficción"
+  ],
+  "abilities": [
+   {
+    "en": "Escape",
+    "es": "Escapar",
+    "cost_es": "2+ Velocidad",
+    "text_es": "Cuando tiras para escapar (zafarte de unas ataduras, colarte entre barrotes, librarte de una criatura que te agarra, salir de arenas movedizas…) y sacas menos de 9, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Acción. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+   },
+   {
+    "en": "Sneak Attack",
+    "es": "Ataque furtivo",
+    "cost_es": "1 Velocidad",
+    "text_es": "Si atacas con un arma ligera a un enemigo en una de estas condiciones, tu ataque hace +5 de daño (no funciona con armas medias ni pesadas): • Atacas por sorpresa. • Un aliado usa su acción para facilitar tu ataque. • Las defensas del enemigo están dificultadas por alguna otra distracción directa en curso. • El enemigo no puede hacer su siguiente turno por algún ataque o situación que lo incapacita. Primera acción."
+   },
+   {
+    "en": "Spin Identity",
+    "es": "Inventar identidad",
+    "cost_es": "2+ Intelecto",
+    "text_es": "Cuando tiras para convencer a una criatura inteligente (incluidos ordenadores y sistemas de vigilancia) de que eres alguien o algo distinto de lo que eres y sacas menos de 6, cuenta como un 6 (así no hay intrusión del DJ si sacas un 1). No te permite hacerte pasar por una persona concreta: convences a los presentes de que eres alguien a quien no conocen de cierta categoría de personas. «Soy del gobierno.» «Solo soy un simple viajero que va a lo suyo.» «Me envía tu comandante.» Los usos con éxito duran hasta que hagas una recuperación de diez minutos o más, salvo que tus actos u otras circunstancias revelen antes tu verdadera identidad. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Acción. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+   }
+  ],
+  "bundle_es": "Una hoja molecular, ropa adecuada, armadura de impacto en aerosol (diez usos), ropa y accesorios extra para disfrazarte, un dispositivo inteligente (gafas, insignia, anillo o similar), una mochila, un respirador, una tienda ambiental, un traje de vacío de un solo uso, una luz perenne, raciones y agua para dos días, un neceser de aseo y un antifaz y dinero suficiente para comprar un objeto de precio moderado.",
+  "notes": []
+ },
+ "Pilot": {
+  "page": 96,
+  "sub": "Hard science fiction",
+  "es": "Piloto",
+  "intro_es": "Eres sensible a la más leve vibración y guiñada de las naves espaciales de propulsión iónica, nuclear y química, algo que has afinado en cientos de horas de vuelos de prueba, misiones de combate y tu pasión personal por pilotar naves interplanetarias entre lunas y planetas. Tu trabajo combina el trazado sofisticado de rutas, largos periodos de aceleración y deceleración graduales y, a veces, momentos intensos de acción en los que tus reflejos marcan la diferencia entre llegar a tu destino o que tu nave se convierta en otro casco a la deriva en una órbita en descomposición. Si la misión del equipo requiere un viaje interplanetario, tu trabajo es llevar a todos allí. Si naves enemigas amenazan el viaje, tus habilidades de pilotaje superiores ayudan a mantener a todos con vida, incluidos los Soldados que, por temibles que sean, seguramente no durarían ni diez segundos pilotando en una batalla naval interplanetaria.",
+  "bg_es": [
+   "Creciste en una ciudad flotante sobre Venus hasta que una grieta en la cúpula obligó a evacuarla. Un pilotaje de lanzadera muy hábil te salvó, pero casi todos murieron. Desde entonces intentas mejorar tus propias habilidades de pilotaje.",
+   "Desde que te licenciaste hace tres años, has hecho trabajillos pilotando naves de carga.",
+   "Te criaste en una guardería experimental de IA que luego se consideró poco ética e ilegal; te has esforzado en ocultar tu pasado, pero en secreto crees que perseguir a las personas artificiales es injusto.",
+   "Hace poco tu sobrina se puso en contacto contigo para pedirte que le enseñes a pilotar naves.",
+   "Tu familia y tú fuisteis elegidos para formar parte de la primera tripulación de una nave generacional, pero unos rebeldes se apoderaron de ella y mataron a casi todos. Aún albergas deseos de venganza.",
+   "Estrellar una nave de guerra experimental hace cuatro meses acabó con tu carrera de piloto de pruebas.",
+   "Hace no mucho volviste de una prospección de años en los planetas exteriores; solo sobreviviste tú.",
+   "En parte por tus largas ausencias, tu matrimonio se rompió el mes pasado."
+  ],
+  "ben_en": [
+   "Able to take two more minor wounds and one more moderate wound",
+   "Add +1 to Speed Pool",
+   "Add +3 to Intellect Pool",
+   "Add +1 Edge in Pool of your choice",
+   "Freely use light and medium weapons",
+   "Freely use light armor",
+   "Gain one weapon of your choice (or accept the equipment bundle weapon)",
+   "At tier 3 and tier 6, choose an ability from the Science Fiction Genre Abilities list"
+  ],
+  "ben_es": [
+   "Puedes recibir dos heridas leves más y una moderada más",
+   "+1 a la reserva de Velocidad",
+   "+3 a la reserva de Intelecto",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente armas ligeras y medias",
+   "Usas libremente armaduras ligeras",
+   "Ganas un arma a tu elección (o aceptas la del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género ciencia ficción"
+  ],
+  "abilities": [
+   {
+    "en": "Born to Pilot",
+    "es": "Piloto nato",
+    "cost_es": "2+ Intelecto",
+    "text_es": "Cuando tiras para pilotar una nave espacial y sacas menos de 9, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Las tareas de pilotaje incluyen maniobras concretas como atracar la nave con seguridad, girarla o acelerarla lo bastante despacio para evitar gravedades peligrosamente altas durante periodos prolongados, notar algo raro en los sensores, etc. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Esta habilidad se renueva al hacer una recuperación. Acción. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+   },
+   {
+    "en": "Expert Space Pilot",
+    "es": "Piloto espacial experto",
+    "cost_es": "",
+    "text_es": "Quedas entrenado en pilotar naves espaciales. En el rango 6: puedes hacerte experto en pilotar naves espaciales si ya estás especializado, pero tienes que ganar la habilidad de la forma normal (por ejemplo, con un avance)."
+   },
+   {
+    "en": "Piloting Flourish",
+    "es": "Floritura de pilotaje",
+    "cost_es": "",
+    "text_es": "Cuando manejas una nave espacial, tu impresionante destreza, tus ocurrencias o un algo en tu forma de hacer una maniobra entretienen o impresionan a los demás. Una criatura que elijas, en la nave o cerca de ella, que pueda verte o sea consciente de tu maniobra, gana un recurso en su siguiente tarea si la hace en un asalto o dos. En el rango 3: puedes impresionar a la vez hasta a tres criaturas elegidas. Capacitador."
+   }
+  ],
+  "bundle_es": "Una pistola de vacío y una batería de energía para armas (50 disparos), ropa adecuada, armadura de impacto en aerosol (diez usos), ropa y accesorios extra para disfrazarte, un dispositivo inteligente (gafas, insignia, anillo o similar), una mochila, un respirador, una tienda ambiental, un traje de vacío de un solo uso, un botiquín de primeros auxilios, una luz perenne, raciones y agua para dos días, un neceser de aseo y un antifaz y dinero suficiente para comprar un objeto de precio moderado.",
+  "notes": [
+   "Habla con el DJ antes de elegir Piloto para saber si espera un escenario en el que tengas un acceso razonable a una nave espacial."
+  ]
+ },
+ "Soldier": {
+  "page": 97,
+  "sub": "Hard science fiction",
+  "es": "Soldado",
+  "intro_es": "Has visto cosas que los civiles no creerían: naves de ataque haciendo añicos cúpulas marcianas con mininucleares; compañeros desintegrados por un disparo perdido de acelerador lineal, sin más lápida que sus cenizas flotando; caídas en gravedad cero a través del vacío silencioso, rezando por que tu lídar te avise a tiempo para encender los cohetes de frenado antes de estamparte contra el asteroide enemigo a oscuras. El subidón de adrenalina de un tiroteo no se parece a nada, pero aún mejor es la euforia burbujeante de sobrevivir a otra misión. Hecho para el combate, seguramente eres de los primeros de tu equipo en enfrentarte a enemigos armados. Tus aliados con otras especialidades probablemente están encantados de dejarte: no todo el mundo puede contar con mejoras de combate cuando los adversarios empiezan a disparar armas cinéticas.",
+  "bg_es": [
+   "Te hiciste mayor en un suburbio de una megalópolis, haciendo lo necesario para sobrevivir. Lo dejaste todo atrás, pero a veces aún desearías haberte llevado a un par de amigos.",
+   "Hace dos semanas presenciaste cómo un acuerdo de paz estuvo a punto de firmarse, pero un enviado desapareció.",
+   "Creciste en un colectivo agrícola que acabó muriendo por el cataclismo climático. Aceptas trabajos para corporaciones, pero vigilas a los directivos que anteponen el beneficio a la vida de la gente normal.",
+   "Hace unos meses un compañero de armas te mandó un mensaje para que lo buscaras porque tenía «noticias».",
+   "Tu hermana y tú os criasteis con piratas que operaban en el cinturón. Tú saliste, pero ella no. Siempre te preguntas qué fue de ella, pero te da miedo averiguarlo.",
+   "Te licenciaste hace más o menos un año y ya te has gastado casi toda la paga.",
+   "La semana pasada te ofrecieron un trabajo entrenando una ICC (inteligencia de combate artificial) a partir de tu cerebro.",
+   "Hace seis meses terminaste un trabajo de guardaespaldas de un diplomático, pero ahora está muerto."
+  ],
+  "ben_en": [
+   "Able to take three more minor wounds and one more moderate wound",
+   "Add +2 to Might Pool",
+   "Add +2 to Speed Pool",
+   "Add +1 Edge in Pool of your choice",
+   "Freely use all weapons",
+   "Freely use all armor",
+   "Gain one weapon of your choice (or accept the equipment bundle weapon)",
+   "At tier 3 and tier 6, choose an ability from the Science Fiction Genre Abilities list"
+  ],
+  "ben_es": [
+   "Puedes recibir tres heridas leves más y una moderada más",
+   "+2 a la reserva de Potencia",
+   "+2 a la reserva de Velocidad",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente todas las armas",
+   "Usas libremente todas las armaduras",
+   "Ganas un arma a tu elección (o aceptas la del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género ciencia ficción"
+  ],
+  "abilities": [
+   {
+    "en": "Combat Enhancement",
+    "es": "Mejora de combate",
+    "cost_es": "2+ Velocidad o Intelecto",
+    "text_es": "Tu mejora de combate militar (seguramente algún tipo de implante nervioso, hardware subdérmico o modificación genética) reduce tu tiempo de reacción ante amenazas inesperadas, así que rara vez te sorprenden. Tira la iniciativa con normalidad, pero si sacas menos de 15, cuenta como un 15 (así no hay intrusión del DJ si sacas un 1). Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Capacitador. En el rango 3: el resultado mínimo de esta habilidad sube a 18."
+   },
+   {
+    "en": "Expert Combatant",
+    "es": "Combatiente experto",
+    "cost_es": "",
+    "text_es": "Quedas entrenado en un ataque con arma concreto a tu elección (espadas, hachas, arcos…) o en una categoría más amplia (armas contundentes ligeras, armas cortantes ligeras, armas a distancia ligeras, armas contundentes medias, cortantes medias, a distancia medias, etc.). En el rango 2: puedes especializarte en ese mismo método de ataque, pero tienes que ganar la habilidad de la forma normal (por ejemplo, con un avance). En el rango 6: puedes hacerte experto en un método de ataque concreto (el que elegiste en el rango 1 u otra habilidad de arma en la que ya estés especializado), pero tienes que ganarla de la forma normal. (Para un Soldado, esto significa entrenarse en armas propias del género, como pistolas láser o cañones de riel si los hay, o en disparar armas concretas de naves, como cañones de defensa puntual, tubos de torpedos o lanzadores de plasma.)"
+   },
+   {
+    "en": "Push Implant",
+    "es": "Implante de empuje",
+    "cost_es": "",
+    "text_es": "Después de atacar, puedes activar un implante de combate para hacer un ataque adicional como acción extra en tu turno. Hacerlo te causa una herida moderada. Esta habilidad se renueva tras hacer una recuperación de diez horas. Capacitador."
+   }
+  ],
+  "bundle_es": "Un rifle de vacío y una batería de energía para armas (50 disparos), ropa adecuada, un mono blindado, ropa y accesorios extra para disfrazarte, un dispositivo inteligente (gafas, insignia, anillo o similar), una mochila, un respirador, una tienda ambiental, un traje de vacío de un solo uso, unas esposas (atan las muñecas del sujeto), una luz perenne, raciones y agua para dos días, un neceser de aseo y un antifaz y dinero suficiente para comprar un objeto de precio moderado.",
+  "notes": [
+   "Si quieres un personaje capaz en combate pero sin implantes como los de Mejora de combate, quizá prefieras usar como base el tipo Guerrero (Fighter) de fantasía de mazmorras, adaptándolo al género pero usando sus habilidades en lugar de las del Soldado."
+  ]
+ },
+ "Android": {
+  "page": 100,
+  "sub": "Space opera",
+  "es": "Androide",
+  "intro_es": "Te fabricaron, no naciste. Algunos dirían que eso te hace superior a las personas vivas, sobre todo a las nacidas sin el beneficio de un control genético estricto. E incluso quienes han usado la ingeniería genética carecen de tu capacidad de mejorarte según haga falta para afrontar situaciones nuevas, trabajos nuevos o adonde te lleve la curiosidad. Tu tegumento y tu armazón son más duros que la piel y los huesos, y tienes una mano con otras máquinas que la mayoría de seres vivos nunca tendrán. Con lo adaptable que eres, puedes asumir distintos papeles en tu equipo con el tiempo, incluido el de combatiente en primera línea. Eres igual de útil en otras situaciones, sobre todo al conectarte con máquinas cercanas. Pero incluso eso palidece frente a tu capacidad de androide para desechar viejas habilidades y adquirir un nuevo entrenamiento en algo importante para una situación que surge o una misión próxima.",
+  "bg_es": [
+   "Acabas de descubrir que eres un androide, construido para imitar a los humanos, y ahora quieres encontrar a tu creador y hacerle unas cuantas preguntas difíciles.",
+   "Te vendieron como «robot niñera» a una familia para cuidar de sus hijos, y lo hacías de maravilla hasta la bomba de los disidentes. Ahora, reconvertido, esperas hacer justicia algún día a los culpables.",
+   "Tuviste una existencia anterior, pero, como descubriste hace unas semanas, borraron tus recuerdos para darte tu identidad actual.",
+   "Eras uno de los miles de androides militares que lucharon en las guerras planetarias, y desertaste.",
+   "Criado por el instituto, tu vida ha sido protegida y serena. Ahora buscas aventuras más lejos de los mundos civilizados.",
+   "Trabajaste años para saldar tu bono de fabricación y por fin te emanciparon hace unos meses.",
+   "Siempre te han encantado los viajes espaciales. Esperas mejorarte algún día hasta convertirte en una mente de nave capaz de viajar tú mismo más rápido que la luz.",
+   "Hace unos años fuiste víctima de un delito contra las personas artificiales."
+  ],
+  "ben_en": [
+   "Able to take two more minor wounds and one more moderate wound",
+   "Add +1 to Might Pool",
+   "Add +1 to Speed Pool",
+   "Add +2 to Intellect Pool",
+   "Add +1 Edge in Pool of your choice",
+   "Freely use all weapons",
+   "Freely use all armor",
+   "Gain one weapon of your choice (or accept the equipment bundle weapon)",
+   "At tier 3 and tier 6, choose an ability from the Science Fiction Genre Abilities list"
+  ],
+  "ben_es": [
+   "Puedes recibir dos heridas leves más y una moderada más",
+   "+1 a la reserva de Potencia",
+   "+1 a la reserva de Velocidad",
+   "+2 a la reserva de Intelecto",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente todas las armas",
+   "Usas libremente todas las armaduras",
+   "Ganas un arma a tu elección (o aceptas la del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género ciencia ficción"
+  ],
+  "abilities": [
+   {
+    "en": "Built to Hack",
+    "es": "Hecho para piratear",
+    "cost_es": "2+ Intelecto",
+    "text_es": "Cuando tiras para piratear un ordenador o una máquina no inteligente y sacas menos de 9, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Las tareas de piratería (que puedes iniciar con tu capacidad de conectarte sin cables o conectándote directamente a la máquina) incluyen entrar en bases de datos seguras, tomar el control temporal de torretas remotas, abrir accesos con cierre electrónico, etc. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Capacitador. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+   },
+   {
+    "en": "Flex Skill",
+    "es": "Habilidad flexible",
+    "cost_es": "",
+    "text_es": "Elige una tarea (que no sea de ataque ni de defensa) en la que te concentrarás. Durante el resto del día quedas entrenado en ella. No puedes usarla con una habilidad en la que ya estés entrenado para especializarte. Esta habilidad se renueva al hacer una recuperación de diez horas. Capacitador. (Los androides suelen lograrlo ampliando datos que ya descargaron, comprimieron y almacenaron en su sistema, aunque a veces acceder a una habilidad especializada puede requerir conectarse a un nodo de datos externo.)"
+   },
+   {
+    "en": "Machine Not Flesh",
+    "es": "Máquina, no carne",
+    "cost_es": "",
+    "text_es": "Eres una máquina inteligente y sofisticada de forma más o menos humanoide; acuerda los detalles con el DJ. Esto te da los siguientes beneficios: • Ganas +4 puntos adicionales que repartes de forma permanente entre tus reservas. • Ganas +1 de Ventaja adicional en una reserva a tu elección. • Tu cuerpo no biológico es inmune a los venenos y enfermedades comunes y al vacío del espacio, y no necesitas comer, beber ni respirar (aunque sí descansar y hacer recuperaciones). • Si puedes conectarte a un conducto eléctrico, una estación de carga o un lugar similar que te dé energía, puedes hacer una recuperación extra de una acción cada día. • Facilitas cualquier tarea de piratería que intentes. Tu naturaleza de máquina también tiene inconvenientes: • En vez de curación, tratar tus heridas requiere ingeniería. Los métodos de curación acelerada pensados para criaturas biológicas (como la habilidad Médico preparado del tipo Médico) no te afectan en absoluto. • Si no puedes conectarte a una fuente de energía adecuada durante tu recuperación de diez horas, pierdes tu recuperación normal de una acción y la adicional (conectado a la energía) hasta que lo hagas. • Algunos biológicos miran por encima del hombro a los androides. A criterio del DJ, tus tareas de interacción positiva con ellos se dificultan. (Las tareas de reparación para tratar, es decir, eliminar, tus heridas leves, moderadas y graves son de nivel 1, 3 y 5, respectivamente.)"
+   }
+  ],
+  "bundle_es": "Un desintegrador pesado, cinco baterías de energía para armas (50 disparos cada una), ropa adecuada, armadura de impacto en aerosol (diez usos), ropa y accesorios extra para disfrazarte, un dispositivo inteligente (gafas, insignia, anillo o similar), una mochila, prismáticos, una palanca, intoxicante digital (funciona con androides), una bolsa de herramientas ligeras, una luz perenne y un antifaz y dinero suficiente para comprar un objeto de precio moderado.",
+  "notes": []
+ },
+ "Noble": {
+  "page": 102,
+  "sub": "Space opera",
+  "es": "Noble",
+  "intro_es": "Desciendes del privilegio, la riqueza y el poder. Tu familia posee propiedades importantes, ejerce control político o tiene una gran fortuna (o la tuvo). Te has apartado un poco de todo eso, aunque sigues llevando un título nobiliario, quieras o no. En ciertos círculos te reconocen, sobre todo quienes han tratado con tu familia. Con acceso a los privilegios que puede darte tu título, quizá puedas y quieras pagar el pasaje de tu grupo en una nave estelar, o incluso dárselo directamente si los recursos de tu familia son lo bastante grandes (suponiendo que te lleves bien con tus hermanos y tus padres). Pero aunque tu título sea más bien un honor heredado de tiempos mejores, tu nobleza sigue dando acceso a lugares a los que tus amigos y tú quizá no podríais llegar de otro modo.",
+  "bg_es": [
+   "Te adoptaron en la familia y tus hermanos nunca te dejaron olvidarlo. Ahora el mayor va a heredar, y sospechas que tuvo algo que ver con la muerte de tus padres adoptivos.",
+   "Algunos te miran por encima del hombro porque tu familia obtuvo un título nobiliario hace solo unos años.",
+   "Tu madre murió hace unos meses y te presionan para que asumas su papel.",
+   "De pequeño tu único amigo era el hijo de la niñera, hasta que la echaron a ella y a su hijo acusados de robo. Siempre has querido encontrarlos y reparar la injusticia.",
+   "Hace poco recibiste una amenaza de un hermano perdido hace mucho al que no concedieron título nobiliario.",
+   "Hace poco unas armas orbitales destruyeron otra casa noble; se rumorea que no fue un accidente.",
+   "De pequeño te mantenían cuerdo las historias de hazañas en los mundos fronterizos, y ahora que tienes tus propios fondos, estás deseando vivir aventuras.",
+   "Invertiste una parte considerable de la fortuna familiar en un proyecto cuyo fundador desapareció hace poco."
+  ],
+  "ben_en": [
+   "Able to take two more minor wounds and one more moderate wound",
+   "Add +1 to Might Pool",
+   "Add +1 to Speed Pool",
+   "Add +2 to Intellect Pool",
+   "Add +1 Edge in Pool of your choice",
+   "Freely use light and medium weapons",
+   "Freely use light and medium armor",
+   "Gain one weapon of your choice (or accept the equipment bundle weapon)",
+   "At tier 3 and tier 6, choose an ability from the Science Fiction Genre Abilities list"
+  ],
+  "ben_es": [
+   "Puedes recibir dos heridas leves más y una moderada más",
+   "+1 a la reserva de Potencia",
+   "+1 a la reserva de Velocidad",
+   "+2 a la reserva de Intelecto",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente armas ligeras y medias",
+   "Usas libremente armaduras ligeras y medias",
+   "Ganas un arma a tu elección (o aceptas la del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género ciencia ficción"
+  ],
+  "abilities": [
+   {
+    "en": "Exorbitant Reach",
+    "es": "Alcance exorbitante",
+    "cost_es": "",
+    "text_es": "Tienes un objeto exorbitante a tu elección, como un campo de fuerza personal o una nave espacial pequeña. Acuerda con el DJ algo adecuado a la ambientación. En el rango 3: ganas otro objeto exorbitante."
+   },
+   {
+    "en": "Noble Bearing",
+    "es": "Porte noble",
+    "cost_es": "2 Intelecto",
+    "text_es": "Sabes reclamar las recompensas que puede dar un origen noble. Al usar esta habilidad, los desconocidos que no te estén atacando ya te dan al menos un asalto para hablar. También puedes conseguir alojamiento en un sitio que lo ofrezca (aunque eso suponga echar a otros), entrar en una zona restringida, saltarte normas (menores, al menos), lograr que te reciba y hable contigo una persona importante u obtener algún beneficio parecido sin necesidad de superar una tarea de interacción (salvo que el DJ decida que hay circunstancias especiales, en cuyo caso ganas un recurso en la tarea). Capacitador."
+   },
+   {
+    "en": "Retainer",
+    "es": "Criado",
+    "cost_es": "",
+    "text_es": "Disfrutas de los servicios de un seguidor leal de nivel 2 que se ocupa de tus asuntos, cuentas, comidas, ropa y otras necesidades triviales para que tú no tengas que hacerlo. Acuerda los detalles con el DJ. Gastando 2 de Intelecto, puedes hacer que tu criado reciba el ataque dirigido a ti. Si el ataque lo deja a 0 de salud, queda inconsciente pero no muerto, y puede recuperarse usando tus puntos de recurso y organizando o proporcionando unos días de cuidados. En rangos superiores: tu seguidor mejora al llegar al rango 3 y de nuevo en el rango 5 (como se explica en el apartado de seguidores). (Tu criado puede ser un robot o una mascota alienígena si lo prefieres.)"
+   }
+  ],
+  "bundle_es": "Un desintegrador medio y una batería de energía para armas (50 disparos), ropa adecuada, armadura de impacto en aerosol (diez usos), un dispositivo inteligente (gafas, insignia, anillo o similar), una mochila, un respirador, una tienda ambiental, un traje de vacío de un solo uso, un autón, una luz perenne, raciones y agua para dos días, un neceser de aseo y un antifaz, dinero suficiente para comprar un objeto de precio moderado y algo exorbitante (véase Alcance exorbitante).",
+  "notes": [
+   "Cada cultura tiene sus títulos nobiliarios: duque o duquesa, marqués o marquesa, conde o condesa, vizconde o vizcondesa, barón o baronesa… Acuerda tu título con el DJ."
+  ]
+ },
+ "Psion": {
+  "page": 103,
+  "sub": "Space opera",
+  "es": "Psiónico",
+  "intro_es": "Tus talentos psíquicos latentes salieron a la luz con estudio, entrenamiento especializado y quizá incluso manipulación genética o implantes craneales. Ahora recurres a menudo a otra fuerza fundamental del universo, quizá un campo de energía extradimensional que te da una conexión mental tanto con el mundo físico como con la mente de otras criaturas. Cómo uses tus capacidades, algo poco comunes, depende de tus circunstancias y ambiciones. Con tu capacidad de asomarte a la mente de los demás, puedes ayudar a tu equipo a evitar conflictos. A tus aliados les conviene dejarte mediar, porque quizá descubras algo de los secretos de los otros negociadores. Pero si no logras leer sus pensamientos (o no te gusta lo que encuentras), también eres un combatiente capaz, que puede envolverse en una distorsión mental mientras acribilla a sus enemigos con violencia psíquica.",
+  "bg_es": [
+   "Criado en los mundos fronterizos, tus padres y tú siempre estabais huyendo por algún terrible secreto relacionado con tu nacimiento. Ahora que eres mayor, esperas descubrir la verdad.",
+   "Hace poco te expulsaron del cuerpo de policía psíquica semigubernamental que te entrenó.",
+   "Tu hermano, también psíquico pero más poderoso que tú, se alistó en el ejército el año pasado.",
+   "Tus padres se endeudaron para comprar un fármaco experimental que te salvara la vida. Funcionó (y quizá te dio tus capacidades), pero la deuda les costó la vida y a ti te puso en una lista de buscados.",
+   "Hace unos seis meses empezaron a aparecer asesinados psíquicos de todo el sistema.",
+   "Te crio un clado afectuoso en un entorno idílico. Ahora que has crecido, quieres llevar esa misma paz a otros con capacidades psíquicas que no han tenido tanta suerte.",
+   "Mantienes ocultas tus capacidades psíquicas. Hace poco recibiste una amenaza de chantaje sobre el tema.",
+   "Desde hace más o menos un año tienes sueños inquietantes con un hombre sin rostro."
+  ],
+  "ben_en": [
+   "Able to take two more minor wounds and one more moderate wound",
+   "Add +4 to Intellect Pool",
+   "Add +1 Edge in Pool of your choice",
+   "Freely use light and medium weapons",
+   "Cannot freely use armor",
+   "At tier 3 and tier 6, choose an ability from the Science Fiction Genre Abilities list"
+  ],
+  "ben_es": [
+   "Puedes recibir dos heridas leves más y una moderada más",
+   "+4 a la reserva de Intelecto",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente armas ligeras y medias",
+   "No puedes usar libremente armadura",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género ciencia ficción"
+  ],
+  "abilities": [
+   {
+    "en": "Mind Reading",
+    "es": "Leer mentes",
+    "cost_es": "2 Intelecto",
+    "text_es": "Puedes leer los pensamientos superficiales de una criatura que veas a alcance corto. Si no está dispuesta, tienes que hacer un ataque de Intelecto contra ella para leerlos. Una vez establecido el contacto, puedes leer sus pensamientos hasta que hagas una recuperación de diez minutos o más. Acción."
+   },
+   {
+    "en": "Onslaught",
+    "es": "Embate",
+    "cost_es": "1 Intelecto",
+    "text_es": "Atacas a un enemigo con energías que asaltan su forma física o su mente. En ambos casos tienes que poder ver al objetivo. Si el ataque es físico, emites un rayo de fuerza de alcance corto que hace 4 de daño. Si es mental, concentras tu energía mental en fulminar sus procesos de pensamiento con un tajo mental que hace 2 de daño de Intelecto (ignora la armadura). Algunas criaturas sin mente (como los robots) pueden ser inmunes al tajo mental. Acción. En el rango 3: Embate hace 1 de daño adicional."
+   },
+   {
+    "en": "Psychic Veil",
+    "es": "Velo psíquico",
+    "cost_es": "1 Intelecto",
+    "text_es": "Tu aspecto se distorsiona como si se viera a través del aura visual de una migraña hasta que hagas una recuperación de diez minutos o más. La distorsión no interfiere en tus acciones, pero tus tiradas de esquivar y de defensa de Intelecto se facilitan. Mientras está activa, la distorsión te protege de los ataques mentales y reduce un paso la gravedad de sus heridas (grave a moderada, moderada a leve, leve a ninguna). Por ejemplo, si te alcanza una descarga psíquica que causa una herida moderada, recibes una leve. Capacitador."
+   }
+  ],
+  "bundle_es": "Una mochila de carga, ropa adecuada, una dosis de suero de adaptación espacial válida para un mes, un dispositivo inteligente (gafas, insignia, anillo o similar), una mochila, un respirador, una tienda ambiental, un traje de vacío de un solo uso, una luz perenne, raciones y agua para dos días, un neceser de aseo y un antifaz y dinero suficiente para comprar un objeto de precio moderado.",
+  "notes": []
+ },
+ "Scoundrel": {
+  "page": 104,
+  "sub": "Space opera",
+  "es": "Sinvergüenza",
+  "intro_es": "Descubres que maquillar la verdad, la mayoría de las veces, beneficia a tus empresas. Hasta has dado uno o más golpes lucrativos a lo largo de tu carrera, estafando a los incautos para tu propio beneficio. Este tipo de conducta suele acabar pasando factura, así que seguramente te mueves mucho, intentando ir siempre un paso por delante de los desafortunados descubrimientos y de las represalias. Tu grupo quizá se apoye en ti para entrar en sitios sin la autorización debida o para distraer a guardias, funcionarios o enemigos con tu capacidad de hacer que casi cualquier cosa suene verosímil, aunque sea una completa maraña de mentiras. Si te ves obligado a un conflicto armado, lucharás, pero también se te da extraordinariamente bien velar primero por tu propio bienestar.",
+  "bg_es": [
+   "Una infancia feliz terminó cuando una nave mundo chocó contra tu planeta. Desde entonces creciste como pudiste, pero nunca has dejado de investigar quién o qué fue responsable.",
+   "Eras el lugarteniente de un jefe criminal hasta que lo mataron el año pasado en un ajuste de cuentas violento.",
+   "Nacido en una familia de mercaderes acomodada, malversaste fondos, te descubrieron y te desterraron. Ahora intentas averiguar cómo compensarlo y pedir perdón.",
+   "Hace poco terminaste de fundirte lo que sacaste de tu último timo con éxito.",
+   "Hace unas semanas contrataste a un piloto para transportar una carga ilegal, pero la tiró para esquivar a las autoridades.",
+   "Tus padres eran comerciantes, pero tú siempre quisiste hacer otra cosa. Para contentarlos, te dedicaste al comercio, pero nunca se te ha dado muy bien. Quizá sea hora de buscar otra vida.",
+   "Tu hermano entró en el gobierno. Tras años sin contacto, quiere hablar.",
+   "Hace unos tres meses por fin dejaste una adicción seria."
+  ],
+  "ben_en": [
+   "Able to take two more minor wounds and one more moderate wound",
+   "Add +2 to Speed Pool",
+   "Add +2 to Intellect Pool",
+   "Add +1 Edge in Pool of your choice",
+   "Freely use light and medium weapons",
+   "Freely use light armor",
+   "Gain one weapon of your choice (or accept the equipment bundle weapon)",
+   "At tier 3 and tier 6, choose an ability from the Science Fiction Genre Abilities list"
+  ],
+  "ben_es": [
+   "Puedes recibir dos heridas leves más y una moderada más",
+   "+2 a la reserva de Velocidad",
+   "+2 a la reserva de Intelecto",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente armas ligeras y medias",
+   "Usas libremente armaduras ligeras",
+   "Ganas un arma a tu elección (o aceptas la del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género ciencia ficción"
+  ],
+  "abilities": [
+   {
+    "en": "Desperate Defense",
+    "es": "Defensa desesperada",
+    "cost_es": "",
+    "text_es": "Mientras tengas al menos una herida moderada o una grave, puedes entrar en un estado de alerta máxima ante las amenazas. En ese estado no puedes usar puntos de tu reserva de Intelecto, pero sumas +1 a tu Ventaja de Velocidad y ganas dos recursos en las tareas de bloquear y esquivar. Si terminas el estado mientras sigues herido, no puedes volver a activarlo hasta después de usar una recuperación. Capacitador."
+   },
+   {
+    "en": "Fast Talk",
+    "es": "Labia",
+    "cost_es": "1 Intelecto",
+    "text_es": "Al hablar con una criatura inteligente que pueda entenderte y no sea hostil, la convences de hacer una acción razonable en el asalto siguiente. El DJ debe estar de acuerdo en que es razonable: no debe poner a la criatura ni a sus aliados en peligro evidente ni ser totalmente impropia de ella. Acción."
+   },
+   {
+    "en": "Hand to Eye",
+    "es": "Coordinación",
+    "cost_es": "2 Velocidad o Intelecto",
+    "text_es": "Cuando tiras para una tarea de destreza manual o agilidad mental (robar bolsillos, forzar cerraduras, juegos de agilidad, etc.) y sacas menos de 9, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Capacitador. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+   }
+  ],
+  "bundle_es": "Un desintegrador medio y una batería de energía para armas (50 disparos), ropa adecuada, una identificación falsa, un módulo de interfaz, un dispositivo inteligente (gafas, insignia, anillo o similar), una mochila, un respirador, una tienda ambiental, un traje de vacío de un solo uso, una luz perenne, raciones y agua para dos días, un neceser de aseo y un antifaz y dinero suficiente para comprar un objeto de precio moderado.",
+  "notes": []
+ },
+ "Starpilot": {
+  "page": 105,
+  "sub": "Space opera",
+  "es": "Piloto estelar",
+  "intro_es": "Para ti, cómo tiembla la nave justo antes de saltar a velocidad superlumínica (FTL) te dice cómo está el motor estelar. Cómo parpadean las pantallas de la cabina expresa cuánto daño acaba de sufrir la nave tras el último torpedo enemigo. Y cuánto zumban las placas de la cubierta indica cuánto más puedes forzar tu nave mientras trazas una trayectoria en bucle y en espiral entre las naves enemigas. Cuando no estás llevando a tus aliados entre estrellas lejanas ni superando en maniobras a cazas enemigos, te defiendes razonablemente bien en un tiroteo cuerpo a cuerpo. Parece que siempre tienes algo extra de tu parte (llámalo suerte, audacia o simplemente ser demasiado terco para saber cuándo rendirte) que quizá te permita derrotar a una fuerza mayor o al menos sobresaltarla lo suficiente para que tus aliados y tú escapéis.",
+  "bg_es": [
+   "Naciste hace miles de años, pero quedaste congelado en un accidente extraño. Aunque tienes una nueva vida, siempre buscas una explicación o incluso una forma de visitar el pasado lejano.",
+   "Hace un año hiciste un puente a la nave personal de un señor del crimen para escapar de su ira.",
+   "Unos alienígenas te criaron después de encontrar la nave estrellada de tus padres. Por qué se estrellaron, de dónde venían y otros detalles se han perdido casi por completo, pero a veces tus sueños revelan algo más.",
+   "El sistema ejecutó a tu hermano hace seis meses, y aún no sabes por qué.",
+   "Hace unas semanas tu copiloto y camarada dejó de trabajar para ti para formar una familia en un mundo colonia.",
+   "Naciste señorito de una luna destruida en la guerra interestelar. Casi todo tu pueblo fue incinerado, pero has rehecho tu vida. Aun así, estás atento a cualquier forma de hacer pagar a los culpables.",
+   "Hace poco un viajero de paso te habló de un posible lugar donde hay un «cementerio de naves».",
+   "El mes pasado entregaste con éxito una bodega llena de mercancías raras en un mundo lejano."
+  ],
+  "ben_en": [
+   "Able to take two more minor wounds and one more moderate wound",
+   "Add +2 to Speed Pool",
+   "Add +2 to Intellect Pool",
+   "Add +1 Edge in Pool of your choice",
+   "Freely use light and medium weapons",
+   "Freely use light and medium armor",
+   "Gain one weapon of your choice (or accept the equipment bundle weapon)",
+   "At tier 3 and tier 6, choose an ability from the Science Fiction Genre Abilities list"
+  ],
+  "ben_es": [
+   "Puedes recibir dos heridas leves más y una moderada más",
+   "+2 a la reserva de Velocidad",
+   "+2 a la reserva de Intelecto",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente armas ligeras y medias",
+   "Usas libremente armaduras ligeras y medias",
+   "Ganas un arma a tu elección (o aceptas la del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género ciencia ficción"
+  ],
+  "abilities": [
+   {
+    "en": "Audacious Blast",
+    "es": "Disparo audaz",
+    "cost_es": "1 Velocidad",
+    "text_es": "Atacas con un desintegrador (u otra arma a distancia propia del género) de una forma que arriesga más a fallar pero da un beneficio adicional. Tu rango de intrusión del DJ en este ataque sube en 2 (de 1 a 1–3 en el d20), pero si aciertas eliges uno de estos efectos adicionales. Disparo desarmante: el ataque hace 1 de daño menos, pero el enemigo suelta algo que lleve en una mano (como un arma o un escudo); para recuperarlo tiene que usar una acción. Precisión perforante: el enemigo recibe +2 de daño. Acción. (Intrusiones del DJ sugeridas: el desintegrador se queda sin energía; el disparo rebota y te causa a ti o a un aliado una herida moderada; el ataque llama la atención de otros hostiles.)"
+   },
+   {
+    "en": "Cypher Use",
+    "es": "Uso de cifras",
+    "cost_es": "",
+    "text_es": "Puedes llevar una cifra más a la vez."
+   },
+   {
+    "en": "Redline Maneuver",
+    "es": "Maniobra al límite",
+    "cost_es": "1 Velocidad o Intelecto",
+    "text_es": "Intentas una maniobra arriesgada pilotando la nave: el rango de intrusión del DJ de tu tarea sube en 2 y llevas la nave «al límite», más allá de su margen normal de funcionamiento. Si superas una tarea de dificultad 2 (o quizá más, según cómo valore el DJ la situación), consigues algo normalmente desaconsejable al pilotar una nave. Por ejemplo, podrías disparar sus armas mientras metes la nave entera en una espiral acelerada, quizá directamente contra el enjambre de cazas en vez de huir, para romper su coordinación y quizá provocar un par de choques; rozar la corona (o incluso la cromosfera) de una estrella para despistar a tus perseguidores; saltar a FTL más deprisa de lo normal o más cerca de una fuente gravitatoria de lo que se suele considerar posible; o recorrer en FTL mucha más distancia o más deprisa de lo que suele salirle bien a la nave. Acción. (Intrusiones del DJ sugeridas: fallan los motores FTL; la nave sufre daños importantes; la consola de alguien a bordo explota y le causa una herida moderada.)"
+   }
+  ],
+  "bundle_es": "Un desintegrador medio y una batería de energía para armas (50 disparos), ropa adecuada, una capa de impacto, un dispositivo inteligente (gafas, insignia, anillo o similar), una mochila, un respirador, una tienda ambiental, una «esfera compañera» (usa las estadísticas del autón), una luz perenne, raciones y agua para dos días, un neceser de aseo y un antifaz y dinero suficiente para comprar un objeto de precio moderado.",
+  "notes": [
+   "Habla con el DJ antes de elegir Piloto estelar para saber si espera un escenario en el que tengas un acceso razonable a una nave estelar."
+  ]
+ },
+ "Tech": {
+  "page": 106,
+  "sub": "Space opera",
+  "es": "Técnico",
+  "intro_es": "No es solo que se te den bien las máquinas: eres un genio de nivel galáctico. Donde otros ven un montón de chatarra, un electrodoméstico aburrido o un artefacto simple, tú ves potencial: circuitos, conductos de energía y células de energía que te permiten construir un explosivo, reparar un arma, fabricar un artefacto nuevo a medida o mantener una nave estelar a duras penas en marcha cuando, por lógica, el último rayo desintegrador enemigo debería haber sido el final. Seguramente los demás de tu equipo celebran tus conocimientos técnicos, sobre todo porque suele tocarte a ti burlar artefactos tontos como monitores de vigilancia y pantallas de fuerza. Y si pueden protegerte de la acción enemiga directa, puedes fabricar un cacharro que quizá sea la clave para cumplir el objetivo general.",
+  "bg_es": [
+   "Creciste en un asteroide hueco, lejos de todo peligro, aprendiendo los secretos de la tecnología de tu clado. Ahora estás listo para salir y compartir tus habilidades con el universo.",
+   "Hasta que saldaste tu contrato hace poco, pasaste varios años trabajando para una megacorporación.",
+   "Escapaste por los pelos de la destrucción de tu mundo natal cuando la IA mente planetaria se descontroló y convirtió toda la masa en computronio. Ahora buscas y destruyes IA malignas allá adonde viajas.",
+   "Te pagaron por fabricar un artefacto explosivo, pero hace poco descubriste que se usó como arma.",
+   "Hace un año asesinaron a un amigo íntimo, y aún no se sabe quién ni por qué.",
+   "Tus padres te cultivaron y te ensamblaron en una impresora biológica. Las pruebas dicen que eres normal, pero siempre te preocupa que alguien descubra que no eres «de verdad».",
+   "La máquina de purificación de aire del hábitat que construiste hace diez años sigue funcionando, contra todo pronóstico.",
+   "Formabas parte de un equipo de cazarrecompensas hasta hace seis meses, cuando el grupo se disolvió."
+  ],
+  "ben_en": [
+   "Able to take two more minor wounds and one more moderate wound",
+   "Add +1 to Speed Pool",
+   "Add +3 to Intellect Pool",
+   "Add +1 Edge in Pool of your choice",
+   "Freely use light and medium weapons",
+   "Freely use light armor",
+   "Gain one weapon of your choice (or accept the equipment bundle weapon)",
+   "At tier 3 and tier 6, choose an ability from the Science Fiction Genre Abilities list"
+  ],
+  "ben_es": [
+   "Puedes recibir dos heridas leves más y una moderada más",
+   "+1 a la reserva de Velocidad",
+   "+3 a la reserva de Intelecto",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente armas ligeras y medias",
+   "Usas libremente armaduras ligeras",
+   "Ganas un arma a tu elección (o aceptas la del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género ciencia ficción"
+  ],
+  "abilities": [
+   {
+    "en": "Always Tinkering",
+    "es": "Siempre trasteando",
+    "cost_es": "",
+    "text_es": "Construyes un artefacto tecnológico de un solo uso. Puedes elegir su efecto de la tabla de cifras manifiestas de poder bajo. Tu artefacto cuenta para tu límite de cifras (o el de quien lo reciba). Si ya estás en tu límite, una de tus cifras actuales, a tu elección, se funde, tiene que desmontarse para sacar piezas para el nuevo artefacto o algo parecido, y el nuevo ocupa su lugar. Diez minutos para construir. En el rango 3: puedes elegir una cifra manifiesta de poder bajo o medio como artefacto de un solo uso. En el rango 6: puedes elegir una cifra manifiesta de poder bajo, medio o avanzado. (Cada vez que usas Siempre trasteando puedes elegir una cifra manifiesta distinta.)"
+   },
+   {
+    "en": "Craft Device",
+    "es": "Fabricar artefacto",
+    "cost_es": "5+ Intelecto",
+    "text_es": "Construyes un artefacto nuevo (pero algo frágil) si superas una tarea de ingeniería de dificultad 3. Puedes elegir su efecto de la tabla de cifras manifiestas de poder bajo. El artefacto resultante no es una cifra, no cuenta para tu límite de cifras y no suele estar limitado a un uso: tiene un agotamiento de 1 en 1d6. Es lo bastante pequeño para llevarlo encima. Una hora para construir. En el rango 3: si aplicas un nivel de Esfuerzo, puedes elegir una cifra manifiesta de poder medio. En el rango 6: si aplicas dos niveles de Esfuerzo, puedes elegir una cifra manifiesta de poder avanzado."
+   },
+   {
+    "en": "Cypher Use",
+    "es": "Uso de cifras",
+    "cost_es": "",
+    "text_es": "Puedes llevar una cifra más a la vez."
+   }
+  ],
+  "bundle_es": "Un desintegrador medio y una batería de energía para armas (50 disparos), ropa adecuada, un juego de herramientas especializadas para construir tus artefactos, un dispositivo inteligente (gafas, insignia, anillo o similar), una mochila, un respirador, un cortapernos, una tienda ambiental, un traje de vacío de un solo uso, un botiquín de primeros auxilios, una luz perenne, raciones y agua para dos días, un neceser de aseo y un antifaz y dinero suficiente para comprar un objeto de precio moderado.",
+  "notes": []
+ },
+ "Trader": {
+  "page": 107,
+  "sub": "Space opera",
+  "es": "Comerciante",
+  "intro_es": "Conoces el comercio, y eso significa que conoces a la gente. Tu capacidad de encandilar a desconocidos y de esquivar con palabras los hechos incómodos, unida a tu conocimiento de las mejores rutas comerciales y tarifas de atraque, te da ventaja al adquirir mercancías con grandes descuentos para venderlas con beneficio en otra luna u otro planeta. Intentas que tus clientes al menos sientan que acaban de cerrar el trato de su vida, aunque no haya nada más lejos de la verdad. Eres alguien que puede abrir puertas a nuevas oportunidades para todo el equipo. Tu talento se aplica tanto en general, a la hora de encontrar trabajos nuevos y quizá más ocasiones de cobrar, como sencillamente al negociar con posibles enemigos, salir de líos hablando o, si no queda otra, salir a tiros.",
+  "bg_es": [
+   "La colisión de dos agujeros negros destruyó el sistema estelar de tu infancia. Ahora siempre buscas reliquias supervivientes de tu pasado aniquilado.",
+   "El año pasado sobreviviste al accidente de una nave, pero tu carga comercial sin seguro no.",
+   "Tus padres te criaron para ser comerciante y esperas quedarte algún día con su negocio, o fusionarlo con lo que construyas mientras tanto.",
+   "Hace dos semanas un mercader te reventó un trato que habría sido muy rentable.",
+   "Desciendes de una familia de artistas y tu primer negocio fue vender una escultura muy querida hecha por un antepasado. Destrozada, tu familia te repudió, y ahora siempre buscas esa maldita escultura para recuperarla y expiar tu culpa.",
+   "Hace unos meses te separaste de tu socio comercial de siete años.",
+   "Hace poco protegiste una carga ilícita ocultándola de los funcionarios, y tu cliente te lo agradece.",
+   "Estás guardando una carga comercial para más adelante, sin hacer preguntas, pero tiene algo raro."
+  ],
+  "ben_en": [
+   "Able to take two more minor wounds and one more moderate wound",
+   "Add +1 to Speed Pool",
+   "Add +3 to Intellect Pool",
+   "Add +1 Edge in Pool of your choice",
+   "Freely use light and medium weapons",
+   "Freely use light armor",
+   "Gain one weapon of your choice (or accept the equipment bundle weapons)",
+   "At tier 3 and tier 6, choose an ability from the Science Fiction Genre Abilities list"
+  ],
+  "ben_es": [
+   "Puedes recibir dos heridas leves más y una moderada más",
+   "+1 a la reserva de Velocidad",
+   "+3 a la reserva de Intelecto",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente armas ligeras y medias",
+   "Usas libremente armaduras ligeras",
+   "Ganas un arma a tu elección (o aceptas las del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género ciencia ficción"
+  ],
+  "abilities": [
+   {
+    "en": "Fast Talk",
+    "es": "Labia",
+    "cost_es": "1 Intelecto",
+    "text_es": "Al hablar con una criatura inteligente que pueda entenderte y no sea hostil, la convences de hacer una acción razonable en el asalto siguiente. El DJ debe estar de acuerdo en que es razonable: no debe poner a la criatura ni a sus aliados en peligro evidente ni ser totalmente impropia de ella. Acción."
+   },
+   {
+    "en": "A Smile and a Word",
+    "es": "Una sonrisa y una palabra",
+    "cost_es": "",
+    "text_es": "Cuando interactúas con éxito con una criatura superando una tarea de encanto, engaño o intimidación (incluso las de calmar animales o comunicarte con alguien o algo cuyo idioma no hablas), averiguas además un pequeño dato útil o al menos interesante. Por ejemplo, si convences al guardia de que te deje pasar, quizá averigües también que su supervisor vuelve en diez minutos. Acción."
+   },
+   {
+    "en": "Smooth Operator",
+    "es": "Negociante hábil",
+    "cost_es": "2+ Intelecto",
+    "text_es": "Compras un objeto caro por el precio de uno de precio moderado. Solo puedes usarla en un lugar donde se compren y vendan servicios y objetos de forma habitual. Esfuerzo: compra un objeto muy caro por el precio de uno caro (requiere dos niveles de Esfuerzo). Compra un objeto exorbitante por el precio de uno muy caro (requiere cuatro niveles de Esfuerzo). Esta habilidad se renueva cuando llegas a un mercado nuevo o ha pasado al menos un mes en el mismo mercado donde la usaste por última vez. Capacitador. En el rango 3: puedes usarla dos veces antes de tener que renovarla yendo a otro sitio o dejando pasar el tiempo suficiente."
+   }
+  ],
+  "bundle_es": "Un desintegrador medio y una batería de energía para armas (50 disparos), un cuchillo de filo ápice, ropa adecuada, un mono blindado, un dispositivo inteligente (gafas, insignia, anillo o similar), una mochila, un respirador, una tienda ambiental, un traje de vacío de un solo uso, una luz perenne, raciones y agua para dos días, un neceser de aseo y un antifaz y dinero suficiente para comprar un objeto de precio moderado.",
+  "notes": []
+ },
+ "Dealer": {
+  "page": 110,
+  "sub": "Postapocalypse",
+  "es": "Traficante",
+  "intro_es": "Te abres camino entre las ruinas de la civilización como mejor sabes, consiguiendo suministros a base de trueque con tu talento natural para el camelo. Cuando las cosas se tuercen, sales corriendo, o quizá le clavas un cuchillo por la espalda a tu supuesto socio comercial. Tienes un don para poner a la gente en contacto con lo que quiere (o al menos para prometerlo), y a veces te llaman apañador o proveedor. Y aunque puede que te animes a ayudar a otros con sus necesidades, si somos sinceros, tu propio pellejo es tu mercancía más importante. Se te da bien hablar, así que seguramente eres una de las personas en quienes confía tu banda para tratar con desconocidos, aliados y posibles enemigos mientras las palabras sirvan. Los demás de tu banda también se benefician de tu destreza comercial, la que sea. Pero cuando la situación se pone fea, estás listo para esquivar una traición, o quizá para provocarla tú.",
+  "bg_es": [
+   "Formaste una familia antes del apocalipsis, pero la perdiste entretanto. Ahora siempre buscas noticias suyas, aunque las probabilidades de que hayan sobrevivido tras tanto tiempo estén en contra.",
+   "Hace seis meses escondiste un alijo de drogas psicodélicas por aquí, pero no recuerdas dónde.",
+   "El señor de la guerra al que apuñalaste y diste por muerto hace un año sigue vivo, según rumores recientes.",
+   "Tuviste un accidente de tráfico y, cuando despertaste del coma meses después, el apocalipsis ya había ocurrido. Aún no tienes claro qué lo causó, pero estás decidido a averiguarlo algún día.",
+   "Hace unas semanas te enteraste de que uno de los adolescentes de la comunidad probablemente es hijo tuyo.",
+   "La banda de saqueadores que acampó cerca hace un mes no atacó a tu grupo gracias a tu labia.",
+   "Antes del apocalipsis gestionabas un hipermercado, pero te separaste de él. Crees que si consigues volver, tendrás la vida resuelta durante décadas.",
+   "El año pasado negociaste un trato que debería haber salvado a todos, pero te traicionaron."
+  ],
+  "ben_en": [
+   "Able to take two more minor wounds and one more moderate wound",
+   "Add +2 to Speed Pool",
+   "Add +2 to Intellect Pool",
+   "Add +1 Edge in Pool of your choice",
+   "Freely use light and medium weapons",
+   "Freely use light armor",
+   "Gain one weapon of your choice (or accept the equipment bundle weapon)",
+   "At tier 3 and tier 6, choose an ability from the Science Fiction Genre Abilities list"
+  ],
+  "ben_es": [
+   "Puedes recibir dos heridas leves más y una moderada más",
+   "+2 a la reserva de Velocidad",
+   "+2 a la reserva de Intelecto",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente armas ligeras y medias",
+   "Usas libremente armaduras ligeras",
+   "Ganas un arma a tu elección (o aceptas la del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género ciencia ficción"
+  ],
+  "abilities": [
+   {
+    "en": "Fast Talk",
+    "es": "Labia",
+    "cost_es": "1 Intelecto",
+    "text_es": "Al hablar con una criatura inteligente que pueda entenderte y no sea hostil, la convences de hacer una acción razonable en el asalto siguiente. El DJ debe estar de acuerdo en que es razonable: no debe poner a la criatura ni a sus aliados en peligro evidente ni ser totalmente impropia de ella. Acción."
+   },
+   {
+    "en": "When the Deal Bombs",
+    "es": "Cuando el trato revienta",
+    "cost_es": "",
+    "text_es": "Siempre existe el riesgo de que alguien con quien tratas se vuelva contra ti. Tras encandilar, engañar, interactuar de forma positiva con una criatura o usar Labia o una habilidad parecida sobre ella con éxito, si se vuelve hostil contigo en el plazo de un día o así, reduces automáticamente un paso la gravedad de la herida de su primer ataque con éxito contra ti. Capacitador. En el rango 3: en vez de reducir la gravedad de la herida, la ignoras por completo (sin daño)."
+   },
+   {
+    "en": "Sneak Attack",
+    "es": "Ataque furtivo",
+    "cost_es": "1 Velocidad",
+    "text_es": "Si usas un arma ligera para atacar a un enemigo en alguna de las condiciones siguientes, tu ataque inflige +5 de daño. (Esta habilidad no funciona con armas medias ni pesadas.) • Atacas por sorpresa. • Un aliado usa su acción para facilitar tu ataque. • Las defensas de tu enemigo están obstaculizadas por alguna otra distracción directa en curso. • Tu enemigo no puede hacer su siguiente turno por algún ataque o situación incapacitante. Primera acción."
+   }
+  ],
+  "bundle_es": "Una pistola media (con 10 balas), ropa adecuada, una bolsa de bienes de trueque (unos caramelos, un par de pilas, unos mecheros, etc.), un hacha de mano, una mochila, un saco de dormir, unos prismáticos, una caña de pescar con aparejos, una olla de hierro fundido, un librillo de cerillas, dos velas, un martillo y un cuchillo oxidado. Tu personaje empieza también con dinero o bienes de trueque equivalentes a un objeto de precio moderado.",
+  "notes": []
+ },
+ "Heavy": {
+  "page": 111,
+  "sub": "Postapocalypse",
+  "es": "Matón",
+  "intro_es": "La guerra nunca cambia: solo cambia a gente como tú, que tiene que combatir en ella o, una vez perdida, luchar por sobrevivir en un mundo roto por el conflicto. Para ti, la única forma de seguir adelante es aplastar incluso a los enemigos potenciales con tanta rapidez y violencia que nunca vuelvan a amenazarte ni a ti ni a lo que aprecias. En un mundo postapocalíptico a menudo violento, tus aliados agradecen tu protección y, cuando hace falta, tu agresividad cuando hay que abrirse paso a la fuerza en un lugar que puede contener los recursos necesarios para sobrevivir un día más.",
+  "bg_es": [
+   "Perdiste a tus hijos en el apocalipsis. Ahora tu objetivo es ayudar y proteger a los niños siempre que puedas.",
+   "Hace poco supiste que tienes una dolencia que requerirá atención médica de las de antes.",
+   "Eras nuevo en el ejército cuando el apocalipsis ocurrió antes del amanecer. Desde entonces, te has propuesto sobrevivir para honrar a tus amigos y familiares que murieron mientras dormían.",
+   "Hace tres semanas tu ex llegó a una posición de poder en tu comunidad de supervivientes.",
+   "Criaste un puma desde cachorro hasta adulto, pero el animal desapareció hace unos meses.",
+   "Te dieron un cóctel de drogas para combatir en la guerra, pero la guerra fue lo que desencadenó el apocalipsis. Ahora buscas lo que quede de los generales que estaban detrás para acabar con ellos.",
+   "Según rumores nuevos, una comunidad al oeste aún puede fabricar munición.",
+   "El mes pasado tú y tus aliados derrotasteis a uno de los señores de la guerra que asolaban la zona.",
+   "Tienes una cicatriz en la cabeza de una herida de bala y a veces sufres dolores de cabeza y desmayos."
+  ],
+  "ben_en": [
+   "Able to take three more minor wounds and one more moderate wound",
+   "Add +2 to Might Pool",
+   "Add +2 to Speed Pool",
+   "Add +1 Edge in Pool of your choice",
+   "Freely use all weapons",
+   "Freely use all armor",
+   "Gain one weapon of your choice (or accept the equipment bundle weapons)",
+   "At tier 3 and tier 6, choose an ability from the Science Fiction Genre Abilities list"
+  ],
+  "ben_es": [
+   "Puedes recibir tres heridas leves más y una moderada más",
+   "+2 a la reserva de Potencia",
+   "+2 a la reserva de Velocidad",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente todas las armas",
+   "Usas libremente todas las armaduras",
+   "Ganas un arma a tu elección (o aceptas las del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género ciencia ficción"
+  ],
+  "abilities": [
+   {
+    "en": "Expert Combatant",
+    "es": "Combatiente experto",
+    "cost_es": "",
+    "text_es": "Tienes entrenamiento en un ataque con arma concreto de tu elección, como espadas, hachas o arcos, o en una categoría de ataques más amplia, como armas contundentes ligeras, armas cortantes ligeras, armas a distancia ligeras, armas contundentes medias, armas cortantes medias, armas a distancia medias, etc. En el rango 2: puedes elegir especializarte en el mismo método de ataque que elegiste en el rango 1, pero debes obtener la habilidad de la forma normal (por ejemplo, con un avance de personaje). En el rango 6: puedes hacerte experto en un método de ataque concreto (el que elegiste en el rango 1 u otra habilidad con armas en la que ya estés especializado), pero debes obtener la habilidad de la forma normal. (Para un matón, Combatiente experto también supone elegir entrenamiento en armas propias del género, como pistolas y rifles.)"
+   },
+   {
+    "en": "Combat Prowess",
+    "es": "Destreza en combate",
+    "cost_es": "",
+    "text_es": "Sumas +1 al daño de un tipo de ataque con arma de tu elección: ataques con armas cuerpo a cuerpo o ataques con armas a distancia."
+   },
+   {
+    "en": "Desperate Feat",
+    "es": "Proeza desesperada",
+    "cost_es": "",
+    "text_es": "Mientras tengas al menos una herida moderada o grave, sumas +1 de Ventaja a la reserva que elijas. Capacitador."
+   }
+  ],
+  "bundle_es": "Una pistola pesada (con 10 balas) y un machete, ropa adecuada, un chaleco de Kevlar, una mochila, un saco de dormir, una máscara antigás, 16 m (50 pies) de cuerda de nailon, una tetera, un librillo de cerillas, dos velas, un martillo y un cuchillo oxidado. Tu personaje empieza también con dinero o bienes de trueque equivalentes a un objeto de precio moderado.",
+  "notes": []
+ },
+ "Survivor": {
+  "page": 112,
+  "sub": "Postapocalypse",
+  "es": "Superviviente",
+  "intro_es": "Vas tirando, aunque a veces por los pelos. Sobrevivir significa soportar situaciones que pueden parecer insoportables. Mantenerte con vida puede haberte obligado a endurecer el corazón; con recursos limitados, incluso otros que sobrevivieron al principio al apocalipsis quizá solo aplazaron lo inevitable. Pero tú no: sabes encontrar lo necesario entre los restos del pasado, tienes reflejos para evitar el peligro y la flexibilidad necesaria para salir adelante en los momentos más difíciles. Ayudas a tu equipo a sobrevivir, sobre todo gracias a tu pericia para rebuscar comida, refugio y cosas útiles. También te defiendes razonablemente en una pelea, aunque huir (al menos un poco) del peligro inmediato siempre te da ventaja en lo que pase después, que puede ser ayudar a un aliado.",
+  "bg_es": [
+   "Tu vida en un pueblo pequeño fue plácida hasta el apocalipsis, pero justo después tuviste que tomar decisiones horribles. Ahora buscas expiarlas.",
+   "Te obligaron a unirte a una banda de saqueadores hasta que pudiste huir hace dos meses.",
+   "Oíste rumores de un refugio por aquí, pero cuando llegaste hace poco solo encontraste huesos.",
+   "Sobreviviste al colapso atrincherado en un gran almacén, pero todo eso se perdió por la traición de un camarada. Ahora acaparas cualquier cosa útil y te cuesta confiar en los demás.",
+   "Saliste de un refugio antinuclear hace una semana, cuando se quedó sin recursos.",
+   "Hace unos meses te invitaron a unirte a una comunidad, pero en lugar de eso les robaste y huiste de la zona.",
+   "Eras sheriff antes del desastre, pero tus decisiones justo después causaron muertes innecesarias. Avergonzado, te ves impulsado a proteger a desconocidos para redimir tus fracasos.",
+   "Mantuviste a un niño con vida durante años, y hace poco creció y siguió su propio camino."
+  ],
+  "ben_en": [
+   "Able to take three more minor wounds and one more moderate wound",
+   "Add +1 to Might Pool",
+   "Add +2 to Speed Pool",
+   "Add +1 to Intellect Pool",
+   "Add +1 Edge in Pool of your choice",
+   "Freely use light and medium weapons",
+   "Freely use light armor",
+   "Gain one weapon of your choice (or accept the equipment bundle weapon)",
+   "At tier 3 and tier 6, choose an ability from the Science Fiction Genre Abilities list"
+  ],
+  "ben_es": [
+   "Puedes recibir tres heridas leves más y una moderada más",
+   "+1 a la reserva de Potencia",
+   "+2 a la reserva de Velocidad",
+   "+1 a la reserva de Intelecto",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente armas ligeras y medias",
+   "Usas libremente armaduras ligeras",
+   "Ganas un arma a tu elección (o aceptas la del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género ciencia ficción"
+  ],
+  "abilities": [
+   {
+    "en": "Despite My Wounds",
+    "es": "A pesar de mis heridas",
+    "cost_es": "",
+    "text_es": "Mientras tengas dos o más heridas moderadas o una herida grave, obtienes una nueva tirada gratuita en una acción cada asalto (como si hubieras gastado 1 PX). Capacitador."
+   },
+   {
+    "en": "Enhanced Scavenging",
+    "es": "Rebusca mejorada",
+    "cost_es": "2+ Intelecto",
+    "text_es": "Cuando tiras para rebuscar algo útil en el paisaje postapocalíptico y sacas menos de 9, trata la tirada como un 9. (Esto significa que no hay intrusión del DJ si sacas un 1.) El efecto mejorado dura hasta que haces una recuperación de diez minutos o más. Esfuerzo: aumenta en 3 el resultado mínimo de esta habilidad. Capacitador. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+   },
+   {
+    "en": "Get Out",
+    "es": "Largarse",
+    "cost_es": "",
+    "text_es": "Si te alejas al menos una distancia inmediata de la amenaza más obvia o te acercas a lo que promete seguridad, una tarea que intentes en el asalto siguiente se facilita. Capacitador."
+   }
+  ],
+  "bundle_es": "Un rifle medio (con 10 balas), ropa adecuada, una linterna (recargable con manivela), una mochila, un saco de dormir, un cortapernos, un botiquín de primeros auxilios, una pajita filtradora de agua, una sartén de hierro fundido, un rollo de cinta americana, un librillo de cerillas, un taladro manual, una palanca y un cuchillo oxidado. Tu personaje empieza también con dinero o bienes de trueque equivalentes a un objeto de precio moderado.",
+  "notes": []
+ },
+ "Tender": {
+  "page": 113,
+  "sub": "Postapocalypse",
+  "es": "Cuidador",
+  "intro_es": "Incluso en las peores circunstancias posibles, sueles sentir que tu vida (lo que quede de ella) se vive mejor al servicio de los demás. Según cómo atiendas las necesidades ajenas, puede que te conozcan como sabio, doctor, sanitario o ministro. Pero los nombres dan igual. Solo quieres ayudar a los demás a sobrevivir, curar sus males y, si no se puede hacer nada más por ellos, procurar que su final sea humano e indoloro. Seguramente todos agradecen tu presencia, o al menos tus habilidades, sobre todo los de tu grupo. Sin tus cuidados y conocimientos, sus vidas podrían tener un final brutal y doloroso. Si estalla un conflicto, sabes manejar un arma, pero prefieres intentar contrarrestar la amenaza para que ni tú ni tus aliados salgáis heridos.",
+  "bg_es": [
+   "Viste a tu familia sucumbir a la enfermedad por radiación. Ahora rebuscas sin descanso conocimientos de antes, decidido a que nadie más sufra un destino parecido si puedes evitarlo.",
+   "Hace unos meses salvaste a una familia de una enfermedad virulenta, y todavía te dan las gracias a menudo.",
+   "Dependías de un medicamento raro para atender a muchos pacientes; hace unas semanas se te acabó.",
+   "Eras estudiante de medicina antes del apocalipsis y no estabas preparado para cuidar de nadie cuando cayeron las bombas: tuviste que abandonar a incontables desconocidos moribundos. Te cuesta librarte de esa fría indiferencia y aún rara vez ayudas a quien no conoces o no te inspira confianza.",
+   "Formabas parte de una comunidad de supervivientes hasta que la radiación, al avanzar, la destruyó hace un año.",
+   "Según los traficantes que pasan de vez en cuando, cerca funciona un hospital.",
+   "Justo después de la catástrofe, un vagabundo sin nombre te cuidó hasta que te recuperaste y luego desapareció. Ahora te sientes obligado a devolver esa bondad curando a otros como te ayudaron a ti.",
+   "La mala suerte y una mala reacción hicieron que un amigo al que tratabas muriera hace unos meses."
+  ],
+  "ben_en": [
+   "Able to take two more minor wounds and one more moderate wound",
+   "Add +1 to Might Pool",
+   "Add +1 to Speed Pool",
+   "Add +2 to Intellect Pool",
+   "Add +1 Edge in Pool of your choice",
+   "Freely use light and medium weapons",
+   "Freely use light armor",
+   "Gain one weapon of your choice (or accept the equipment bundle weapon)",
+   "At tier 3 and tier 6, choose an ability from the Science Fiction Genre Abilities list"
+  ],
+  "ben_es": [
+   "Puedes recibir dos heridas leves más y una moderada más",
+   "+1 a la reserva de Potencia",
+   "+1 a la reserva de Velocidad",
+   "+2 a la reserva de Intelecto",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente armas ligeras y medias",
+   "Usas libremente armaduras ligeras",
+   "Ganas un arma a tu elección (o aceptas la del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género ciencia ficción"
+  ],
+  "abilities": [
+   {
+    "en": "Foil Danger",
+    "es": "Frustrar peligro",
+    "cost_es": "2 Intelecto",
+    "text_es": "Si eres consciente de un peligro a distancia inmediata y superas una tirada de Intelecto contra su nivel, anulas ese peligro durante un asalto. Por ejemplo, el peligro puede ser un elemento del terreno, como un pozo de barro o de ácido, una trampa activada por un cable o una capacidad natural de una criatura (como el veneno de una serpiente o una ráfaga de radiación de una cucaracha brillante). Incluso puede ser un ataque o acción normal de un enemigo (como un ataque con arma o su intento de accionar un interruptor), en cuyo caso esta habilidad significa que no puede hacer esa acción en su siguiente turno. Acción."
+   },
+   {
+    "en": "Inspiring Suggestion",
+    "es": "Sugerencia inspiradora",
+    "cost_es": "2 Intelecto",
+    "text_es": "Cuando haces una sugerencia útil a un aliado, tiene más posibilidades de lograr lo que intenta. Elige un aliado que pueda verte y entenderte y sugiérele una acción concreta, como «ataca al líder» o «trepa por el muro». Si el aliado decide hacer exactamente esa acción, obtiene dos ventajas en esa tarea. Primera acción."
+   },
+   {
+    "en": "Wasteland Healer",
+    "es": "Sanador del yermo",
+    "cost_es": "2 Intelecto",
+    "text_es": "Con acceso a un maletín médico rebuscado (o equipo parecido), puedes aplicar un tratamiento en la mitad del tiempo normal o tratar el doble de heridas de un personaje en el tiempo normal. Capacitador. (El tratamiento consiste en usar una habilidad como primeros auxilios, medicina o cirugía para eliminar una herida de un personaje; el tiempo depende de la gravedad de la herida.)"
+   }
+  ],
+  "bundle_es": "Una pistola ligera (con 10 balas), ropa adecuada, un maletín médico rebuscado, una mochila, un saco de dormir, un libro médico «cómo hacer», un bote de aspirinas (agotamiento de 1 en 1d20), una pajita filtradora de agua, un hervidor, un librillo de cerillas, tres velas y un cuchillo oxidado. Tu personaje empieza también con dinero o bienes de trueque equivalentes a un objeto de precio moderado. (El maletín médico rebuscado reúne vendas, puntos de sutura, medicamentos y suministros parecidos rebuscados en el yermo. Tiene un agotamiento de 1 en 1d10. Si se agota, un cuidador puede reponerlo tras pasar al menos una hora rebuscando en ruinas donde antes vivía gente y gastar 1 punto de recursos.)",
+  "notes": []
+ }
+}

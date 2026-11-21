@@ -1,0 +1,991 @@
+{
+ "type-barbarian": {
+  "n": "Bárbaro",
+  "d": "Para ti, cada día es otra oportunidad de derramar sangre, beber cerveza o ambas cosas, y de ganarte una o dos cicatrices para recordarlo. Forastero y vagabundo de corazón, te has hecho aventurero más por accidente que por decisión. Dicen que eres un salvaje, pero solo a tus espaldas, no vayan a sufrir tu furia. De todo tu grupo, sueles atraer más la atención de los enemigos, porque cambias el miedo por la rabia. Los temores desaparecen cuando te hierve la sangre: solo ves rojo. El frenesí te da fuerza, un propósito en la batalla y, casi siempre, el camino a la victoria. Pero cuando se te pasa la fiebre de la batalla, tu conocimiento de las tierras salvajes os guía a ti y a tus aliados por regiones sin civilizar donde vagan monstruos, bandidos y otros bárbaros.",
+  "e": "Un mandoble, ropa adecuada, cota de malla, una mochila, un saco de dormir, 16 m de cuerda, una palanca, un odre (lleno), tres antorchas, raciones y agua para tres días, un yesquero y dinero suficiente para comprar un objeto de precio moderado.",
+  "b": [
+   "Puedes recibir tres heridas leves más y una moderada más",
+   "+3 a la reserva de Potencia",
+   "+1 a la reserva de Velocidad",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente todas las armas",
+   "Usas libremente armaduras ligeras y medias",
+   "Ganas un arma a tu elección (o aceptas la del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género fantasía"
+  ],
+  "g": [
+   "Tu tribu nómada cazaba en los páramos helados, pero el hijo del jefe te humilló en un combate ritual y ahora buscas redimirte.",
+   "Dirigiste una horda bárbara durante un tiempo, pero lo dejaste hace un año para vagar por el mundo.",
+   "Has jurado matar a todos los magos oscuros de una camarilla demoníaca, pero aún quedan unos cuantos ocultos.",
+   "Hace dos años no lograste proteger a una princesa de un culto de la serpiente y sus ofidios.",
+   "Tu pueblo vivía en las colinas hasta que unos diablos traicioneros de la ciudad lo masacraron. Tienes sed de venganza.",
+   "Aprendiste a sobrevivir en lo más profundo de la jungla y pasaste casi toda tu vida solo. Hoy buscas compañía y la fuerza que da el número.",
+   "Un amigo tuyo tomó su propio camino hace unos años. Se rumorea que ahora es bandido.",
+   "Has amasado grandes riquezas unas cuantas veces, pero siempre las has perdido; la última, hace un año."
+  ]
+ },
+ "type-barbarian/frenzy": {
+  "n": "Frenesí",
+  "c": "1+ Intelecto",
+  "t": "En combate puedes entrar en un estado de frenesí. Mientras dura, no puedes usar puntos de Intelecto, pero sumas +1 a tu Ventaja de Potencia y a tu Ventaja de Velocidad. Dura lo que quieras, pero termina si no hay ningún combate al alcance de tus sentidos. Esfuerzo: facilitas los ataques de tus aliados contra un enemigo que elijas durante el resto del combate. Enabler."
+ },
+ "type-barbarian/wilderness-survival": {
+  "n": "Supervivencia en la naturaleza",
+  "c": "",
+  "t": "Sabes sobrevivir en tierras despobladas. Tras pasar al menos diez minutos en la naturaleza y superar una tarea de supervivencia (outdoor survival) de dificultad 2 (o la que el DJ considere apropiada para la zona), encuentras algo útil que buscabas: refugio en una cueva o un árbol hueco, todo lo necesario para hacer fuego, una presa que abates con facilidad, o bayas, setas, raíces u otra comida. Sabes preparar cualquier caza o vegetal que encuentres y puedes alimentarte a ti y a hasta cinco aliados."
+ },
+ "type-barbarian/wounded-fury": {
+  "n": "Furia herida",
+  "c": "",
+  "t": "Mientras tengas al menos tres heridas moderadas o al menos una grave, ganas un nivel de Esfuerzo gratuito que puedes aplicar a uno de tus ataques cada asalto. Enabler. En el rango 3: el beneficio sube a dos niveles de Esfuerzo gratuitos."
+ },
+ "type-bard": {
+  "n": "Bardo",
+  "d": "Eres artista: cantante, bailarín, poeta, cuentacuentos o algo parecido. Carismático y con talento natural, tu dedicación y tu estudio no han hecho más que mejorar tu arte. Conoces poemas, canciones, chistes e historias antiguas, y se te da bien crear otros nuevos. Tu carácter aparentemente benévolo tranquiliza a los demás, y tus actuaciones levantan el ánimo, alivian las cargas mentales e incluso pueden inspirar. Seguramente la mayoría de tu grupo acude a ti en busca de ayuda, consejo o, al menos, una actuación enardecedora que despierte el valor. Esos mismos talentos son útiles cuando tu grupo intenta la diplomacia: digas la verdad o intentes engañar, tu habilidad para halagar, sonreír y encandilar puede abrir puertas que las espadas y los conjuros no pueden.",
+  "e": "Un estoque, una guiterna (un instrumento musical, también llamado guitarra) y su púa, un escudo, una mochila, un saco de dormir, 16 m de cuerda, un kit de maquillaje de escena, tres antorchas, raciones y agua para tres días, un yesquero y dinero suficiente para comprar un objeto de precio moderado.",
+  "b": [
+   "Puedes recibir dos heridas leves más y una moderada más",
+   "+1 a la reserva de Potencia",
+   "+1 a la reserva de Velocidad",
+   "+2 a la reserva de Intelecto",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente armas ligeras y medias",
+   "Usas libremente armaduras ligeras",
+   "Ganas un arma a tu elección (o aceptas la del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género fantasía"
+  ],
+  "g": [
+   "Pasaste años como trovador errante recopilando relatos épicos, pero algunos aún se te escapan.",
+   "Tu hermano menor te pidió la semana pasada ser tu aprendiz.",
+   "Fuiste artista y cortesano en la corte hasta que un noble celoso te calumnió.",
+   "El teatro que dirige tu tío quedó destruido el mes pasado por una estrella fugaz.",
+   "Escribiste una canción para alentar la rebelión, y ahora los asesinos del rey te persiguen.",
+   "Llevas casi un año actuando en una posada justo a las puertas de las murallas del palacio.",
+   "Tu amante te regaló un raro libro de poemas, pero te lo robaron la semana pasada.",
+   "Tu instrumento se rompió; desde entonces usas uno de recambio de mala calidad."
+  ]
+ },
+ "type-bard/expert-interlocuter": {
+  "n": "Interlocutor experto",
+  "c": "",
+  "t": "Quedas entrenado, a tu elección, en encanto (charm), engaño (deception) o intimidación (intimidation). En el rango 6: puedes hacerte experto en esa misma habilidad si ya estás especializado, pero tienes que ganarla de la forma normal (por ejemplo, con un avance)."
+ },
+ "type-bard/inspiring-performance": {
+  "n": "Actuación inspiradora",
+  "c": "2+ Intelecto",
+  "t": "Con un discurso enardecedor o una música inspiradora levantas el ánimo de tres aliados que puedan oírte y verte. Mientras sigas hablando o actuando cada asalto como tu acción, tienen un recurso a favor en una tarea que elijas (de combate o no) relacionada con tu actuación. Aun después de terminar, quedan tan inspirados que suman +1 a su siguiente recuperación. Esfuerzo: afectas a tres aliados más. Acción. En el rango 3: suman +2 a su siguiente recuperación."
+ },
+ "type-bard/a-smile-and-a-word": {
+  "n": "Una sonrisa y una palabra",
+  "c": "",
+  "t": "Cuando interactúas con éxito con una criatura superando una tarea de encanto, engaño o intimidación (incluso para calmar animales o comunicarte con alguien o algo cuyo idioma no hablas), averiguas además un pequeño dato útil o al menos interesante. Por ejemplo, si convences al guardia de que te deje pasar, puedes enterarte de que su superior vuelve en diez minutos. Acción."
+ },
+ "type-cleric": {
+  "n": "Clérigo",
+  "d": "Sigues a un ser divino y eres su representante entre los mortales. El poder de tu deidad (o deidades) te permite obrar pequeños «milagros» en su nombre. Cómo sigues sus enseñanzas es cosa tuya, pero su ámbito principal influye mucho en cómo ves el mundo: un clérigo de un dios del fuego puede tener prioridades distintas a uno de una diosa del mar. Pero casi todas las deidades coinciden en algo: curar y bendecir a los demás es una buena forma de extender su influencia. Tus aliados quizá te vean como un apoyo vital por tu capacidad de bendecir sus actos y curar sus heridas después (¡o durante!) un combate. Pero lo cierto es que también eres un guerrero capaz, casi tan armado y acorazado como los luchadores de primera línea, y además puedes ahuyentar a los enemigos más odiados por tu dios, normalmente los muertos reanimados.",
+  "e": "Una maza o un martillo, ropa adecuada, cota de malla, una mochila, un saco de dormir, 16 m de cuerda, vendas extra (facilitan cuatro tareas de curación antes de acabarse), un libro de oraciones, dos antorchas, raciones y agua para tres días, un yesquero y dinero suficiente para comprar un objeto de precio moderado.",
+  "b": [
+   "Puedes recibir dos heridas leves más y una moderada más",
+   "+1 a la reserva de Potencia",
+   "+1 a la reserva de Velocidad",
+   "+2 a la reserva de Intelecto",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente armas ligeras y medias",
+   "Usas libremente todas las armaduras",
+   "Ganas un arma a tu elección (o aceptas la del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género fantasía"
+  ],
+  "g": [
+   "En un momento de duda hace una década perdiste la fe. Desde entonces has dedicado todos estos años a expiar tu pecado.",
+   "Tu templo ardió hasta los cimientos el año pasado y aún no sabes cómo ni por qué.",
+   "Hace un mes mataste a un clérigo de tu orden poseído por un demonio para salvar a un niño.",
+   "Criado en una devota orden del templo, te mueve la compasión por curar a los necesitados.",
+   "Hace seis meses recuperaste un libro sagrado de cantos dorados, pero sigue sellado con magia.",
+   "Único superviviente de una incursión en unas ruinas hace dos años, aún hablas poco de ello.",
+   "Elegido por una deidad para vagar por el mundo, tu sagrada misión es extirpar las fuerzas del mal y de la no vida.",
+   "Hace poco saliste del calabozo tras una pelea de borrachos en una taberna."
+  ]
+ },
+ "type-cleric/combat-prowess": {
+  "n": "Destreza en combate",
+  "c": "",
+  "t": "Sumas +1 al daño de un tipo de ataque con arma a tu elección: cuerpo a cuerpo o a distancia."
+ },
+ "type-cleric/divine-radiance": {
+  "n": "Resplandor divino",
+  "c": "1+ Intelecto",
+  "t": "Canalizas la influencia divina para lograr uno de estos efectos. Bendición: un objetivo a alcance corto queda cargado de gracia divina benévola; en cualquier momento antes de su siguiente recuperación de diez minutos o más, tiene un recurso a favor en una acción. Esfuerzo: afectas a dos objetivos más. Acción. Expulsar muertos vivientes: hasta cinco muertos vivientes de nivel 2 o inferior a alcance corto reciben una descarga de resplandor divino (ataque de Intelecto aparte contra cada uno). Los afectados quedan repelidos y deben pasar su siguiente turno huyendo de ti. Esfuerzo: afectas a dos objetivos más y aumentas en 1 el nivel máximo de muerto viviente que puedes afectar. Acción. En el rango 3: en vez de hacerlos huir, puedes dejarlos sin poder actuar durante un turno."
+ },
+ "type-cleric/healing-hand": {
+  "n": "Mano sanadora",
+  "c": "1+ Intelecto",
+  "t": "Con un toque reduces la gravedad de una herida: una leve desaparece, una moderada pasa a leve o una grave pasa a moderada. (Si el personaje está en su límite de heridas de la gravedad inferior, no puedes usar esta habilidad para reducirle una herida.) Cada vez que usas Mano sanadora, el coste en Intelecto sube 1; vuelve a 1 cuando haces una recuperación. Última acción."
+ },
+ "type-druid": {
+  "n": "Druida",
+  "d": "Tienes una afinidad mágica con los animales y los paisajes que habitan. A veces proteges bosques, praderas, mares u otras regiones que las criaturas necesitan para sobrevivir y prosperar; otras veces confías en tu vínculo con esos lugares para protegerte y fortalecerte. Puedes pertenecer a un antiguo sacerdocio muy extendido o ser un oficiante autodidacta que canaliza la magia del bosque, la luna, la tormenta y la bestia. Tu pericia da a tu grupo poder ofensivo y opciones más discretas o diplomáticas cuando viaja o explora entornos salvajes. Tu bestia compañera te ayuda a ti y a tus aliados en combate, y también vigila, distrae, rastrea, llega a sitios donde no caben criaturas grandes, etc.",
+  "e": "Un bastón, un arco con carcaj de 12 flechas, ropa adecuada, armadura de cuero, una mochila, un saco de dormir, 16 m de cuerda, una tienda, una vela, raciones y agua para tres días, un yesquero y dinero suficiente para comprar un objeto de precio moderado.",
+  "b": [
+   "Puedes recibir dos heridas leves más y una moderada más",
+   "+1 a la reserva de Potencia",
+   "+3 a la reserva de Intelecto",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente armas ligeras y medias",
+   "Usas libremente armaduras ligeras",
+   "Ganas un arma a tu elección (o aceptas las del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género fantasía"
+  ],
+  "g": [
+   "Eras un ermitaño solitario que cuidaba una arboleda sagrada hasta que unos saqueadores la quemaron. Aún los persigues, a ellos y a las semillas que robaron.",
+   "Se dice que un noble del pueblo de al lado está cazando un raro ciervo mágico.",
+   "Eres un vagabundo criado por animales, y tu integración en la sociedad inteligente ha sido difícil.",
+   "Desde hace un año tienes una pesadilla recurrente con una agresiva plaga de hongos rojizos.",
+   "Tu pueblo cuidaba un oasis del desierto hasta que la maldición de un mago secó sus aguas. Esperas descubrir algún día quién lanzó la maldición.",
+   "Encontraste y devolviste el perro fugado de la reina; ahora te preguntas si no deberías habértelo quedado.",
+   "Los rumores dicen que una sociedad de druidas desaparecida hace mucho vuelve a estar activa."
+  ]
+ },
+ "type-druid/beast-companion": {
+  "n": "Bestia compañera",
+  "c": "",
+  "t": "Ganas un seguidor: una bestia de nivel 2 de tu tamaño o menor que te acompaña y sigue tus instrucciones. Decide con el DJ su aspecto y personalidad. Se mueve según su tipo de criatura (voladora, nadadora, etc.). Si muere, puedes usar tus puntos de recurso para revivirla o (cazando unos días en la naturaleza) encontrar y ganarte otra. Enabler."
+ },
+ "type-druid/friend-to-small-creatures": {
+  "n": "Amigo de las pequeñas criaturas",
+  "c": "1+ Intelecto",
+  "t": "Un tipo de criatura pequeña que nombres y que viva en el entorno (insectos, ratas, murciélagos, pájaros…) queda bajo tu influencia si superas una tarea de Intelecto de supervivencia (outdoor survival) de dificultad 2. Las criaturas afectadas a alcance corto no os harán daño a ti ni a quien designes como aliado hasta que hagas una recuperación de diez minutos o más. No funciona contra enjambres hostiles de nivel 3 o superior. Tus criaturas (incluso insectos comunes, de nivel 0) pueden agolparse en número suficiente para dificultar los ataques o defensas de un objetivo, o hacer otra acción. También puedes usarla para calmar o mandar sobre enredaderas, hierbas, raíces o ramas de plantas cercanas en vez de animales. Esfuerzo: tus criaturas responden en conjunto a tus órdenes como un aliado PNJ. Acción."
+ },
+ "type-druid/seeds-of-fury": {
+  "n": "Semillas de furia",
+  "c": "1 Intelecto",
+  "t": "Lanzas al aire un puñado de semillas que prenden y vuelan hacia un objetivo a alcance largo dejando estelas de humo retorcido. Un ataque con éxito hace 3 de daño y prende fuego al objetivo, que recibe +1 de daño por asalto hasta que use una acción para apagarse o hasta que hagas tu siguiente recuperación. Acción."
+ },
+ "type-fighter": {
+  "n": "Guerrero",
+  "d": "Con el arma bien agarrada, cargas contra tus monstruosos enemigos. Cualquiera dispuesto a empuñar una espada puede llamarse «guerrero», pero tú estás por encima de la mayoría. Los menos entrenados sirven de soldados, guardias o matones de taberna, pero un Guerrero de verdad entiende el conflicto y el control del campo de batalla. Te has entrenado en armas y formas de defensa concretas, tienes cicatrices de peleas pasadas y seguramente esperas con ganas tu próximo descenso a unas ruinas antiguas o a un puesto enemigo, aunque solo sea para medir tu arma con la hoja o el conjuro de un rival. En tu grupo sueles ser el más capaz físicamente, el más resistente y el más dispuesto a afrontar el peligro de cara. Eso te lleva a proteger a tus amigos, sobre todo a los menos robustos. Si alguien tiene que ir delante al entrar en la guarida del monstruo, tú eres de los primeros.",
+  "e": "Una espada, ropa adecuada, cota de malla, un escudo, una mochila, un saco de dormir, 16 m de cuerda, un juego de clavos y martillo, dos antorchas, raciones y agua para tres días, un yesquero y dinero suficiente para comprar un objeto de precio moderado.",
+  "b": [
+   "Puedes recibir tres heridas leves más y una moderada más",
+   "+3 a la reserva de Potencia",
+   "+1 a la reserva de Velocidad",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente todas las armas",
+   "Usas libremente todas las armaduras",
+   "Ganas un arma a tu elección (o aceptas la del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género fantasía"
+  ],
+  "g": [
+   "Perdiste el hogar de tu infancia en la guerra y solo sobreviviste porque luchaste. Ahora, años después, aún buscas a los últimos restos del ejército enemigo.",
+   "Acabas de recuperarte de una herida grave tras la emboscada de un gigante.",
+   "La gente aún te reconoce a veces como el ganador de un torneo de combate local.",
+   "Fuiste capitán en la guerra, pero cuando el reino perdió, procuraste pasar desapercibido.",
+   "Tu hermano murió explorando una fortaleza encantada. Su espada pasó a ti hace tres días.",
+   "La guardia te expulsó hace unos meses y aún no sabes muy bien por qué.",
+   "La guerra fue larga y sangrienta, pero por fin ha terminado, y necesitas trabajo.",
+   "Empezaste como guardia de la ciudad hasta que la saquearon. Ahora buscas redimirte protegiendo a los que son menos fuertes que tú."
+  ]
+ },
+ "type-fighter/expert-combatant": {
+  "n": "Combatiente experto",
+  "c": "",
+  "t": "Quedas entrenado en un ataque con arma concreto a tu elección (espadas, hachas, arcos…) o en una categoría más amplia (armas contundentes ligeras, armas cortantes ligeras, armas a distancia ligeras, armas contundentes medias, cortantes medias, a distancia medias, etc.). En el rango 2: puedes especializarte en ese mismo método de ataque, pero tienes que ganar la habilidad de la forma normal (por ejemplo, con un avance). En el rango 6: puedes hacerte experto en un método de ataque concreto (el que elegiste en el rango 1 u otra habilidad de arma en la que ya estés especializado), pero tienes que ganarla de la forma normal."
+ },
+ "type-fighter/press-advantage": {
+  "n": "Aprovechar la ventaja",
+  "c": "",
+  "t": "Cuando tu tirada de ataque que hace daño es 17 o más, haces +1 de daño. Si sacas 19 o 20, haces ese daño extra tanto si eliges daño adicional como si eliges un efecto menor o mayor especial."
+ },
+ "type-fighter/successive-attack": {
+  "n": "Ataque sucesivo",
+  "c": "2 Velocidad o Potencia",
+  "t": "Una vez por turno, si derribas a un enemigo, puedes hacer de inmediato otro ataque en ese mismo turno contra otro enemigo a tu alcance, como acción extra de tu turno. Sirve con ataques cuerpo a cuerpo y a distancia. Enabler."
+ },
+ "type-mage": {
+  "n": "Mago",
+  "d": "Lanzas conjuros de fuego devastador, protección mágica y fuerza a distancia. Como lanzador de conjuros, siempre buscas nuevos secretos arcanos, saber mágico y conjuros para tu repertorio. Sabes que los conjuros más poderosos (los que alteran la forma de una criatura, abren caminos a otros mundos o matan con una sola palabra) son secretos celosamente guardados incluso entre lanzadores amigos, también entre maestro y aprendiz. Pero eso solo te hace estar dispuesto a afrontar casi cualquier amenaza para buscarlos, incluso en lugares peligrosos bajo tierra. Te conformas con la protección física de quienes van más armados y acorazados, y dejas para tu talento las amenazas y enigmas más esotéricos. Y cada vez que aparece un botín o tesoro posiblemente encantado, el resto del grupo espera que tú, con tu inteligencia y experiencia, expliques para qué sirve. Eso no quiere decir que no seas peligroso: conoces al menos un conjuro capaz de fulminar enemigos y, si sobrevives, esperas aprender muchos más.",
+  "e": "Una daga, ropa adecuada, un libro de conjuros (que también sirve de cuaderno de campo para notas arcanas), pluma, tinta, una mochila, un saco de dormir, 16 m de cuerda, cerillas (10), una lupa, tres antorchas, raciones y agua para tres días, dos frascos de aceite y dinero suficiente para comprar un objeto de precio moderado.",
+  "b": [
+   "Puedes recibir dos heridas leves más y una moderada más",
+   "+1 a la reserva de Velocidad",
+   "+3 a la reserva de Intelecto",
+   "+1 de Ventaja en la reserva que elijas",
+   "No puedes usar libremente ninguna armadura",
+   "Ganas un arma a tu elección (o aceptas la del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género fantasía"
+  ],
+  "g": [
+   "Pasaste tus primeros años estudiando en una academia mágica, hasta que una diosa codiciosa envió a sus seguidores a saquearla.",
+   "Hace unos días asesinaron al lanzador de conjuros del que fuiste aprendiz.",
+   "Fuiste aprendiz de un maestro cruel del que a duras penas lograste escapar, pero aún te busca después de tantos años.",
+   "Pujaste por un raro libro de saber arcano en la subasta de la semana pasada, pero lo perdiste ante un mago enmascarado.",
+   "Ayer te entregaron, sin ninguna nota, una baratija que tu hermana llamaba su amuleto de la suerte.",
+   "Aprendiste tus conjuros de un viejo libro que te dejó tu tío, que desapareció misteriosamente, y aún estás pendiente de cualquier noticia suya.",
+   "Más por accidente que por elección, salvaste la vida al hijo aventurero del alcalde.",
+   "Un demonio que te enseñó uno de tus conjuros se presentó la semana pasada para cobrarse un favor."
+  ]
+ },
+ "type-mage/blast": {
+  "n": "Descarga",
+  "c": "1+ Intelecto",
+  "t": "Emites una descarga de energía a alcance corto que hace 4 de daño a un objetivo si aciertas el ataque. Decide con el DJ qué tipo de energía es. Si te concentras unos asaltos, puedes ajustarla para que corte material de hasta nivel 5 y no más de 30 cm de grosor. Si tienes otra habilidad de ataque que hace daño (de tu foco o tu tipo), puedes usar Descarga para reforzarla y sumarle 1 de daño. Esfuerzo: ganas control fino del efecto hasta que hagas una recuperación de diez minutos o más, variando la intensidad a voluntad a alcance inmediato; por ejemplo, para calentar la zona, cocinar sin quemar o dar luz intensa. Aumenta en 1 el nivel máximo de material que puedes cortar. Acción para atacar; última acción para iniciar el control fino; enabler para reforzar otra habilidad de ataque."
+ },
+ "type-mage/mage-armor": {
+  "n": "Armadura de mago",
+  "c": "1 Intelecto",
+  "t": "Te rodea un campo de energía invisible hasta que hagas una recuperación de diez horas. Te permite intentar bloquear ataques con una defensa de Intelecto facilitada en vez de una de Potencia; si tienes éxito, reduces un paso la gravedad de la herida. Acción. En el rango 3: tu defensa de Intelecto para bloquear queda facilitada en dos pasos en total."
+ },
+ "type-mage/prepare-spell": {
+  "n": "Preparar conjuro",
+  "c": "",
+  "t": "Cada día puedes elegir un efecto mágico distinto y lanzarlo como conjuro. Elige una cifra manifiesta de poder bajo; tras diez minutos de preparación, ganas su efecto como conjuro (una habilidad especial). Lanzarlo es una acción y cuesta 2 de Intelecto. No cuenta para tu límite de cifras y, a diferencia de una cifra, no lo pierdes al lanzarlo. Al hacer una recuperación de diez horas puedes cambiar la cifra elegida; hacerlo termina todas las duraciones del conjuro anterior. Puedes coger esta habilidad hasta tres veces (como avance o en lugar de una habilidad de foco nueva), para tener uno, dos o tres conjuros al día. Diez minutos para preparar un conjuro; acción para lanzarlo. En el rango 3: puedes elegir cifras de poder bajo o medio; uno de poder medio cuesta 4 de Intelecto. En el rango 6: puedes elegir cifras de poder bajo, medio o avanzado; uno avanzado cuesta 6 de Intelecto."
+ },
+ "type-monk": {
+  "n": "Monje",
+  "d": "No usas armas: eres un arma. Con puñetazos, patadas y movimientos de todo el cuerpo haces un daño increíble a tus enemigos. Concentrando tu energía (a veces llamada chi, ki o simplemente «coraje») multiplicas tu poder y tu velocidad. Seguramente te formaste con un entrenamiento intenso, combatiendo en torneos reales contra iguales y mejores, y últimamente poniendo tus habilidades únicas al servicio de la aventura. Los artistas marciales sin armas son temidos y venerados, así que tu papel en el grupo es en cierto modo único. Aun así, te unes a los demás combatientes de primera línea, usando tus armas (mano, pie, rodilla y codo) con mucha más agilidad que quien blande un pesado trozo de metal.",
+  "e": "Ropa adecuada, una mochila, un saco de dormir, 16 m de cuerda, una esterilla de meditación, tres antorchas, raciones y agua para tres días, un yesquero y dinero suficiente para comprar un objeto caro.",
+  "b": [
+   "Puedes recibir tres heridas leves más y una moderada más",
+   "+2 a la reserva de Potencia",
+   "+2 a la reserva de Velocidad",
+   "+1 de Ventaja en la reserva que elijas",
+   "No puedes usar libremente ninguna armadura",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género fantasía"
+  ],
+  "g": [
+   "Criado en un monasterio apartado, te marchaste antes de completar tu entrenamiento y aún lo lamentas después de tantos años.",
+   "El maestro con el que te entrenabas fue llamado a la capital hace dos semanas.",
+   "Tu viejo rival apareció en el pueblo hace unos meses y al parecer quiere la revancha.",
+   "Toda tu familia murió en la erupción de un volcán. Desde entonces te dedicas a destruir seres primordiales y elementales, sobre todo los del fuego y la tierra.",
+   "Un documento que encontraste en una biblioteca hace un año afirma que tu familia desciende de dragones.",
+   "De joven nunca perdiste un combate en los juegos mensuales de tu comunidad, salvo una vez. Aún buscas a quien te venció para pedirle la revancha.",
+   "Tu amigo íntimo desapareció hace unos meses y sus deudas pasaron a ser tuyas.",
+   "En tus ratos libres llevas un par de semanas estudiando el arte de los arreglos florales."
+  ]
+ },
+ "type-monk/flurry": {
+  "n": "Ráfaga",
+  "c": "2 Velocidad",
+  "t": "Tras hacer un ataque desarmado ligero, como acción extra de tu turno haces otro ataque desarmado ligero contra el mismo objetivo o contra otro. Acción. En el rango 3: puedes hacer un tercer ataque desarmado ligero como tercera acción de tu turno."
+ },
+ "type-monk/nimble": {
+  "n": "Ágil",
+  "c": "2 Velocidad",
+  "t": "Como primera acción, te mueves hasta una distancia corta y luego puedes hacer otra primera acción, como atacar con un arma ligera o abrir una puerta (el movimiento va antes de la primera acción, no al revés). A diferencia de lo normal al actuar y moverte una distancia corta, este movimiento no dificulta tus tareas. Enabler."
+ },
+ "type-monk/no-need-for-weapons": {
+  "n": "Sin necesidad de armas",
+  "c": "",
+  "t": "Tus ataques desarmados (puñetazos, patadas, codazos o rodillazos) hacen 2 de daño adicional."
+ },
+ "type-necromancer": {
+  "n": "Nigromante",
+  "d": "La carne en descomposición irradia una fuerza vital que se apaga. Sabes absorber ese poder, retorcerlo y darle forma, y luego reinfundirlo en los muertos para que vuelvan a andar a tu servicio. También puedes extraer esa energía directamente de ellos para curar tu carne desgarrada o la de quien esté cerca. De hecho, tu dominio nigromántico te da cierto control sobre muertos vivientes de todo tipo: puedes aturdirlos, repelerlos o incluso mandarlos un rato. Como tus habilidades están tan ligadas a la muerte, mucha gente te teme y te odia sean cuales sean tus actos y tus verdaderos motivos. Tus ayudantes animados pueden ayudar a quien les mandes, incluidos los aliados dispuestos a aceptar ayuda de un cadáver. Del mismo modo, tu capacidad de drenar la vida de tus enemigos para curarte también puede aliviar a los aliados que lo acepten. Y si tu grupo se enfrenta a una amenaza nigromántica externa, tienes el saber y el poder para ayudar a combatirla.",
+  "e": "Un bastón, ropa adecuada, un libro de saber necrótico, una mochila, un saco de dormir, incienso (10 varillas), cerillas (10), un farol, raciones y agua para tres días, tres frascos de aceite y dinero suficiente para comprar un objeto de precio moderado.",
+  "b": [
+   "Puedes recibir dos heridas leves más y una moderada más",
+   "+4 a la reserva de Intelecto",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente armas ligeras y medias",
+   "Usas libremente armaduras ligeras",
+   "Ganas un arma a tu elección (o aceptas la del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género fantasía"
+  ],
+  "g": [
+   "Cuando murió tu cónyuge, dedicaste tu vida a traerlo de vuelta, si no a la vida, al menos a una réplica animada realista. Pero hasta ahora no has encadenado más que fracasos.",
+   "Hace unos seis meses animaste un cadáver que susurró tu nombre antes de convertirse en polvo.",
+   "Hace poco descubriste que hay una recompensa por tu cabeza porque, al parecer, profanaste un cementerio.",
+   "Después de estar a punto de morir de joven, decidiste que tu meta era buscar la inmortalidad a través de la no vida.",
+   "La escuela oscura donde aprendiste tu oficio quedó destruida por un rayo hace unos meses.",
+   "Tu hermano apareció muerto hace un año, al parecer a manos de una horda de muertos vivientes.",
+   "Aprendiste tu oficio de los sigilos grabados en los muros de tumbas antiguas, pero ahora todo lo que había enterrado allí te busca sin cesar para «recuperar» lo que robaste.",
+   "Tu amigo sigue enfadado porque no te presentaste a una ceremonia importante hace tres meses."
+  ]
+ },
+ "type-necromancer/basic-necromancy": {
+  "n": "Nigromancia básica",
+  "c": "3 Intelecto",
+  "t": "Animas el cuerpo de una criatura muerta de tu tamaño aproximado o menor a alcance inmediato y creas un seguidor de nivel 1 que es un muerto viviente. No tiene nada de la inteligencia, los recuerdos ni las habilidades especiales que tenía en vida. Sigue tus órdenes verbales hasta que hagas una recuperación de una hora o más, y entonces vuelve a ser un cadáver inerte. Si no lo mataron con daño, puedes reanimarlo de nuevo cuando se agote su tiempo, pero conserva el daño que tenía al quedar inerte. Si usas Nigromancia básica para animar un segundo cuerpo, el que ya habías animado vuelve a ser un cadáver inerte. Acción para animar."
+ },
+ "type-necromancer/drain-life": {
+  "n": "Drenar vida",
+  "c": "1+ Intelecto",
+  "t": "Lanzas un zarcillo ceniciento hasta alcance corto que hace 2 de daño a un objetivo vivo si aciertas un ataque de Intelecto. Te beneficias de la vida drenada: curas una herida leve tuya o de un aliado a alcance inmediato. Acción. En el rango 3: si aplicas dos niveles de Esfuerzo, un ataque con éxito hace 5 de daño y cura una herida moderada o leve tuya o de un aliado a alcance inmediato."
+ },
+ "type-necromancer/tribulation": {
+  "n": "Tribulación",
+  "c": "1+ Intelecto",
+  "t": "Conjuras energía espiritual pura y golpeas a hasta cinco muertos vivientes, demonios y criaturas similares de nivel 2 o inferior a alcance corto. Si superas un ataque de Intelecto aparte contra cada uno, eliges si pasan su siguiente turno huyendo o lo pierden. Esfuerzo: aumentas en 1 el nivel máximo de enemigo que puedes afectar. Indica otra acción que las criaturas deban hacer durante un asalto, como atacar a un enemigo que elijas. Última acción."
+ },
+ "type-paladin": {
+  "n": "Paladín",
+  "d": "Con el poder que te concede la voluntad divina justa, proteges y curas a los inocentes, expulsas y destruyes a los siervos del mal, y te esfuerzas por cumplir tus juramentos de honor y servicio. Como atestiguó tu dios, defiendes la justicia contra las fuerzas de la corrupción, normalmente con el poder sagrado que canalizas a través de tu arma. Eres de los primeros de tu grupo en plantar cara al enemigo, aparentemente sin miedo. Rindes más cuando tu presencia aparta la atención de los enemigos de tus aliados, sobre todo porque el poder que te dan los dioses puede servir de defensa activa.",
+  "e": "Un mandoble, ropa adecuada, cota de malla, un símbolo sagrado o un altar portátil del poder superior al que sirves, una mochila, un saco de dormir, 16 m de cuerda, tres antorchas, raciones y agua para tres días, un yesquero y dinero suficiente para comprar un objeto de precio moderado.",
+  "b": [
+   "Puedes recibir tres heridas leves más y una moderada más",
+   "+3 a la reserva de Potencia",
+   "+1 a la reserva de Intelecto",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente todas las armas",
+   "Usas libremente todas las armaduras",
+   "Ganas un arma a tu elección (o aceptas la del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género fantasía"
+  ],
+  "g": [
+   "Te llamó al servicio una visión divina de un desastre que acabaría con el mundo. Crees que, si reúnes suficiente poder en nombre de tu dios, podrás evitarlo.",
+   "Serviste años en una guerra santa en una tierra lejana, pero volviste a casa el mes pasado.",
+   "Hace unas semanas, un vidente aseguró que un demonio intentaba corromperte en secreto.",
+   "Después de que unos dragones malvados mataran a tus padres, seguiste su camino para honrar sus vidas (y matar dragones malvados).",
+   "La semana pasada te despertaste sin ningún recuerdo del año anterior.",
+   "Te expulsaron del templo hace un año bajo una nube de sospechas.",
+   "Eras un simple sacerdote hasta que saquearon tu templo. Entonces tomaste la espada, movido por un compromiso fervoroso de castigar el mal.",
+   "Hace unas semanas expulsaste triunfalmente un nido de necrófagos del cementerio local."
+  ]
+ },
+ "type-paladin/combat-prowess": {
+  "n": "Destreza en combate",
+  "c": "",
+  "t": "Sumas +1 al daño de un tipo de ataque con arma a tu elección: cuerpo a cuerpo o a distancia."
+ },
+ "type-paladin/holy-succor": {
+  "n": "Socorro sagrado",
+  "c": "1+ Intelecto",
+  "t": "Mientras un aliado a alcance inmediato tenga al menos tres heridas moderadas o una grave, puedes extender sobre él tu gracia divina: gana un nivel de Esfuerzo gratuito que puede aplicar cada asalto a una tirada de ataque o defensa. La gracia dura hasta que se curen las heridas o haga una recuperación de diez minutos o más. Cada vez que usas Socorro sagrado, el coste en Intelecto sube 1; vuelve a 1 cuando haces una recuperación. Enabler."
+ },
+ "type-paladin/sacred-smite": {
+  "n": "Castigo sagrado",
+  "c": "2 Intelecto",
+  "t": "Eliges una criatura que ves y que quieres que sea castigada por sus faltas. Hasta que ataques a otra criatura, tus ataques contra ella hacen +1 de daño por la energía divina que recorre tu arma cuerpo a cuerpo o a distancia. Si es un muerto viviente, un demonio o algo similar (según el DJ), eliges si tu ataque con éxito hace +2 de daño o si el enemigo debe huir de ti durante un turno. Enabler. En el rango 3: el daño extra contra muertos vivientes, demonios y similares sube a +3."
+ },
+ "type-ranger": {
+  "n": "Explorador",
+  "d": "Se te da bien viajar por lugares peligrosos. La dura experiencia te ha enseñado que la confianza se ofrece en contadas ocasiones, y aun así puede acabar convertida en enemistad. Sabes pensar como tu presa, rastrearla y, si hace falta, abatirla, ya sea caza salvaje o alguien al que has decidido perseguir. Tu capacidad de orientarte es importante en cualquier grupo que viaje con cierta frecuencia a regiones lejanas y desconocidas o por túneles laberínticos bajo tierra. Tu habilidad para encontrar el camino te hace imprescindible cuando el grupo tiene que seguir a un enemigo que ha huido y, una vez encontrado, acabar con él rápido.",
+  "e": "Una espada o un arco (con un carcaj de 12 flechas), ropa adecuada, una brújula, una mochila, un saco de dormir, 16 m de cuerda, un odre (lleno), tres antorchas, raciones y agua para tres días, un yesquero y dinero suficiente para comprar un objeto de precio moderado.",
+  "b": [
+   "Puedes recibir tres heridas leves más y una moderada más",
+   "+1 a la reserva de Potencia",
+   "+2 a la reserva de Velocidad",
+   "+1 a la reserva de Intelecto",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente armas ligeras y medias",
+   "Usas libremente armaduras ligeras y medias",
+   "Ganas un arma a tu elección (o aceptas la del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género fantasía"
+  ],
+  "g": [
+   "Criado en lo más profundo de las tierras salvajes, recibiste un entrenamiento y tu deber es transmitirlo algún día a un heredero digno.",
+   "Un viejo amigo te pidió que ayudaras a alguien en apuros, pero nunca lograste encontrarlo.",
+   "Un enemigo de tu pasado te localizó hace poco, pero volviste a perderle la pista.",
+   "Serviste de explorador para un asentamiento de la frontera. Un día, al volver, había desaparecido como si nunca hubiera existido. Aún buscas, en lo que puedes, qué pudo ocurrir.",
+   "Mientras hacías de guardaespaldas de un señor del crimen, mataste a un agente de la guardia de la ciudad.",
+   "Un monstruo devoró a tu hermano cuando eras joven. Aún hoy te mueve cazar y eliminar a esas criaturas.",
+   "Aún te aprovechas de la gratitud de la baronesa por encontrar a su hijo desaparecido hace unos años.",
+   "Te hiciste tu extraña cicatriz explorando una mazmorra, pero no recuerdas cómo."
+  ]
+ },
+ "type-ranger/expert-tracker": {
+  "n": "Rastreador experto",
+  "c": "",
+  "t": "Quedas entrenado en rastrear (tracking). En el rango 6: puedes hacerte experto en rastrear si ya estás especializado, pero tienes que ganar la habilidad de la forma normal (por ejemplo, con un avance)."
+ },
+ "type-ranger/find-the-way": {
+  "n": "Encontrar el camino",
+  "c": "",
+  "t": "Cuando rastreas a una criatura, te has perdido, no sabes cuál es el primer paso de un viaje o intentas elegir entre dos o más rutas, puedes hacer al DJ una pregunta sobre la tarea y recibir una respuesta útil y muy breve. Una vez usada, no puedes volver a usarla hasta después de tu siguiente recuperación. Acción."
+ },
+ "type-ranger/quarry": {
+  "n": "Presa",
+  "c": "2 Intelecto",
+  "t": "Eliges como presa a una criatura que ves. Tienes un recurso a favor en todas las tareas de seguirla, entenderla, tratar con ella, atacarla o defenderte de ella, y tus ataques contra ella hacen +1 de daño. Incluye las tareas de caza, si procede: despellejar, limpiar, la mejor forma de preparar y conservar la carne, etc. Solo puedes tener una presa a la vez. Acción. En el rango 3: puedes tener dos presas a la vez."
+ },
+ "type-rogue": {
+  "n": "Pícaro",
+  "d": "Eres astuto; algunos dirían que turbio. Sobrevives a empresas arriesgadas gracias al sigilo, la habilidad y la gracia de unos reflejos rápidos. Calibras de un vistazo los puntos débiles de los demás y, cuando te conviene, aprovechas al máximo las oportunidades. Lo que te falta de músculo te sobra de picardía, disimulo y quizá un poco de suerte. Prefieres que otro de tu grupo se lance de cabeza al conflicto para colarte sin que te vean, quizá para clavarle una daga en la espalda a un enemigo. Cuando no hay peligro inminente, eres de los más indicados para examinar con cuidado un lugar nuevo y, si hace falta, desactivar trampas y abrir cámaras acorazadas.",
+  "e": "Dos dagas, ropa adecuada, una bolsa de herramientas ligeras (incluidas ganzúas), una mochila, un saco de dormir, 16 m de cuerda, un espejo de mano, tres antorchas, raciones y agua para tres días, un yesquero y dinero suficiente para comprar un objeto de precio moderado.",
+  "b": [
+   "Puedes recibir dos heridas leves más y una moderada más",
+   "+3 a la reserva de Velocidad",
+   "+1 a la reserva de Intelecto",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente armas ligeras y medias",
+   "Usas libremente armaduras ligeras",
+   "Ganas un arma a tu elección (o aceptas las del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género fantasía"
+  ],
+  "g": [
+   "Empezaste trabajando para un gremio criminal y aún conservas un hambre insaciable de monedas.",
+   "La semana pasada «ayudaste» a la guardia de la ciudad a abrir una caja fuerte encontrada en un carro abandonado.",
+   "El mes pasado unos piratas interrumpieron tu rescate de un barco hundido en el puerto.",
+   "Tu padre desapareció hace dos semanas sin ninguna explicación.",
+   "Creciste en la calle, sobreviviendo con tu ingenio, tus dedos ágiles y la ayuda de un amigo que más tarde te traicionó y casi te mata. Aún lo buscas.",
+   "Levantaste un pequeño negocio de venta. Se acabó cuando ardió hace tres meses.",
+   "Criado como noble, empezaste a robar como «afición» ilícita que se te fue de las manos, y ahora llevas una especie de doble vida.",
+   "Tu conocido el duque te ha invitado a una gran fiesta prevista para el mes que viene."
+  ]
+ },
+ "type-rogue/detect-traps": {
+  "n": "Detectar trampas",
+  "c": "2+ Velocidad o Intelecto",
+  "t": "Cuando tiras para encontrar una trampa y sacas menos de 9, cuenta como un 9 (así que un 1 no provoca intrusión del DJ). Mantienes esta sensibilidad hasta que hagas una recuperación de diez minutos o más. Esfuerzo: sube en 3 el mínimo. Acción. En el rango 3: el mínimo pasa a 12."
+ },
+ "type-rogue/expert-sneak": {
+  "n": "Sigiloso experto",
+  "c": "",
+  "t": "Quedas entrenado en sigilo (stealth). En el rango 6: puedes hacerte experto en sigilo si ya estás especializado, pero tienes que ganar la habilidad de la forma normal (por ejemplo, con un avance)."
+ },
+ "type-rogue/sneak-attack": {
+  "n": "Ataque furtivo",
+  "c": "1 Velocidad",
+  "t": "Si atacas con un arma ligera en una de estas condiciones, tu ataque hace +5 de daño (no funciona con armas medias o pesadas): atacas por sorpresa; un aliado usa su acción para facilitarte el ataque; las defensas del enemigo están dificultadas por otra distracción directa; o el enemigo no puede hacer su siguiente turno por un ataque o situación incapacitante. Primera acción."
+ },
+ "type-archer": {
+  "n": "Arquero",
+  "d": "Eres una Flecha de Guerra, un Ojo de Halcón, un Susurro de Muerte o, como a veces llaman a los tuyos, un Arquero. Abates a tus enemigos desde lejos con saetas silbantes, un disparo tras otro, antes de que puedan acercarse. Aunque los enemigos te muerdan, te golpeen y te maldigan, tu pulso firme y tu larga experiencia con el arco en combate mantienen tu puntería. Destacas apoyando a tus aliados a distancia, o abatiendo enemigos antes de que empiece de verdad la lucha. También se te da bien vigilar una zona a la espera de tu siguiente blanco y proteger a tu grupo con la amenaza de tu flecha montada.",
+  "e": "Un arco y un carcaj de 24 flechas, ropa adecuada, una bolsa de herramientas ligeras (incluidas herramientas para emplumar flechas y cuerdas de repuesto), una mochila, un saco de dormir, 16 m de cuerda, una tienda, un espejo de mano, tres antorchas, raciones y agua para tres días, un yesquero y dinero suficiente para comprar un objeto de precio moderado.",
+  "b": [
+   "Puedes recibir dos heridas leves más y una moderada más",
+   "+4 a la reserva de Velocidad",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente armas ligeras y medias",
+   "Usas libremente armaduras ligeras",
+   "Ganas un arma a tu elección (o aceptas la del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género fantasía"
+  ],
+  "g": [
+   "De niño cazabas con arco para alimentar a tu familia cuando unos saqueadores hirieron a tu único progenitor; esos mismos saqueadores quemaron después la casa familiar y mataron a todos menos a ti.",
+   "Ganaste un concurso de tiro con arco hace un mes pese a las acusaciones de trampa.",
+   "Estuviste años varado en una fortaleza perdida en el desierto hasta que te rescataron hace dos meses.",
+   "Cazabas furtivamente en el bosque real para alimentar a los hambrientos (tú incluido) hasta que te atraparon y pasaste años en la mazmorra. Hace poco escapaste.",
+   "Formabas parte de una expedición para recuperar un artefacto sagrado que desapareció aquí hace un año.",
+   "Una horda bárbara salvó tu tierra natal de un dragón hace unos seis meses.",
+   "Cada año se celebra un famoso concurso de tiro con arco. Esperas participar algún día y ganarlo.",
+   "Hace un par de semanas encontraste una flecha extraña en unas ruinas cubiertas por la ciénaga."
+  ]
+ },
+ "type-archer/expert-combatant": {
+  "n": "Combatiente experto",
+  "c": "",
+  "t": "Quedas entrenado en un ataque con arma concreto a tu elección (espadas, hachas, arcos…) o en una categoría más amplia (armas contundentes ligeras, armas cortantes ligeras, armas a distancia ligeras, armas contundentes medias, cortantes medias, a distancia medias, etc.). En el rango 2: puedes especializarte en ese mismo método de ataque, pero tienes que ganar la habilidad de la forma normal (por ejemplo, con un avance). En el rango 6: puedes hacerte experto en un método de ataque concreto (el que elegiste en el rango 1 u otra habilidad de arma en la que ya estés especializado), pero tienes que ganarla de la forma normal."
+ },
+ "type-archer/overwatch": {
+  "n": "Vigilancia",
+  "c": "2 Velocidad",
+  "t": "Apuntas con un arma a distancia a una zona limitada (una puerta, un pasillo, el lado este del claro…) y, en cuanto entra un objetivo viable, puedes atacarlo. Funciona como retrasar la acción, pero además anulas cualquier beneficio que el objetivo tenga por cobertura, posición, sorpresa, distancia, iluminación o visibilidad. Tu ataque hace +1 de daño. Puedes mantener la vigilancia lo que quieras, dentro de lo razonable. También puedes usarla en tu turno contra un objetivo que ya esté en la zona. Acción."
+ },
+ "type-archer/quick-draw": {
+  "n": "Desenfundado rápido",
+  "c": "2 Velocidad",
+  "t": "Una vez por turno, si derribas a un enemigo con tu ataque a distancia medio o pesado, puedes hacer de inmediato otro ataque en ese mismo turno contra otro enemigo a alcance corto, como acción extra de tu turno. Enabler."
+ },
+ "type-axe-fighter": {
+  "n": "Luchador con hacha",
+  "d": "Cuando llama el combate, tu arma es un hacha robusta: una de mano, una de batalla o incluso una gran hacha. Por eso te llaman Tajamuerte, Saqueador del Hacha o simplemente lo que eres: Luchador con hacha. Has partido muchos cráneos con ella y, si los dioses siguen velando por ti, muchos más caerán ante ti en los años venideros. Como los demás de tu banda, estás listo para el combate. No te importa que un aliado dé el primer golpe a las criaturas malditas con las que soléis toparos, porque sabes que eres más que capaz de rematar el trabajo con un último tajo demoledor.",
+  "e": "Una gran hacha y un hacha de mano, ropa adecuada, cota de malla, una mochila, un saco de dormir, 16 m de cuerda, un cuerno de señales, tres antorchas, raciones y agua para tres días, un yesquero y dinero suficiente para comprar un objeto de precio moderado.",
+  "b": [
+   "Puedes recibir tres heridas leves más y una moderada más",
+   "+4 a la reserva de Potencia",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente todas las hachas",
+   "Usas libremente todas las armaduras",
+   "Ganas un arma a tu elección (o aceptas las del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género fantasía"
+  ],
+  "g": [
+   "Criado en una aldea rodeada de bosque, tomaste el hacha para luchar contra los lobos terribles que la acosaban.",
+   "Hace seis meses, en una jungla miasmática, conseguiste un pomo de jade para tu hacha.",
+   "La semana pasada volviste a casa de un mercader para cobrar, pero lo encontraste muerto.",
+   "Guerrero de clan, te desterraron de tu tierra natal montañosa a los 16 años por matar (o al menos por ser acusado de matar) a tu mejor amigo.",
+   "Hace un mes se descubrió bajo tu aldea un santuario a males antiguos anteriores a los humanos.",
+   "Tu hacha está rayada por incontables escaramuzas durante tus años de mercenario, pero ahora quieres perseguir una nueva meta. Solo que aún no sabes muy bien cuál.",
+   "La monstruosa cabeza de trol que colgaste como trofeo desapareció la semana pasada.",
+   "Tu madre, que te enseñó los caminos del hacha, se quedó ciega misteriosamente hace un año."
+  ]
+ },
+ "type-axe-fighter/axe-hook": {
+  "n": "Gancho de hacha",
+  "c": "1 Potencia",
+  "t": "Atacas con la «barba» del hacha (la parte de la hoja justo debajo del filo) para enganchar el arma o el escudo del objetivo. Si aciertas, haces 2 de daño menos de lo normal, pero suelta una cosa u otra; para recuperarla tiene que usar una acción. También puedes enganchar una extremidad para desequilibrarlo: haces 1 de daño menos de lo normal, pero sus tareas quedan dificultadas hasta tu siguiente turno. Acción."
+ },
+ "type-axe-fighter/expert-combatant": {
+  "n": "Combatiente experto",
+  "c": "",
+  "t": "Quedas entrenado en un ataque con arma concreto a tu elección (espadas, hachas, arcos…) o en una categoría más amplia (armas contundentes ligeras, armas cortantes ligeras, armas a distancia ligeras, armas contundentes medias, cortantes medias, a distancia medias, etc.). En el rango 2: puedes especializarte en ese mismo método de ataque, pero tienes que ganar la habilidad de la forma normal (por ejemplo, con un avance). En el rango 6: puedes hacerte experto en un método de ataque concreto (el que elegiste en el rango 1 u otra habilidad de arma en la que ya estés especializado), pero tienes que ganarla de la forma normal."
+ },
+ "type-axe-fighter/split-skull": {
+  "n": "Partecráneos",
+  "c": "1 Potencia",
+  "t": "Atacas con un hacha de una forma que arriesga más a fallar pero da un beneficio adicional. Tu rango de intrusión del DJ en este ataque sube en 2 (de 1 a 1–3 en el d20), pero si aciertas eliges uno de estos efectos adicionales. Fuerza bruta: el enemigo recibe +2 de daño. Traumatismo craneal: el ataque hace 1 de daño menos, pero las acciones del enemigo quedan dificultadas hasta que use una acción para reponerse. Acción."
+ },
+ "type-knife-fighter": {
+  "n": "Luchador con cuchillo",
+  "d": "Los adversarios (sobre todo los entrenados con espada) suelen subestimar a alguien armado solo con dagas. Si te desafían, descubren su error cuando les clavas un cuchillo en el ojo antes de que desenvainen sus armas enormes. Quizá prefieres que te llamen Acero Veloz o Pincho, como algunos de tus compañeros estudiosos de la daga, pero al final Luchador con cuchillo describe lo que eres tan rápido como una cuchillada. Seguramente eres un combatiente más de tu grupo, aunque tu capacidad de ser de los primeros en hacer sangre cubre a tus compañeros mientras atacan. Es especialmente útil si puedes clavar a un enemigo a la pared o al suelo un momento, porque eso indica a tus aliados a quién atacar a continuación.",
+  "e": "Cinco dagas, ropa adecuada, una mochila, un saco de dormir, 16 m de cuerda, un cinturón de cuchillos, tres antorchas, raciones y agua para tres días, un yesquero y dinero suficiente para comprar un objeto de precio moderado.",
+  "b": [
+   "Puedes recibir tres heridas leves más y una moderada más",
+   "+4 a la reserva de Velocidad",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente todos los cuchillos",
+   "Usas libremente armaduras ligeras",
+   "Ganas un arma a tu elección (o aceptas las del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género fantasía"
+  ],
+  "g": [
+   "Cogiste un cuchillo por primera vez siendo un pilluelo en una ciudad enorme. Aprendiste a que te moviera la simple supervivencia.",
+   "Hace dos semanas hiciste de matón en un timo a un mercader rico, pero nunca te pagaron.",
+   "Hace un año empezó a susurrarte una horrible entidad extradimensional, pero casi siempre la ignoras.",
+   "Cuando asaltaron la caravana de tus padres, pasaste años vagando por tierras salvajes traicioneras sin más compañía que un oso domesticado, hasta que un cazador lo mató.",
+   "Tu hermana y tú os unisteis a una banda de bandidos; cuando la mataron hace un año, dejaste esa vida.",
+   "Hace poco murió de una enfermedad misteriosa el sacerdote que te acogió cuando te quedaste huérfano.",
+   "Hace semanas recuperaste un cofre de metal con incrustaciones de las viejas ruinas, pero aún no consigues abrirlo.",
+   "Te entrenaron como matón de una banda despiadada y ahora quieres retirarte de la violencia. Pero el mundo no te deja otra opción que usar tu cuchillo para sobrevivir."
+  ]
+ },
+ "type-knife-fighter/expert-combatant": {
+  "n": "Combatiente experto",
+  "c": "",
+  "t": "Quedas entrenado en un ataque con arma concreto a tu elección (espadas, hachas, arcos…) o en una categoría más amplia (armas contundentes ligeras, armas cortantes ligeras, armas a distancia ligeras, armas contundentes medias, cortantes medias, a distancia medias, etc.). En el rango 2: puedes especializarte en ese mismo método de ataque, pero tienes que ganar la habilidad de la forma normal (por ejemplo, con un avance). En el rango 6: puedes hacerte experto en un método de ataque concreto (el que elegiste en el rango 1 u otra habilidad de arma en la que ya estés especializado), pero tienes que ganarla de la forma normal."
+ },
+ "type-knife-fighter/gut-ripper": {
+  "n": "Destripador",
+  "c": "1 Velocidad",
+  "t": "Atacas con un cuchillo de una forma que arriesga más a fallar pero da un beneficio adicional. Tu rango de intrusión del DJ en este ataque sube en 2 (de 1 a 1–3 en el d20), pero si aciertas eliges uno de estos efectos adicionales. Corte profundo: el enemigo recibe +2 de daño. Que sangre: la herida sangra y, en tu siguiente turno, el enemigo recibe 2 de daño que ignora la armadura. Acción."
+ },
+ "type-knife-fighter/hindering-throw": {
+  "n": "Lanzamiento entorpecedor",
+  "c": "3 Velocidad",
+  "t": "Tu ataque a distancia con cuchillo con éxito se queda clavado en el objetivo (en su ropa, su carne, el suelo u otra superficie cercana): hace el daño normal y dificulta sus tareas en su siguiente turno. Acción."
+ },
+ "type-priest": {
+  "n": "Sacerdote",
+  "d": "Aplacas a los oscuros, a entidades antiguas o quizá a un dios muy real y presente que te castigará si dejas de cantar sus alabanzas y hacerle sacrificios. Pero a cambio de tu culto e idolatría puedes invocar su ayuda antediluviana y manifestar poderes inexplicables para curar, potenciar, purificar o castigar. Tus aliados cuentan contigo para interpretar sueños extraños, identificar dioses perdidos y sus obras, curarlos y protegerlos de influencias malignas y, cuando más importa, entrar en la lucha con tu magia o tu arma. Has viajado lo bastante para saber que la capacidad de abatir a un enemigo con hacha o espada es tanta bendición como la magia, siempre que luego se den las gracias.",
+  "e": "Un hacha de batalla, ropa adecuada, cota de malla, un escudo, una mochila, un saco de dormir, 16 m de cuerda, un libro de oraciones, tres antorchas, raciones y agua para tres días, un yesquero y dinero suficiente para comprar un objeto de precio moderado.",
+  "b": [
+   "Puedes recibir dos heridas leves más y una moderada más",
+   "+3 a la reserva de Intelecto",
+   "+1 a la reserva de Potencia",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente armas ligeras y medias",
+   "Usas libremente armaduras ligeras y medias",
+   "Ganas un arma a tu elección (o aceptas la del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género fantasía"
+  ],
+  "g": [
+   "Tu talento natural para la talla era tan avanzado que los dioses se fijaron en ti ya de niño.",
+   "Hace un año otro sacerdote predijo que pronto morirías de forma sangrienta e inesperada.",
+   "Un ídolo que diste a un caudillo bárbaro te lo devolvieron hace poco, ensangrentado y destrozado.",
+   "Hace unas semanas llegó un mensaje de tu padre exigiéndote que vuelvas a tu tierra natal.",
+   "Te criaron misioneros de una fe poco conocida. Ahora esperas difundir la buena nueva tan lejos como puedas para extender el alcance de tu fe.",
+   "Esta mañana te despertaste en una tumba. Saliste, pero no recuerdas cómo llegaste allí.",
+   "El mes pasado expulsaste a un demonio que poseía a un bandido. La recompensa prometida sigue pendiente.",
+   "Crees que los dioses se atribuyen el mérito de tus capacidades mágicas innatas. Esperas prescindir de ellos por completo algún día, pero hasta entonces repites sus dogmas a los crédulos."
+  ]
+ },
+ "type-priest/cypher-use": {
+  "n": "Uso de cifras",
+  "c": "",
+  "t": "Puedes llevar una cifra más a la vez."
+ },
+ "type-priest/idol": {
+  "n": "Ídolo",
+  "c": "3+ Intelecto",
+  "t": "Al terminar un ritual de diez minutos creas un ídolo que dura hasta que se agota su magia: un símbolo grabado en piedra, una figurilla tejida con ramitas, una pequeña talla o algo parecido. Debe colocarse en una superficie sólida algo protegida de los elementos, como el hueco de un árbol, la base de un muro o el interior de un edificio. Su vínculo sagrado con lo inefable da, a tu elección, uno de estos beneficios fijos; quien rece al ídolo como su acción lo recibe, estés o no presente. El ídolo tiene un agotamiento de 1–2 en 1d6: tira cada vez que da su beneficio a alguien. Furia bestial: el suplicante queda imbuido de un espíritu latente de furia bestial, que se activa cuando pierde los nervios o cuando decide despertarlo como acción extra de su turno. Al surgir la furia, se transforma visiblemente en una versión hinchada y rabiosa de sí mismo. Mientras dura, no puede gastar puntos de Intelecto salvo para intentar recuperar la compostura; ataca a toda criatura viva a alcance corto, tirando dos veces por ataque y quedándose con el mejor resultado. Dura hasta que haga una recuperación de diez minutos o más o use una acción para superar una tarea de Intelecto de dificultad 2. Al volver a la normalidad, el desgaste físico le causa dos heridas moderadas. (Un PNJ suplicante furioso es de hecho un nivel superior y recibe 6 de daño al acabar la furia.) Curación: la gravedad de una de las heridas del suplicante baja un paso (un PNJ recupera 5 de salud). Purificación espiritual: el suplicante se libra de una maldición, posesión demoníaca o aflicción espiritual similar de nivel 5 o inferior. Esfuerzo: puedes llevar el ídolo contigo. Diez minutos para iniciar."
+ },
+ "type-priest/retribution": {
+  "n": "Retribución",
+  "c": "1 Intelecto",
+  "t": "Invocas los poderes de una deidad contra un enemigo que ves a alcance corto. Si aciertas el ataque de Intelecto, recibe 3 de daño y queda marcado con un signo evidente de esa deidad hasta que hagas una recuperación de diez minutos o más. Por ejemplo, si invocas la retribución de Thesk el Señor de las Serpientes, el ataque parece de serpientes etéreas que se enroscan y muerden al enemigo, y queda marcado en la frente u otro lugar visible con colmillos o una cabeza de serpiente brillantes. Última acción. En el rango 3: la retribución sube a 5 de daño."
+ },
+ "type-sorcerer": {
+  "n": "Hechicero",
+  "d": "Eres uno de los pocos. Tienes la aptitud, el talento innato y la capacidad de tratar con entidades oscuras sin perder la cabeza, lo que te permite desvelar y dominar la magia. La mayoría te mira con miedo cuando descubre que tus habilidades no son mero espectáculo, sino los secretos de una era olvidada renacidos en ti. Cuando abres tu ojo interior, tu mente se expande: ves lo invisible, doblegas a otros a tu voluntad y fustigas directamente sus mentes. Tu magia es útil en combate, sobre todo porque no necesitas golpear físicamente para dañar o influir; pero dependes de tu grupo para la seguridad física, no vayan a arrollarte por la fuerza antes de que puedas brillar. Fuera del combate, tu profundo saber hechicero antiguo puede marcar la diferencia entre una incursión con éxito y una tumba temprana.",
+  "e": "Una daga, ropa adecuada, un libro de saber, una mochila, un saco de dormir, incienso (diez varillas), cerillas (diez), una lupa, tres antorchas, dos frascos de aceite, raciones y agua para tres días y dinero suficiente para comprar un objeto de precio moderado.",
+  "b": [
+   "Puedes recibir dos heridas leves más y una moderada más",
+   "+4 a la reserva de Intelecto",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente armas ligeras y medias",
+   "Usas libremente armaduras ligeras",
+   "Ganas un arma a tu elección (o aceptas la del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género fantasía"
+  ],
+  "g": [
+   "Cuando despertaste de un coma de diez años ya adulto, tenías tus capacidades pero ningún recuerdo de tu pasado. Ahora esperas recuperarlos si es posible.",
+   "Se rumorea que el pequeño reino donde naciste cayó ante las sombras hace un año.",
+   "Hace seis meses te cambiaste el nombre y el aspecto después de que te acusaran de nigromancia.",
+   "El gremio de ladrones contrata a veces tus servicios en los interrogatorios.",
+   "Tu abuela también tenía la visión, hasta que los asesinos de la corona la mataron. Así que intentas mantener ocultas tus capacidades, esperando tu momento para vengarte.",
+   "A veces sueñas con un «hombre sonriente» cuyos susurros amenazan con la locura.",
+   "Una monstruosa especie alienígena te secuestró y te hizo pruebas extrañas, y cuando te soltaron tenías tus capacidades. Temes que también te hayan cambiado de otras formas que aún no se notan.",
+   "Tuviste un hijo que llegó a adulto, se unió a una guerra y murió hace tres años."
+  ]
+ },
+ "type-sorcerer/cypher-use": {
+  "n": "Uso de cifras",
+  "c": "",
+  "t": "Puedes llevar una cifra más a la vez."
+ },
+ "type-sorcerer/open-inner-eye": {
+  "n": "Abrir el ojo interior",
+  "c": "2+ Intelecto y 1 herida leve",
+  "t": "Tras un ritual de diez minutos que termina con un corte en tu frente (hecho por ti o por un aliado, que te causa una herida leve), puedes asomarte al reino espiritual hasta que hagas una recuperación de diez horas. Mientras tienes el ojo interior abierto, tus tareas de percepción en la realidad física quedan dificultadas, pero ganas habilidades adicionales que puedes usar pagando su coste cada vez. Detectar espíritus (2+ Intelecto): haces una tirada de Intelecto para buscar presencias mentales de criaturas vivas y espíritus muertos vivientes a alcance corto; detectas a las de nivel igual o inferior al nivel de tu resultado, y las barreras de nivel superior lo bloquean. Esfuerzo: hasta tu siguiente turno las ubicas en el espacio físico. Acción. Tajo mental (1 Intelecto): atacas mentalmente a un objetivo que ves a alcance corto y le haces 2 de daño (ignora la armadura); las criaturas sin mente (como los muertos vivientes casi sin mente) pueden ser inmunes. Acción. Sugestión hechicera (2 Intelecto): si superas un ataque de Intelecto contra una criatura con mente, en su siguiente turno intenta una de estas acciones que tú indiques: identificarse, decir por qué está ahí, abrir o cerrar una puerta o recipiente, soltar o coger algo, moverse una distancia inmediata, pasarte algo que lleve, o quedarse quieta sin hacer nada. Acción. Diez minutos para activar (un minuto desde el rango 3). En el rango 3: el ritual solo te lleva un minuto y tus tareas de percepción en el mundo real ya no quedan dificultadas."
+ },
+ "type-sword-fighter": {
+  "n": "Luchador con espada",
+  "d": "En algunas tierras te conocen como Juramentado de la Espada, Manoacero o Maestro de la Hoja. No te importan los nombres vistosos: simplemente prefieres luchar con espada. Has peleado con ella miles de horas entrenando, en la guerra, en expediciones y en batallas desesperadas en rincones olvidados del mundo. Quizá luchas como mercenario, por tu cuenta o en un grupo de aventureros. Mientras tengas tu espada, nada te resiste. Estás listo para pelear en cualquier momento, incluso si te despiertan de golpe. Con la espada en alto, estás preparado para proteger a tus aliados, aunque eso suponga atraer la atención de tus enemigos. Que así sea: te encontrarán en el filo de tu espada.",
+  "e": "Una espada, ropa adecuada, cota de malla, un escudo, una mochila, un saco de dormir, 16 m de cuerda, una palanca, tres antorchas, raciones y agua para tres días, un yesquero y dinero suficiente para comprar un objeto de precio moderado.",
+  "b": [
+   "Puedes recibir tres heridas leves más y una moderada más",
+   "+2 a la reserva de Potencia",
+   "+2 a la reserva de Velocidad",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente todas las espadas",
+   "Usas libremente todas las armaduras",
+   "Ganas un arma a tu elección (o aceptas la del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género fantasía"
+  ],
+  "g": [
+   "Llegaste a la edad adulta como luchador de foso que vivía de su espada hasta que escapaste, pero tus antiguos «patrones» aún te buscan.",
+   "Hace unas semanas rescataste a un aliado de la torre encantada de un hechicero.",
+   "Hace unos meses acumulaste una deuda de juego considerable, que aún no has pagado.",
+   "Nacido en una casa real, te desheredaron tras demasiados duelos temerarios, pero esperas volver algún día y reclamar tu derecho de nacimiento.",
+   "Tu hermano iba en un barco que desapareció el año pasado en una travesía por el mar de las brumas.",
+   "Huiste de la guerra, no por miedo a luchar, sino porque de joven te reclutaron a la fuerza en el ejército enemigo.",
+   "Quien te contrató para recuperar un artefacto murió el mes pasado, antes de empezar la misión.",
+   "El año pasado un culto de adoradores de ratas intentó secuestrar a tu familia, pero quemaste su guarida."
+  ]
+ },
+ "type-sword-fighter/combat-prowess": {
+  "n": "Destreza en combate",
+  "c": "",
+  "t": "Sumas +1 al daño de un tipo de ataque con arma a tu elección: cuerpo a cuerpo o a distancia."
+ },
+ "type-sword-fighter/expert-combatant": {
+  "n": "Combatiente experto",
+  "c": "",
+  "t": "Quedas entrenado en un ataque con arma concreto a tu elección (espadas, hachas, arcos…) o en una categoría más amplia (armas contundentes ligeras, armas cortantes ligeras, armas a distancia ligeras, armas contundentes medias, cortantes medias, a distancia medias, etc.). En el rango 2: puedes especializarte en ese mismo método de ataque, pero tienes que ganar la habilidad de la forma normal (por ejemplo, con un avance). En el rango 6: puedes hacerte experto en un método de ataque concreto (el que elegiste en el rango 1 u otra habilidad de arma en la que ya estés especializado), pero tienes que ganarla de la forma normal."
+ },
+ "type-sword-fighter/swing-through": {
+  "n": "Tajo continuado",
+  "c": "1 Velocidad",
+  "t": "Atacas con una espada de una forma que arriesga más a fallar pero da un beneficio adicional. Tu rango de intrusión del DJ en este ataque sube en 2 (de 1 a 1–3 en el d20), pero si aciertas eliges uno de estos efectos adicionales. Come acero: el enemigo recibe +2 de daño. Corte y paso: recolocas al enemigo o a ti mismo a distancia inmediata, lo que facilita tu ataque en tu siguiente turno (contra ese enemigo u otro). Acción."
+ },
+ "type-thief": {
+  "n": "Ladrón",
+  "d": "Admites lo de Ladrón, pero también eres un enredador, un timador y alguien capaz de hacer trucos que van más allá de la simple prestidigitación (o eso le cuentas a todo el mundo). Y lo más importante: eres letal con una hoja cuando tus trucos salen mal, sobre todo si pillas a alguien desprevenido. No eres un guerrero corpulento; tu gracia felina te permite entrar y salir del peligro sin un rasguño. No puede decirse lo mismo de tus enemigos. Prefieres dejar que otros de tu banda se lancen de cabeza a la pelea, para esquivar la amenaza por completo o quizá asestar un golpe decisivo por la espalda. Tienes un don natural para explorar zonas nuevas, desactivar trampas y abrir contenedores cerrados.",
+  "e": "Un estoque, ropa adecuada, una bolsa de herramientas ligeras (con ganzúas), una mochila, un saco de dormir, 16 m de cuerda, una aceitera para silenciar bisagras que chirrían, tres antorchas, raciones y agua para tres días, un yesquero y dinero suficiente para comprar un objeto de precio moderado.",
+  "b": [
+   "Puedes recibir dos heridas leves más y una moderada más",
+   "+3 a la reserva de Velocidad",
+   "+1 a la reserva de Intelecto",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente armas ligeras y medias",
+   "Usas libremente armaduras ligeras",
+   "Ganas un arma a tu elección (o aceptas la del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género fantasía"
+  ],
+  "g": [
+   "Tus padres te vendieron al gremio de ladrones para saldar deudas, pero esperas encontrarlos algún día y que te cuenten la historia.",
+   "Llevas un año viviendo con una identidad falsa desde una noche de robo desastrosa.",
+   "Hace dos meses robaste una joya fabulosa, pero luego descubriste que es imposible de vender sin llamar la atención.",
+   "Perseguido por cultistas vengativos hace seis meses, descubriste unas extrañas ruinas en el bosque.",
+   "Llegaste de una tierra lejana y, como al principio no hablabas el idioma, aprendiste a robar para vivir. Ahora estás mejor, pero tienes unas cuantas cuentas pendientes.",
+   "Mataste a un vil hechicero hace dos años, pero ahora su hijo busca venganza.",
+   "Tu mecenas tiene un plan asombroso y edificante, pero necesita una gran fortuna para ponerlo en marcha, y robando es como has contribuido.",
+   "Atraído por la promesa de riquezas, estuviste meses perdido en un laberinto y hace poco lograste escapar."
+  ]
+ },
+ "type-thief/detect-traps": {
+  "n": "Detectar trampas",
+  "c": "2+ Velocidad o Intelecto",
+  "t": "Cuando tiras para encontrar una trampa y sacas menos de 9, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Mantienes esta mayor sensibilidad a las trampas hasta que hagas una recuperación de diez minutos o más. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Acción. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+ },
+ "type-thief/ferocious-when-cornered": {
+  "n": "Feroz si te acorralan",
+  "c": "",
+  "t": "Mientras tengas al menos tres heridas leves, al menos dos moderadas o al menos una grave, ganas un nivel gratuito de Esfuerzo que puedes aplicar a uno de tus ataques cada asalto. Capacitador. En el rango 3: el beneficio sube a dos niveles gratuitos de Esfuerzo."
+ },
+ "type-thief/sneak-attack": {
+  "n": "Ataque furtivo",
+  "c": "1 Velocidad",
+  "t": "Si atacas con un arma ligera a un enemigo en una de estas condiciones, tu ataque hace +5 de daño (no funciona con armas medias ni pesadas): • Atacas por sorpresa. • Un aliado usa su acción para facilitar tu ataque. • Las defensas del enemigo están dificultadas por alguna otra distracción directa en curso. • El enemigo no puede hacer su siguiente turno por algún ataque o situación que lo incapacita. Primera acción."
+ },
+ "type-two-weapon-fighter": {
+  "n": "Luchador con dos armas",
+  "d": "En algunas tierras te llaman Colmillo Gemelo; en otras, Danzarín de Hojas. Estos y otros nombres ilustran tu estilo de lucha. Con un arma en cada mano, te estrellas contra tus enemigos atacando como si fueras dos personas en un cuerpo. Repartes muerte entre los monstruos de las tierras salvajes y los lugares oscuros, los enemigos y quien decida medirse contigo. Hasta ahora has salido victorioso. Tu manejo de las armas es de lo más llamativo de tu grupo, así que los enemigos pueden fijarse en ti antes que en los demás guerreros de tu banda. Así te gusta. Estás algo más especializado que ellos, pero ese sacrificio de versatilidad significa que vas doblemente armado y listo para lo que te depare el destino.",
+  "e": "Una espada, un sable, una daga, ropa adecuada, cota de malla, una mochila, un saco de dormir, 16 m de cuerda, tres antorchas, raciones y agua para tres días, un yesquero y dinero suficiente para comprar un objeto de precio moderado.",
+  "b": [
+   "Puedes recibir tres heridas leves más y una moderada más",
+   "+2 a la reserva de Potencia",
+   "+2 a la reserva de Velocidad",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente armas ligeras y medias",
+   "Usas libremente armaduras ligeras y medias",
+   "Ganas dos armas a tu elección (o aceptas las del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género fantasía"
+  ],
+  "g": [
+   "Aprendiste tus letales destrezas protegiendo a un despiadado señor del crimen. Cuando lo mataron igualmente, su amante puso precio a tu cabeza, y aún huyes de ella.",
+   "Hace un año te contrataron para robar una joya legendaria, pero nunca encontraste un mapa de su cripta.",
+   "Encadenado contra tu voluntad en la galera de un comerciante, escapaste y llegaste a tierra hace un mes.",
+   "Tu clan te enseñó la danza de las dos armas, pero espera que vuelvas algún día para enseñársela a otro aspirante.",
+   "Hace un año un gigante de escarcha mató a tu grupo de aventureros y tú fuiste el único superviviente.",
+   "Hace un mes rescataste al príncipe de unos bandidos, y ahora la gente te reconoce por la calle.",
+   "Te criaron como minero en servidumbre hasta que tú y tu banda os abristeis paso a golpes hacia la libertad. Aún persigues, en lo que puedes, a lo que queda de tus antiguos «patrones».",
+   "Hace casi un año descubriste que uno de tus progenitores, un general, formaba parte de una conspiración secreta."
+  ]
+ },
+ "type-two-weapon-fighter/dual-wield": {
+  "n": "Combate con dos armas",
+  "c": "",
+  "t": "Puedes usar a la vez dos armas cuerpo a cuerpo ligeras, o una ligera y una media. Puedes atacar con cualquiera de ellas como tu acción y luego atacar con la otra como acción extra en tu turno. Capacitador. En el rango 3: puedes usar a la vez dos armas cuerpo a cuerpo medias."
+ },
+ "type-two-weapon-fighter/expert-combatant": {
+  "n": "Combatiente experto",
+  "c": "",
+  "t": "Quedas entrenado en un ataque con arma concreto a tu elección (espadas, hachas, arcos…) o en una categoría más amplia (armas contundentes ligeras, armas cortantes ligeras, armas a distancia ligeras, armas contundentes medias, cortantes medias, a distancia medias, etc.). En el rango 2: puedes especializarte en ese mismo método de ataque, pero tienes que ganar la habilidad de la forma normal (por ejemplo, con un avance). En el rango 6: puedes hacerte experto en un método de ataque concreto (el que elegiste en el rango 1 u otra habilidad de arma en la que ya estés especializado), pero tienes que ganarla de la forma normal."
+ },
+ "type-two-weapon-fighter/weapon-switch": {
+  "n": "Cambio de armas",
+  "c": "",
+  "t": "Como acción extra en tu turno, cambias las armas que llevas en cada mano: intercambiar izquierda y derecha, envainarlas y desenvainar otras, lanzar y atrapar una o ambas, soltar una para pasar a empuñar a dos manos o algo parecido. La maniobra es tan sorprendente, inesperada e impresionante que tu siguiente ataque se facilita dos pasos. Tras usarla no puedes volver a usarla hasta después de tu siguiente recuperación. Capacitador."
+ },
+ "type-witch": {
+  "n": "Bruja",
+  "d": "Eres maestra de pociones: usas hierbas, minerales e incluso trocitos como ojos de rana y escamas de dragón como tu lienzo y tu pintura metafóricos. Cuando trabajas con estos materiales para preparar pociones, imaginas y creas sustancias nuevas imbuidas de efectos maravillosos y mágicos. Pero tu talento mágico va más allá de las pociones: puedes lanzar maldiciones con efectos muy reales sobre tus enemigos y, según lo que elijas mientras sigues estudiando y explorando, aprender con el tiempo toda clase de conjuros. Eres de los miembros más versátiles de tu grupo, porque puedes preparar una poción para casi cualquier necesidad: curar, ocultarse, potenciar o directamente reventar cosas. Ante un conflicto prefieres que otros reciban el grueso, pero no te falta experiencia con las armas y sabes devolver los golpes si hace falta.",
+  "e": "Un bastón, una daga, ropa adecuada, una bolsa de herramientas ligeras (con ingredientes básicos de pociones y útiles para prepararlas), una mochila, un saco de dormir, un libro de saber, tres antorchas, raciones y agua para tres días, un yesquero y dinero suficiente para comprar un objeto de precio moderado.",
+  "b": [
+   "Puedes recibir dos heridas leves más y una moderada más",
+   "+3 a la reserva de Intelecto",
+   "+1 a la reserva de Velocidad",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente armas ligeras y medias",
+   "Usas libremente armaduras ligeras",
+   "Ganas un arma a tu elección (o aceptas las del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género fantasía"
+  ],
+  "g": [
+   "Sufriste una posesión demoníaca durante años, pero al final expulsaste al demonio, y ahora haces lo que puedes por reparar todo el daño que causaste.",
+   "Te crio una anciana solitaria que decía haberte encontrado de bebé solo en el bosque, aunque siempre has sospechado que la historia tenía más.",
+   "La semana pasada aparecieron extraños glifos grabados en los acantilados; ya los habías visto en tus sueños.",
+   "Cuando los enemigos arrasaron tu tierra natal, hiciste juramentos oscuros para obtener tu brujería. Pero algún día habrá que pagar la deuda de tu alma.",
+   "Maldijiste a un noble después de que su carruaje te salpicara la semana pasada, y ahora está muerto.",
+   "Hace tres meses unas criaturas de una estrella lejana se filtraron hasta aquí y destruyeron una aldea cercana.",
+   "Criado por sanadores, siempre has intentado continuar el oficio de tus padres, aunque a veces lo que eres capaz de hacer te sorprende hasta a ti.",
+   "Inesperadamente, una poción que preparaste la semana pasada se transformó en un murciélago albino y salió volando."
+  ]
+ },
+ "type-witch/brew-potion": {
+  "n": "Preparar poción",
+  "c": "",
+  "t": "Preparas una poción. Puedes elegir su efecto de la tabla de cifras manifiestas de poder bajo. La cifra de poción preparada cuenta para tu límite de cifras (o el de quien reciba la poción), más el margen que da Cifras de poción. Si ya estás en tu límite de cifras, una de tus cifras actuales, a tu elección, pierde su magia para que puedas tener la nueva cifra de poción. Diez minutos para preparar. En el rango 3: puedes elegir una cifra manifiesta de poder bajo o medio como poción. En el rango 6: puedes elegir una cifra manifiesta de poder bajo, medio o avanzado como poción."
+ },
+ "type-witch/evil-eye": {
+  "n": "Mal de ojo",
+  "c": "1+ Intelecto",
+  "t": "Haces la señal del mal de ojo y atacas con Intelecto a una criatura a alcance corto. Si aciertas, queda afligida por un espíritu de infortunio hasta que hagas una recuperación de una hora. Durante ese tiempo, el DJ la castiga introduciendo (o con intrusiones, si es un PJ) contratiempos como tropezar, perder un objeto, faltar a una cita, etc. Esfuerzo: alarga el infortunio hasta que hagas una recuperación de diez horas. Haces 2 de daño de Intelecto por nivel de Esfuerzo si aciertas (además del infortunio). Última acción. En el rango 3: puedes usar dos niveles de Esfuerzo para que el infortunio sea permanente; cuenta como una maldición de nivel 4 para las habilidades que eliminan aflicciones."
+ },
+ "type-witch/potion-cyphers": {
+  "n": "Cifras de poción",
+  "c": "",
+  "t": "Puedes llevar dos cifras más a la vez, siempre que sean cifras que hayas creado con Preparar poción."
+ },
+ "type-burglar": {
+  "n": "Saqueador",
+  "d": "¿Quién iba a decir que algún día te colarías con soltura por madrigueras de trasgos y escaparías de dragones? Desde luego, tú no. Pero la necesidad es la mejor maestra, y has aprendido que las sombras son tus amigas cuando necesitas esconderte, que moverse a hurtadillas es su propia recompensa si tienes que hacer algo rápido sin que nadie mire, y que escapar de un enemigo casi siempre es lo correcto, aunque sea para rodearlo y atacarlo por sorpresa. Prefieres que otro de tu grupo empiece los conflictos, para escabullirte sin que te vean y quizá evitar el combate por completo. Cuando el peligro no es inminente, eres de los más indicados para examinar con cuidado un lugar nuevo y, si se puede, robar todo lo que no esté clavado.",
+  "e": "Dos dagas, ropa adecuada, una bolsa de herramientas ligeras (con ganzúas), una mochila, un saco de dormir, 16 m de cuerda, una pipa y una petaca de tabaco, tres antorchas, raciones y agua para tres días, un yesquero y dinero suficiente para comprar un objeto de precio moderado.",
+  "b": [
+   "Puedes recibir dos heridas leves más y una moderada más",
+   "+2 a la reserva de Velocidad",
+   "+2 a la reserva de Intelecto",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente armas ligeras",
+   "Usas libremente armaduras ligeras",
+   "Ganas un arma a tu elección (o aceptas las del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género fantasía"
+  ],
+  "g": [
+   "Criado en una aldea pequeña, aprendiste a esconderte para seguir con vida cuando empezaron a aparecer orcos, trasgos y hombres malvados.",
+   "Tu antigua compañía de seis se disolvió hace un mes después de que desapareciera otro de sus miembros.",
+   "Hace poco desvalijaste a un grupo de troles, aunque ya te has gastado casi todo el oro.",
+   "Hace dos semanas llegó a tus manos un mapa del interior, sorprendentemente grande, de un túmulo cercano.",
+   "Tus padres estaban enfermos e impedidos, así que aprendiste a completar los ingresos de la casa con tus manos rápidas. Hasta que un día terrible pagaron el precio de tus hurtos.",
+   "Ganaste un concurso de bebida en una posada cercana y ahora tienes una bebida gratis cada noche si quieres.",
+   "Te lo arrebataron todo. Ahora buscas recuperar tu herencia robada, objeto de valor a objeto de valor.",
+   "La semana pasada te robaron un recuerdo y amuleto de la suerte que encontraste en tu primerísima aventura."
+  ]
+ },
+ "type-burglar/burgle": {
+  "n": "Desvalijar",
+  "c": "2 Velocidad",
+  "t": "Cuando superas una tarea de sigilo, puedes además hacer una de estas tareas como acción extra en tu turno, aunque normalmente sea una Última acción: intentar abrir una cerradura, coger un objeto suelto de hasta una quinta parte de tu tamaño y ocultarlo encima, moverte hasta distancia larga, o atacar con un arma ligera a un objetivo a alcance inmediato. Capacitador."
+ },
+ "type-burglar/escape": {
+  "n": "Escapar",
+  "c": "2+ Velocidad",
+  "t": "Cuando tiras para escapar (zafarte de unas ataduras, colarte entre barrotes, librarte de una criatura que te agarra, salir de arenas movedizas…) y sacas menos de 9, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Acción. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+ },
+ "type-burglar/slip-into-shadow": {
+  "n": "Fundirse en las sombras",
+  "c": "",
+  "t": "Aunque estés a plena vista de una criatura, tu tarea de sigilo con éxito te permite escabullirte de ella y ocultarte en una sombra cercana, tras un árbol o un mueble o en la habitación de al lado, como tu acción. Esfuerzo: intenta escabullirte de un objetivo más que te mire directamente (tarea de sigilo aparte contra cada uno). Capacitador. En el rango 3: puedes intentar ocultarte de dos criaturas más, uses Esfuerzo o no."
+ },
+ "type-noble-warrior": {
+  "n": "Guerrero noble",
+  "d": "Crees que una vida bien vivida es una vida al servicio de los demás. Si algún día te llegan la gloria y una posición elevada, confías en usar ese cargo para llevar paz y ayuda a todos los que necesiten un protector. Hasta entonces, te conformas con defender a un aliado cada vez, comprometiendo tu arma en su defensa si su necesidad es sincera. Eres excelente en combate, pero te preocupa igual ayudar a tus aliados. En varias ocasiones incluso te has interpuesto y has recibido un ataque que habría derribado a uno de tus compañeros. También sabes aprovechar la confusión que ese sacrificio provoca en los enemigos para devolverles el favor con el filo de tu veloz hoja.",
+  "e": "Una espada, ropa adecuada más un juego extra de ropa refinada, cota de malla, una mochila, un saco de dormir, 16 m de cuerda, un diario de campo (con pluma y tinta), tres antorchas, raciones y agua para tres días, un yesquero y dinero suficiente para comprar un objeto de precio moderado.",
+  "b": [
+   "Puedes recibir tres heridas leves más y una moderada más",
+   "+2 a la reserva de Potencia",
+   "+2 a la reserva de Velocidad",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente armas ligeras y medias",
+   "Usas libremente armaduras ligeras y medias",
+   "Ganas un arma a tu elección (o aceptas la del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género fantasía"
+  ],
+  "g": [
+   "Eres uno de los últimos descendientes directos de un reino caído y esperas revivirlo algún día.",
+   "El año pasado rastreaste a una criatura monstruosa, pero le perdiste la pista en una ciénaga maldita.",
+   "Te criaste en una orden de caballería, ascendiendo de escudero a caballero, y ahora te sostienen los juramentos que pronuncias.",
+   "La semana pasada entregaste una información importante, pese a que te perseguían muertos vivientes.",
+   "La semana pasada volviste de una de tus patrullas protegiendo la zona de las sombras que la acechan.",
+   "Tu hermano espera recuperar el trono de manos de los rebeldes, y has jurado ayudarle para que algún día pueda reclamarlo.",
+   "El año pasado descubriste que eres heredero de un reino perdido y casi olvidado de una era anterior.",
+   "Hace un mes aceptaste dirigir a una compañía en una búsqueda, pero aún no han partido."
+  ]
+ },
+ "type-noble-warrior/expert-combatant": {
+  "n": "Combatiente experto",
+  "c": "",
+  "t": "Quedas entrenado en un ataque con arma concreto a tu elección (espadas, hachas, arcos…) o en una categoría más amplia (armas contundentes ligeras, armas cortantes ligeras, armas a distancia ligeras, armas contundentes medias, cortantes medias, a distancia medias, etc.). En el rango 2: puedes especializarte en ese mismo método de ataque, pero tienes que ganar la habilidad de la forma normal (por ejemplo, con un avance). En el rango 6: puedes hacerte experto en un método de ataque concreto (el que elegiste en el rango 1 u otra habilidad de arma en la que ya estés especializado), pero tienes que ganarla de la forma normal."
+ },
+ "type-noble-warrior/noble-defender": {
+  "n": "Defensor noble",
+  "c": "2 Potencia o Velocidad",
+  "t": "Elige un personaje que veas; queda bajo tu protección. Ganas un recurso en todas las tareas de encontrarlo, curarlo, interactuar con él y protegerlo. Cuando usas la acción de ayudar en su bloqueo o esquiva, le das dos recursos en vez de uno. Puedes usar la acción de ayudar en su defensa de Intelecto (incluidos ataques directos como el miedo y el control mental y las influencias sutiles como el encanto y la intimidación) y le das dos recursos al hacerlo. Solo puedes proteger a un personaje a la vez. Primera acción. En el rango 3: puedes tener a dos personajes a la vez bajo tu protección."
+ },
+ "type-noble-warrior/noble-sacrifice": {
+  "n": "Noble sacrificio",
+  "c": "2 Potencia o Velocidad",
+  "t": "Cuando recibes el ataque dirigido a otro personaje, ganas un beneficio por tu altruismo. El ataque te alcanza automáticamente y hace su daño normal (más la herida leve adicional por recibir el ataque). Puedes contraatacar de inmediato a un enemigo a tu alcance. Si recibiste el ataque por alguien a quien proteges con Defensor noble, este ataque se facilita. Capacitador."
+ },
+ "type-swashbuckler": {
+  "n": "Espadachín",
+  "d": "Tu habilidad, tu audacia y tu estilo extravagante eclipsan a casi todos. Cuando llama la batalla, confías en un ágil manejo de la espada y no en la fuerza bruta. No te da miedo saltar sobre las mesas, deslizarte por las barandillas y, en general, jugártela usando el entorno a tu favor. Esa misma confianza temeraria impregna tu sonrisa arrebatadora, tus réplicas ingeniosas y tu carisma casi teatral, que te permiten encantar y seducir a tu antojo. Seguramente eres de los más ostentosos de tu compañía. Si se avecina una pelea, es probable que los enemigos se centren en ti todo el tiempo que quieras, lo que da cierta protección a tus aliados. Claro que tu esgrima es asombrosa, así que no es ningún sacrificio. De hecho, el combate es solo otro escenario donde lucir tu estilo e ingenio, lo que ayuda en tus esfuerzos por negociar o cortejar.",
+  "e": "Un estoque, ropa extravagante (por ejemplo, camisa con volantes, sombrero de plumas, capa larga, botas ornamentadas, guantes finos y un cinturón recargado, a menudo de colores vivos), una mochila, un saco de dormir, un espejo de mano, un juego de escritura (pluma, tinta y pergamino), dados de juego, cinco velas, raciones y agua para tres días, un yesquero y dinero suficiente para comprar un objeto de precio moderado.",
+  "b": [
+   "Puedes recibir tres heridas leves más y una moderada más",
+   "+3 a la reserva de Velocidad",
+   "+1 a la reserva de Intelecto",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente armas ligeras y medias",
+   "Usas libremente armaduras ligeras",
+   "Ganas un arma a tu elección (o aceptas la del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género fantasía"
+  ],
+  "g": [
+   "Repudiado e ignorado de niño, te mueve ganarte la admiración y el amor de los demás (quizá de muchos) demostrando tu valía y tus destrezas.",
+   "Cortejaste a un amante con historias de joyas robadas, pero el mes pasado se largó con tus objetos de valor.",
+   "Tras huir de una enorme deuda de juego el año pasado, adoptaste otro nombre y cambiaste de aspecto.",
+   "Aprendiste tus destrezas de gira con una compañía de artistas y ladrones. La compañía se disolvió por un misterioso asesinato, y aún buscas respuestas en lo que puedes.",
+   "Capitaneaste brevemente un barco corsario, pero solo el tiempo justo para llegar hasta donde estás ahora.",
+   "La semana pasada participaste en una espectacular fuga de prisión de la que aún se habla en la ciudad.",
+   "Con ganas de reinventarte, sigues cambiando a base de duro trabajo personal y entrenamiento constante.",
+   "Encontraste un mapa del tesoro cosido en un abrigo, aunque descifrarlo aún está fuera de tu alcance."
+  ]
+ },
+ "type-swashbuckler/attack-flourish": {
+  "n": "Floritura de ataque",
+  "c": "",
+  "t": "Cuando atacas, añades movimientos con estilo, ocurrencias divertidas o un algo que entretiene o impresiona. Una criatura que elijas a alcance corto y que pueda verte gana un recurso en su siguiente tarea si la hace en un asalto o dos. Capacitador."
+ },
+ "type-swashbuckler/flamboyant-swordplay": {
+  "n": "Esgrima extravagante",
+  "c": "1 Velocidad",
+  "t": "Atacas de una forma que arriesga más a fallar pero da un beneficio adicional. Tu rango de intrusión del DJ en este ataque sube en 2 (de 1 a 1–3 en el d20), pero si aciertas eliges uno de estos efectos adicionales. Estocada audaz: el enemigo recibe +2 de daño. Agilidad desarmante: el ataque hace 1 de daño menos, pero el enemigo suelta algo que lleve en una mano (como un arma o un escudo); para recuperarlo tiene que usar una acción. Acción."
+ },
+ "type-swashbuckler/romantic-flair": {
+  "n": "Galantería",
+  "c": "2+ Intelecto",
+  "t": "Tu encanto exuberante, tu confianza audaz, una reverencia en el momento justo o un guiño sugerente hacen que, si sacas menos de 9 en una tirada para encantar o impresionar, cuente como un 9 (así no hay intrusión del DJ si sacas un 1). Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Acción. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+ },
+ "type-warrior": {
+  "n": "Guerrero",
+  "d": "Fuerza. Eso es lo que tienes. El dolor familiar y reconfortante de tus músculos es el eco de incontables entrenamientos y escaramuzas sangrientas. Te has convertido en alguien de quien se cuentan historias: un Guerrero del reino, azote de quienes quieren derribarlo y alguien que haría cualquier cosa por lograr sus metas. Fuerte y duro, sueles ser de los primeros de tu compañía en empuñar las armas. Así, los que tienen menos fuerza de armas sobrevivirán para luchar otro día. Claro que seguramente lucharías de todos modos: para ti se trata tanto de proyectar poder como de forjar un legado.",
+  "e": "Una espada, ropa adecuada, cota de malla, un escudo, una mochila, un saco de dormir, 16 m de cuerda, seis clavos y un martillo, tres antorchas, raciones y agua para tres días, un yesquero y dinero suficiente para comprar un objeto de precio moderado.",
+  "b": [
+   "Puedes recibir tres heridas leves más y una moderada más",
+   "+3 a la reserva de Potencia",
+   "+1 a la reserva de Velocidad",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente todas las armas",
+   "Usas libremente todas las armaduras",
+   "Ganas un arma a tu elección (o aceptas la del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género fantasía"
+  ],
+  "g": [
+   "Te formaste como guardia real, y ese entrenamiento sigue ahí: aún quieres proteger a los demás.",
+   "El año pasado formaste parte de una fuerza mayor que recuperó una ciudad invadida por monstruos.",
+   "Tu hermano siempre salía adelante a duras penas con tu ayuda, pero hace seis meses murió de forma misteriosa.",
+   "Sobreviviste a una guerra y saliste de ella con tus cicatrices, tus armas y la necesidad de luchar.",
+   "Te llegó la noticia de que se había encontrado un arma poderosa, pero no dónde ni quién.",
+   "Desciendes de un largo linaje de guerreros y todo el mundo espera lo mismo de ti. No tienes tan claro que ese sea tu destino, pero de momento luchas.",
+   "Aunque poco te importa, hace dos semanas protegiste una biblioteca de un incendio.",
+   "Entrenaste en persona a un soldado al que hace poco ascendieron a capitán de la guardia."
+  ]
+ },
+ "type-warrior/combat-prowess": {
+  "n": "Destreza en combate",
+  "c": "",
+  "t": "Sumas +1 al daño de un tipo de ataque con arma a tu elección: cuerpo a cuerpo o a distancia."
+ },
+ "type-warrior/despite-my-wounds": {
+  "n": "Pese a mis heridas",
+  "c": "",
+  "t": "Mientras tengas dos o más heridas moderadas o una grave, obtienes una repetición gratuita en una acción cada asalto (como si hubieras gastado 1 PX). Capacitador."
+ },
+ "type-warrior/expert-combatant": {
+  "n": "Combatiente experto",
+  "c": "",
+  "t": "Quedas entrenado en un ataque con arma concreto a tu elección (espadas, hachas, arcos…) o en una categoría más amplia (armas contundentes ligeras, armas cortantes ligeras, armas a distancia ligeras, armas contundentes medias, cortantes medias, a distancia medias, etc.). En el rango 2: puedes especializarte en ese mismo método de ataque, pero tienes que ganar la habilidad de la forma normal (por ejemplo, con un avance). En el rango 6: puedes hacerte experto en un método de ataque concreto (el que elegiste en el rango 1 u otra habilidad de arma en la que ya estés especializado), pero tienes que ganarla de la forma normal."
+ },
+ "type-wizard": {
+  "n": "Mago erudito",
+  "d": "Tus relámpagos conjurados, tus exhibiciones deslumbrantes y tus conjuros son solo parte de lo que te hace mago. Con tu sabiduría y tu saber tienes la oportunidad de guiar a otros hacia una meta mayor, aprender secretos antiguos, descubrir verdades nuevas y quizá llegar a ser una figura destacada de la historia. Puede que veas tu papel como la voz de la sabiduría y la razón de tu compañía. En lo táctico, tus conjuros no son tan rápidos como una espada centelleante o una flecha veloz, así que agradeces a los de tu comunidad que tengan presencia física para mantener a raya a los agresores unos instantes más mientras preparas uno de tus efectos mágicos. Y siempre que aparece magia enemiga, eres quien mejor puede afrontarla y quizá contrarrestarla.",
+  "e": "Un bastón, ropa adecuada, un libro de conjuros (que también sirve de diario de campo para notas arcanas), pluma y tinta, una mochila, un saco de dormir, 16 m de cuerda, diez cerillas, una pipa y una petaca de tabaco, tres antorchas, raciones y agua para tres días, un yesquero y dinero suficiente para comprar un objeto de precio moderado.",
+  "b": [
+   "Puedes recibir dos heridas leves más y una moderada más",
+   "+1 a la reserva de Potencia",
+   "+3 a la reserva de Intelecto",
+   "+1 de Ventaja en la reserva que elijas",
+   "Usas libremente todas las armas ligeras y medias",
+   "No puedes usar libremente armadura",
+   "Ganas un arma a tu elección (o aceptas la del lote de equipo)",
+   "En los rangos 3 y 6, elige una habilidad de la lista de habilidades del género fantasía"
+  ],
+  "g": [
+   "De niño te pagaban por limpiar la biblioteca de saber. También leías libros a escondidas, lo que despertó tu don para la magia. Ahora buscas y conservas libros de saber dondequiera que vas.",
+   "La semana pasada amenizaste la fiesta de un amigo con exhibiciones mágicas que tuvieron buenas críticas.",
+   "Hace años te robaron un poderoso artefacto mágico que te habían legado, y buscas averiguar quién fue el ladrón cuando tus otras obligaciones te lo permiten.",
+   "Cuando fuiste a consultar a un colega mago el mes pasado, había desaparecido misteriosamente.",
+   "Estás entre los pocos elegidos a los que unos seres celestiales concedieron la magia, y te han encargado proteger el mundo del mal.",
+   "Se rumorea que el mal que en otro tiempo habitó las viejas ruinas ha vuelto a colarse en el último año.",
+   "Has pasado los tres últimos meses estudiando pergaminos antiguos en busca de un saber mágico importante.",
+   "Hace poco recibiste una invitación para visitar a unos aliados que viven en una fortaleza subterránea secreta."
+  ]
+ },
+ "type-wizard/lightning-bolt": {
+  "n": "Relámpago",
+  "c": "1 Intelecto",
+  "t": "Lanzas un relámpago contra un objetivo a alcance largo que, si aciertas la tirada de ataque, recibe 6 de daño. También puedes acordar con el DJ que el rayo sea de otro tipo de energía o del tipo que sugiera tu foco; por ejemplo, con el foco Arde con fuego (Blazes With Fire), puede ser un rayo de fuego llamado Rayo ígneo. Última acción. En el rango 3: el rayo se ramifica y ataca también a un segundo objetivo a alcance corto del primero (tiradas de ataque separadas)."
+ },
+ "type-wizard/prepare-spell": {
+  "n": "Preparar conjuro",
+  "c": "",
+  "t": "Cada día puedes elegir un efecto mágico distinto y lanzarlo como conjuro. Elige una cifra manifiesta de poder bajo. Tras diez minutos de preparación, ganas su efecto como conjuro (una habilidad especial de personaje) que puedes lanzar como acción por 2 de Intelecto. Este conjuro no cuenta para tu límite de cifras y, a diferencia de una cifra, no lo pierdes al lanzarlo. Al hacer una recuperación de diez horas puedes cambiar de cifra; al hacerlo terminan todas las duraciones del conjuro anterior. Puedes elegir esta habilidad hasta tres veces (como avance o en lugar de una nueva habilidad de foco), para tener uno, dos o tres conjuros al día. Diez minutos para preparar una cifra como conjuro; acción para lanzarla. En el rango 3: puedes elegir una cifra de poder bajo o medio; una de poder medio se lanza como acción por 4 de Intelecto. En el rango 6: puedes elegir una cifra de poder bajo, medio o avanzado; una de poder avanzado se lanza como acción por 6 de Intelecto."
+ },
+ "type-wizard/wizards-cunning": {
+  "n": "Astucia de mago",
+  "c": "2 Intelecto",
+  "t": "Si superas una tirada de Intelecto de saber mágico contra una dificultad que fija el DJ, identificas y comprendes el propósito de algo mágico a alcance corto (si lo hay). Además, puedes intentar disipar al instante un efecto mágico (creado por un personaje, criatura u objeto) en la misma zona superando otra tarea de saber mágico contra su nivel. También puedes intentar crear un pequeño efecto mágico a alcance corto: un despliegue de luz y sonido como fuegos artificiales, cambiar para siempre el color o el aspecto básico de un objeto mundano pequeño, hacer flotar objetos pequeños, pedir a una polilla u otra criatura pequeña que lleve un mensaje, reparar un objeto roto, conseguir algo más de brío de una montura (hasta que hagas una recuperación de una hora o más), etc. Con ingenio puede usarse de forma ofensiva, pero no puede hacer más de 1 o 2 de daño. Última acción."
+ }
+}

@@ -1,0 +1,154 @@
+[
+ {
+  "id": "sfgenre-black-thumb",
+  "level": "mid",
+  "en": "Black Thumb",
+  "n": "Mano mecánica",
+  "c": "",
+  "t": "Cuando reparas, modificas o construyes máquinas o artefactos de cualquier tipo, la tarea te lleva la mitad de tiempo de lo normal."
+ },
+ {
+  "id": "sfgenre-cypher-use",
+  "level": "mid",
+  "en": "Cypher Use",
+  "n": "Uso de cifras",
+  "c": "",
+  "t": "Puedes llevar una cifra más a la vez. Puedes obtener esta habilidad varias veces (como avance de personaje o en lugar de una nueva habilidad de foco). Cada vez que lo haces, puedes llevar una cifra más a la vez."
+ },
+ {
+  "id": "sfgenre-disable-mechanism",
+  "level": "mid",
+  "en": "Disable Mechanism",
+  "n": "Inutilizar mecanismo",
+  "c": "3+ Intelecto",
+  "t": "Con un ataque de Intelecto con éxito para piratear una máquina, robot o artefacto (inteligente o no) a alcance inmediato, lo perturbas de una de estas formas: • Todas las tareas de la máquina se obstaculizan hasta que hagas una recuperación de diez minutos o más. • La velocidad de la máquina se reduce a la mitad. • La máquina no puede hacer ninguna acción durante un asalto. • La gravedad de los ataques de la máquina se reduce un paso (mínimo herida leve) hasta que hagas una recuperación de diez minutos o más. Debes tocar la máquina, robot o artefacto para perturbarlo (si haces un ataque, no inflige daño). Esfuerzo: aumenta el alcance hasta donde puedas ver directamente (con tus propios ojos, no a través de una cámara remota u otra interfaz). Elige como objetivo un mecanismo a través de una interfaz de red a la que tengas acceso sin restricciones (requiere dos niveles de Esfuerzo). Acción."
+ },
+ {
+  "id": "sfgenre-enhanced-stat",
+  "level": "mid",
+  "en": "Enhanced Stat",
+  "n": "Atributo mejorado",
+  "c": "",
+  "t": "Ganas 4 puntos en una reserva de tu elección."
+ },
+ {
+  "id": "sfgenre-exceptional-follower",
+  "level": "mid",
+  "en": "Exceptional Follower",
+  "n": "Seguidor excepcional",
+  "c": "",
+  "t": "Obtienes un seguidor de nivel 3."
+ },
+ {
+  "id": "sfgenre-hands-on-the-wheel",
+  "level": "mid",
+  "en": "Hands on the Wheel",
+  "n": "Manos al volante",
+  "c": "2+ Intelecto",
+  "t": "Cuando pilotas o conduces un vehículo mecánico y sacas menos de 9, trata la tirada como un 9. (Esto significa que no hay intrusión del DJ si sacas un 1.) El beneficio dura hasta que haces una recuperación de diez minutos o más. Esfuerzo: aumenta en 3 el resultado mínimo de esta habilidad. Capacitador. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+ },
+ {
+  "id": "sfgenre-incredible-health",
+  "level": "mid",
+  "en": "Incredible Health",
+  "n": "Salud increíble",
+  "c": "",
+  "t": "Por alguna circunstancia inusual (fisiología alienígena, inyección de nanobots, exposición a una radiación extraña, que tu sistema inmunitario natural haya llegado a su plenitud u otra cosa), ahora eres inmune a las enfermedades (y, si quieres, a las mutaciones) de cualquier tipo."
+ },
+ {
+  "id": "sfgenre-machine-companion",
+  "level": "mid",
+  "en": "Machine Companion",
+  "n": "Compañero mecánico",
+  "c": "",
+  "t": "Un robot de nivel 3 de tu tamaño o menor (comprado o construido por ti) te acompaña y sigue tus instrucciones como seguidor inteligente. Tú y el DJ debéis concretar los detalles de tu robot. Si el robot es destruido, puede restaurarse con tus recursos y unos días de trasteo. Si ya tienes un robot asistente, compañero mecánico o artefacto parecido, obtienes uno nuevo o mejoras el actual en 1 nivel, lo que prefieras."
+ },
+ {
+  "id": "sfgenre-mind-reading",
+  "level": "mid",
+  "en": "Mind Reading",
+  "n": "Leer la mente",
+  "c": "2 Intelecto",
+  "t": "Puedes leer los pensamientos superficiales de una criatura que veas a alcance corto. Si la criatura no está dispuesta, debes hacer un ataque de Intelecto contra ella para leer sus pensamientos. Una vez establecido el contacto, puedes leer los pensamientos del objetivo hasta que hagas una recuperación de diez minutos o más. Acción."
+ },
+ {
+  "id": "sfgenre-snipe",
+  "level": "mid",
+  "en": "Snipe",
+  "n": "Francotirador",
+  "c": "2 Velocidad",
+  "t": "Pasas una acción apuntando a un enemigo. Si atacas a ese enemigo en tu siguiente turno, tu ataque se facilita y, si impactas, infliges 5 de daño adicional. Primera acción."
+ },
+ {
+  "id": "sfgenre-spray",
+  "level": "mid",
+  "en": "Spray",
+  "n": "Ráfaga",
+  "c": "2 Velocidad",
+  "t": "Si un arma puede hacer disparos rápidos sin recargar (lo que suele llamarse arma de fuego rápido, como una ballesta de manivela o un subfusil), puedes rociar varios disparos alrededor del objetivo para aumentar la probabilidad de impactar, y obtienes una ventaja en el ataque. Esta habilidad gasta la munición o energía de 1d6 + 1 ataques (o toda la reserva del arma, si tiene menos munición o energía que el resultado). Si el ataque tiene éxito, inflige 1 de daño menos de lo normal. También puedes usar esta habilidad con varias armas arrojadizas (piedras, shuriken, dagas, etc.) si las llevas encima o están todas a tu alcance. Acción."
+ },
+ {
+  "id": "sfgenre-arc-spray",
+  "level": "high",
+  "en": "Arc Spray",
+  "n": "Ráfaga en arco",
+  "c": "3 Velocidad",
+  "t": "Si un arma puede hacer disparos rápidos sin recargar (lo que suele llamarse arma de fuego rápido, como una ballesta de manivela o un subfusil), puedes disparar a tres objetivos (todos uno junto a otro) a la vez. Haz una tirada de ataque obstaculizada distinta contra cada objetivo. Acción. (Cuando una habilidad o efecto te permite atacar a varias criaturas en tu turno, cada ataque después del primero es una acción adicional en tu turno.)"
+ },
+ {
+  "id": "sfgenre-improved-machine-companion",
+  "level": "high",
+  "en": "Improved Machine Companion",
+  "n": "Compañero mecánico mejorado",
+  "c": "",
+  "t": "Creas, encuentras o consigues de otro modo un compañero mecánico inteligente de nivel 5 como seguidor, que te acompaña y actúa según le indiques. Si es destruido, puede restaurarse con tus recursos tras unos días de trabajo. Si ya tienes un compañero mecánico de nivel inferior, eliges si se mejora a nivel 5 o lo conservas tal cual y obtienes un nuevo compañero de nivel 5."
+ },
+ {
+  "id": "sfgenre-inspire-action",
+  "level": "high",
+  "en": "Inspire Action",
+  "n": "Inspirar acción",
+  "c": "4 Intelecto",
+  "t": "Si un aliado puede verte y entenderte con facilidad, puedes indicarle que haga una acción. Si el aliado decide hacer exactamente esa acción, puede hacerla de inmediato como acción adicional. Esto no le impide hacer una acción normal en su turno. Acción."
+ },
+ {
+  "id": "sfgenre-knowledge-expert",
+  "level": "high",
+  "en": "Knowledge Expert",
+  "n": "Experto en conocimientos",
+  "c": "",
+  "t": "Tienes entrenamiento de experto en dos habilidades amplias de ciencia o conocimiento (como matemáticas, física, ingeniería, geología, historia, piratería y similares) en las que ya estés especializado. Otra opción es aumentar tu habilidad en dos habilidades de ciencia o conocimiento (de sin habilidad a entrenado, o de entrenado a especializado). Capacitador."
+ },
+ {
+  "id": "sfgenre-lethal-capability",
+  "level": "high",
+  "en": "Lethal Capability",
+  "n": "Capacidad letal",
+  "c": "",
+  "t": "Dominas cómo matar con un ataque concreto. Infliges 5 de daño adicional con los ataques de un tipo específico, como un cuchillo arrojado, un disparo con arma de fuego, un tajo de hacha, los ataques desarmados u otro ataque concreto que prefieras. Puedes obtener esta habilidad más de una vez. Cada vez, elige un ataque concreto distinto."
+ },
+ {
+  "id": "sfgenre-severe-machine-disruption",
+  "level": "high",
+  "en": "Severe Machine Disruption",
+  "n": "Perturbación mecánica grave",
+  "c": "5+ Intelecto",
+  "t": "Con un ataque de Intelecto con éxito para piratear una máquina, robot, mecanismo o artefacto (inteligente o no) a alcance inmediato, lo perturbas de todas estas formas a la vez: • Todas las tareas de la máquina se obstaculizan hasta que hagas una recuperación de diez minutos o más. • La velocidad de la máquina se reduce a la mitad. • La máquina no puede hacer ninguna acción durante un asalto. • La gravedad de los ataques de la máquina se reduce un paso (mínimo herida leve) hasta que hagas una recuperación de diez minutos o más. Debes tocar la máquina para perturbarla (si haces un ataque, no inflige daño). Esfuerzo: aumenta el alcance hasta donde puedas ver directamente (con tus propios ojos, no a través de una cámara remota u otra interfaz). Elige como objetivo una máquina a través de una interfaz de red a la que tengas acceso sin restricciones (requiere dos niveles de Esfuerzo). Acción."
+ },
+ {
+  "id": "sfgenre-technology-expert",
+  "level": "high",
+  "en": "Technology Expert",
+  "n": "Experto en tecnología",
+  "c": "",
+  "t": "Cuando tiras para usar cualquier tipo de artefacto mecánico (salvo un arma) y sacas menos de 9, trata la tirada como un 9. (Esto significa que no hay intrusión del DJ si sacas un 1.) Esfuerzo: aumenta en 3 el resultado mínimo de esta habilidad. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+ },
+ {
+  "id": "sfgenre-telepathic-network",
+  "level": "high",
+  "en": "Telepathic Network",
+  "n": "Red telepática",
+  "c": "0+ Intelecto",
+  "t": "Creas una red telepática entre tú y hasta diez criaturas dispuestas que conozcas, estén donde estén. Todas las criaturas de la red están enlazadas y pueden comunicarse telepáticamente entre sí. También pueden «oír» todo lo que se dice en la red. Activar o usar esta habilidad no requiere acción ni cuesta puntos de Intelecto; para ti es tan fácil como hablar en voz alta. La red dura hasta que decides terminarla. Esfuerzo: aumenta el número base de personas de la red a veinte (5 Intelecto), y dura hasta que hagas una recuperación de diez minutos o más; cada diez personas adicionales cuestan 1 Intelecto. Capacitador para crear una red; acción para crear una red ampliada (veinte personas o más)."
+ }
+]

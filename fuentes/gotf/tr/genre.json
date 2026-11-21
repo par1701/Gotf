@@ -1,0 +1,137 @@
+{
+ "genre-a-bit-of-magic": {
+  "n": "Un poco de magia",
+  "c": "",
+  "t": "Cada día puedes elegir un efecto mágico distinto y lanzarlo como conjuro. Elige una cifra manifiesta de poder bajo o medio. Puedes lanzar ese conjuro como acción por 3 de Intelecto si es de poder bajo o 5 de Intelecto si es de poder medio. Este conjuro no cuenta para tu límite de cifras y, a diferencia de una cifra, no lo pierdes al lanzarlo. Al hacer una recuperación de diez horas puedes cambiar de cifra. Diez minutos para preparar una cifra como conjuro; acción para lanzarla. En el rango 6: puedes elegir una cifra de poder bajo, medio o avanzado; una de poder avanzado se lanza como acción por 7 de Intelecto."
+ },
+ "genre-cypher-use": {
+  "n": "Uso de cifras",
+  "c": "",
+  "t": "Puedes llevar una cifra más a la vez. Puedes ganar esta habilidad varias veces (como avance o en lugar de una nueva habilidad de foco); cada vez puedes llevar una cifra más."
+ },
+ "genre-danger-instinct": {
+  "n": "Instinto del peligro",
+  "c": "3 Velocidad",
+  "t": "Si te atacan por sorpresa, sea una criatura, un artefacto o un peligro del entorno (como un árbol que te cae encima), te mueves una distancia inmediata antes del ataque. Si moverte lo evita, estás a salvo. Si aún puede afectarte (si la criatura puede seguirte, si el ataque cubre una zona demasiado grande para escapar, etc.), tu defensa contra él se facilita. Capacitador."
+ },
+ "genre-disappear-into-shadow": {
+  "n": "Desaparecer en las sombras",
+  "c": "",
+  "t": "Aunque estés a plena vista de hasta tres criaturas, tu tarea de sigilo con éxito te permite escabullirte de ellas y ocultarte en una sombra cercana, tras un árbol o un mueble o en la habitación de al lado, como tu acción. Esfuerzo: intenta escabullirte de un objetivo más que te mire directamente (tarea de sigilo aparte contra cada uno). Capacitador."
+ },
+ "genre-discerning-mind": {
+  "n": "Mente perspicaz",
+  "c": "2 Intelecto",
+  "t": "Tu mente resiste el daño de un ataque mental, trauma psíquico o efecto similar y reduce la gravedad de su herida un paso (grave a moderada, moderada a leve, leve a ninguna). Capacitador."
+ },
+ "genre-elemental-protection": {
+  "n": "Protección elemental",
+  "c": "4+ Intelecto",
+  "t": "Tú y cada criatura que designes a alcance inmediato ganáis protección contra un tipo de daño de energía (como fuego, electricidad o frío): la gravedad de las heridas de esa energía baja un paso (grave a moderada, moderada a leve, leve a ninguna). La protección dura para cada criatura hasta que haga una recuperación de una hora o más; que uno la termine no afecta a la duración de los demás. Esfuerzo: reduce la gravedad de la herida otro paso. Acción."
+ },
+ "genre-enhanced-stat": {
+  "n": "Atributo mejorado",
+  "c": "",
+  "t": "Ganas 4 puntos en una reserva a tu elección."
+ },
+ "genre-exceptional-follower": {
+  "n": "Seguidor excepcional",
+  "c": "",
+  "t": "Ganas un seguidor de nivel 3."
+ },
+ "genre-from-the-shadows": {
+  "n": "Desde las sombras",
+  "c": "",
+  "t": "Tu ataque con éxito contra una criatura que no conocía tu presencia hace +3 de daño. Capacitador."
+ },
+ "genre-fury": {
+  "n": "Furia",
+  "c": "3 Potencia",
+  "t": "Tus ataques cuerpo a cuerpo hacen +2 de daño. Dura hasta que hagas una recuperación de diez minutos o más. Acción."
+ },
+ "genre-pry-open-defense": {
+  "n": "Forzar defensas",
+  "c": "4 Intelecto",
+  "t": "Con un ataque de Intelecto con éxito, desgarras las defensas de una criatura a alcance largo. Sus defensas mágicas (como un conjuro de protección) quedan anuladas. Si no tiene defensas mágicas, su armadura baja en 2. Si no tiene defensas mágicas ni armadura, sus tareas de defensa quedan dificultadas. Dura hasta que hagas una recuperación de diez minutos o más. Acción."
+ },
+ "genre-puncturing-attack": {
+  "n": "Ataque perforante",
+  "c": "",
+  "t": "Tus ataques ignoran 2 puntos de armadura del oponente."
+ },
+ "genre-snipe": {
+  "n": "Tiro certero",
+  "c": "2 Velocidad",
+  "t": "Usas una acción para apuntar a un enemigo. Si lo atacas en tu siguiente turno, el ataque se facilita y, si aciertas, haces 5 de daño adicional. Primera acción."
+ },
+ "genre-strategize": {
+  "n": "Planificar",
+  "c": "4 Intelecto",
+  "t": "Tener un plan de acción antes de afrontar un desafío mejora las probabilidades de éxito, aunque luego se cambie o se descarte al ponerlo en práctica. Si tus aliados y tú dedicáis al menos diez minutos a repasar un plan y tratáis de ejecutarlo antes de que hagas una recuperación de diez horas, el DJ te da un dato útil sobre la situación, de inmediato si se os ha pasado algo o en algún momento durante la ejecución. El plan debe ser concreto y ejecutable para obtener este beneficio. Diez minutos para activar."
+ },
+ "genre-tough": {
+  "n": "Duro",
+  "c": "",
+  "t": "Puedes recibir una herida leve adicional."
+ },
+ "genre-winning-smile": {
+  "n": "Sonrisa encantadora",
+  "c": "2+ Intelecto",
+  "t": "Cuando tiras para encantar o influir en alguien y sacas menos de 9, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Tu mayor influencia dura hasta tu siguiente recuperación de diez minutos o más. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Acción."
+ },
+ "genre-assassin-strike": {
+  "n": "Golpe de asesino",
+  "c": "5 Velocidad",
+  "t": "Si atacas con éxito a una criatura que no conocía tu presencia, haces +6 de daño (si también tienes Desde las sombras, suma el daño extra de ambas). Capacitador."
+ },
+ "genre-concussive-force": {
+  "n": "Fuerza conmocionadora",
+  "c": "7 Intelecto",
+  "t": "Haces estallar un pulso de fuerza desde un punto que elijas a alcance largo. Se extiende hasta alcance corto en todas direcciones y hace 5 de daño a todo lo que haya en la zona (tiradas de ataque separadas contra cada uno). Aunque falles la tirada contra una criatura de la zona, recibe 1 de daño. Acción."
+ },
+ "genre-inspire-action": {
+  "n": "Inspirar acción",
+  "c": "4 Intelecto",
+  "t": "Si un aliado puede verte y entenderte con facilidad, puedes indicarle que haga una acción. Si decide hacer exactamente esa acción, puede hacerla de inmediato como acción adicional, sin que le impida hacer su acción normal en su turno. Acción."
+ },
+ "genre-invisibility": {
+  "n": "Invisibilidad",
+  "c": "4+ Intelecto",
+  "t": "Te vuelves invisible. El efecto termina si haces algo que revele tu presencia o posición (atacar, usar una habilidad, mover un objeto grande, etc.) o haces una recuperación de diez minutos o más. Esfuerzo: usa la habilidad sobre una criatura que toques; se vuelve invisible ella (en vez de ti) hasta que haga una recuperación de diez minutos o más. Acción."
+ },
+ "genre-jump-attack": {
+  "n": "Ataque en salto",
+  "c": "5+ Potencia",
+  "t": "Saltas hasta 1 m de altura y haces un ataque cuerpo a cuerpo a un enemigo al subir o al bajar. Si aciertas, haces daño y puedes intentar una tirada de Potencia de dificultad 4 para hacer 4 de daño adicional y derribarlo. Esfuerzo: suma 60 cm a la altura del salto y +2 al daño del ataque (lo derribes o no). Acción."
+ },
+ "genre-magic-portal": {
+  "n": "Portal mágico",
+  "c": "6 Intelecto",
+  "t": "Creas un túnel a través del espacio que permite viajar a un lugar a alcance largo. Tienes que poder ver ese lugar o saber que existe (como tras una puerta cerrada o un espacio abierto bajo tierra debajo de ti). El agujero en la realidad es lo bastante grande para ti y criaturas de tu tamaño o menores. Lo que entra por él sale de inmediato por el otro lado. Sigue abierto hasta que hagas una recuperación de diez minutos o más. Acción."
+ },
+ "genre-mask": {
+  "n": "Máscara",
+  "c": "5 Intelecto",
+  "t": "Transformas tu cuerpo para ser otra persona. Puedes cambiar cualquier rasgo físico que quieras, incluidos coloración, altura, peso, sexo y marcas distintivas, y también el aspecto de lo que llevas puesto o encima. Tus estadísticas y las de tus objetos no cambian. Mantienes esta forma hasta un día o hasta que uses una acción para recuperar tu aspecto normal. Si usas la habilidad como disfraz y se somete a escrutinio directo o se pone en duda, tu tarea de disfraz se facilita tres pasos. Acción."
+ },
+ "genre-resilience": {
+  "n": "Resistencia",
+  "c": "",
+  "t": "Puedes recibir una herida moderada más de lo normal."
+ },
+ "genre-spellbreaker": {
+  "n": "Rompeconjuros",
+  "c": "4+ Intelecto",
+  "t": "Terminas al instante un efecto mágico en curso (creado por una habilidad de personaje, una cifra o un artefacto mágico) a alcance inmediato si superas un ataque de Intelecto contra él. Si apuntas a una cifra o artefacto mágico y superas el ataque, no funciona hasta que hagas una recuperación de diez minutos o más. Esfuerzo: usa esta habilidad como capacitador, en respuesta a un ataque cuando no es tu turno. Acción (capacitador si la usas a la defensiva)."
+ },
+ "genre-spin-attack": {
+  "n": "Ataque giratorio",
+  "c": "5+ Velocidad",
+  "t": "Te quedas en un sitio y atacas hasta a cinco enemigos, cada ataque como acción extra en tu turno. Todos han de ser del mismo tipo (cuerpo a cuerpo o a distancia). Tirada de ataque aparte contra cada enemigo. Esfuerzo: ataca a una criatura más con esta habilidad. Acción."
+ },
+ "genre-will-of-a-leader": {
+  "n": "Voluntad de líder",
+  "c": "9 Intelecto",
+  "t": "Refuerzas la entrega y las capacidades de tus aliados con un discurso inspirador de al menos un minuto. Todos los aliados a alcance inmediato (tú incluido) suman +1 de Ventaja a un atributo (cada uno elige el suyo). Dura hasta que hagan una recuperación de una hora o más; que uno la termine no afecta a la duración de los demás. Un minuto para completar."
+ }
+}

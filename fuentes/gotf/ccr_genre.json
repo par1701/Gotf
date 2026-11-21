@@ -1,0 +1,191 @@
+[
+ {
+  "level": "mid",
+  "name": "A Bit of Magic",
+  "cost": "",
+  "magic": true,
+  "text": "Each day you can pick a different magical effect and cast it as a spell. Choose a low-power or medium-power manifest cypher. You can cast that spell as an action, costing 3 Intellect for a low-power cypher or 5 Intellect for a medium-power cypher. This spell does not count toward your cypher limit. Unlike when using a cypher, you do not lose this spell after casting it. As part of making a ten-hour recovery, you can change which cypher you’ve taken as a spell. Ten minutes to prepare a cypher as a spell; action to cast a cypher as a spell. At tier 6: You can use this ability to choose a low-, mid-, or advanced-power cypher as a spell. You can cast an advanced-power cypher spell as an action, costing 7 Intellect."
+ },
+ {
+  "level": "mid",
+  "name": "Cypher Use",
+  "cost": "",
+  "magic": false,
+  "text": "You can bear one additional cypher at a time. You can gain this ability multiple times (as a character advancement or in place of a new focus ability). Each time you do, you can bear one additional cypher at a time. nre ability from those described below, and at tier 6 r 6, you can replace one of your mid-tier genre abilities abilities fit their campaign—for instance, your GM rers of the northern steppes (where your people come words & sorcery game, magic is almost entirely in the might not be able to choose genre abilities tagged as and tier 6 but you’re not finding one below that with your GM, who might grant you the option to pick"
+ },
+ {
+  "level": "mid",
+  "name": "Danger Instinct",
+  "cost": "3 Speed",
+  "magic": false,
+  "text": "If you are attacked by surprise, whether by a creature, a device, or simply an environmental hazard (such as a tree falling on you), you move an immediate distance before the attack occurs. If moving prevents the attack, you are safe. If the attack can still potentially affect you—if the attacking creature can move to keep pace, if the attack fills an area too big to escape, and so on—your defense against it is eased. Enabler."
+ },
+ {
+  "level": "mid",
+  "name": "Disappear Into Shadow",
+  "cost": "",
+  "magic": false,
+  "text": "Even if in full view of up to three creatures, your successful stealth task allows you to slip away from them and hide from view in a nearby shadow, behind a tree or furnishing, or in the next room as your action. Effort: Attempt to slip away from one additional target looking directly at you (attempt a separate stealth task against each). Enabler."
+ },
+ {
+  "level": "mid",
+  "name": "Discerning Mind",
+  "cost": "2 Intellect",
+  "magic": false,
+  "text": "Your mind resists injury from one mental attack, psychic trauma, or similar effect, reducing its wound severity by one step (major to moderate, moderate to minor, minor to none). Enabler."
+ },
+ {
+  "level": "mid",
+  "name": "Elemental Protection",
+  "cost": "4+ Intellect",
+  "magic": true,
+  "text": "You and every creature you designate within immediate range gains protection against one kind of energy damage (such as fire, electricity, or cold). The creatures reduce the severity of wounds from that energy by one step (major to moderate, moderate to minor, minor to none). This protection lasts for a creature until they use a one-hour or longer recovery; one individual ending the ability doesn’t affect the duration for other creatures. Effort: Reduce the wound severity by another step. Action."
+ },
+ {
+  "level": "mid",
+  "name": "Enhanced Stat",
+  "cost": "",
+  "magic": false,
+  "text": "You gain 4 points to one Pool of your choice."
+ },
+ {
+  "level": "mid",
+  "name": "Exceptional Follower",
+  "cost": "",
+  "magic": false,
+  "text": "You gain a level 3 follower."
+ },
+ {
+  "level": "mid",
+  "name": "From the Shadows",
+  "cost": "",
+  "magic": false,
+  "text": "Your successful attack against a creature that was previously unaware of your presence deals +3 damage. Enabler."
+ },
+ {
+  "level": "mid",
+  "name": "Fury",
+  "cost": "3 Might",
+  "magic": false,
+  "text": "Your melee attacks inflict +2 damage. This ability lasts until you use a ten-minute or longer recovery. Action."
+ },
+ {
+  "level": "mid",
+  "name": "Pry Open Defense",
+  "cost": "4 Intellect",
+  "magic": true,
+  "text": "With a successful Intellect attack, you tear apart the defenses of a creature within long range. Any magic-based defenses they have (such as a warding spell) are negated. If the creature has no magical defenses, its armor is reduced by 2. If it has no magic-based defenses or armor, its defense tasks are hindered. This lasts until you use a ten- minute or longer recovery. Action."
+ },
+ {
+  "level": "mid",
+  "name": "Puncturing Attack",
+  "cost": "",
+  "magic": false,
+  "text": "Your attacks ignore 2 points of your opponent’s armor."
+ },
+ {
+  "level": "mid",
+  "name": "Snipe",
+  "cost": "2 Speed",
+  "magic": false,
+  "text": "You spend one action aiming at a foe. If you attack that foe on your next turn, your attack is eased, and if you hit you inflict an additional 5 damage. First action."
+ },
+ {
+  "level": "mid",
+  "name": "Strategize",
+  "cost": "4 Intellect",
+  "magic": false,
+  "text": "Having an action plan in place before facing a challenge improves the odds of success, even if that plan is eventually changed or discarded once it’s put into play. If you and your allies spend at least ten minutes going over a plan of action and you try to enact the plan before you use a ten-hour recovery, your GM provides a useful piece of information about the situation, either immediately if you’ve missed something or as it comes up sometime during the execution of the plan. The plan of action must be something concrete and executable in order to gain this benefit. Ten minutes to activate."
+ },
+ {
+  "level": "mid",
+  "name": "Tough",
+  "cost": "",
+  "magic": false,
+  "text": "You can take an additional minor wound."
+ },
+ {
+  "level": "mid",
+  "name": "Winning Smile",
+  "cost": "2+ Intellect",
+  "magic": false,
+  "text": "When you roll to charm or influence someone and your roll is less than a 9, treat the roll as a 9. (This means you don’t get a GM intrusion if you roll a 1.) Your increased influence persists until your next ten-minute or longer recovery. Effort: Increase the minimum number rolled for this ability by 3. Action."
+ },
+ {
+  "level": "high",
+  "name": "Assassin Strike",
+  "cost": "5 Speed",
+  "magic": false,
+  "text": "If you successfully attack a creature that was previously unaware of your presence, you deal +6 damage. (If you also have From the Shadows, add the extra damage from both abilities.) Enabler."
+ },
+ {
+  "level": "high",
+  "name": "Concussive Force",
+  "cost": "7 Intellect",
+  "magic": true,
+  "text": "You cause a pulse of force to explode out from a point you choose within long range. The pulse extends up to short range in all directions, dealing 5 damage to everything in the area (make separate attack rolls against each). Even if you fail the attack roll against a creature in the area, it still takes 1 damage. Action."
+ },
+ {
+  "level": "high",
+  "name": "Inspire Action",
+  "cost": "4 Intellect",
+  "magic": false,
+  "text": "If one ally can see and easily understand you, you can instruct that ally to take an action. If the ally chooses to take that exact action, they can do so as an additional action immediately. Doing so doesn’t interfere with the ally taking a normal action on their turn. Action."
+ },
+ {
+  "level": "high",
+  "name": "Invisibility",
+  "cost": "4+ Intellect",
+  "magic": true,
+  "text": "You become invisible. This effect ends if you do something to reveal your presence or position—attacking, using an ability, moving a large object, and so on—or you use a ten-minute or longer recovery. Effort: Use this ability on a creature you touch; that creature becomes invisible (instead of yourself), lasting until they use a ten-minute or longer recovery. Action."
+ },
+ {
+  "level": "high",
+  "name": "Jump Attack",
+  "cost": "5+ Might",
+  "magic": false,
+  "text": "You jump up to 4 feet (1 m) into the air and make a melee attack against a foe on the way up or down. If you hit, you inflict damage and can attempt a difficulty 4 Might roll to inflict an additional 4 damage and knock them CGMG prone. Effort: Add 2 feet to the jump height and +2 damage to the attack (whether or not you knock the target prone). Action."
+ },
+ {
+  "level": "high",
+  "name": "Magic Portal",
+  "cost": "6 Intellect",
+  "magic": true,
+  "text": "You create a tunnel through space that allows transportation to a location within long range. You must be able to see this location or know that it exists (such as beyond a closed door or an open space underground beneath you). This hole in reality is large enough to accommodate you and creatures of your size or smaller. Anything moving into the hole immediately emerges from the other side. The hole remains open until you use a ten-minute or longer recovery. Action."
+ },
+ {
+  "level": "high",
+  "name": "Mask",
+  "cost": "5 Intellect",
+  "magic": true,
+  "text": "You transform your body to become someone else. You can change any physical characteristic you wish, including coloration, height, weight, gender, and distinguishing markings. You can also change the appearance of whatever you are wearing or carrying. Your stats, as well as the stats of your items, do not change. You remain in this form for up to a day or until you use an action to resume your normal appearance. If using this ability as a disguise that comes under direct scrutiny or challenge, your disguise task is eased by three steps. Action."
+ },
+ {
+  "level": "high",
+  "name": "Resilience",
+  "cost": "",
+  "magic": false,
+  "text": "You can take one more moderate wound than normal."
+ },
+ {
+  "level": "high",
+  "name": "Spellbreaker",
+  "cost": "4+ Intellect",
+  "magic": true,
+  "text": "You immediately end one ongoing magical effect (such as an effect created by a character ability, cypher, or magical device) within immediate range if you succeed on an Intellect attack against it. If you target a cypher or magical device and succeed on your Intellect attack, it doesn’t function until you use a ten-minute or longer recovery. Effort: Use this ability as an enabler, allowing you to use it in response to an attack when it isn’t your turn. Action (enabler if used defensively)."
+ },
+ {
+  "level": "high",
+  "name": "Spin Attack",
+  "cost": "5+ Speed",
+  "magic": false,
+  "text": "You stand in one place and attack up to five foes, each as an extra action on your turn. All of the attacks have to be the same sort of attack (melee or ranged attacks). Make a separate attack roll for each foe. Effort: Attack one additional creature with this ability. Action."
+ },
+ {
+  "level": "high",
+  "name": "Will of a Leader",
+  "cost": "9 Intellect",
+  "magic": false,
+  "text": "You harden your allies’ dedication and capabilities with an inspiring speech that lasts at least a minute. All allies within immediate range (including yourself) add +1 Edge to one stat (chosen by each individual). This lasts until they use a one-hour or longer recovery; one individual ending the ability doesn’t affect the duration for other allies. One minute to complete."
+ }
+]

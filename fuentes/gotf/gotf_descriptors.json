@@ -1,0 +1,52 @@
+[
+ {
+  "id": "desc-beneficent",
+  "src": "GotF",
+  "en": "Beneficent",
+  "es": "Benefactor",
+  "pool_es": "+2 a la reserva de Intelecto",
+  "skills_es": "Entrenado en encanto (charm) o curación (healing)",
+  "desc_es": "Ayudar a los demás es tu vocación; vives para ello. Los demás disfrutan de tu carácter abierto y caritativo, y tú disfrutas de su felicidad. Das lo mejor de ti cuando ayudas a la gente, explicándole cómo superar un reto o enseñándoselo tú mismo.",
+  "note": "Convertido al formato del CCR [Adaptación]; ver la tabla de Descriptores del documento."
+ },
+ {
+  "id": "desc-gluttonous",
+  "src": "GotF",
+  "en": "Gluttonous",
+  "es": "Glotón",
+  "pool_es": "+2 a la reserva de Potencia",
+  "skills_es": "Entrenado en encanto (charm) o robar bolsillos (pickpocketing)",
+  "desc_es": "Aprecias el valor del dinero, la buena comida y bebida y otros placeres. ¿Para qué fingir moderación? La vida es corta. Sabes que buscar solo el placer acaba en una vida sin placer, y probablemente corta, pero estás dispuesto a llegar al límite por una moneda de oro más, una copa de vino o una noche con buena compañía.",
+  "note": "Convertido al formato del CCR [Adaptación]; ver la tabla de Descriptores del documento."
+ },
+ {
+  "id": "desc-humble",
+  "src": "GotF",
+  "en": "Humble",
+  "es": "Humilde",
+  "pool_es": "+2 a la reserva que elijas",
+  "skills_es": "Entrenado en percepción (perception) o reconocer intenciones (recognizing motive)",
+  "desc_es": "No eres llamativo ni atrevido, porque para ti la humildad es la mayor virtud: eres callado y observador, y no sueles contradecir a los demás. Pero no temes hacer lo correcto ni actuar con valor cuando hace falta; solo que después no te atribuyes el mérito. Cuando los demás lo celebran, prefieres apartarte y pensar en el siguiente reto.",
+  "note": "Convertido al formato del CCR [Adaptación]; ver la tabla de Descriptores del documento."
+ },
+ {
+  "id": "desc-lawful",
+  "src": "GotF",
+  "en": "Lawful",
+  "es": "Legal",
+  "pool_es": "+2 a la reserva de Intelecto",
+  "skills_es": "Entrenado en historia (history), aplicada a leyes y costumbres, o reconocer intenciones (recognizing motive)",
+  "desc_es": "Vives según un código: tus propias normas, las que te enseñó una orden a la que perteneciste o la ley del reino donde vives. Lo importante es que no te gobiernan las pasiones, sino la firme convicción de que seguir la ley es vivir en gracia.",
+  "note": "Convertido al formato del CCR [Adaptación]; ver la tabla de Descriptores del documento."
+ },
+ {
+  "id": "desc-wary",
+  "src": "GotF",
+  "en": "Wary",
+  "es": "Receloso",
+  "pool_es": "+2 a la reserva de Velocidad",
+  "skills_es": "Entrenado en percepción (perception) o iniciativa (initiative)",
+  "desc_es": "No eres de fiarte de nadie. Vigilas a tus enemigos: los que te han hecho daño y, tanto o más, aquellos a los que tú dañaste para lograr tus fines. Convertirse en un poder divino en un mundo donde domina el nuevo ateísmo exige estar alerta frente a quienes se oponen a la vuelta de lo divino.",
+  "note": "Convertido al formato del CCR [Adaptación]; ver la tabla de Descriptores del documento."
+ }
+]

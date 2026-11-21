@@ -1,0 +1,120 @@
+[
+ {
+  "id": "sp-dragonfolk",
+  "en": "Dragonfolk",
+  "es": "Dracónido",
+  "desc_es": "Desciendes de dragones, cubierto de escamas, y compartes parentesco con algunas de las criaturas más poderosas que han surcado los cielos. Puedes haber nacido de padres dracónidos, haberte transformado por voluntad propia en una ceremonia mágica o haber sido elegido por un dragón como su agente o campeón; o quizá no sepas por qué eres así. Hay quien dice que te espera un gran destino.",
+  "traits_es": [
+   "No sufres una intrusión del DJ si sacas un 1 en una tarea de bloqueo.",
+   "Entrenado en intimidation (salvo contra otros dracónidos y dragones).",
+   "Elige una energía (ácido, frío, fuego…): haces +1 de daño cuando atacas con ella."
+  ],
+  "ref": "CCR, p. 85"
+ },
+ {
+  "id": "sp-dwarf",
+  "en": "Dwarf",
+  "es": "Enano",
+  "desc_es": "Eres un nativo robusto, ancho de hombros y barbudo de montañas y colinas, tan testarudo como la piedra en la que los enanos excavan sus hogares. La tradición, el honor, el orgullo por la forja y la guerra y el aprecio por las riquezas enterradas forman parte de tu herencia. Cuando a un enano le hacen daño, nunca lo olvida.",
+  "traits_es": [
+   "+1 a tus recuperaciones.",
+   "Entrenado en navigation (bajo tierra o en zonas montañosas).",
+   "Haces +1 de daño con hachas."
+  ],
+  "ref": "CCR, p. 85"
+ },
+ {
+  "id": "sp-elf",
+  "en": "Elf",
+  "es": "Elfo",
+  "desc_es": "Habitas los bosques y los reinos naturales profundos, como tu pueblo desde hace milenios: eres la flecha en la noche, la sombra en el claro y la risa en el viento. Eres esbelto, rápido, grácil y longevo, y llevas las penas de una vida larga con canciones, vino y amor por lo que crece, sobre todo los árboles.",
+  "traits_es": [
+   "No sufres una intrusión del DJ si sacas un 1 en una defensa de Intelecto.",
+   "Entrenado en stealth (en zonas boscosas).",
+   "Haces +1 de daño con arcos."
+  ],
+  "ref": "CCR, p. 86"
+ },
+ {
+  "id": "sp-gnome",
+  "en": "Gnome",
+  "es": "Gnomo",
+  "desc_es": "Mides algo más de un metro y te encanta descubrir cómo convertir lo que encuentras en arte, herramientas o armas: escultor, herrero, artista, cocinero, cuentacuentos o inventor. Te fascinan la alquimia, la magia y la ingeniería, y tu pueblo tiene una pasión única por la vida, la exploración y la creación.",
+  "traits_es": [
+   "No sufres una intrusión del DJ si sacas un 1 en una tirada de esquivar.",
+   "Entrenado en crafting.",
+   "Haces +1 de daño con armas ligeras cuerpo a cuerpo."
+  ],
+  "ref": "CCR, p. 86"
+ },
+ {
+  "id": "sp-halfling",
+  "en": "Halfling",
+  "es": "Mediano",
+  "desc_es": "Mides un metro y estás orgulloso de cada centímetro. Te gustan las comodidades del hogar, pero de vez en cuando te pica la aventura. Pequeño y rápido, te llevas bien con todo el mundo. Los humanos y tú tenéis mucho en común; solo que tú eres más compacto y eficiente.",
+  "traits_es": [
+   "No sufres una intrusión del DJ si sacas un 1 en una tarea de stealth.",
+   "Entrenado en escaping.",
+   "Haces +1 de daño con armas ligeras arrojadizas."
+  ],
+  "ref": "CCR, p. 86"
+ },
+ {
+  "id": "sp-hellborn",
+  "en": "Hellborn",
+  "es": "Infernal",
+  "desc_es": "Eres en parte humano y en parte algo de otra dimensión: huérfano de un encuentro sobrenatural, fruto de un ritual fallido, vástago de un linaje antiguo o alguien que «se tragó» al demonio que intentó poseerlo. Algunos tienen cuernos, cola y dientes afilados; otros, rasgos más sutiles. Decide con el DJ tu aspecto.",
+  "traits_es": [
+   "Las heridas que recibes de fuego y calor bajan un paso de gravedad.",
+   "Entrenado en magic lore.",
+   "Haces +1 de daño con ataques desarmados."
+  ],
+  "ref": "CCR, p. 87"
+ },
+ {
+  "id": "sp-human",
+  "en": "Human",
+  "es": "Humano",
+  "desc_es": "Los humanos son de las especies más jóvenes, y quizá por eso tienden a explorar, conquistar y expandirse. Individualmente no podrían ser más diversos. Lo que es seguro es que no temes luchar por lo que quieres y por lo que crees.",
+  "traits_es": [
+   "Elige un segundo descriptor y suma sus beneficios a los de tu descriptor."
+  ],
+  "ref": "CCR, p. 87"
+ },
+ {
+  "id": "sp-orc",
+  "en": "Orc",
+  "es": "Orco",
+  "desc_es": "Otras especies desprecian a veces a los orcos como carne de cañón de señores oscuros. Quizá algunos lo sean, pero sabes que los orcos son un pueblo orgulloso (aunque agresivo) con sentido del honor, capaz de aliarse con otros contra una amenaza mayor. Has salido al mundo en busca de nuevas oportunidades.",
+  "traits_es": [
+   "Puedes recibir una herida leve más de lo normal.",
+   "Entrenado en intimidation (salvo contra otros orcos).",
+   "Haces +1 de daño con armas pesadas cuerpo a cuerpo."
+  ],
+  "ref": "CCR, p. 87"
+ },
+ {
+  "id": "sp-sleen",
+  "en": "Sleen",
+  "es": "Sleen",
+  "desc_es": "Especie propia de GotF, opcional [Adaptación].",
+  "traits_es": [
+   "Longevo: tu esperanza de vida natural es de quinientos años. [GotF]",
+   "Entrenado en stealth o en magic lore. [Adaptación de GotF]",
+   "Llevas una daga que escondes con facilidad; es un recurso a favor en las tareas de ocultarla. [GotF]"
+  ],
+  "ref": "GotF, p. 127"
+ },
+ {
+  "id": "sp-taran",
+  "en": "Taran",
+  "es": "Taran",
+  "desc_es": "Especie propia de GotF, opcional [Adaptación].",
+  "traits_es": [
+   "Sentidos alternativos: no te afectan la oscuridad ni los efectos que cegarían a otras criaturas. [GotF] Es una excepción a la regla del CCR de que ningún PJ ve en la oscuridad total (p. 85).",
+   "Entrenado en perception. [GotF]",
+   "Empiezas con un arma pesada de tu elección. [GotF]"
+  ],
+  "ref": "GotF, p. 128"
+ }
+]
