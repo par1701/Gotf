@@ -124,6 +124,11 @@ for f in data['foci']:
     if f.get('genres'): f['genres'].append('super')
 data['skills_super']=['animal care','astronomy','athletics','attacking','biology','charm','chemistry','crafting','deception','defending','disguise','driving','engineering','escaping','farming','firefighting','forensics','gathering information','geology','gunnery','gymnastics','hacking','healing','heavy equipment operation','history','identifying','initiative','intimidation','lockpicking','magic lore','mathematics','mechanics','mining','navigation','outdoor survival','perception','performance','philosophy','physics','pickpocketing','piloting','psychic lore','psychology','publishing','recognizing motive','religious lore','riding','scavenging','skilled trade','stealth','systems operation','tracking']
 assert all(k in data['skills_es'] for k in data['skills_super'])
+# --- Mundo real (CCR cap. 5) ---
+RW=json.load(open(G+'rw.json'))
+assert all(k in data['skills_es'] for k in RW['skills'])
+assert all(any(t['en']==n for t in data['types']) for n in RW['hist_types'])
+data['skills_real']=RW['skills'];data['rw']={k:RW[k] for k in ('hist_types','bg','bundle','own')}
 data['bg_gotf']=json.load(open('/home/claude/gotf/bg_gotf.json'))
 json.dump(data,open('/home/claude/site/data.json','w'),ensure_ascii=False,separators=(',',':'))
 print(data['stats'], os.path.getsize('/home/claude/site/data.json'))

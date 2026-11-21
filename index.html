@@ -102,7 +102,8 @@ Object.assign(SETTINGS,{
   spaceop:Object.assign({n:'Space opera (CCR)',types:['Android','Diplomat','Medic','Noble','Psion','Scoundrel','Soldier','Starpilot','Tech','Trader'],from:['Diplomat','Medic','Soldier'],skills:'skills_sf',sug:'spaceop',sref:'CCR, p. 98',spn:'Casi cualquier especie de ciencia ficción que imagines puede formar parte de la ambientación',treat:'género heroico: curar una herida leve lleva una última acción, una moderada un minuto y una grave diez minutos',eq:'Equipo de ciencia ficción',cyph:'Las cifras manifiestas solo existen en ambientaciones con prototipos extraños o misteriosa tecnología alienígena',h1:'Space opera: creación de personajes',sub:'Reglas del <em>Cypher Character Rulebook</em> (2026) para space opera.'},SFX),
   postapo:Object.assign({n:'Postapocalipsis (CCR)',types:['Dealer','Heavy','Survivor','Tender'],skills:'skills_postapo',sug:'postapo',sref:'CCR, p. 108',spn:'Suele haber sobre todo humanos',treat:'género realista: curar una herida leve lleva diez minutos, una moderada una hora y una grave una semana',eq:'Equipo postapocalíptico',cyph:'Esta ambientación no suele tener cifras manifiestas',h1:'Postapocalipsis: creación de personajes',sub:'Reglas del <em>Cypher Character Rulebook</em> (2026) para postapocalipsis.'},SFX)});
 SETTINGS.super={n:'Superhéroes (CCR)',genre:'super',ggen:['fantasy','scifi'],sgen:['fantasy','scifi'],gw:'de fantasía o ciencia ficción',gref:'CCR, p. 82 y 114',skills:'skills_super',sref:'CCR, p. 124',h1:'Superhéroes: creación de personajes',sub:'Reglas del <em>Cypher Character Rulebook</em> (2026) para superhéroes.'};
-const ST=()=>SETTINGS[S.setting]||SETTINGS.gotf,GW=()=>ST().gw,SF=()=>ST().genre==='scifi',SUP=()=>ST().genre==='super';
+SETTINGS.mundo={n:'Mundo real (CCR)',genre:'real',tgen:'fantasy',ggen:['fantasy'],nomagic:1,nofoci:1,sgen:[],types:['Archer','Axe Fighter','Barbarian','Bard','Burglar','Knife Fighter','Noble Warrior','Ranger','Swashbuckler','Sword Fighter','Thief','Two-Weapon Fighter','Warrior'],gw:'del mundo real',gwa:'de fantasía (sin magia)',gref:'CCR, p. 35 y 82',skills:'skills_real',sref:'CCR, p. 37',h1:'Mundo real: creación de personajes',sub:'Reglas del <em>Cypher Character Rulebook</em> (2026) para el mundo real.'};
+const ST=()=>SETTINGS[S.setting]||SETTINGS.gotf,GW=()=>ST().gw,GWA=()=>ST().gwa||ST().gw,RW=()=>ST().genre==='real',SF=()=>ST().genre==='scifi',SUP=()=>ST().genre==='super';
 const SUBL={'Rank 1':'Categoría 1 (rank 1)','Rank 2':'Categoría 2 (rank 2)','Rank 3':'Categoría 3 (rank 3)','Rank 4':'Categoría 4 (rank 4)','Rank 5':'Categoría 5 (rank 5)','Dungeon fantasy':'Fantasía de mazmorras (dungeon fantasy)','Swords & sorcery':'Espada y brujería (swords &amp; sorcery)','Epic fantasy':'Fantasía épica (epic fantasy)','Hard science fiction':'Ciencia ficción dura (hard science fiction)','Space opera':'Space opera','Postapocalypse':'Postapocalipsis (postapocalypse)'};
 const subsOf=()=>SF()?['_']:SUP()?[...new Set([...D.types.filter(t=>t.genre==='super'),...D.types.filter(t=>t.genre!=='super')].map(t=>t.sub))]:[...new Set(D.types.map(t=>t.sub))];
 const ALT=t=>SUP()&&t&&t.genre!=='super';
@@ -112,8 +113,8 @@ const curSet=()=>{try{return localStorage.getItem('cy-setting')||'gotf'}catch(e)
 const GOTF=()=>!!(SETTINGS[S.setting]||SETTINGS.gotf).gotf;
 function applySetting(){if(!SETTINGS[S.setting])S.setting='gotf';if(APPLIED===S.setting)return false;APPLIED=S.setting;const st=SETTINGS[S.setting];
   try{localStorage.setItem('cy-setting',S.setting)}catch(e){}
-  D=Object.assign({},DALL,{types:DALL.types.filter(t=>st.genre==='super'||(t.genre||'fantasy')===st.genre&&(!st.types||st.types.includes(t.en))),foci:DALL.foci.filter(f=>(st.gotf||f.src==='CCR')&&(!f.genres||f.genres.includes(st.genre))),
-    descriptors:DALL.descriptors.filter(d=>st.gotf||d.src==='CCR'),species:DALL.species.filter(x=>(st.sgen||[st.genre]).includes(x.genre||'fantasy')&&(st.gotf||!/GotF/.test(x.ref||''))),genre:DALL.genre.filter(g=>(st.ggen||[st.genre]).includes(g.genre))});
+  D=Object.assign({},DALL,{types:DALL.types.filter(t=>st.genre==='super'||(t.genre||'fantasy')===(st.tgen||st.genre)&&(!st.types||st.types.includes(t.en))),foci:st.nofoci?[]:DALL.foci.filter(f=>(st.gotf||f.src==='CCR')&&(!f.genres||f.genres.includes(st.genre))),
+    descriptors:DALL.descriptors.filter(d=>st.gotf||d.src==='CCR'),species:DALL.species.filter(x=>(st.sgen||[st.genre]).includes(x.genre||'fantasy')&&(st.gotf||!/GotF/.test(x.ref||''))),genre:DALL.genre.filter(g=>(st.ggen||[st.genre]).includes(g.genre)&&!(st.nomagic&&g.magic))});
   SK={};DALL[st.skills].forEach(k=>SK[k]=DALL.skills_es[k]);
   $('#h1').innerHTML=esc(st.h1);$('#sub').innerHTML=st.sub+' Nombres en español con el original entre paréntesis.';$('#nimbus').style.display=st.gotf?'':'none';
   $('#setsel').innerHTML=Object.entries(SETTINGS).map(([k,v])=>`<option value="${k}" ${k===S.setting?'selected':''}>${esc(v.n)}</option>`).join('');
@@ -211,6 +212,28 @@ const stepsSup=()=>`
 <h3>Adaptar tipos de otros géneros</h3>
 <p>Puedes adaptar un tipo de otro género, como el Monje de fantasía de mazmorras o el Psiónico de space opera. Además de sus habilidades especiales y demás beneficios, el tipo adaptado gana [CCR, p. 129]:</p>
 <ul><li>Los puntos de reserva adicionales de un tipo de superhéroe de la categoría adecuada (por ejemplo, Luchador contra el crimen o Justiciero en categoría 1), en lugar de los del tipo original.</li><li>Una habilidad de origen superheroico.</li><li>Los cambios de poder de la categoría (por ejemplo, tres en categoría 2).</li><li>Superheroicidades, y puntos adicionales en la reserva elegida para ella: +2 en categoría 2, +4 en la 3, +6 en la 4 y +8 en la 5.</li></ul>`;
+const stepsRW=()=>`
+<p>Un personaje del mundo real no tiene tipo ni foco: el personaje núcleo, con su descriptor y su profesión, <em>es</em> el personaje. La frase es descriptor más profesión; en español, la profesión va delante: «Soy un abogado listo», «una periodista honorable», «un médico impetuoso» [CCR, p. 31 y 38].</p>
+<ol>
+<li><b>Personaje núcleo</b> [CCR, p. 10–13 y 37]: 8 de Potencia, 8 de Velocidad y 8 de Intelecto, más 6 puntos a repartir. Esfuerzo 1, límite de 2 cifras. Aguanta 3 heridas leves, 3 moderadas y 3 graves. Usa libremente armas ligeras y ninguna armadura; tiene incapacidad con las armas medias y pesadas. Empieza con 2 habilidades de la lista del mundo real (opcionalmente una tercera a cambio de una incapacidad); según la partida, el DJ puede dar a elegir también de las listas de fantasía o de ciencia ficción. Ataque, defensa y artillería tienen restricción de rango.</li>
+<li><b>Descriptor</b> [CCR, p. 24]: unos puntos más a una reserva y entrenamiento en una habilidad relacionada.</li>
+<li><b>Profesión</b> [CCR, p. 37]: el trabajo, afición o interés central de tu personaje, expresado como una habilidad más en la que estás entrenado. Por ejemplo, abogado con encanto, médico con curación, asesor de seguridad con obtener información o alguien al margen de la ley con sigilo.</li>
+<li><b>Excepción de armas</b> [CCR, p. 37]: normalmente no puedes entrenarte en un ataque hasta el rango 2 y tienes incapacidad con las armas medias y pesadas. Pero puedes aplicar una de las habilidades que ganas como personaje inicial a anular esa incapacidad con una clase concreta de armas medias o pesadas (por ejemplo, rifles medios, escopetas pesadas o armas de filo medias, si vienes del ejército, eres cazador o practicas kendo). No facilita los ataques con esas armas, pero anula la incapacidad que los dificultaría.</li>
+<li><b>Especie</b>: normalmente, humanos.</li>
+<li><b>Trasfondo</b>: elige una opción (pensadas para una partida actual), adáptala o crea una con el DJ.</li>
+<li><b>Equipo</b> [CCR, p. 38]: el lote del mundo real o tu propia selección. Sin arma de tipo, aunque puedes elegir una como objeto. Cifras manifiestas: normalmente ninguna.</li>
+<li><b>Curación</b>: el mundo real suele ser realista: curar una herida leve lleva diez minutos, una moderada una hora y una grave una semana [CCR, p. 38].</li>
+</ol>
+<p><b>Habilidades del mundo real</b> [CCR, p. 38]: en el rango 3 ganas otra habilidad en la que entrenarte (o especializarte, si ya estabas entrenado), que no tenga restricción de rango; en el rango 6, otra más.</p>
+<p><b>Al subir de rango</b> [CCR, p. 38 y 313]: como en los demás géneros (más Esfuerzo, habilidades, Ventaja, puntos de reserva). En rangos altos puedes entrenarte en ataques con armas medias o pesadas, lo que anula la incapacidad. El DJ puede usar la partida como introducción a algo más extraño y pediros que elijáis foco o tipo.</p>
+<h3>Reglas opcionales de acción</h3>
+<p>En partidas de acción (y quizá de rescate u otras que el DJ considere) [CCR, p. 33]:</p>
+<ul><li><b>Heridas de acción:</b> aguantas dos heridas leves y una moderada más que un personaje núcleo.</li><li><b>Curación:</b> la acción suele ser heroica para los PJ: curar una herida leve lleva una última acción, una moderada un minuto y una grave diez minutos.</li><li><b>Acciones desesperadas:</b> mientras tengas al menos dos heridas moderadas o al menos una grave, tienes una repetición gratuita de una acción cada asalto (como si gastaras 1 PX). El DJ puede activarla en un encuentro concreto o en toda la partida.</li></ul>
+<h3>Subgéneros</h3>
+<p>El subgénero que elija el DJ marca los personajes adecuados [CCR, p. 32–36]:</p>
+<ul><li><b>Espionaje:</b> agentes secretos con identidad falsa. El oficio del espía se basa en percepción, engaño, encanto, disfraz y obtener información.</li><li><b>Thriller criminal:</b> resolver crímenes (detective, forense, periodista, investigador privado…), o el DJ os pone del lado de los criminales. Percepción, obtener información, encanto, engaño, intimidación.</li><li><b>Acción:</b> secuestros, asaltos, golpes, arqueólogos pulp. Un grupo variado en el que cada uno aporta una habilidad; apóyate en tu profesión (un arqueólogo, identificar e historia; un militar, la excepción de armas; un estafador, engaño, disfraz y sigilo).</li><li><b>Rescate:</b> primeros intervinientes en catástrofes naturales o causadas por el ser humano. Curación y manejo de maquinaria pesada, más lo propio del papel (extinción de incendios, pilotaje, percepción e identificar…).</li><li><b>Histórico:</b> el DJ dice qué personajes encajan en la época. Puede permitir un tipo de fantasía no mágico en lugar de la profesión (ver «Tipos»).</li><li><b>Terror:</b> gente normal que descubre que los monstruos existen. Sigilo, percepción y reconocer motivos; si el horror se puede vencer, obtener información y saber mágico, si el DJ lo ofrece.</li><li><b>Magia moderna:</b> la magia existe en un mundo que parece el real. Personajes competentes por sí mismos, por si las opciones mágicas tardan en llegar.</li></ul>
+<h3>Opciones de trasfondo</h3><ul>${D.rw.bg.map(b=>`<li>${esc(b)}</li>`).join('')}</ul>
+<h3>Lote de equipo del mundo real</h3><p><b>Lote:</b> ${esc(D.rw.bundle)}</p><p><b>Elegir tu propio equipo:</b> ${esc(D.rw.own)}</p>`;
 const STEPS_F=`
 <p>La frase del personaje es: «Soy un <b>[tipo]</b> <b>[descriptor]</b> que <b>[foco]</b>». En español el tipo va delante del descriptor, al revés que en inglés; si hay especie, va entre los dos («un bárbaro enano jovial»).</p>
 <ol>
@@ -255,11 +278,11 @@ function neighbors(f){const n={};f.edges.forEach(([a,b])=>{if(f.directed){(n[b]=
 
 function renderGuide(){
   applySetting();const g=$('#guia'),G_=GOTF();
-  const secs=[['pasos','Pasos'],['descriptores','Descriptores'],['especies','Especies'],['tipos','Tipos'],...(SUP()?[['origen','Habilidades de origen']]:[]),['fantasia','Habilidades '+GW()],['focos','Focos'],...(G_?[['equivalencias','Focos de GotF'],['dominio','Dominio']]:[])];
+  const secs=RW()?[['pasos','Pasos'],['descriptores','Descriptores'],['tipos','Tipos históricos'],['fantasia','Habilidades '+GWA()]]:[['pasos','Pasos'],['descriptores','Descriptores'],['especies','Especies'],['tipos','Tipos'],...(SUP()?[['origen','Habilidades de origen']]:[]),['fantasia','Habilidades '+GWA()],['focos','Focos'],...(G_?[['equivalencias','Focos de GotF'],['dominio','Dominio']]:[])];
   let h=`<nav class="scroll">${secs.map(([i,t])=>`<a href="#guia" data-go="${i}">${t}</a>`).join('')}</nav>`;
-  h+=`<h2 id="s-pasos">Pasos de creación</h2>${G_?STEPS:SUP()?stepsSup():SF()?stepsSF():STEPS_F}`;
+  h+=`<h2 id="s-pasos">Pasos de creación</h2>${G_?STEPS:RW()?stepsRW():SUP()?stepsSup():SF()?stepsSF():STEPS_F}`;
   h+=`<h2 id="s-descriptores">Descriptores</h2><p class="note">El CCR permite al DJ cambiar la habilidad de un descriptor si encaja mejor con el género (p. 24).</p><div class="grid">${D.descriptors.map(d=>`<div class="card"><h4>${nm(d)}</h4><span class="badge">${d.src}</span><p>${tx(d,'desc')}</p><p>• ${d.pool_es?esc(d.pool_es):esc(d.pool_en)}<br>• ${d.skills_es?esc(d.skills_es):esc(d.skills_en)}</p></div>`).join('')}</div>`;
-  h+=`<h2 id="s-especies">Especies</h2><div class="grid">${D.species.map(s=>`<div class="card"><h4>${nm(s)}</h4><span class="badge">${esc(s.ref)}</span><p>${esc(s.desc_es)}</p>${s.traits_es.map(t=>`<div>• ${esc(t)}</div>`).join('')}</div>`).join('')}</div>`;
+  if(!RW())h+=`<h2 id="s-especies">Especies</h2><div class="grid">${D.species.map(s=>`<div class="card"><h4>${nm(s)}</h4><span class="badge">${esc(s.ref)}</span><p>${esc(s.desc_es)}</p>${s.traits_es.map(t=>`<div>• ${esc(t)}</div>`).join('')}</div>`).join('')}</div>`;
   const typeHTML=(t,bg)=>`<details><summary>${nm(t)} <span class="badge">${SUBL[t.sub]||t.sub}, p. ${t.page}</span></summary><div><p>${tx(t,'intro')}</p><p><b>Ganas:</b></p><ul>${(t.ben_es||t.ben_en).map(b=>`<li class="${t.ben_es?'':'pend'}">${esc(b)}</li>`).join('')}</ul><div class="tier">Habilidades de rango 1</div>${t.abilities.map(a=>`<div class="ab"><b>${nm(a)}${cost(a)}.</b> ${tx(a)}</div>`).join('')}${bg?`<p><b>Opciones de trasfondo</b> (elige una o inventa la tuya):</p><ul>${(t.bg_es||t.bg_en).map(b=>`<li>${esc(b)}</li>`).join('')}</ul>`:''}<p><b>Lote de equipo:</b> ${tx(t,'bundle')}</p>${(t.notes||[]).map(n=>`<p class="note">${esc(n)}</p>`).join('')}</div></details>`;
   if(G_){
   h+=`<h2 id="s-tipos">Tipos</h2><p>Los 4 tipos de GotF quedan como arquetipos de ambientación: aportan papel social y tabla de conexión, y orientan hacia dominios sin restringirlos [GotF, cap. 10]. La lista base es la de dungeon fantasy; se admiten los de swords &amp; sorcery y epic fantasy (CCR, p. 43).</p>`;
@@ -268,28 +291,29 @@ function renderGuide(){
     h+=`<details><summary>Conexión de trasfondo: ${ar} <span class="badge">GotF, d20</span></summary><div><p class="note">Tira 1d20 o elige. También puedes crear tu propio trasfondo. Muchos son de antes de que el personaje empezara a Despertar [GotF, cap. 10].</p><ol>${D.bg_gotf[ar].map(b=>`<li>${esc(b)}</li>`).join('')}</ol></div></details>`;
   }
   }else{
-    if(SUP()){h+=`<h2 id="s-tipos">Tipos</h2><p>Tipos de superhéroe, ordenados por categoría. Además de la lista, cada tipo gana Superheroicidades, sus cambios de poder y una habilidad de origen superheroico. Para adaptar un tipo de otro género, ver «Pasos» [CCR, p. 129].</p>`;
+    if(RW()){h+=`<h2 id="s-tipos">Tipos opcionales para ambientaciones históricas</h2><p>En algunas ambientaciones históricas puede encajar un tipo de fantasía no mágico; el DJ dice si se permite un tipo en lugar de la profesión. Salvo que el DJ haya añadido magia a la ambientación, ese tipo no puede elegir habilidades de fantasía marcadas como magia en los rangos 3 y 6, diga lo que diga el tipo [CCR, p. 35]. Con tipo, esas habilidades sustituyen a la habilidad extra del mundo real de los rangos 3 y 6 [Adaptación].</p>`+D.types.map(t=>typeHTML(t,true)).join('')}
+    else if(SUP()){h+=`<h2 id="s-tipos">Tipos</h2><p>Tipos de superhéroe, ordenados por categoría. Además de la lista, cada tipo gana Superheroicidades, sus cambios de poder y una habilidad de origen superheroico. Para adaptar un tipo de otro género, ver «Pasos» [CCR, p. 129].</p>`;
       for(let r=1;r<=5;r++)h+=`<h3>${SUBL['Rank '+r]}</h3>`+D.types.filter(t=>t.rank===r).map(t=>typeHTML(t,true)).join('');
       h+=`<h2 id="s-origen">Habilidades de origen superheroico</h2><p>Una en el rango 1 [CCR, p. 138].</p>`+D.origin.map(a=>`<div class="ab"><b>${nm(a)}${cost(a)}.</b> ${tx(a)}</div>`).join('')}
     else{
     h+=SF()?`<h2 id="s-tipos">Tipos</h2><p>Tipos que el CCR propone para este subgénero [${ST().sref}]. Cada tipo trae opciones de trasfondo: elige una o crea la tuya.</p>`:`<h2 id="s-tipos">Tipos</h2><p>Se pueden mezclar tipos de los tres subgéneros de fantasía con pocos cambios o ninguno [CCR, p. 43].</p>`;
     for(const sb of subsOf())h+=(sb==='_'?'':`<h3>${SUBL[sb]}</h3>`)+D.types.filter(t=>inSub(t,sb)).map(t=>typeHTML(t,true)).join('');
   }}
-  h+=`<h2 id="s-fantasia">Habilidades ${GW()}</h2><p>Una de nivel medio en el rango 3 y una de nivel alto en el rango 6; en el rango 6 también puedes cambiar una de nivel medio por otra. ${SUP()?'Las de fantasía marcadas como magia pueden no estar disponibles según la campaña':SF()?'Consulta con el DJ que encajen en su campaña (en un postapocalipsis quizá ya no exista la tecnología de algunas, como Compañero mecánico o Leer la mente). Si ninguna encaja, el DJ puede dejarte elegir una de otra parte, como de un foco':'Las marcadas como magia pueden no estar disponibles según la campaña'} [${ST().gref}].</p>`;
+  h+=`<h2 id="s-fantasia">Habilidades ${GWA()}</h2><p>Una de nivel medio en el rango 3 y una de nivel alto en el rango 6; en el rango 6 también puedes cambiar una de nivel medio por otra. ${RW()?'Solo con un tipo histórico; aquí ya no aparecen las marcadas como magia':SUP()?'Las de fantasía marcadas como magia pueden no estar disponibles según la campaña':SF()?'Consulta con el DJ que encajen en su campaña (en un postapocalipsis quizá ya no exista la tecnología de algunas, como Compañero mecánico o Leer la mente). Si ninguna encaja, el DJ puede dejarte elegir una de otra parte, como de un foco':'Las marcadas como magia pueden no estar disponibles según la campaña'} [${ST().gref}].</p>`;
   for(const [lv,t] of [['mid','Nivel medio (rango 3)'],['high','Nivel alto (rango 6)']]) h+=`<h3>${t}</h3>`+D.genre.filter(x=>x.level===lv).map(a=>`<div class="ab"><b>${nm(a)}${cost(a)}.</b> ${SUP()?`<span class="badge">${a.genre==='scifi'?'Ciencia ficción':'Fantasía'}</span> `:''}${a.magic?'<span class="badge">Magia</span> ':''}${tx(a)}</div>`).join('');
-  h+=`<h2 id="s-focos">Focos</h2><input type="search" id="fq" placeholder="Buscar foco o habilidad…" aria-label="Buscar foco o habilidad"><div id="flist"></div>`;
+  if(!RW())h+=`<h2 id="s-focos">Focos</h2><input type="search" id="fq" placeholder="Buscar foco o habilidad…" aria-label="Buscar foco o habilidad"><div id="flist"></div>`;
   if(G_){h+=`<h2 id="s-equivalencias">Los 64 focos que recomienda GotF</h2><table class="stack"><thead><tr><th>Foco de GotF</th><th>Qué usar</th><th>Grado</th></tr></thead><tbody>${D.mapping.map(([g,id,gr])=>{const f=D.foci.find(x=>x.id===id);return `<tr><td>${esc(g)}</td><td>${f?`<a href="#guia" data-focus="${f.id}">${nmTxt(f)}</a>`:'—'}</td><td>${esc(gr)}</td></tr>`}).join('')}</tbody></table>`;
   h+=`<h2 id="s-dominio">Habilidades de dominio</h2>`;
   for(let t=1;t<=6;t++) h+=`<div class="tier">Rango ${t}</div>`+D.dominion.filter(x=>x.tier===t).map(a=>`<div class="ab"><b>${nm(a)}${cost(a)}.</b> ${tx(a)}</div>`).join('');}
   g.innerHTML=h;
   const fl=()=>{const q=($('#fq').value||'').toLowerCase();$('#flist').innerHTML=D.foci.filter(f=>!q||JSON.stringify([f.en,f.es,f.abilities.map(a=>[a.en,a.es])]).toLowerCase().includes(q)).map(focusHTML).join('')};
-  $('#fq').addEventListener('input',fl);fl();
+  if($('#fq')){$('#fq').addEventListener('input',fl);fl()}
   g.addEventListener('click',e=>{const a=e.target.closest('[data-go],[data-focus]');if(!a)return;e.preventDefault();
     if(a.dataset.focus){const d=$('#f-'+a.dataset.focus);d.open=true;d.scrollIntoView({behavior:'smooth'})}else $('#s-'+a.dataset.go).scrollIntoView({behavior:'smooth'})});
 }
 
 /* ---------- Creador (reglas del Cypher Character Rulebook) ---------- */
-const BLANK=()=>({setting:curSet(),name:'',desc:'',desc2:'',dskill:'',dskill2:'',dpool:0,sp:'',type:'',focus:'',dominion:'',bg:'',bgc:'',tier:1,alloc:[2,2,2],edge:0,mnf:[0,0,0],mnfe:0,sk:['',''],sk3:'',inab:'',fa:[],genre:[],dom:{},domMode:{},domSwap:{},shiftXP:0,shifts:{},adv:{},srank:1,salt:'',shp:0,psh:{},pshd:'',orig:'',ov:[0,0,0],scomb:'',focus2:'',fa2:[]});
+const BLANK=()=>({setting:curSet(),name:'',desc:'',desc2:'',dskill:'',dskill2:'',dpool:0,sp:'',type:'',focus:'',dominion:'',bg:'',bgc:'',tier:1,alloc:[2,2,2],edge:0,mnf:[0,0,0],mnfe:0,sk:['',''],sk3:'',inab:'',fa:[],genre:[],dom:{},domMode:{},domSwap:{},shiftXP:0,shifts:{},adv:{},srank:1,salt:'',shp:0,psh:{},pshd:'',orig:'',ov:[0,0,0],scomb:'',focus2:'',fa2:[],profn:'',profk:'',rwx:'',rwxw:'',rwact:false,rweq:'bundle',rwsk3:'',rwsk6:''});
 let S=BLANK();const TITLE=document.title;
 try{Object.assign(S,JSON.parse(localStorage.getItem('gotf-pj2')||'{}'))}catch(e){}
 const save=()=>{try{localStorage.setItem('gotf-pj2',JSON.stringify(S))}catch(e){}};
@@ -331,7 +355,9 @@ function calc(){
     if(opts.length)p[opts.includes(+S.dpool)?+S.dpool:opts[0]]+=2; if(choice)skills.push(['T',choice])};
   addDesc(S.desc,S.dskill); if(/^sp-human/.test(S.sp||''))addDesc(S.desc2,S.dskill2);
   if(sp){if(['Orc','Drakain','Prota'].includes(sp.en))w[0]+=1;if(sp.en==='Dwarf')rec+=1;if(sp.en==='D’nec')notes.push('D’nec: +1 punto de Intelecto cada vez que haces una recuperación.')}
-  S.sk.forEach(k=>k&&skills.push(['T',k]));if(S.sk3){skills.push(['T',S.sk3]);if(S.inab)skills.push(['I',S.inab])}
+  const rwx=RW()?S.rwx:'';S.sk.forEach((k,i)=>k&&rwx!=='sk'+i&&skills.push(['T',k]));if(S.sk3){if(rwx!=='sk3')skills.push(['T',S.sk3]);if(S.inab)skills.push(['I',S.inab])}
+  if(RW()&&!ty){if(S.profk&&rwx!=='prof')skills.push(['T',S.profk]);for(const k of [S.rwsk3,S.rwsk6].slice(0,+S.tier>=6?2:+S.tier>=3?1:0))if(k){const e=skills.find(([x,y])=>y===k&&x==='T');if(e)e[0]='S';else skills.push(['T',k])}}
+  if(RW()&&S.rwact){w[0]+=2;w[1]+=1}
   for(const {r,k,a,i} of advList()){
     if(k==='pools')(a['p'+i]||[0,0,0]).forEach((v,j)=>p[j]+=+v||0);
     if(k==='edge')edge[+(a['e'+i]||0)]+=1;
@@ -380,21 +406,22 @@ function renderForm(){if(applySetting())renderGuide();{const nt=tierFrom();if(nt
   <div class="field"><label for="c-name">Nombre</label><input id="c-name" type="text" value="${esc(S.name)}"></div>
   <div class="field"><b>Rango ${t}</b><p class="note">El rango sube solo al completar los cuatro avances del rango actual (apartado 4) [CCR, p. 313].</p></div>
   <div class="field"><label>Reparto de los 6 puntos [CCR, p. 11]</label><div class="pools">${POOL.map((p,i)=>`<label>${p}<input type="number" min="0" max="6" data-alloc="${i}" value="${+S.alloc[i]||0}"></label>`).join('')}</div><p class="note" id="allocnote"></p></div>
-  <div class="field"><label>Dos habilidades ${GW()} [CCR, p. 12${SF()?' y '+ST().sref.replace('CCR, ',''):' y 41'}]</label>${skillSel('c-sk0',S.sk[0],'primera','data-sk="0"')}<div style="height:6px"></div>${skillSel('c-sk1',S.sk[1],'segunda','data-sk="1"')}</div>
+  <div class="field"><label>Dos habilidades ${GW()} [CCR, p. 12${ST().sref?' y '+ST().sref.replace('CCR, ',''):' y 41'}]</label>${skillSel('c-sk0',S.sk[0],'primera','data-sk="0"')}<div style="height:6px"></div>${skillSel('c-sk1',S.sk[1],'segunda','data-sk="1"')}</div>
   <div class="field"><label>Opcional: tercera habilidad a cambio de una incapacidad</label>${skillSel('c-sk3',S.sk3,'tercera habilidad')}<div style="height:6px"></div>${skillSel('c-inab',S.inab,'incapacidad')}</div>
-  <h3>2. Especie, descriptor y tipo</h3>
-  <div class="field"><label for="c-sp">Especie (opcional)</label><select id="c-sp">${opt(D.species,S.sp,'ninguna')}</select></div>
+  <h3>2. ${RW()?'Descriptor y profesión':'Especie, descriptor y tipo'}</h3>
+  ${RW()?'':`<div class="field"><label for="c-sp">Especie (opcional)</label><select id="c-sp">${opt(D.species,S.sp,'ninguna')}</select></div>`}
   <div class="field"><label for="c-desc">Descriptor</label><select id="c-desc">${opt(D.descriptors,S.desc,'elige')}</select></div>
   ${dsel(de,'c-dskill',S.dskill)}
   ${/^sp-human/.test(S.sp||'')?`<div class="field"><label for="c-desc2">Segundo descriptor (humano)</label><select id="c-desc2">${opt(D.descriptors,S.desc2,'elige')}</select></div>${dsel(de2,'c-dskill2',S.dskill2)}`:''}
   ${(()=>{const s_=((de&&(de.pool_en||''))+' '+(de&&(de.pool_es||''))),o=PEN.map((k,i)=>s_.includes(k)||s_.includes(POOL[i])?i:-1).filter(i=>i>=0);return o.length>1?`<div class="field"><label for="c-dpool">El descriptor deja elegir reserva: súmale +2 a</label><select id="c-dpool">${o.map(i=>`<option value="${i}" ${+S.dpool===i?'selected':''}>${POOL[i]}</option>`).join('')}</select></div>`:''})()}
-  <div class="field"><label for="c-type">Tipo</label><select id="c-type"><option value="">— elige —</option>${(GOTF()?['Champion','Shaper','Destroyer','Savior']:subsOf()).map(a=>`<optgroup label="${GOTF()?esc(a):a==='_'?esc(ST().n):SUBL[a]+(SUP()&&!/^Rank/.test(a)?' — adaptado':'')}">${D.types.filter(x=>GOTF()?x.arch===a:inSub(x,a)).map(x=>`<option value="${x.id}" ${x.id===S.type?'selected':''}>${esc(tyLab(x))}</option>`).join('')}</optgroup>`).join('')}</select></div>
-  ${ty_?`<div class="field"><label for="c-bg">${GOTF()?`Conexión de trasfondo (${ty_.arch}, GotF)`:'Trasfondo [CCR]'}</label><select id="c-bg"><option value="">— elige —</option>${bgList(ty_).map((b,i)=>`<option value="${i+1}" ${S.bg==String(i+1)?'selected':''}>${i+1}. ${esc(b.length>90?b.slice(0,88)+'…':b)}</option>`).join('')}<option value="custom" ${S.bg==='custom'?'selected':''}>Personalizado</option></select>${GOTF()?'<button type="button" id="c-bgroll" style="margin-top:6px">Tirar d20</button>':''}</div>${S.bg==='custom'?`<div class="field"><label for="c-bgc">Trasfondo personalizado</label><input id="c-bgc" type="text" value="${esc(S.bgc)}"></div>`:''}`:''}
-  <div class="field"><label for="c-edge">+1 de Ventaja del tipo en</label><select id="c-edge">${POOL.map((p,i)=>`<option value="${i}" ${+S.edge===i?'selected':''}>${p}</option>`).join('')}</select></div>
+  ${RW()&&!ty_?`<div class="field"><label for="c-profn">Profesión (trabajo, afición o interés central) [CCR, p. 37]</label><input id="c-profn" type="text" value="${esc(S.profn)}" placeholder="p. ej., abogada, médico, bombera"></div><div class="field"><label for="c-profk">Habilidad de la profesión</label>${skillSel('c-profk',S.profk,'elige')}</div>`:''}
+  <div class="field"><label for="c-type">${RW()?'Tipo histórico (opcional, si el DJ lo permite; sustituye a la profesión) [CCR, p. 35]':'Tipo'}</label><select id="c-type"><option value="">— ${RW()?'ninguno: profesión':'elige'} —</option>${(GOTF()?['Champion','Shaper','Destroyer','Savior']:subsOf()).map(a=>`<optgroup label="${GOTF()?esc(a):a==='_'?esc(ST().n):SUBL[a]+(SUP()&&!/^Rank/.test(a)?' — adaptado':'')}">${D.types.filter(x=>GOTF()?x.arch===a:inSub(x,a)).map(x=>`<option value="${x.id}" ${x.id===S.type?'selected':''}>${esc(tyLab(x))}</option>`).join('')}</optgroup>`).join('')}</select></div>
+  ${ty_||RW()?`<div class="field"><label for="c-bg">${GOTF()?`Conexión de trasfondo (${ty_.arch}, GotF)`:'Trasfondo [CCR]'}</label><select id="c-bg"><option value="">— elige —</option>${bgList(ty_).map((b,i)=>`<option value="${i+1}" ${S.bg==String(i+1)?'selected':''}>${i+1}. ${esc(b.length>90?b.slice(0,88)+'…':b)}</option>`).join('')}<option value="custom" ${S.bg==='custom'?'selected':''}>Personalizado</option></select>${GOTF()?'<button type="button" id="c-bgroll" style="margin-top:6px">Tirar d20</button>':''}</div>${S.bg==='custom'?`<div class="field"><label for="c-bgc">Trasfondo personalizado</label><input id="c-bgc" type="text" value="${esc(S.bgc)}"></div>`:''}`:''}
+  ${RW()&&!ty_?'':`<div class="field"><label for="c-edge">+1 de Ventaja del tipo en</label><select id="c-edge">${POOL.map((p,i)=>`<option value="${i}" ${+S.edge===i?'selected':''}>${p}</option>`).join('')}</select></div>`}
   ${ty_&&ty_.abilities.some(a=>a.en==='Machine Not Flesh')?`<div class="field"><label>Máquina, no carne (Machine Not Flesh): +4 puntos permanentes a repartir [CCR, p. 100]</label><div class="pools">${POOL.map((p,i)=>`<label>${p}<input type="number" min="0" max="4" data-mnf="${i}" value="${+(S.mnf||[])[i]||0}"></label>`).join('')}</div><p class="note" id="mnfnote"></p></div><div class="field"><label for="c-mnfe">Máquina, no carne: +1 de Ventaja adicional en</label><select id="c-mnfe">${POOL.map((p,i)=>`<option value="${i}" ${+S.mnfe===i?'selected':''}>${p}</option>`).join('')}</select></div>`:''}
   ${SUP()&&ty_?supForm(ty_):''}
-  <h3>3. Foco${GOTF()?' y dominio':''}</h3>
-  <div class="field"><label for="c-focus">Foco</label><select id="c-focus">${ST().sug?(()=>{const sg=D.sugfoci[ST().sug],o=l=>l.map(x=>`<option value="${x.id}" ${x.id===S.focus?'selected':''}>${esc(nmTxt(x))}</option>`).join('');return `<option value="">— elige —</option><optgroup label="Sugeridos para el subgénero">${o(D.foci.filter(f=>sg.includes(f.id)))}</optgroup><optgroup label="Otros (consulta con el DJ)">${o(D.foci.filter(f=>!sg.includes(f.id)))}</optgroup>`})():opt(D.foci,S.focus,'elige')}</select></div>
+  ${RW()?rwForm(ty_):`<h3>3. Foco${GOTF()?' y dominio':''}</h3>
+  <div class="field"><label for="c-focus">Foco</label><select id="c-focus">${ST().sug?(()=>{const sg=D.sugfoci[ST().sug],o=l=>l.map(x=>`<option value="${x.id}" ${x.id===S.focus?'selected':''}>${esc(nmTxt(x))}</option>`).join('');return `<option value="">— elige —</option><optgroup label="Sugeridos para el subgénero">${o(D.foci.filter(f=>sg.includes(f.id)))}</optgroup><optgroup label="Otros (consulta con el DJ)">${o(D.foci.filter(f=>!sg.includes(f.id)))}</optgroup>`})():opt(D.foci,S.focus,'elige')}</select></div>`}
   ${hasAb('Second Focus')?`<div class="field"><label for="c-focus2">Segundo foco (Dios viviente) [CCR, p. 136]</label><select id="c-focus2">${opt(D.foci.filter(x=>x.id!==S.focus),S.focus2,'elige')}</select></div>`:''}
   ${GOTF()?`<div class="field"><label for="c-domn">Dominio (nombre libre: Guerra, Muerte, Sol…)</label><input id="c-domn" type="text" value="${esc(S.dominion)}"></div>`:''}`;
   {
@@ -402,7 +429,7 @@ function renderForm(){if(applySetting())renderGuide();{const nt=tierFrom();if(nt
     for(let r=1;r<=t;r++){const a=S.adv[r]=S.adv[r]||{};const slots=r<t||t<6?4:3;
       h+=`<div class="card" style="margin:8px 0"><b>${r<t?`Rango ${r} (completado, subiste al ${r+1})`:`Rango ${r} (en curso)`}</b>`;
       for(let i=0;i<slots;i++){const v=a['s'+i]||'';const used=[0,1,2,3].filter(j=>j!==i).map(j=>a['s'+j]);const otherUsed=used.some(u=>u&&u.startsWith('o-'));
-        h+=`<div class="field"><select data-adv="${r}" data-slot="${i}" aria-label="Avance ${i+1}"><option value="">— avance ${i+1} —</option>${ADV.filter(([k])=>k===v||(!used.includes(k)&&!(k.startsWith('o-')&&otherUsed)&&!(k==='o-genre'&&r<3))).map(([k,l])=>`<option value="${k}" ${k===v?'selected':''}>${l}</option>`).join('')}</select>`;
+        h+=`<div class="field"><select data-adv="${r}" data-slot="${i}" aria-label="Avance ${i+1}"><option value="">— avance ${i+1} —</option>${ADV.filter(([k])=>k===v||(!used.includes(k)&&!(k.startsWith('o-')&&otherUsed)&&!(k==='o-genre'&&r<3)&&!(RW()&&(k==='o-focus'||(k==='o-genre'&&!ty_))))).map(([k,l])=>`<option value="${k}" ${k===v?'selected':''}>${l}</option>`).join('')}</select>`;
         if(v==='pools'){const pv=a['p'+i]||[0,0,0];h+=`<div class="pools" style="margin-top:6px">${POOL.map((p,j)=>`<label>${p}<input type="number" min="0" max="4" data-advp="${r}" data-slot="${i}" data-j="${j}" value="${+pv[j]||0}"></label>`).join('')}</div>`}
         if(v==='edge')h+=`<select data-adve="${r}" data-slot="${i}" style="margin-top:6px">${POOL.map((p,j)=>`<option value="${j}" ${+(a['e'+i]||0)===j?'selected':''}>Ventaja de ${p}</option>`).join('')}</select>`;
         if(v==='skill')h+=`<div style="margin-top:6px">${skillSel('adv-k'+r+i,a['k'+i],'habilidad',`data-advk="${r}" data-slot="${i}"`)}</div><p class="note">En rango 2 o más también vale atacar o defensa; especializarse en ataque o defensa, desde el rango 4.</p>`;
@@ -421,7 +448,7 @@ function renderForm(){if(applySetting())renderGuide();{const nt=tierFrom();if(nt
     h+=f2.abilities.slice().sort((a,b)=>a.tier-b.tier).map(a=>{const on=S.fa2.includes(a.id);const ok=on||(S.fa2.length<n2&&focusAvail(f2,S.fa2,a,t)&&(S.fa2.length>=2||a.tier===1));
       return `<label class="opt ${ok?'':'dis'}"><input type="checkbox" data-fa2="${a.id}" ${on?'checked':''} ${ok?'':'disabled'}><span><b>R${a.tier} · ${nm(a)}</b>${cost(a)}<small>${a.text_es?esc(a.text_es.slice(0,140)):esc((a.text_en||'').slice(0,140))}…</small></span></label>`}).join('')}
   if(t>=3){const lims={mid:1+extraGenre(),high:t>=6?1:0};
-    h+=`<h3>Habilidades ${GW()}</h3><p class="note">Una de nivel medio en el rango 3 y una de nivel alto en el rango 6, más las de los avances «Otro» [${ST().gref} y p. 313].</p>`+D.genre.filter(g=>g.level==='mid'||t>=6).map(g=>{const on=S.genre.includes(g.id);const cnt=S.genre.filter(x=>(D.genre.find(y=>y.id===x)||{}).level===g.level).length;const ok=on||cnt<(g.level==='mid'?lims.mid:lims.high+Math.max(0,0));
+    h+=`<h3>Habilidades ${GWA()}</h3><p class="note">Una de nivel medio en el rango 3 y una de nivel alto en el rango 6, más las de los avances «Otro» [${ST().gref} y p. 313].</p>`+D.genre.filter(g=>g.level==='mid'||t>=6).map(g=>{const on=S.genre.includes(g.id);const cnt=S.genre.filter(x=>(D.genre.find(y=>y.id===x)||{}).level===g.level).length;const ok=on||cnt<(g.level==='mid'?lims.mid:lims.high+Math.max(0,0));
     return `<label class="opt ${ok?'':'dis'}"><input type="checkbox" data-genre="${g.id}" ${on?'checked':''} ${ok?'':'disabled'}><span><b>${g.level==='mid'?'Medio':'Alto'}${SUP()?(g.genre==='scifi'?' (CF)':' (fantasía)'):''} · ${nm(g)}</b>${cost(g)}</span></label>`}).join('')}
   if(GOTF()){
   h+=`<h3>Dominio</h3><p class="note">Rango 1: Manifestar nimbo. Del 2 al 6, si cumpliste la Obligación de ese rango: una habilidad de dominio de ese rango (además de la de foco) o, si no despiertas una, una habilidad de foco extra (de tu rango o inferior y conectada) que cuenta como de dominio, con su coste pagable desde cualquier reserva. Sin la Obligación no hay beneficios de dominio hasta cumplirla. Desde el rango 3 puedes cambiar además una habilidad de dominio de rango inferior por otra distinta de rango inferior; Manifestar nimbo no se puede cambiar [GotF, cap. 12; la habilidad de foco sustituye a la de tipo: Adaptación].</p>`;
@@ -454,8 +481,25 @@ function supForm(ty){const si=supInfo(),t_=+S.tier;let h=`<h3>Superhéroe [CCR, 
   h+=`<h3>Cambios de poder (${used} de ${si.shifts})</h3><p class="note">Máximo 3 por categoría. Los marcados con * tienen reglas propias. El DJ puede ajustar cuántos tienes [CCR, p. 127].</p><div class="grid">${SHIFTS_SUP.map((n,i)=>`<label class="opt"><span style="flex:1">${n}${/Flight|Healing|Range|Prodigy/.test(n)?'*':''}</span><input type="number" min="0" max="3" data-psh="${i}" value="${+(S.psh||{})[i]||0}" style="width:70px"></label>`).join('')}</div>
   <div class="field"><label for="c-pshd">Detalles (habilidad de Poder, ataque de Ataque único, habilidades de Erudito…)</label><input id="c-pshd" type="text" value="${esc(S.pshd)}"></div>`;
   return h}
-const bgList=ty=>GOTF()?D.bg_gotf[ty.arch]:(ty.bg_es||ty.bg_en);
-function bgTxt(ty){if(S.bg==='custom')return S.bgc;if(S.bg&&ty)return bgList(ty)[+S.bg-1]||'';return ''}
+const bgList=ty=>GOTF()?D.bg_gotf[ty.arch]:RW()&&!ty?D.rw.bg:(ty.bg_es||ty.bg_en);
+const RWX=[['sk0','primera habilidad'],['sk1','segunda habilidad'],['sk3','tercera habilidad (a cambio de incapacidad)'],['prof','habilidad de la profesión']];
+function rwForm(ty){const t_=+S.tier;let h=`<h3>3. Reglas del mundo real</h3>`;
+  const slots=RWX.filter(([k])=>k!=='prof'||!ty);
+  h+=`<div class="field"><label for="c-rwx">Excepción de armas: habilidad inicial que se usa para anular la incapacidad [CCR, p. 37]</label><select id="c-rwx"><option value="">— no usarla —</option>${slots.map(([k,l])=>`<option value="${k}" ${S.rwx===k?'selected':''}>${l}</option>`).join('')}</select>${S.rwx?`<div style="height:6px"></div><input id="c-rwxw" type="text" value="${esc(S.rwxw)}" placeholder="clase de armas medias o pesadas: rifles medios, escopetas pesadas…" aria-label="Clase de armas"><p class="note">Esa habilidad no se gana: en su lugar anula la incapacidad con esa clase de armas. No facilita los ataques con ellas.</p>`:''}</div>`;
+  h+=`<label class="opt"><input type="checkbox" id="c-rwact" ${S.rwact?'checked':''}><span><b>Reglas opcionales de acción</b> (si el DJ las usa) [CCR, p. 33]<small>+2 heridas leves y +1 moderada, curación heroica y acciones desesperadas.</small></span></label>`;
+  if(!ty){h+=`<div class="field"><label for="c-rweq">Equipo inicial [CCR, p. 38]</label><select id="c-rweq"><option value="bundle" ${S.rweq!=='own'?'selected':''}>Lote del mundo real</option><option value="own" ${S.rweq==='own'?'selected':''}>Elegir tu propio equipo</option></select></div>`;
+    const tsk=k=>!D.skills_tier.includes(k);
+    const sel=(id,v,lab)=>`<select id="${id}"><option value="">— ${lab} —</option>${Object.keys(SK).filter(tsk).map(k=>`<option value="${k}" ${k===v?'selected':''}>${esc(skEs(k))}</option>`).join('')}</select>`;
+    if(t_>=3)h+=`<div class="field"><label for="c-rwsk3">Rango 3: habilidad extra (entrenado, o especializado si ya lo estabas) [CCR, p. 38]</label>${sel('c-rwsk3',S.rwsk3,'elige')}</div>`;
+    if(t_>=6)h+=`<div class="field"><label for="c-rwsk6">Rango 6: otra habilidad extra</label>${sel('c-rwsk6',S.rwsk6,'elige')}</div>`}
+  return h}
+function bgTxt(ty){if(S.bg==='custom')return S.bgc;if(S.bg&&(ty||RW()))return bgList(ty)[+S.bg-1]||'';return ''}
+function rwLines(c,ty){if(!RW())return null;const o=[];
+  if(!ty)o.push(['Profesión',(S.profn||'—')+(S.profk&&S.rwx!=='prof'?` (${skEs(S.profk)})`:'')]);
+  o.push(['Armas medias y pesadas','Incapacidad'+(S.rwx&&S.rwxw?`, salvo ${S.rwxw} (excepción de armas)`:'')+'; se anula al entrenarte en esos ataques en rangos altos']);
+  o.push(['Curación',S.rwact?'heroica: leve, una última acción; moderada, 1 minuto; grave, 10 minutos':'realista: leve, 10 minutos; moderada, 1 hora; grave, 1 semana']);
+  if(S.rwact)o.push(['Acciones desesperadas','Con al menos dos heridas moderadas o una grave, una repetición gratuita de una acción cada asalto (si el DJ la usa)']);
+  return {rows:o,eq:ty?null:(S.rweq==='own'?D.rw.own:D.rw.bundle),sent:`Soy ${ty?nmTxt(ty):(S.profn||'[profesión]')} ${(()=>{const de=D.descriptors.find(x=>x.id===S.desc);return de?nmTxt(de):'[descriptor]'})()}.`}}
 function supLines(c){/* texto común de la ficha y el PDF para superhéroes */
   const si=c.si;if(!si)return null;const o=D.origin.find(x=>x.id===S.orig),f2=hasAb('Second Focus')?D.foci.find(x=>x.id===S.focus2):null;
   const sh=Object.entries(S.psh||{}).filter(([k,v])=>+v>0).map(([k,v])=>`${SHIFTS_SUP[k]} ×${v}`);
@@ -465,12 +509,12 @@ function supLines(c){/* texto común de la ficha y el PDF para superhéroes */
 function renderSheet(){if(document.body.classList.contains('psheet'))document.title=fname();
   const ty=D.types.find(x=>x.id===S.type),de=D.descriptors.find(x=>x.id===S.desc),f=D.foci.find(x=>x.id===S.focus),sp=D.species.find(x=>x.id===S.sp);
   const c=calc(),t=+S.tier;
-  const L=supLines(c);
-  const sent=`Soy ${ty?esc(nmTxt(ty)):'[tipo]'} ${sp?esc(nmTxt(sp))+' ':''}${de?esc(nmTxt(de)):'[descriptor]'} que ${f?esc(nmTxt(f)):'[foco]'}${L&&L.f2?' y que '+esc(nmTxt(L.f2)):''}${GOTF()&&S.dominion?', dios de '+esc(S.dominion):''}.`;
+  const L=supLines(c),RL=rwLines(c,ty);
+  const sent=RL?esc(RL.sent):`Soy ${ty?esc(nmTxt(ty)):'[tipo]'} ${sp?esc(nmTxt(sp))+' ':''}${de?esc(nmTxt(de)):'[descriptor]'} que ${f?esc(nmTxt(f)):'[foco]'}${L&&L.f2?' y que '+esc(nmTxt(L.f2)):''}${GOTF()&&S.dominion?', dios de '+esc(S.dominion):''}.`;
   let h=`<h2 style="margin-top:0">${esc(S.name||'Personaje sin nombre')}</h2><p>${sent}</p>`;
   h+=`<div class="pools">${POOL.map((n,i)=>`<div>${n}<strong>${c.p[i]}</strong>Ventaja ${c.edge[i]}</div>`).join('')}</div>`;
   h+=`<table style="margin-top:10px"><tbody>
-   ${bgTxt(ty)?`<tr><th>Trasfondo</th><td>${esc(bgTxt(ty))}</td></tr>`:''}
+   ${bgTxt(ty)?`<tr><th>Trasfondo</th><td>${esc(bgTxt(ty))}</td></tr>`:''}${RL?RL.rows.map(([k,v])=>`<tr><th>${k}</th><td>${esc(v)}</td></tr>`).join(''):''}
    <tr><th>Rango</th><td>${t}</td></tr>${L?`<tr><th>Categoría</th><td>${L.si.rank}${L.si.alt?' (tipo adaptado)':''}</td></tr>`:''}<tr><th>Esfuerzo</th><td>${L?L.eff:c.effort}</td></tr>
    <tr><th>Heridas</th><td>${L?L.wnd:`${c.w[0]} leves · ${c.w[1]} moderadas · ${c.w[2]} graves`}</td></tr>
    <tr><th>Recuperación</th><td>${L?L.rec:'1d6 + '+(t+c.rec)}</td></tr><tr><th>Límite de cifras</th><td>${c.cyphers}</td></tr>
@@ -488,7 +532,7 @@ function renderSheet(){if(document.body.classList.contains('psheet'))document.ti
   if(f){h+=`<h3>Foco</h3>`+S.fa.map(id=>abById(f,id)).sort((a,b)=>a.tier-b.tier).map(a=>`<div class="ab"><b>R${a.tier} · ${nm(a)}${cost(a)}.</b> ${tx(a)}</div>`).join('');
     if(f.eq_es||f.eq_en)h+=`<p><b>Equipo adicional:</b> ${tx(f,'eq')}</p>`}
   if(L&&L.f2){h+=`<h3>Segundo foco</h3>`+L.fa2.map(a=>`<div class="ab"><b>R${a.tier} · ${nm(a)}${cost(a)}.</b> ${tx(a)}</div>`).join('');if(L.f2.eq_es||L.f2.eq_en)h+=`<p><b>Equipo adicional:</b> ${tx(L.f2,'eq')}</p>`}
-  if(S.genre.length)h+=`<h3>Habilidades ${GW()}</h3>`+S.genre.map(id=>D.genre.find(x=>x.id===id)).filter(Boolean).map(a=>`<div class="ab"><b>${nm(a)}${cost(a)}.</b> ${tx(a)}</div>`).join('');
+  if(S.genre.length)h+=`<h3>Habilidades ${GWA()}</h3>`+S.genre.map(id=>D.genre.find(x=>x.id===id)).filter(Boolean).map(a=>`<div class="ab"><b>${nm(a)}${cost(a)}.</b> ${tx(a)}</div>`).join('');
   const sh=GOTF()?Object.entries(S.shifts).filter(([k,v])=>+v>0):[];
   if(GOTF()){
   h+=`<h3>Dominio</h3>`+domOwned().map(({r,a,swap})=>r===1&&!swap?`<div class="ab"><b>${nm(a)}</b></div>`:`<div class="ab"><b>R${a.tier} · ${nm(a)}${cost(a)}.</b>${swap?` <span class="badge">cambio del rango ${swap}</span>`:''} ${tx(a)}</div>`).join('');
@@ -496,7 +540,7 @@ function renderSheet(){if(document.body.classList.contains('psheet'))document.ti
   {const pend=[];for(let r=2;r<=t;r++)if(dMode(r)==='pend')pend.push(r);if(pend.length)h+=`<p class="note">Obligación pendiente en rango ${pend.join(', ')}: sus beneficios de dominio llegan al cumplirla.</p>`}
   if(sh.length)h+=`<h3>Desplazamientos</h3>`+sh.map(([k,v])=>`<span class="pill">${SHIFTS[k]} ×${v}</span>`).join('');
   }
-  if(ty)h+=`<h3>Equipo</h3><p>${tx(ty,'bundle')}</p>`;
+  if(ty)h+=`<h3>Equipo</h3><p>${tx(ty,'bundle')}</p>`;else if(RL)h+=`<h3>Equipo</h3><p>${esc(RL.eq)}</p>`;
   const lib=LIB(),ids=Object.keys(lib).sort((a,b)=>lib[a].name.localeCompare(lib[b].name,'es'));
   h+=`<div class="noprint" style="margin-top:16px"><p><button id="psave">Guardar</button> <button id="pdf">Exportar PDF</button> <button id="copy">Copiar ficha</button> <button id="reset">Nuevo personaje</button></p>
    <p><label for="plist">Personajes guardados</label><br><select id="plist"><option value="">— elige —</option>${ids.map(i=>`<option value="${i}" ${S._id===i?'selected':''}>${esc(lib[i].name)}</option>`).join('')}</select> <button id="pload">Cargar</button> <button id="pdel">Borrar</button></p>
@@ -520,10 +564,10 @@ async function exportSheetPDF(){
   const doc=await PDFDocument.load(await (await fetch('hoja_es.pdf')).arrayBuffer());
   const form=doc.getForm(),helv=await doc.embedFont(StandardFonts.Helvetica);
   const ty=D.types.find(x=>x.id===S.type),de=D.descriptors.find(x=>x.id===S.desc),f=D.foci.find(x=>x.id===S.focus),sp=D.species.find(x=>x.id===S.sp);
-  const c=calc(),L=supLines(c),t=+S.tier,T=(k,v)=>{try{form.getTextField(k).setText(String(v??''))}catch(e){}},X=k=>{try{form.getCheckBox(k).check()}catch(e){}};
+  const c=calc(),L=supLines(c),RL=rwLines(c,ty),t=+S.tier,T=(k,v)=>{try{form.getTextField(k).setText(String(v??''))}catch(e){}},X=k=>{try{form.getCheckBox(k).check()}catch(e){}};
   const FS=(k,n)=>{try{form.getTextField(k).acroField.setDefaultAppearance(`/Helv ${n} Tf 0 g`)}catch(e){}};
   const txt=a=>a.text_es||a.text_en||'',cst=a=>{const k=a.cost_es||a.cost;return k?` (${k})`:''};
-  T('Name',S.name);const es=x=>x.es||x.en;T('Descriptor or Species',ty?es(ty):'');T('Type',[sp&&es(sp),de&&es(de)].filter(Boolean).join(' '));T('Focus',f?es(f)+(L&&L.f2?' / '+es(L.f2):''):'');['Name','Descriptor or Species','Type','Focus'].forEach(k=>FS(k,9));
+  T('Name',S.name);const es=x=>x.es||x.en;T('Descriptor or Species',ty?es(ty):RL?S.profn:'');T('Type',[sp&&es(sp),de&&es(de)].filter(Boolean).join(' '));T('Focus',f?es(f)+(L&&L.f2?' / '+es(L.f2):''):'');['Name','Descriptor or Species','Type','Focus'].forEach(k=>FS(k,9));
   ['Might','Speed','Intellect'].forEach((k,i)=>{T(k+'_Pool',c.p[i]);T(k+'_Scratch',c.p[i]);T(k+'_Edge',c.edge[i])});
   T('Tier',t);T('Effort',c.effort);T('Recovery_Amount',t+c.rec);T('Cypher_Limit',c.cyphers);T('Resource_Points',t>1?c.rp:'');
   c.skills.slice(0,14).forEach(([k,v],i)=>{T('Skills'+(i+1),skEs(v));FS('Skills'+(i+1),7.5);FS('Skills'+(i+1)+'-Training',7.5);T('Skills'+(i+1)+'-Training',{T:'E',S:'ES',I:'I'}[k]||k)});
@@ -537,7 +581,7 @@ async function exportSheetPDF(){
   if(L){ab.push('SUPERHÉROE: categoría '+L.si.rank+' · Superheroicidades en '+POOL[+S.shp||0]+(hasAb('Super Combatant')&&S.scomb?' · Supercombatiente: '+S.scomb:''));if(L.o)ab.push(`• Origen · ${nmTxt(L.o)}${cst(L.o)}. ${txt(L.o)}`);if(L.sh.length)ab.push('• Cambios de poder: '+L.sh.join(', ')+(S.pshd?'. '+S.pshd:''));ab.push('')}
   if(f)ab.push('FOCO: '+nmTxt(f),...S.fa.map(id=>abById(f,id)).sort((a,b)=>a.tier-b.tier).map(a=>`• R${a.tier} · ${nmTxt(a)}${cst(a)}. ${txt(a)}`),'');
   if(L&&L.f2)ab.push('SEGUNDO FOCO: '+nmTxt(L.f2),...L.fa2.map(a=>`• R${a.tier} · ${nmTxt(a)}${cst(a)}. ${txt(a)}`),'');
-  const g=S.genre.map(id=>D.genre.find(x=>x.id===id)).filter(Boolean);if(g.length)ab.push(('HABILIDADES '+GW()).toUpperCase(),...g.map(a=>`• ${nmTxt(a)}${cst(a)}. ${txt(a)}`),'');
+  const g=S.genre.map(id=>D.genre.find(x=>x.id===id)).filter(Boolean);if(g.length)ab.push(('HABILIDADES '+GWA()).toUpperCase(),...g.map(a=>`• ${nmTxt(a)}${cst(a)}. ${txt(a)}`),'');
   if(GOTF()){ab.push('DOMINIO'+(S.dominion?': '+S.dominion:''),'• '+nmTxt(D.dominion.find(x=>x.tier===1))+'. '+txt(D.dominion.find(x=>x.tier===1)));
   domOwned().slice(1).forEach(({a})=>ab.push(`• R${a.tier} · ${nmTxt(a)}${cst(a)}. ${txt(a)}`));
   if(domFocus())ab.push(`• ${domFocus()} habilidad(es) de foco cuentan como de dominio (coste pagable desde cualquier reserva).`);}
@@ -551,12 +595,12 @@ async function exportSheetPDF(){
     if(k===0||used<=b.n)break}
   [['Special_Abilities',parts[0]],['Cyphers_Abilities_Cont',parts[1]]].forEach(([k,v])=>{T(k,v.join('\n'));FS(k,size)});
   const sent=`Soy ${ty?nmTxt(ty):'[tipo]'} ${sp?nmTxt(sp)+' ':''}${de?nmTxt(de):'[descriptor]'} que ${f?nmTxt(f):'[foco]'}${L&&L.f2?' y que '+nmTxt(L.f2):''}${GOTF()&&S.dominion?', dios de '+S.dominion:''}.`;
-  const notes=[sent,''];if(bgTxt(ty))notes.push('Trasfondo: '+bgTxt(ty),'');
+  const notes=[RL?RL.sent:sent,''];if(RL)notes.push(...RL.rows.map(([k,v])=>`${k}: ${v}`),'');if(bgTxt(ty))notes.push('Trasfondo: '+bgTxt(ty),'');
   notes.push(`Heridas: ${L?L.wnd:`${c.w[0]} leves · ${c.w[1]} moderadas · ${c.w[2]} graves`}`,`Armas: ${W} · Armadura: ${A}`);
   if(L)notes.push(`Esfuerzo: ${L.eff} · Recuperación: ${L.rec}`,'Rehacerte (rally) de una herida grave: una acción y 10 de Potencia. Tratar: leve, última acción; moderada, 1 minuto; grave, 10 minutos.');
   if(de){notes.push('','DESCRIPTOR: '+nmTxt(de));if(de.desc_es||de.desc_en)notes.push(de.desc_es||de.desc_en)}
   T('Notes_Background',notes.join('\n'));FS('Notes_Background',7.5);
-  const eq=[ty&&(ty.bundle_es||ty.bundle_en),f&&(f.eq_es||f.eq_en)].filter(Boolean);T('Equipment',eq.join('\n'));FS('Equipment',7.5);
+  const eq=[ty&&(ty.bundle_es||ty.bundle_en),f&&(f.eq_es||f.eq_en),RL&&RL.eq].filter(Boolean);T('Equipment',eq.join('\n'));FS('Equipment',7.5);
   // casillas de heridas según la capacidad del personaje: sobrantes fuera, extras con trazo continuo
   {const {rgb,PDFName,PDFNumber}=await import('./pdf-lib.esm.min.js');const pg=doc.getPages()[0],red=rgb(134/255,37/255,36/255);
    const rows=[['Minor',6,c.ignMinor?0:c.w[0],rgb(1,1,1)],['Moderate',6,c.w[1],rgb(253/255,218/255,196/255)]];
@@ -579,6 +623,7 @@ function bind(){
     else if(el.id==='c-sp')S.sp=el.value;else if(el.id==='c-type'){const o=D.types.find(x=>x.id===S.type),n=D.types.find(x=>x.id===el.value);if(!o||!n||!GOTF()||o.arch!==n.arch){if(S.bg!=='custom')S.bg=''}S.type=el.value}else if(el.id==='c-bg')S.bg=el.value;else if(el.id==='c-edge')S.edge=+el.value;else if(el.id==='c-mnfe')S.mnfe=+el.value;else if(el.id==='c-dpool')S.dpool=+el.value;
     else if(el.id==='c-focus'){S.focus=el.value;S.fa=[];if(S.focus2===S.focus){S.focus2='';S.fa2=[]}}
     else if(el.id==='c-focus2'){S.focus2=el.value;S.fa2=[]}
+    else if(el.id==='c-profk')S.profk=el.value;else if(el.id==='c-rwx')S.rwx=el.value;else if(el.id==='c-rwact')S.rwact=el.checked;else if(el.id==='c-rweq')S.rweq=el.value;else if(el.id==='c-rwsk3')S.rwsk3=el.value;else if(el.id==='c-rwsk6')S.rwsk6=el.value;
     else if(el.id==='c-srank'){S.srank=+el.value;S.salt=''}else if(el.id==='c-salt')S.salt=el.value;else if(el.id==='c-shp')S.shp=+el.value;else if(el.id==='c-orig')S.orig=el.value;
     else if(d.ov!==undefined){S.ov=S.ov||[0,0,0];S.ov[+d.ov]=Math.max(0,Math.min(12,+el.value||0))}
     else if(d.psh!==undefined){S.psh=S.psh||{};S.psh[d.psh]=Math.max(0,Math.min(3,+el.value||0))}
@@ -599,7 +644,7 @@ function bind(){
     else if(el.id==='c-shxp'){S.shiftXP=Math.max(0,+el.value||0)}
     else if(d.shift!==undefined){S.shifts[d.shift]=Math.max(0,Math.min(3,+el.value||0))}
     save();renderForm();renderSheet()});
-  $('#form').addEventListener('input',e=>{if(e.target.id==='c-name'){S.name=e.target.value;save();renderSheet()}if(e.target.id==='c-bgc'){S.bgc=e.target.value;save();renderSheet()}if(e.target.id==='c-domn'){S.dominion=e.target.value;save();renderSheet()}if(e.target.id==='c-scomb'){S.scomb=e.target.value;save();renderSheet()}if(e.target.id==='c-pshd'){S.pshd=e.target.value;save();renderSheet()}});
+  $('#form').addEventListener('input',e=>{if(e.target.id==='c-name'){S.name=e.target.value;save();renderSheet()}if(e.target.id==='c-bgc'){S.bgc=e.target.value;save();renderSheet()}if(e.target.id==='c-domn'){S.dominion=e.target.value;save();renderSheet()}if(e.target.id==='c-profn'){S.profn=e.target.value;save();renderSheet()}if(e.target.id==='c-rwxw'){S.rwxw=e.target.value;save();renderSheet()}if(e.target.id==='c-scomb'){S.scomb=e.target.value;save();renderSheet()}if(e.target.id==='c-pshd'){S.pshd=e.target.value;save();renderSheet()}});
   $('#form').addEventListener('click',e=>{if(e.target.id==='c-bgroll'){S.bg=String(1+Math.floor(Math.random()*20));save();renderForm();renderSheet()}});
   $('#sheet').addEventListener('click',async e=>{
     if(e.target.id==='copy'){try{await navigator.clipboard.writeText(sheetText());$('#copymsg').textContent='Ficha copiada.'}catch(err){$('#copymsg').textContent='No se pudo copiar; selecciona el texto de la ficha.'}}
@@ -624,6 +669,7 @@ function trimPicks(){
   if(f2){const kept=[];for(const id of S.fa2){const a=abById(f2,id);if(a.tier<=t&&(a.tier===1||focusAvail(f2,kept,a,t)))kept.push(id)}S.fa2=kept.slice(0,2+(t-1))}
   const mid=1+extraGenre();let m=0;
   S.genre=S.genre.filter(id=>{const g=D.genre.find(x=>x.id===id);if(!g)return false;if(g.level==='mid'){if(t<3||m>=mid)return false;m++;return true}return t>=6});
+  if(t<3)S.rwsk3='';if(t<6)S.rwsk6='';
   for(const k of ['dom','domMode','domSwap'])for(const r of Object.keys(S[k]||{}))if(+r>t)delete S[k][r];
 }
 function route(){const v=location.hash==='#creador'?'creador':'guia';document.body.classList.toggle('psheet',v==='creador');document.title=v==='creador'?fname():TITLE;$('#guia').hidden=v!=='guia';$('#creador').hidden=v!=='creador';
