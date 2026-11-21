@@ -184,7 +184,7 @@ function renderGuide(){
 }
 
 /* ---------- Creador (reglas del Cypher Character Rulebook) ---------- */
-const BLANK=()=>({name:'',desc:'',desc2:'',dskill:'',dskill2:'',dpool:0,sp:'',type:'',focus:'',dominion:'',bg:'',bgc:'',tier:1,alloc:[2,2,2],edge:0,sk:['',''],sk3:'',inab:'',fa:[],genre:[],dom:{},shifts:{},adv:{}});
+const BLANK=()=>({name:'',desc:'',desc2:'',dskill:'',dskill2:'',dpool:0,sp:'',type:'',focus:'',dominion:'',bg:'',bgc:'',tier:1,alloc:[2,2,2],edge:0,sk:['',''],sk3:'',inab:'',fa:[],genre:[],dom:{},domMode:{},domSwap:{},shiftXP:0,shifts:{},adv:{}});
 let S=BLANK();const TITLE=document.title;
 try{Object.assign(S,JSON.parse(localStorage.getItem('gotf-pj2')||'{}'))}catch(e){}
 const save=()=>{try{localStorage.setItem('gotf-pj2',JSON.stringify(S))}catch(e){}};
@@ -232,6 +232,15 @@ function calc(){
   return {p,edge,w,effort,cyphers,rec,weapons,armor,skills,rp,nadv};
 }
 const extraFocus=()=>advList().filter(x=>x.k==='o-focus').length;
+const dMode=r=>(S.domMode||{})[r]||'dom';
+const domFocus=()=>{let n=0;for(let r=2;r<=+S.tier;r++)if(dMode(r)==='focus')n++;return n};
+const focusNeed=t=>2+(t-1)+extraFocus()+domFocus();
+function domOwned(upTo=+S.tier){const own=[{r:1,a:D.dominion.find(x=>x.tier===1)}];
+  for(let r=2;r<=upTo;r++){if(dMode(r)!=='dom')continue;const a=D.dominion.find(x=>x.id===S.dom[r]);if(a)own.push({r,a});
+    const sw=(S.domSwap||{})[r];if(r>=3&&sw&&sw.from&&sw.to){const i=own.findIndex(o=>o.a.id===sw.from&&o.a.tier<r),n=D.dominion.find(x=>x.id===sw.to);
+      if(i>=0&&n&&n.tier<r&&!own.some(o=>o.a.id===n.id))own[i]={r:own[i].r,a:n,swap:r}}}
+  return own}
+const shiftTotal=()=>{let n=+S.shiftXP||0;for(let r=2;r<=+S.tier;r++)if(dMode(r)!=='pend')n+=r===2?3:1;return n};
 const extraGenre=()=>advList().filter(x=>x.k==='o-genre').length;
 function focusAvail(f,owned,a,t){
   if(a.tier>t||owned.includes(a.id))return false;
@@ -243,7 +252,7 @@ function skillSel(id,val,lab,data=''){return `<select id="${id}" ${data}><option
 function renderForm(){{const nt=tierFrom();if(nt!==+S.tier){S.tier=nt;trimPicks();save()}}
   const opt=(arr,sel,lab)=>`<option value="">— ${lab} —</option>`+arr.map(x=>`<option value="${x.id}" ${x.id===sel?'selected':''}>${esc(nmTxt(x))}</option>`).join('');
   const ty_=D.types.find(x=>x.id===S.type), f=D.foci.find(x=>x.id===S.focus), t=+S.tier, de=D.descriptors.find(x=>x.id===S.desc), de2=D.descriptors.find(x=>x.id===S.desc2);
-  const need=2+(t-1)+extraFocus();
+  const need=focusNeed(t);
   const dsel=(d,id,val)=>{const o=descSkills(d);return d?`<div class="field"><label for="${id}">Habilidad del descriptor ${esc(nmTxt(d))}</label>${o.length?`<select id="${id}"><option value="">— elige —</option>${o.map(k=>`<option value="${k}" ${k===val?'selected':''}>${esc(skEs(k))}</option>`).join('')}</select>`:`<p class="note">${esc(d.skills_es||'')} (anótala en la ficha).</p>`}</div>`:''};
   let h=`<h2 style="margin-top:0">Creador</h2><p class="note">Reglas del <em>Cypher Character Rulebook</em> (2026) más la capa divina de GotF. Se guarda en este navegador.</p>
   <h3>1. Personaje núcleo</h3>
@@ -284,10 +293,18 @@ function renderForm(){{const nt=tierFrom();if(nt!==+S.tier){S.tier=nt;trimPicks(
   if(t>=3){const lims={mid:1+extraGenre(),high:t>=6?1:0};
     h+=`<h3>Habilidades de fantasía</h3><p class="note">Una de nivel medio en el rango 3 y una de nivel alto en el rango 6, más las de los avances «Otro» [CCR, p. 82 y 313].</p>`+D.genre.filter(g=>g.level==='mid'||t>=6).map(g=>{const on=S.genre.includes(g.id);const cnt=S.genre.filter(x=>(D.genre.find(y=>y.id===x)||{}).level===g.level).length;const ok=on||cnt<(g.level==='mid'?lims.mid:lims.high+Math.max(0,0));
     return `<label class="opt ${ok?'':'dis'}"><input type="checkbox" data-genre="${g.id}" ${on?'checked':''} ${ok?'':'disabled'}><span><b>${g.level==='mid'?'Medio':'Alto'} · ${nm(g)}</b>${cost(g)}</span></label>`}).join('')}
-  h+=`<h3>Dominio</h3><p class="note">Rango 1: Manifestar nimbo. Del 2 al 6, una habilidad de la lista de ese rango, además de la de foco, si cumpliste la Obligación [GotF, cap. 12; Adaptación].</p>`;
-  for(let r=2;r<=t;r++) h+=`<div class="field"><label for="c-dom${r}">Rango ${r}</label><select id="c-dom${r}" data-dom="${r}"><option value="">— elige —</option>${D.dominion.filter(x=>x.tier===r).map(x=>`<option value="${x.id}" ${S.dom[r]===x.id?'selected':''}>${esc(nmTxt(x))}</option>`).join('')}</select></div>`;
-  if(t>=2){const tot=t+1,used=Object.values(S.shifts).reduce((a,b)=>a+(+b||0),0);
-    h+=`<h3>Desplazamientos divinos (${used} de ${tot})</h3><p class="note">Máximo 3 por categoría [GotF y CCR, p. 127].</p><div class="grid">${SHIFTS.map((s,i)=>`<label class="opt"><span style="flex:1">${s}</span><input type="number" min="0" max="3" data-shift="${i}" value="${+S.shifts[i]||0}" style="width:70px"></label>`).join('')}</div>`}
+  h+=`<h3>Dominio</h3><p class="note">Rango 1: Manifestar nimbo. Del 2 al 6, si cumpliste la Obligación de ese rango: una habilidad de dominio de ese rango (además de la de foco) o, si no despiertas una, una habilidad de foco extra (de tu rango o inferior y conectada) que cuenta como de dominio, con su coste pagable desde cualquier reserva. Sin la Obligación no hay beneficios de dominio hasta cumplirla. Desde el rango 3 puedes cambiar además una habilidad de dominio de rango inferior por otra distinta de rango inferior [GotF, cap. 12; la habilidad de foco sustituye a la de tipo: Adaptación].</p>`;
+  for(let r=2;r<=t;r++){const m=dMode(r);
+    h+=`<div class="card" style="margin:8px 0"><b>Rango ${r}</b><div class="field"><select data-dmode="${r}" aria-label="Beneficio de dominio del rango ${r}">${[['dom','Habilidad de dominio'],['focus','Habilidad de foco en su lugar'],['pend','Obligación pendiente']].map(([k,l])=>`<option value="${k}" ${m===k?'selected':''}>${l}</option>`).join('')}</select></div>`;
+    if(m==='dom')h+=`<div class="field"><select id="c-dom${r}" data-dom="${r}" aria-label="Habilidad de dominio de rango ${r}"><option value="">— elige —</option>${D.dominion.filter(x=>x.tier===r).map(x=>`<option value="${x.id}" ${S.dom[r]===x.id?'selected':''}>${esc(nmTxt(x))}</option>`).join('')}</select></div>`;
+    if(m==='focus')h+=`<p class="note">Elige la habilidad extra en «Habilidades de foco».</p>`;
+    if(r>=3&&m!=='pend'){const sw=(S.domSwap||{})[r]||{},prev=domOwned(r-1).filter(o=>o.a.tier<r),ownIds=domOwned(r-1).map(o=>o.a.id);
+      h+=`<div class="field"><label>Cambio opcional</label><select data-dswap="${r}" data-k="from" aria-label="Habilidad que cambias"><option value="">— no cambiar —</option>${prev.map(o=>`<option value="${o.a.id}" ${sw.from===o.a.id?'selected':''}>${esc(nmTxt(o.a))}</option>`).join('')}</select>`;
+      if(sw.from)h+=` <select data-dswap="${r}" data-k="to" aria-label="Habilidad nueva"><option value="">— por… —</option>${D.dominion.filter(x=>x.tier<r&&!ownIds.includes(x.id)).map(x=>`<option value="${x.id}" ${sw.to===x.id?'selected':''}>R${x.tier} · ${esc(nmTxt(x))}</option>`).join('')}</select>`;
+      h+=`</div>`}
+    h+=`</div>`}
+  if(t>=2){const tot=shiftTotal(),used=Object.values(S.shifts).reduce((a,b)=>a+(+b||0),0);
+    h+=`<h3>Desplazamientos divinos (${used} de ${tot})</h3><p class="note">3 en el rango 2 y 1 más por rango, con la Obligación cumplida; también se compran a 10 PX cada uno. Máximo 3 por categoría [GotF, cap. 12; CCR, p. 127].</p><div class="field"><label for="c-shxp">Comprados con PX (10 PX cada uno)</label><input id="c-shxp" type="number" min="0" value="${+S.shiftXP||0}" style="width:70px"></div><div class="grid">${SHIFTS.map((s,i)=>`<label class="opt"><span style="flex:1">${s}</span><input type="number" min="0" max="3" data-shift="${i}" value="${+S.shifts[i]||0}" style="width:70px"></label>`).join('')}</div>`}
   $('#form').innerHTML=h;
   const a=S.alloc.reduce((x,y)=>x+(+y||0),0);$('#allocnote').textContent=a===6?'':`Has repartido ${a} de 6.`;
 }
@@ -313,8 +330,9 @@ function renderSheet(){if(document.body.classList.contains('psheet'))document.ti
   if(f){h+=`<h3>Foco</h3>`+S.fa.map(id=>abById(f,id)).sort((a,b)=>a.tier-b.tier).map(a=>`<div class="ab"><b>R${a.tier} · ${nm(a)}${cost(a)}.</b> ${tx(a)}</div>`).join('');
     if(f.eq_es||f.eq_en)h+=`<p><b>Equipo adicional:</b> ${tx(f,'eq')}</p>`}
   if(S.genre.length)h+=`<h3>Fantasía</h3>`+S.genre.map(id=>D.genre.find(x=>x.id===id)).filter(Boolean).map(a=>`<div class="ab"><b>${nm(a)}${cost(a)}.</b> ${tx(a)}</div>`).join('');
-  h+=`<h3>Dominio</h3><div class="ab"><b>${nm(D.dominion.find(x=>x.tier===1))}</b></div>`;
-  for(let r=2;r<=t;r++){const a=D.dominion.find(x=>x.id===S.dom[r]);if(a)h+=`<div class="ab"><b>R${r} · ${nm(a)}${cost(a)}.</b> ${tx(a)}</div>`}
+  h+=`<h3>Dominio</h3>`+domOwned().map(({r,a,swap})=>r===1&&!swap?`<div class="ab"><b>${nm(a)}</b></div>`:`<div class="ab"><b>R${a.tier} · ${nm(a)}${cost(a)}.</b>${swap?` <span class="badge">cambio del rango ${swap}</span>`:''} ${tx(a)}</div>`).join('');
+  if(domFocus())h+=`<p class="note">${domFocus()} de tus habilidades de foco cuentan como de dominio: su coste se paga desde cualquier reserva.</p>`;
+  {const pend=[];for(let r=2;r<=t;r++)if(dMode(r)==='pend')pend.push(r);if(pend.length)h+=`<p class="note">Obligación pendiente en rango ${pend.join(', ')}: sus beneficios de dominio llegan al cumplirla.</p>`}
   const sh=Object.entries(S.shifts).filter(([k,v])=>+v>0);
   if(sh.length)h+=`<h3>Desplazamientos</h3>`+sh.map(([k,v])=>`<span class="pill">${SHIFTS[k]} ×${v}</span>`).join('');
   if(ty)h+=`<h3>Equipo</h3><p>${tx(ty,'bundle')}</p>`;
@@ -357,7 +375,8 @@ async function exportSheetPDF(){
   if(f)ab.push('FOCO: '+nmTxt(f),...S.fa.map(id=>abById(f,id)).sort((a,b)=>a.tier-b.tier).map(a=>`• R${a.tier} · ${nmTxt(a)}${cst(a)}. ${txt(a)}`),'');
   const g=S.genre.map(id=>D.genre.find(x=>x.id===id)).filter(Boolean);if(g.length)ab.push('FANTASÍA',...g.map(a=>`• ${nmTxt(a)}${cst(a)}. ${txt(a)}`),'');
   ab.push('DOMINIO'+(S.dominion?': '+S.dominion:''),'• '+nmTxt(D.dominion.find(x=>x.tier===1))+'. '+txt(D.dominion.find(x=>x.tier===1)));
-  for(let r=2;r<=t;r++){const a=D.dominion.find(x=>x.id===S.dom[r]);if(a)ab.push(`• R${r} · ${nmTxt(a)}${cst(a)}. ${txt(a)}`)}
+  domOwned().slice(1).forEach(({a})=>ab.push(`• R${a.tier} · ${nmTxt(a)}${cst(a)}. ${txt(a)}`));
+  if(domFocus())ab.push(`• ${domFocus()} habilidad(es) de foco cuentan como de dominio (coste pagable desde cualquier reserva).`);
   const sh=Object.entries(S.shifts).filter(([k,v])=>+v>0);if(sh.length)ab.push('','DESPLAZAMIENTOS DIVINOS: '+sh.map(([k,v])=>`${SHIFTS[k]} ×${v}`).join(', '));
   // reparte el texto entre «Habilidades especiales» y «Cifras/habilidades (cont.)»
   const fit=(fld,size)=>{const r=form.getTextField(fld).acroField.getWidgets()[0].getRectangle();return {w:r.width-4,n:Math.floor((r.height-4)/(size*1.16))}};
@@ -404,6 +423,9 @@ function bind(){
     else if(d.fa){if(el.checked)S.fa.push(d.fa);else{S.fa=S.fa.filter(x=>x!==d.fa);trimPicks()}}
     else if(d.genre){if(el.checked)S.genre.push(d.genre);else S.genre=S.genre.filter(x=>x!==d.genre)}
     else if(d.dom){S.dom[d.dom]=el.value}
+    else if(d.dmode){(S.domMode=S.domMode||{})[d.dmode]=el.value;trimPicks()}
+    else if(d.dswap){const w=(S.domSwap=S.domSwap||{})[d.dswap]=S.domSwap[d.dswap]||{};w[d.k]=el.value;if(d.k==='from')w.to=''}
+    else if(el.id==='c-shxp'){S.shiftXP=Math.max(0,+el.value||0)}
     else if(d.shift!==undefined){S.shifts[d.shift]=Math.max(0,Math.min(3,+el.value||0))}
     save();renderForm();renderSheet()});
   $('#form').addEventListener('input',e=>{if(e.target.id==='c-name'){S.name=e.target.value;save();renderSheet()}if(e.target.id==='c-bgc'){S.bgc=e.target.value;save();renderSheet()}if(e.target.id==='c-domn'){S.dominion=e.target.value;save();renderSheet()}});
@@ -426,10 +448,10 @@ function trimPicks(){
   for(const r of Object.keys(S.adv))if(+r>t)delete S.adv[r];
   const f=D.foci.find(x=>x.id===S.focus);
   if(f){const kept=[];for(const id of S.fa){const a=abById(f,id);if(a.tier<=t&&(a.tier===1||focusAvail(f,kept,a,t)))kept.push(id)}
-    S.fa=kept.slice(0,2+t-1+extraFocus())}
+    S.fa=kept.slice(0,focusNeed(t))}
   const mid=1+extraGenre();let m=0;
   S.genre=S.genre.filter(id=>{const g=D.genre.find(x=>x.id===id);if(!g)return false;if(g.level==='mid'){if(t<3||m>=mid)return false;m++;return true}return t>=6});
-  for(const r of Object.keys(S.dom))if(+r>t)delete S.dom[r];
+  for(const k of ['dom','domMode','domSwap'])for(const r of Object.keys(S[k]||{}))if(+r>t)delete S[k][r];
 }
 function route(){const v=location.hash==='#creador'?'creador':'guia';document.body.classList.toggle('psheet',v==='creador');document.title=v==='creador'?fname():TITLE;$('#guia').hidden=v!=='guia';$('#creador').hidden=v!=='creador';
   $('#t-guia').toggleAttribute('aria-current',v==='guia');$('#t-creador').toggleAttribute('aria-current',v==='creador');
