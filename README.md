@@ -1,6 +1,6 @@
 # Gods of the Fall — Cypher Character Rulebook
 
-Guía y creador de personajes de Gods of the Fall adaptado al Cypher Character Rulebook (2026), en español.
+Guía y creador de personajes para el Cypher Character Rulebook (2026), en español. Ambientaciones: Gods of the Fall (con su capa divina) y fantasía genérica del CCR.
 
 Web: https://par1701.github.io/gotf/
 
