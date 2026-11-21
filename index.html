@@ -237,8 +237,8 @@ const domFocus=()=>{let n=0;for(let r=2;r<=+S.tier;r++)if(dMode(r)==='focus')n++
 const focusNeed=t=>2+(t-1)+extraFocus()+domFocus();
 function domOwned(upTo=+S.tier){const own=[{r:1,a:D.dominion.find(x=>x.tier===1)}];
   for(let r=2;r<=upTo;r++){if(dMode(r)!=='dom')continue;const a=D.dominion.find(x=>x.id===S.dom[r]);if(a)own.push({r,a});
-    const sw=(S.domSwap||{})[r];if(r>=3&&sw&&sw.from&&sw.to){const i=own.findIndex(o=>o.a.id===sw.from&&o.a.tier<r),n=D.dominion.find(x=>x.id===sw.to);
-      if(i>=0&&n&&n.tier<r&&!own.some(o=>o.a.id===n.id))own[i]={r:own[i].r,a:n,swap:r}}}
+    const sw=(S.domSwap||{})[r];if(r>=3&&sw&&sw.from&&sw.to){const i=own.findIndex(o=>o.a.id===sw.from&&o.a.tier<r&&o.a.tier>1),n=D.dominion.find(x=>x.id===sw.to);
+      if(i>=0&&n&&n.tier<r&&n.tier>1&&!own.some(o=>o.a.id===n.id))own[i]={r:own[i].r,a:n,swap:r}}}
   return own}
 const shiftTotal=()=>{let n=+S.shiftXP||0;for(let r=2;r<=+S.tier;r++)if(dMode(r)!=='pend')n+=r===2?3:1;return n};
 const extraGenre=()=>advList().filter(x=>x.k==='o-genre').length;
@@ -293,14 +293,14 @@ function renderForm(){{const nt=tierFrom();if(nt!==+S.tier){S.tier=nt;trimPicks(
   if(t>=3){const lims={mid:1+extraGenre(),high:t>=6?1:0};
     h+=`<h3>Habilidades de fantasía</h3><p class="note">Una de nivel medio en el rango 3 y una de nivel alto en el rango 6, más las de los avances «Otro» [CCR, p. 82 y 313].</p>`+D.genre.filter(g=>g.level==='mid'||t>=6).map(g=>{const on=S.genre.includes(g.id);const cnt=S.genre.filter(x=>(D.genre.find(y=>y.id===x)||{}).level===g.level).length;const ok=on||cnt<(g.level==='mid'?lims.mid:lims.high+Math.max(0,0));
     return `<label class="opt ${ok?'':'dis'}"><input type="checkbox" data-genre="${g.id}" ${on?'checked':''} ${ok?'':'disabled'}><span><b>${g.level==='mid'?'Medio':'Alto'} · ${nm(g)}</b>${cost(g)}</span></label>`}).join('')}
-  h+=`<h3>Dominio</h3><p class="note">Rango 1: Manifestar nimbo. Del 2 al 6, si cumpliste la Obligación de ese rango: una habilidad de dominio de ese rango (además de la de foco) o, si no despiertas una, una habilidad de foco extra (de tu rango o inferior y conectada) que cuenta como de dominio, con su coste pagable desde cualquier reserva. Sin la Obligación no hay beneficios de dominio hasta cumplirla. Desde el rango 3 puedes cambiar además una habilidad de dominio de rango inferior por otra distinta de rango inferior [GotF, cap. 12; la habilidad de foco sustituye a la de tipo: Adaptación].</p>`;
+  h+=`<h3>Dominio</h3><p class="note">Rango 1: Manifestar nimbo. Del 2 al 6, si cumpliste la Obligación de ese rango: una habilidad de dominio de ese rango (además de la de foco) o, si no despiertas una, una habilidad de foco extra (de tu rango o inferior y conectada) que cuenta como de dominio, con su coste pagable desde cualquier reserva. Sin la Obligación no hay beneficios de dominio hasta cumplirla. Desde el rango 3 puedes cambiar además una habilidad de dominio de rango inferior por otra distinta de rango inferior; Manifestar nimbo no se puede cambiar [GotF, cap. 12; la habilidad de foco sustituye a la de tipo: Adaptación].</p>`;
   for(let r=2;r<=t;r++){const m=dMode(r);
     h+=`<div class="card" style="margin:8px 0"><b>Rango ${r}</b><div class="field"><select data-dmode="${r}" aria-label="Beneficio de dominio del rango ${r}">${[['dom','Habilidad de dominio'],['focus','Habilidad de foco en su lugar'],['pend','Obligación pendiente']].map(([k,l])=>`<option value="${k}" ${m===k?'selected':''}>${l}</option>`).join('')}</select></div>`;
     if(m==='dom')h+=`<div class="field"><select id="c-dom${r}" data-dom="${r}" aria-label="Habilidad de dominio de rango ${r}"><option value="">— elige —</option>${D.dominion.filter(x=>x.tier===r).map(x=>`<option value="${x.id}" ${S.dom[r]===x.id?'selected':''}>${esc(nmTxt(x))}</option>`).join('')}</select></div>`;
     if(m==='focus')h+=`<p class="note">Elige la habilidad extra en «Habilidades de foco».</p>`;
-    if(r>=3&&m!=='pend'){const sw=(S.domSwap||{})[r]||{},prev=domOwned(r-1).filter(o=>o.a.tier<r),ownIds=domOwned(r-1).map(o=>o.a.id);
+    if(r>=3&&m!=='pend'){const sw=(S.domSwap||{})[r]||{},prev=domOwned(r-1).filter(o=>o.a.tier<r&&o.a.tier>1),ownIds=domOwned(r-1).map(o=>o.a.id);
       h+=`<div class="field"><label>Cambio opcional</label><select data-dswap="${r}" data-k="from" aria-label="Habilidad que cambias"><option value="">— no cambiar —</option>${prev.map(o=>`<option value="${o.a.id}" ${sw.from===o.a.id?'selected':''}>${esc(nmTxt(o.a))}</option>`).join('')}</select>`;
-      if(sw.from)h+=` <select data-dswap="${r}" data-k="to" aria-label="Habilidad nueva"><option value="">— por… —</option>${D.dominion.filter(x=>x.tier<r&&!ownIds.includes(x.id)).map(x=>`<option value="${x.id}" ${sw.to===x.id?'selected':''}>R${x.tier} · ${esc(nmTxt(x))}</option>`).join('')}</select>`;
+      if(sw.from)h+=` <select data-dswap="${r}" data-k="to" aria-label="Habilidad nueva"><option value="">— por… —</option>${D.dominion.filter(x=>x.tier<r&&x.tier>1&&!ownIds.includes(x.id)).map(x=>`<option value="${x.id}" ${sw.to===x.id?'selected':''}>R${x.tier} · ${esc(nmTxt(x))}</option>`).join('')}</select>`;
       h+=`</div>`}
     h+=`</div>`}
   if(t>=2){const tot=shiftTotal(),used=Object.values(S.shifts).reduce((a,b)=>a+(+b||0),0);
