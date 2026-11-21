@@ -246,7 +246,7 @@ function renderGuide(){
 }
 
 /* ---------- Creador (reglas del Cypher Character Rulebook) ---------- */
-const BLANK=()=>({setting:curSet(),name:'',desc:'',desc2:'',dskill:'',dskill2:'',dpool:0,sp:'',type:'',focus:'',dominion:'',bg:'',bgc:'',tier:1,alloc:[2,2,2],edge:0,sk:['',''],sk3:'',inab:'',fa:[],genre:[],dom:{},domMode:{},domSwap:{},shiftXP:0,shifts:{},adv:{}});
+const BLANK=()=>({setting:curSet(),name:'',desc:'',desc2:'',dskill:'',dskill2:'',dpool:0,sp:'',type:'',focus:'',dominion:'',bg:'',bgc:'',tier:1,alloc:[2,2,2],edge:0,mnf:[0,0,0],mnfe:0,sk:['',''],sk3:'',inab:'',fa:[],genre:[],dom:{},domMode:{},domSwap:{},shiftXP:0,shifts:{},adv:{}});
 let S=BLANK();const TITLE=document.title;
 try{Object.assign(S,JSON.parse(localStorage.getItem('gotf-pj2')||'{}'))}catch(e){}
 const save=()=>{try{localStorage.setItem('gotf-pj2',JSON.stringify(S))}catch(e){}};
@@ -273,7 +273,7 @@ function calc(){
     m=b.match(/Freely use (.*) weapons/);if(m)weapons=m[1]==='all'?'Todas las armas':'Armas '+m[1].replace('light and medium','ligeras y medias').replace('light','ligeras');
     m=b.match(/Freely use (.*) armor/);if(m)armor=m[1]==='all kinds of'||m[1]==='all'?'Todas las armaduras':'Armaduras '+m[1].replace('light and medium','ligeras y medias').replace('light','ligeras').replace('all kinds of','de todo tipo');
     if(/Cannot freely use any armor/.test(b))armor='Ninguna'});
-  if(ty&&ty.abilities.some(a=>a.en==='Cypher Use'))cyphers++;if(ty&&ty.notes)notes.push(...ty.notes);
+  if(ty&&ty.abilities.some(a=>a.en==='Cypher Use'))cyphers++;const MNF=ty&&ty.abilities.some(a=>a.en==='Machine Not Flesh');if(MNF){(S.mnf||[0,0,0]).forEach((v,i)=>p[i]+=+v||0);edge[+S.mnfe||0]+=1}
   const addDesc=(id,choice)=>{const d=D.descriptors.find(x=>x.id===id);if(!d)return;const s=(d.pool_en||'')+' '+(d.pool_es||'');
     const opts=PEN.map((k,i)=>s.includes(k)||s.includes(POOL[i])?i:-1).filter(i=>i>=0);
     if(opts.length)p[opts.includes(+S.dpool)?+S.dpool:opts[0]]+=2; if(choice)skills.push(['T',choice])};
@@ -332,6 +332,7 @@ function renderForm(){if(applySetting())renderGuide();{const nt=tierFrom();if(nt
   <div class="field"><label for="c-type">Tipo</label><select id="c-type"><option value="">— elige —</option>${(GOTF()?['Champion','Shaper','Destroyer','Savior']:subsOf()).map(a=>`<optgroup label="${GOTF()?esc(a):a==='_'?esc(ST().n):SUBL[a]}">${D.types.filter(x=>GOTF()?x.arch===a:inSub(x,a)).map(x=>`<option value="${x.id}" ${x.id===S.type?'selected':''}>${esc(tyLab(x))}</option>`).join('')}</optgroup>`).join('')}</select></div>
   ${ty_?`<div class="field"><label for="c-bg">${GOTF()?`Conexión de trasfondo (${ty_.arch}, GotF)`:'Trasfondo [CCR]'}</label><select id="c-bg"><option value="">— elige —</option>${bgList(ty_).map((b,i)=>`<option value="${i+1}" ${S.bg==String(i+1)?'selected':''}>${i+1}. ${esc(b.length>90?b.slice(0,88)+'…':b)}</option>`).join('')}<option value="custom" ${S.bg==='custom'?'selected':''}>Personalizado</option></select>${GOTF()?'<button type="button" id="c-bgroll" style="margin-top:6px">Tirar d20</button>':''}</div>${S.bg==='custom'?`<div class="field"><label for="c-bgc">Trasfondo personalizado</label><input id="c-bgc" type="text" value="${esc(S.bgc)}"></div>`:''}`:''}
   <div class="field"><label for="c-edge">+1 de Ventaja del tipo en</label><select id="c-edge">${POOL.map((p,i)=>`<option value="${i}" ${+S.edge===i?'selected':''}>${p}</option>`).join('')}</select></div>
+  ${ty_&&ty_.abilities.some(a=>a.en==='Machine Not Flesh')?`<div class="field"><label>Máquina, no carne (Machine Not Flesh): +4 puntos permanentes a repartir [CCR, p. 100]</label><div class="pools">${POOL.map((p,i)=>`<label>${p}<input type="number" min="0" max="4" data-mnf="${i}" value="${+(S.mnf||[])[i]||0}"></label>`).join('')}</div><p class="note" id="mnfnote"></p></div><div class="field"><label for="c-mnfe">Máquina, no carne: +1 de Ventaja adicional en</label><select id="c-mnfe">${POOL.map((p,i)=>`<option value="${i}" ${+S.mnfe===i?'selected':''}>${p}</option>`).join('')}</select></div>`:''}
   <h3>3. Foco${GOTF()?' y dominio':''}</h3>
   <div class="field"><label for="c-focus">Foco</label><select id="c-focus">${ST().sug?(()=>{const sg=D.sugfoci[ST().sug],o=l=>l.map(x=>`<option value="${x.id}" ${x.id===S.focus?'selected':''}>${esc(nmTxt(x))}</option>`).join('');return `<option value="">— elige —</option><optgroup label="Sugeridos para el subgénero">${o(D.foci.filter(f=>sg.includes(f.id)))}</optgroup><optgroup label="Otros (consulta con el DJ)">${o(D.foci.filter(f=>!sg.includes(f.id)))}</optgroup>`})():opt(D.foci,S.focus,'elige')}</select></div>
   ${GOTF()?`<div class="field"><label for="c-domn">Dominio (nombre libre: Guerra, Muerte, Sol…)</label><input id="c-domn" type="text" value="${esc(S.dominion)}"></div>`:''}`;
@@ -370,7 +371,7 @@ function renderForm(){if(applySetting())renderGuide();{const nt=tierFrom();if(nt
     h+=`<h3>Desplazamientos divinos (${used} de ${tot})</h3><p class="note">3 en el rango 2 y 1 más por rango, con la Obligación cumplida; también se compran a 10 PX cada uno. Máximo 3 por categoría [GotF, cap. 12; CCR, p. 127].</p><div class="field"><label for="c-shxp">Comprados con PX (10 PX cada uno)</label><input id="c-shxp" type="number" min="0" value="${+S.shiftXP||0}" style="width:70px"></div><div class="grid">${SHIFTS.map((s,i)=>`<label class="opt"><span style="flex:1">${s}</span><input type="number" min="0" max="3" data-shift="${i}" value="${+S.shifts[i]||0}" style="width:70px"></label>`).join('')}</div>`}
   }
   $('#form').innerHTML=h;
-  const a=S.alloc.reduce((x,y)=>x+(+y||0),0);$('#allocnote').textContent=a===6?'':`Has repartido ${a} de 6.`;
+  const a=S.alloc.reduce((x,y)=>x+(+y||0),0);$('#allocnote').textContent=a===6?'':`Has repartido ${a} de 6.`;const mn=$('#mnfnote');if(mn){const m=(S.mnf||[]).reduce((x,y)=>x+(+y||0),0);mn.textContent=m===4?'':`Has repartido ${m} de 4.`}
 }
 const bgList=ty=>GOTF()?D.bg_gotf[ty.arch]:(ty.bg_es||ty.bg_en);
 function bgTxt(ty){if(S.bg==='custom')return S.bgc;if(S.bg&&ty)return bgList(ty)[+S.bg-1]||'';return ''}
@@ -478,11 +479,12 @@ function bind(){
   $('#form').addEventListener('change',e=>{const el=e.target,d=el.dataset;
     if(el.id==='c-desc'){S.desc=el.value;S.dskill=''}else if(el.id==='c-desc2'){S.desc2=el.value;S.dskill2=''}
     else if(el.id==='c-dskill')S.dskill=el.value;else if(el.id==='c-dskill2')S.dskill2=el.value;
-    else if(el.id==='c-sp')S.sp=el.value;else if(el.id==='c-type'){const o=D.types.find(x=>x.id===S.type),n=D.types.find(x=>x.id===el.value);if(!o||!n||!GOTF()||o.arch!==n.arch){if(S.bg!=='custom')S.bg=''}S.type=el.value}else if(el.id==='c-bg')S.bg=el.value;else if(el.id==='c-edge')S.edge=+el.value;else if(el.id==='c-dpool')S.dpool=+el.value;
+    else if(el.id==='c-sp')S.sp=el.value;else if(el.id==='c-type'){const o=D.types.find(x=>x.id===S.type),n=D.types.find(x=>x.id===el.value);if(!o||!n||!GOTF()||o.arch!==n.arch){if(S.bg!=='custom')S.bg=''}S.type=el.value}else if(el.id==='c-bg')S.bg=el.value;else if(el.id==='c-edge')S.edge=+el.value;else if(el.id==='c-mnfe')S.mnfe=+el.value;else if(el.id==='c-dpool')S.dpool=+el.value;
     else if(el.id==='c-focus'){S.focus=el.value;S.fa=[]}
     else if(el.id==='c-sk3')S.sk3=el.value;else if(el.id==='c-inab')S.inab=el.value;
     else if(d.sk!==undefined)S.sk[+d.sk]=el.value;
     else if(d.alloc!==undefined)S.alloc[+d.alloc]=Math.max(0,Math.min(6,+el.value||0));
+    else if(d.mnf!==undefined){S.mnf=S.mnf||[0,0,0];S.mnf[+d.mnf]=Math.max(0,Math.min(4,+el.value||0))}
     else if(d.adv){const a=S.adv[d.adv]=S.adv[d.adv]||{};a['s'+d.slot]=el.value;S.tier=tierFrom();trimPicks()}
     else if(d.advp){const a=S.adv[d.advp];const pv=a['p'+d.slot]=a['p'+d.slot]||[0,0,0];pv[+d.j]=Math.max(0,Math.min(4,+el.value||0))}
     else if(d.adve){S.adv[d.adve]['e'+d.slot]=+el.value}
