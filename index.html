@@ -197,7 +197,9 @@ const skEs=k=>{const es=(D&&D.skills_es[k])||SK[k];return es?`${es} (${k})`:k};
 const NUM={one:1,two:2,three:3,four:4,five:5,an:1,a:1};
 const ADV=[['pools','Aumentar capacidades: +4 a las reservas'],['edge','Hacia la perfección: +1 a una Ventaja'],['effort','Esfuerzo extra: +1 al Esfuerzo'],['skill','Habilidad: entrenarte (o especializarte) en una habilidad'],['o-recovery','Otro: +2 a las recuperaciones'],['o-focus','Otro: otra habilidad de foco'],['o-armor','Otro: usar libremente todas las armaduras'],['o-weapons','Otro: usar libremente todas las armas'],['o-genre','Otro: otra habilidad de fantasía (rango 3 o más)']];
 function descSkills(d){ if(!d)return[];const s=d.skills_en||'';const m=s.match(/Trained in (.*)/);if(!m)return[];return m[1].replace(/, or similar/,'').split(/, or |, | or /).map(x=>x.trim()).filter(Boolean)}
-function advList(){const out=[];for(let r=1;r<+S.tier;r++){const a=S.adv[r]||{};for(let i=0;i<4;i++){const v=a['s'+i];if(v)out.push({r,i,k:v,a})}}return out}
+const advDone=r=>{const a=S.adv[r]||{};return [0,1,2,3].every(i=>a['s'+i])};
+const tierFrom=()=>{let t=1;while(t<6&&advDone(t))t++;return t};
+function advList(){const out=[];for(let r=1;r<=+S.tier;r++){const a=S.adv[r]||{};for(let i=0;i<(r<+S.tier?4:3);i++){const v=a['s'+i];if(v)out.push({r,i,k:v,a})}}return out}
 function calc(){
   const t=+S.tier,ty=D.types.find(x=>x.id===S.type),sp=D.species.find(x=>x.id===S.sp);
   const p=[8,8,8].map((v,i)=>v+(+S.alloc[i]||0)),edge=[0,0,0],w=[3,3,3];
@@ -238,7 +240,7 @@ function focusAvail(f,owned,a,t){
   return nb.some(b=>owned.includes(b)&&(f.directed||tierOf(f,b)<=a.tier));
 }
 function skillSel(id,val,lab,data=''){return `<select id="${id}" ${data}><option value="">— ${lab} —</option>${Object.keys(SK).map(k=>`<option value="${k}" ${k===val?'selected':''}>${esc(skEs(k))}</option>`).join('')}</select>`}
-function renderForm(){
+function renderForm(){{const nt=tierFrom();if(nt!==+S.tier){S.tier=nt;trimPicks();save()}}
   const opt=(arr,sel,lab)=>`<option value="">— ${lab} —</option>`+arr.map(x=>`<option value="${x.id}" ${x.id===sel?'selected':''}>${esc(nmTxt(x))}</option>`).join('');
   const ty_=D.types.find(x=>x.id===S.type), f=D.foci.find(x=>x.id===S.focus), t=+S.tier, de=D.descriptors.find(x=>x.id===S.desc), de2=D.descriptors.find(x=>x.id===S.desc2);
   const need=2+(t-1)+extraFocus();
@@ -246,7 +248,7 @@ function renderForm(){
   let h=`<h2 style="margin-top:0">Creador</h2><p class="note">Reglas del <em>Cypher Character Rulebook</em> (2026) más la capa divina de GotF. Se guarda en este navegador.</p>
   <h3>1. Personaje núcleo</h3>
   <div class="field"><label for="c-name">Nombre</label><input id="c-name" type="text" value="${esc(S.name)}"></div>
-  <div class="field"><label for="c-tier">Rango</label><select id="c-tier">${[1,2,3,4,5,6].map(i=>`<option ${i===t?'selected':''}>${i}</option>`).join('')}</select></div>
+  <div class="field"><b>Rango ${t}</b><p class="note">El rango sube solo al completar los cuatro avances del rango actual (apartado 4) [CCR, p. 313].</p></div>
   <div class="field"><label>Reparto de los 6 puntos [CCR, p. 11]</label><div class="pools">${POOL.map((p,i)=>`<label>${p}<input type="number" min="0" max="6" data-alloc="${i}" value="${+S.alloc[i]||0}"></label>`).join('')}</div><p class="note" id="allocnote"></p></div>
   <div class="field"><label>Dos habilidades de fantasía [CCR, p. 12 y 41]</label>${skillSel('c-sk0',S.sk[0],'primera','data-sk="0"')}<div style="height:6px"></div>${skillSel('c-sk1',S.sk[1],'segunda','data-sk="1"')}</div>
   <div class="field"><label>Opcional: tercera habilidad a cambio de una incapacidad</label>${skillSel('c-sk3',S.sk3,'tercera habilidad')}<div style="height:6px"></div>${skillSel('c-inab',S.inab,'incapacidad')}</div>
@@ -262,11 +264,11 @@ function renderForm(){
   <h3>3. Foco y dominio</h3>
   <div class="field"><label for="c-focus">Foco</label><select id="c-focus">${opt(D.foci,S.focus,'elige')}</select></div>
   <div class="field"><label for="c-domn">Dominio (nombre libre: Guerra, Muerte, Sol…)</label><input id="c-domn" type="text" value="${esc(S.dominion)}"></div>`;
-  if(t>1){
-    h+=`<h3>4. Avances [CCR, p. 313]</h3><p class="note">Para subir cada rango se compran 4 avances de 4 PX, cada uno una vez por rango. Uno de los cuatro puede ser «Otro».</p>`;
-    for(let r=1;r<t;r++){const a=S.adv[r]=S.adv[r]||{};
-      h+=`<div class="card" style="margin:8px 0"><b>Del rango ${r} al ${r+1}</b>`;
-      for(let i=0;i<4;i++){const v=a['s'+i]||'';const used=[0,1,2,3].filter(j=>j!==i).map(j=>a['s'+j]);const otherUsed=used.some(u=>u&&u.startsWith('o-'));
+  {
+    h+=`<h3>4. Avances [CCR, p. 313]</h3><p class="note">Cada avance cuesta 4 PX y se compra una vez por rango. Al completar los cuatro, subes al rango siguiente. Uno de los cuatro puede ser «Otro».${t===6?' El creador llega hasta el rango 6: en él solo se anotan tres avances.':''}</p>`;
+    for(let r=1;r<=t;r++){const a=S.adv[r]=S.adv[r]||{};const slots=r<t||t<6?4:3;
+      h+=`<div class="card" style="margin:8px 0"><b>${r<t?`Rango ${r} (completado, subiste al ${r+1})`:`Rango ${r} (en curso)`}</b>`;
+      for(let i=0;i<slots;i++){const v=a['s'+i]||'';const used=[0,1,2,3].filter(j=>j!==i).map(j=>a['s'+j]);const otherUsed=used.some(u=>u&&u.startsWith('o-'));
         h+=`<div class="field"><select data-adv="${r}" data-slot="${i}" aria-label="Avance ${i+1}"><option value="">— avance ${i+1} —</option>${ADV.filter(([k])=>k===v||(!used.includes(k)&&!(k.startsWith('o-')&&otherUsed)&&!(k==='o-genre'&&r<3))).map(([k,l])=>`<option value="${k}" ${k===v?'selected':''}>${l}</option>`).join('')}</select>`;
         if(v==='pools'){const pv=a['p'+i]||[0,0,0];h+=`<div class="pools" style="margin-top:6px">${POOL.map((p,j)=>`<label>${p}<input type="number" min="0" max="4" data-advp="${r}" data-slot="${i}" data-j="${j}" value="${+pv[j]||0}"></label>`).join('')}</div>`}
         if(v==='edge')h+=`<select data-adve="${r}" data-slot="${i}" style="margin-top:6px">${POOL.map((p,j)=>`<option value="${j}" ${+(a['e'+i]||0)===j?'selected':''}>Ventaja de ${p}</option>`).join('')}</select>`;
@@ -388,15 +390,14 @@ function sheetText(){
 }
 function bind(){
   $('#form').addEventListener('change',e=>{const el=e.target,d=el.dataset;
-    if(el.id==='c-tier'){S.tier=+el.value;trimPicks()}
-    else if(el.id==='c-desc'){S.desc=el.value;S.dskill=''}else if(el.id==='c-desc2'){S.desc2=el.value;S.dskill2=''}
+    if(el.id==='c-desc'){S.desc=el.value;S.dskill=''}else if(el.id==='c-desc2'){S.desc2=el.value;S.dskill2=''}
     else if(el.id==='c-dskill')S.dskill=el.value;else if(el.id==='c-dskill2')S.dskill2=el.value;
     else if(el.id==='c-sp')S.sp=el.value;else if(el.id==='c-type'){const o=D.types.find(x=>x.id===S.type),n=D.types.find(x=>x.id===el.value);if(!o||!n||o.arch!==n.arch){if(S.bg!=='custom')S.bg=''}S.type=el.value}else if(el.id==='c-bg')S.bg=el.value;else if(el.id==='c-edge')S.edge=+el.value;else if(el.id==='c-dpool')S.dpool=+el.value;
     else if(el.id==='c-focus'){S.focus=el.value;S.fa=[]}
     else if(el.id==='c-sk3')S.sk3=el.value;else if(el.id==='c-inab')S.inab=el.value;
     else if(d.sk!==undefined)S.sk[+d.sk]=el.value;
     else if(d.alloc!==undefined)S.alloc[+d.alloc]=Math.max(0,Math.min(6,+el.value||0));
-    else if(d.adv){const a=S.adv[d.adv]=S.adv[d.adv]||{};a['s'+d.slot]=el.value;trimPicks()}
+    else if(d.adv){const a=S.adv[d.adv]=S.adv[d.adv]||{};a['s'+d.slot]=el.value;S.tier=tierFrom();trimPicks()}
     else if(d.advp){const a=S.adv[d.advp];const pv=a['p'+d.slot]=a['p'+d.slot]||[0,0,0];pv[+d.j]=Math.max(0,Math.min(4,+el.value||0))}
     else if(d.adve){S.adv[d.adve]['e'+d.slot]=+el.value}
     else if(d.advk){S.adv[d.advk]['k'+d.slot]=el.value}
@@ -422,7 +423,7 @@ function bind(){
 }
 function trimPicks(){
   const t=+S.tier;
-  for(const r of Object.keys(S.adv))if(+r>=t)delete S.adv[r];
+  for(const r of Object.keys(S.adv))if(+r>t)delete S.adv[r];
   const f=D.foci.find(x=>x.id===S.focus);
   if(f){const kept=[];for(const id of S.fa){const a=abById(f,id);if(a.tier<=t&&(a.tier===1||focusAvail(f,kept,a,t)))kept.push(id)}
     S.fa=kept.slice(0,2+t-1+extraFocus())}
