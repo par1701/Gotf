@@ -143,19 +143,24 @@ const STEPS=`
 <p><b>Recuperación</b> [CCR, p. 12]: 1d6 + rango puntos, repartidos entre las reservas.</p>
 <h3>Dominio (opción B)</h3>
 <p>Las habilidades de dominio se ganan además de la habilidad de foco de cada rango [Adaptación]. Su coste puede pagarse de cualquier reserva, en cualquier combinación, aplicando la Ventaja de cada una [GotF]. Si no despiertas el dominio en un rango, ganas otra habilidad de tu foco de ese rango o inferior, que cuenta como de dominio. En los rangos 3 a 6 puedes además cambiar una habilidad de dominio de rango inferior por otra de rango inferior [GotF, cap. 12].</p>
-<h3>Desplazamientos divinos</h3>
-<p>3 en el rango 2 y +1 por rango (7 en el rango 6); nunca más de 3 en una categoría. Se pueden redistribuir al subir de rango si el DJ acepta el motivo, y comprar a 10 PX [GotF]. Cada uno es un nivel de Esfuerzo gratuito y permanente en su categoría, que no cuenta para el máximo de Esfuerzo [CCR, p. 127].</p>
+<h3>Esferas, desplazamientos y Gracia [Regla de la casa]</h3>
+<p>Sustituye a los desplazamientos divinos de GotF. <b>Esferas:</b> al elegir dominio fijas con el DJ 2 esferas concretas (Tormentas → rayo, viento); la 3.ª llega con la Obligación del dogma (rango 4). <b>Desplazamientos:</b> 2 al elegir dominio y 1 más por cada Obligación cumplida (7 en el rango 6); cada uno va a una esfera o a una categoría. Los comprados a 10 PX o sacados de tesoros solo van a categorías. Máximo 3 por esfera y por categoría; si una tarea entra en varias, solo cuenta una. Se pueden redistribuir al subir de rango si el DJ acepta el motivo [GotF]. En una esfera, cada desplazamiento facilita un paso las tareas de esa esfera y da +2 a su efecto numérico (daño, curación). En una categoría es un nivel de Esfuerzo gratuito y permanente, que no cuenta para el máximo de Esfuerzo [CCR, p. 127].</p>
+<p><b>Gracia:</b> reserva igual a tus desplazamientos en esferas; se recupera con el descanso de 10 horas. Solo para efectos de tus esferas. Alcance: corto (rangos 1–2), largo (3–4), kilómetros (5–6). Dura una escena (o para siempre si el efecto lo es por naturaleza) y siempre se ve que es obra divina. Nunca causa daño cuantificable y nunca derrota por sí sola a una criatura importante: como mucho la ablanda (le quita una ventaja, entorpece sus tareas o facilita las de los aliados).</p>
+<ul><li><b>1 punto — intrusión de jugador:</b> cambio en la situación, sin oposición activa y dentro del alcance; no cuesta PX.</li>
+<li><b>2 puntos — proeza divina:</b> superas sin tirar una tarea de tus esferas de dificultad máxima rango + 4. No crea nada de la nada.</li>
+<li><b>3 puntos — milagro con oposición:</b> si algo o alguien se resiste, o el efecto va un escalón más allá de tu alcance. El DJ fija la dificultad (normalmente 4–7); tiras Intelecto (o Potencia o Velocidad si es físico) y puedes usar Esfuerzo, pero no desplazamientos. Si fallas, solo pierdes 1 punto.</li></ul>
+<p>Lo que quita desplazamientos afecta a ambos tipos; si los quita todos, bloquea la Gracia, y cada desplazamiento de esfera perdido le resta 1.</p>
 <table class="stack"><thead><tr><th>Categoría</th><th>Efecto</th></tr></thead><tbody>
 <tr><td>Puntería (Accuracy)</td><td>Todas las tiradas de ataque</td></tr>
-<tr><td>Destreza (Dexterity)</td><td>Esquivar, defensa de Velocidad, movimiento, acrobacias, gymnastics, initiative</td></tr>
+<tr><td>Destreza (Dexterity)</td><td>Esquivar, defensa de Velocidad, movimiento, acrobacias, gimnasia, iniciativa</td></tr>
 <tr><td>Curación (Healing)*</td><td>Una recuperación extra de una acción al día</td></tr>
 <tr><td>Inteligencia (Intelligence)</td><td>Defensa de Intelecto; conocimiento, ciencia y artesanía</td></tr>
 <tr><td>Poder (Power)</td><td>Efectos y daño de una habilidad, no su tirada de ataque</td></tr>
 <tr><td>Resistencia (Resilience)</td><td>Bloquear, defensa de Potencia, aguante</td></tr>
 <tr><td>Erudito (Savant)</td><td>Dos habilidades concretas que no sean de ataque ni defensa</td></tr>
 <tr><td>Ataque único (Single Attack)</td><td>Ataque y daño (+3) de un tipo de ataque o una habilidad de ataque</td></tr>
-<tr><td>Fuerza (Strength)</td><td>Athletics, fuerza fuera de combate, daño cuerpo a cuerpo y arrojadizo (+3)</td></tr>
-<tr><td>Vuelo (Flight)*, Alcance (Increased Range)*</td><td>Volar; aumentar el alcance de una habilidad. El DJ decide si encajan con el dominio</td></tr>
+<tr><td>Fuerza (Strength)</td><td>Atletismo, fuerza fuera de combate, daño cuerpo a cuerpo y arrojadizo (+3)</td></tr>
+<tr><td>Vuelo (Flight)*, Alcance (Increased Range)*</td><td>Volar; aumentar el alcance de una habilidad. El DJ decide si se permiten</td></tr>
 </tbody></table>
 <p class="note">*Reglas propias; no funcionan como nivel de Esfuerzo gratuito. Prodigio (Prodigy) no se permite [Adaptación].</p>
 <h3>Arco de Despertar</h3>
@@ -313,7 +318,7 @@ function renderGuide(){
 }
 
 /* ---------- Creador (reglas del Cypher Character Rulebook) ---------- */
-const BLANK=()=>({setting:curSet(),name:'',desc:'',desc2:'',dskill:'',dskill2:'',dpool:0,sp:'',type:'',focus:'',dominion:'',bg:'',bgc:'',tier:1,alloc:[2,2,2],edge:0,mnf:[0,0,0],mnfe:0,sk:['',''],sk3:'',inab:'',fa:[],genre:[],dom:{},domMode:{},domSwap:{},shiftXP:0,shifts:{},adv:{},srank:1,salt:'',shp:0,psh:{},pshd:'',orig:'',ov:[0,0,0],scomb:'',focus2:'',fa2:[],profn:'',profk:'',rwx:'',rwxw:'',rwact:false,rweq:'bundle',rwsk3:'',rwsk6:''});
+const BLANK=()=>({setting:curSet(),name:'',desc:'',desc2:'',dskill:'',dskill2:'',dpool:0,sp:'',type:'',focus:'',dominion:'',bg:'',bgc:'',tier:1,alloc:[2,2,2],edge:0,mnf:[0,0,0],mnfe:0,sk:['',''],sk3:'',inab:'',fa:[],genre:[],dom:{},domMode:{},domSwap:{},shiftXP:0,shifts:{},sph:['','',''],dsh:{},adv:{},srank:1,salt:'',shp:0,psh:{},pshd:'',orig:'',ov:[0,0,0],scomb:'',focus2:'',fa2:[],profn:'',profk:'',rwx:'',rwxw:'',rwact:false,rweq:'bundle',rwsk3:'',rwsk6:''});
 let S=BLANK();const TITLE=document.title;
 try{Object.assign(S,JSON.parse(localStorage.getItem('gotf-pj2')||'{}'))}catch(e){}
 const save=()=>{try{localStorage.setItem('gotf-pj2',JSON.stringify(S))}catch(e){}};
@@ -387,7 +392,12 @@ function domOwned(upTo=+S.tier){const own=[{r:1,a:D.dominion.find(x=>x.tier===1)
     const sw=(S.domSwap||{})[r];if(r>=3&&sw&&sw.from&&sw.to){const i=own.findIndex(o=>o.a.id===sw.from&&o.a.tier<r&&o.a.tier>1),n=D.dominion.find(x=>x.id===sw.to);
       if(i>=0&&n&&n.tier<r&&n.tier>1&&!own.some(o=>o.a.id===n.id))own[i]={r:own[i].r,a:n,swap:r}}}
   return own}
-const shiftTotal=()=>{let n=+S.shiftXP||0;for(let r=2;r<=+S.tier;r++)if(dMode(r)!=='pend')n+=r===2?3:1;return n};
+const oblShifts=()=>{let n=2;for(let r=2;r<=+S.tier;r++)if(dMode(r)!=='pend')n++;return n};
+const shiftTotal=()=>oblShifts()+(+S.shiftXP||0);
+const nSph=()=>+S.tier>=4&&dMode(4)!=='pend'?3:2;
+const sphList=()=>Array.from({length:nSph()},(_,i)=>({i,n:((S.sph||[])[i]||'').trim(),v:+(S.dsh||{})[i]||0}));
+const gracia=()=>sphList().filter(x=>x.n).reduce((a,x)=>a+x.v,0);
+const catUsed=()=>Object.values(S.shifts).reduce((a,b)=>a+(+b||0),0);
 const extraGenre=()=>advList().filter(x=>x.k==='o-genre').length;
 function focusAvail(f,owned,a,t){
   if(a.tier>t||owned.includes(a.id))return false;
@@ -461,8 +471,9 @@ function renderForm(){if(applySetting())renderGuide();{const nt=tierFrom();if(nt
       if(sw.from)h+=` <select data-dswap="${r}" data-k="to" aria-label="Habilidad nueva"><option value="">— por… —</option>${D.dominion.filter(x=>x.tier<r&&x.tier>1&&!ownIds.includes(x.id)).map(x=>`<option value="${x.id}" ${sw.to===x.id?'selected':''}>R${x.tier} · ${esc(nmTxt(x))}</option>`).join('')}</select>`;
       h+=`</div>`}
     h+=`</div>`}
-  if(t>=2){const tot=shiftTotal(),used=Object.values(S.shifts).reduce((a,b)=>a+(+b||0),0);
-    h+=`<h3>Desplazamientos divinos (${used} de ${tot})</h3><p class="note">3 en el rango 2 y 1 más por rango, con la Obligación cumplida; también se compran a 10 PX cada uno. Máximo 3 por categoría [GotF, cap. 12; CCR, p. 127].</p><div class="field"><label for="c-shxp">Comprados con PX (10 PX cada uno)</label><input id="c-shxp" type="number" min="0" value="${+S.shiftXP||0}" style="width:70px"></div><div class="grid">${SHIFTS.map((s,i)=>`<label class="opt"><span style="flex:1">${s}</span><input type="number" min="0" max="3" data-shift="${i}" value="${+S.shifts[i]||0}" style="width:70px"></label>`).join('')}</div>`}
+  {const ob=oblShifts(),xp=+S.shiftXP||0,g=gracia(),cu=catUsed(),dg=Math.max(0,g-ob);
+    h+=`<h3>Esferas del dominio</h3><p class="note">2 esferas al elegir dominio; la 3.ª con la Obligación del dogma (rango 4). Concretas: si una esfera sirve en casi todas las escenas, es demasiado amplia [Regla de la casa].</p><div class="grid">${sphList().map(x=>`<label class="opt"><span style="flex:1"><input type="text" data-sph="${x.i}" value="${esc(x.n)}" placeholder="Esfera ${x.i+1}" aria-label="Esfera ${x.i+1}"></span><input type="number" min="0" max="3" data-dsh="${x.i}" value="${x.v}" ${x.n?'':'disabled'} aria-label="Desplazamientos en la esfera ${x.i+1}" style="width:70px"></label>`).join('')}</div>`;
+    h+=`<h3>Desplazamientos (${g+cu} de ${ob+xp})</h3><p class="note">Por Obligaciones: ${ob} (2 al elegir dominio y 1 por cada Obligación cumplida), a esferas o a categorías. Comprados con PX (10 PX cada uno) o de tesoros: solo a categorías. Máximo 3 por esfera y por categoría; si una tarea entra en varias, solo cuenta una. En esfera: facilita un paso y +2 al efecto numérico. En categoría: como en el CCR (p. 127). <b>Gracia: ${g}</b> (igual a los desplazamientos en esferas) [Regla de la casa].</p>${dg?`<p class="note"><b>Te pasas: ${g} en esferas y solo tienes ${ob} de Obligaciones.</b></p>`:''}${g+cu>ob+xp?`<p class="note"><b>Te pasas: ${g+cu} de ${ob+xp} desplazamientos.</b></p>`:''}<div class="field"><label for="c-shxp">Comprados con PX o de tesoros (solo categorías)</label><input id="c-shxp" type="number" min="0" value="${xp}" style="width:70px"></div><div class="grid">${SHIFTS.map((s,i)=>`<label class="opt"><span style="flex:1">${s}</span><input type="number" min="0" max="3" data-shift="${i}" value="${+S.shifts[i]||0}" style="width:70px"></label>`).join('')}</div>`}
   }
   $('#form').innerHTML=h;
   const a=S.alloc.reduce((x,y)=>x+(+y||0),0);$('#allocnote').textContent=a===6?'':`Has repartido ${a} de 6.`;{const ov=$('#ovnote');if(ov){const m=(S.ov||[]).reduce((x,y)=>x+(+y||0),0);ov.textContent=m===12?'':`Has repartido ${m} de 12.`}}{const si=supInfo();if(si){const u=Object.values(S.psh||{}).reduce((x,y)=>x+(+y||0),0);if(u>si.shifts){const n=document.createElement('p');n.className='note';n.innerHTML='<b>Te pasas: '+u+' de '+si.shifts+' cambios de poder.</b>';const g=[...$('#form').querySelectorAll('h3')].find(x=>/^Cambios de poder/.test(x.textContent));if(g)g.after(n)}}}const mn=$('#mnfnote');if(mn){const m=(S.mnf||[]).reduce((x,y)=>x+(+y||0),0);mn.textContent=m===4?'':`Has repartido ${m} de 4.`}
@@ -538,7 +549,8 @@ function renderSheet(){if(document.body.classList.contains('psheet'))document.ti
   h+=`<h3>Dominio</h3>`+domOwned().map(({r,a,swap})=>r===1&&!swap?`<div class="ab"><b>${nm(a)}</b></div>`:`<div class="ab"><b>R${a.tier} · ${nm(a)}${cost(a)}.</b>${swap?` <span class="badge">cambio del rango ${swap}</span>`:''} ${tx(a)}</div>`).join('');
   if(domFocus())h+=`<p class="note">${domFocus()} de tus habilidades de foco cuentan como de dominio: su coste se paga desde cualquier reserva.</p>`;
   {const pend=[];for(let r=2;r<=t;r++)if(dMode(r)==='pend')pend.push(r);if(pend.length)h+=`<p class="note">Obligación pendiente en rango ${pend.join(', ')}: sus beneficios de dominio llegan al cumplirla.</p>`}
-  if(sh.length)h+=`<h3>Desplazamientos</h3>`+sh.map(([k,v])=>`<span class="pill">${SHIFTS[k]} ×${v}</span>`).join('');
+  {const sp=sphList().filter(x=>x.n);if(sp.length)h+=`<h3>Esferas y Gracia</h3>`+sp.map(x=>`<span class="pill">${esc(x.n)} ×${x.v}</span>`).join('')+` <span class="pill"><b>Gracia ${gracia()}</b></span>`}
+  if(sh.length)h+=`<h3>Desplazamientos de categoría</h3>`+sh.map(([k,v])=>`<span class="pill">${SHIFTS[k]} ×${v}</span>`).join('');
   }
   if(ty)h+=`<h3>Equipo</h3><p>${tx(ty,'bundle')}</p>`;else if(RL)h+=`<h3>Equipo</h3><p>${esc(RL.eq)}</p>`;
   const lib=LIB(),ids=Object.keys(lib).sort((a,b)=>lib[a].name.localeCompare(lib[b].name,'es'));
@@ -547,7 +559,7 @@ function renderSheet(){if(document.body.classList.contains('psheet'))document.ti
    <p><button id="pexp">Exportar archivo</button> <label class="btn" style="cursor:pointer"><input id="pimp" type="file" accept=".json,application/json" hidden>Importar archivo</label></p>
    <p class="note" id="copymsg"></p></div>`;
   $('#sheet').innerHTML=h;
-  if(GOTF())drawNimbus(t,sh.reduce((a,[k,v])=>a+ +v,0));
+  if(GOTF())drawNimbus(t,sh.reduce((a,[k,v])=>a+ +v,0)+gracia());
 }
 function drawNimbus(t,shifts){
   const s=$('#nimbus');let h='';
@@ -585,7 +597,7 @@ async function exportSheetPDF(){
   if(GOTF()){ab.push('DOMINIO'+(S.dominion?': '+S.dominion:''),'• '+nmTxt(D.dominion.find(x=>x.tier===1))+'. '+txt(D.dominion.find(x=>x.tier===1)));
   domOwned().slice(1).forEach(({a})=>ab.push(`• R${a.tier} · ${nmTxt(a)}${cst(a)}. ${txt(a)}`));
   if(domFocus())ab.push(`• ${domFocus()} habilidad(es) de foco cuentan como de dominio (coste pagable desde cualquier reserva).`);}
-  const sh=GOTF()?Object.entries(S.shifts).filter(([k,v])=>+v>0):[];if(sh.length)ab.push('','DESPLAZAMIENTOS DIVINOS: '+sh.map(([k,v])=>`${SHIFTS[k]} ×${v}`).join(', '));
+  const sh=GOTF()?Object.entries(S.shifts).filter(([k,v])=>+v>0):[];{const sp=sphList().filter(x=>x.n);if(sp.length)ab.push('','ESFERAS: '+sp.map(x=>`${x.n} ×${x.v}`).join(', ')+` · GRACIA: ${gracia()}`)}if(sh.length)ab.push(...(GOTF()&&sphList().some(x=>x.n)?[]:['']),'DESPLAZAMIENTOS DE CATEGORÍA: '+sh.map(([k,v])=>`${SHIFTS[k]} ×${v}`).join(', '));
   // reparte el texto entre «Habilidades especiales» y «Cifras/habilidades (cont.)»
   const fit=(fld,size)=>{const r=form.getTextField(fld).acroField.getWidgets()[0].getRectangle();return {w:r.width-4,n:Math.floor((r.height-4)/(size*1.16))}};
   const lines=(p,size,w)=>{let n=0;for(const par of p.split('\n')){let cur=0,l=1;for(const word of par.split(' ')){const ww=helv.widthOfTextAtSize(word+' ',size);if(cur+ww>w&&cur>0){l++;cur=ww}else cur+=ww}n+=l}return n};
@@ -643,6 +655,8 @@ function bind(){
     else if(d.dswap){const w=(S.domSwap=S.domSwap||{})[d.dswap]=S.domSwap[d.dswap]||{};w[d.k]=el.value;if(d.k==='from')w.to=''}
     else if(el.id==='c-shxp'){S.shiftXP=Math.max(0,+el.value||0)}
     else if(d.shift!==undefined){S.shifts[d.shift]=Math.max(0,Math.min(3,+el.value||0))}
+    else if(d.sph!==undefined){(S.sph=S.sph||['','',''])[d.sph]=el.value}
+    else if(d.dsh!==undefined){(S.dsh=S.dsh||{})[d.dsh]=Math.max(0,Math.min(3,+el.value||0))}
     save();renderForm();renderSheet()});
   $('#form').addEventListener('input',e=>{if(e.target.id==='c-name'){S.name=e.target.value;save();renderSheet()}if(e.target.id==='c-bgc'){S.bgc=e.target.value;save();renderSheet()}if(e.target.id==='c-domn'){S.dominion=e.target.value;save();renderSheet()}if(e.target.id==='c-profn'){S.profn=e.target.value;save();renderSheet()}if(e.target.id==='c-rwxw'){S.rwxw=e.target.value;save();renderSheet()}if(e.target.id==='c-scomb'){S.scomb=e.target.value;save();renderSheet()}if(e.target.id==='c-pshd'){S.pshd=e.target.value;save();renderSheet()}});
   $('#form').addEventListener('click',e=>{if(e.target.id==='c-bgroll'){S.bg=String(1+Math.floor(Math.random()*20));save();renderForm();renderSheet()}});
