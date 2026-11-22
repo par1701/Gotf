@@ -82,7 +82,7 @@
   "traits_es": [
    "Elige un segundo descriptor y suma sus beneficios a los de tu descriptor normal.",
    "(En una partida en la que todos los PJ son humanos, el DJ decide si se usa la opción de especie Humano.)",
-   "(Si eliges Humano como especie, tu frase de personaje «Soy un [tipo] [especie] [descriptor] que [foco]» gana otro elemento: tu segundo descriptor. Por ejemplo, tu frase podría ser «Soy un Guerrero (Fighter) Humano Descarado y Agreste que Domina un arma (Masters Weaponry)».)"
+   "(Si eliges Humano como especie, tu frase de personaje «Soy un [tipo] [especie] [descriptor] que [foco]» gana otro elemento: tu segundo descriptor. Por ejemplo, tu frase podría ser «Soy un Luchador (Fighter) Humano Descarado y Agreste que Domina un arma (Masters Weaponry)».)"
   ],
   "ref": "CCR, p. 87"
  },
