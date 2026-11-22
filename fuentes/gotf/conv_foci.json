@@ -648,7 +648,7 @@
     "cost": "2+ Intelecto",
     "src": "Infiltrates, p. 196",
     "req": [],
-    "text": "Si en una tarea de abrir cerraduras, percepción, robar bolsillos o sigilo sacas menos de 6, cuenta como un 6 (así que un 1 no provoca intrusión del DJ). Se renueva al usar una recuperación. *Esfuerzo:* sube en 3 el mínimo. *Capacitador*. *En el rango 3:* el mínimo pasa a 9."
+    "text": "Si en una tarea de abrir cerraduras, percepción, robar bolsillos o sigilo sacas menos de 6, trata la tirada como un 6. (Esto significa que no sufres una intrusión del DJ si sacas un 1). Se renueva al usar una recuperación. *Esfuerzo:* sube en 3 el mínimo. *Capacitador*. *En el rango 3:* el mínimo pasa a 9."
    },
    {
     "tier": 2,
@@ -824,7 +824,7 @@
     "cost": "2+ Intelecto",
     "src": "Quells Evil, p. 210",
     "req": [],
-    "text": "Cuando usas una acción para percibir muertos vivientes, demonios (o poseídos por demonios) o criaturas similares a alcance inmediato, si sacas 9 o menos cuenta como un 9 (así que un 1 no provoca intrusión). Dura hasta que uses una recuperación de diez minutos o más. *Esfuerzo:* sube en 3 el mínimo. *Acción para iniciar*. *En el rango 3:* el mínimo pasa a 12."
+    "text": "Cuando usas una acción para percibir muertos vivientes, demonios (o poseídos por demonios) o criaturas similares a alcance inmediato, si sacas 9 o menos trata la tirada como un 9. (Esto significa que no sufres una intrusión del DJ si sacas un 1). Dura hasta que uses una recuperación de diez minutos o más. *Esfuerzo:* sube en 3 el mínimo. *Acción para iniciar*. *En el rango 3:* el mínimo pasa a 12."
    },
    {
     "tier": 2,
@@ -2697,7 +2697,7 @@
      "See the Unseen",
      "Sense Magic"
     ],
-    "text": "Cuando tiras para descubrir una ilusión o un objetivo invisible a alcance corto y sacas menos de 12, cuenta como un 12 (así que un 1 no provoca intrusión). Dura hasta que uses una recuperación de diez minutos o más. *Esfuerzo:* sube en 3 el mínimo. *Acción para iniciar*. *En el rango 3:* el mínimo pasa a 15."
+    "text": "Cuando tiras para descubrir una ilusión o un objetivo invisible a alcance corto y sacas menos de 12, trata la tirada como un 12. (Esto significa que no sufres una intrusión del DJ si sacas un 1). Dura hasta que uses una recuperación de diez minutos o más. *Esfuerzo:* sube en 3 el mínimo. *Acción para iniciar*. *En el rango 3:* el mínimo pasa a 15."
    },
    {
     "tier": 2,

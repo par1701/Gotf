@@ -52,7 +52,7 @@
 "dom-create": {
 "n": "Crear",
 "c": "7 puntos de reserva",
-"t": "Creas algo de la nada: cualquier objeto que normalmente tendría una dificultad de fabricación de 5 o menos. Dura tantas horas como 6 menos esa dificultad; por ejemplo, un carro (dificultad 5) dura una hora. Acción. [En el CCR la artesanía normal funciona con puntos de recurso (p. 315); se usa la dificultad 5 o inferior como dice GotF.]"
+"t": "Creas algo de la nada: cualquier objeto que normalmente tendría una dificultad de artesanía de 5 o menos. Dura tantas horas como 6 menos esa dificultad; por ejemplo, un carro (dificultad 5) dura una hora. Acción. [En el CCR la artesanía normal funciona con puntos de recurso (p. 315); se usa la dificultad 5 o inferior como dice GotF.]"
 },
 "dom-immortality": {
 "n": "Inmortalidad",

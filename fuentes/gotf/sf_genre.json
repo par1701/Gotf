@@ -45,7 +45,7 @@
   "en": "Hands on the Wheel",
   "n": "Manos al volante",
   "c": "2+ Intelecto",
-  "t": "Cuando pilotas o conduces un vehículo mecánico y sacas menos de 9, trata la tirada como un 9. (Esto significa que no hay intrusión del DJ si sacas un 1.) El beneficio dura hasta que usas una recuperación de diez minutos o más. Esfuerzo: aumenta en 3 el resultado mínimo de esta habilidad. Capacitador. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+  "t": "Cuando pilotas o conduces un vehículo mecánico y sacas menos de 9, trata la tirada como un 9. (Esto significa que no sufres una intrusión del DJ si sacas un 1). El beneficio dura hasta que usas una recuperación de diez minutos o más. Esfuerzo: aumentas en 3 el resultado mínimo de esta habilidad. Capacitador. En el rango 3: el resultado mínimo de esta habilidad aumenta a 12."
  },
  {
   "id": "sfgenre-incredible-health",
@@ -59,7 +59,7 @@
   "id": "sfgenre-machine-companion",
   "level": "mid",
   "en": "Machine Companion",
-  "n": "Compañero mecánico",
+  "n": "Compañero máquina",
   "c": "",
   "t": "Un robot de nivel 3 de tu tamaño o menor (comprado o construido por ti) te acompaña y sigue tus instrucciones como seguidor inteligente. Tú y el DJ debéis concretar los detalles de tu robot. Si el robot es destruido, puede restaurarse con tus recursos y unos días de trasteo. Si ya tienes un robot asistente, compañero mecánico o artefacto parecido, obtienes uno nuevo o mejoras el actual en 1 nivel, lo que prefieras."
  },
@@ -67,7 +67,7 @@
   "id": "sfgenre-mind-reading",
   "level": "mid",
   "en": "Mind Reading",
-  "n": "Leer la mente",
+  "n": "Leer mentes",
   "c": "2 Intelecto",
   "t": "Puedes leer los pensamientos superficiales de una criatura que veas a alcance corto. Si la criatura no está dispuesta, debes hacer un ataque de Intelecto contra ella para leer sus pensamientos. Una vez establecido el contacto, puedes leer los pensamientos del objetivo hasta que uses una recuperación de diez minutos o más. Acción."
  },
@@ -75,7 +75,7 @@
   "id": "sfgenre-snipe",
   "level": "mid",
   "en": "Snipe",
-  "n": "Francotirador",
+  "n": "Tiro certero",
   "c": "2 Velocidad",
   "t": "Pasas una acción apuntando a un enemigo. Si atacas a ese enemigo en tu siguiente turno, tu ataque se facilita y, si impactas, infliges 5 de daño adicional. Primera acción."
  },
@@ -99,7 +99,7 @@
   "id": "sfgenre-improved-machine-companion",
   "level": "high",
   "en": "Improved Machine Companion",
-  "n": "Compañero mecánico mejorado",
+  "n": "Compañero máquina mejorado",
   "c": "",
   "t": "Creas, encuentras o consigues de otro modo un compañero mecánico inteligente de nivel 5 como seguidor, que te acompaña y actúa según le indiques. Si es destruido, puede restaurarse con tus recursos tras unos días de trabajo. Si ya tienes un compañero mecánico de nivel inferior, eliges si se mejora a nivel 5 o lo conservas tal cual y obtienes un nuevo compañero de nivel 5."
  },
@@ -141,7 +141,7 @@
   "en": "Technology Expert",
   "n": "Experto en tecnología",
   "c": "",
-  "t": "Cuando tiras para usar cualquier tipo de artefacto mecánico (salvo un arma) y sacas menos de 9, trata la tirada como un 9. (Esto significa que no hay intrusión del DJ si sacas un 1.) Esfuerzo: aumenta en 3 el resultado mínimo de esta habilidad. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+  "t": "Cuando tiras para usar cualquier tipo de artefacto mecánico (salvo un arma) y sacas menos de 9, trata la tirada como un 9. (Esto significa que no sufres una intrusión del DJ si sacas un 1). Esfuerzo: aumentas en 3 el resultado mínimo de esta habilidad. En el rango 3: el resultado mínimo de esta habilidad aumenta a 12."
  },
  {
   "id": "sfgenre-telepathic-network",

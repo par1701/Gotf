@@ -425,7 +425,7 @@
  "type-rogue/detect-traps": {
   "n": "Detectar trampas",
   "c": "2+ Velocidad o Intelecto",
-  "t": "Cuando tiras para encontrar una trampa y sacas menos de 9, cuenta como un 9 (así que un 1 no provoca intrusión del DJ). Mantienes esta sensibilidad hasta que uses una recuperación de diez minutos o más. Esfuerzo: sube en 3 el mínimo. Acción. En el rango 3: el mínimo pasa a 12."
+  "t": "Cuando tiras para encontrar una trampa y sacas menos de 9, trata la tirada como un 9. (Esto significa que no sufres una intrusión del DJ si sacas un 1). Mantienes esta sensibilidad hasta que uses una recuperación de diez minutos o más. Esfuerzo: sube en 3 el mínimo. Acción. En el rango 3: el mínimo pasa a 12."
  },
  "type-rogue/expert-sneak": {
   "n": "Sigiloso experto",
@@ -696,7 +696,7 @@
  "type-thief/detect-traps": {
   "n": "Detectar trampas",
   "c": "2+ Velocidad o Intelecto",
-  "t": "Cuando tiras para encontrar una trampa y sacas menos de 9, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Mantienes esta mayor sensibilidad a las trampas hasta que uses una recuperación de diez minutos o más. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Acción. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+  "t": "Cuando tiras para encontrar una trampa y sacas menos de 9, trata la tirada como un 9. (Esto significa que no sufres una intrusión del DJ si sacas un 1). Mantienes esta mayor sensibilidad a las trampas hasta que uses una recuperación de diez minutos o más. Esfuerzo: aumentas en 3 el resultado mínimo de esta habilidad. Acción. En el rango 3: el resultado mínimo de esta habilidad aumenta a 12."
  },
  "type-thief/ferocious-when-cornered": {
   "n": "Feroz si te acorralan",
@@ -821,7 +821,7 @@
  "type-burglar/escape": {
   "n": "Escapar",
   "c": "2+ Velocidad",
-  "t": "Cuando tiras para escapar (zafarte de unas ataduras, colarte entre barrotes, librarte de una criatura que te agarra, salir de arenas movedizas…) y sacas menos de 9, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Acción. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+  "t": "Cuando tiras para escapar (zafarte de unas ataduras, colarte entre barrotes, librarte de una criatura que te agarra, salir de arenas movedizas…) y sacas menos de 9, trata la tirada como un 9. (Esto significa que no sufres una intrusión del DJ si sacas un 1). Acción. Esfuerzo: aumentas en 3 el resultado mínimo de esta habilidad. En el rango 3: el resultado mínimo de esta habilidad aumenta a 12."
  },
  "type-burglar/slip-into-shadow": {
   "n": "Fundirse en las sombras",
@@ -906,7 +906,7 @@
  "type-swashbuckler/romantic-flair": {
   "n": "Galantería",
   "c": "2+ Intelecto",
-  "t": "Tu encanto exuberante, tu confianza audaz, una reverencia en el momento justo o un guiño sugerente hacen que, si sacas menos de 9 en una tirada para encantar o impresionar, cuente como un 9 (así no hay intrusión del DJ si sacas un 1). Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Acción. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+  "t": "Tu encanto exuberante, tu confianza audaz, una reverencia en el momento justo o un guiño sugerente hacen que, si sacas menos de 9 en una tirada para encantar o impresionar, cuente como un 9 (así no hay intrusión del DJ si sacas un 1). Esfuerzo: aumentas en 3 el resultado mínimo de esta habilidad. Acción. En el rango 3: el resultado mínimo de esta habilidad aumenta a 12."
  },
  "type-warrior": {
   "n": "Guerrero",

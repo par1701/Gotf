@@ -10,7 +10,7 @@
   "t": "Puedes llevar una cifra más a la vez. Puedes ganar esta habilidad varias veces (como avance o en lugar de una nueva habilidad de foco); cada vez puedes llevar una cifra más."
  },
  "genre-danger-instinct": {
-  "n": "Instinto del peligro",
+  "n": "Instinto ante el peligro",
   "c": "3 Velocidad",
   "t": "Si te atacan por sorpresa, sea una criatura, un artefacto o un peligro del entorno (como un árbol que te cae encima), te mueves una distancia inmediata antes del ataque. Si moverte lo evita, estás a salvo. Si aún puede afectarte (si la criatura puede seguirte, si el ataque cubre una zona demasiado grande para escapar, etc.), tu defensa contra él se facilita. Capacitador."
  },
@@ -77,7 +77,7 @@
  "genre-winning-smile": {
   "n": "Sonrisa encantadora",
   "c": "2+ Intelecto",
-  "t": "Cuando tiras para encantar o influir en alguien y sacas menos de 9, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Tu mayor influencia dura hasta tu siguiente recuperación de diez minutos o más. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Acción."
+  "t": "Cuando tiras para encantar o influir en alguien y sacas menos de 9, trata la tirada como un 9. (Esto significa que no sufres una intrusión del DJ si sacas un 1). Tu mayor influencia dura hasta tu siguiente recuperación de diez minutos o más. Esfuerzo: aumentas en 3 el resultado mínimo de esta habilidad. Acción."
  },
  "genre-assassin-strike": {
   "n": "Golpe de asesino",
@@ -115,7 +115,7 @@
   "t": "Transformas tu cuerpo para ser otra persona. Puedes cambiar cualquier rasgo físico que quieras, incluidos coloración, altura, peso, sexo y marcas distintivas, y también el aspecto de lo que llevas puesto o encima. Tus estadísticas y las de tus objetos no cambian. Mantienes esta forma hasta un día o hasta que uses una acción para recuperar tu aspecto normal. Si usas la habilidad como disfraz y se somete a escrutinio directo o se pone en duda, tu tarea de disfraz se facilita tres pasos. Acción."
  },
  "genre-resilience": {
-  "n": "Resistencia",
+  "n": "Resiliencia",
   "c": "",
   "t": "Puedes recibir una herida moderada más de lo normal."
  },

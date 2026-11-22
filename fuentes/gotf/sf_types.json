@@ -209,7 +209,7 @@
     "en": "Escape",
     "es": "Escapar",
     "cost_es": "2+ Velocidad",
-    "text_es": "Cuando tiras para escapar (zafarte de unas ataduras, colarte entre barrotes, librarte de una criatura que te agarra, salir de arenas movedizas…) y sacas menos de 9, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Acción. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+    "text_es": "Cuando tiras para escapar (zafarte de unas ataduras, colarte entre barrotes, librarte de una criatura que te agarra, salir de arenas movedizas…) y sacas menos de 9, trata la tirada como un 9. (Esto significa que no sufres una intrusión del DJ si sacas un 1). Esfuerzo: aumentas en 3 el resultado mínimo de esta habilidad. Acción. En el rango 3: el resultado mínimo de esta habilidad aumenta a 12."
    },
    {
     "en": "Sneak Attack",
@@ -221,7 +221,7 @@
     "en": "Spin Identity",
     "es": "Inventar identidad",
     "cost_es": "2+ Intelecto",
-    "text_es": "Cuando tiras para convencer a una criatura inteligente (incluidos ordenadores y sistemas de vigilancia) de que eres alguien o algo distinto de lo que eres y sacas menos de 6, cuenta como un 6 (así no hay intrusión del DJ si sacas un 1). No te permite hacerte pasar por una persona concreta: convences a los presentes de que eres alguien a quien no conocen de cierta categoría de personas. «Soy del gobierno.» «Solo soy un simple viajero que va a lo suyo.» «Me envía tu comandante.» Los usos con éxito duran hasta que uses una recuperación de diez minutos o más, salvo que tus actos u otras circunstancias revelen antes tu verdadera identidad. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Acción. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+    "text_es": "Cuando tiras para convencer a una criatura inteligente (incluidos ordenadores y sistemas de vigilancia) de que eres alguien o algo distinto de lo que eres y sacas menos de 6, trata la tirada como un 6. (Esto significa que no sufres una intrusión del DJ si sacas un 1). No te permite hacerte pasar por una persona concreta: convences a los presentes de que eres alguien a quien no conocen de cierta categoría de personas. «Soy del gobierno.» «Solo soy un simple viajero que va a lo suyo.» «Me envía tu comandante.» Los usos con éxito duran hasta que uses una recuperación de diez minutos o más, salvo que tus actos u otras circunstancias revelen antes tu verdadera identidad. Esfuerzo: aumentas en 3 el resultado mínimo de esta habilidad. Acción. En el rango 3: el resultado mínimo de esta habilidad aumenta a 12."
    }
   ],
   "bundle_es": "Una hoja molecular, ropa adecuada, armadura de impacto en aerosol (diez usos), ropa y accesorios extra para disfrazarte, un dispositivo inteligente (gafas, insignia, anillo o similar), una mochila, un respirador, una tienda ambiental, un traje de vacío de un solo uso, una luz perenne, raciones y agua para dos días, un neceser de aseo y un antifaz y dinero suficiente para comprar un objeto de precio moderado.",
@@ -267,7 +267,7 @@
     "en": "Born to Pilot",
     "es": "Piloto nato",
     "cost_es": "2+ Intelecto",
-    "text_es": "Cuando tiras para pilotar una nave espacial y sacas menos de 9, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Las tareas de pilotaje incluyen maniobras concretas como atracar la nave con seguridad, girarla o acelerarla lo bastante despacio para evitar gravedades peligrosamente altas durante periodos prolongados, notar algo raro en los sensores, etc. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Esta habilidad se renueva al usar una recuperación. Acción. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+    "text_es": "Cuando tiras para pilotar una nave espacial y sacas menos de 9, trata la tirada como un 9. (Esto significa que no sufres una intrusión del DJ si sacas un 1). Las tareas de pilotaje incluyen maniobras concretas como atracar la nave con seguridad, girarla o acelerarla lo bastante despacio para evitar gravedades peligrosamente altas durante periodos prolongados, notar algo raro en los sensores, etc. Esfuerzo: aumentas en 3 el resultado mínimo de esta habilidad. Esta habilidad se renueva al usar una recuperación. Acción. En el rango 3: el resultado mínimo de esta habilidad aumenta a 12."
    },
    {
     "en": "Expert Space Pilot",
@@ -327,7 +327,7 @@
     "en": "Combat Enhancement",
     "es": "Mejora de combate",
     "cost_es": "2+ Velocidad o Intelecto",
-    "text_es": "Tu mejora de combate militar (seguramente algún tipo de implante nervioso, hardware subdérmico o modificación genética) reduce tu tiempo de reacción ante amenazas inesperadas, así que rara vez te sorprenden. Tira la iniciativa con normalidad, pero si sacas menos de 15, cuenta como un 15 (así no hay intrusión del DJ si sacas un 1). Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Capacitador. En el rango 3: el resultado mínimo de esta habilidad sube a 18."
+    "text_es": "Tu mejora de combate militar (seguramente algún tipo de implante nervioso, hardware subdérmico o modificación genética) reduce tu tiempo de reacción ante amenazas inesperadas, así que rara vez te sorprenden. Tira la iniciativa con normalidad, pero si sacas menos de 15, trata la tirada como un 15. (Esto significa que no sufres una intrusión del DJ si sacas un 1). Esfuerzo: aumentas en 3 el resultado mínimo de esta habilidad. Capacitador. En el rango 3: el resultado mínimo de esta habilidad aumenta a 18."
    },
    {
     "en": "Expert Combatant",
@@ -389,7 +389,7 @@
     "en": "Built to Hack",
     "es": "Hecho para piratear",
     "cost_es": "2+ Intelecto",
-    "text_es": "Cuando tiras para piratear un ordenador o una máquina no inteligente y sacas menos de 9, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Las tareas de piratería (que puedes iniciar con tu capacidad de conectarte sin cables o conectándote directamente a la máquina) incluyen entrar en bases de datos seguras, tomar el control temporal de torretas remotas, abrir accesos con cierre electrónico, etc. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Capacitador. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+    "text_es": "Cuando tiras para piratear un ordenador o una máquina no inteligente y sacas menos de 9, trata la tirada como un 9. (Esto significa que no sufres una intrusión del DJ si sacas un 1). Las tareas de piratería (que puedes iniciar con tu capacidad de conectarte sin cables o conectándote directamente a la máquina) incluyen entrar en bases de datos seguras, tomar el control temporal de torretas remotas, abrir accesos con cierre electrónico, etc. Esfuerzo: aumentas en 3 el resultado mínimo de esta habilidad. Capacitador. En el rango 3: el resultado mínimo de esta habilidad aumenta a 12."
    },
    {
     "en": "Flex Skill",
@@ -575,7 +575,7 @@
     "en": "Hand to Eye",
     "es": "Coordinación",
     "cost_es": "2 Velocidad o Intelecto",
-    "text_es": "Cuando tiras para una tarea de destreza manual o agilidad mental (robar bolsillos, forzar cerraduras, juegos de agilidad, etc.) y sacas menos de 9, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Capacitador. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+    "text_es": "Cuando tiras para una tarea de destreza manual o agilidad mental (robar bolsillos, forzar cerraduras, juegos de agilidad, etc.) y sacas menos de 9, trata la tirada como un 9. (Esto significa que no sufres una intrusión del DJ si sacas un 1). Esfuerzo: aumentas en 3 el resultado mínimo de esta habilidad. Capacitador. En el rango 3: el resultado mínimo de esta habilidad aumenta a 12."
    }
   ],
   "bundle_es": "Un desintegrador medio y una batería de energía para armas (50 disparos), ropa adecuada, una identificación falsa, un módulo de interfaz, un dispositivo inteligente (gafas, insignia, anillo o similar), una mochila, un respirador, una tienda ambiental, un traje de vacío de un solo uso, una luz perenne, raciones y agua para dos días, un neceser de aseo y un antifaz y dinero suficiente para comprar un objeto de precio moderado.",
@@ -922,11 +922,11 @@
     "en": "Enhanced Scavenging",
     "es": "Rebusca mejorada",
     "cost_es": "2+ Intelecto",
-    "text_es": "Cuando tiras para rebuscar algo útil en el paisaje postapocalíptico y sacas menos de 9, trata la tirada como un 9. (Esto significa que no hay intrusión del DJ si sacas un 1.) El efecto mejorado dura hasta que usas una recuperación de diez minutos o más. Esfuerzo: aumenta en 3 el resultado mínimo de esta habilidad. Capacitador. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+    "text_es": "Cuando tiras para rebuscar algo útil en el paisaje postapocalíptico y sacas menos de 9, trata la tirada como un 9. (Esto significa que no sufres una intrusión del DJ si sacas un 1). El efecto mejorado dura hasta que usas una recuperación de diez minutos o más. Esfuerzo: aumentas en 3 el resultado mínimo de esta habilidad. Capacitador. En el rango 3: el resultado mínimo de esta habilidad aumenta a 12."
    },
    {
     "en": "Get Out",
-    "es": "Largarse",
+    "es": "Ponerse a salvo",
     "cost_es": "",
     "text_es": "Si te alejas al menos una distancia inmediata de la amenaza más obvia o te acercas a lo que promete seguridad, una tarea que intentes en el asalto siguiente se facilita. Capacitador."
    }
