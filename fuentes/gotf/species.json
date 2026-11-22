@@ -3,11 +3,12 @@
   "id": "sp-dragonfolk",
   "en": "Dragonfolk",
   "es": "Dracónido",
-  "desc_es": "Desciendes de dragones, cubierto de escamas, y compartes parentesco con algunas de las criaturas más poderosas que han surcado los cielos. Puedes haber nacido de padres dracónidos, haberte transformado por voluntad propia en una ceremonia mágica o haber sido elegido por un dragón como su agente o campeón; o quizá no sepas por qué eres así. Hay quien dice que te espera un gran destino.",
+  "desc_es": "Cubierto de escamas y descendiente de dragones, compartes parentesco con algunas de las criaturas más poderosas que han surcado jamás los cielos del mundo. Puede que nacieras de padres dracónidos, que te transformaras por voluntad propia en una ceremonia mágica o que un dragón te eligiera como su agente o su campeón; o puede que no tengas ni idea de por qué eres así. Hay quien dice que te espera un gran destino, pero creerlo o no depende de ti.",
   "traits_es": [
-   "No sufres una intrusión del DJ si sacas un 1 en una tarea de bloqueo.",
-   "Entrenado en intimidation (salvo contra otros dracónidos y dragones).",
-   "Elige una energía (ácido, frío, fuego…): haces +1 de daño cuando atacas con ella."
+   "Entrenado en intimidación (intimidation) (salvo contra otros dracónidos y contra dragones).",
+   "+1 al daño con la energía que elijas; por ejemplo, ácido, frío o fuego.",
+   "Sin intrusión del DJ si sacas un 1 en una tarea de bloquear.",
+   "(Decide con el DJ si quieres que tu personaje dracónido tenga un arma de aliento. Puedes adaptar fácilmente una de tus habilidades de tipo o de foco, como Descarga (Blast), Manto de llamas (Shroud of Flame), Mano de relámpago (Lightning Hand) o algo parecido, para que el efecto salga de tu aliento en lugar de producirse como indica la descripción de la habilidad.)"
   ],
   "ref": "CCR, p. 85"
  },
@@ -15,11 +16,11 @@
   "id": "sp-dwarf",
   "en": "Dwarf",
   "es": "Enano",
-  "desc_es": "Eres un nativo robusto, ancho de hombros y barbudo de montañas y colinas, tan testarudo como la piedra en la que los enanos excavan sus hogares. La tradición, el honor, el orgullo por la forja y la guerra y el aprecio por las riquezas enterradas forman parte de tu herencia. Cuando a un enano le hacen daño, nunca lo olvida.",
+  "desc_es": "Eres un nativo de montañas y colinas, robusto, ancho de hombros y barbudo. También eres tan testarudo como la piedra en la que los enanos excavan sus hogares bajo las montañas. La tradición, el honor, el orgullo por la forja y por el arte de la guerra, y un vivo aprecio por las riquezas enterradas bajo las raíces del mundo forman parte de tu herencia. Quienes te desean mal deberían tener cuidado con tu genio. Cuando a un enano le hacen un agravio, nunca lo olvida.",
   "traits_es": [
-   "+1 a tus recuperaciones.",
-   "Entrenado en navigation (bajo tierra o en zonas montañosas).",
-   "Haces +1 de daño con hachas."
+   "Entrenado en orientación (navigation) (bajo tierra o en zonas montañosas).",
+   "+1 al daño con hachas.",
+   "+1 a las tiradas de recuperación."
   ],
   "ref": "CCR, p. 85"
  },
@@ -27,11 +28,12 @@
   "id": "sp-elf",
   "en": "Elf",
   "es": "Elfo",
-  "desc_es": "Habitas los bosques y los reinos naturales profundos, como tu pueblo desde hace milenios: eres la flecha en la noche, la sombra en el claro y la risa en el viento. Eres esbelto, rápido, grácil y longevo, y llevas las penas de una vida larga con canciones, vino y amor por lo que crece, sobre todo los árboles.",
+  "desc_es": "Rondas los bosques y los reinos naturales profundos, como ha hecho tu pueblo durante milenios. Eres la flecha en la noche, la sombra en el claro y la risa en el viento. Como elfo, eres esbelto, rápido, grácil y longevo. Sobrellevas las penas de vivir mucho más que casi todos los demás con canciones, vino y el aprecio por la profunda belleza de lo que crece, sobre todo los árboles, que pueden vivir aún más que tú.",
   "traits_es": [
-   "No sufres una intrusión del DJ si sacas un 1 en una defensa de Intelecto.",
-   "Entrenado en stealth (en zonas boscosas).",
-   "Haces +1 de daño con arcos."
+   "Entrenado en sigilo (stealth) (en zonas boscosas).",
+   "+1 al daño con arcos.",
+   "Sin intrusión del DJ si sacas un 1 en una tarea de defensa de Intelecto.",
+   "(Los semielfos ganan las características de la especie Elfo o las de la especie Humano, lo que decidas al crear tu personaje semielfo.)"
   ],
   "ref": "CCR, p. 86"
  },
@@ -39,11 +41,11 @@
   "id": "sp-gnome",
   "en": "Gnome",
   "es": "Gnomo",
-  "desc_es": "Mides algo más de un metro y te encanta descubrir cómo convertir lo que encuentras en arte, herramientas o armas: escultor, herrero, artista, cocinero, cuentacuentos o inventor. Te fascinan la alquimia, la magia y la ingeniería, y tu pueblo tiene una pasión única por la vida, la exploración y la creación.",
+  "desc_es": "Mides unos tres pies y medio (100 cm), eres curioso y te encanta descubrir formas de convertir lo que encuentras en arte, herramientas o armas. Puedes ser escultor, herrero, artista, cocinero, cuentacuentos o inventor. Te fascinan la alquimia, la magia y la ingeniería. Otros seres quizá te vean como una extraña mezcla de un elfo amante de la naturaleza y un enano obsesionado con la artesanía, pero tú y los tuyos sois un pueblo único con pasión por la vida, la exploración y la creación.",
   "traits_es": [
-   "No sufres una intrusión del DJ si sacas un 1 en una tirada de esquivar.",
-   "Entrenado en crafting.",
-   "Haces +1 de daño con armas ligeras cuerpo a cuerpo."
+   "Entrenado en artesanía (crafting).",
+   "+1 al daño con armas cuerpo a cuerpo ligeras.",
+   "Sin intrusión del DJ si sacas un 1 en una tarea de esquivar."
   ],
   "ref": "CCR, p. 86"
  },
@@ -51,11 +53,11 @@
   "id": "sp-halfling",
   "en": "Halfling",
   "es": "Mediano",
-  "desc_es": "Mides un metro y estás orgulloso de cada centímetro. Te gustan las comodidades del hogar, pero de vez en cuando te pica la aventura. Pequeño y rápido, te llevas bien con todo el mundo. Los humanos y tú tenéis mucho en común; solo que tú eres más compacto y eficiente.",
+  "desc_es": "Mides tres pies (1 m) y estás orgulloso de cada centímetro. Te gustan las comodidades del hogar, pero de vez en cuando te pica el gusanillo de la aventura. Pequeño y rápido, tienes un don para llevarte bien con todo el mundo. Puede que te criaras en una aldea de medianos, en una comunidad mixta donde humanos y gente menuda trabajan y comen codo con codo como amigos, o en un entorno menos acogedor donde los tuyos salen adelante con engaños y actividades delictivas. Los humanos y tú tenéis mucho en común; solo que tú eres más compacto y eficiente.",
   "traits_es": [
-   "No sufres una intrusión del DJ si sacas un 1 en una tarea de stealth.",
-   "Entrenado en escaping.",
-   "Haces +1 de daño con armas ligeras arrojadizas."
+   "Entrenado en escapar (escaping).",
+   "+1 al daño con armas arrojadizas ligeras.",
+   "Sin intrusión del DJ si sacas un 1 en una tarea de sigilo (stealth)."
   ],
   "ref": "CCR, p. 86"
  },
@@ -63,11 +65,12 @@
   "id": "sp-hellborn",
   "en": "Hellborn",
   "es": "Infernal",
-  "desc_es": "Eres en parte humano y en parte algo de otra dimensión: huérfano de un encuentro sobrenatural, fruto de un ritual fallido, vástago de un linaje antiguo o alguien que «se tragó» al demonio que intentó poseerlo. Algunos tienen cuernos, cola y dientes afilados; otros, rasgos más sutiles. Decide con el DJ tu aspecto.",
+  "desc_es": "En parte humano y en parte algo de otra dimensión, puede que seas el huérfano de un devaneo sobrenatural, el fruto de un ritual mágico que salió mal, el vástago de un linaje antiguo o simplemente alguien que «se tragó» espiritualmente al demonio que intentó poseerlo. Algunos de los tuyos tienen cuernos, cola y dientes afilados. Otros muestran sus diferencias de forma más sutil o más evidente: la sombra de un filo de cuchillo en el rostro y un tacto que marchita las plantas normales, demasiado fuego en la mirada y olor a ceniza en el aire, una lengua bífida, patas de cabra o la incapacidad de proyectar sombra. Decide con el DJ tu aspecto infernal concreto.",
   "traits_es": [
-   "Las heridas que recibes de fuego y calor bajan un paso de gravedad.",
-   "Entrenado en magic lore.",
-   "Haces +1 de daño con ataques desarmados."
+   "Reduces un paso la gravedad de las heridas por fuego y calor.",
+   "Entrenado en saber mágico (magic lore).",
+   "+1 al daño con ataques desarmados.",
+   "(Decide con el DJ si quieres que tu personaje infernal tenga una habilidad mágica innata relacionada con su herencia de otra dimensión. Puedes adaptar fácilmente una de tus habilidades de tipo o de foco, como Semillas de furia (Seeds of Fury), Castigo sagrado (Sacred Smite), Tribulación (Tribulation) o algo parecido, para que el efecto sea algo que manifiestas tú en persona en lugar de producirse como indica la descripción de la habilidad.)"
   ],
   "ref": "CCR, p. 87"
  },
@@ -75,9 +78,11 @@
   "id": "sp-human",
   "en": "Human",
   "es": "Humano",
-  "desc_es": "Los humanos son de las especies más jóvenes, y quizá por eso tienden a explorar, conquistar y expandirse. Individualmente no podrían ser más diversos. Lo que es seguro es que no temes luchar por lo que quieres y por lo que crees.",
+  "desc_es": "Los humanos están entre las especies más jóvenes, y quizá por eso, considerados en conjunto, son más dados a explorar, conquistar y expandir sus comunidades, aunque eso suponga quitárselo a otras especies o a otros humanos. Individualmente, los humanos no podrían ser más diversos. Eso significa que puedes medir menos de 5 pies (150 cm) y pesar apenas 100 libras (45 kg), o pasar con creces de 6 pies (180 cm) y pesar 250 libras (113 kg); tener los ojos azules, castaños, negros, verdes o de otro color; no tener pelo, lucir una melena dorada, unas rastas asombrosas, una cresta u otro corte atrevido; vivir entregado a tu fe, a explorar lugares antiguos, a mantener a raya el mal, a enriquecerte o a otra inclinación; etc. Lo que es seguro es que no te da miedo luchar por lo que quieres y por lo que crees.",
   "traits_es": [
-   "Elige un segundo descriptor y suma sus beneficios a los de tu descriptor."
+   "Elige un segundo descriptor y suma sus beneficios a los de tu descriptor normal.",
+   "(En una partida en la que todos los PJ son humanos, el DJ decide si se usa la opción de especie Humano.)",
+   "(Si eliges Humano como especie, tu frase de personaje «Soy un [tipo] [especie] [descriptor] que [foco]» gana otro elemento: tu segundo descriptor. Por ejemplo, tu frase podría ser «Soy un Guerrero (Fighter) Humano Descarado y Agreste que Domina un arma (Masters Weaponry)».)"
   ],
   "ref": "CCR, p. 87"
  },
@@ -85,11 +90,12 @@
   "id": "sp-orc",
   "en": "Orc",
   "es": "Orco",
-  "desc_es": "Otras especies desprecian a veces a los orcos como carne de cañón de señores oscuros. Quizá algunos lo sean, pero sabes que los orcos son un pueblo orgulloso (aunque agresivo) con sentido del honor, capaz de aliarse con otros contra una amenaza mayor. Has salido al mundo en busca de nuevas oportunidades.",
+  "desc_es": "Otras especies tienen a veces prejuicios contra los orcos y los ven como criaturas malnacidas destinadas a servir de carne de cañón a señores del mal más poderosos. Quizá algunos lo sean; sin embargo, sabes que los orcos son un pueblo orgulloso (aunque agresivo) con sentido del honor. Aunque pueden ser enemigos mortales, sobre todo de humanos y elfos, se sabe que se han aliado con otros contra una amenaza mayor. Sea cual sea tu crianza, te has aventurado en el ancho mundo en busca de nuevas oportunidades. Cuánto influye tu herencia en tu forma de ver las cosas depende de ti: puede teñirlo todo, o solo salir a relucir cuando alguien se aparta al ver tu cara.",
   "traits_es": [
-   "Puedes recibir una herida leve más de lo normal.",
-   "Entrenado en intimidation (salvo contra otros orcos).",
-   "Haces +1 de daño con armas pesadas cuerpo a cuerpo."
+   "Puedes recibir una herida leve adicional.",
+   "Entrenado en intimidación (intimidation) (salvo contra otros orcos).",
+   "+1 al daño con armas cuerpo a cuerpo pesadas.",
+   "(Los semiorcos ganan las características de la especie Orco o las de la especie Humano, lo que decidas al crear tu personaje semiorco.)"
   ],
   "ref": "CCR, p. 87"
  },
@@ -100,7 +106,7 @@
   "desc_es": "Especie propia de GotF, opcional [Adaptación].",
   "traits_es": [
    "Longevo: tu esperanza de vida natural es de quinientos años. [GotF]",
-   "Entrenado en stealth o en magic lore. [Adaptación de GotF]",
+   "Entrenado en sigilo (stealth) o en saber mágico (magic lore). [Adaptación de GotF]",
    "Llevas una daga que escondes con facilidad; es un recurso a favor en las tareas de ocultarla. [GotF]"
   ],
   "ref": "GotF, p. 127"
@@ -112,7 +118,7 @@
   "desc_es": "Especie propia de GotF, opcional [Adaptación].",
   "traits_es": [
    "Sentidos alternativos: no te afectan la oscuridad ni los efectos que cegarían a otras criaturas. [GotF] Es una excepción a la regla del CCR de que ningún PJ ve en la oscuridad total (p. 85).",
-   "Entrenado en perception. [GotF]",
+   "Entrenado en percepción (perception). [GotF]",
    "Empiezas con un arma pesada de tu elección. [GotF]"
   ],
   "ref": "GotF, p. 128"

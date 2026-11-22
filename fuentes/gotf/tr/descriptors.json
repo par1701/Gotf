@@ -9,19 +9,19 @@
 "n": "Estudioso",
 "p": "+2 a la reserva de Intelecto",
 "s": "Entrenado en historia (history), filosofía (philosophy), psicología (psychology) o similar",
-"d": "Has pasado casi toda tu vida en actividades sedentarias (leer, mirar las estrellas, escribir poesía…) en vez de activas. Dominas todo tipo de saberes académicos o intelectuales. No eres necesariamente débil (aunque es un buen descriptor para personajes ancianos), pero no tienes experiencia en actividades físicas."
+"d": "Has pasado casi toda tu vida en actividades sedentarias —leer libros, observar las estrellas, escribir poesía, etc.— en vez de activas. Dominas todo tipo de saberes académicos u otras actividades intelectuales. No eres necesariamente débil ni endeble (aunque es un buen descriptor para personajes ancianos), pero no tienes experiencia en actividades más físicas."
 },
 "desc-brash": {
 "n": "Descarado",
 "p": "+2 a la reserva de Velocidad",
 "s": "Entrenado en piratería informática (hacking) o iniciativa (initiative)",
-"d": "Eres seguro de ti mismo, enérgico y quizá algo irreverente con las ideas que no compartes. Hay quien te llama audaz y valiente, y quien te ha visto poner a otros en su sitio te llama engreído y arrogante. Da igual: no te importa lo que piensen de ti, salvo tus amigos o tu familia. Hasta alguien tan descarado como tú sabe que a veces los amigos van primero."
+"d": "Eres de los que se imponen: confías en tus capacidades, eres enérgico y quizá algo irreverente con las ideas que no compartes. Hay quien te llama audaz y valiente, pero aquellos a los que has puesto en su sitio quizá te llamen engreído y arrogante. Da igual. No va contigo preocuparte por lo que piensen de ti, salvo que sean tus amigos o tu familia. Hasta alguien tan descarado como tú sabe que a veces los amigos van primero."
 },
 "desc-calm": {
 "n": "Sereno",
 "p": "+2 a la reserva de Intelecto",
 "s": "Entrenado en encanto (charm) o oficio (skilled trade)",
-"d": "Eres firme y no te alteras ante el estrés o la adversidad. Buscas la calma interior para reaccionar con reflexión y no por impulso. Tu presencia también serena a quienes ven tu temple y escuchan tus pacientes consejos."
+"d": "Eres firme y no te alteras con facilidad ante el estrés o la adversidad. Intentas centrarte en una quietud interior para reaccionar con reflexión y no por impulso. Del mismo modo, tu presencia puede serenar a quienes te rodean, que ven tu temple imperturbable y escuchan tus pacientes consejos."
 },
 "desc-cautious": {
 "n": "Cauto",
@@ -39,7 +39,7 @@
 "n": "Encantador",
 "p": "+2 a la reserva de Intelecto",
 "s": "Entrenado en encanto (charm) o engaño (deception)",
-"d": "Tienes labia y encanto. Ya sea por medios casi sobrenaturales o por tu manera de hablar, convences a los demás de que hagan lo que quieres. Seguramente eres atractivo, o al menos muy carismático, y a la gente le gusta oír tu voz. Cuidas tu aspecto y haces amigos con facilidad. Explotas la faceta de personalidad de tu Intelecto; la inteligencia no es tu fuerte."
+"d": "Tienes labia y encanto. Ya sea por medios casi sobrenaturales o por tu manera de hablar, convences a los demás de que hagan lo que quieres. Lo más probable es que seas atractivo, o al menos muy carismático, y a la gente le gusta oír tu voz. Seguramente cuidas tu aspecto y vas bien arreglado. Haces amigos con facilidad. Explotas la faceta de personalidad de tu atributo de Intelecto; la inteligencia no es tu fuerte. Eres afable."
 },
 "desc-clever": {
 "n": "Listo",
@@ -63,7 +63,7 @@
 "n": "Empático",
 "p": "+2 a la reserva de Intelecto",
 "s": "Entrenado en recabar información (gathering information) o reconocer intenciones (recognizing motive)",
-"d": "Los demás son un libro abierto para ti. Puede que sepas leer los gestos sutiles que delatan el ánimo y la disposición de alguien, o que sientas sus emociones como algo tangible que te roza la mente. Tu don te ayuda a manejar las situaciones sociales, evitar malentendidos e impedir conflictos inútiles."
+"d": "Los demás son un libro abierto para ti. Quizá tengas un don para leer los indicios que delatan a alguien, esos movimientos sutiles que transmiten su estado de ánimo y su disposición. O quizá recibes la información de forma más directa y sientes las emociones de los demás como si fueran algo tangible, sensaciones que te rozan levemente la mente. Tu don para la empatía te ayuda a desenvolverte en las situaciones sociales y a controlarlas para evitar malentendidos e impedir que estallen conflictos inútiles."
 },
 "desc-fast": {
 "n": "Veloz",
@@ -99,7 +99,7 @@
 "n": "Curioso",
 "p": "+2 a la reserva de Intelecto",
 "s": "Entrenado en recabar información (gathering information) o identificar (identifying)",
-"d": "El mundo es vasto y misterioso, con maravillas y secretos para asombrarte varias vidas. Sientes la llamada de explorar las ruinas de civilizaciones pasadas y descubrir pueblos, lugares y rarezas por el camino. Pero sabes que hay peligros de sobra, y tomas precauciones: investigar, prepararte y estar listo te ayudará a vivir lo bastante para verlo y hacerlo todo."
+"d": "El mundo es vasto y misterioso, con maravillas y secretos para asombrarte durante varias vidas. Sientes un tirón en el corazón, la llamada de explorar las ruinas de civilizaciones pasadas, de descubrir pueblos nuevos, lugares nuevos y cualquier maravilla extraña que encuentres por el camino. Pero, por fuerte que sea la llamada de recorrer el mundo, sabes que hay peligros de sobra, y tomas precauciones para estar preparado ante cualquier eventualidad. Investigar, prepararte y estar listo te ayudará a vivir lo bastante para ver todo lo que quieres ver y hacer todo lo que quieres hacer."
 },
 "desc-intelligent": {
 "n": "Inteligente",
@@ -111,7 +111,7 @@
 "n": "Intuitivo",
 "p": "+2 a la reserva de Intelecto",
 "s": "Entrenado en psicología (psychology) o reconocer intenciones (recognizing motive)",
-"d": "A menudo te asalta la sensación de saber qué va a decir alguien, cómo reaccionará o cómo se desarrollarán los acontecimientos. Quizá tengas un sentido especial, quizá veas unos instantes del futuro o quizá solo sepas leer a la gente y deducir. Sea como sea, muchos apartan la mirada cuando te miran a los ojos, como si temieran lo que puedas ver en su expresión."
+"d": "A menudo te asalta la sensación de saber qué va a decir alguien, cómo reaccionará o cómo se desarrollarán los acontecimientos. Quizá tengas un sentido mutante, quizá veas unos instantes del futuro o quizá solo se te dé bien leer a la gente y deducir cómo evolucionará una situación. Sea como sea, muchos de los que te miran a los ojos apartan enseguida la mirada, como si temieran lo que puedas ver en su expresión."
 },
 "desc-jovial": {
 "n": "Jovial",
@@ -123,7 +123,7 @@
 "n": "Amable",
 "p": "+2 a la reserva de Intelecto",
 "s": "Entrenado en encanto (charm) o curación (healing)",
-"d": "Siempre te ha resultado fácil ver las cosas desde el punto de vista de los demás, y eso te hace comprender lo que de verdad quieren o necesitan. Para ti es aplicar el refrán de que se cazan más moscas con miel que con hiel, pero los demás lo ven como amabilidad. Claro que tu tiempo es limitado: unos pocos (sádicos, narcisistas y gente así) no merecen tu amabilidad, así que despachas rápido con ellos y la guardas para quien la merece."
+"d": "Siempre te ha resultado fácil ver las cosas desde el punto de vista de los demás. Esa capacidad te ha hecho comprender lo que de verdad quieren o necesitan. Desde tu punto de vista, solo aplicas el viejo refrán de que «se cazan más moscas con miel que con hiel», pero los demás ven en tu comportamiento amabilidad. Claro que ser amable lleva tiempo, y el tuyo es limitado. Has aprendido que una pequeña parte de la gente no merece tu tiempo ni tu amabilidad: los auténticos sádicos, los narcisistas y gente parecida solo malgastarán tu energía. Así que despachas rápido con ellos y guardas tu amabilidad para quienes la merecen y pueden sacar provecho de tu atención."
 },
 "desc-mechanical": {
 "n": "Mecánico",
@@ -141,7 +141,7 @@
 "n": "Místico",
 "p": "+2 a la reserva de Intelecto",
 "s": "Entrenado en saber mágico (magic lore), saber psíquico (psychic lore) o saber religioso (religious lore)",
-"d": "Te consideras místico, en sintonía con lo misterioso y lo paranormal; tu verdadero talento es lo sobrenatural. Seguramente conoces saberes antiguos, y puedes percibir y manejar lo sobrenatural, llámese «magia», «fenómenos psíquicos» o de otra forma. Los místicos suelen llevar joyas, como un anillo o un amuleto, o tatuajes y marcas que muestran sus intereses."
+"d": "Te consideras místico, en sintonía con lo misterioso y lo paranormal. Tu verdadero talento está en lo sobrenatural. Seguramente tienes experiencia con saberes antiguos, y puedes percibir y manejar lo sobrenatural, aunque llamarlo «magia», «fenómenos psíquicos» u otra cosa depende de ti (y probablemente también de quienes te rodean). Los personajes místicos suelen llevar joyas, como un anillo o un amuleto, o tatuajes u otras marcas que muestran sus intereses."
 },
 "desc-perceptive": {
 "n": "Perspicaz",
@@ -165,7 +165,7 @@
 "n": "Escéptico",
 "p": "+2 a la reserva de Intelecto",
 "s": "Entrenado en identificar (identifying) o reconocer intenciones (recognizing motive)",
-"d": "Cuestionas lo que otros dan por sentado. No eres un «santo Tomás» que no cree nada sin verlo con sus ojos, pero a menudo te ha ido bien poner en duda lo que otros afirman, opinan o te transmiten como sabido."
+"d": "Tienes una actitud crítica ante afirmaciones que los demás suelen dar por sentadas. No eres necesariamente un «santo Tomás» (un escéptico que se niega a creer nada sin experimentarlo en persona), pero a menudo te ha ido bien poner en duda las afirmaciones, las opiniones y los saberes heredados que te presentan los demás."
 },
 "desc-stealthy": {
 "n": "Sigiloso",

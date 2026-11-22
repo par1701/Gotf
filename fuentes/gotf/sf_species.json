@@ -5,10 +5,10 @@
   "es": "Aarak",
   "desc_es": "Los aarak como tú proceden de un mundo volcánico surcado de cañones que disfruta de térmicas en abundancia, corrientes ascendentes cuando el viento pasa sobre montañas y crestas, y «calles de nubes»: hileras de cúmulos alineadas en paralelo al viento. Emplumado, de huesos ligeros y descrito como «aviar» por otras especies, has dejado tu mundo natal en busca de aventuras (¡y de térmicas!) en otros planetas y hábitats.",
   "traits_es": [
-   "Si saltas desde una altura elevada al menos 9 m (30 pies) sobre tu entorno, puedes planear una distancia larga antes de aterrizar en algún punto más bajo dentro del alcance.",
-   "Reduces un paso la gravedad de la herida por daño de caída.",
-   "No sufres una intrusión del DJ si sacas un 1 en una tirada de esquivar.",
-   "(Puedes prolongar la duración y quizá la distancia del planeo si encuentras una térmica, una serie de térmicas o un entorno de baja gravedad que te mantenga en el aire más tiempo; consulta con el DJ las condiciones locales.)"
+   "Reduces un paso la gravedad de las heridas por caídas.",
+   "Sin intrusión del DJ si sacas un 1 en una tarea de esquivar.",
+   "Si saltas desde una altura de al menos 30 pies (9 m) sobre tu entorno, puedes planear una distancia larga antes de aterrizar en algún punto más bajo dentro del alcance.",
+   "(Puedes prolongar la duración y quizá la distancia del planeo si encuentras una térmica, una serie de térmicas o un entorno de baja gravedad que te mantenga en el aire más tiempo. Decide con el DJ cómo son las condiciones locales.)"
   ],
   "ref": "CCR, p. 118",
   "genre": "scifi"
@@ -19,9 +19,9 @@
   "es": "Cíborg",
   "desc_es": "Llevas diversos implantes cibernéticos; algunos sustituyen órganos que te faltan y que tendrías si fueras humano, y otros están diseñados para potenciar la biología que aún conservas. Quizá naciste mediante un proceso de gestación por el que pasa toda la gente de tu colonia, te aumentaste de forma voluntaria durante un periodo de servicio militar o te asimiló contra tu voluntad un colectivo cibernético (del que luego escapaste); o quizá no sabes por qué eres medio máquina. La mayoría de los días piensas que da igual: no cuenta de qué estás hecho, sino lo que haces.",
   "traits_es": [
-   "No sufres una intrusión del DJ si sacas un 1 en una tarea de defensa de Potencia.",
-   "Entrenado en piratería (hacking).",
-   "Infliges +1 de daño con ataques cuerpo a cuerpo mediante electricidad conducida."
+   "Entrenado en piratería informática (hacking).",
+   "+1 al daño con ataques cuerpo a cuerpo mediante electricidad conducida.",
+   "Sin intrusión del DJ si sacas un 1 en una tarea de defensa de Potencia."
   ],
   "ref": "CCR, p. 118",
   "genre": "scifi"
@@ -32,9 +32,9 @@
   "es": "Delph",
   "desc_es": "Los delph son bien recibidos casi en todas partes, normalmente por su arte cutáneo: la capacidad metacrótica de tu pueblo para crear diseños y patrones coloridos y únicos por todo el cuerpo, incluidos tus lujosos tentáculos de la cabeza. Cuando te esmeras, puedes crear patrones asombrosamente bellos (o ayudar a camuflarte en algunos entornos si tienes unos diez minutos para crear un diseño nuevo en la piel). Menos conocida es la capacidad de tu pueblo de producir feromonas intraespecie (normalmente quieras o no) que casi cualquiera, delph o de otras especies, encuentra atrayentes, o al menos agradables.",
   "traits_es": [
-   "Puedes aplicar una ventaja a las interacciones sociales positivas (uses encanto o engaño) si tu feromona afecta a quien te escucha.",
-   "Cuando dedicas diez minutos a actualizar tu diseño cutáneo para un entorno concreto, obtienes una ventaja en las tareas de sigilo en ese entorno.",
-   "(Tus feromonas no afectan a las máquinas y quizá no afecten a todas las especies alienígenas; consulta con el DJ a quién puede resultarle agradable tu presencia.)"
+   "Puedes aplicar un recurso a las interacciones sociales positivas (uses encanto (charm) o engaño (deception)) si tu feromona afecta a la persona con la que hablas.",
+   "Cuando dedicas diez minutos a renovar el diseño de tu piel para un entorno concreto, ganas un recurso en las tareas de sigilo (stealth) en ese entorno.",
+   "(Tus feromonas no afectan a las máquinas y quizá no afecten a todas las especies alienígenas. Decide con el DJ a quién puede resultarle agradable tu presencia.)"
   ],
   "ref": "CCR, p. 118",
   "genre": "scifi"
@@ -45,9 +45,9 @@
   "es": "D’nec",
   "desc_es": "Como tus congéneres, eres un humanoide de 1 m (4 pies) de altura con ojos brillantes. Los d’nec son una especie nómada capaz de reparar aparatos electrónicos, motores, robots y otros artefactos rotos o rebuscados, y de encontrar luego mercado para el resultado reacondicionado. Aunque te criaste con las mismas disciplinas que otros d’nec, te fuiste por tu cuenta con la esperanza de encontrar oportunidades y experiencias nuevas que el d’nec medio ni se imagina.",
   "traits_es": [
-   "Ganas 1 punto extra en tu reserva de Intelecto cada vez que haces una recuperación.",
    "Entrenado en manejo de sistemas (systems operation).",
-   "Infliges +1 de daño con armas de energía a distancia ligeras."
+   "+1 al daño con armas de energía a distancia ligeras.",
+   "Cuando usas una recuperación, recuperas 1 punto adicional en tu reserva de Intelecto."
   ],
   "ref": "CCR, p. 119",
   "genre": "scifi"
@@ -58,9 +58,9 @@
   "es": "Drakain",
   "desc_es": "Tu piel está surcada de crestas óseas y probablemente mides al menos 2 m (6 pies). Hay quien compararía a los drakain con los humanos, pero solo un necio lo diría en voz alta. Tú y los demás drakain valoráis profundamente el combate y el honor, y creéis que morir en batalla es uno de los finales más gloriosos. Al fin y al cabo, el tuyo es un orgulloso pueblo guerrero, y los drakain han convertido su destreza en grandes imperios en el pasado. Aprecias tu herencia, pero eso no te impide hacer amistad con seres de otras especies y explorar las oportunidades que se te presentan.",
   "traits_es": [
-   "Puedes sufrir una herida leve más de lo normal.",
+   "Puedes recibir una herida leve adicional.",
    "Entrenado en intimidación (intimidation) (salvo contra otros drakain).",
-   "Infliges +1 de daño con armas cortantes (o sus versiones de alta tecnología)."
+   "+1 al daño con armas cortantes (o sus versiones de alta tecnología)."
   ],
   "ref": "CCR, p. 119",
   "genre": "scifi"
@@ -69,10 +69,11 @@
   "id": "sp-human-sf",
   "en": "Human",
   "es": "Humano",
-  "desc_es": "Los humanos están entre las especies más jóvenes, y quizá por eso, considerados en conjunto, son más dados a explorar, conquistar y expandir sus comunidades, aunque eso suponga quitárselo a otras especies o a otros humanos. Individualmente, los humanos no podrían ser más diversos: puedes medir menos de 150 cm y pesar apenas 45 kg, o pasar de 180 cm y pesar 113 kg; tener los ojos azules, castaños, negros, verdes o de otro color; no tener pelo, lucir una melena dorada, unas rastas asombrosas, una cresta u otro corte atrevido; vivir por tu fe, por explorar lugares antiguos, por mantener a raya el mal, por enriquecerte o por otra inclinación. Lo que es seguro es que no te da miedo luchar por lo que quieres y por lo que crees.",
+  "desc_es": "Los humanos están entre las especies más jóvenes, y quizá por eso, considerados en conjunto, son más dados a explorar, conquistar y expandir sus comunidades, aunque eso suponga quitárselo a otras especies o a otros humanos. Individualmente, los humanos no podrían ser más diversos. Eso significa que puedes medir menos de 5 pies (150 cm) y pesar apenas 100 libras (45 kg), o pasar con creces de 6 pies (180 cm) y pesar 250 libras (113 kg); tener los ojos azules, castaños, negros, verdes o de otro color; no tener pelo, lucir una melena dorada, unas rastas asombrosas, una cresta u otro corte atrevido; vivir entregado a tu fe, a explorar lugares antiguos, a mantener a raya el mal, a enriquecerte o a otra inclinación; etc. Lo que es seguro es que no te da miedo luchar por lo que quieres y por lo que crees.",
   "traits_es": [
    "Elige un segundo descriptor y suma sus beneficios a los de tu descriptor normal.",
-   "(En una partida donde todos son humanos, la opción de especie Humano puede no tener sentido; el DJ puede permitirla solo si hay otras especies en juego.)"
+   "(En una partida en la que todos los PJ son humanos, el DJ decide si se usa la opción de especie Humano.)",
+   "(Si eliges Humano como especie, tu frase de personaje «Soy un [tipo] [especie] [descriptor] que [foco]» gana otro elemento: tu segundo descriptor. Por ejemplo, tu frase podría ser «Soy un Guerrero (Fighter) Humano Descarado y Agreste que Domina un arma (Masters Weaponry)».)"
   ],
   "ref": "CCR, p. 120",
   "genre": "scifi"
@@ -83,8 +84,8 @@
   "es": "Mutante",
   "desc_es": "Fuerzas salvajes capaces de destruir un mundo te transformaron. Quizá por mutaciones latentes heredadas de antepasados que sobrevivieron al apocalipsis, o porque algo en ti reacciona al exponerte a la radiación u otra fuente mutágena, has adquirido mutaciones. Puede que te parezcas bastante a otros de tu especie, o que tengas una o más diferencias físicas evidentes que hagan difícil disimular tu naturaleza; decide con el DJ tus rasgos concretos. Tampoco es que quieras ocultar lo que eres necesariamente: quizá prefieras mostrar con orgullo lo que te hace diferente y, en tu opinión, mejor.",
   "traits_es": [
-   "No sufres una intrusión del DJ si sacas un 1 en una tarea de defensa de Potencia.",
-   "Elige cualquier habilidad de rango 1 de cualquier foco; adáptala con el DJ como tu mutación."
+   "Sin intrusión del DJ si sacas un 1 en una tarea de defensa de Potencia.",
+   "Elige cualquier habilidad de rango 1 de cualquier foco. Adáptala con el DJ como tu mutación."
   ],
   "ref": "CCR, p. 120",
   "genre": "scifi"
@@ -95,10 +96,10 @@
   "es": "Naron",
   "desc_es": "Desciendes de una especie de telépatas naturales que se comunican de mente a mente, no mediante lenguaje hablado. Mides alrededor de 1,5 m (5 pies) y tu prominencia (normalmente un brillo sutil que perfila tenuemente tu cabeza calva) se mueve en ondas lentas cuando estás relajado, o destella y late cuando estás nervioso o estresado (salvo que la reprimas a conciencia). Los naron son en general un pueblo pacífico, pero algunos habéis descubierto que la galaxia ofrece oportunidades interesantes en todos los ámbitos de la sociedad entre criaturas en las que el psi es un rasgo raro o casi inexistente.",
   "traits_es": [
-   "No puedes producir sonidos vocales, pero te comunicas telepáticamente con una, varias o todas las criaturas inteligentes a alcance corto con la misma facilidad que si conversaras en voz alta.",
+   "Entrenado en reconocer intenciones (recognizing motive).",
    "Entrenado en encanto (charm) o engaño (deception).",
-   "Entrenado en detectar intenciones (recognizing motive).",
-   "(La telepatía naron no te permite leer pensamientos ni hablar con quien quiera bloquearte. Si quieres explorar tus dotes telepáticas latentes, elige Psiónico como tipo o un foco muy psíquico como Domina los poderes mentales, o adapta otro foco para que sus habilidades las genere tu psi latente.)"
+   "No puedes producir sonidos vocales, pero te comunicas telepáticamente con una, varias o todas las criaturas inteligentes a alcance corto con la misma facilidad que si conversaras en voz alta.",
+   "(La telepatía naron no te permite leer los pensamientos de otros, ni siquiera hablar con ellos si quieren bloquearte. Pero si eres un naron que quiere explorar sus dotes telepáticas latentes, elige Psiónico (Psion) como tipo o un foco muy psíquico, como Domina poderes mentales (Commands Mental Powers). Aun así, otros focos pueden adaptarse o reambientarse para que se considere que sus habilidades las genera tu psi latente.)"
   ],
   "ref": "CCR, p. 120",
   "genre": "scifi"
@@ -109,9 +110,10 @@
   "es": "Prota",
   "desc_es": "Tu carne es como arcilla elástica: puedes cambiar tu forma general entre una masa básica parecida a una babosa (o una esfera) y un ser con varios seudópodos que te sirven de brazos y piernas. Tu control sobre la forma es limitado; no puedes replicar con exactitud otras criaturas ni objetos, pero puedes evocar sus formas, aunque tardas unos diez minutos en adoptar una forma nueva. Los prota son raros: tu mundo natal fue destruido por la guerra mucho antes de que nacieras. Rara vez te encuentras con otros de tu especie, así que has aprendido a llevarte bien con otros seres, a algunos de los cuales consideras amigos o tu familia elegida.",
   "traits_es": [
-   "Puedes sufrir una herida leve más de lo normal.",
+   "Puedes recibir una herida leve adicional.",
    "Entrenado en encanto (charm).",
-   "Obtienes una ventaja en una tarea concreta para la que hayas moldeado tu cuerpo. (Por ejemplo, tras diez minutos remodelándote: esconderte en un sitio concreto, colarte por una abertura pequeña determinada, trepar por un muro en particular, apuntar a un lugar concreto, cargar un peso especialmente grande, etc.)"
+   "Ganas un recurso en una tarea concreta para la que hayas moldeado tu cuerpo.",
+   "(Ejemplos de tareas en las que un prota puede ganar un recurso tras dedicar diez minutos a remodelarse: esconderse en un sitio determinado, colarse por una abertura pequeña concreta, trepar por un muro en particular, apuntar a un lugar específico, cargar un peso especialmente grande, etc.)"
   ],
   "ref": "CCR, p. 121",
   "genre": "scifi"
@@ -122,9 +124,9 @@
   "es": "Rigeliano",
   "desc_es": "Como rigeliano, eres un humanoide de 2 m (7 pies) cubierto de un pelaje espeso. Los rigelianos son famosos por su fuerza, su lealtad y su idioma de rugidos. La mayoría son pacíficos y disfrutan de la vida en un mundo natal tecnológicamente avanzado que orbita una lejana supergigante azul. Aunque quizá compartas el sentido del honor que tiene la mayoría de los tuyos, probablemente has dejado tu hogar para buscar aventuras en la galaxia.",
   "traits_es": [
-   "No sufres una intrusión del DJ si sacas un 1 en una tarea de atletismo.",
    "Entrenado en manejo de sistemas (systems operation).",
-   "Infliges +1 de daño con armas de proyectiles a distancia."
+   "+1 al daño con armas de proyectiles a distancia.",
+   "Sin intrusión del DJ si sacas un 1 en una tarea de atletismo (athletics)."
   ],
   "ref": "CCR, p. 121",
   "genre": "scifi"
@@ -135,9 +137,9 @@
   "es": "Stelano",
   "desc_es": "Si no fuera por lo angulosos que son tus rasgos comparados con los humanos, a los ajenos les costaría distinguirte. Sin embargo, la diferencia de temperamento es más evidente. Basta con pasar unos minutos contigo para entender que los stelanos valoran el pensamiento racional por encima de todo y dan poco valor a las corazonadas, a las emociones que nublan el buen juicio y a las anécdotas frente a los datos recopilados.",
   "traits_es": [
-   "No sufres una intrusión del DJ si sacas un 1 en una tarea de defensa de Intelecto.",
    "Entrenado en recabar información (gathering information).",
-   "Con un ataque desarmado con éxito, puedes elegir que el objetivo pierda su siguiente turno en lugar de infligirle daño."
+   "Sin intrusión del DJ si sacas un 1 en una tarea de defensa de Intelecto.",
+   "Con un ataque desarmado con éxito, puedes elegir obligar al objetivo a perder su siguiente turno en lugar de infligirle daño."
   ],
   "ref": "CCR, p. 121",
   "genre": "scifi"
@@ -148,9 +150,9 @@
   "es": "Vendeer",
   "desc_es": "Eres un vendeer, lo que significa que mides 2,5 m (9 pies), eres esbelto y tienes la piel morada. Tu «pelo», parecido a una crin, te hace algo más sensible a los fenómenos psíquicos, sobre todo a los pensamientos y emociones de otras criaturas, inteligentes o no. Los vendeer son nativos de una exuberante luna boscosa y, aunque no están avanzados tecnológicamente, tu gente disfruta de una rica vida cultural y espiritual. Pero la llamada de otros planetas y estrellas te llevó lejos de casa, y ahora llevas una vida muy distinta a la de los cazadores-recolectores que dejaste atrás.",
   "traits_es": [
-   "No sufres una intrusión del DJ si sacas un 1 en una tarea de detectar intenciones.",
    "Entrenado en percepción (perception).",
-   "Infliges +1 de daño con lanzas (o sus versiones de alta tecnología)."
+   "+1 al daño con lanzas (o sus versiones de alta tecnología).",
+   "Sin intrusión del DJ si sacas un 1 en una tarea de reconocer intenciones (recognizing motive)."
   ],
   "ref": "CCR, p. 122",
   "genre": "scifi"
@@ -161,9 +163,9 @@
   "es": "Zantari",
   "desc_es": "Tus antenas te dan sentidos mejorados y tu piel gruesa te aísla del frío de la luna helada que tu pueblo considera su hogar, pero por lo demás pareces humanoide. Sin embargo, las apariencias engañan: los zantari tienen cinco géneros, que a los forasteros les cuesta distinguir. Como zantari, valoras el honor, el combate ritual y el servicio militar, pero también el arte. A veces te describen como emocional, pero para ti es un cumplido: sin intensidad de sentimiento, ¿cómo iba a merecer la pena vivir?",
   "traits_es": [
-   "Reduces un paso la gravedad de las heridas que recibes por hielo y frío.",
+   "Reduces un paso la gravedad de las heridas por hielo y frío.",
    "Entrenado en percepción (perception).",
-   "Infliges +1 de daño con armas de energía a distancia."
+   "+1 al daño con armas de energía a distancia."
   ],
   "ref": "CCR, p. 122",
   "genre": "scifi"
