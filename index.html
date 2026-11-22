@@ -382,20 +382,37 @@ function calc(){
   const nadv=advList().length;let rp=0;advList().forEach(({r})=>rp+=r>=5?3:r>=3?2:1);
   return {p,edge,w,effort,cyphers,rec,weapons,armor,skills,rp,nadv,si,effP,ignMinor};
 }
-const UNARMED={'No Need for Weapons':2,'Heavy Hands':2,'Hitting Harder':1,'Master of Unarmed Fighting Style':3,'Iron Fist':3};
+const UNARMED={'No Need for Weapons':2,'Heavy Hands':2,'Hitting Harder':1,'Master of Unarmed Fighting Style':3,'Iron Fist':3,'Mystic Hand':1,'Mystic Flurry':1};
 const SPDMG={Gnome:{um:1,lm:1},Orc:{hm:1},Hellborn:{u:1}};
-function attacks(){const ty=D.types.find(x=>x.id===S.type),f=D.foci.find(x=>x.id===S.focus),sp=D.species.find(x=>x.id===S.sp);
+const WB={u:2,l:2,m:4,h:6},WN={u:'desarmado',l:'ligera',m:'media',h:'pesada'};
+function ownAbs(){const ty=D.types.find(x=>x.id===S.type),f=D.foci.find(x=>x.id===S.focus);
   const f2=SUP()&&hasAb('Second Focus')?D.foci.find(x=>x.id===S.focus2):null;
-  const own=[...(ty?ty.abilities:[]),...(f?S.fa.map(id=>abById(f,id)):[]),...(f2?S.fa2.map(id=>abById(f2,id)):[]),...S.genre.map(id=>D.genre.find(x=>x.id===id))].filter(Boolean);
-  let u=0;const src=[];own.forEach(a=>{if(UNARMED[a.en]){u+=UNARMED[a.en];src.push(nmTxt(a)+' +'+UNARMED[a.en])}});
-  const sd=(sp&&SPDMG[sp.en])||{};if(sd.u||sd.um){u+=sd.u||sd.um;src.push(nmTxt(sp)+' +'+(sd.u||sd.um))}
-  const rows=[['Desarmado (ligera)',2+u,src]];
-  rows.push(['Ligera',2,[]]);if(sd.lm)rows[1]=['Ligera (cuerpo a cuerpo '+(2+sd.lm)+', a distancia 2)',null,[nmTxt(sp)+' +'+sd.lm+' cuerpo a cuerpo']];
-  rows.push(['Media',4,[]]);rows.push(sd.hm?['Pesada (cuerpo a cuerpo '+(6+sd.hm)+', a distancia 6)',null,[nmTxt(sp)+' +'+sd.hm+' cuerpo a cuerpo']]:['Pesada',6,[]]);
+  return [...(ty?ty.abilities.map(a=>({a,key:a.id||ty.id+'/'+a.en})):[]),...(f?S.fa.map(id=>({a:abById(f,id),key:id,fid:f.id})):[]),...(f2?S.fa2.map(id=>({a:abById(f2,id),key:id,fid:f2.id})):[]),...S.genre.map(id=>({a:D.genre.find(x=>x.id===id),key:id}))].filter(x=>x.a).filter((x,i,arr)=>x.a.en==='Lethal Capability'||arr.findIndex(y=>y.a.en===x.a.en)===i)}
+// habilidades de daño con elección: mr = cuerpo a cuerpo o a distancia; wpn = un arma o ataque concreto; gun = armas de fuego (sin elección)
+function dmgChoice(o){const n=o.a.en;if(n==='Combat Prowess')return {k:'mr',b:1};if(n==='Lethal Capability')return {k:'wpn',b:5};
+  if(n==='Damage Dealer')return o.fid==='carries-a-gun'||/firearms/.test(o.a.text_en||'')?{k:'gun',b:3}:{k:'wpn',b:3};if(n==='Excellent Gunner')return {k:'gun',b:1};return null}
+function attacks(){const sp=D.species.find(x=>x.id===S.sp),own=ownAbs(),AC=S.atk||{};
+  const sd=(sp&&SPDMG[sp.en])||{};let gun=0;const gsrc=[],mr={m:[],r:[]},cust=[];
+  own.forEach(o=>{const c=dmgChoice(o);if(!c)return;const v=AC[o.key]||{};
+    if(c.k==='mr'){if(v.mr)mr[v.mr].push([nmTxt(o.a),c.b])}else if(c.k==='gun'){gun+=c.b;gsrc.push(nmTxt(o.a)+' +'+c.b)}else cust.push({o,c,v})});
+  // daño de un ataque: w = u/l/m/h; r = 'm' cuerpo a cuerpo, 'r' a distancia
+  const dmg=(w,r)=>{let d=WB[w];const src=[];const add=(n,b)=>{d+=b;src.push(n+' +'+b)};
+    if(w==='u'){own.forEach(o=>{if(UNARMED[o.a.en])add(nmTxt(o.a),UNARMED[o.a.en])});if(sd.u||sd.um)add(nmTxt(sp),sd.u||sd.um)}
+    if(w==='l'&&r==='m'&&sd.lm)add(nmTxt(sp),sd.lm);if(w==='h'&&r==='m'&&sd.hm)add(nmTxt(sp),sd.hm);
+    mr[r].forEach(([n,b])=>add(n,b));return [d,src]};
+  const rows=[];const two=(lab,w)=>{const [a,sa]=dmg(w,'m'),[b,sb]=dmg(w,'r');if(a===b)rows.push([lab,a,sa]);else{rows.push([lab+', cuerpo a cuerpo',a,sa]);rows.push([lab+', a distancia',b,sb])}};
+  {const [d,s_]=dmg('u','m');rows.push(['Desarmado (ligera)',d,s_])}two('Ligera','l');two('Media','m');two('Pesada','h');
+  if(gun)['l','m','h'].forEach(w=>{const [d,s_]=dmg(w,'r');rows.push(['Arma de fuego '+WN[w],d+gun,[...s_,...gsrc]])});
+  cust.forEach(({o,c,v})=>{if(!v.w)return;const r=v.w==='u'?'m':(v.r||'m');const [d,s_]=dmg(v.w,r);rows.push([(v.n||'Ataque elegido')+' ('+WN[v.w]+(v.w==='u'?'':r==='m'?', cuerpo a cuerpo':', a distancia')+')',d+c.b,[...s_,nmTxt(o.a)+' +'+c.b]])});
   const re=/(additional|\+)\s?\d+ (points? of )?damage|\d+ additional damage/i;
-  const cond=own.filter(a=>!UNARMED[a.en]&&re.test(a.text_en||'')).map(nmTxt);
+  const cond=own.filter(o=>!UNARMED[o.a.en]&&!dmgChoice(o)&&re.test(o.a.text_en||'')).map(o=>nmTxt(o.a));
+  own.forEach(o=>{const c=dmgChoice(o),v=AC[o.key]||{};if(c&&((c.k==='mr'&&!v.mr)||(c.k==='wpn'&&!v.w)))cond.push(nmTxt(o.a)+' (elige en el creador)')});
   if(sp&&!SPDMG[sp.en]){const t=(sp.traits_es||[]).find(x=>/^\+\d+ al daño/.test(x));if(t)cond.push(nmTxt(sp)+': '+t.replace(/\.$/,''))}
   return {rows,cond}}
+function atkForm(){const ch=ownAbs().map(o=>({o,c:dmgChoice(o)})).filter(x=>x.c&&x.c.k!=='gun');if(!ch.length)return '';const AC=S.atk||{};
+  return `<h3>Ataques: elecciones de daño</h3>`+ch.map(({o,c})=>{const v=AC[o.key]||{},k=esc(o.key);
+    if(c.k==='mr')return `<div class="field"><label>${esc(nmTxt(o.a))}: +${c.b} de daño a</label><select data-atk="${k}" data-f="mr"><option value="">— elige —</option><option value="m" ${v.mr==='m'?'selected':''}>Ataques con armas cuerpo a cuerpo</option><option value="r" ${v.mr==='r'?'selected':''}>Ataques con armas a distancia</option></select></div>`;
+    return `<div class="field"><label>${esc(nmTxt(o.a))}: +${c.b} de daño con un ataque concreto</label><input type="text" data-atk="${k}" data-f="n" value="${esc(v.n||'')}" placeholder="p. ej., arco largo, garras, puñetazos"><div style="height:6px"></div><select data-atk="${k}" data-f="w"><option value="">— tipo de arma —</option>${['u','l','m','h'].map(w=>`<option value="${w}" ${v.w===w?'selected':''}>${WN[w][0].toUpperCase()+WN[w].slice(1)} (${WB[w]})</option>`).join('')}</select>${v.w&&v.w!=='u'?`<div style="height:6px"></div><select data-atk="${k}" data-f="r"><option value="m" ${v.r!=='r'?'selected':''}>Cuerpo a cuerpo</option><option value="r" ${v.r==='r'?'selected':''}>A distancia</option></select>`:''}</div>`}).join('')+`<p class="note">Los ataques desarmados cuentan como cuerpo a cuerpo. Las habilidades que puedes elegir más de una vez se cuentan una sola vez.</p>`}
 const extraFocus=()=>advList().filter(x=>x.k==='o-focus').length;
 const dMode=r=>(S.domMode||{})[r]||'dom';
 const domFocus=()=>{if(!GOTF())return 0;let n=0;for(let r=2;r<=+S.tier;r++)if(dMode(r)==='focus')n++;return n};
@@ -421,7 +438,7 @@ function focusAvail(f,owned,a,t){
 }
 const TR=k=>(DALL.skills_tier||[]).includes(k);
 const advTR=(r,k)=>!TR(k)||(r>=2&&(r>=4||!advList().some(x=>x.k==='skill'&&x.r<r&&x.a['k'+x.i]===k)));
-function sanitizeTR(){let ch=false;S.sk=S.sk.map(k=>TR(k)?(ch=true,''):k);if(TR(S.sk3)){S.sk3='';ch=true}
+function sanitizeTR(){let ch=false;S.sk=S.sk.map(k=>TR(k)?(ch=true,''):k);if(TR(S.sk3)){S.sk3='';ch=true}if(TR(S.profk)){S.profk='';ch=true}
   for(const {r,i,k,a} of advList())if(k==='skill'&&a['k'+i]&&!advTR(r,a['k'+i])){a['k'+i]='';ch=true}
   if(ch)save();return ch}
 function skillSel(id,val,lab,data='',ok=null){return `<select id="${id}" ${data}><option value="">— ${lab} —</option>${Object.keys(SK).filter(k=>!ok||ok(k)).map(k=>`<option value="${k}" ${k===val?'selected':''}>${esc(skEs(k))}</option>`).join('')}</select>`}
@@ -443,7 +460,7 @@ function renderForm(){if(applySetting())renderGuide();Object.defineProperty(S,'_
   ${dsel(de,'c-dskill',S.dskill)}
   ${/^sp-human/.test(S.sp||'')?`<div class="field"><label for="c-desc2">Segundo descriptor (humano)</label><select id="c-desc2">${opt(D.descriptors,S.desc2,'elige')}</select></div>${dsel(de2,'c-dskill2',S.dskill2)}`:''}
   ${(()=>{const s_=((de&&(de.pool_en||''))+' '+(de&&(de.pool_es||''))),o=/que elijas|of your choice/.test(s_)?[0,1,2]:PEN.map((k,i)=>s_.includes(k)||s_.includes(POOL[i])?i:-1).filter(i=>i>=0);return o.length>1?`<div class="field"><label for="c-dpool">El descriptor deja elegir reserva: súmale +2 a</label><select id="c-dpool">${o.map(i=>`<option value="${i}" ${+S.dpool===i?'selected':''}>${POOL[i]}</option>`).join('')}</select></div>`:''})()}
-  ${RW()&&!ty_?`<div class="field"><label for="c-profn">Profesión (trabajo, afición o interés central) [CCR, p. 37]</label><input id="c-profn" type="text" value="${esc(S.profn)}" placeholder="p. ej., abogada, médico, bombera"></div><div class="field"><label for="c-profk">Habilidad de la profesión</label>${skillSel('c-profk',S.profk,'elige')}</div>`:''}
+  ${RW()&&!ty_?`<div class="field"><label for="c-profn">Profesión (trabajo, afición o interés central) [CCR, p. 37]</label><input id="c-profn" type="text" value="${esc(S.profn)}" placeholder="p. ej., abogada, médico, bombera"></div><div class="field"><label for="c-profk">Habilidad de la profesión</label>${skillSel('c-profk',S.profk,'elige','',k=>!TR(k))}</div>`:''}
   <div class="field"><label for="c-type">${RW()?'Tipo histórico (opcional, si el DJ lo permite; sustituye a la profesión) [CCR, p. 35]':'Tipo'}</label><select id="c-type"><option value="">— ${RW()?'ninguno: profesión':'elige'} —</option>${(GOTF()?['Champion','Shaper','Destroyer','Savior']:subsOf()).map(a=>`<optgroup label="${GOTF()?esc(a):a==='_'?esc(ST().n):SUBL[a]+(SUP()&&!/^Rank/.test(a)?' — adaptado':'')}">${D.types.filter(x=>GOTF()?x.arch===a:inSub(x,a)).map(x=>`<option value="${x.id}" ${x.id===S.type?'selected':''}>${esc(tyLab(x))}</option>`).join('')}</optgroup>`).join('')}</select></div>
   ${ty_||RW()?`<div class="field"><label for="c-bg">${GOTF()?`Conexión de trasfondo (${ty_.arch}, GotF)`:'Trasfondo [CCR]'}</label><select id="c-bg"><option value="">— elige —</option>${bgList(ty_).map((b,i)=>`<option value="${i+1}" ${S.bg==String(i+1)?'selected':''}>${i+1}. ${esc(b.length>90?b.slice(0,88)+'…':b)}</option>`).join('')}<option value="custom" ${S.bg==='custom'?'selected':''}>Personalizado</option></select>${GOTF()?'<button type="button" id="c-bgroll" style="margin-top:6px">Tirar d20</button>':''}</div>${S.bg==='custom'?`<div class="field"><label for="c-bgc">Trasfondo personalizado</label><input id="c-bgc" type="text" value="${esc(S.bgc)}"></div>`:''}`:''}
   ${RW()&&!ty_?'':`<div class="field"><label for="c-edge">+1 de Ventaja del tipo en</label><select id="c-edge">${POOL.map((p,i)=>`<option value="${i}" ${+S.edge===i?'selected':''}>${p}</option>`).join('')}</select></div>`}
@@ -479,6 +496,7 @@ function renderForm(){if(applySetting())renderGuide();Object.defineProperty(S,'_
   if(t>=3){const lims={mid:1+extraGenre(),high:t>=6?1:0};
     h+=`<h3>Habilidades ${GWA()}</h3><p class="note">Una de nivel medio en el rango 3 y una de nivel alto en el rango 6, más las de los avances «Otro» [${ST().gref} y p. 313].</p>`+D.genre.filter(g=>g.level==='mid'||t>=6).map(g=>{const on=S.genre.includes(g.id);const cnt=S.genre.filter(x=>(D.genre.find(y=>y.id===x)||{}).level===g.level).length;const ok=on||cnt<(g.level==='mid'?lims.mid:lims.high+Math.max(0,0));
     return `<label class="opt ${ok?'':'dis'}"><input type="checkbox" data-genre="${g.id}" ${on?'checked':''} ${ok?'':'disabled'}><span><b>${g.level==='mid'?'Medio':'Alto'}${SUP()?(g.genre==='scifi'?' (CF)':' (fantasía)'):''} · ${nm(g)}</b>${cost(g)}</span></label>`}).join('')}
+  if(!RW()||ty_)h+=atkForm();
   if(GOTF()){
   h+=`<h3>Dominio</h3><p class="note">Rango 1: Manifestar nimbo. Del 2 al 6, si cumpliste la Obligación de ese rango: una habilidad de dominio de ese rango (además de la de foco) o, si no despiertas una, una habilidad de foco extra (de tu rango o inferior y conectada) que cuenta como de dominio, con su coste pagable desde cualquier reserva. Sin la Obligación no hay beneficios de dominio hasta cumplirla. Desde el rango 3 puedes cambiar además una habilidad de dominio de rango inferior por otra distinta de rango inferior; Manifestar nimbo no se puede cambiar [GotF, cap. 12; la habilidad de foco sustituye a la de tipo: Adaptación].</p>`;
   for(let r=2;r<=t;r++){const m=dMode(r);
@@ -551,7 +569,7 @@ function renderSheet(){if(document.body.classList.contains('psheet'))document.ti
    <tr><th>Armas</th><td>${c.weapons}</td></tr><tr><th>Armadura</th><td>${c.armor}</td></tr>
    ${t>1?`<tr><th>Avances</th><td>${c.nadv} de ${4*(t-1)} · ${c.rp} puntos de recurso</td></tr>`:''}
   </tbody></table>`;
-  if(!RW()||ty){const A_=attacks();h+=`<h3>Ataques</h3><p class="note">Daño base: ligera 2, media 4, pesada 6; los puñetazos y patadas son armas ligeras [CCR, p. 238]. Las armas que no usas libremente dificultan el ataque.</p><table><tbody>${A_.rows.map(([n,d,s])=>`<tr><th>${esc(n)}</th><td>${d===null?'':'<b>'+d+'</b> de daño'}${s.length?` <span class="note">(${esc(s.join(', '))})</span>`:''}</td></tr>`).join('')}</tbody></table>${A_.cond.length?`<p class="note">Bonos que dependen del arma o la situación (ver la habilidad): ${esc(A_.cond.join('; '))}.</p>`:''}`}
+  if(!RW()||ty){const A_=attacks();h+=`<h3>Ataques</h3><p class="note">Daño base: ligera 2, media 4, pesada 6; los puñetazos y patadas son armas ligeras [CCR, p. 238]. Las armas que no usas libremente dificultan el ataque.</p><table><tbody>${A_.rows.map(([n,d,s])=>`<tr><th>${esc(n)}</th><td><b>${d}</b> de daño${s.length?` <span class="note">(${esc(s.join(', '))})</span>`:''}</td></tr>`).join('')}</tbody></table>${A_.cond.length?`<p class="note">Bonos que dependen del arma o la situación (ver la habilidad): ${esc(A_.cond.join('; '))}.</p>`:''}`}
   const tr_=c.skills.filter(x=>x[0]!=='I'),inab=c.skills.filter(x=>x[0]==='I');
   if(tr_.length||inab.length||sp)h+=`<h3>Habilidades</h3>${tr_.map(([k,v])=>`<span class="pill">${esc(skEs(v))} · ${k==='S'?'especializado':'entrenado'}</span>`).join(' ')}${inab.map(([k,v])=>`<span class="pill">${esc(skEs(v))} · incapacidad</span>`).join(' ')}`;
   if(sp)h+=`<h3>Especie</h3><ul>${sp.traits_es.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`;
@@ -628,7 +646,7 @@ async function exportSheetPDF(){
   [['Special_Abilities',parts[0]],['Cyphers_Abilities_Cont',parts[1]]].forEach(([k,v])=>{T(k,v.join('\n'));FS(k,size)});
   const sent=`Soy ${ty?nmTxt(ty):'[tipo]'} ${sp?nmTxt(sp)+' ':''}${de?nmTxt(de):'[descriptor]'} que ${f?nmTxt(f):'[foco]'}${L&&L.f2?' y que '+nmTxt(L.f2):''}${GOTF()&&S.dominion?', dios de '+S.dominion:''}.`;
   const notes=[RL?RL.sent:sent,''];if(RL)notes.push(...RL.rows.map(([k,v])=>`${k}: ${v}`),'');if(bgTxt(ty))notes.push('Trasfondo: '+bgTxt(ty),'');
-  {const A_=attacks();notes.push('Ataques: '+A_.rows.map(([n,d])=>d===null?n:`${n} ${d}`).join(' · ')+(A_.cond.length?' · Según la situación: '+A_.cond.join('; '):''))}
+  {const A_=attacks();notes.push('Ataques: '+A_.rows.map(([n,d])=>`${n} ${d}`).join(' · ')+(A_.cond.length?' · Según la situación: '+A_.cond.join('; '):''))}
   notes.push(`Heridas: ${L?L.wnd:`${c.w[0]} leves · ${c.w[1]} moderadas · ${c.w[2]} graves`}`,`Armas: ${W} · Armadura: ${A}`);
   if(L)notes.push(`Esfuerzo: ${L.eff} · Recuperación: ${L.rec}`,'Rehacerte (rally) de una herida grave: una acción y 10 de Potencia. Tratar: leve, última acción; moderada, 1 minuto; grave, 10 minutos.');
   if(de){notes.push('','DESCRIPTOR: '+nmTxt(de));if(de.desc_es||de.desc_en)notes.push(de.desc_es||de.desc_en)}
@@ -677,9 +695,10 @@ function bind(){
     else if(el.id==='c-shxp'){S.shiftXP=Math.max(0,+el.value||0)}
     else if(d.shift!==undefined){S.shifts[d.shift]=Math.max(0,Math.min(3,+el.value||0))}
     else if(d.sph!==undefined){(S.sph=S.sph||['','',''])[d.sph]=el.value}
+    else if(d.atk!==undefined){const A=(S.atk=S.atk||{}),v=A[d.atk]=A[d.atk]||{};v[d.f]=el.value}
     else if(d.dsh!==undefined){(S.dsh=S.dsh||{})[d.dsh]=Math.max(0,Math.min(3,+el.value||0))}
     save();renderForm();renderSheet()});
-  $('#form').addEventListener('input',e=>{if(e.target.id==='c-name'){S.name=e.target.value;save();renderSheet()}if(e.target.id==='c-bgc'){S.bgc=e.target.value;save();renderSheet()}if(e.target.id==='c-domn'){S.dominion=e.target.value;save();renderSheet()}if(e.target.id==='c-profn'){S.profn=e.target.value;save();renderSheet()}if(e.target.id==='c-rwxw'){S.rwxw=e.target.value;save();renderSheet()}if(e.target.id==='c-scomb'){S.scomb=e.target.value;save();renderSheet()}if(e.target.id==='c-pshd'){S.pshd=e.target.value;save();renderSheet()}});
+  $('#form').addEventListener('input',e=>{if(e.target.dataset.atk!==undefined&&e.target.dataset.f==='n'){const A=(S.atk=S.atk||{}),v=A[e.target.dataset.atk]=A[e.target.dataset.atk]||{};v.n=e.target.value;save();renderSheet();return}if(e.target.id==='c-name'){S.name=e.target.value;save();renderSheet()}if(e.target.id==='c-bgc'){S.bgc=e.target.value;save();renderSheet()}if(e.target.id==='c-domn'){S.dominion=e.target.value;save();renderSheet()}if(e.target.id==='c-profn'){S.profn=e.target.value;save();renderSheet()}if(e.target.id==='c-rwxw'){S.rwxw=e.target.value;save();renderSheet()}if(e.target.id==='c-scomb'){S.scomb=e.target.value;save();renderSheet()}if(e.target.id==='c-pshd'){S.pshd=e.target.value;save();renderSheet()}});
   $('#form').addEventListener('click',e=>{if(e.target.id==='c-bgroll'){S.bg=String(1+Math.floor(Math.random()*20));save();renderForm();renderSheet()}});
   $('#sheet').addEventListener('click',async e=>{
     if(e.target.id==='copy'){try{await navigator.clipboard.writeText(sheetText());$('#copymsg').textContent='Ficha copiada.'}catch(err){$('#copymsg').textContent='No se pudo copiar; selecciona el texto de la ficha.'}}
