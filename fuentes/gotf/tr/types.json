@@ -27,7 +27,7 @@
  "type-barbarian/frenzy": {
   "n": "Frenesí",
   "c": "1+ Intelecto",
-  "t": "En combate puedes entrar en un estado de frenesí. Mientras dura, no puedes usar puntos de Intelecto, pero sumas +1 a tu Ventaja de Potencia y a tu Ventaja de Velocidad. Dura lo que quieras, pero termina si no hay ningún combate al alcance de tus sentidos. Esfuerzo: facilitas los ataques de tus aliados contra un enemigo que elijas durante el resto del combate. Enabler."
+  "t": "En combate puedes entrar en un estado de frenesí. Mientras dura, no puedes usar puntos de Intelecto, pero sumas +1 a tu Ventaja de Potencia y a tu Ventaja de Velocidad. Dura lo que quieras, pero termina si no hay ningún combate al alcance de tus sentidos. Esfuerzo: facilitas los ataques de tus aliados contra un enemigo que elijas durante el resto del combate. Capacitador."
  },
  "type-barbarian/wilderness-survival": {
   "n": "Supervivencia en la naturaleza",
@@ -37,7 +37,7 @@
  "type-barbarian/wounded-fury": {
   "n": "Furia herida",
   "c": "",
-  "t": "Mientras tengas al menos tres heridas moderadas o al menos una grave, ganas un nivel de Esfuerzo gratuito que puedes aplicar a uno de tus ataques cada asalto. Enabler. En el rango 3: el beneficio sube a dos niveles de Esfuerzo gratuitos."
+  "t": "Mientras tengas al menos tres heridas moderadas o al menos una grave, ganas un nivel de Esfuerzo gratuito que puedes aplicar a uno de tus ataques cada asalto. Capacitador. En el rango 3: el beneficio sube a dos niveles de Esfuerzo gratuitos."
  },
  "type-bard": {
   "n": "Bardo",
@@ -119,7 +119,7 @@
  "type-cleric/healing-hand": {
   "n": "Mano sanadora",
   "c": "1+ Intelecto",
-  "t": "Con un toque reduces la gravedad de una herida: una leve desaparece, una moderada pasa a leve o una grave pasa a moderada. (Si el personaje está en su límite de heridas de la gravedad inferior, no puedes usar esta habilidad para reducirle una herida.) Cada vez que usas Mano sanadora, el coste en Intelecto sube 1; vuelve a 1 cuando haces una recuperación. Última acción."
+  "t": "Con un toque reduces la gravedad de una herida: una leve desaparece, una moderada pasa a leve o una grave pasa a moderada. (Si el personaje está en su límite de heridas de la gravedad inferior, no puedes usar esta habilidad para reducirle una herida.) Cada vez que usas Mano sanadora, el coste en Intelecto sube 1; vuelve a 1 cuando usas una recuperación. Última acción."
  },
  "type-druid": {
   "n": "Druida",
@@ -148,17 +148,17 @@
  "type-druid/beast-companion": {
   "n": "Bestia compañera",
   "c": "",
-  "t": "Ganas un seguidor: una bestia de nivel 2 de tu tamaño o menor que te acompaña y sigue tus instrucciones. Decide con el DJ su aspecto y personalidad. Se mueve según su tipo de criatura (voladora, nadadora, etc.). Si muere, puedes usar tus puntos de recurso para revivirla o (cazando unos días en la naturaleza) encontrar y ganarte otra. Enabler."
+  "t": "Ganas un seguidor: una bestia de nivel 2 de tu tamaño o menor que te acompaña y sigue tus instrucciones. Decide con el DJ su aspecto y personalidad. Se mueve según su tipo de criatura (voladora, nadadora, etc.). Si muere, puedes usar tus puntos de recurso para revivirla o (cazando unos días en la naturaleza) encontrar y ganarte otra. Capacitador."
  },
  "type-druid/friend-to-small-creatures": {
   "n": "Amigo de las pequeñas criaturas",
   "c": "1+ Intelecto",
-  "t": "Un tipo de criatura pequeña que nombres y que viva en el entorno (insectos, ratas, murciélagos, pájaros…) queda bajo tu influencia si superas una tarea de Intelecto de supervivencia (outdoor survival) de dificultad 2. Las criaturas afectadas a alcance corto no os harán daño a ti ni a quien designes como aliado hasta que hagas una recuperación de diez minutos o más. No funciona contra enjambres hostiles de nivel 3 o superior. Tus criaturas (incluso insectos comunes, de nivel 0) pueden agolparse en número suficiente para dificultar los ataques o defensas de un objetivo, o hacer otra acción. También puedes usarla para calmar o mandar sobre enredaderas, hierbas, raíces o ramas de plantas cercanas en vez de animales. Esfuerzo: tus criaturas responden en conjunto a tus órdenes como un aliado PNJ. Acción."
+  "t": "Un tipo de criatura pequeña que nombres y que viva en el entorno (insectos, ratas, murciélagos, pájaros…) queda bajo tu influencia si superas una tarea de Intelecto de supervivencia (outdoor survival) de dificultad 2. Las criaturas afectadas a alcance corto no os harán daño a ti ni a quien designes como aliado hasta que uses una recuperación de diez minutos o más. No funciona contra enjambres hostiles de nivel 3 o superior. Tus criaturas (incluso insectos comunes, de nivel 0) pueden agolparse en número suficiente para dificultar los ataques o defensas de un objetivo, o hacer otra acción. También puedes usarla para calmar o mandar sobre enredaderas, hierbas, raíces o ramas de plantas cercanas en vez de animales. Esfuerzo: tus criaturas responden en conjunto a tus órdenes como un aliado PNJ. Acción."
  },
  "type-druid/seeds-of-fury": {
   "n": "Semillas de furia",
   "c": "1 Intelecto",
-  "t": "Lanzas al aire un puñado de semillas que prenden y vuelan hacia un objetivo a alcance largo dejando estelas de humo retorcido. Un ataque con éxito hace 3 de daño y prende fuego al objetivo, que recibe +1 de daño por asalto hasta que use una acción para apagarse o hasta que hagas tu siguiente recuperación. Acción."
+  "t": "Lanzas al aire un puñado de semillas que prenden y vuelan hacia un objetivo a alcance largo dejando estelas de humo retorcido. Un ataque con éxito hace 3 de daño y prende fuego al objetivo, que recibe +1 de daño por asalto hasta que use una acción para apagarse o hasta que uses tu siguiente recuperación. Acción."
  },
  "type-fighter": {
   "n": "Luchador",
@@ -198,7 +198,7 @@
  "type-fighter/successive-attack": {
   "n": "Ataque sucesivo",
   "c": "2 Velocidad o Potencia",
-  "t": "Una vez por turno, si derribas a un enemigo, puedes hacer de inmediato otro ataque en ese mismo turno contra otro enemigo a tu alcance, como acción extra de tu turno. Sirve con ataques cuerpo a cuerpo y a distancia. Enabler."
+  "t": "Una vez por turno, si derribas a un enemigo, puedes hacer de inmediato otro ataque en ese mismo turno contra otro enemigo a tu alcance, como acción extra de tu turno. Sirve con ataques cuerpo a cuerpo y a distancia. Capacitador."
  },
  "type-mage": {
   "n": "Mago",
@@ -227,17 +227,17 @@
  "type-mage/blast": {
   "n": "Descarga",
   "c": "1+ Intelecto",
-  "t": "Emites una descarga de energía a alcance corto que hace 4 de daño a un objetivo si aciertas el ataque. Decide con el DJ qué tipo de energía es. Si te concentras unos asaltos, puedes ajustarla para que corte material de hasta nivel 5 y no más de 30 cm de grosor. Si tienes otra habilidad de ataque que hace daño (de tu foco o tu tipo), puedes usar Descarga para reforzarla y sumarle 1 de daño. Esfuerzo: ganas control fino del efecto hasta que hagas una recuperación de diez minutos o más, variando la intensidad a voluntad a alcance inmediato; por ejemplo, para calentar la zona, cocinar sin quemar o dar luz intensa. Aumenta en 1 el nivel máximo de material que puedes cortar. Acción para atacar; última acción para iniciar el control fino; enabler para reforzar otra habilidad de ataque."
+  "t": "Emites una descarga de energía a alcance corto que hace 4 de daño a un objetivo si aciertas el ataque. Decide con el DJ qué tipo de energía es. Si te concentras unos asaltos, puedes ajustarla para que corte material de hasta nivel 5 y no más de 30 cm de grosor. Si tienes otra habilidad de ataque que hace daño (de tu foco o tu tipo), puedes usar Descarga para reforzarla y sumarle 1 de daño. Esfuerzo: ganas control fino del efecto hasta que uses una recuperación de diez minutos o más, variando la intensidad a voluntad a alcance inmediato; por ejemplo, para calentar la zona, cocinar sin quemar o dar luz intensa. Aumenta en 1 el nivel máximo de material que puedes cortar. Acción para atacar; última acción para iniciar el control fino; enabler para reforzar otra habilidad de ataque."
  },
  "type-mage/mage-armor": {
   "n": "Armadura de mago",
   "c": "1 Intelecto",
-  "t": "Te rodea un campo de energía invisible hasta que hagas una recuperación de diez horas. Te permite intentar bloquear ataques con una defensa de Intelecto facilitada en vez de una de Potencia; si tienes éxito, reduces un paso la gravedad de la herida. Acción. En el rango 3: tu defensa de Intelecto para bloquear queda facilitada en dos pasos en total."
+  "t": "Te rodea un campo de energía invisible hasta que uses una recuperación de diez horas. Te permite intentar bloquear ataques con una defensa de Intelecto facilitada en vez de una de Potencia; si tienes éxito, reduces un paso la gravedad de la herida. Acción. En el rango 3: tu defensa de Intelecto para bloquear queda facilitada en dos pasos en total."
  },
  "type-mage/prepare-spell": {
   "n": "Preparar conjuro",
   "c": "",
-  "t": "Cada día puedes elegir un efecto mágico distinto y lanzarlo como conjuro. Elige una cifra manifiesta de poder bajo; tras diez minutos de preparación, ganas su efecto como conjuro (una habilidad especial). Lanzarlo es una acción y cuesta 2 de Intelecto. No cuenta para tu límite de cifras y, a diferencia de una cifra, no lo pierdes al lanzarlo. Al hacer una recuperación de diez horas puedes cambiar la cifra elegida; hacerlo termina todas las duraciones del conjuro anterior. Puedes coger esta habilidad hasta tres veces (como avance o en lugar de una habilidad de foco nueva), para tener uno, dos o tres conjuros al día. Diez minutos para preparar un conjuro; acción para lanzarlo. En el rango 3: puedes elegir cifras de poder bajo o medio; uno de poder medio cuesta 4 de Intelecto. En el rango 6: puedes elegir cifras de poder bajo, medio o avanzado; uno avanzado cuesta 6 de Intelecto."
+  "t": "Cada día puedes elegir un efecto mágico distinto y lanzarlo como conjuro. Elige una cifra manifiesta de poder bajo; tras diez minutos de preparación, ganas su efecto como conjuro (una habilidad especial). Lanzarlo es una acción y cuesta 2 de Intelecto. No cuenta para tu límite de cifras y, a diferencia de una cifra, no lo pierdes al lanzarlo. Al usar una recuperación de diez horas puedes cambiar la cifra elegida; hacerlo termina todas las duraciones del conjuro anterior. Puedes coger esta habilidad hasta tres veces (como avance o en lugar de una habilidad de foco nueva), para tener uno, dos o tres conjuros al día. Diez minutos para preparar un conjuro; acción para lanzarlo. En el rango 3: puedes elegir cifras de poder bajo o medio; uno de poder medio cuesta 4 de Intelecto. En el rango 6: puedes elegir cifras de poder bajo, medio o avanzado; uno avanzado cuesta 6 de Intelecto."
  },
  "type-monk": {
   "n": "Monje",
@@ -270,7 +270,7 @@
  "type-monk/nimble": {
   "n": "Ágil",
   "c": "2 Velocidad",
-  "t": "Como primera acción, te mueves hasta una distancia corta y luego puedes hacer otra primera acción, como atacar con un arma ligera o abrir una puerta (el movimiento va antes de la primera acción, no al revés). A diferencia de lo normal al actuar y moverte una distancia corta, este movimiento no dificulta tus tareas. Enabler."
+  "t": "Como primera acción, te mueves hasta una distancia corta y luego puedes hacer otra primera acción, como atacar con un arma ligera o abrir una puerta (el movimiento va antes de la primera acción, no al revés). A diferencia de lo normal al actuar y moverte una distancia corta, este movimiento no dificulta tus tareas. Capacitador."
  },
  "type-monk/no-need-for-weapons": {
   "n": "Sin necesidad de armas",
@@ -304,7 +304,7 @@
  "type-necromancer/basic-necromancy": {
   "n": "Nigromancia básica",
   "c": "3 Intelecto",
-  "t": "Animas el cuerpo de una criatura muerta de tu tamaño aproximado o menor a alcance inmediato y creas un seguidor de nivel 1 que es un muerto viviente. No tiene nada de la inteligencia, los recuerdos ni las habilidades especiales que tenía en vida. Sigue tus órdenes verbales hasta que hagas una recuperación de una hora o más, y entonces vuelve a ser un cadáver inerte. Si no lo mataron con daño, puedes reanimarlo de nuevo cuando se agote su tiempo, pero conserva el daño que tenía al quedar inerte. Si usas Nigromancia básica para animar un segundo cuerpo, el que ya habías animado vuelve a ser un cadáver inerte. Acción para animar."
+  "t": "Animas el cuerpo de una criatura muerta de tu tamaño aproximado o menor a alcance inmediato y creas un seguidor de nivel 1 que es un muerto viviente. No tiene nada de la inteligencia, los recuerdos ni las habilidades especiales que tenía en vida. Sigue tus órdenes verbales hasta que uses una recuperación de una hora o más, y entonces vuelve a ser un cadáver inerte. Si no lo mataron con daño, puedes reanimarlo de nuevo cuando se agote su tiempo, pero conserva el daño que tenía al quedar inerte. Si usas Nigromancia básica para animar un segundo cuerpo, el que ya habías animado vuelve a ser un cadáver inerte. Acción para animar."
  },
  "type-necromancer/drain-life": {
   "n": "Drenar vida",
@@ -349,12 +349,12 @@
  "type-paladin/holy-succor": {
   "n": "Socorro sagrado",
   "c": "1+ Intelecto",
-  "t": "Mientras un aliado a alcance inmediato tenga al menos tres heridas moderadas o una grave, puedes extender sobre él tu gracia divina: gana un nivel de Esfuerzo gratuito que puede aplicar cada asalto a una tirada de ataque o defensa. La gracia dura hasta que se curen las heridas o haga una recuperación de diez minutos o más. Cada vez que usas Socorro sagrado, el coste en Intelecto sube 1; vuelve a 1 cuando haces una recuperación. Enabler."
+  "t": "Mientras un aliado a alcance inmediato tenga al menos tres heridas moderadas o una grave, puedes extender sobre él tu gracia divina: gana un nivel de Esfuerzo gratuito que puede aplicar cada asalto a una tirada de ataque o defensa. La gracia dura hasta que se curen las heridas o use una recuperación de diez minutos o más. Cada vez que usas Socorro sagrado, el coste en Intelecto sube 1; vuelve a 1 cuando usas una recuperación. Capacitador."
  },
  "type-paladin/sacred-smite": {
   "n": "Castigo sagrado",
   "c": "2 Intelecto",
-  "t": "Eliges una criatura que ves y que quieres que sea castigada por sus faltas. Hasta que ataques a otra criatura, tus ataques contra ella hacen +1 de daño por la energía divina que recorre tu arma cuerpo a cuerpo o a distancia. Si es un muerto viviente, un demonio o algo similar (según el DJ), eliges si tu ataque con éxito hace +2 de daño o si el enemigo debe huir de ti durante un turno. Enabler. En el rango 3: el daño extra contra muertos vivientes, demonios y similares sube a +3."
+  "t": "Eliges una criatura que ves y que quieres que sea castigada por sus faltas. Hasta que ataques a otra criatura, tus ataques contra ella hacen +1 de daño por la energía divina que recorre tu arma cuerpo a cuerpo o a distancia. Si es un muerto viviente, un demonio o algo similar (según el DJ), eliges si tu ataque con éxito hace +2 de daño o si el enemigo debe huir de ti durante un turno. Capacitador. En el rango 3: el daño extra contra muertos vivientes, demonios y similares sube a +3."
  },
  "type-ranger": {
   "n": "Explorador",
@@ -425,7 +425,7 @@
  "type-rogue/detect-traps": {
   "n": "Detectar trampas",
   "c": "2+ Velocidad o Intelecto",
-  "t": "Cuando tiras para encontrar una trampa y sacas menos de 9, cuenta como un 9 (así que un 1 no provoca intrusión del DJ). Mantienes esta sensibilidad hasta que hagas una recuperación de diez minutos o más. Esfuerzo: sube en 3 el mínimo. Acción. En el rango 3: el mínimo pasa a 12."
+  "t": "Cuando tiras para encontrar una trampa y sacas menos de 9, cuenta como un 9 (así que un 1 no provoca intrusión del DJ). Mantienes esta sensibilidad hasta que uses una recuperación de diez minutos o más. Esfuerzo: sube en 3 el mínimo. Acción. En el rango 3: el mínimo pasa a 12."
  },
  "type-rogue/expert-sneak": {
   "n": "Sigiloso experto",
@@ -474,7 +474,7 @@
  "type-archer/quick-draw": {
   "n": "Desenfundado rápido",
   "c": "2 Velocidad",
-  "t": "Una vez por turno, si derribas a un enemigo con tu ataque a distancia medio o pesado, puedes hacer de inmediato otro ataque en ese mismo turno contra otro enemigo a alcance corto, como acción extra de tu turno. Enabler."
+  "t": "Una vez por turno, si derribas a un enemigo con tu ataque a distancia medio o pesado, puedes hacer de inmediato otro ataque en ese mismo turno contra otro enemigo a alcance corto, como acción extra de tu turno. Capacitador."
  },
  "type-axe-fighter": {
   "n": "Luchador con hacha",
@@ -513,7 +513,7 @@
  "type-axe-fighter/split-skull": {
   "n": "Partecráneos",
   "c": "1 Potencia",
-  "t": "Atacas con un hacha de una forma que arriesga más a fallar pero da un beneficio adicional. Tu rango de intrusión del DJ en este ataque sube en 2 (de 1 a 1–3 en el d20), pero si aciertas eliges uno de estos efectos adicionales. Fuerza bruta: el enemigo recibe +2 de daño. Traumatismo craneal: el ataque hace 1 de daño menos, pero las acciones del enemigo quedan dificultadas hasta que use una acción para reponerse. Acción."
+  "t": "Atacas con un hacha de una forma que arriesga más a fallar pero da un beneficio adicional. Tu margen de intrusión del DJ en este ataque sube en 2 (de 1 a 1–3 en el d20), pero si aciertas eliges uno de estos efectos adicionales. Fuerza bruta: el enemigo recibe +2 de daño. Traumatismo craneal: el ataque hace 1 de daño menos, pero las acciones del enemigo quedan dificultadas hasta que use una acción para reponerse. Acción."
  },
  "type-knife-fighter": {
   "n": "Luchador con cuchillo",
@@ -547,7 +547,7 @@
  "type-knife-fighter/gut-ripper": {
   "n": "Destripador",
   "c": "1 Velocidad",
-  "t": "Atacas con un cuchillo de una forma que arriesga más a fallar pero da un beneficio adicional. Tu rango de intrusión del DJ en este ataque sube en 2 (de 1 a 1–3 en el d20), pero si aciertas eliges uno de estos efectos adicionales. Corte profundo: el enemigo recibe +2 de daño. Que sangre: la herida sangra y, en tu siguiente turno, el enemigo recibe 2 de daño que ignora la armadura. Acción."
+  "t": "Atacas con un cuchillo de una forma que arriesga más a fallar pero da un beneficio adicional. Tu margen de intrusión del DJ en este ataque sube en 2 (de 1 a 1–3 en el d20), pero si aciertas eliges uno de estos efectos adicionales. Corte profundo: el enemigo recibe +2 de daño. Que sangre: la herida sangra y, en tu siguiente turno, el enemigo recibe 2 de daño que ignora la armadura. Acción."
  },
  "type-knife-fighter/hindering-throw": {
   "n": "Lanzamiento entorpecedor",
@@ -587,12 +587,12 @@
  "type-priest/idol": {
   "n": "Ídolo",
   "c": "3+ Intelecto",
-  "t": "Al terminar un ritual de diez minutos creas un ídolo que dura hasta que se agota su magia: un símbolo grabado en piedra, una figurilla tejida con ramitas, una pequeña talla o algo parecido. Debe colocarse en una superficie sólida algo protegida de los elementos, como el hueco de un árbol, la base de un muro o el interior de un edificio. Su vínculo sagrado con lo inefable da, a tu elección, uno de estos beneficios fijos; quien rece al ídolo como su acción lo recibe, estés o no presente. El ídolo tiene un agotamiento de 1–2 en 1d6: tira cada vez que da su beneficio a alguien. Furia bestial: el suplicante queda imbuido de un espíritu latente de furia bestial, que se activa cuando pierde los nervios o cuando decide despertarlo como acción extra de su turno. Al surgir la furia, se transforma visiblemente en una versión hinchada y rabiosa de sí mismo. Mientras dura, no puede gastar puntos de Intelecto salvo para intentar recuperar la compostura; ataca a toda criatura viva a alcance corto, tirando dos veces por ataque y quedándose con el mejor resultado. Dura hasta que haga una recuperación de diez minutos o más o use una acción para superar una tarea de Intelecto de dificultad 2. Al volver a la normalidad, el desgaste físico le causa dos heridas moderadas. (Un PNJ suplicante furioso es de hecho un nivel superior y recibe 6 de daño al acabar la furia.) Curación: la gravedad de una de las heridas del suplicante baja un paso (un PNJ recupera 5 de salud). Purificación espiritual: el suplicante se libra de una maldición, posesión demoníaca o aflicción espiritual similar de nivel 5 o inferior. Esfuerzo: puedes llevar el ídolo contigo. Diez minutos para iniciar."
+  "t": "Al terminar un ritual de diez minutos creas un ídolo que dura hasta que se agota su magia: un símbolo grabado en piedra, una figurilla tejida con ramitas, una pequeña talla o algo parecido. Debe colocarse en una superficie sólida algo protegida de los elementos, como el hueco de un árbol, la base de un muro o el interior de un edificio. Su vínculo sagrado con lo inefable da, a tu elección, uno de estos beneficios fijos; quien rece al ídolo como su acción lo recibe, estés o no presente. El ídolo tiene un agotamiento de 1–2 en 1d6: tira cada vez que da su beneficio a alguien. Furia bestial: el suplicante queda imbuido de un espíritu latente de furia bestial, que se activa cuando pierde los nervios o cuando decide despertarlo como acción extra de su turno. Al surgir la furia, se transforma visiblemente en una versión hinchada y rabiosa de sí mismo. Mientras dura, no puede gastar puntos de Intelecto salvo para intentar recuperar la compostura; ataca a toda criatura viva a alcance corto, tirando dos veces por ataque y quedándose con el mejor resultado. Dura hasta que use una recuperación de diez minutos o más o use una acción para superar una tarea de Intelecto de dificultad 2. Al volver a la normalidad, el desgaste físico le causa dos heridas moderadas. (Un PNJ suplicante furioso es de hecho un nivel superior y recibe 6 de daño al acabar la furia.) Curación: la gravedad de una de las heridas del suplicante baja un paso (un PNJ recupera 5 de salud). Purificación espiritual: el suplicante se libra de una maldición, posesión demoníaca o aflicción espiritual similar de nivel 5 o inferior. Esfuerzo: puedes llevar el ídolo contigo. Diez minutos para iniciar."
  },
  "type-priest/retribution": {
   "n": "Retribución",
   "c": "1 Intelecto",
-  "t": "Invocas los poderes de una deidad contra un enemigo que ves a alcance corto. Si aciertas el ataque de Intelecto, recibe 3 de daño y queda marcado con un signo evidente de esa deidad hasta que hagas una recuperación de diez minutos o más. Por ejemplo, si invocas la retribución de Thesk el Señor de las Serpientes, el ataque parece de serpientes etéreas que se enroscan y muerden al enemigo, y queda marcado en la frente u otro lugar visible con colmillos o una cabeza de serpiente brillantes. Última acción. En el rango 3: la retribución sube a 5 de daño."
+  "t": "Invocas los poderes de una deidad contra un enemigo que ves a alcance corto. Si aciertas el ataque de Intelecto, recibe 3 de daño y queda marcado con un signo evidente de esa deidad hasta que uses una recuperación de diez minutos o más. Por ejemplo, si invocas la retribución de Thesk el Señor de las Serpientes, el ataque parece de serpientes etéreas que se enroscan y muerden al enemigo, y queda marcado en la frente u otro lugar visible con colmillos o una cabeza de serpiente brillantes. Última acción. En el rango 3: la retribución sube a 5 de daño."
  },
  "type-sorcerer": {
   "n": "Hechicero",
@@ -625,8 +625,8 @@
  },
  "type-sorcerer/open-inner-eye": {
   "n": "Abrir el ojo interior",
-  "c": "2+ Intelecto y 1 herida leve",
-  "t": "Tras un ritual de diez minutos que termina con un corte en tu frente (hecho por ti o por un aliado, que te causa una herida leve), puedes asomarte al reino espiritual hasta que hagas una recuperación de diez horas. Mientras tienes el ojo interior abierto, tus tareas de percepción en la realidad física quedan dificultadas, pero ganas habilidades adicionales que puedes usar pagando su coste cada vez. Detectar espíritus (2+ Intelecto): haces una tirada de Intelecto para buscar presencias mentales de criaturas vivas y espíritus muertos vivientes a alcance corto; detectas a las de nivel igual o inferior al nivel de tu resultado, y las barreras de nivel superior lo bloquean. Esfuerzo: hasta tu siguiente turno las ubicas en el espacio físico. Acción. Tajo mental (1 Intelecto): atacas mentalmente a un objetivo que ves a alcance corto y le haces 2 de daño (ignora la armadura); las criaturas sin mente (como los muertos vivientes casi sin mente) pueden ser inmunes. Acción. Sugestión hechicera (2 Intelecto): si superas un ataque de Intelecto contra una criatura con mente, en su siguiente turno intenta una de estas acciones que tú indiques: identificarse, decir por qué está ahí, abrir o cerrar una puerta o recipiente, soltar o coger algo, moverse una distancia inmediata, pasarte algo que lleve, o quedarse quieta sin hacer nada. Acción. Diez minutos para activar (un minuto desde el rango 3). En el rango 3: el ritual solo te lleva un minuto y tus tareas de percepción en el mundo real ya no quedan dificultadas."
+  "c": "2+ Intelecto más 1 herida leve",
+  "t": "Tras un ritual de diez minutos que termina con un corte en tu frente (hecho por ti o por un aliado, que te causa una herida leve), puedes asomarte al reino espiritual hasta que uses una recuperación de diez horas. Mientras tienes el ojo interior abierto, tus tareas de percepción en la realidad física quedan dificultadas, pero ganas habilidades adicionales que puedes usar pagando su coste cada vez. Detectar espíritus (2+ Intelecto): haces una tirada de Intelecto para buscar presencias mentales de criaturas vivas y espíritus muertos vivientes a alcance corto; detectas a las de nivel igual o inferior al nivel de tu resultado, y las barreras de nivel superior lo bloquean. Esfuerzo: hasta tu siguiente turno las ubicas en el espacio físico. Acción. Tajo mental (1 Intelecto): atacas mentalmente a un objetivo que ves a alcance corto y le haces 2 de daño (ignora la armadura); las criaturas sin mente (como los muertos vivientes casi sin mente) pueden ser inmunes. Acción. Sugestión hechicera (2 Intelecto): si superas un ataque de Intelecto contra una criatura con mente, en su siguiente turno intenta una de estas acciones que tú indiques: identificarse, decir por qué está ahí, abrir o cerrar una puerta o recipiente, soltar o coger algo, moverse una distancia inmediata, pasarte algo que lleve, o quedarse quieta sin hacer nada. Acción. Diez minutos para activar (un minuto desde el rango 3). En el rango 3: el ritual solo te lleva un minuto y tus tareas de percepción en el mundo real ya no quedan dificultadas."
  },
  "type-sword-fighter": {
   "n": "Luchador con espada",
@@ -666,7 +666,7 @@
  "type-sword-fighter/swing-through": {
   "n": "Tajo continuado",
   "c": "1 Velocidad",
-  "t": "Atacas con una espada de una forma que arriesga más a fallar pero da un beneficio adicional. Tu rango de intrusión del DJ en este ataque sube en 2 (de 1 a 1–3 en el d20), pero si aciertas eliges uno de estos efectos adicionales. Come acero: el enemigo recibe +2 de daño. Corte y paso: recolocas al enemigo o a ti mismo a distancia inmediata, lo que facilita tu ataque en tu siguiente turno (contra ese enemigo u otro). Acción."
+  "t": "Atacas con una espada de una forma que arriesga más a fallar pero da un beneficio adicional. Tu margen de intrusión del DJ en este ataque sube en 2 (de 1 a 1–3 en el d20), pero si aciertas eliges uno de estos efectos adicionales. Come acero: el enemigo recibe +2 de daño. Corte y paso: recolocas al enemigo o a ti mismo a distancia inmediata, lo que facilita tu ataque en tu siguiente turno (contra ese enemigo u otro). Acción."
  },
  "type-thief": {
   "n": "Ladrón",
@@ -696,7 +696,7 @@
  "type-thief/detect-traps": {
   "n": "Detectar trampas",
   "c": "2+ Velocidad o Intelecto",
-  "t": "Cuando tiras para encontrar una trampa y sacas menos de 9, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Mantienes esta mayor sensibilidad a las trampas hasta que hagas una recuperación de diez minutos o más. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Acción. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+  "t": "Cuando tiras para encontrar una trampa y sacas menos de 9, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Mantienes esta mayor sensibilidad a las trampas hasta que uses una recuperación de diez minutos o más. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Acción. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
  },
  "type-thief/ferocious-when-cornered": {
   "n": "Feroz si te acorralan",
@@ -781,7 +781,7 @@
  "type-witch/evil-eye": {
   "n": "Mal de ojo",
   "c": "1+ Intelecto",
-  "t": "Haces la señal del mal de ojo y atacas con Intelecto a una criatura a alcance corto. Si aciertas, queda afligida por un espíritu de infortunio hasta que hagas una recuperación de una hora. Durante ese tiempo, el DJ la castiga introduciendo (o con intrusiones, si es un PJ) contratiempos como tropezar, perder un objeto, faltar a una cita, etc. Esfuerzo: alarga el infortunio hasta que hagas una recuperación de diez horas. Haces 2 de daño de Intelecto por nivel de Esfuerzo si aciertas (además del infortunio). Última acción. En el rango 3: puedes usar dos niveles de Esfuerzo para que el infortunio sea permanente; cuenta como una maldición de nivel 4 para las habilidades que eliminan aflicciones."
+  "t": "Haces la señal del mal de ojo y atacas con Intelecto a una criatura a alcance corto. Si aciertas, queda afligida por un espíritu de infortunio hasta que uses una recuperación de una hora. Durante ese tiempo, el DJ la castiga introduciendo (o con intrusiones, si es un PJ) contratiempos como tropezar, perder un objeto, faltar a una cita, etc. Esfuerzo: alarga el infortunio hasta que uses una recuperación de diez horas. Haces 2 de daño de Intelecto por nivel de Esfuerzo si aciertas (además del infortunio). Última acción. En el rango 3: puedes usar dos niveles de Esfuerzo para que el infortunio sea permanente; cuenta como una maldición de nivel 4 para las habilidades que eliminan aflicciones."
  },
  "type-witch/potion-cyphers": {
   "n": "Cifras de poción",
@@ -901,7 +901,7 @@
  "type-swashbuckler/flamboyant-swordplay": {
   "n": "Esgrima extravagante",
   "c": "1 Velocidad",
-  "t": "Atacas de una forma que arriesga más a fallar pero da un beneficio adicional. Tu rango de intrusión del DJ en este ataque sube en 2 (de 1 a 1–3 en el d20), pero si aciertas eliges uno de estos efectos adicionales. Estocada audaz: el enemigo recibe +2 de daño. Agilidad desarmante: el ataque hace 1 de daño menos, pero el enemigo suelta algo que lleve en una mano (como un arma o un escudo); para recuperarlo tiene que usar una acción. Acción."
+  "t": "Atacas de una forma que arriesga más a fallar pero da un beneficio adicional. Tu margen de intrusión del DJ en este ataque sube en 2 (de 1 a 1–3 en el d20), pero si aciertas eliges uno de estos efectos adicionales. Estocada audaz: el enemigo recibe +2 de daño. Agilidad desarmante: el ataque hace 1 de daño menos, pero el enemigo suelta algo que lleve en una mano (como un arma o un escudo); para recuperarlo tiene que usar una acción. Acción."
  },
  "type-swashbuckler/romantic-flair": {
   "n": "Galantería",
@@ -981,11 +981,11 @@
  "type-wizard/prepare-spell": {
   "n": "Preparar conjuro",
   "c": "",
-  "t": "Cada día puedes elegir un efecto mágico distinto y lanzarlo como conjuro. Elige una cifra manifiesta de poder bajo. Tras diez minutos de preparación, ganas su efecto como conjuro (una habilidad especial de personaje) que puedes lanzar como acción por 2 de Intelecto. Este conjuro no cuenta para tu límite de cifras y, a diferencia de una cifra, no lo pierdes al lanzarlo. Al hacer una recuperación de diez horas puedes cambiar de cifra; al hacerlo terminan todas las duraciones del conjuro anterior. Puedes elegir esta habilidad hasta tres veces (como avance o en lugar de una nueva habilidad de foco), para tener uno, dos o tres conjuros al día. Diez minutos para preparar una cifra como conjuro; acción para lanzarla. En el rango 3: puedes elegir una cifra de poder bajo o medio; una de poder medio se lanza como acción por 4 de Intelecto. En el rango 6: puedes elegir una cifra de poder bajo, medio o avanzado; una de poder avanzado se lanza como acción por 6 de Intelecto."
+  "t": "Cada día puedes elegir un efecto mágico distinto y lanzarlo como conjuro. Elige una cifra manifiesta de poder bajo. Tras diez minutos de preparación, ganas su efecto como conjuro (una habilidad especial de personaje) que puedes lanzar como acción por 2 de Intelecto. Este conjuro no cuenta para tu límite de cifras y, a diferencia de una cifra, no lo pierdes al lanzarlo. Al usar una recuperación de diez horas puedes cambiar de cifra; al hacerlo terminan todas las duraciones del conjuro anterior. Puedes elegir esta habilidad hasta tres veces (como avance o en lugar de una nueva habilidad de foco), para tener uno, dos o tres conjuros al día. Diez minutos para preparar una cifra como conjuro; acción para lanzarla. En el rango 3: puedes elegir una cifra de poder bajo o medio; una de poder medio se lanza como acción por 4 de Intelecto. En el rango 6: puedes elegir una cifra de poder bajo, medio o avanzado; una de poder avanzado se lanza como acción por 6 de Intelecto."
  },
  "type-wizard/wizards-cunning": {
   "n": "Astucia de mago",
   "c": "2 Intelecto",
-  "t": "Si superas una tirada de Intelecto de saber mágico contra una dificultad que fija el DJ, identificas y comprendes el propósito de algo mágico a alcance corto (si lo hay). Además, puedes intentar disipar al instante un efecto mágico (creado por un personaje, criatura u objeto) en la misma zona superando otra tarea de saber mágico contra su nivel. También puedes intentar crear un pequeño efecto mágico a alcance corto: un despliegue de luz y sonido como fuegos artificiales, cambiar para siempre el color o el aspecto básico de un objeto mundano pequeño, hacer flotar objetos pequeños, pedir a una polilla u otra criatura pequeña que lleve un mensaje, reparar un objeto roto, conseguir algo más de brío de una montura (hasta que hagas una recuperación de una hora o más), etc. Con ingenio puede usarse de forma ofensiva, pero no puede hacer más de 1 o 2 de daño. Última acción."
+  "t": "Si superas una tirada de Intelecto de saber mágico contra una dificultad que fija el DJ, identificas y comprendes el propósito de algo mágico a alcance corto (si lo hay). Además, puedes intentar disipar al instante un efecto mágico (creado por un personaje, criatura u objeto) en la misma zona superando otra tarea de saber mágico contra su nivel. También puedes intentar crear un pequeño efecto mágico a alcance corto: un despliegue de luz y sonido como fuegos artificiales, cambiar para siempre el color o el aspecto básico de un objeto mundano pequeño, hacer flotar objetos pequeños, pedir a una polilla u otra criatura pequeña que lleve un mensaje, reparar un objeto roto, conseguir algo más de brío de una montura (hasta que uses una recuperación de una hora o más), etc. Con ingenio puede usarse de forma ofensiva, pero no puede hacer más de 1 o 2 de daño. Última acción."
  }
 }

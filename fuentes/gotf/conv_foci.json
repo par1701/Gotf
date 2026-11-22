@@ -28,7 +28,7 @@
     "cost": "",
     "src": null,
     "req": [],
-    "text": "Si un oponente tiene una debilidad sencilla (recibe daño extra del fuego, no ve por el ojo izquierdo…), el DJ te dice cuál es. *Enabler*. [Adaptación: se quita la referencia al descriptor Sharp-Eyed, que no existe en el CCR.]"
+    "text": "Si un oponente tiene una debilidad sencilla (recibe daño extra del fuego, no ve por el ojo izquierdo…), el DJ te dice cuál es. *Capacitador*. [Adaptación: se quita la referencia al descriptor Sharp-Eyed, que no existe en el CCR.]"
    },
    {
     "tier": 1,
@@ -46,7 +46,7 @@
     "req": [
      "Perfect Submission"
     ],
-    "text": "Si atacas a un oponente al que has observado combatir al menos un asalto, tu siguiente ataque contra él queda facilitado y, si aciertas, inflige 2 de daño adicional. *Enabler*."
+    "text": "Si atacas a un oponente al que has observado combatir al menos un asalto, tu siguiente ataque contra él queda facilitado y, si aciertas, inflige 2 de daño adicional. *Capacitador*."
    },
    {
     "tier": 3,
@@ -56,7 +56,7 @@
     "req": [
      "Find the Flaw"
     ],
-    "text": "Quedan facilitadas en dos pasos todas las tareas de detectar mentiras y disfraces y de reconocer falacias, argumentos débiles y malos planes. *Enabler*."
+    "text": "Quedan facilitadas en dos pasos todas las tareas de detectar mentiras y disfraces y de reconocer falacias, argumentos débiles y malos planes. *Capacitador*."
    },
    {
     "tier": 4,
@@ -66,7 +66,7 @@
     "req": [
      "Fly in the Ointment"
     ],
-    "text": "Ves por dónde se romperá un objeto. Cualquier tarea que normalmente dependería de la fuerza bruta, pero que haces con un toque aparentemente ligero, queda facilitada en tres pasos: abrir una puerta atrancada sin romperla, mover un objeto pesado sin levantarlo, abrir un hueco en un muro encontrando la piedra clave… *Enabler*."
+    "text": "Ves por dónde se romperá un objeto. Cualquier tarea que normalmente dependería de la fuerza bruta, pero que haces con un toque aparentemente ligero, queda facilitada en tres pasos: abrir una puerta atrancada sin romperla, mover un objeto pesado sin levantarlo, abrir un hueco en un muro encontrando la piedra clave… *Capacitador*."
    },
    {
     "tier": 5,
@@ -87,7 +87,7 @@
      "Flaw of Worldly Works",
      "Flaw of Mortal Flesh"
     ],
-    "text": "Alzas por un momento el velo de tu mirada. Tira 1d6: con un par, la tarea que intentas queda facilitada en dos pasos; con un 1, queda dificultada un paso. *Enabler*."
+    "text": "Alzas por un momento el velo de tu mirada. Tira 1d6: con un par, la tarea que intentas queda facilitada en dos pasos; con un 1, queda dificultada un paso. *Capacitador*."
    },
    {
     "tier": 1,
@@ -95,7 +95,7 @@
     "cost": "2 Velocidad",
     "src": "Fights Dirty, p. 178",
     "req": [],
-    "text": "Intentas herir el ojo del enemigo, arrancándoselo o echándole tierra a la cara. Haces un ataque cuerpo a cuerpo dificultado; si aciertas, su visión queda dañada hasta que hagas una recuperación de diez minutos o más, y sus tareas que dependen de la vista (casi todas) quedan dificultadas. *Acción*."
+    "text": "Intentas herir el ojo del enemigo, arrancándoselo o echándole tierra a la cara. Haces un ataque cuerpo a cuerpo dificultado; si aciertas, su visión queda dañada hasta que uses una recuperación de diez minutos o más, y sus tareas que dependen de la vista (casi todas) quedan dificultadas. *Acción*."
    },
    {
     "tier": 2,
@@ -137,7 +137,7 @@
      "Sneak Attack",
      "Reckoning"
     ],
-    "text": "Haces un ataque cuerpo a cuerpo dificultado contra un enemigo de nivel 3 o inferior. Si aciertas, en vez de daño lo dejas inconsciente hasta que hagas una recuperación de diez minutos o más, o hasta que alguien gaste una acción en reanimarlo. *Esfuerzo:* aumenta en 1 el nivel máximo del enemigo. *Acción*."
+    "text": "Haces un ataque cuerpo a cuerpo dificultado contra un enemigo de nivel 3 o inferior. Si aciertas, en vez de daño lo dejas inconsciente hasta que uses una recuperación de diez minutos o más, o hasta que alguien gaste una acción en reanimarlo. *Esfuerzo:* aumenta en 1 el nivel máximo del enemigo. *Acción*."
    },
    {
     "tier": 6,
@@ -190,7 +190,7 @@
     "cost": "",
     "src": null,
     "req": [],
-    "text": "Tienes un recurso a favor al atacar a una criatura a alcance inmediato que ya ha sido atacada en ese asalto. *Enabler*."
+    "text": "Tienes un recurso a favor al atacar a una criatura a alcance inmediato que ya ha sido atacada en ese asalto. *Capacitador*."
    },
    {
     "tier": 2,
@@ -211,7 +211,7 @@
      "Legerdemain",
      "Fast Talk"
     ],
-    "text": "Quedas entrenado en charm o en intimidation, a tu elección. [Adaptación: GotF decía «interacciones sociales agradables» o «negativas».]"
+    "text": "Quedas entrenado en encanto o en intimidación, a tu elección. [Adaptación: GotF decía «interacciones sociales agradables» o «negativas».]"
    },
    {
     "tier": 3,
@@ -241,7 +241,7 @@
     "req": [
      "Poke and Run"
     ],
-    "text": "Estás entrenado en crear trampas sencillas con lo que hay en el entorno, y montas una en menos de un minuto. Decides si retiene a la víctima (lazo) o le hace daño (trampa de caída). Haces una tarea de Intelecto de dificultad 3 para el lazo, o igual al daño que quieres causar para la trampa de caída; tu entrenamiento facilita la tarea. Si tienes éxito, la trampa es de nivel 3 para que no la detecten y para liberarse de ella; nivel 4 si estás entrenado en stealth, disguise o similar, y nivel 5 si estás especializado. *Un minuto de acciones*."
+    "text": "Estás entrenado en crear trampas sencillas con lo que hay en el entorno, y montas una en menos de un minuto. Decides si retiene a la víctima (lazo) o le hace daño (trampa de caída). Haces una tarea de Intelecto de dificultad 3 para el lazo, o igual al daño que quieres causar para la trampa de caída; tu entrenamiento facilita la tarea. Si tienes éxito, la trampa es de nivel 3 para que no la detecten y para liberarse de ella; nivel 4 si estás entrenado en sigilo, disfraz o similar, y nivel 5 si estás especializado. *Un minuto de acciones*."
    },
    {
     "tier": 6,
@@ -252,7 +252,7 @@
      "Calm",
      "Trap Trick"
     ],
-    "text": "¡En realidad no te han hecho nada! Elige una opción: recuperas todos los puntos de una reserva, eliminas una herida, te quitas un estado (maldición, sueño, petrificación u otro efecto continuo) o conviertes una tirada fallida en un 20 natural. Un 20 puede no bastar si la dificultad es superior a 6, y no puedes cambiar un 1 natural. No vuelves a tenerla hasta después de una recuperación de diez horas. *Enabler*. [Adaptación: «subir un paso en el registro de daño» pasa a «eliminar una herida»; se quita la excepción de Wrest From Chance, que no está en el CCR.]"
+    "text": "¡En realidad no te han hecho nada! Elige una opción: recuperas todos los puntos de una reserva, eliminas una herida, te quitas un estado (maldición, sueño, petrificación u otro efecto continuo) o conviertes una tirada fallida en un 20 natural. Un 20 puede no bastar si la dificultad es superior a 6, y no puedes cambiar un 1 natural. No vuelves a tenerla hasta después de una recuperación de diez horas. *Capacitador*. [Adaptación: «subir un paso en el registro de daño» pasa a «eliminar una herida»; se quita la excepción de Wrest From Chance, que no está en el CCR.]"
    },
    {
     "tier": 1,
@@ -270,7 +270,7 @@
     "req": [
      "Impersonate"
     ],
-    "text": "Cambiando postura, expresión y quizá ropa, pareces alguien sin importancia pero no fuera de lugar (un criado en un palacio, un escribiente en un archivo). Quien sea de nivel 3 o inferior no le da importancia a tu presencia; contra alguien de nivel superior que se fije en ti, haces una tarea de Intelecto contra su nivel para mantenerla. Mientras dure, tienes dos recursos a favor en esquivar y en stealth. Termina si llamas la atención (atacar, usar una habilidad, mover algo grande…) o al hacer una recuperación de diez minutos o más. Engañar a un animal (un perro guardián) queda dificultado. *Acción para iniciar*."
+    "text": "Cambiando postura, expresión y quizá ropa, pareces alguien sin importancia pero no fuera de lugar (un criado en un palacio, un escribiente en un archivo). Quien sea de nivel 3 o inferior no le da importancia a tu presencia; contra alguien de nivel superior que se fije en ti, haces una tarea de Intelecto contra su nivel para mantenerla. Mientras dure, tienes dos recursos a favor en esquivar y en sigilo. Termina si llamas la atención (atacar, usar una habilidad, mover algo grande…) o al usar una recuperación de diez minutos o más. Engañar a un animal (un perro guardián) queda dificultado. *Acción para iniciar*."
    },
    {
     "tier": 4,
@@ -292,7 +292,7 @@
      "Blend In",
      "Impersonate"
     ],
-    "text": "Te vuelves invisible. Termina si haces algo que revele tu presencia o posición (atacar, usar una habilidad, mover un objeto grande…). *Esfuerzo:* lo usas sobre una criatura que tocas; le dura hasta que se revele o hasta que tú hagas una recuperación de diez minutos o más. *Acción para iniciar*."
+    "text": "Te vuelves invisible. Termina si haces algo que revele tu presencia o posición (atacar, usar una habilidad, mover un objeto grande…). *Esfuerzo:* lo usas sobre una criatura que tocas; le dura hasta que se revele o hasta que tú uses una recuperación de diez minutos o más. *Acción para iniciar*."
    },
    {
     "tier": 6,
@@ -303,7 +303,7 @@
      "Feint",
      "Trap Trick"
     ],
-    "text": "Tras esquivar con éxito un ataque u otro peligro, puedes moverte de inmediato hasta una distancia corta (ese movimiento no dificulta tus tareas). No puedes volver a usarla hasta tu siguiente turno. *Enabler*."
+    "text": "Tras esquivar con éxito un ataque u otro peligro, puedes moverte de inmediato hasta una distancia corta (ese movimiento no dificulta tus tareas). No puedes volver a usarla hasta tu siguiente turno. *Capacitador*."
    }
   ],
   "desc": "Disfrutas encandilando, engañando, desconcertando y sorprendiendo a los demás [GotF, p. 131]."
@@ -349,7 +349,7 @@
     "cost": "1 Intelecto",
     "src": null,
     "req": [],
-    "text": "Tu piel se cubre con un tatuaje de cuerpo entero, de tu diseño, durante un máximo de diez minutos. Solo se ve si llevas ropa que deje piel a la vista. Se vea o no, quien intente tocarte o golpearte cuerpo a cuerpo recibe 1 de daño que ignora la Armadura. Mientras dure, tus tiradas de bloqueo quedan facilitadas. *Enabler*. [Adaptación: GotF daba +1 a Armadura.]"
+    "text": "Tu piel se cubre con un tatuaje de cuerpo entero, de tu diseño, durante un máximo de diez minutos. Solo se ve si llevas ropa que deje piel a la vista. Se vea o no, quien intente tocarte o golpearte cuerpo a cuerpo recibe 1 de daño que ignora la Armadura. Mientras dure, tus tiradas de bloqueo quedan facilitadas. *Capacitador*. [Adaptación: GotF daba +1 a Armadura.]"
    },
    {
     "tier": 2,
@@ -418,7 +418,7 @@
     "req": [
      "Cursed Ink"
     ],
-    "text": "Alimentas tus habilidades con tu propia sangre, espíritu o energía vital: recibes una herida moderada y sumas +1 de Ventaja a la reserva que elijas mientras conserves esa herida. *Enabler*."
+    "text": "Alimentas tus habilidades con tu propia sangre, espíritu o energía vital: recibes una herida moderada y sumas +1 de Ventaja a la reserva que elijas mientras conserves esa herida. *Capacitador*."
    },
    {
     "tier": 4,
@@ -439,7 +439,7 @@
      "Mind Games",
      "Crown of Burrowing Worms"
     ],
-    "text": "Lanzas una mirada temible a hasta cinco criaturas vivas a alcance corto que puedan verte. Haces un ataque de Intelecto contra cada una; las que fallen quedan paralizadas de miedo, sin moverse ni actuar, hasta que hagas una recuperación de diez minutos o más, las ataquen o salgas de su campo de visión. Las criaturas sin mente pueden ser inmunes. *Acción*."
+    "text": "Lanzas una mirada temible a hasta cinco criaturas vivas a alcance corto que puedan verte. Haces un ataque de Intelecto contra cada una; las que fallen quedan paralizadas de miedo, sin moverse ni actuar, hasta que uses una recuperación de diez minutos o más, las ataquen o salgas de su campo de visión. Las criaturas sin mente pueden ser inmunes. *Acción*."
    },
    {
     "tier": 6,
@@ -504,7 +504,7 @@
     "cost": "",
     "src": null,
     "req": [],
-    "text": "Ves con luz muy tenue como con luz intensa, y en la oscuridad total como con luz tenue. *Enabler*. [Es una excepción a la regla del CCR de que los PJ no ven en la oscuridad total (p. 85).]"
+    "text": "Ves con luz muy tenue como con luz intensa, y en la oscuridad total como con luz tenue. *Capacitador*. [Es una excepción a la regla del CCR de que los PJ no ven en la oscuridad total (p. 85).]"
    },
    {
     "tier": 2,
@@ -525,7 +525,7 @@
     "req": [
      "Create Shadow"
     ],
-    "text": "Al atacar, una oscuridad pasa por los ojos del enemigo y no ve: tu ataque queda facilitado en dos pasos si es una criatura que depende de la vista. Sirve con cualquier tipo de ataque. *Enabler*."
+    "text": "Al atacar, una oscuridad pasa por los ojos del enemigo y no ve: tu ataque queda facilitado en dos pasos si es una criatura que depende de la vista. Sirve con cualquier tipo de ataque. *Capacitador*."
    },
    {
     "tier": 4,
@@ -535,7 +535,7 @@
     "req": [
      "Creeping Shadow"
     ],
-    "text": "Durante diez minutos adquieres rasgos de una sombra: eres una silueta oscura y quedas entrenado en stealth. Atraviesas barreras sólidas, incluso las selladas a la luz (pero no las de energía), a 30 cm por asalto, y puedes percibir mientras lo haces, así que puedes mirar a través de muros. No puedes afectar a la materia normal ni ella a ti: no puedes atacar ni tocar nada. Los ataques y efectos de luz sí te afectan, y un destello repentino puede hacerte perder el siguiente turno. *Acción para iniciar*."
+    "text": "Durante diez minutos adquieres rasgos de una sombra: eres una silueta oscura y quedas entrenado en sigilo. Atraviesas barreras sólidas, incluso las selladas a la luz (pero no las de energía), a 30 cm por asalto, y puedes percibir mientras lo haces, así que puedes mirar a través de muros. No puedes afectar a la materia normal ni ella a ti: no puedes atacar ni tocar nada. Los ataques y efectos de luz sí te afectan, y un destello repentino puede hacerte perder el siguiente turno. *Acción para iniciar*."
    },
    {
     "tier": 5,
@@ -556,7 +556,7 @@
      "Shadow",
      "Foreboding Strike"
     ],
-    "text": "Te vuelves sombra de forma selectiva: tu ataque de este turno ignora la Armadura del enemigo, lo atraviesa en parte y le hace 5 de daño adicional. Sirve con cualquier tipo de ataque. *Enabler*."
+    "text": "Te vuelves sombra de forma selectiva: tu ataque de este turno ignora la Armadura del enemigo, lo atraviesa en parte y le hace 5 de daño adicional. Sirve con cualquier tipo de ataque. *Capacitador*."
    },
    {
     "tier": 2,
@@ -567,7 +567,7 @@
      "Creeping Shadow",
      "Create Shadow"
     ],
-    "text": "Aunque estés a la vista de una criatura, una tarea de stealth con éxito te permite escabullirte y esconderte en una sombra cercana, tras un árbol o un mueble, o en la habitación de al lado, como tu acción. *Esfuerzo:* una criatura más de la que esconderte (tarea de stealth aparte contra cada una). *Enabler*. *En el rango 3:* puedes esconderte de tres criaturas de base."
+    "text": "Aunque estés a la vista de una criatura, una tarea de sigilo con éxito te permite escabullirte y esconderte en una sombra cercana, tras un árbol o un mueble, o en la habitación de al lado, como tu acción. *Esfuerzo:* una criatura más de la que esconderte (tarea de sigilo aparte contra cada una). *Capacitador*. *En el rango 3:* puedes esconderte de tres criaturas de base."
    },
    {
     "tier": 4,
@@ -578,7 +578,7 @@
      "Summon Creature of the Night",
      "Slip Into Shadow"
     ],
-    "text": "A tu orden, un espíritu no muerto cercano te envuelve hasta que hagas una recuperación de diez minutos o más. Quien intente tocarte o golpearte cuerpo a cuerpo recibe 4 de daño automáticamente (sin tirada), y mientras dure tus tareas de stealth quedan facilitadas. *Enabler*."
+    "text": "A tu orden, un espíritu no muerto cercano te envuelve hasta que uses una recuperación de diez minutos o más. Quien intente tocarte o golpearte cuerpo a cuerpo recibe 4 de daño automáticamente (sin tirada), y mientras dure tus tareas de sigilo quedan facilitadas. *Capacitador*."
    },
    {
     "tier": 5,
@@ -600,7 +600,7 @@
      "Slippery Customer",
      "Nightmare"
     ],
-    "text": "Puedes hacer una acción extra en tu turno. *Enabler*."
+    "text": "Puedes hacer una acción extra en tu turno. *Capacitador*."
    }
   ],
   "desc": "Tienes poder sobre la oscuridad; no tienes nada que temer en ella, pero otros sí pueden temerte a ti [GotF, p. 134]."
@@ -632,7 +632,7 @@
     "cost": "",
     "src": null,
     "req": [],
-    "text": "Quedas entrenado en perception, deception, criptografía y hacking. *Enabler*. [La criptografía no está en la lista del CCR y el hacking (entrar en ordenadores) no tiene uso en GotF; se traducen tal cual.]"
+    "text": "Quedas entrenado en percepción, engaño, criptografía y piratería informática. *Capacitador*. [La criptografía no está en la lista del CCR y el piratería informática (entrar en ordenadores) no tiene uso en GotF; se traducen tal cual.]"
    },
    {
     "tier": 1,
@@ -640,7 +640,7 @@
     "cost": "1 Intelecto",
     "src": "Infiltrates, p. 196",
     "req": [],
-    "text": "Si tratas con un PNJ inteligente y usas con éxito disguise o deception contra él, te revela algo más de información menor: qué puerta nunca se cierra con llave, cuántos guardias hay en el piso de arriba o cómo piensa fallar el rey en un asunto. *Enabler*."
+    "text": "Si tratas con un PNJ inteligente y usas con éxito disguise o deception contra él, te revela algo más de información menor: qué puerta nunca se cierra con llave, cuántos guardias hay en el piso de arriba o cómo piensa fallar el rey en un asunto. *Capacitador*."
    },
    {
     "tier": 1,
@@ -648,7 +648,7 @@
     "cost": "2+ Intelecto",
     "src": "Infiltrates, p. 196",
     "req": [],
-    "text": "Si en una tarea de lockpicking, perception, pickpocketing o stealth sacas menos de 6, cuenta como un 6 (así que un 1 no provoca intrusión del DJ). Se renueva al hacer una recuperación. *Esfuerzo:* sube en 3 el mínimo. *Enabler*. *En el rango 3:* el mínimo pasa a 9."
+    "text": "Si en una tarea de abrir cerraduras, percepción, robar bolsillos o sigilo sacas menos de 6, cuenta como un 6 (así que un 1 no provoca intrusión del DJ). Se renueva al usar una recuperación. *Esfuerzo:* sube en 3 el mínimo. *Capacitador*. *En el rango 3:* el mínimo pasa a 9."
    },
    {
     "tier": 2,
@@ -659,7 +659,7 @@
      "Investigate",
      "Letting Their Guard Down"
     ],
-    "text": "Quedas entrenado en disguise. Cambiando postura, voz, gestos y pelo pareces otra persona mientras mantengas el disfraz. Imitar a alguien concreto sin un kit de disfraz es extremadamente difícil. *Enabler*."
+    "text": "Quedas entrenado en disfraz. Cambiando postura, voz, gestos y pelo pareces otra persona mientras mantengas el disfraz. Imitar a alguien concreto sin un kit de disfraz es extremadamente difícil. *Capacitador*."
    },
    {
     "tier": 3,
@@ -670,7 +670,7 @@
      "Investigate",
      "Natural Sneak"
     ],
-    "text": "Quedas entrenado en una de estas opciones: atacar con un arma a tu elección, demolición, o stealth y lockpicking (las dos). *Enabler*. [Adaptación: «atacar con un arma» pasa a attacking con ese tipo de arma, p. 20.]"
+    "text": "Quedas entrenado en una de estas opciones: atacar con un arma a tu elección, demolición, o sigilo y abrir cerraduras (las dos). *Capacitador*. [Adaptación: «atacar con un arma» pasa a atacar con ese tipo de arma, p. 20.]"
    },
    {
     "tier": 3,
@@ -690,7 +690,7 @@
     "req": [
      "Disguise"
     ],
-    "text": "Cuando haces un timo, robas una bolsa, engañas a un incauto, cuelas algo delante de un guardia o similar, la tarea queda facilitada. *Enabler*."
+    "text": "Cuando haces un timo, robas una bolsa, engañas a un incauto, cuelas algo delante de un guardia o similar, la tarea queda facilitada. *Capacitador*."
    },
    {
     "tier": 4,
@@ -722,7 +722,7 @@
      "Pull a Fast One",
      "Using What's Available"
     ],
-    "text": "Tira 1d6: con un par, la tarea que intentas queda facilitada en dos pasos; con un 1, queda dificultada un paso. *Enabler*."
+    "text": "Tira 1d6: con un par, la tarea que intentas queda facilitada en dos pasos; con un 1, queda dificultada un paso. *Capacitador*."
    },
    {
     "tier": 6,
@@ -742,7 +742,7 @@
     "req": [
      "Pull a Fast One"
     ],
-    "text": "Con engaños, mentiras bien dichas y drogas (o magia) controlas los actos de una criatura de nivel 3 o inferior que tocas, si aciertas un ataque de Intelecto contra ella. Dura hasta que hagas una recuperación de diez minutos o más; si la ves, decides en cada momento si obedece o actúa libremente. Al acabar, no recuerda haber estado controlada ni lo que hizo. *Esfuerzo:* aumenta en 1 el nivel máximo de la criatura. *Acción para iniciar*."
+    "text": "Con engaños, mentiras bien dichas y drogas (o magia) controlas los actos de una criatura de nivel 3 o inferior que tocas, si aciertas un ataque de Intelecto contra ella. Dura hasta que uses una recuperación de diez minutos o más; si la ves, decides en cada momento si obedece o actúa libremente. Al acabar, no recuerda haber estado controlada ni lo que hizo. *Esfuerzo:* aumenta en 1 el nivel máximo de la criatura. *Acción para iniciar*."
    }
   ],
   "desc": "Eres espía o agente encubierto: averiguas lo que otros quieren mantener en secreto [CSR15, p. 155]."
@@ -774,11 +774,11 @@
    "-",
    "*Desire/Love/Health (3 Intelecto):* con un toque devuelves 1d6 puntos a una reserva de cualquier criatura, incluido tú. Es una tarea de Intelecto de dificultad 2, que sube un paso cada vez que curas a la misma criatura y vuelve a 2 cuando ella descansa diez horas. Acción. [Devuelve puntos de reserva, no cura heridas; para eso está Healing Hand (Tends to the Wounded).]",
    "-",
-   "*Earth/Stone:* quedas entrenado en trepar, cantería y espeleología. Enabler. [Adaptación: en el CCR, athletics y crafting (cantería); la espeleología no tiene habilidad propia.]",
+   "*Earth/Stone:* quedas entrenado en trepar, cantería y espeleología. Capacitador. [Adaptación: en el CCR, atletismo y artesanía (cantería); la espeleología no tiene habilidad propia.]",
    "-",
    "*Knowledge/Wisdom (3 Intelecto):* eliges hasta tres criaturas (tú puedes ser una). Durante un minuto, un tipo de tarea concreto (no ataques ni defensas) les queda facilitado mientras sigan a alcance inmediato de ti. Acción.",
    "-",
-   "*Nature/Animals/Plants:* quedas entrenado en botánica y en tratar animales. Enabler. [Adaptación: en el CCR, biology y animal care.]",
+   "*Nature/Animals/Plants:* quedas entrenado en botánica y en tratar animales. Capacitador. [Adaptación: en el CCR, biología y cuidado de animales.]",
    "-",
    "*Protection/Silence (3 Intelecto):* creas a tu alrededor una burbuja de protección de radio inmediato durante un minuto, que se mueve contigo. Las tiradas de defensa tuyas y de quien elijas dentro quedan facilitadas, y ningún ruido suena más fuerte que una voz normal. Acción para iniciar.",
    "-",
@@ -786,7 +786,7 @@
    "-",
    "*Sun/Light/Fire (2 Intelecto):* una criatura u objeto a alcance corto se prende y recibe 1 de daño por asalto hasta que alguien gaste una acción en apagarlo. Acción.",
    "-",
-   "*Trickery/Greed/Commerce:* quedas entrenado en detectar engaños. Enabler. [Adaptación: en el CCR, recognizing motive.]",
+   "*Trickery/Greed/Commerce:* quedas entrenado en detectar engaños. Capacitador. [Adaptación: en el CCR, reconocer intenciones (recognizing motive).]",
    "-",
    "*War (1 Intelecto):* un objetivo a alcance corto (tú incluido) hace 2 de daño adicional con su siguiente ataque con arma que acierte. Acción.",
    "-",
@@ -800,7 +800,7 @@
     "cost": "",
     "src": null,
     "req": [],
-    "text": "Quedas entrenado en todas las tareas de conocimiento de seres divinos. *Enabler*. [Adaptación: en el CCR es religious lore.]"
+    "text": "Quedas entrenado en todas las tareas de conocimiento de seres divinos. *Capacitador*. [Adaptación: en el CCR es saber religioso (religious lore).]"
    },
    {
     "tier": 1,
@@ -816,7 +816,7 @@
     "cost": "1 Intelecto",
     "src": "Quells Evil, p. 210",
     "req": [],
-    "text": "Los aliados en tu presencia que comparten tu idea del bien y el mal suman +1 a sus recuperaciones. *Enabler*."
+    "text": "Los aliados en tu presencia que comparten tu idea del bien y el mal suman +1 a sus recuperaciones. *Capacitador*."
    },
    {
     "tier": 1,
@@ -824,7 +824,7 @@
     "cost": "2+ Intelecto",
     "src": "Quells Evil, p. 210",
     "req": [],
-    "text": "Cuando usas una acción para percibir muertos vivientes, demonios (o poseídos por demonios) o criaturas similares a alcance inmediato, si sacas 9 o menos cuenta como un 9 (así que un 1 no provoca intrusión). Dura hasta que hagas una recuperación de diez minutos o más. *Esfuerzo:* sube en 3 el mínimo. *Acción para iniciar*. *En el rango 3:* el mínimo pasa a 12."
+    "text": "Cuando usas una acción para percibir muertos vivientes, demonios (o poseídos por demonios) o criaturas similares a alcance inmediato, si sacas 9 o menos cuenta como un 9 (así que un 1 no provoca intrusión). Dura hasta que uses una recuperación de diez minutos o más. *Esfuerzo:* sube en 3 el mínimo. *Acción para iniciar*. *En el rango 3:* el mínimo pasa a 12."
    },
    {
     "tier": 2,
@@ -835,7 +835,7 @@
      "Divine Knowledge",
      "Blessing of the Gods"
     ],
-    "text": "Tu fe te da reservas extra: +4 a tu reserva de Intelecto. *Enabler*."
+    "text": "Tu fe te da reservas extra: +4 a tu reserva de Intelecto. *Capacitador*."
    },
    {
     "tier": 2,
@@ -846,7 +846,7 @@
      "Sense Evil",
      "Blessing of the Gods"
     ],
-    "text": "Te bendices a ti o a un aliado que tocas contra muertos vivientes, demonios o criaturas similares hasta que hagas una recuperación de diez minutos o más: las tiradas de defensa contra ellos quedan facilitadas, y es inmune a la influencia mental, el miedo y la posesión (de cualquier origen). *Acción*."
+    "text": "Te bendices a ti o a un aliado que tocas contra muertos vivientes, demonios o criaturas similares hasta que uses una recuperación de diez minutos o más: las tiradas de defensa contra ellos quedan facilitadas, y es inmune a la influencia mental, el miedo y la posesión (de cualquier origen). *Acción*."
    },
    {
     "tier": 3,
@@ -867,7 +867,7 @@
      "Sense Evil",
      "Divine Knowledge"
     ],
-    "text": "Formas un «mapa de calor» mental de los muertos vivientes, demonios y criaturas similares en un radio de 16 km, con su posición aproximada (unos 30 m). Te lleva entre una hora y un día de concentración, según decida el DJ, y no sabes de antemano cuánto. Las criaturas de nivel 4 o superior notan que algo las ha detectado. *Esfuerzo:* con dos niveles, sigues sabiendo dónde están aunque se muevan hasta que hagas una recuperación de una hora o más. *Acción para iniciar*."
+    "text": "Formas un «mapa de calor» mental de los muertos vivientes, demonios y criaturas similares en un radio de 16 km, con su posición aproximada (unos 30 m). Te lleva entre una hora y un día de concentración, según decida el DJ, y no sabes de antemano cuánto. Las criaturas de nivel 4 o superior notan que algo las ha detectado. *Esfuerzo:* con dos niveles, sigues sabiendo dónde están aunque se muevan hasta que uses una recuperación de una hora o más. *Acción para iniciar*."
    },
    {
     "tier": 4,
@@ -888,7 +888,7 @@
      "Shield Against Evil",
      "Divine Radiance"
     ],
-    "text": "Increpas a un muerto viviente, demonio o criatura similar a alcance corto; si aciertas un ataque de Intelecto, hace lo posible por cumplir el objetivo que le marques, aunque le perjudique a él o a sus aliados, hasta que hagas una recuperación de diez minutos o más. *Esfuerzo:* afecta a un enemigo más (tirada aparte contra cada uno; la orden es la misma para todos). *Última acción*."
+    "text": "Increpas a un muerto viviente, demonio o criatura similar a alcance corto; si aciertas un ataque de Intelecto, hace lo posible por cumplir el objetivo que le marques, aunque le perjudique a él o a sus aliados, hasta que uses una recuperación de diez minutos o más. *Esfuerzo:* afecta a un enemigo más (tirada aparte contra cada uno; la orden es la misma para todos). *Última acción*."
    },
    {
     "tier": 5,
@@ -950,7 +950,7 @@
     "cost": "",
     "src": null,
     "req": [],
-    "text": "Quedas entrenado en tareas relacionadas con el sueño y en mezclar elixires naturales que ayudan a dormir. *Enabler*."
+    "text": "Quedas entrenado en tareas relacionadas con el sueño y en mezclar elixires naturales que ayudan a dormir. *Capacitador*."
    },
    {
     "tier": 1,
@@ -979,7 +979,7 @@
     "req": [
      "Dreamcraft"
     ],
-    "text": "Pareces otra persona o cosa de tu tamaño y forma aproximados hasta que hagas una recuperación de una hora o más, sin necesidad de concentrarte. *Esfuerzo:* disfrazas a una criatura más (1 Intelecto); si la pierdes de vista, pierde el disfraz. *Acción*."
+    "text": "Pareces otra persona o cosa de tu tamaño y forma aproximados hasta que uses una recuperación de una hora o más, sin necesidad de concentrarte. *Esfuerzo:* disfrazas a una criatura más (1 Intelecto); si la pierdes de vista, pierde el disfraz. *Acción*."
    },
    {
     "tier": 3,
@@ -1000,7 +1000,7 @@
      "Dream Thief",
      "Oneirochemy"
     ],
-    "text": "+2 a tu reserva de Intelecto. *Enabler*."
+    "text": "+2 a tu reserva de Intelecto. *Capacitador*."
    },
    {
     "tier": 4,
@@ -1021,7 +1021,7 @@
      "Illusory Disguise",
      "Dream Becomes Reality"
     ],
-    "text": "Creas cuatro ilusiones de ti a alcance corto que duran hasta que hagas una recuperación de diez minutos o más. Diriges sus actos mentalmente; no son reflejos, cada una puede hacer algo distinto. Si golpean a una con violencia, eliges si se queda inmóvil o desaparece. *Acción para iniciar*."
+    "text": "Creas cuatro ilusiones de ti a alcance corto que duran hasta que uses una recuperación de diez minutos o más. Diriges sus actos mentalmente; no son reflejos, cada una puede hacer algo distinto. Si golpean a una con violencia, eliges si se queda inmóvil o desaparece. *Acción para iniciar*."
    },
    {
     "tier": 5,
@@ -1043,7 +1043,7 @@
      "Daydream",
      "Consummate Dreamer"
     ],
-    "text": "Intuyes el futuro hasta que hagas una recuperación de diez minutos o más: tienes un recurso a favor en las defensas; otro para descubrir engaños y traiciones y evitar trampas y emboscadas; y otro en todas las tareas de interacción, porque sabes lo que la gente va a decir. *Enabler*."
+    "text": "Intuyes el futuro hasta que uses una recuperación de diez minutos o más: tienes un recurso a favor en las defensas; otro para descubrir engaños y traiciones y evitar trampas y emboscadas; y otro en todas las tareas de interacción, porque sabes lo que la gente va a decir. *Capacitador*."
    },
    {
     "tier": 6,
@@ -1065,7 +1065,7 @@
      "Illusory Selves",
      "Nightmare"
     ],
-    "text": "Creas una escena de imágenes enorme que cabe en un cubo de 1,6 km, con el borde más cercano a alcance inmediato. Tienes que ver las imágenes al crearlas. Se mueven y actúan como quieras, y reaccionan con lógica (al fuego, a los ataques) aunque no las mires. Tienen sonido y olor: ejércitos que chocan con apoyo de criaturas voladoras sobre un terreno inventado. Dura hasta que dejes de concentrarte o hagas una recuperación de una hora o más. *Última acción para iniciar*."
+    "text": "Creas una escena de imágenes enorme que cabe en un cubo de 1,6 km, con el borde más cercano a alcance inmediato. Tienes que ver las imágenes al crearlas. Se mueven y actúan como quieras, y reaccionan con lógica (al fuego, a los ataques) aunque no las mires. Tienen sonido y olor: ejércitos que chocan con apoyo de criaturas voladoras sobre un terreno inventado. Dura hasta que dejes de concentrarte o uses una recuperación de una hora o más. *Última acción para iniciar*."
    }
   ],
   "desc": "Tus sueños son más vívidos que los de los demás, perduran y puedes soltarlos en la realidad; conoces el oficio del oniromante [CSR15, p. 95–96]."
@@ -1097,7 +1097,7 @@
     "cost": "",
     "src": null,
     "req": [],
-    "text": "Quedas entrenado en las defensas de Intelecto y en iniciativa. *Enabler*."
+    "text": "Quedas entrenado en las defensas de Intelecto y en iniciativa. *Capacitador*."
    },
    {
     "tier": 1,
@@ -1105,7 +1105,7 @@
     "cost": "",
     "src": null,
     "req": [],
-    "text": "Mientras empuñas un escudo, tus tiradas de bloqueo quedan facilitadas. *Enabler*. [Adaptación: el CSR15 daba +1 a Armadura con escudo; el escudo del CCR ya puede absorber heridas (p. 304).]"
+    "text": "Mientras empuñas un escudo, tus tiradas de bloqueo quedan facilitadas. *Capacitador*. [Adaptación: el CSR15 daba +1 a Armadura con escudo; el escudo del CCR ya puede absorber heridas (p. 304).]"
    },
    {
     "tier": 1,
@@ -1113,7 +1113,7 @@
     "cost": "",
     "src": "Stands Like a Bastion, p. 222",
     "req": [],
-    "text": "Transmites calma. No pueden obligarte a huir contra tu voluntad (por ejemplo, con miedo mágico), y las defensas de tus aliados a alcance inmediato contra esos ataques quedan facilitadas. *Enabler*."
+    "text": "Transmites calma. No pueden obligarte a huir contra tu voluntad (por ejemplo, con miedo mágico), y las defensas de tus aliados a alcance inmediato contra esos ataques quedan facilitadas. *Capacitador*."
    },
    {
     "tier": 2,
@@ -1134,7 +1134,7 @@
     "req": [
      "Courageous"
     ],
-    "text": "Quedas entrenado en adivinar los motivos de otros y su naturaleza general; tienes buen ojo para saber si alguien es inocente de verdad. *Enabler*. [Adaptación: en el CCR es recognizing motive.]"
+    "text": "Quedas entrenado en adivinar los motivos de otros y su naturaleza general; tienes buen ojo para saber si alguien es inocente de verdad. *Capacitador*. [Adaptación: en el CCR es reconocer intenciones (recognizing motive).]"
    },
    {
     "tier": 2,
@@ -1144,7 +1144,7 @@
     "req": [
      "Warding Shield"
     ],
-    "text": "Tu escudo aguanta una herida moderada más de lo normal antes de romperse. *Enabler*."
+    "text": "Tu escudo aguanta una herida moderada más de lo normal antes de romperse. *Capacitador*."
    },
    {
     "tier": 3,
@@ -1155,7 +1155,7 @@
      "Warding Shield",
      "Devoted Defender"
     ],
-    "text": "Cuando haces guardia como acción, las defensas de los personajes que elijas adyacentes a ti quedan facilitadas hasta el final de tu siguiente turno. *Enabler*. [Hacer guardia: CCR, p. 306.]"
+    "text": "Cuando haces guardia como acción, las defensas de los personajes que elijas adyacentes a ti quedan facilitadas hasta el final de tu siguiente turno. *Capacitador*. [Hacer guardia: CCR, p. 306.]"
    },
    {
     "tier": 4,
@@ -1166,7 +1166,7 @@
      "True Guardian",
      "Astute"
     ],
-    "text": "Quedas entrenado en intimidation y en las tareas de Intelecto para atraer un ataque. *Enabler*. [Atraer el ataque: CCR, p. 306.]"
+    "text": "Quedas entrenado en intimidación y en las tareas de Intelecto para atraer un ataque. *Capacitador*. [Atraer el ataque: CCR, p. 306.]"
    },
    {
     "tier": 4,
@@ -1176,7 +1176,7 @@
     "req": [
      "Devoted Defender"
     ],
-    "text": "Cuando recibes un ataque en lugar de otro personaje, no sufres la herida leve adicional. *Enabler*. [Adaptación: en el CSR15 era 1 punto de daño adicional; en el CCR, recibir el ataque causa una herida leve adicional (p. 306).]"
+    "text": "Cuando recibes un ataque en lugar de otro personaje, no sufres la herida leve adicional. *Capacitador*. [Adaptación: en el CSR15 era 1 punto de daño adicional; en el CCR, recibir el ataque causa una herida leve adicional (p. 306).]"
    },
    {
     "tier": 4,
@@ -1187,7 +1187,7 @@
      "Shield Master",
      "True Guardian"
     ],
-    "text": "Has visto de todo y te has endurecido: puedes recibir una herida moderada más de lo normal. *Enabler*."
+    "text": "Has visto de todo y te has endurecido: puedes recibir una herida moderada más de lo normal. *Capacitador*."
    },
    {
     "tier": 5,
@@ -1198,7 +1198,7 @@
      "Combat Challenge",
      "True Guardian"
     ],
-    "text": "Cuando haces daño con un ataque, alejas a la criatura de tus compañeros: hasta el final del asalto siguiente, todos los personajes menos tú tienen un recurso a favor en las defensas de Velocidad (esquivar) contra sus ataques. *Enabler*."
+    "text": "Cuando haces daño con un ataque, alejas a la criatura de tus compañeros: hasta el final del asalto siguiente, todos los personajes menos tú tienen un recurso a favor en las defensas de Velocidad (esquivar) contra sus ataques. *Capacitador*."
    },
    {
     "tier": 6,
@@ -1219,7 +1219,7 @@
      "Hard-Won Resilience",
      "Drive Back"
     ],
-    "text": "Si este asalto haces tu ataque como última acción (en vez de como acción o primera acción), puedes ignorar una herida que recibas antes de que empiece tu siguiente turno. *Enabler*."
+    "text": "Si este asalto haces tu ataque como última acción (en vez de como acción o primera acción), puedes ignorar una herida que recibas antes de que empiece tu siguiente turno. *Capacitador*."
    }
   ],
   "desc": "Alguien tiene que dar la cara por los indefensos, y crees que te toca a ti: eres el primero en acudir cuando alguien está en apuros [CSR15, p. 116–117]."
@@ -1259,7 +1259,7 @@
     "cost": "1+ Intelecto",
     "src": "Commands Mental Powers, p. 162",
     "req": [],
-    "text": "Hablas telepáticamente con otros a alcance largo. La comunicación es en los dos sentidos, pero el otro tiene que querer y poder comunicarse. No necesitas verlo, pero sí saber que está a alcance. Puedes tener varios contactos a la vez, estableciendo cada uno por separado; cada contacto dura hasta que hagas una recuperación de diez minutos o más. *Esfuerzo:* dura hasta una recuperación de diez horas. *Acción para establecer contacto*."
+    "text": "Hablas telepáticamente con otros a alcance largo. La comunicación es en los dos sentidos, pero el otro tiene que querer y poder comunicarse. No necesitas verlo, pero sí saber que está a alcance. Puedes tener varios contactos a la vez, estableciendo cada uno por separado; cada contacto dura hasta que uses una recuperación de diez minutos o más. *Esfuerzo:* dura hasta una recuperación de diez horas. *Acción para establecer contacto*."
    },
    {
     "tier": 1,
@@ -1288,7 +1288,7 @@
     "req": [
      "Third Eye"
     ],
-    "text": "Quedas entrenado en perception. *Enabler*."
+    "text": "Quedas entrenado en percepción. *Capacitador*."
    },
    {
     "tier": 2,
@@ -1298,7 +1298,7 @@
     "req": [
      "Telepathic"
     ],
-    "text": "Lees los pensamientos superficiales de una criatura que ves a alcance corto. Si no quiere, tienes que acertar un ataque de Intelecto contra ella. Una vez establecido el contacto, puedes leerla hasta que hagas una recuperación de diez minutos o más. *Acción para iniciar*."
+    "text": "Lees los pensamientos superficiales de una criatura que ves a alcance corto. Si no quiere, tienes que acertar un ataque de Intelecto contra ella. Una vez establecido el contacto, puedes leerla hasta que uses una recuperación de diez minutos o más. *Acción para iniciar*."
    },
    {
     "tier": 3,
@@ -1308,7 +1308,7 @@
     "req": [
      "Third Eye"
     ],
-    "text": "Al usar Third Eye puedes colocar el sensor en cualquier punto a alcance largo y, mientras dure, moverlo con una acción a cualquier punto a alcance corto de donde empezó. *Enabler*."
+    "text": "Al usar Third Eye puedes colocar el sensor en cualquier punto a alcance largo y, mientras dure, moverlo con una acción a cualquier punto a alcance corto de donde empezó. *Capacitador*."
    },
    {
     "tier": 4,
@@ -1329,7 +1329,7 @@
     "req": [
      "Sensor"
     ],
-    "text": "Al usar Sensor puedes colocar el sensor en cualquier punto a alcance largo. *Enabler*."
+    "text": "Al usar Sensor puedes colocar el sensor en cualquier punto a alcance largo. *Capacitador*."
    },
    {
     "tier": 5,
@@ -1362,7 +1362,7 @@
      "Mind Reading",
      "Psychic Passenger"
     ],
-    "text": "Creas una red telepática entre tú y diez criaturas que conoces y aceptan, estén donde estén: todos pueden hablar entre sí y oír lo que se dice en la red. Crearla o usarla no cuesta acción ni puntos, y dura hasta que la termines. *Esfuerzo:* veinte personas (5 Intelecto), hasta que hagas una recuperación de diez minutos o más; cada diez más cuestan 1 Intelecto. *Enabler para crear la red; acción para crear una red ampliada*."
+    "text": "Creas una red telepática entre tú y diez criaturas que conoces y aceptan, estén donde estén: todos pueden hablar entre sí y oír lo que se dice en la red. Crearla o usarla no cuesta acción ni puntos, y dura hasta que la termines. *Esfuerzo:* veinte personas (5 Intelecto), hasta que uses una recuperación de diez minutos o más; cada diez más cuestan 1 Intelecto. *Capacitador para crear la red; acción para crear una red ampliada*."
    }
   ],
   "desc": "Tu mente gobierna tu cuerpo como un capitán su barco, y cuando quieres se suelta de él y explora el mundo por su cuenta [CSR15, p. 162–163]."
@@ -1394,7 +1394,7 @@
     "cost": "",
     "src": null,
     "req": [],
-    "text": "+3 a tu reserva de Velocidad. *Enabler*."
+    "text": "+3 a tu reserva de Velocidad. *Capacitador*."
    },
    {
     "tier": 1,
@@ -1402,7 +1402,7 @@
     "cost": "",
     "src": null,
     "req": [],
-    "text": "Quedas entrenado en equilibrio. *Enabler*. [Adaptación: en el CCR, gymnastics.]"
+    "text": "Quedas entrenado en equilibrio. *Capacitador*. [Adaptación: en el CCR, gimnasia (gymnastics).]"
    },
    {
     "tier": 1,
@@ -1410,7 +1410,7 @@
     "cost": "",
     "src": "Moves Like the Wind, p. 204",
     "req": [],
-    "text": "Si te alejas al menos una distancia inmediata de la amenaza más evidente, o te acercas a lo que parece un sitio seguro, una tarea que hagas el asalto siguiente queda facilitada. *Enabler*."
+    "text": "Si te alejas al menos una distancia inmediata de la amenaza más evidente, o te acercas a lo que parece un sitio seguro, una tarea que hagas el asalto siguiente queda facilitada. *Capacitador*."
    },
    {
     "tier": 2,
@@ -1421,7 +1421,7 @@
      "Balance",
      "Reflexes"
     ],
-    "text": "Quedas entrenado en trepar y saltar. *Enabler*. [Adaptación: en el CCR, athletics.]"
+    "text": "Quedas entrenado en trepar y saltar. *Capacitador*. [Adaptación: en el CCR, atletismo (athletics).]"
    },
    {
     "tier": 2,
@@ -1431,7 +1431,7 @@
     "req": [
      "Balance"
     ],
-    "text": "Cuando recibes una herida por una caída, su gravedad baja un paso. *Enabler*. [Adaptación: en el CSR15 reducía en 5 el daño de la caída; se usa el texto de Safe Fall del CCR (Never Says Die, p. 206), porque ahora las caídas causan heridas.]"
+    "text": "Cuando recibes una herida por una caída, su gravedad baja un paso. *Capacitador*. [Adaptación: en el CSR15 reducía en 5 el daño de la caída; se usa el texto de Safe Fall del CCR (Never Says Die, p. 206), porque ahora las caídas causan heridas.]"
    },
    {
     "tier": 2,
@@ -1442,7 +1442,7 @@
      "Get Out",
      "Movement"
     ],
-    "text": "Este asalto te mueves sin que te frene casi ningún terreno difícil: escombros, vallas, mesas… Puedes deslizarte por una barandilla, correr un momento por una pared o apoyarte en una criatura para saltar algo. Si un obstáculo pide normalmente una tarea de Potencia o Velocidad (balancearte en una cuerda, saltar un hueco), queda facilitada. *Enabler*."
+    "text": "Este asalto te mueves sin que te frene casi ningún terreno difícil: escombros, vallas, mesas… Puedes deslizarte por una barandilla, correr un momento por una pared o apoyarte en una criatura para saltar algo. Si un obstáculo pide normalmente una tarea de Potencia o Velocidad (balancearte en una cuerda, saltar un hueco), queda facilitada. *Capacitador*."
    },
    {
     "tier": 3,
@@ -1452,7 +1452,7 @@
     "req": [
      "Reflexes"
     ],
-    "text": "+1 a tu Ventaja de Velocidad. *Enabler*."
+    "text": "+1 a tu Ventaja de Velocidad. *Capacitador*."
    },
    {
     "tier": 3,
@@ -1463,7 +1463,7 @@
      "Reflexes",
      "Get Out"
     ],
-    "text": "Quedas entrenado en las defensas de Velocidad (esquivar). *Enabler*."
+    "text": "Quedas entrenado en las defensas de Velocidad (esquivar). *Capacitador*."
    },
    {
     "tier": 3,
@@ -1474,7 +1474,7 @@
      "Movement",
      "Obstacle Running"
     ],
-    "text": "Saltas al ataque girando o dando una voltereta en el aire. Si usas Esfuerzo en la tirada de ataque, tienes un nivel de Esfuerzo gratis. Con un 17 o 18 natural, en vez de daño extra puedes elegir un efecto menor. No puedes usarla si no puedes usar libremente la armadura que llevas. *Enabler*."
+    "text": "Saltas al ataque girando o dando una voltereta en el aire. Si usas Esfuerzo en la tirada de ataque, tienes un nivel de Esfuerzo gratis. Con un 17 o 18 natural, en vez de daño extra puedes elegir un efecto menor. No puedes usarla si no puedes usar libremente la armadura que llevas. *Capacitador*."
    },
    {
     "tier": 4,
@@ -1495,7 +1495,7 @@
     "req": [
      "Greater Reflexes"
     ],
-    "text": "+5 a tu reserva de Velocidad. *Enabler*."
+    "text": "+5 a tu reserva de Velocidad. *Capacitador*."
    },
    {
     "tier": 5,
@@ -1506,7 +1506,7 @@
      "Movement",
      "Hard to Touch"
     ],
-    "text": "Quedas entrenado en escapar de cualquier atadura o presa. *Enabler*. [Adaptación: en el CCR, escaping.]"
+    "text": "Quedas entrenado en escapar de cualquier atadura o presa. *Capacitador*. [Adaptación: en el CCR, escapar (escaping).]"
    },
    {
     "tier": 6,
@@ -1517,7 +1517,7 @@
      "Quick Strike",
      "Phenomenal Reflexes"
     ],
-    "text": "Puedes hacer dos acciones separadas este asalto. *Enabler*."
+    "text": "Puedes hacer dos acciones separadas este asalto. *Capacitador*."
    }
   ],
   "desc": "Eres extraordinariamente ágil: te mueves rápido y con suavidad, caes sin hacerte daño y esquivas el peligro [CSR15, p. 150–151]."
@@ -1549,7 +1549,7 @@
     "cost": "",
     "src": null,
     "req": [],
-    "text": "Haces 1 de daño adicional cuerpo a cuerpo (también con los puños). *Enabler*."
+    "text": "Haces 1 de daño adicional cuerpo a cuerpo (también con los puños). *Capacitador*."
    },
    {
     "tier": 1,
@@ -1557,7 +1557,7 @@
     "cost": "",
     "src": null,
     "req": [],
-    "text": "Quedas entrenado en healing. *Enabler*."
+    "text": "Quedas entrenado en curación. *Capacitador*."
    },
    {
     "tier": 2,
@@ -1568,7 +1568,7 @@
      "Brawler",
      "Wound Tender"
     ],
-    "text": "Eliges a un personaje como tu protegido; puedes cambiarlo cada asalto, pero solo puedes tener uno a la vez. Mientras esté a alcance inmediato, tiene un recurso a favor en las defensas de Velocidad (esquivar), porque le cubres las espaldas. *Enabler*."
+    "text": "Eliges a un personaje como tu protegido; puedes cambiarlo cada asalto, pero solo puedes tener uno a la vez. Mientras esté a alcance inmediato, tiene un recurso a favor en las defensas de Velocidad (esquivar), porque le cubres las espaldas. *Capacitador*."
    },
    {
     "tier": 2,
@@ -1578,7 +1578,7 @@
     "req": [
      "Brawler"
     ],
-    "text": "Quedas entrenado en una de estas tareas: romper cosas, trepar, saltar o correr. *Enabler*. [Adaptación: en el CCR las cuatro caen dentro de athletics.]"
+    "text": "Quedas entrenado en una de estas tareas: romper cosas, trepar, saltar o correr. *Capacitador*. [Adaptación: en el CCR las cuatro caen dentro de atletismo.]"
    },
    {
     "tier": 2,
@@ -1588,7 +1588,7 @@
     "req": [
      "Brawler"
     ],
-    "text": "Te presentas (quizá recordando alguna de tus hazañas) ante todos los enemigos a alcance largo que te oigan y entiendan, con un ataque de Intelecto aparte contra cada uno. Los que fallen te temen, y tus tareas contra ellos quedan facilitadas hasta que hagas una recuperación de diez minutos o más. *Acción*."
+    "text": "Te presentas (quizá recordando alguna de tus hazañas) ante todos los enemigos a alcance largo que te oigan y entiendan, con un ataque de Intelecto aparte contra cada uno. Los que fallen te temen, y tus tareas contra ellos quedan facilitadas hasta que uses una recuperación de diez minutos o más. *Acción*."
    },
    {
     "tier": 2,
@@ -1599,7 +1599,7 @@
      "Brawler",
      "Wound Tender"
     ],
-    "text": "Ignoras un paso de dificultad causado por una herida grave o por tener todas tus heridas moderadas. Puedes elegirla hasta tres veces; cada vez ignoras otro paso. *Enabler*."
+    "text": "Ignoras un paso de dificultad causado por una herida grave o por tener todas tus heridas moderadas. Puedes elegirla hasta tres veces; cada vez ignoras otro paso. *Capacitador*."
    },
    {
     "tier": 3,
@@ -1610,7 +1610,7 @@
      "Straightforward",
      "Protector"
     ],
-    "text": "Eliges un tipo de ataque en el que no estés entrenado: contundente ligero, cortante ligero, contundente medio, cortante medio, contundente pesado o cortante pesado. Quedas entrenado en él (attacking). *Enabler*."
+    "text": "Eliges un tipo de ataque en el que no estés entrenado: contundente ligero, cortante ligero, contundente medio, cortante medio, contundente pesado o cortante pesado. Quedas entrenado en él (attacking). *Capacitador*."
    },
    {
     "tier": 3,
@@ -1621,7 +1621,7 @@
      "Ignore the Pain",
      "Fearsome Reputation"
     ],
-    "text": "Mientras una de tus reservas esté a 0, o tengas al menos dos heridas moderadas o una grave, tienes un recurso a favor en ataques o en defensas (a tu elección) y en intimidation. *Enabler*."
+    "text": "Mientras una de tus reservas esté a 0, o tengas al menos dos heridas moderadas o una grave, tienes un recurso a favor en ataques o en defensas (a tu elección) y en intimidation. *Capacitador*."
    },
    {
     "tier": 4,
@@ -1632,7 +1632,7 @@
      "Lethal Battler",
      "Blood Fever"
     ],
-    "text": "Haces un ataque cuerpo a cuerpo dificultado contra un enemigo de nivel 3 o inferior. Si aciertas, en vez de daño lo dejas inconsciente hasta que hagas una recuperación de diez minutos o más, o hasta que alguien gaste una acción en reanimarlo. *Esfuerzo:* aumenta en 1 el nivel máximo del enemigo. *Acción*. [Adaptación: sustituye al Knock Out del CSR15 (ataque normal, segunda tirada de Potencia, un minuto de inconsciencia).]"
+    "text": "Haces un ataque cuerpo a cuerpo dificultado contra un enemigo de nivel 3 o inferior. Si aciertas, en vez de daño lo dejas inconsciente hasta que uses una recuperación de diez minutos o más, o hasta que alguien gaste una acción en reanimarlo. *Esfuerzo:* aumenta en 1 el nivel máximo del enemigo. *Acción*. [Adaptación: sustituye al Knock Out del CSR15 (ataque normal, segunda tirada de Potencia, un minuto de inconsciencia).]"
    },
    {
     "tier": 5,
@@ -1642,7 +1642,7 @@
     "req": [
      "Lethal Battler"
     ],
-    "text": "Eliges un tipo de ataque en el que ya estés entrenado (de los de Lethal Battler) y quedas especializado en él. *Enabler*."
+    "text": "Eliges un tipo de ataque en el que ya estés entrenado (de los de Lethal Battler) y quedas especializado en él. *Capacitador*."
    },
    {
     "tier": 6,
@@ -1653,7 +1653,7 @@
      "Epic Fighter",
      "Knock Out"
     ],
-    "text": "+5 a tu reserva de Potencia y 1 de daño adicional en ataques cuerpo a cuerpo. *Enabler*."
+    "text": "+5 a tu reserva de Potencia y 1 de daño adicional en ataques cuerpo a cuerpo. *Capacitador*."
    },
    {
     "tier": 6,
@@ -1663,7 +1663,7 @@
     "req": [
      "Wound Tender"
     ],
-    "text": "Quedas especializado en healing. *Enabler*."
+    "text": "Quedas especializado en curación. *Capacitador*."
    },
    {
     "tier": 6,
@@ -1673,7 +1673,7 @@
     "req": [
      "Epic Fighter"
     ],
-    "text": "Dominas una forma de matar: haces 5 de daño adicional con un tipo de ataque concreto que elijas. Puedes cogerla más de una vez, con un ataque distinto cada vez. *Enabler*."
+    "text": "Dominas una forma de matar: haces 5 de daño adicional con un tipo de ataque concreto que elijas. Puedes cogerla más de una vez, con un ataque distinto cada vez. *Capacitador*."
    }
   ],
   "desc": "Eres un luchador, un camorrista: te gusta enfrentarte a los problemas de cara y por las bravas, y tus amigos se sienten más seguros contigo al lado [CSR15, p. 145–146]."
@@ -1709,7 +1709,7 @@
     "cost": "",
     "src": null,
     "req": [],
-    "text": "Quedas entrenado en buscar, escuchar, trepar, equilibrio y saltar. *Enabler*. [Adaptación: en el CCR, perception, athletics y gymnastics.]"
+    "text": "Quedas entrenado en buscar, escuchar, trepar, equilibrio y saltar. *Capacitador*. [Adaptación: en el CCR, percepción, atletismo y gimnasia.]"
    },
    {
     "tier": 1,
@@ -1717,7 +1717,7 @@
     "cost": "",
     "src": "Explores, p. 176",
     "req": [],
-    "text": "Sabes sobrevivir en lugares nuevos y extraños. Tras al menos diez minutos en una región y una tarea de outdoor survival con éxito (normalmente de dificultad 2), encuentras algo útil que buscabas: refugio, material para hacer fuego, agua potable, una presa fácil, plantas y setas comestibles, o algo contra una hemorragia o un veneno. Puedes alimentarte a ti y a cinco aliados mientras sigas en esa región. Cuando has estado en un lugar notable de la región (tu campamento, un hito), sabes en qué dirección y a qué distancia está. *Enabler*."
+    "text": "Sabes sobrevivir en lugares nuevos y extraños. Tras al menos diez minutos en una región y una tarea de supervivencia con éxito (normalmente de dificultad 2), encuentras algo útil que buscabas: refugio, material para hacer fuego, agua potable, una presa fácil, plantas y setas comestibles, o algo contra una hemorragia o un veneno. Puedes alimentarte a ti y a cinco aliados mientras sigas en esa región. Cuando has estado en un lugar notable de la región (tu campamento, un hito), sabes en qué dirección y a qué distancia está. *Capacitador*."
    },
    {
     "tier": 1,
@@ -1725,7 +1725,7 @@
     "cost": "",
     "src": "Explores, p. 176",
     "req": [],
-    "text": "Puedes recibir una herida leve más. *Enabler*."
+    "text": "Puedes recibir una herida leve más. *Capacitador*."
    },
    {
     "tier": 2,
@@ -1735,7 +1735,7 @@
     "req": [
      "Trained Explorer"
     ],
-    "text": "Quedas entrenado en lockpicking y en manipular mecanismos. *Enabler*. [Adaptación: «manipular mecanismos» puede ser mechanics o disarming traps en el CCR; lo decide el DJ.]"
+    "text": "Quedas entrenado en abrir cerraduras y en manipular mecanismos. *Capacitador*. [Adaptación: «manipular mecanismos» puede ser mecánica o desarmar trampas en el CCR; lo decide el DJ.]"
    },
    {
     "tier": 2,
@@ -1746,7 +1746,7 @@
      "Trained Explorer",
      "Exploration Survivor"
     ],
-    "text": "Ves con luz muy tenue como con luz intensa, y en la oscuridad total como con luz muy tenue. *Enabler*. [El texto es igual que Eyes Adjusted del CCR (Sneaks Through the Shadows, p. 216), donde es de rango 1.]"
+    "text": "Ves con luz muy tenue como con luz intensa, y en la oscuridad total como con luz muy tenue. *Capacitador*. [El texto es igual que Eyes Adjusted del CCR (Sneaks Through the Shadows, p. 216), donde es de rango 1.]"
    },
    {
     "tier": 2,
@@ -1757,7 +1757,7 @@
      "Exploration Survivor",
      "Tough"
     ],
-    "text": "Tus defensas contra venenos quedan facilitadas y las heridas por veneno bajan un paso (grave a moderada, moderada a leve, leve a nada). Eres inmune a las enfermedades naturales. En la naturaleza, la hierba alta, la maleza, el terreno abrupto, los desprendimientos y el mal tiempo no te dificultan ni te frenan, y sus heridas bajan un paso. Si tienes una hora para explorar, encuentras comida y agua para ti y unos pocos más. *Enabler*."
+    "text": "Tus defensas contra venenos quedan facilitadas y las heridas por veneno bajan un paso (grave a moderada, moderada a leve, leve a nada). Eres inmune a las enfermedades naturales. En la naturaleza, la hierba alta, la maleza, el terreno abrupto, los desprendimientos y el mal tiempo no te dificultan ni te frenan, y sus heridas bajan un paso. Si tienes una hora para explorar, encuentras comida y agua para ti y unos pocos más. *Capacitador*."
    },
    {
     "tier": 3,
@@ -1768,7 +1768,7 @@
      "Trained Infiltrator",
      "Eyes Adjusted"
     ],
-    "text": "Quedas entrenado en escapar de ataduras, meterte en sitios estrechos y otras tareas de contorsionista y, gracias a tu experiencia, en las defensas de Velocidad (esquivar) mientras lleves armadura ligera o ninguna. *Enabler*. [Adaptación: en el CCR, escaping. Es distinta del Slippery Customer del CCR.]"
+    "text": "Quedas entrenado en escapar de ataduras, meterte en sitios estrechos y otras tareas de contorsionista y, gracias a tu experiencia, en las defensas de Velocidad (esquivar) mientras lleves armadura ligera o ninguna. *Capacitador*. [Adaptación: en el CCR, escapar. Es distinta del Slippery Customer del CCR.]"
    },
    {
     "tier": 3,
@@ -1778,7 +1778,7 @@
     "req": [
      "Tough"
     ],
-    "text": "Puedes usar Esfuerzo de Potencia o de Velocidad en las tiradas de bloqueo. *Enabler*."
+    "text": "Puedes usar Esfuerzo de Potencia o de Velocidad en las tiradas de bloqueo. *Capacitador*."
    },
    {
     "tier": 4,
@@ -1790,7 +1790,7 @@
      "Nine Lives",
      "Experienced Explorer"
     ],
-    "text": "Te has expuesto a toda clase de cosas terribles y vas cogiendo resistencia: tus tiradas de bloqueo quedan facilitadas y quedas entrenado en las defensas de Potencia. *Enabler*. [Adaptación: el CSR15 daba +1 a Armadura.]"
+    "text": "Te has expuesto a toda clase de cosas terribles y vas cogiendo resistencia: tus tiradas de bloqueo quedan facilitadas y quedas entrenado en las defensas de Potencia. *Capacitador*. [Adaptación: el CSR15 daba +1 a Armadura.]"
    },
    {
     "tier": 5,
@@ -1800,7 +1800,7 @@
     "req": [
      "Eyes Adjusted"
     ],
-    "text": "No sufres penalizaciones en ninguna acción (tampoco al luchar) con luz muy tenue ni en espacios estrechos. Junto con Eyes Adjusted, actúas sin penalización incluso en oscuridad total. Además, quedas entrenado en stealth con luz tenue o sin luz. *Enabler*."
+    "text": "No sufres penalizaciones en ninguna acción (tampoco al luchar) con luz muy tenue ni en espacios estrechos. Junto con Eyes Adjusted, actúas sin penalización incluso en oscuridad total. Además, quedas entrenado en sigilo con luz tenue o sin luz. *Capacitador*."
    },
    {
     "tier": 5,
@@ -1811,7 +1811,7 @@
      "Experienced Explorer",
      "Slippery Customer"
     ],
-    "text": "Estás siempre alerta ante amenazas, enemigos, obstáculos y peligros a la vista: cuando usas Esfuerzo en iniciativa y percepción, tienes dos niveles de Esfuerzo gratis. *Enabler*."
+    "text": "Estás siempre alerta ante amenazas, enemigos, obstáculos y peligros a la vista: cuando usas Esfuerzo en iniciativa y percepción, tienes dos niveles de Esfuerzo gratis. *Capacitador*."
    },
    {
     "tier": 6,
@@ -1857,7 +1857,7 @@
     "cost": "",
     "src": null,
     "req": [],
-    "text": "Te zambulles sin peligro desde hasta 30 m de altura y aguantas la presión del agua hasta 30 m de profundidad. *Enabler*."
+    "text": "Te zambulles sin peligro desde hasta 30 m de altura y aguantas la presión del agua hasta 30 m de profundidad. *Capacitador*."
    },
    {
     "tier": 1,
@@ -1865,7 +1865,7 @@
     "cost": "",
     "src": null,
     "req": [],
-    "text": "Aguantas la respiración hasta cinco minutos. *Enabler*."
+    "text": "Aguantas la respiración hasta cinco minutos. *Capacitador*."
    },
    {
     "tier": 1,
@@ -1873,7 +1873,7 @@
     "cost": "",
     "src": null,
     "req": [],
-    "text": "Bajo el agua, quedas entrenado en escapar, percepción, sigilo y nadar, y en identificar criaturas y accidentes geográficos acuáticos. *Enabler*. [Adaptación: en el CCR, escaping, perception, stealth, athletics e identifying, solo bajo el agua.]"
+    "text": "Bajo el agua, quedas entrenado en escapar, percepción, sigilo y nadar, y en identificar criaturas y accidentes geográficos acuáticos. *Capacitador*. [Adaptación: en el CCR, escapar, percepción, sigilo, atletismo e identificar, solo bajo el agua.]"
    },
    {
     "tier": 1,
@@ -1892,7 +1892,7 @@
      "Diver",
      "Trained Swimmer"
     ],
-    "text": "Ves con luz muy tenue como con luz intensa, y en la oscuridad total como con luz muy tenue. *Enabler*. [Igual que Eyes Adjusted del CCR (Sneaks Through the Shadows, p. 216).]"
+    "text": "Ves con luz muy tenue como con luz intensa, y en la oscuridad total como con luz muy tenue. *Capacitador*. [Igual que Eyes Adjusted del CCR (Sneaks Through the Shadows, p. 216).]"
    },
    {
     "tier": 2,
@@ -1903,7 +1903,7 @@
      "Diver",
      "Hold Breath"
     ],
-    "text": "Tanto si resistes la presión de las profundidades como la picadura de un pez venenoso, todas tus defensas sumergido quedan facilitadas. *Enabler*."
+    "text": "Tanto si resistes la presión de las profundidades como la picadura de un pez venenoso, todas tus defensas sumergido quedan facilitadas. *Capacitador*."
    },
    {
     "tier": 3,
@@ -1914,7 +1914,7 @@
      "Trained Swimmer",
      "Resist Underwater Hazards"
     ],
-    "text": "No sufres penalizaciones en ninguna acción bajo el agua, tampoco al luchar. *Enabler*."
+    "text": "No sufres penalizaciones en ninguna acción bajo el agua, tampoco al luchar. *Capacitador*."
    },
    {
     "tier": 3,
@@ -1925,7 +1925,7 @@
      "Hold Breath",
      "Diver"
     ],
-    "text": "+1 a tus reservas de Potencia y Velocidad. *Enabler*."
+    "text": "+1 a tus reservas de Potencia y Velocidad. *Capacitador*."
    },
    {
     "tier": 4,
@@ -1935,7 +1935,7 @@
     "req": [
      "Aquatic Combatant"
     ],
-    "text": "Bajo el agua quedas entrenado en todas las defensas. *Enabler*."
+    "text": "Bajo el agua quedas entrenado en todas las defensas. *Capacitador*."
    },
    {
     "tier": 4,
@@ -1967,7 +1967,7 @@
     "req": [
      "Nimble Swimmer"
     ],
-    "text": "Cuando superas una defensa de Velocidad (esquivar), ganas una acción inmediata que solo puedes usar para moverte. *Enabler*."
+    "text": "Cuando superas una defensa de Velocidad (esquivar), ganas una acción inmediata que solo puedes usar para moverte. *Capacitador*."
    },
    {
     "tier": 6,
@@ -1978,7 +1978,7 @@
      "Swim",
      "Communication"
     ],
-    "text": "Bajo el agua, las criaturas que elijas y que te vean tienen un recurso a favor al nadar. *Enabler*."
+    "text": "Bajo el agua, las criaturas que elijas y que te vean tienen un recurso a favor al nadar. *Capacitador*."
    },
    {
     "tier": 6,
@@ -1989,7 +1989,7 @@
      "Aquatic Combatant",
      "Elusive"
     ],
-    "text": "Bajo el agua, tus Ventajas de Potencia, Velocidad e Intelecto suben 1. *Enabler*."
+    "text": "Bajo el agua, tus Ventajas de Potencia, Velocidad e Intelecto suben 1. *Capacitador*."
    },
    {
     "tier": 6,
@@ -2000,7 +2000,7 @@
      "Hold Breath",
      "Swim"
     ],
-    "text": "Respiras agua tan bien como aire. *Enabler*."
+    "text": "Respiras agua tan bien como aire. *Capacitador*."
    }
   ],
   "desc": "No temes a las profundidades: nadas, aguantas la respiración y bajas más hondo que nadie, y las aguas acaban siendo parte de quien eres [CSR15, p. 124–125]."
@@ -2032,7 +2032,7 @@
     "cost": "",
     "src": null,
     "req": [],
-    "text": "Haces 3 de daño adicional cuando luchas contra marginados. *Enabler*."
+    "text": "Haces 3 de daño adicional cuando luchas contra marginados. *Capacitador*."
    },
    {
     "tier": 1,
@@ -2040,7 +2040,7 @@
     "cost": "",
     "src": "Hunts, p. 194",
     "req": [],
-    "text": "Cuando atacas a un enemigo y fallas, tienes un recurso a favor en tus ataques y defensas contra él; si vuelves a fallar, un segundo recurso. Los pierdes si cambias de objetivo o termina el combate. *Enabler*."
+    "text": "Cuando atacas a un enemigo y fallas, tienes un recurso a favor en tus ataques y defensas contra él; si vuelves a fallar, un segundo recurso. Los pierdes si cambias de objetivo o termina el combate. *Capacitador*."
    },
    {
     "tier": 2,
@@ -2050,7 +2050,7 @@
     "req": [
      "Outcast Fighter"
     ],
-    "text": "Percibes la presencia de un marginado a alcance largo. Cuando has encontrado a uno concreto, con un nivel de Esfuerzo puedes intentar «fijarlo»; si lo consigues, siempre sabes a qué distancia y en qué dirección está. *Enabler*."
+    "text": "Percibes la presencia de un marginado a alcance largo. Cuando has encontrado a uno concreto, con un nivel de Esfuerzo puedes intentar «fijarlo»; si lo consigues, siempre sabes a qué distancia y en qué dirección está. *Capacitador*."
    },
    {
     "tier": 2,
@@ -2072,7 +2072,7 @@
      "Outcast Fighter",
      "Outcast Tracker"
     ],
-    "text": "Los poderes de los marginados adoptan muchas formas: quedas entrenado en todas las defensas. *Enabler*."
+    "text": "Los poderes de los marginados adoptan muchas formas: quedas entrenado en todas las defensas. *Capacitador*."
    },
    {
     "tier": 3,
@@ -2082,7 +2082,7 @@
     "req": [
      "Outcast Tracker"
     ],
-    "text": "Estás hiperalerta hasta que hagas una recuperación de diez minutos o más: sabes dónde están, más o menos, todos los seres vivos a alcance largo. Con una acción de concentración puedes elegir uno e intentar averiguar su salud y su poder en general. *Acción*."
+    "text": "Estás hiperalerta hasta que uses una recuperación de diez minutos o más: sabes dónde están, más o menos, todos los seres vivos a alcance largo. Con una acción de concentración puedes elegir uno e intentar averiguar su salud y su poder en general. *Acción*."
    },
    {
     "tier": 4,
@@ -2103,7 +2103,7 @@
     "req": [
      "Outcast Disruption"
     ],
-    "text": "Con magia, drogas u otras alteraciones te das poderes: ganas dos habilidades de nivel medio de fantasía (CCR, p. 82), con el visto bueno del DJ. Siempre te apresuras a aclarar que no son mutaciones ni nada que te convierta en un marginado. *Enabler*. [Adaptación: en el CSR15 eran dos habilidades de rango 2 o inferior de cualquier tipo; en el CCR los tipos no tienen habilidades por rango.]"
+    "text": "Con magia, drogas u otras alteraciones te das poderes: ganas dos habilidades de nivel medio de fantasía (CCR, p. 82), con el visto bueno del DJ. Siempre te apresuras a aclarar que no son mutaciones ni nada que te convierta en un marginado. *Capacitador*. [Adaptación: en el CSR15 eran dos habilidades de rango 2 o inferior de cualquier tipo; en el CCR los tipos no tienen habilidades por rango.]"
    },
    {
     "tier": 5,
@@ -2113,7 +2113,7 @@
     "req": [
      "Quarry"
     ],
-    "text": "Si tu presa está a 16 km o menos, tu velocidad de movimiento se duplica mientras intentas alcanzarla, y tienes otro recurso a favor en las tareas relacionadas con ella. Dura hasta que hagas una recuperación de diez minutos o más. *Enabler*."
+    "text": "Si tu presa está a 16 km o menos, tu velocidad de movimiento se duplica mientras intentas alcanzarla, y tienes otro recurso a favor en las tareas relacionadas con ella. Dura hasta que uses una recuperación de diez minutos o más. *Capacitador*."
    },
    {
     "tier": 6,
@@ -2123,7 +2123,7 @@
     "req": [
      "Defense Against Outcast Powers"
     ],
-    "text": "Quedas especializado en todas las defensas. *Enabler*."
+    "text": "Quedas especializado en todas las defensas. *Capacitador*."
    },
    {
     "tier": 6,
@@ -2133,7 +2133,7 @@
     "req": [
      "Quarry"
     ],
-    "text": "Al activar Quarry puedes elegir hasta cuatro criaturas que veas como presas; cada presa adicional suma 2 de Intelecto al coste. *Enabler*."
+    "text": "Al activar Quarry puedes elegir hasta cuatro criaturas que veas como presas; cada presa adicional suma 2 de Intelecto al coste. *Capacitador*."
    }
   ],
   "desc": "Cazas a los marginados: seres con poderes más allá de los humanos normales (brujos, feéricos, fantasmas, vampiros…), que para ti son una plaga. Al crear el personaje eliges qué tipo de marginado cazas [CSR15, p. 136–137]."
@@ -2229,7 +2229,7 @@
      "Call Swarm",
      "Beast Communication"
     ],
-    "text": "Tienes un ejemplar especial como compañero permanente: nivel 4 (número objetivo 12, salud 12, 4 de daño), probablemente del tamaño de un perro pequeño, que obedece tus órdenes telepáticas. Definís los detalles tú y el DJ; seguramente tirarás tú por él en combate o cuando actúe, y actúa en tu turno. Si muere, puedes buscar otro en la naturaleza durante 1d6 días. *Enabler*."
+    "text": "Tienes un ejemplar especial como compañero permanente: nivel 4 (número objetivo 12, salud 12, 4 de daño), probablemente del tamaño de un perro pequeño, que obedece tus órdenes telepáticas. Definís los detalles tú y el DJ; seguramente tirarás tú por él en combate o cuando actúe, y actúa en tu turno. Si muere, puedes buscar otro en la naturaleza durante 1d6 días. *Capacitador*."
    },
    {
     "tier": 5,
@@ -2260,7 +2260,7 @@
     "req": [
      "Companion"
     ],
-    "text": "La Armadura de tu compañero sube 2. *Enabler*."
+    "text": "La Armadura de tu compañero sube 2. *Capacitador*."
    }
   ],
   "desc": "Dominas a un tipo de criatura pequeña (insectos, ratas, murciélagos, incluso pájaros) y acuden a ti en masa. Al crear el personaje eliges cuál [CSR15, p. 147–148]."
@@ -2308,7 +2308,7 @@
     "cost": "1 Intelecto",
     "src": "Masters Telekinesis, p. 200",
     "req": [],
-    "text": "Te estabilizas o mejoras tu agarre y ganas un nivel de Esfuerzo gratis en una tarea física que no sea de combate. No puedes volver a usarla hasta que hagas una recuperación. *Enabler*."
+    "text": "Te estabilizas o mejoras tu agarre y ganas un nivel de Esfuerzo gratis en una tarea física que no sea de combate. No puedes volver a usarla hasta que uses una recuperación. *Capacitador*."
    },
    {
     "tier": 2,
@@ -2319,7 +2319,7 @@
      "Hover",
      "Steady Hand"
     ],
-    "text": "Manipulando la atracción de la gravedad sobre ti, +1 a tu Ventaja de Velocidad. *Enabler*."
+    "text": "Manipulando la atracción de la gravedad sobre ti, +1 a tu Ventaja de Velocidad. *Capacitador*."
    },
    {
     "tier": 3,
@@ -2341,7 +2341,7 @@
      "Push",
      "Lessening Gravity's Pull"
     ],
-    "text": "Usas objetos pequeños del entorno (piedras, cascotes, terrones) para interceptar ataques hasta que hagas una recuperación de diez minutos o más: tus tiradas de bloqueo quedan facilitadas un paso más (las de esquivar, no). *Acción para iniciar*."
+    "text": "Usas objetos pequeños del entorno (piedras, cascotes, terrones) para interceptar ataques hasta que uses una recuperación de diez minutos o más: tus tiradas de bloqueo quedan facilitadas un paso más (las de esquivar, no). *Acción para iniciar*."
    },
    {
     "tier": 4,
@@ -2352,7 +2352,7 @@
      "Armoring Debris",
      "Lessening Gravity's Pull"
     ],
-    "text": "Cuando quieres, un campo de gravedad a tu alrededor tira al suelo los proyectiles que te lanzan: eres inmune a ellos hasta tu turno del asalto siguiente. Tienes que saber que te atacan. No funciona contra ataques de energía. *Enabler*."
+    "text": "Cuando quieres, un campo de gravedad a tu alrededor tira al suelo los proyectiles que te lanzan: eres inmune a ellos hasta tu turno del asalto siguiente. Tienes que saber que te atacan. No funciona contra ataques de energía. *Capacitador*."
    },
    {
     "tier": 4,
@@ -2362,7 +2362,7 @@
     "req": [
      "Lessening Gravity's Pull"
     ],
-    "text": "Cuando una tarea te pediría gastar puntos de Intelecto, puedes gastarlos de Velocidad, y al revés. *Enabler*."
+    "text": "Cuando una tarea te pediría gastar puntos de Intelecto, puedes gastarlos de Velocidad, y al revés. *Capacitador*."
    },
    {
     "tier": 5,
@@ -2416,7 +2416,7 @@
     "cost": "",
     "src": null,
     "req": [],
-    "text": "Quedas entrenado en averiguar la verdad de una situación, ver a través de las mentiras y superar engaños. *Enabler*. [Adaptación: en el CCR, recognizing motive.]"
+    "text": "Quedas entrenado en averiguar la verdad de una situación, ver a través de las mentiras y superar engaños. *Capacitador*. [Adaptación: en el CCR, reconocer intenciones (recognizing motive).]"
    },
    {
     "tier": 1,
@@ -2432,7 +2432,7 @@
     "cost": "1 Intelecto",
     "src": "Quells Evil, p. 210",
     "req": [],
-    "text": "Los aliados en tu presencia que comparten tu idea del bien y el mal suman +1 a sus recuperaciones. *Enabler*."
+    "text": "Los aliados en tu presencia que comparten tu idea del bien y el mal suman +1 a sus recuperaciones. *Capacitador*."
    },
    {
     "tier": 2,
@@ -2473,7 +2473,7 @@
     "req": [
      "Defend the Innocent"
     ],
-    "text": "Si bloqueas o esquivas un ataque cuerpo a cuerpo, puedes atacar de inmediato cuerpo a cuerpo a quien te atacó. Solo una vez por turno. *Enabler*."
+    "text": "Si bloqueas o esquivas un ataque cuerpo a cuerpo, puedes atacar de inmediato cuerpo a cuerpo a quien te atacó. Solo una vez por turno. *Capacitador*."
    },
    {
     "tier": 4,
@@ -2484,7 +2484,7 @@
      "Make Judgment",
      "Quarry"
     ],
-    "text": "Quedas entrenado en rastrear, descubrir cuando se esconde o encontrar de cualquier otro modo a alguien que hayas designado culpable. *Enabler*."
+    "text": "Quedas entrenado en rastrear, descubrir cuando se esconde o encontrar de cualquier otro modo a alguien que hayas designado culpable. *Capacitador*."
    },
    {
     "tier": 4,
@@ -2516,7 +2516,7 @@
      "Defend the Innocent",
      "Greater Designation"
     ],
-    "text": "Proteges a todos los que hayas designado inocentes a alcance inmediato: sus defensas de Velocidad (esquivar) quedan facilitadas. *Enabler*."
+    "text": "Proteges a todos los que hayas designado inocentes a alcance inmediato: sus defensas de Velocidad (esquivar) quedan facilitadas. *Capacitador*."
    }
   ],
   "desc": "Eres un justiciero: te has propuesto deshacer entuertos, proteger a los inocentes y castigar a los culpables, como un caballero andante [CSR15, p. 149–150]."
@@ -2552,7 +2552,7 @@
     "cost": "",
     "src": null,
     "req": [],
-    "text": "Quedas entrenado en las tareas de percepción que dependen de la vista. *Enabler*."
+    "text": "Quedas entrenado en las tareas de percepción que dependen de la vista. *Capacitador*."
    },
    {
     "tier": 1,
@@ -2614,7 +2614,7 @@
      "Blast Evil",
      "Burning Light"
     ],
-    "text": "Brillas con una luz sana: quien intente tocarte o golpearte cuerpo a cuerpo recibe 4 de daño automáticamente (sin tirada). Si quieres, iluminas con luz intensa un área corta a tu alrededor. Dura hasta que hagas una recuperación de diez minutos o más. *Enabler*."
+    "text": "Brillas con una luz sana: quien intente tocarte o golpearte cuerpo a cuerpo recibe 4 de daño automáticamente (sin tirada). Si quieres, iluminas con luz intensa un área corta a tu alrededor. Dura hasta que uses una recuperación de diez minutos o más. *Capacitador*."
    },
    {
     "tier": 5,
@@ -2625,7 +2625,7 @@
      "Enlightened",
      "Sunlight"
     ],
-    "text": "Desvías la luz que te llega y pareces desaparecer: eres invisible durante diez minutos y, mientras tanto, estás especializado en stealth y en las defensas de Velocidad (esquivar). Termina si revelas tu presencia o posición (atacar, usar una habilidad, mover algo grande…), pero puedes recuperar el resto de la invisibilidad con una acción para ocultarte. *Acción para iniciar o reiniciar*."
+    "text": "Desvías la luz que te llega y pareces desaparecer: eres invisible durante diez minutos y, mientras tanto, estás especializado en sigilo y en las defensas de Velocidad (esquivar). Termina si revelas tu presencia o posición (atacar, usar una habilidad, mover algo grande…), pero puedes recuperar el resto de la invisibilidad con una acción para ocultarte. *Acción para iniciar o reiniciar*."
    },
    {
     "tier": 6,
@@ -2668,7 +2668,7 @@
     "cost": "",
     "src": null,
     "req": [],
-    "text": "Percibes criaturas y objetos normalmente invisibles, desfasados o que solo están en parte en este universo. Al buscar cosas ocultas de forma más convencional, la tarea también queda facilitada. *Enabler*."
+    "text": "Percibes criaturas y objetos normalmente invisibles, desfasados o que solo están en parte en este universo. Al buscar cosas ocultas de forma más convencional, la tarea también queda facilitada. *Capacitador*."
    },
    {
     "tier": 1,
@@ -2697,7 +2697,7 @@
      "See the Unseen",
      "Sense Magic"
     ],
-    "text": "Cuando tiras para descubrir una ilusión o un objetivo invisible a alcance corto y sacas menos de 12, cuenta como un 12 (así que un 1 no provoca intrusión). Dura hasta que hagas una recuperación de diez minutos o más. *Esfuerzo:* sube en 3 el mínimo. *Acción para iniciar*. *En el rango 3:* el mínimo pasa a 15."
+    "text": "Cuando tiras para descubrir una ilusión o un objetivo invisible a alcance corto y sacas menos de 12, cuenta como un 12 (así que un 1 no provoca intrusión). Dura hasta que uses una recuperación de diez minutos o más. *Esfuerzo:* sube en 3 el mínimo. *Acción para iniciar*. *En el rango 3:* el mínimo pasa a 15."
    },
    {
     "tier": 2,
@@ -2707,7 +2707,7 @@
     "req": [
      "See the Unseen"
     ],
-    "text": "Estás hiperalerta hasta que hagas una recuperación de diez minutos o más: sabes dónde están, más o menos, todos los seres vivos a alcance largo. Con una acción de concentración puedes elegir uno e intentar averiguar su salud y su poder en general. *Acción*."
+    "text": "Estás hiperalerta hasta que uses una recuperación de diez minutos o más: sabes dónde están, más o menos, todos los seres vivos a alcance largo. Con una acción de concentración puedes elegir uno e intentar averiguar su salud y su poder en general. *Acción*."
    },
    {
     "tier": 3,
@@ -2750,7 +2750,7 @@
      "Remote Viewing",
      "Awareness"
     ],
-    "text": "Intuyes el futuro hasta que hagas una recuperación de diez minutos o más: tienes un recurso a favor en las defensas; otro para descubrir engaños y traiciones y evitar trampas y emboscadas; y otro en todas las tareas de interacción. *Enabler*."
+    "text": "Intuyes el futuro hasta que uses una recuperación de diez minutos o más: tienes un recurso a favor en las defensas; otro para descubrir engaños y traiciones y evitar trampas y emboscadas; y otro en todas las tareas de interacción. *Capacitador*."
    },
    {
     "tier": 6,
@@ -2761,7 +2761,7 @@
      "See Through Time",
      "Precognition"
     ],
-    "text": "Tienes tal nivel de alerta que es muy difícil sorprenderte, esconderse de ti o acercarse sin que lo notes: tus tareas de iniciativa y percepción quedan facilitadas en tres pasos. *Enabler*. [Es distinta del Total Awareness del CCR (Reveres a Supernatural Force, p. 213).]"
+    "text": "Tienes tal nivel de alerta que es muy difícil sorprenderte, esconderse de ti o acercarse sin que lo notes: tus tareas de iniciativa y percepción quedan facilitadas en tres pasos. *Capacitador*. [Es distinta del Total Awareness del CCR (Reveres a Supernatural Force, p. 213).]"
    }
   ],
   "desc": "Sabes que hay más de tres dimensiones y más cosas en el mundo de las que la mayoría puede ver; con práctica y ayuda (drogas, lentes, magia, herencia) percibes lo que otros no [CSR15, p. 160–161]."

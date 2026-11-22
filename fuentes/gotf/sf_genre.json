@@ -21,7 +21,7 @@
   "en": "Disable Mechanism",
   "n": "Inutilizar mecanismo",
   "c": "3+ Intelecto",
-  "t": "Con un ataque de Intelecto con éxito para piratear una máquina, robot o artefacto (inteligente o no) a alcance inmediato, lo perturbas de una de estas formas: • Todas las tareas de la máquina se obstaculizan hasta que hagas una recuperación de diez minutos o más. • La velocidad de la máquina se reduce a la mitad. • La máquina no puede hacer ninguna acción durante un asalto. • La gravedad de los ataques de la máquina se reduce un paso (mínimo herida leve) hasta que hagas una recuperación de diez minutos o más. Debes tocar la máquina, robot o artefacto para perturbarlo (si haces un ataque, no inflige daño). Esfuerzo: aumenta el alcance hasta donde puedas ver directamente (con tus propios ojos, no a través de una cámara remota u otra interfaz). Elige como objetivo un mecanismo a través de una interfaz de red a la que tengas acceso sin restricciones (requiere dos niveles de Esfuerzo). Acción."
+  "t": "Con un ataque de Intelecto con éxito para piratear una máquina, robot o artefacto (inteligente o no) a alcance inmediato, lo perturbas de una de estas formas: • Todas las tareas de la máquina se dificultan hasta que uses una recuperación de diez minutos o más. • La velocidad de la máquina se reduce a la mitad. • La máquina no puede hacer ninguna acción durante un asalto. • La gravedad de los ataques de la máquina se reduce un paso (mínimo herida leve) hasta que uses una recuperación de diez minutos o más. Debes tocar la máquina, robot o artefacto para perturbarlo (si haces un ataque, no inflige daño). Esfuerzo: aumenta el alcance hasta donde puedas ver directamente (con tus propios ojos, no a través de una cámara remota u otra interfaz). Elige como objetivo un mecanismo a través de una interfaz de red a la que tengas acceso sin restricciones (requiere dos niveles de Esfuerzo). Acción."
  },
  {
   "id": "sfgenre-enhanced-stat",
@@ -45,7 +45,7 @@
   "en": "Hands on the Wheel",
   "n": "Manos al volante",
   "c": "2+ Intelecto",
-  "t": "Cuando pilotas o conduces un vehículo mecánico y sacas menos de 9, trata la tirada como un 9. (Esto significa que no hay intrusión del DJ si sacas un 1.) El beneficio dura hasta que haces una recuperación de diez minutos o más. Esfuerzo: aumenta en 3 el resultado mínimo de esta habilidad. Capacitador. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+  "t": "Cuando pilotas o conduces un vehículo mecánico y sacas menos de 9, trata la tirada como un 9. (Esto significa que no hay intrusión del DJ si sacas un 1.) El beneficio dura hasta que usas una recuperación de diez minutos o más. Esfuerzo: aumenta en 3 el resultado mínimo de esta habilidad. Capacitador. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
  },
  {
   "id": "sfgenre-incredible-health",
@@ -69,7 +69,7 @@
   "en": "Mind Reading",
   "n": "Leer la mente",
   "c": "2 Intelecto",
-  "t": "Puedes leer los pensamientos superficiales de una criatura que veas a alcance corto. Si la criatura no está dispuesta, debes hacer un ataque de Intelecto contra ella para leer sus pensamientos. Una vez establecido el contacto, puedes leer los pensamientos del objetivo hasta que hagas una recuperación de diez minutos o más. Acción."
+  "t": "Puedes leer los pensamientos superficiales de una criatura que veas a alcance corto. Si la criatura no está dispuesta, debes hacer un ataque de Intelecto contra ella para leer sus pensamientos. Una vez establecido el contacto, puedes leer los pensamientos del objetivo hasta que uses una recuperación de diez minutos o más. Acción."
  },
  {
   "id": "sfgenre-snipe",
@@ -85,7 +85,7 @@
   "en": "Spray",
   "n": "Ráfaga",
   "c": "2 Velocidad",
-  "t": "Si un arma puede hacer disparos rápidos sin recargar (lo que suele llamarse arma de fuego rápido, como una ballesta de manivela o un subfusil), puedes rociar varios disparos alrededor del objetivo para aumentar la probabilidad de impactar, y obtienes una ventaja en el ataque. Esta habilidad gasta la munición o energía de 1d6 + 1 ataques (o toda la reserva del arma, si tiene menos munición o energía que el resultado). Si el ataque tiene éxito, inflige 1 de daño menos de lo normal. También puedes usar esta habilidad con varias armas arrojadizas (piedras, shuriken, dagas, etc.) si las llevas encima o están todas a tu alcance. Acción."
+  "t": "Si un arma puede hacer disparos rápidos sin recargar (lo que suele llamarse arma de fuego rápido, como una ballesta de manivela o un subfusil), puedes rociar varios disparos alrededor del objetivo para aumentar la probabilidad de impactar, y ganas un recurso en el ataque. Esta habilidad gasta la munición o energía de 1d6 + 1 ataques (o toda la reserva del arma, si tiene menos munición o energía que el resultado). Si el ataque tiene éxito, inflige 1 de daño menos de lo normal. También puedes usar esta habilidad con varias armas arrojadizas (piedras, shuriken, dagas, etc.) si las llevas encima o están todas a tu alcance. Acción."
  },
  {
   "id": "sfgenre-arc-spray",
@@ -93,7 +93,7 @@
   "en": "Arc Spray",
   "n": "Ráfaga en arco",
   "c": "3 Velocidad",
-  "t": "Si un arma puede hacer disparos rápidos sin recargar (lo que suele llamarse arma de fuego rápido, como una ballesta de manivela o un subfusil), puedes disparar a tres objetivos (todos uno junto a otro) a la vez. Haz una tirada de ataque obstaculizada distinta contra cada objetivo. Acción. (Cuando una habilidad o efecto te permite atacar a varias criaturas en tu turno, cada ataque después del primero es una acción adicional en tu turno.)"
+  "t": "Si un arma puede hacer disparos rápidos sin recargar (lo que suele llamarse arma de fuego rápido, como una ballesta de manivela o un subfusil), puedes disparar a tres objetivos (todos uno junto a otro) a la vez. Haz una tirada de ataque dificultada distinta contra cada objetivo. Acción. (Cuando una habilidad o efecto te permite atacar a varias criaturas en tu turno, cada ataque después del primero es una acción extra en tu turno.)"
  },
  {
   "id": "sfgenre-improved-machine-companion",
@@ -109,7 +109,7 @@
   "en": "Inspire Action",
   "n": "Inspirar acción",
   "c": "4 Intelecto",
-  "t": "Si un aliado puede verte y entenderte con facilidad, puedes indicarle que haga una acción. Si el aliado decide hacer exactamente esa acción, puede hacerla de inmediato como acción adicional. Esto no le impide hacer una acción normal en su turno. Acción."
+  "t": "Si un aliado puede verte y entenderte con facilidad, puedes indicarle que haga una acción. Si el aliado decide hacer exactamente esa acción, puede hacerla de inmediato como acción extra. Esto no le impide hacer una acción normal en su turno. Acción."
  },
  {
   "id": "sfgenre-knowledge-expert",
@@ -133,7 +133,7 @@
   "en": "Severe Machine Disruption",
   "n": "Perturbación mecánica grave",
   "c": "5+ Intelecto",
-  "t": "Con un ataque de Intelecto con éxito para piratear una máquina, robot, mecanismo o artefacto (inteligente o no) a alcance inmediato, lo perturbas de todas estas formas a la vez: • Todas las tareas de la máquina se obstaculizan hasta que hagas una recuperación de diez minutos o más. • La velocidad de la máquina se reduce a la mitad. • La máquina no puede hacer ninguna acción durante un asalto. • La gravedad de los ataques de la máquina se reduce un paso (mínimo herida leve) hasta que hagas una recuperación de diez minutos o más. Debes tocar la máquina para perturbarla (si haces un ataque, no inflige daño). Esfuerzo: aumenta el alcance hasta donde puedas ver directamente (con tus propios ojos, no a través de una cámara remota u otra interfaz). Elige como objetivo una máquina a través de una interfaz de red a la que tengas acceso sin restricciones (requiere dos niveles de Esfuerzo). Acción."
+  "t": "Con un ataque de Intelecto con éxito para piratear una máquina, robot, mecanismo o artefacto (inteligente o no) a alcance inmediato, lo perturbas de todas estas formas a la vez: • Todas las tareas de la máquina se dificultan hasta que uses una recuperación de diez minutos o más. • La velocidad de la máquina se reduce a la mitad. • La máquina no puede hacer ninguna acción durante un asalto. • La gravedad de los ataques de la máquina se reduce un paso (mínimo herida leve) hasta que uses una recuperación de diez minutos o más. Debes tocar la máquina para perturbarla (si haces un ataque, no inflige daño). Esfuerzo: aumenta el alcance hasta donde puedas ver directamente (con tus propios ojos, no a través de una cámara remota u otra interfaz). Elige como objetivo una máquina a través de una interfaz de red a la que tengas acceso sin restricciones (requiere dos niveles de Esfuerzo). Acción."
  },
  {
   "id": "sfgenre-technology-expert",
@@ -149,6 +149,6 @@
   "en": "Telepathic Network",
   "n": "Red telepática",
   "c": "0+ Intelecto",
-  "t": "Creas una red telepática entre tú y hasta diez criaturas dispuestas que conozcas, estén donde estén. Todas las criaturas de la red están enlazadas y pueden comunicarse telepáticamente entre sí. También pueden «oír» todo lo que se dice en la red. Activar o usar esta habilidad no requiere acción ni cuesta puntos de Intelecto; para ti es tan fácil como hablar en voz alta. La red dura hasta que decides terminarla. Esfuerzo: aumenta el número base de personas de la red a veinte (5 Intelecto), y dura hasta que hagas una recuperación de diez minutos o más; cada diez personas adicionales cuestan 1 Intelecto. Capacitador para crear una red; acción para crear una red ampliada (veinte personas o más)."
+  "t": "Creas una red telepática entre tú y hasta diez criaturas dispuestas que conozcas, estén donde estén. Todas las criaturas de la red están enlazadas y pueden comunicarse telepáticamente entre sí. También pueden «oír» todo lo que se dice en la red. Activar o usar esta habilidad no requiere acción ni cuesta puntos de Intelecto; para ti es tan fácil como hablar en voz alta. La red dura hasta que decides terminarla. Esfuerzo: aumenta el número base de personas de la red a veinte (5 Intelecto), y dura hasta que uses una recuperación de diez minutos o más; cada diez personas adicionales cuestan 1 Intelecto. Capacitador para crear una red; acción para crear una red ampliada (veinte personas o más)."
  }
 ]

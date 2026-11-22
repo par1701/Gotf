@@ -47,7 +47,7 @@
 "abides-in-stone/deep-reserves": {
 "n": "Reservas profundas",
 "c": "",
-"t": "Cuando otros están agotados, tú puedes seguir. Puedes transferir hasta 6 puntos entre tus reservas en cualquier combinación, a razón de 1 punto por asalto; por ejemplo, 3 de Velocidad a Potencia y 3 de Intelecto a Potencia, lo que llevaría seis asaltos en total. Esta habilidad se renueva al hacer una recuperación de diez horas. Acción."
+"t": "Cuando otros están agotados, tú puedes seguir. Puedes transferir hasta 6 puntos entre tus reservas en cualquier combinación, a razón de 1 punto por asalto; por ejemplo, 3 de Velocidad a Potencia y 3 de Intelecto a Potencia, lo que llevaría seis asaltos en total. Esta habilidad se renueva al usar una recuperación de diez horas. Acción."
 },
 "abides-in-stone/heavy-hands": {
 "n": "Manos pesadas",
@@ -67,7 +67,7 @@
 "abides-in-stone/structural-brace": {
 "n": "Puntal estructural",
 "c": "5+ Potencia",
-"t": "Sirves de puntal, pilar adicional u otro contrafuerte para una estructura a punto de derrumbarse. Si tienes que tirar para evitar el derrumbe y sacas 18 o menos, cuenta como un 18 (así no hay intrusión del DJ si sacas un 1). Mientras sirves de puntal, no puedes moverte de donde estás y fallas automáticamente las tareas de esquivar. Puedes hacer una acción extra en tu turno para terminar antes el efecto; si no, termina cuando hagas una recuperación de diez horas. También puedes simplemente sostener un peso enorme de hasta 45 toneladas, o usar esta habilidad para mantener cerrada una puerta o portón (contando un 18 o menos como un 18, o más con Esfuerzo). Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Aumenta en 9 toneladas el peso que puedes sostener. Acción para iniciar."
+"t": "Sirves de puntal, pilar adicional u otro contrafuerte para una estructura a punto de derrumbarse. Si tienes que tirar para evitar el derrumbe y sacas 18 o menos, cuenta como un 18 (así no hay intrusión del DJ si sacas un 1). Mientras sirves de puntal, no puedes moverte de donde estás y fallas automáticamente las tareas de esquivar. Puedes hacer una acción extra en tu turno para terminar antes el efecto; si no, termina cuando uses una recuperación de diez horas. También puedes simplemente sostener un peso enorme de hasta 45 toneladas, o usar esta habilidad para mantener cerrada una puerta o portón (contando un 18 o menos como un 18, o más con Esfuerzo). Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Aumenta en 9 toneladas el peso que puedes sostener. Acción para iniciar."
 },
 "abides-in-stone/earthshake": {
 "n": "Sacudida de tierra",
@@ -87,12 +87,12 @@
 "blazes-with-fire/gentle-warmth": {
 "n": "Calidez suave",
 "c": "1 Intelecto",
-"t": "Calientas hasta 15 °C más una zona inmediata hasta que hagas una recuperación de diez minutos o más (esto reduce dos pasos la gravedad de las heridas por entornos de frío). El efecto se centra en ti y se mueve contigo. Acción."
+"t": "Calientas hasta 15 °C más una zona inmediata hasta que uses una recuperación de diez minutos o más (esto reduce dos pasos la gravedad de las heridas por entornos de frío). El efecto se centra en ti y se mueve contigo. Acción."
 },
 "blazes-with-fire/shroud-of-flame": {
 "n": "Manto de llamas",
 "c": "1 Intelecto",
-"t": "A tu orden, todo tu cuerpo queda envuelto en llamas hasta que hagas una recuperación de diez minutos o más. El fuego no te quema ni a ti ni a tu equipo, pero hace 2 de daño a quien intente tocarte o golpearte con un ataque cuerpo a cuerpo (sin tirada). Mientras estás envuelto en llamas, la gravedad de las heridas por calor y llamas usadas contra ti baja un paso (grave a moderada, moderada a leve, leve a ninguna); por ejemplo, si te alcanza un ataque de fuego que causa una herida moderada, recibes una leve. Mientras estás envuelto en llamas, puedes tocar a un enemigo como ataque desarmado ligero y hacerle 2 de daño de fuego. Capacitador."
+"t": "A tu orden, todo tu cuerpo queda envuelto en llamas hasta que uses una recuperación de diez minutos o más. El fuego no te quema ni a ti ni a tu equipo, pero hace 2 de daño a quien intente tocarte o golpearte con un ataque cuerpo a cuerpo (sin tirada). Mientras estás envuelto en llamas, la gravedad de las heridas por calor y llamas usadas contra ti baja un paso (grave a moderada, moderada a leve, leve a ninguna); por ejemplo, si te alcanza un ataque de fuego que causa una herida moderada, recibes una leve. Mientras estás envuelto en llamas, puedes tocar a un enemigo como ataque desarmado ligero y hacerle 2 de daño de fuego. Capacitador."
 },
 "blazes-with-fire/warm-air": {
 "n": "Aire cálido",
@@ -102,7 +102,7 @@
 "blazes-with-fire/flameblade": {
 "n": "Hoja de llamas",
 "c": "2 Intelecto",
-"t": "Tu Manto de llamas envuelve en fuego un arma que empuñes, como un arma fabricada tipo espada o arco (también podrías intensificar la llama que ya envuelve tu mano y mejorar tus ataques desarmados). Todo ataque con el arma en llamas hace 1 de daño de fuego adicional (si el arma dispara proyectiles, como las flechas de un arco, el daño se aplica a los proyectiles). La llama termina si dejas de empuñar o llevar el arma, pero como acción extra en tu turno puedes envolver en llamas otra arma que empuñes. La habilidad termina automáticamente cuando haces una recuperación de diez minutos o más. Capacitador."
+"t": "Tu Manto de llamas envuelve en fuego un arma que empuñes, como un arma fabricada tipo espada o arco (también podrías intensificar la llama que ya envuelve tu mano y mejorar tus ataques desarmados). Todo ataque con el arma en llamas hace 1 de daño de fuego adicional (si el arma dispara proyectiles, como las flechas de un arco, el daño se aplica a los proyectiles). La llama termina si dejas de empuñar o llevar el arma, pero como acción extra en tu turno puedes envolver en llamas otra arma que empuñes. La habilidad termina automáticamente cuando usas una recuperación de diez minutos o más. Capacitador."
 },
 "blazes-with-fire/hurl-flame": {
 "n": "Lanzar llamas",
@@ -122,12 +122,12 @@
 "blazes-with-fire/fiery-hand-of-doom": {
 "n": "Mano ígnea de la perdición",
 "c": "3 Intelecto",
-"t": "Mientras tu Manto de llamas está activo, puedes meter la mano en tu halo y producir una mano de llamas animadas de hasta 1 m de palmo, que dura hasta que hagas una recuperación de diez minutos o más. La mano es una criatura de nivel 3 que hace 1 de daño de fuego extra al atacar (4 de daño en total). Actúa como le indiques, flotando en el aire; dirigirla es una acción. Sin órdenes, la mano no hace nada salvo seguirte. Puede moverse una distancia larga por asalto, pero nunca se aleja de ti más allá de alcance largo. Puede atacar, agarrar, mover y llevar cosas. Hace 3 de daño cada asalto a cualquier objeto inflamable que sujete. Acción para crearla; acción para dirigirla."
+"t": "Mientras tu Manto de llamas está activo, puedes meter la mano en tu halo y producir una mano de llamas animadas de hasta 1 m de palmo, que dura hasta que uses una recuperación de diez minutos o más. La mano es una criatura de nivel 3 que hace 1 de daño de fuego extra al atacar (4 de daño en total). Actúa como le indiques, flotando en el aire; dirigirla es una acción. Sin órdenes, la mano no hace nada salvo seguirte. Puede moverse una distancia larga por asalto, pero nunca se aleja de ti más allá de alcance largo. Puede atacar, agarrar, mover y llevar cosas. Hace 3 de daño cada asalto a cualquier objeto inflamable que sujete. Acción para crearla; acción para dirigirla."
 },
 "blazes-with-fire/wings-of-fire": {
 "n": "Alas de fuego",
 "c": "4 Intelecto",
-"t": "Mientras tu Manto de llamas está activo, puedes desplegar alas de fuego y volar hasta que hagas una recuperación de diez minutos o más, moviéndote hasta 6 m por asalto en cualquier dirección. También puedes hacer otra acción que no sea de movimiento como acción extra en tu turno. Acción para iniciar."
+"t": "Mientras tu Manto de llamas está activo, puedes desplegar alas de fuego y volar hasta que uses una recuperación de diez minutos o más, moviéndote hasta 6 m por asalto en cualquier dirección. También puedes hacer otra acción que no sea de movimiento como acción extra en tu turno. Acción para iniciar."
 },
 "blazes-with-fire/enhanced-flames": {
 "n": "Llamas mejoradas",
@@ -137,7 +137,7 @@
 "blazes-with-fire/fire-tendrils": {
 "n": "Zarcillos de fuego",
 "c": "5 Intelecto",
-"t": "De tu Manto de llamas brotan tres zarcillos de llamas que duran hasta que hagas una recuperación de diez minutos o más. Puedes atacar con cada zarcillo como acción extra en tu turno. Cada uno hace 3 de daño (5 con Llamas mejoradas). Si no los usas para atacar, siguen ahí pero no hacen nada. Acción para iniciar."
+"t": "De tu Manto de llamas brotan tres zarcillos de llamas que duran hasta que uses una recuperación de diez minutos o más. Puedes atacar con cada zarcillo como acción extra en tu turno. Cada uno hace 3 de daño (5 con Llamas mejoradas). Si no los usas para atacar, siguen ahí pero no hacen nada. Acción para iniciar."
 },
 "blazes-with-fire/plasma-field": {
 "n": "Campo de plasma",
@@ -147,12 +147,12 @@
 "blazes-with-fire/fire-servant": {
 "n": "Sirviente de fuego",
 "c": "6 Intelecto",
-"t": "Usas tu Manto de llamas para crear un autómata de fuego de tu forma y tamaño aproximados, que dura hasta que hagas una recuperación de diez minutos o más. Este aliado PNJ actúa como le indiques cada asalto. Dirigirlo es una acción, y solo puedes darle órdenes si estás a alcance largo de él. Sin órdenes, sigue cumpliendo la anterior. También puedes darle una acción programada sencilla, como «Espera aquí y ataca a quien se acerque a alcance corto hasta matarlo». Acción para crearlo; acción para dirigirlo. (Autómata de fuego: nivel 5; Armadura 1; sus ataques contundentes hacen 6 de daño, 1 de ellos de fuego.)"
+"t": "Usas tu Manto de llamas para crear un autómata de fuego de tu forma y tamaño aproximados, que dura hasta que uses una recuperación de diez minutos o más. Este aliado PNJ actúa como le indiques cada asalto. Dirigirlo es una acción, y solo puedes darle órdenes si estás a alcance largo de él. Sin órdenes, sigue cumpliendo la anterior. También puedes darle una acción programada sencilla, como «Espera aquí y ataca a quien se acerque a alcance corto hasta matarlo». Acción para crearlo; acción para dirigirlo. (Autómata de fuego: nivel 5; Armadura 1; sus ataques contundentes hacen 6 de daño, 1 de ellos de fuego.)"
 },
 "blazes-with-fire/inferno-trail": {
 "n": "Estela infernal",
 "c": "6 Intelecto",
-"t": "Tu Manto de llamas deja una estela de fuego a tu paso. La estela sigue tu recorrido y forma un muro de llamas de unos 2 m de alto que hace 5 de daño a cualquier criatura que lo atraviese. Si los objetivos son inflamables, además prenden y reciben 1 de daño adicional cada asalto hasta que dediquen un asalto a apagarse. Puedes suprimir la estela cuando quieras como acción extra en tu turno (y reanudarla igual) o terminar antes el efecto. Si no, termina cuando hagas una recuperación de diez minutos o más. Acción."
+"t": "Tu Manto de llamas deja una estela de fuego a tu paso. La estela sigue tu recorrido y forma un muro de llamas de unos 2 m de alto que hace 5 de daño a cualquier criatura que lo atraviese. Si los objetivos son inflamables, además prenden y reciben 1 de daño adicional cada asalto hasta que dediquen un asalto a apagarse. Puedes suprimir la estela cuando quieras como acción extra en tu turno (y reanudarla igual) o terminar antes el efecto. Si no, termina cuando uses una recuperación de diez minutos o más. Acción."
 },
 "builds-allies": {
 "n": "Construye aliados",
@@ -178,7 +178,7 @@
 "builds-allies/automaton-armor-upgrade": {
 "n": "Mejora de armadura del autómata",
 "c": "3 Intelecto",
-"t": "Has dotado a uno de tus autómatas de una nueva capacidad: puede usar su acción para transformarse en un traje blindado que llevas puesto hasta que hagas una recuperación de una hora o más. Si estás a distancia inmediata cuando se transforma, se forma automáticamente a tu alrededor. El autómata transformado cuenta como armadura ligera; como anticipa y responde a tus movimientos, puedes usarla libremente. Capacitador."
+"t": "Has dotado a uno de tus autómatas de una nueva capacidad: puede usar su acción para transformarse en un traje blindado que llevas puesto hasta que uses una recuperación de una hora o más. Si estás a distancia inmediata cuando se transforma, se forma automáticamente a tu alrededor. El autómata transformado cuenta como armadura ligera; como anticipa y responde a tus movimientos, puedes usarla libremente. Capacitador."
 },
 "builds-allies/automaton-cypher-upgrade": {
 "n": "Mejora de cifras del autómata",
@@ -188,7 +188,7 @@
 "builds-allies/charm-machine": {
 "n": "Encantar máquina",
 "c": "2 Intelecto",
-"t": "Con una tirada de ataque de Intelecto con éxito, convences a una máquina o autómata sin inteligencia a alcance inmediato de que le «caes bien». Una máquina a la que le caes bien tiene un 50 % menos de probabilidades de funcionar si su función te causaría daño; por ejemplo, si un enemigo intenta detonar cerca de ti una bomba con un detonador al que le caes bien, hay un 50 % de que no explote. Le caes bien hasta que hagas una recuperación de diez minutos o más. Acción para iniciar."
+"t": "Con una tirada de ataque de Intelecto con éxito, convences a una máquina o autómata sin inteligencia a alcance inmediato de que le «caes bien». Una máquina a la que le caes bien tiene un 50 % menos de probabilidades de funcionar si su función te causaría daño; por ejemplo, si un enemigo intenta detonar cerca de ti una bomba con un detonador al que le caes bien, hay un 50 % de que no explote. Le caes bien hasta que uses una recuperación de diez minutos o más. Acción para iniciar."
 },
 "builds-allies/expert-automaton": {
 "n": "Autómata experto",
@@ -218,7 +218,7 @@
 "builds-allies/automaton-force-field-upgrade": {
 "n": "Mejora de campo de fuerza del autómata",
 "c": "",
-"t": "Has dotado a uno de tus autómatas de una nueva capacidad: puede levantar un campo de fuerza translúcido de nivel 5 alrededor de sí mismo y de cualquiera a alcance inmediato de él hasta que hagas una recuperación de diez minutos o más. Toda criatura protegida por el campo reduce un grado la gravedad de las heridas que recibe (los PNJ reciben 3 de daño menos). Capacitador."
+"t": "Has dotado a uno de tus autómatas de una nueva capacidad: puede levantar un campo de fuerza translúcido de nivel 5 alrededor de sí mismo y de cualquiera a alcance inmediato de él hasta que uses una recuperación de diez minutos o más. Toda criatura protegida por el campo reduce un grado la gravedad de las heridas que recibe (los PNJ reciben 3 de daño menos). Capacitador."
 },
 "builds-allies/automaton-evolution": {
 "n": "Evolución del autómata",
@@ -228,7 +228,7 @@
 "builds-allies/automaton-heavy-armor-upgrade": {
 "n": "Mejora de armadura pesada del autómata",
 "c": "6 Intelecto",
-"t": "Has dotado a uno de tus autómatas de una nueva capacidad: el robot puede usar su acción para transformarse en un traje blindado que llevas puesto hasta que hagas una recuperación de una hora o más. Si estás a distancia inmediata cuando se transforma, se forma automáticamente a tu alrededor. El autómata transformado cuenta como armadura pesada; como anticipa y responde a tus movimientos, puedes usarla libremente. Capacitador."
+"t": "Has dotado a uno de tus autómatas de una nueva capacidad: el robot puede usar su acción para transformarse en un traje blindado que llevas puesto hasta que uses una recuperación de una hora o más. Si estás a distancia inmediata cuando se transforma, se forma automáticamente a tu alrededor. El autómata transformado cuenta como armadura pesada; como anticipa y responde a tus movimientos, puedes usarla libremente. Capacitador."
 },
 "casts-spells": {
 "n": "Lanza conjuros",
@@ -238,7 +238,7 @@
 "casts-spells/blast": {
 "n": "Descarga",
 "c": "1+ Intelecto",
-"t": "Emites una descarga de energía de alcance corto que hace 4 de daño a un objetivo si aciertas la tirada de ataque. Acuerda con el DJ el tipo de energía de tu descarga. Si te concentras unos asaltos, puedes ajustarla para que sea lo bastante caliente como para cortar material de hasta nivel 5 y no más de 30 cm de grosor. Si tienes otra habilidad de ataque que haga daño (de este foco o de tu tipo), puedes usar Descarga para potenciarla y subir su daño en 1. Esfuerzo: ganas control fino del efecto hasta que hagas una recuperación de diez minutos o más y varías la intensidad a tu gusto a alcance inmediato; por ejemplo, para calentar la zona, cocinar sin quemar, dar luz brillante, etc. Sube en 1 el nivel máximo de material que puedes cortar. Acción para atacar; Última acción para iniciar el control fino; capacitador para potenciar otra habilidad de ataque."
+"t": "Emites una descarga de energía de alcance corto que hace 4 de daño a un objetivo si aciertas la tirada de ataque. Acuerda con el DJ el tipo de energía de tu descarga. Si te concentras unos asaltos, puedes ajustarla para que sea lo bastante caliente como para cortar material de hasta nivel 5 y no más de 30 cm de grosor. Si tienes otra habilidad de ataque que haga daño (de este foco o de tu tipo), puedes usar Descarga para potenciarla y subir su daño en 1. Esfuerzo: ganas control fino del efecto hasta que uses una recuperación de diez minutos o más y varías la intensidad a tu gusto a alcance inmediato; por ejemplo, para calentar la zona, cocinar sin quemar, dar luz brillante, etc. Sube en 1 el nivel máximo de material que puedes cortar. Acción para atacar; Última acción para iniciar el control fino; capacitador para potenciar otra habilidad de ataque."
 },
 "casts-spells/hedge-magic": {
 "n": "Magia menor",
@@ -248,7 +248,7 @@
 "casts-spells/prepare-spell": {
 "n": "Preparar conjuro",
 "c": "",
-"t": "Cada día puedes elegir un efecto mágico distinto y lanzarlo como conjuro. Elige una cifra manifiesta de poder bajo; tras diez minutos de preparación, ganas su efecto como conjuro (una habilidad especial de personaje) que puedes lanzar como acción por 2 de Intelecto. Este conjuro no cuenta para tu límite de cifras y, a diferencia de una cifra, no lo pierdes al lanzarlo. Siempre que haces una recuperación de diez horas puedes cambiar de cifra; al hacerlo terminan todas las duraciones del conjuro anterior. Puedes elegir esta habilidad hasta tres veces, para tener uno, dos o tres conjuros al día. Diez minutos para preparar una cifra como conjuro; acción para lanzarla. En el rango 3: puedes elegir una cifra de poder bajo o medio; una de poder medio se lanza como acción por 4 de Intelecto. En el rango 6: puedes elegir una cifra de poder bajo, medio o avanzado; una de poder avanzado se lanza como acción por 6 de Intelecto."
+"t": "Cada día puedes elegir un efecto mágico distinto y lanzarlo como conjuro. Elige una cifra manifiesta de poder bajo; tras diez minutos de preparación, ganas su efecto como conjuro (una habilidad especial de personaje) que puedes lanzar como acción por 2 de Intelecto. Este conjuro no cuenta para tu límite de cifras y, a diferencia de una cifra, no lo pierdes al lanzarlo. Siempre que usas una recuperación de diez horas puedes cambiar de cifra; al hacerlo terminan todas las duraciones del conjuro anterior. Puedes elegir esta habilidad hasta tres veces, para tener uno, dos o tres conjuros al día. Diez minutos para preparar una cifra como conjuro; acción para lanzarla. En el rango 3: puedes elegir una cifra de poder bajo o medio; una de poder medio se lanza como acción por 4 de Intelecto. En el rango 6: puedes elegir una cifra de poder bajo, medio o avanzado; una de poder avanzado se lanza como acción por 6 de Intelecto."
 },
 "casts-spells/sense-magic": {
 "n": "Percibir magia",
@@ -263,17 +263,17 @@
 "casts-spells/enchant-object": {
 "n": "Encantar objeto",
 "c": "2 Intelecto",
-"t": "Imbuyes un arma, herramienta u otro objeto útil de una magia que mejora su rendimiento hasta que tú (o quien lo use) hagáis una recuperación de diez minutos o más. En cualquier momento mientras dura, la criatura que usa el objeto gana un recurso en una acción que requiera el objeto. Tú decides si el objeto parece igual, brilla como una vela o gana una runa mágica mientras dura el conjuro. Acción."
+"t": "Imbuyes un arma, herramienta u otro objeto útil de una magia que mejora su rendimiento hasta que tú (o quien lo use) uséis una recuperación de diez minutos o más. En cualquier momento mientras dura, la criatura que usa el objeto gana un recurso en una acción que requiera el objeto. Tú decides si el objeto parece igual, brilla como una vela o gana una runa mágica mientras dura el conjuro. Acción."
 },
 "casts-spells/hover": {
 "n": "Flotar",
 "c": "2 Intelecto",
-"t": "Te elevas despacio en el aire. Si te concentras, puedes controlar tu movimiento para quedarte inmóvil en el aire o flotar hasta distancia corta como tu acción; si no, vas a la deriva con el viento o con el impulso que lleves. El efecto dura hasta que hagas una recuperación de diez minutos o más. Acción para iniciar."
+"t": "Te elevas despacio en el aire. Si te concentras, puedes controlar tu movimiento para quedarte inmóvil en el aire o flotar hasta distancia corta como tu acción; si no, vas a la deriva con el viento o con el impulso que lleves. El efecto dura hasta que uses una recuperación de diez minutos o más. Acción para iniciar."
 },
 "casts-spells/arcane-flight": {
 "n": "Vuelo arcano",
 "c": "3+ Intelecto",
-"t": "Puedes flotar y volar por el aire a tu velocidad normal en tierra hasta que hagas una recuperación de diez minutos o más. En desplazamientos largos, una criatura voladora recorre unos 32 km por hora y no le afecta el terreno. Esfuerzo: afecta a una criatura más que toques, de tu tamaño o menor; tú diriges su movimiento y tiene que seguir a tu vista o cae. Acción para iniciar."
+"t": "Puedes flotar y volar por el aire a tu velocidad normal en tierra hasta que uses una recuperación de diez minutos o más. En desplazamientos largos, una criatura voladora recorre unos 32 km por hora y no le afecta el terreno. Esfuerzo: afecta a una criatura más que toques, de tu tamaño o menor; tú diriges su movimiento y tiene que seguir a tu vista o cae. Acción para iniciar."
 },
 "casts-spells/fireball": {
 "n": "Bola de fuego",
@@ -288,7 +288,7 @@
 "casts-spells/summon-giant-spider": {
 "n": "Invocar araña gigante",
 "c": "4+ Intelecto",
-"t": "Conjuras una araña gigante, que aparece a alcance inmediato. Actúa según su naturaleza y ataca a una criatura cercana que parezca una presa adecuada. Permanece hasta que hagas una recuperación de diez minutos o más y luego se desvanece. Esfuerzo: haz que la araña te entienda y obedezca tus instrucciones verbales. Acción para iniciar. (Araña gigante: nivel 3, percepción como nivel 5, defensa de Velocidad como nivel 4 por su rapidez; salud 12; su mordisco hace 3 de daño más 1 de daño de Velocidad por veneno (ignora la armadura); se mueve una distancia larga cada asalto sobre telarañas.)"
+"t": "Conjuras una araña gigante, que aparece a alcance inmediato. Actúa según su naturaleza y ataca a una criatura cercana que parezca una presa adecuada. Permanece hasta que uses una recuperación de diez minutos o más y luego se desvanece. Esfuerzo: haz que la araña te entienda y obedezca tus instrucciones verbales. Acción para iniciar. (Araña gigante: nivel 3, percepción como nivel 5, defensa de Velocidad como nivel 4 por su rapidez; salud 12; su mordisco hace 3 de daño más 1 de daño de Velocidad por veneno (ignora la armadura); se mueve una distancia larga cada asalto sobre telarañas.)"
 },
 "casts-spells/arcane-teleportation": {
 "n": "Teletransporte arcano",
@@ -308,12 +308,12 @@
 "casts-spells/granite-wall": {
 "n": "Muro de granito",
 "c": "5+ Intelecto",
-"t": "Creas un muro de granito de nivel 5 a alcance corto. Son cuatro paneles de 3,5 × 3,5 m, de 2,5 cm de grosor cada uno, dispuestos como quieras. Dura hasta que hagas una recuperación de una hora o más; después se desmorona en polvo. Esfuerzo: alarga la duración hasta que hagas una recuperación de diez horas. Haz la duración permanente (requiere tres niveles de Esfuerzo). Acción."
+"t": "Creas un muro de granito de nivel 5 a alcance corto. Son cuatro paneles de 3,5 × 3,5 m, de 2,5 cm de grosor cada uno, dispuestos como quieras. Dura hasta que uses una recuperación de una hora o más; después se desmorona en polvo. Esfuerzo: alarga la duración hasta que uses una recuperación de diez horas. Haz la duración permanente (requiere tres niveles de Esfuerzo). Acción."
 },
 "casts-spells/conjure-supernatural-creature": {
 "n": "Conjurar criatura sobrenatural",
 "c": "7+ Intelecto",
-"t": "Una criatura sobrenatural de otra dimensión, como un ángel, un demonio o un elemental, se manifiesta en forma física a alcance inmediato. Actúa según su naturaleza, normalmente atacando a un enemigo cercano opuesto a su ética (un ángel atacaría a un demonio o nigromante, un demonio a un inocente o un sacerdote santo, y un elemental a una criatura del elemento opuesto). Permanece hasta que hagas una recuperación de diez minutos o más y luego se desvanece (aunque un demonio o un elemental podrían quedarse un rato para causar problemas). Esfuerzo: haz que la criatura sobrenatural te entienda y obedezca tus instrucciones verbales. Acción para iniciar. (Ángel: nivel 5; salud 15; ataque físico, mágico o de energía de 6 de daño; vuela una distancia corta cada asalto. Demonio: nivel 5; salud 25; ataque físico, mágico o de energía de 6 de daño; vuela una distancia corta cada asalto. Elemental: nivel 5; salud 25; ataque físico o de energía de 5 de daño; su forma amorfa pasa por huecos de hasta 30 cm; el de aire vuela una distancia larga cada asalto; el de tierra tiene Armadura 3; el de fuego, Armadura 10 contra el fuego; el de agua nada una distancia larga cada asalto.)"
+"t": "Una criatura sobrenatural de otra dimensión, como un ángel, un demonio o un elemental, se manifiesta en forma física a alcance inmediato. Actúa según su naturaleza, normalmente atacando a un enemigo cercano opuesto a su ética (un ángel atacaría a un demonio o nigromante, un demonio a un inocente o un sacerdote santo, y un elemental a una criatura del elemento opuesto). Permanece hasta que uses una recuperación de diez minutos o más y luego se desvanece (aunque un demonio o un elemental podrían quedarse un rato para causar problemas). Esfuerzo: haz que la criatura sobrenatural te entienda y obedezca tus instrucciones verbales. Acción para iniciar. (Ángel: nivel 5; salud 15; ataque físico, mágico o de energía de 6 de daño; vuela una distancia corta cada asalto. Demonio: nivel 5; salud 25; ataque físico, mágico o de energía de 6 de daño; vuela una distancia corta cada asalto. Elemental: nivel 5; salud 25; ataque físico o de energía de 5 de daño; su forma amorfa pasa por huecos de hasta 30 cm; el de aire vuela una distancia larga cada asalto; el de tierra tiene Armadura 3; el de fuego, Armadura 10 contra el fuego; el de agua nada una distancia larga cada asalto.)"
 },
 "casts-spells/word-of-death": {
 "n": "Palabra de muerte",
@@ -338,12 +338,12 @@
 "commands-mental-powers/telepathic": {
 "n": "Telépata",
 "c": "1+ Intelecto",
-"t": "Puedes hablar telepáticamente con otros a alcance largo. La comunicación es bidireccional, pero la otra parte tiene que querer y poder comunicarse. No necesitas ver al objetivo, pero sí saber que está a tu alcance. Puedes tener varios contactos activos a la vez, pero tienes que establecerlos uno a uno. Cada contacto dura hasta que hagas una recuperación de diez minutos o más. Esfuerzo: alarga la duración hasta que hagas una recuperación de diez horas. Acción para establecer contacto."
+"t": "Puedes hablar telepáticamente con otros a alcance largo. La comunicación es bidireccional, pero la otra parte tiene que querer y poder comunicarse. No necesitas ver al objetivo, pero sí saber que está a tu alcance. Puedes tener varios contactos activos a la vez, pero tienes que establecerlos uno a uno. Cada contacto dura hasta que uses una recuperación de diez minutos o más. Esfuerzo: alarga la duración hasta que uses una recuperación de diez horas. Acción para establecer contacto."
 },
 "commands-mental-powers/mind-reading": {
 "n": "Leer mentes",
 "c": "2 Intelecto",
-"t": "Puedes leer los pensamientos superficiales de una criatura que veas a alcance corto. Si no está dispuesta, tienes que hacer un ataque de Intelecto contra ella. Una vez establecido el contacto, puedes leer sus pensamientos hasta que hagas una recuperación de diez minutos o más. Acción para iniciar."
+"t": "Puedes leer los pensamientos superficiales de una criatura que veas a alcance corto. Si no está dispuesta, tienes que hacer un ataque de Intelecto contra ella. Una vez establecido el contacto, puedes leer sus pensamientos hasta que uses una recuperación de diez minutos o más. Acción para iniciar."
 },
 "commands-mental-powers/telepathic-bond": {
 "n": "Vínculo telepático",
@@ -373,22 +373,22 @@
 "commands-mental-powers/use-senses-of-others": {
 "n": "Usar los sentidos ajenos",
 "c": "4 Intelecto",
-"t": "Puedes ver, oír, oler, tocar y saborear a través de los sentidos de otra criatura a alcance largo. No necesitas verla, pero sí saber que está a tu alcance, y si es inteligente y no está dispuesta, tienes que superar un ataque de Intelecto para empezar. Los sentidos compartidos duran hasta que hagas una recuperación de diez minutos o más. Acción para establecer."
+"t": "Puedes ver, oír, oler, tocar y saborear a través de los sentidos de otra criatura a alcance largo. No necesitas verla, pero sí saber que está a tu alcance, y si es inteligente y no está dispuesta, tienes que superar un ataque de Intelecto para empezar. Los sentidos compartidos duran hasta que uses una recuperación de diez minutos o más. Acción para establecer."
 },
 "commands-mental-powers/precognition": {
 "n": "Precognición",
 "c": "6 Intelecto",
-"t": "Percibes vagamente el futuro. Hasta que hagas una recuperación de diez minutos o más, ganas estos beneficios: • Ganas un recurso en las tareas de defensa. • Puedes predecir las acciones de quienes te rodean: ganas un recurso para ver a través de engaños e intentos de traicionarte y para evitar trampas y emboscadas. • Sabes lo que la gente probablemente piensa y lo que va a decir antes de que lo diga: ganas un recurso en todas las tareas de interacción. Capacitador."
+"t": "Percibes vagamente el futuro. Hasta que uses una recuperación de diez minutos o más, ganas estos beneficios: • Ganas un recurso en las tareas de defensa. • Puedes predecir las acciones de quienes te rodean: ganas un recurso para ver a través de engaños e intentos de traicionarte y para evitar trampas y emboscadas. • Sabes lo que la gente probablemente piensa y lo que va a decir antes de que lo diga: ganas un recurso en todas las tareas de interacción. Capacitador."
 },
 "commands-mental-powers/mind-control": {
 "n": "Control mental",
 "c": "6+ Intelecto",
-"t": "Controlas las acciones de otra criatura que toques. Tiene que ser de nivel 2 o inferior y tienes que superar un ataque de Intelecto contra ella. El control dura hasta que hagas una recuperación de diez minutos o más. Mientras la controlas, mantienes contacto mental con ella y percibes lo que percibe. Decides caso por caso si sigue tus órdenes o si puede actuar libremente. Al terminar, la criatura no recuerda haber sido controlada ni nada de lo que hizo bajo tu mando. Esfuerzo: sube en 1 el nivel máximo del objetivo al que puedes afectar. Acción para iniciar."
+"t": "Controlas las acciones de otra criatura que toques. Tiene que ser de nivel 2 o inferior y tienes que superar un ataque de Intelecto contra ella. El control dura hasta que uses una recuperación de diez minutos o más. Mientras la controlas, mantienes contacto mental con ella y percibes lo que percibe. Decides caso por caso si sigue tus órdenes o si puede actuar libremente. Al terminar, la criatura no recuerda haber sido controlada ni nada de lo que hizo bajo tu mando. Esfuerzo: sube en 1 el nivel máximo del objetivo al que puedes afectar. Acción para iniciar."
 },
 "commands-mental-powers/telepathic-network": {
 "n": "Red telepática",
 "c": "0+ Intelecto",
-"t": "Creas una red telepática entre tú y diez criaturas dispuestas que conozcas, estén donde estén. Todas quedan vinculadas y pueden comunicarse telepáticamente entre sí, y también «oír» todo lo que se dice en la red. Activarla o usarla no requiere acción ni cuesta puntos de Intelecto: para ti es tan fácil como hablar en voz alta. La red dura hasta que decidas terminarla. Esfuerzo: sube a veinte el número base de personas de la red (5 de Intelecto), que dura hasta que hagas una recuperación de diez minutos o más; cada diez personas más cuestan 1 de Intelecto. Capacitador para crear una red; acción para crear una red ampliada (veinte personas o más)."
+"t": "Creas una red telepática entre tú y diez criaturas dispuestas que conozcas, estén donde estén. Todas quedan vinculadas y pueden comunicarse telepáticamente entre sí, y también «oír» todo lo que se dice en la red. Activarla o usarla no requiere acción ni cuesta puntos de Intelecto: para ti es tan fácil como hablar en voz alta. La red dura hasta que decidas terminarla. Esfuerzo: sube a veinte el número base de personas de la red (5 de Intelecto), que dura hasta que uses una recuperación de diez minutos o más; cada diez personas más cuestan 1 de Intelecto. Capacitador para crear una red; acción para crear una red ampliada (veinte personas o más)."
 },
 "consorts-with-the-dead": {
 "n": "Trata con los muertos",
@@ -398,7 +398,7 @@
 "consorts-with-the-dead/basic-necromancy": {
 "n": "Nigromancia básica",
 "c": "3 Intelecto",
-"t": "Animas el cuerpo de una criatura muerta de tu tamaño aproximado o menor a alcance inmediato, creando un seguidor de nivel 1 que es una criatura muerta viviente. No tiene la inteligencia, los recuerdos ni las habilidades especiales que tenía en vida. Obedece tus órdenes verbales hasta que hagas una recuperación de una hora o más, momento en que vuelve a ser un cadáver inerte. Puedes reanimarlo de nuevo cuando quede inerte o si el daño lo «mata» (aunque quizá tengas que pasar un rato con aguja e hilo para volver a coser partes sueltas o desprendidas). Última acción para animar."
+"t": "Animas el cuerpo de una criatura muerta de tu tamaño aproximado o menor a alcance inmediato, creando un seguidor de nivel 1 que es una criatura muerta viviente. No tiene la inteligencia, los recuerdos ni las habilidades especiales que tenía en vida. Obedece tus órdenes verbales hasta que uses una recuperación de una hora o más, momento en que vuelve a ser un cadáver inerte. Puedes reanimarlo de nuevo cuando quede inerte o si el daño lo «mata» (aunque quizá tengas que pasar un rato con aguja e hilo para volver a coser partes sueltas o desprendidas). Última acción para animar."
 },
 "consorts-with-the-dead/bone-lore": {
 "n": "Saber de los huesos",
@@ -438,27 +438,27 @@
 "consorts-with-the-dead/greater-necromancy": {
 "n": "Nigromancia mayor",
 "c": "5+ Intelecto",
-"t": "Animas el cuerpo de una criatura muerta de hasta el doble de tu tamaño a alcance corto, creando un seguidor de nivel 3 que es una criatura muerta viviente. No tiene la inteligencia, los recuerdos ni las habilidades especiales que tenía en vida. Obedece tus órdenes verbales hasta que hagas una recuperación de una hora o más, momento en que vuelve a ser un cadáver inerte. Puedes reanimarlo de nuevo cuando quede inerte o si el daño lo «mata» (aunque quizá tengas que pasar un rato con aguja e hilo para volver a coser partes sueltas o desprendidas). Cada criatura animada después de la primera cuesta 2 puntos de Intelecto adicionales (7 puntos para dos cuerpos, 9 para tres, etc.). Acción para animar."
+"t": "Animas el cuerpo de una criatura muerta de hasta el doble de tu tamaño a alcance corto, creando un seguidor de nivel 3 que es una criatura muerta viviente. No tiene la inteligencia, los recuerdos ni las habilidades especiales que tenía en vida. Obedece tus órdenes verbales hasta que uses una recuperación de una hora o más, momento en que vuelve a ser un cadáver inerte. Puedes reanimarlo de nuevo cuando quede inerte o si el daño lo «mata» (aunque quizá tengas que pasar un rato con aguja e hilo para volver a coser partes sueltas o desprendidas). Cada criatura animada después de la primera cuesta 2 puntos de Intelecto adicionales (7 puntos para dos cuerpos, 9 para tres, etc.). Acción para animar."
 },
 "consorts-with-the-dead/wraith-cloak": {
 "n": "Manto espectral",
 "c": "4 Intelecto",
-"t": "A tu orden, un espíritu muerto viviente cercano se envuelve a tu alrededor hasta que hagas una recuperación de diez minutos o más. Mientras tanto está potenciado y hace automáticamente 4 de daño (sin tirada) a quien intente tocarte o golpearte con un ataque cuerpo a cuerpo. Mientras el manto espectral está activo, todas tus tareas de sigilo se facilitan. Capacitador."
+"t": "A tu orden, un espíritu muerto viviente cercano se envuelve a tu alrededor hasta que uses una recuperación de diez minutos o más. Mientras tanto está potenciado y hace automáticamente 4 de daño (sin tirada) a quien intente tocarte o golpearte con un ataque cuerpo a cuerpo. Mientras el manto espectral está activo, todas tus tareas de sigilo se facilitan. Capacitador."
 },
 "consorts-with-the-dead/terrifying-gaze": {
 "n": "Mirada aterradora",
 "c": "6 Intelecto",
-"t": "Proyectas una mirada temible sobre hasta cinco criaturas vivas a alcance corto que puedan verte. Tirada de ataque de Intelecto aparte contra cada una. Si aciertas, la criatura queda paralizada de miedo, sin moverse ni actuar hasta que hagas una recuperación de diez minutos o más, la ataquen o salgas de su campo de visión. Algunas criaturas sin mente (como monstruos de limo o estatuas animadas) pueden ser inmunes. Acción."
+"t": "Proyectas una mirada temible sobre hasta cinco criaturas vivas a alcance corto que puedan verte. Tirada de ataque de Intelecto aparte contra cada una. Si aciertas, la criatura queda paralizada de miedo, sin moverse ni actuar hasta que uses una recuperación de diez minutos o más, la ataquen o salgas de su campo de visión. Algunas criaturas sin mente (como monstruos de limo o estatuas animadas) pueden ser inmunes. Acción."
 },
 "consorts-with-the-dead/wall-of-bones": {
 "n": "Muro de huesos",
 "c": "5 Intelecto",
-"t": "Creas una barrera de huesos contaminados de no muerte formada por cuatro paneles de 3,5 × 3,5 m, de 2,5 cm de grosor cada uno, dispuestos como quieras. El muro es una barrera de nivel 5. Uno o ambos lados emanan energía necrótica: quien esté a distancia inmediata de ese lado recibe 5 de daño (sin tirada), o el doble si lo atraviesa. El muro dura hasta que hagas una recuperación de diez minutos o más. Acción para crearlo."
+"t": "Creas una barrera de huesos contaminados de no muerte formada por cuatro paneles de 3,5 × 3,5 m, de 2,5 cm de grosor cada uno, dispuestos como quieras. El muro es una barrera de nivel 5. Uno o ambos lados emanan energía necrótica: quien esté a distancia inmediata de ese lado recibe 5 de daño (sin tirada), o el doble si lo atraviesa. El muro dura hasta que uses una recuperación de diez minutos o más. Acción para crearlo."
 },
 "consorts-with-the-dead/true-necromancy": {
 "n": "Nigromancia verdadera",
 "c": "8+ Intelecto",
-"t": "Animas el cuerpo de una criatura muerta de hasta el doble de tu tamaño a alcance corto, creando un seguidor de nivel 5 que es una criatura muerta viviente. No tiene la inteligencia, los recuerdos ni las habilidades especiales que tenía en vida. Obedece tus órdenes verbales hasta que hagas una recuperación de una hora o más, momento en que vuelve a ser un cadáver inerte. Puedes reanimarlo de nuevo cuando quede inerte o si el daño lo «mata» (aunque quizá tengas que pasar un rato con aguja e hilo para volver a coser partes sueltas o desprendidas). Cada criatura animada después de la primera cuesta 3 puntos de Intelecto adicionales (11 puntos para dos cuerpos, 14 para tres, etc.). Acción para animar."
+"t": "Animas el cuerpo de una criatura muerta de hasta el doble de tu tamaño a alcance corto, creando un seguidor de nivel 5 que es una criatura muerta viviente. No tiene la inteligencia, los recuerdos ni las habilidades especiales que tenía en vida. Obedece tus órdenes verbales hasta que uses una recuperación de una hora o más, momento en que vuelve a ser un cadáver inerte. Puedes reanimarlo de nuevo cuando quede inerte o si el daño lo «mata» (aunque quizá tengas que pasar un rato con aguja e hilo para volver a coser partes sueltas o desprendidas). Cada criatura animada después de la primera cuesta 3 puntos de Intelecto adicionales (11 puntos para dos cuerpos, 14 para tres, etc.). Acción para animar."
 },
 "consorts-with-the-dead/word-of-death": {
 "n": "Palabra de muerte",
@@ -478,7 +478,7 @@
 "controls-beasts/friend-to-small-creatures": {
 "n": "Amigo de las criaturas pequeñas",
 "c": "1+ Intelecto",
-"t": "Un tipo amplio de criaturas pequeñas que nombres y que exista en el entorno (como insectos, ratas, murciélagos o pájaros) queda bajo tu influencia si superas una tarea de Intelecto de supervivencia al aire libre de dificultad 2. Las criaturas afectadas a alcance corto no os harán daño ni a ti ni a quienes designes como aliados hasta que hagas una recuperación de diez minutos o más. No funciona contra enjambres hostiles de nivel 3 o superior. Tus criaturas (incluso insectos comunes de nivel 0) pueden enjambrarse en número suficiente para dificultar los ataques o defensas de un objetivo, o hacer alguna otra acción. También puedes usar esta habilidad para calmar o dirigir enredaderas, hierba, trepadoras, raíces o ramas de plantas cercanas en vez de animales o insectos. Esfuerzo: tus criaturas responden a tus órdenes como aliados PNJ. Acción para iniciar."
+"t": "Un tipo amplio de criaturas pequeñas que nombres y que exista en el entorno (como insectos, ratas, murciélagos o pájaros) queda bajo tu influencia si superas una tarea de Intelecto de supervivencia al aire libre de dificultad 2. Las criaturas afectadas a alcance corto no os harán daño ni a ti ni a quienes designes como aliados hasta que uses una recuperación de diez minutos o más. No funciona contra enjambres hostiles de nivel 3 o superior. Tus criaturas (incluso insectos comunes de nivel 0) pueden enjambrarse en número suficiente para dificultar los ataques o defensas de un objetivo, o hacer alguna otra acción. También puedes usar esta habilidad para calmar o dirigir enredaderas, hierba, trepadoras, raíces o ramas de plantas cercanas en vez de animales o insectos. Esfuerzo: tus criaturas responden a tus órdenes como aliados PNJ. Acción para iniciar."
 },
 "controls-beasts/understand-beast": {
 "n": "Comprender a la bestia",
@@ -493,7 +493,7 @@
 "controls-beasts/soothe-the-savage": {
 "n": "Calmar a la fiera",
 "c": "2 Intelecto",
-"t": "Haz una tirada de ataque de Intelecto para calmar a una bestia no humana a alcance corto que pueda verte. Tienes que hablarle (aunque no necesita entender tus palabras). Se mantiene tranquila hasta que hagas una recuperación de diez minutos o más o mientras sigas usando tu acción para calmarla. Acción."
+"t": "Haz una tirada de ataque de Intelecto para calmar a una bestia no humana a alcance corto que pueda verte. Tienes que hablarle (aunque no necesita entender tus palabras). Se mantiene tranquila hasta que uses una recuperación de diez minutos o más o mientras sigas usando tu acción para calmarla. Acción."
 },
 "controls-beasts/mount": {
 "n": "Montura",
@@ -508,7 +508,7 @@
 "controls-beasts/beast-eyes": {
 "n": "Ojos de la bestia",
 "c": "3 Intelecto",
-"t": "Vinculas tu mente a tu compañero bestia (o a una bestia que hayas calmado con Calmar a la fiera, si sigue bien dispuesta hacia ti) y percibes a través de sus sentidos si está a menos de 1,6 km. Dura hasta que hagas una recuperación de diez minutos o más. Acción para iniciar."
+"t": "Vinculas tu mente a tu compañero bestia (o a una bestia que hayas calmado con Calmar a la fiera, si sigue bien dispuesta hacia ti) y percibes a través de sus sentidos si está a menos de 1,6 km. Dura hasta que uses una recuperación de diez minutos o más. Acción para iniciar."
 },
 "controls-beasts/improved-companion": {
 "n": "Compañero mejorado",
@@ -518,7 +518,7 @@
 "controls-beasts/beast-betterment": {
 "n": "Mejora bestial",
 "c": "",
-"t": "Cuando haces una recuperación a distancia inmediata de tu compañero bestia, ganas 3 puntos de reserva adicionales. Capacitador."
+"t": "Cuando usas una recuperación a distancia inmediata de tu compañero bestia, ganas 3 puntos de reserva adicionales. Capacitador."
 },
 "controls-beasts/beast-call": {
 "n": "Llamada de las bestias",
@@ -548,7 +548,7 @@
 "crafts-illusions/minor-illusion": {
 "n": "Ilusión menor",
 "c": "1 Intelecto",
-"t": "Creas una sola imagen de una criatura u objeto a alcance inmediato, que debe caber en una zona inmediata. Puede moverse (por ejemplo, la ilusión de una persona puede caminar o atacar), pero no salir de la zona. Incluye sonido pero no olor. Dura hasta que hagas una recuperación de diez minutos o más, pero si quieres cambiar mucho la ilusión original (como hacer que una criatura parezca herida) tienes que usar una acción para volver a concentrarte en ella. Si te alejas fuera de alcance, se desvanece. En vez de una ilusión realista, puedes crear un patrón confuso de imágenes alrededor de una criatura a alcance corto: mientras uses tu acción para cambiarlo, dificultas sus ataques y defensas (sin tirada de ataque). Acción para crear; acción para modificar."
+"t": "Creas una sola imagen de una criatura u objeto a alcance inmediato, que debe caber en una zona inmediata. Puede moverse (por ejemplo, la ilusión de una persona puede caminar o atacar), pero no salir de la zona. Incluye sonido pero no olor. Dura hasta que uses una recuperación de diez minutos o más, pero si quieres cambiar mucho la ilusión original (como hacer que una criatura parezca herida) tienes que usar una acción para volver a concentrarte en ella. Si te alejas fuera de alcance, se desvanece. En vez de una ilusión realista, puedes crear un patrón confuso de imágenes alrededor de una criatura a alcance corto: mientras uses tu acción para cambiarlo, dificultas sus ataques y defensas (sin tirada de ataque). Acción para crear; acción para modificar."
 },
 "crafts-illusions/sense-magic": {
 "n": "Percibir magia",
@@ -558,12 +558,12 @@
 "crafts-illusions/illusory-disguise": {
 "n": "Disfraz ilusorio",
 "c": "2+ Intelecto",
-"t": "Pareces otra persona u otra cosa, más o menos de tu tamaño y forma, hasta que hagas una recuperación de una hora o más. Una vez creado, el disfraz no requiere concentración. Esfuerzo: disfraza a una criatura más (1 Intelecto); si pierdes de vista a una criatura disfrazada, pierde el disfraz. Acción."
+"t": "Pareces otra persona u otra cosa, más o menos de tu tamaño y forma, hasta que uses una recuperación de una hora o más. Una vez creado, el disfraz no requiere concentración. Esfuerzo: disfraza a una criatura más (1 Intelecto); si pierdes de vista a una criatura disfrazada, pierde el disfraz. Acción."
 },
 "crafts-illusions/reveal-illusion": {
 "n": "Revelar ilusiones",
 "c": "2+ Intelecto",
-"t": "Cuando tiras para encontrar una ilusión o un objetivo invisible a alcance corto y sacas menos de 12, cuenta como un 12 (así no hay intrusión del DJ si sacas un 1). Dura hasta que hagas una recuperación de diez minutos o más. Acción para iniciar. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. En el rango 3: el resultado mínimo de esta habilidad sube a 15."
+"t": "Cuando tiras para encontrar una ilusión o un objetivo invisible a alcance corto y sacas menos de 12, cuenta como un 12 (así no hay intrusión del DJ si sacas un 1). Dura hasta que uses una recuperación de diez minutos o más. Acción para iniciar. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. En el rango 3: el resultado mínimo de esta habilidad sube a 15."
 },
 "crafts-illusions/cast-illusion": {
 "n": "Proyectar ilusiones",
@@ -573,32 +573,32 @@
 "crafts-illusions/major-illusion": {
 "n": "Ilusión mayor",
 "c": "3+ Intelecto",
-"t": "Creas una escena compleja de imágenes a alcance inmediato, que debe caber entera en una zona larga. Las imágenes pueden moverse, pero no salir de la zona. Incluye sonido y olor. Dura hasta que hagas una recuperación de diez minutos o más y cambia como le indiques (no requiere concentración). Si te alejas más allá de alcance inmediato del borde de la ilusión, se desvanece. En vez de una ilusión realista, puedes crear imágenes ilusorias confusas alrededor de una criatura a alcance corto, dificultando sus ataques y defensas hasta que hagas una recuperación de diez minutos o más (sin tirada de ataque); no necesitas usar tu acción cada asalto para mantenerlo. Esfuerzo: afecta a una criatura más con imágenes confusas. Acción para crear."
+"t": "Creas una escena compleja de imágenes a alcance inmediato, que debe caber entera en una zona larga. Las imágenes pueden moverse, pero no salir de la zona. Incluye sonido y olor. Dura hasta que uses una recuperación de diez minutos o más y cambia como le indiques (no requiere concentración). Si te alejas más allá de alcance inmediato del borde de la ilusión, se desvanece. En vez de una ilusión realista, puedes crear imágenes ilusorias confusas alrededor de una criatura a alcance corto, dificultando sus ataques y defensas hasta que uses una recuperación de diez minutos o más (sin tirada de ataque); no necesitas usar tu acción cada asalto para mantenerlo. Esfuerzo: afecta a una criatura más con imágenes confusas. Acción para crear."
 },
 "crafts-illusions/illusion-cocoon": {
 "n": "Capullo de ilusión",
 "c": "4 Intelecto",
-"t": "Con un ataque de Intelecto con éxito, envuelves a un objetivo a alcance largo en una ilusión de todos los sentidos tan absorbente que queda indefenso y pierde su turno cada asalto hasta que hagas una recuperación de diez minutos o más o hasta que reciba daño físico directo. Acción."
+"t": "Con un ataque de Intelecto con éxito, envuelves a un objetivo a alcance largo en una ilusión de todos los sentidos tan absorbente que queda indefenso y pierde su turno cada asalto hasta que uses una recuperación de diez minutos o más o hasta que reciba daño físico directo. Acción."
 },
 "crafts-illusions/illusory-selves": {
 "n": "Dobles ilusorios",
 "c": "4 Intelecto",
-"t": "Creas cuatro ilusiones de ti mismo a alcance corto, cada una de las cuales dura hasta que hagas una recuperación de diez minutos o más. Diriges mentalmente sus acciones; no son reflejos y cada una puede hacer cosas distintas. Si una imagen recibe un golpe violento, eliges si se queda inmóvil o desaparece para siempre. Acción para iniciar."
+"t": "Creas cuatro ilusiones de ti mismo a alcance corto, cada una de las cuales dura hasta que uses una recuperación de diez minutos o más. Diriges mentalmente sus acciones; no son reflejos y cada una puede hacer cosas distintas. Si una imagen recibe un golpe violento, eliges si se queda inmóvil o desaparece para siempre. Acción para iniciar."
 },
 "crafts-illusions/invisibility": {
 "n": "Invisibilidad",
 "c": "4+ Intelecto",
-"t": "Te vuelves invisible. El efecto termina si haces algo que revele tu presencia o posición (atacar, usar una habilidad, mover un objeto grande, etc.) o si haces una recuperación de diez minutos o más. Esfuerzo: usa la habilidad sobre una criatura que toques en vez de sobre ti; sigue invisible hasta que actúe precipitadamente o ella o tú hagáis una recuperación de diez minutos o más. Acción para iniciar."
+"t": "Te vuelves invisible. El efecto termina si haces algo que revele tu presencia o posición (atacar, usar una habilidad, mover un objeto grande, etc.) o si usas una recuperación de diez minutos o más. Esfuerzo: usa la habilidad sobre una criatura que toques en vez de sobre ti; sigue invisible hasta que actúe precipitadamente o ella o tú uséis una recuperación de diez minutos o más. Acción para iniciar."
 },
 "crafts-illusions/terrifying-image": {
 "n": "Imagen aterradora",
 "c": "6 Intelecto",
-"t": "Puedes aterrorizar a tus enemigos con ilusiones creadas a partir de sus propios miedos. Haz ataques de Intelecto separados contra hasta cinco criaturas a alcance largo. Si aciertas, la criatura huye aterrada, perseguida por sus pesadillas, hasta que haya huido al menos una distancia muy larga o hagas una recuperación de diez minutos o más. Si fallas, la criatura no hace caso de las imágenes, que no la entorpecen en absoluto. Acción."
+"t": "Puedes aterrorizar a tus enemigos con ilusiones creadas a partir de sus propios miedos. Haz ataques de Intelecto separados contra hasta cinco criaturas a alcance largo. Si aciertas, la criatura huye aterrada, perseguida por sus pesadillas, hasta que haya huido al menos una distancia muy larga o uses una recuperación de diez minutos o más. Si fallas, la criatura no hace caso de las imágenes, que no la entorpecen en absoluto. Acción."
 },
 "crafts-illusions/grandiose-illusion": {
 "n": "Ilusión grandiosa",
 "c": "8 Intelecto",
-"t": "Creas una escena de imágenes fantásticamente compleja que cabe en un cubo de 1,6 km, cuyo borde más cercano debe estar a alcance inmediato de ti. Tienes que poder ver las imágenes al crearlas. Pueden moverse por el cubo y actuar según tus deseos, y también actuar con lógica (como reaccionar adecuadamente al fuego o a los ataques) cuando no las observas directamente. Incluye sonido y olor; por ejemplo, ejércitos que chocan en batalla, con apoyo aéreo de máquinas o criaturas voladoras, en y sobre un terreno creado por ti. Dura hasta que dejes de concentrarte o hagas una recuperación de una hora o más. Última acción para iniciar."
+"t": "Creas una escena de imágenes fantásticamente compleja que cabe en un cubo de 1,6 km, cuyo borde más cercano debe estar a alcance inmediato de ti. Tienes que poder ver las imágenes al crearlas. Pueden moverse por el cubo y actuar según tus deseos, y también actuar con lógica (como reaccionar adecuadamente al fuego o a los ataques) cuando no las observas directamente. Incluye sonido y olor; por ejemplo, ejércitos que chocan en batalla, con apoyo aéreo de máquinas o criaturas voladoras, en y sobre un terreno creado por ti. Dura hasta que dejes de concentrarte o uses una recuperación de una hora o más. Última acción para iniciar."
 },
 "crafts-illusions/permanent-illusion": {
 "n": "Ilusión permanente",
@@ -613,7 +613,7 @@
 "doesnt-do-much/joy-in-small-things": {
 "n": "Alegría en las pequeñas cosas",
 "c": "",
-"t": "Cuando aprendes o descubres algo importante (a juicio del DJ), recuperas 4 puntos de tu reserva de Intelecto. Cada uso después del primero devuelve 1 punto menos; esto se renueva al hacer una recuperación de diez horas. Capacitador."
+"t": "Cuando aprendes o descubres algo importante (a juicio del DJ), recuperas 4 puntos de tu reserva de Intelecto. Cada uso después del primero devuelve 1 punto menos; esto se renueva al usar una recuperación de diez horas. Capacitador."
 },
 "doesnt-do-much/life-lessons": {
 "n": "Lecciones de la vida",
@@ -628,7 +628,7 @@
 "doesnt-do-much/inspiring-ease": {
 "n": "Calma inspiradora",
 "c": "",
-"t": "Con historias, canciones, arte u otras formas de entretenimiento, inspiras a tus aliados. Cuando tú y cualquier número de aliados pasáis juntos una recuperación de diez horas (tuya o suya), quedan inspirados por ti. Una vez al día, cada aliado inspirado puede facilitar una tarea. La inspiración se mantiene mientras sigas a distancia larga de ellos; a más distancia queda en suspenso, pero se reanuda automáticamente si vuelves a su alcance. Termina si haces una recuperación de diez horas lejos del aliado. Recuperación de diez horas para iniciar."
+"t": "Con historias, canciones, arte u otras formas de entretenimiento, inspiras a tus aliados. Cuando tú y cualquier número de aliados pasáis juntos una recuperación de diez horas (tuya o suya), quedan inspirados por ti. Una vez al día, cada aliado inspirado puede facilitar una tarea. La inspiración se mantiene mientras sigas a distancia larga de ellos; a más distancia queda en suspenso, pero se reanuda automáticamente si vuelves a su alcance. Termina si usas una recuperación de diez horas lejos del aliado. Recuperación de diez horas para iniciar."
 },
 "doesnt-do-much/totally-chill": {
 "n": "Totalmente tranquilo",
@@ -643,7 +643,7 @@
 "doesnt-do-much/improvise": {
 "n": "Improvisar",
 "c": "3 Intelecto",
-"t": "Si no estás entrenado en una tarea, puedes improvisar para ganar un recurso en ella: una herramienta apañada, una idea repentina o pura suerte. El recurso dura hasta que hagas una recuperación de diez minutos o más. Capacitador."
+"t": "Si no estás entrenado en una tarea, puedes improvisar para ganar un recurso en ella: una herramienta apañada, una idea repentina o pura suerte. El recurso dura hasta que uses una recuperación de diez minutos o más. Capacitador."
 },
 "doesnt-do-much/agile-wit": {
 "n": "Ingenio ágil",
@@ -678,7 +678,7 @@
 "employs-magnetism/move-metal": {
 "n": "Mover metal",
 "c": "1 Intelecto",
-"t": "Hasta que hagas una recuperación de una hora o más, puedes ejercer fuerza sobre objetos de metal a alcance corto como tu acción. Cada uso requiere una acción y te permite mover a distancia un objeto que contenga metal o sea de metal. Solo puedes mover o manipular un objeto si podrías hacerlo físicamente con tus manos; por ejemplo, levantar y atraer hacia ti un objeto de metal ligero en cualquier punto a tu alcance, o mover un objeto pesado (como un mueble) a distancia inmediata. Este poder carece de control fino para empuñar un arma o mover objetos con mucha velocidad, así que en la mayoría de situaciones no sirve para atacar directamente; pero podrías arrancar un objeto metálico de las manos de otra criatura, empujar a distancia inmediata a una criatura con armadura metálica o dificultar el ataque o la defensa de una criatura aplicando presión en un brazo o una pierna con armadura o en un arma metálica. Afectar a una criatura reacia o a su equipo requiere una tirada de ataque de Intelecto. Puedes usar tu acción para crear una perturbación magnética a alcance corto que dificulta dos pasos durante un asalto los artefactos electrónicos, máquinas electrónicas y criaturas máquina (como los robots). Acción para iniciar; acción para mover metal o perturbar la electrónica."
+"t": "Hasta que uses una recuperación de una hora o más, puedes ejercer fuerza sobre objetos de metal a alcance corto como tu acción. Cada uso requiere una acción y te permite mover a distancia un objeto que contenga metal o sea de metal. Solo puedes mover o manipular un objeto si podrías hacerlo físicamente con tus manos; por ejemplo, levantar y atraer hacia ti un objeto de metal ligero en cualquier punto a tu alcance, o mover un objeto pesado (como un mueble) a distancia inmediata. Este poder carece de control fino para empuñar un arma o mover objetos con mucha velocidad, así que en la mayoría de situaciones no sirve para atacar directamente; pero podrías arrancar un objeto metálico de las manos de otra criatura, empujar a distancia inmediata a una criatura con armadura metálica o dificultar el ataque o la defensa de una criatura aplicando presión en un brazo o una pierna con armadura o en un arma metálica. Afectar a una criatura reacia o a su equipo requiere una tirada de ataque de Intelecto. Puedes usar tu acción para crear una perturbación magnética a alcance corto que dificulta dos pasos durante un asalto los artefactos electrónicos, máquinas electrónicas y criaturas máquina (como los robots). Acción para iniciar; acción para mover metal o perturbar la electrónica."
 },
 "employs-magnetism/sense-metal": {
 "n": "Percibir metal",
@@ -688,12 +688,12 @@
 "employs-magnetism/electromagnetic-eyes": {
 "n": "Ojos electromagnéticos",
 "c": "2 Intelecto",
-"t": "Percibes tu entorno mediante los campos electromagnéticos que llenan invisiblemente casi todos los lugares (invisibles para otros, no para ti). Puedes «ver» hasta alcance largo incluso en oscuridad total, y tienes un recurso en las tareas de percepción para notar criaturas vivas escondidas (que tienen sus propios campos electromagnéticos), objetos metálicos y magnéticos y artefactos con energía. Ves con normalidad a las criaturas que de otro modo serían invisibles. Siempre sabes dónde está el norte (si estás en un planeta con polos magnéticos). Dura hasta que hagas una recuperación de diez minutos o más. Acción para iniciar."
+"t": "Percibes tu entorno mediante los campos electromagnéticos que llenan invisiblemente casi todos los lugares (invisibles para otros, no para ti). Puedes «ver» hasta alcance largo incluso en oscuridad total, y tienes un recurso en las tareas de percepción para notar criaturas vivas escondidas (que tienen sus propios campos electromagnéticos), objetos metálicos y magnéticos y artefactos con energía. Ves con normalidad a las criaturas que de otro modo serían invisibles. Siempre sabes dónde está el norte (si estás en un planeta con polos magnéticos). Dura hasta que uses una recuperación de diez minutos o más. Acción para iniciar."
 },
 "employs-magnetism/electromagnetically-charge": {
 "n": "Carga electromagnética",
 "c": "1+ Intelecto",
-"t": "Reúnes energía de los campos electromagnéticos que llenan invisiblemente casi todos los lugares y la usas para curarte, reduciendo la gravedad de una de tus heridas: te curas una herida leve, reduces una moderada a leve o una grave a moderada. También puedes usarla para recargar un artefacto mundano de mano que funcione con electricidad y se haya quedado sin carga o con las pilas agotadas, como un teléfono móvil o una radio pequeña. Cada vez que la usas, su coste en Intelecto sube en 1; vuelve a 1 tras hacer una recuperación. Última acción."
+"t": "Reúnes energía de los campos electromagnéticos que llenan invisiblemente casi todos los lugares y la usas para curarte, reduciendo la gravedad de una de tus heridas: te curas una herida leve, reduces una moderada a leve o una grave a moderada. También puedes usarla para recargar un artefacto mundano de mano que funcione con electricidad y se haya quedado sin carga o con las pilas agotadas, como un teléfono móvil o una radio pequeña. Cada vez que la usas, su coste en Intelecto sube en 1; vuelve a 1 tras usar una recuperación. Última acción."
 },
 "employs-magnetism/repel-metal": {
 "n": "Repeler metal",
@@ -748,7 +748,7 @@
 "entertains/anecdote": {
 "n": "Anécdota",
 "c": "2 Intelecto",
-"t": "Puedes levantar el ánimo de un grupo de criaturas y ayudarlas a unirse entreteniéndolas con una anécdota edificante o mordaz. Elige una tarea (que no sea de ataque ni de defensa) relacionada con la anécdota. Hasta que hagas una recuperación de una hora o más, quienes atienden a tu historia quedan entrenados en esa tarea. También puedes pasar un rato tratando con un grupo de personas a alcance corto: si son al menos neutrales contigo (no hostiles), se vuelven amistosas hasta que hagas una recuperación de una hora o más. Acción para iniciar; un minuto para completar."
+"t": "Puedes levantar el ánimo de un grupo de criaturas y ayudarlas a unirse entreteniéndolas con una anécdota edificante o mordaz. Elige una tarea (que no sea de ataque ni de defensa) relacionada con la anécdota. Hasta que uses una recuperación de una hora o más, quienes atienden a tu historia quedan entrenados en esa tarea. También puedes pasar un rato tratando con un grupo de personas a alcance corto: si son al menos neutrales contigo (no hostiles), se vuelven amistosas hasta que uses una recuperación de una hora o más. Acción para iniciar; un minuto para completar."
 },
 "entertains/inspiring-suggestion": {
 "n": "Sugerencia inspiradora",
@@ -763,7 +763,7 @@
 "entertains/inspiring-ease": {
 "n": "Calma inspiradora",
 "c": "",
-"t": "Con historias, canciones, arte u otras formas de entretenimiento, inspiras a tus aliados. Cuando tú y cualquier número de aliados pasáis juntos una recuperación de diez horas (tuya o suya), quedan inspirados por ti. Una vez al día, cada aliado inspirado puede facilitar una tarea. La inspiración se mantiene mientras sigas a distancia larga de ellos; a más distancia queda en suspenso, pero se reanuda automáticamente si vuelves a su alcance. Termina si haces una recuperación de diez horas lejos del aliado. Recuperación de diez horas para iniciar."
+"t": "Con historias, canciones, arte u otras formas de entretenimiento, inspiras a tus aliados. Cuando tú y cualquier número de aliados pasáis juntos una recuperación de diez horas (tuya o suya), quedan inspirados por ti. Una vez al día, cada aliado inspirado puede facilitar una tarea. La inspiración se mantiene mientras sigas a distancia larga de ellos; a más distancia queda en suspenso, pero se reanuda automáticamente si vuelves a su alcance. Termina si usas una recuperación de diez horas lejos del aliado. Recuperación de diez horas para iniciar."
 },
 "entertains/rising-courage": {
 "n": "Valor creciente",
@@ -773,12 +773,12 @@
 "entertains/find-motivation": {
 "n": "Encontrar motivación",
 "c": "3+ Intelecto",
-"t": "Cuando un efecto de nivel 4 o inferior fuera a afectar negativamente a tu mente (órdenes psíquicas, enfermedad, miedo, aburrimiento, control mental, etc.), puedes ignorarlo. Si el efecto dura un tiempo (como el miedo o el control mental), no tiene poder sobre ti hasta que hagas una recuperación de diez minutos o más. Si es instantáneo (como una descarga psíquica que hace daño), no te afecta en absoluto. Esfuerzo: sube en 1 el nivel máximo del efecto que puedes ignorar. Capacitador."
+"t": "Cuando un efecto de nivel 4 o inferior fuera a afectar negativamente a tu mente (órdenes psíquicas, enfermedad, miedo, aburrimiento, control mental, etc.), puedes ignorarlo. Si el efecto dura un tiempo (como el miedo o el control mental), no tiene poder sobre ti hasta que uses una recuperación de diez minutos o más. Si es instantáneo (como una descarga psíquica que hace daño), no te afecta en absoluto. Esfuerzo: sube en 1 el nivel máximo del efecto que puedes ignorar. Capacitador."
 },
 "entertains/perfect-stranger": {
 "n": "Perfecto desconocido",
 "c": "3 Intelecto",
-"t": "Te entregas por completo a un papel y te vuelves casi irreconocible hasta que hagas una recuperación de una hora o más. Suele implicar cambiar la voz, la postura, el acento o la ropa para «vender» la nueva apariencia. Todas las tareas de hacerte pasar por otra persona se facilitan. Tres veces mientras la habilidad está activa, si usas Esfuerzo en una tarea de interacción o conocimiento relacionada con el papel, ganas un nivel gratuito de Esfuerzo. Acción para iniciar."
+"t": "Te entregas por completo a un papel y te vuelves casi irreconocible hasta que uses una recuperación de una hora o más. Suele implicar cambiar la voz, la postura, el acento o la ropa para «vender» la nueva apariencia. Todas las tareas de hacerte pasar por otra persona se facilitan. Tres veces mientras la habilidad está activa, si usas Esfuerzo en una tarea de interacción o conocimiento relacionada con el papel, ganas un nivel gratuito de Esfuerzo. Acción para iniciar."
 },
 "entertains/calm": {
 "n": "Calmar",
@@ -788,7 +788,7 @@
 "entertains/captivate-or-inspire": {
 "n": "Cautivar o inspirar",
 "c": "",
-"t": "Puedes usar esta habilidad de una de dos formas. Cautivar: tus palabras mantienen la atención de todos los PNJ que las oyen mientras hablas. Inspirar: tus palabras inspiran a todos los PNJ que las oyen, que hacen las tareas como si fueran un nivel superior hasta que hagas una recuperación de una hora o más. En ambos casos, eliges a qué PNJ afecta. Si atacan a alguien del público mientras intentas hablarles, pierdes su atención. Acción para iniciar."
+"t": "Puedes usar esta habilidad de una de dos formas. Cautivar: tus palabras mantienen la atención de todos los PNJ que las oyen mientras hablas. Inspirar: tus palabras inspiran a todos los PNJ que las oyen, que hacen las tareas como si fueran un nivel superior hasta que uses una recuperación de una hora o más. En ambos casos, eliges a qué PNJ afecta. Si atacan a alguien del público mientras intentas hablarles, pierdes su atención. Acción para iniciar."
 },
 "entertains/willing-sacrifice": {
 "n": "Sacrificio voluntario",
@@ -848,7 +848,7 @@
 "explores/wild-camouflage": {
 "n": "Camuflaje salvaje",
 "c": "4 Intelecto",
-"t": "Ajustando tu ropa, usando trucos de disfraz y tu profundo conocimiento del entorno, eres difícil de distinguir en la naturaleza hasta que hagas una recuperación de diez minutos o más. Mientras estás camuflado, ganas dos recursos en esquivar y sigilo. El efecto termina antes si haces algo que revele tu presencia o posición (atacar, usar una habilidad especial de efecto evidente, mover un objeto grande, etc.). Acción."
+"t": "Ajustando tu ropa, usando trucos de disfraz y tu profundo conocimiento del entorno, eres difícil de distinguir en la naturaleza hasta que uses una recuperación de diez minutos o más. Mientras estás camuflado, ganas dos recursos en esquivar y sigilo. El efecto termina antes si haces algo que revele tu presencia o posición (atacar, usar una habilidad especial de efecto evidente, mover un objeto grande, etc.). Acción."
 },
 "explores/wilderness-awareness": {
 "n": "Conciencia de la naturaleza",
@@ -863,17 +863,17 @@
 "explores/the-wild-is-on-your-side": {
 "n": "La naturaleza está de tu parte",
 "c": "5 Intelecto",
-"t": "La propia naturaleza interviene contra tus enemigos a alcance corto. Hasta que hagas una recuperación de diez minutos o más, las piedras les hacen tropezar, las enredaderas los atrapan, los insectos los pican, los animales pequeños los distraen o confunden, etc., lo que dificulta todas sus tareas. Solo puedes usarla en un entorno natural salvaje. Capacitador."
+"t": "La propia naturaleza interviene contra tus enemigos a alcance corto. Hasta que uses una recuperación de diez minutos o más, las piedras les hacen tropezar, las enredaderas los atrapan, los insectos los pican, los animales pequeños los distraen o confunden, etc., lo que dificulta todas sus tareas. Solo puedes usarla en un entorno natural salvaje. Capacitador."
 },
 "explores/one-with-the-wild": {
 "n": "Uno con la naturaleza",
 "c": "6 Intelecto",
-"t": "Tú y tus aliados ganáis una conexión inusual con la naturaleza a alcance largo hasta que hagas una recuperación de una hora o más. Tiene tres efectos: • Los animales y plantas naturales de la zona no os harán daño a sabiendas ni a ti ni a tus aliados. • Tú y tus aliados subís en 1 vuestra Ventaja de Potencia, de Velocidad y de Intelecto. • Las recuperaciones hechas durante este periodo devuelven el doble de puntos. Acción para iniciar."
+"t": "Tú y tus aliados ganáis una conexión inusual con la naturaleza a alcance largo hasta que uses una recuperación de una hora o más. Tiene tres efectos: • Los animales y plantas naturales de la zona no os harán daño a sabiendas ni a ti ni a tus aliados. • Tú y tus aliados subís en 1 vuestra Ventaja de Potencia, de Velocidad y de Intelecto. • Las recuperaciones hechas durante este periodo devuelven el doble de puntos. Acción para iniciar."
 },
 "explores/survivor": {
 "n": "Superviviente",
 "c": "",
-"t": "Si tienes una herida leve o moderada, puedes rehacerte (rally) sin gastar puntos de Potencia. Esta habilidad se renueva cada vez que haces una recuperación. Capacitador."
+"t": "Si tienes una herida leve o moderada, puedes rehacerte (rally) sin gastar puntos de Potencia. Esta habilidad se renueva cada vez que usas una recuperación. Capacitador."
 },
 "fights-unarmed/resilience": {
 "n": "Cuerpo de piedra mejorado",
@@ -888,7 +888,7 @@
 "performs-feats-of-strength/deep-reserves": {
 "n": "Reservas profundas",
 "c": "",
-"t": "Cuando otros están agotados, tú puedes seguir. Puedes transferir hasta 6 puntos entre tus reservas en cualquier combinación, a razón de 1 punto por asalto; por ejemplo, 3 de Velocidad a Potencia y 3 de Intelecto a Potencia, lo que llevaría seis asaltos en total. Esta habilidad se renueva al hacer una recuperación de diez horas. Acción."
+"t": "Cuando otros están agotados, tú puedes seguir. Puedes transferir hasta 6 puntos entre tus reservas en cualquier combinación, a razón de 1 punto por asalto; por ejemplo, 3 de Velocidad a Potencia y 3 de Intelecto a Potencia, lo que llevaría seis asaltos en total. Esta habilidad se renueva al usar una recuperación de diez horas. Acción."
 },
 "speaks-for-the-land/communication": {
 "n": "Comunicación con bestias",
@@ -913,7 +913,7 @@
 "fights-dirty/go-for-the-eyes": {
 "n": "A los ojos",
 "c": "2 Velocidad",
-"t": "Intentas herir el ojo de tu enemigo, por ejemplo hurgándoselo o tirándole tierra a la cara. Haz un ataque cuerpo a cuerpo dificultado; si aciertas, su visión queda afectada hasta que hagas una recuperación de diez minutos o más, lo que dificulta sus tareas que dependen de la vista (que son casi todas). Acción."
+"t": "Intentas herir el ojo de tu enemigo, por ejemplo hurgándoselo o tirándole tierra a la cara. Haz un ataque cuerpo a cuerpo dificultado; si aciertas, su visión queda afectada hasta que uses una recuperación de diez minutos o más, lo que dificulta sus tareas que dependen de la vista (que son casi todas). Acción."
 },
 "fights-dirty/scratching-and-kicking": {
 "n": "Arañazos y patadas",
@@ -943,7 +943,7 @@
 "fights-dirty/incapacitating-attack": {
 "n": "Ataque incapacitante",
 "c": "4 Velocidad",
-"t": "Tu ataque con éxito además incapacita brevemente al objetivo. Hasta que hagas una recuperación de diez minutos o más (o hasta que alguien use una acción para ayudarlo), queda derribado, no puede levantarse ni arrastrarse más de una distancia inmediata por asalto, y sus defensas se dificultan. Capacitador."
+"t": "Tu ataque con éxito además incapacita brevemente al objetivo. Hasta que uses una recuperación de diez minutos o más (o hasta que alguien use una acción para ayudarlo), queda derribado, no puede levantarse ni arrastrarse más de una distancia inmediata por asalto, y sus defensas se dificultan. Capacitador."
 },
 "fights-dirty/feint": {
 "n": "Finta",
@@ -958,12 +958,12 @@
 "fights-dirty/knock-out": {
 "n": "Noquear",
 "c": "5+ Potencia",
-"t": "Haz un ataque cuerpo a cuerpo dificultado contra un enemigo de nivel 3 o inferior. Si aciertas, en vez de hacer daño lo dejas inconsciente hasta que hagas una recuperación de diez minutos o más (o hasta que alguien use una acción para reanimarlo). Esfuerzo: sube en 1 el nivel máximo del enemigo al que puedes afectar. Acción."
+"t": "Haz un ataque cuerpo a cuerpo dificultado contra un enemigo de nivel 3 o inferior. Si aciertas, en vez de hacer daño lo dejas inconsciente hasta que uses una recuperación de diez minutos o más (o hasta que alguien use una acción para reanimarlo). Esfuerzo: sube en 1 el nivel máximo del enemigo al que puedes afectar. Acción."
 },
 "fights-dirty/using-the-environment": {
 "n": "Aprovechar el entorno",
 "c": "4 Intelecto",
-"t": "Puedes usar el entorno a tu favor. Si hay algo a distancia inmediata que pueda servir de cobertura de forma verosímil (una mesa, una lámpara de araña, una barandilla, otro enemigo, etc.), tienes cobertura y un recurso en tus ataques cuerpo a cuerpo. Moverte a cualquier sitio al que puedas llegar físicamente con tu movimiento normal, trepando o saltando es para ti una tarea rutinaria (sin tirada), e ignoras los obstáculos y el terreno difícil al hacerlo. Por ejemplo, podrías trepar por un tapiz hasta un balcón o deslizarte por la vela de un barco, pero no colarte por una aspillera ni entrar en una jaula cerrada. Dura hasta que hagas una recuperación de diez minutos o más. Capacitador."
+"t": "Puedes usar el entorno a tu favor. Si hay algo a distancia inmediata que pueda servir de cobertura de forma verosímil (una mesa, una lámpara de araña, una barandilla, otro enemigo, etc.), tienes cobertura y un recurso en tus ataques cuerpo a cuerpo. Moverte a cualquier sitio al que puedas llegar físicamente con tu movimiento normal, trepando o saltando es para ti una tarea rutinaria (sin tirada), e ignoras los obstáculos y el terreno difícil al hacerlo. Por ejemplo, podrías trepar por un tapiz hasta un balcón o deslizarte por la vela de un barco, pero no colarte por una aspillera ni entrar en una jaula cerrada. Dura hasta que uses una recuperación de diez minutos o más. Capacitador."
 },
 "fights-dirty/lethal-strike": {
 "n": "Golpe letal",
@@ -1018,7 +1018,7 @@
 "fights-with-panache/flamboyant-boast": {
 "n": "Bravuconada extravagante",
 "c": "1 Intelecto",
-"t": "Describes con jactancia una hazaña que vas a lograr y, como acción extra en tu turno, la intentas. Si para una persona normal sería difícil (o imposible) y lo logras, quienes no son tus aliados y lo presencian quedan tan asombrados y confundidos que todas sus acciones en su siguiente turno se dificultan. El DJ te ayuda a determinar si tu bravuconada impresionaría de verdad a los presentes. Si fallas, hasta que hagas una recuperación de diez minutos o más tus intentos de afectar a los testigos (con ataques, habilidades especiales o habilidades) se dificultan. Capacitador."
+"t": "Describes con jactancia una hazaña que vas a lograr y, como acción extra en tu turno, la intentas. Si para una persona normal sería difícil (o imposible) y lo logras, quienes no son tus aliados y lo presencian quedan tan asombrados y confundidos que todas sus acciones en su siguiente turno se dificultan. El DJ te ayuda a determinar si tu bravuconada impresionaría de verdad a los presentes. Si fallas, hasta que uses una recuperación de diez minutos o más tus intentos de afectar a los testigos (con ataques, habilidades especiales o habilidades) se dificultan. Capacitador."
 },
 "fights-with-panache/quick-adjustment": {
 "n": "Ajuste rápido",
@@ -1043,7 +1043,7 @@
 "fights-with-panache/using-the-environment": {
 "n": "Aprovechar el entorno",
 "c": "4 Intelecto",
-"t": "Puedes usar el entorno a tu favor. Si hay algo a distancia inmediata que pueda servir de cobertura de forma verosímil (una mesa, una lámpara de araña, una barandilla, otro enemigo, etc.), tienes cobertura y un recurso en tus ataques cuerpo a cuerpo. Moverte a cualquier sitio al que puedas llegar físicamente con tu movimiento normal, trepando o saltando es para ti una tarea rutinaria, e ignoras los obstáculos y el terreno difícil al hacerlo. Por ejemplo, podrías trepar por un tapiz hasta un balcón o deslizarte por la vela de un barco, pero no colarte por una aspillera ni entrar en una jaula cerrada. Dura hasta que hagas una recuperación de diez minutos o más. Capacitador."
+"t": "Puedes usar el entorno a tu favor. Si hay algo a distancia inmediata que pueda servir de cobertura de forma verosímil (una mesa, una lámpara de araña, una barandilla, otro enemigo, etc.), tienes cobertura y un recurso en tus ataques cuerpo a cuerpo. Moverte a cualquier sitio al que puedas llegar físicamente con tu movimiento normal, trepando o saltando es para ti una tarea rutinaria, e ignoras los obstáculos y el terreno difícil al hacerlo. Por ejemplo, podrías trepar por un tapiz hasta un balcón o deslizarte por la vela de un barco, pero no colarte por una aspillera ni entrar en una jaula cerrada. Dura hasta que uses una recuperación de diez minutos o más. Capacitador."
 },
 "fights-with-panache/again-and-again": {
 "n": "Una y otra vez",
@@ -1113,7 +1113,7 @@
 "fights-unarmed/fearsome-reputation": {
 "n": "Fama temible",
 "c": "3 Potencia o Intelecto",
-"t": "Te presentas (quizá mencionando alguna de tus hazañas intimidantes) ante todos los enemigos a alcance largo que puedan oírte y entenderte. Tirada de ataque de Intelecto aparte contra cada uno. Si aciertas, te temen, lo que facilita tus tareas contra ellos hasta que hagas una recuperación de diez minutos o más. Acción."
+"t": "Te presentas (quizá mencionando alguna de tus hazañas intimidantes) ante todos los enemigos a alcance largo que puedan oírte y entenderte. Tirada de ataque de Intelecto aparte contra cada uno. Si aciertas, te temen, lo que facilita tus tareas contra ellos hasta que uses una recuperación de diez minutos o más. Acción."
 },
 "fights-unarmed/high-and-low": {
 "n": "Arriba y abajo",
@@ -1123,7 +1123,7 @@
 "fights-unarmed/moving-like-water": {
 "n": "Moverse como el agua",
 "c": "3 Velocidad",
-"t": "Hasta que hagas una recuperación de diez minutos o más, si no logras esquivar un ataque, aún puedes intentar bloquearlo, pero la tarea de bloqueo se dificulta. Capacitador."
+"t": "Hasta que uses una recuperación de diez minutos o más, si no logras esquivar un ataque, aún puedes intentar bloquearlo, pero la tarea de bloqueo se dificulta. Capacitador."
 },
 "fights-unarmed/throw": {
 "n": "Lanzar",
@@ -1133,7 +1133,7 @@
 "fights-unarmed/divert-attacks": {
 "n": "Desviar ataques",
 "c": "4 Velocidad",
-"t": "Hasta que hagas una recuperación de diez minutos o más, desvías, bloqueas o esquivas automáticamente cualquier ataque con proyectiles a distancia (sin tirada). Sin embargo, en tu siguiente turno después de recibir ataques con proyectiles, todas tus demás acciones se dificultan. Acción para iniciar."
+"t": "Hasta que uses una recuperación de diez minutos o más, desvías, bloqueas o esquivas automáticamente cualquier ataque con proyectiles a distancia (sin tirada). Sin embargo, en tu siguiente turno después de recibir ataques con proyectiles, todas tus demás acciones se dificultan. Acción para iniciar."
 },
 "fights-unarmed/stunning-attack": {
 "n": "Ataque aturdidor",
@@ -1158,7 +1158,7 @@
 "fuses-flesh-and-steel/defensive-cybernetics": {
 "n": "Cibernética defensiva",
 "c": "",
-"t": "Parte de tu cuerpo está hecho de piezas mecánicas resistentes, algunas internas y otras externas. Acuerda con el DJ tu forma y configuración exactas. Si tienes una herida leve o moderada, puedes rehacerte (rally) para eliminarla como acción sin gastar puntos de Potencia. Esta habilidad se renueva cada vez que haces una recuperación."
+"t": "Parte de tu cuerpo está hecho de piezas mecánicas resistentes, algunas internas y otras externas. Acuerda con el DJ tu forma y configuración exactas. Si tienes una herida leve o moderada, puedes rehacerte (rally) para eliminarla como acción sin gastar puntos de Potencia. Esta habilidad se renueva cada vez que usas una recuperación."
 },
 "fuses-flesh-and-steel/hidden-shield": {
 "n": "Escudo oculto",
@@ -1168,7 +1168,7 @@
 "fuses-flesh-and-steel/powered-cybernetics": {
 "n": "Cibernética potenciada",
 "c": "2+ Potencia",
-"t": "Puedes usar tu cibernética para apoyar y potenciar tus acciones físicas. Cuando tiras para cargar, trepar, saltar o destrozar y sacas menos de 9, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Esta habilidad se renueva al hacer una recuperación. Capacitador; acción para cargar, trepar, saltar o destrozar. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+"t": "Puedes usar tu cibernética para apoyar y potenciar tus acciones físicas. Cuando tiras para cargar, trepar, saltar o destrozar y sacas menos de 9, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Esta habilidad se renueva al usar una recuperación. Capacitador; acción para cargar, trepar, saltar o destrozar. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
 },
 "fuses-flesh-and-steel/high-speed-interface": {
 "n": "Interfaz de alta velocidad",
@@ -1213,7 +1213,7 @@
 "fuses-flesh-and-steel/embedded-drone": {
 "n": "Dron integrado",
 "c": "3 Intelecto",
-"t": "Tienes integrado en el cuerpo un dron que puedes lanzar y controlar hasta que hagas una recuperación de una hora o más (momento en que vuelve a ti). No mide más de 30 cm de lado. Tiene manipuladores, que le permiten intentar tareas físicas, y un arma de fuego integrada con la que puede atacar. Puede hacer una acción de inmediato en el turno en que lo lanzas. Si lo destruyen, puedes restaurarlo con tus recursos a lo largo de varios días. Acción para iniciar. (Dron integrado: nivel 4; su pistola integrada de alcance largo hace 4 de daño; vuela una distancia corta cada asalto. Es un tipo de seguidor, p. 307.)"
+"t": "Tienes integrado en el cuerpo un dron que puedes lanzar y controlar hasta que uses una recuperación de una hora o más (momento en que vuelve a ti). No mide más de 30 cm de lado. Tiene manipuladores, que le permiten intentar tareas físicas, y un arma de fuego integrada con la que puede atacar. Puede hacer una acción de inmediato en el turno en que lo lanzas. Si lo destruyen, puedes restaurarlo con tus recursos a lo largo de varios días. Acción para iniciar. (Dron integrado: nivel 4; su pistola integrada de alcance largo hace 4 de daño; vuela una distancia corta cada asalto. Es un tipo de seguidor, p. 307.)"
 },
 "performs-feats-of-strength/throw": {
 "n": "Lanzar",
@@ -1228,7 +1228,7 @@
 "grows-to-towering-heights/enlarge": {
 "n": "Agrandarse",
 "c": "1+ Potencia",
-"t": "Creces hasta 3 m de altura hasta que hagas una recuperación. Tu equipo crece contigo. Mientras estás agrandado, sumas +1 a tu Ventaja de Potencia, puedes ignorar la primera herida moderada que recibas y tus ataques desarmados hacen 4 de daño; tus tareas de esquivar se dificultan. Cada vez que usas Agrandarse, el coste en Potencia sube en 1; se reinicia tras hacer una recuperación. Última acción; capacitador para volver a usarla y seguir agrandado."
+"t": "Creces hasta 3 m de altura hasta que uses una recuperación. Tu equipo crece contigo. Mientras estás agrandado, sumas +1 a tu Ventaja de Potencia, puedes ignorar la primera herida moderada que recibas y tus ataques desarmados hacen 4 de daño; tus tareas de esquivar se dificultan. Cada vez que usas Agrandarse, el coste en Potencia sube en 1; se reinicia tras usar una recuperación. Última acción; capacitador para volver a usarla y seguir agrandado."
 },
 "grows-to-towering-heights/longstrider": {
 "n": "Zancada larga",
@@ -1243,7 +1243,7 @@
 "grows-to-towering-heights/preternaturally-strong": {
 "n": "Fuerza sobrenatural",
 "c": "2 Potencia",
-"t": "Cuando tiras para cargar, trepar, saltar o destrozar y sacas menos de 9, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Mientras eres más grande de lo normal, cada incremento de tamaño (Agrandarse, Más grande, Enorme, Gigantesco y Colosal) sube en 3 ese resultado mínimo. Esta habilidad se renueva al hacer una recuperación. Capacitador. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+"t": "Cuando tiras para cargar, trepar, saltar o destrozar y sacas menos de 9, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Mientras eres más grande de lo normal, cada incremento de tamaño (Agrandarse, Más grande, Enorme, Gigantesco y Colosal) sube en 3 ese resultado mínimo. Esta habilidad se renueva al usar una recuperación. Capacitador. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
 },
 "grows-to-towering-heights/scary-big": {
 "n": "Grandullón temible",
@@ -1268,7 +1268,7 @@
 "grows-to-towering-heights/towering-strike": {
 "n": "Golpe descomunal",
 "c": "3 Potencia",
-"t": "Cuando aciertas con un ataque de Potencia, haces 4 de daño adicional. Mientras eres más grande de lo normal, cada incremento (Agrandarse, Más grande, Enorme, Gigantesco y Colosal) hace 1 de daño adicional. Esta habilidad se renueva tras hacer una recuperación. Capacitador."
+"t": "Cuando aciertas con un ataque de Potencia, haces 4 de daño adicional. Mientras eres más grande de lo normal, cada incremento (Agrandarse, Más grande, Enorme, Gigantesco y Colosal) hace 1 de daño adicional. Esta habilidad se renueva tras usar una recuperación. Capacitador."
 },
 "grows-to-towering-heights/gargantuan": {
 "n": "Gigantesco",
@@ -1298,7 +1298,7 @@
 "howls-at-the-moon/beast-form": {
 "n": "Forma bestial",
 "c": "0+ Potencia",
-"t": "Cinco noches seguidas cada mes, te transformas sin control en una bestia monstruosa hasta el primer indicio del alba o hasta que se pone la luna (pero mira más abajo). Acuerda con el DJ los detalles de esta forma. En ella sumas +4 a tu reserva de Potencia, +1 a tu Ventaja de Potencia, +2 a tu reserva de Velocidad y +1 a tu Ventaja de Velocidad; ignoras la primera herida moderada que recibas, y puedes usar libremente tus ataques desarmados como armas ligeras (ataque facilitado, 2 de daño) o medias (ataque sin modificar, 4 de daño), lo que parezca adecuado para ese ataque. En forma bestial no puedes gastar puntos de Intelecto por ningún motivo salvo para intentar volver a tu forma normal antes de tiempo (tarea de dificultad 4). Además, atacas a todas y cada una de las criaturas vivas a alcance corto. Al volver a tu forma normal, todas tus tareas se dificultan hasta que hagas una recuperación de una hora o más. Si no mataste y devoraste al menos una criatura de buen tamaño en forma bestial, la dificultad es de dos pasos en vez de uno y dura hasta que hagas una recuperación de diez horas. Esfuerzo: puedes transformarte a propósito en tu forma bestial si superas una tarea de Intelecto de dificultad 4; si fallas, puedes seguir intentándolo cada asalto (sin coste adicional de Potencia) hasta lograrlo o rendirte. Capacitador para transformarte involuntariamente; acción para transformarte voluntariamente; acción para volver a tu forma normal."
+"t": "Cinco noches seguidas cada mes, te transformas sin control en una bestia monstruosa hasta el primer indicio del alba o hasta que se pone la luna (pero mira más abajo). Acuerda con el DJ los detalles de esta forma. En ella sumas +4 a tu reserva de Potencia, +1 a tu Ventaja de Potencia, +2 a tu reserva de Velocidad y +1 a tu Ventaja de Velocidad; ignoras la primera herida moderada que recibas, y puedes usar libremente tus ataques desarmados como armas ligeras (ataque facilitado, 2 de daño) o medias (ataque sin modificar, 4 de daño), lo que parezca adecuado para ese ataque. En forma bestial no puedes gastar puntos de Intelecto por ningún motivo salvo para intentar volver a tu forma normal antes de tiempo (tarea de dificultad 4). Además, atacas a todas y cada una de las criaturas vivas a alcance corto. Al volver a tu forma normal, todas tus tareas se dificultan hasta que uses una recuperación de una hora o más. Si no mataste y devoraste al menos una criatura de buen tamaño en forma bestial, la dificultad es de dos pasos en vez de uno y dura hasta que uses una recuperación de diez horas. Esfuerzo: puedes transformarte a propósito en tu forma bestial si superas una tarea de Intelecto de dificultad 4; si fallas, puedes seguir intentándolo cada asalto (sin coste adicional de Potencia) hasta lograrlo o rendirte. Capacitador para transformarte involuntariamente; acción para transformarte voluntariamente; acción para volver a tu forma normal."
 },
 "howls-at-the-moon/call-upon-the-beast": {
 "n": "Invocar a la bestia",
@@ -1323,12 +1323,12 @@
 "howls-at-the-moon/scales": {
 "n": "Escamas",
 "c": "2 Potencia",
-"t": "Te salen escamas por todo el cuerpo hasta que hagas una recuperación de diez minutos o más, y mientras tanto tus tareas de bloqueo se facilitan. Acción en tu forma normal; capacitador usando Forma bestial."
+"t": "Te salen escamas por todo el cuerpo hasta que uses una recuperación de diez minutos o más, y mientras tanto tus tareas de bloqueo se facilitan. Acción en tu forma normal; capacitador usando Forma bestial."
 },
 "howls-at-the-moon/talons-or-claws": {
 "n": "Garras o zarpas",
 "c": "1 Potencia",
-"t": "Puedes hacer que te crezcan garras o zarpas afiladas en la punta de los dedos (lo que corresponda a tu forma bestial) hasta que hagas una recuperación de diez minutos o más; mientras tanto, tus ataques desarmados hacen 1 de daño adicional. Acción en tu forma normal; capacitador usando Forma bestial."
+"t": "Puedes hacer que te crezcan garras o zarpas afiladas en la punta de los dedos (lo que corresponda a tu forma bestial) hasta que uses una recuperación de diez minutos o más; mientras tanto, tus ataques desarmados hacen 1 de daño adicional. Acción en tu forma normal; capacitador usando Forma bestial."
 },
 "howls-at-the-moon/bigger-beast-form": {
 "n": "Forma bestial mayor",
@@ -1348,7 +1348,7 @@
 "howls-at-the-moon/beast-healing": {
 "n": "Curación bestial",
 "c": "",
-"t": "Cuando te transformas en tu forma bestial, te curas de inmediato una herida de cualquier gravedad. Esta habilidad se renueva tras hacer una recuperación de diez horas. Capacitador."
+"t": "Cuando te transformas en tu forma bestial, te curas de inmediato una herida de cualquier gravedad. Esta habilidad se renueva tras usar una recuperación de diez horas. Capacitador."
 },
 "howls-at-the-moon/greater-controlled-change": {
 "n": "Cambio controlado mayor",
@@ -1358,7 +1358,7 @@
 "howls-at-the-moon/poison-bite": {
 "n": "Mordisco venenoso",
 "c": "4 Potencia",
-"t": "Te crecen colmillos y la mandíbula se te adelanta o retrasa, lo que te permite hacer mordiscos venenosos como ataques desarmados ligeros (ataque facilitado, 2 de daño) hasta que hagas una recuperación de diez minutos o más. Si aciertas, el objetivo recibe 5 de daño adicional de veneno (ignora la armadura) y sus tareas se dificultan durante un asalto. Acción en tu forma normal; capacitador usando Forma bestial."
+"t": "Te crecen colmillos y la mandíbula se te adelanta o retrasa, lo que te permite hacer mordiscos venenosos como ataques desarmados ligeros (ataque facilitado, 2 de daño) hasta que uses una recuperación de diez minutos o más. Si aciertas, el objetivo recibe 5 de daño adicional de veneno (ignora la armadura) y sus tareas se dificultan durante un asalto. Acción en tu forma normal; capacitador usando Forma bestial."
 },
 "howls-at-the-moon/wings": {
 "n": "Alas",
@@ -1418,7 +1418,7 @@
 "hunts/awareness": {
 "n": "Alerta",
 "c": "3 Intelecto",
-"t": "Te vuelves hiperconsciente de tu entorno hasta que hagas una recuperación de diez minutos o más. Percibes a todos los seres vivos a alcance largo (y su posición general). Usando una acción para concentrarte, puedes elegir a uno e intentar averiguar su estado de salud general y su nivel de poder. Acción."
+"t": "Te vuelves hiperconsciente de tu entorno hasta que uses una recuperación de diez minutos o más. Percibes a todos los seres vivos a alcance largo (y su posición general). Usando una acción para concentrarte, puedes elegir a uno e intentar averiguar su estado de salud general y su nivel de poder. Acción."
 },
 "hunts/horde-fighting": {
 "n": "Luchar contra hordas",
@@ -1428,12 +1428,12 @@
 "hunts/poison-crafter": {
 "n": "Envenenador",
 "c": "",
-"t": "Si tienes más o menos una hora, puedes usar tus recursos para fabricar una dosis de veneno de contacto para un arma. Un arma untada con él (aplicarlo con cuidado requiere una Última acción) hace 2 de daño adicional hasta que hagas una recuperación de una hora o más. Tu experiencia con el veneno te da otros beneficios relacionados: ganas un recurso en detectar, identificar y resistir venenos; tus tiradas de defensa contra veneno se facilitan, y recibes 2 de daño de Velocidad menos por veneno (si el veneno hace daño de Velocidad) o la gravedad de las heridas por veneno baja un paso (grave a moderada, moderada a leve, leve a ninguna). Por ejemplo, si te alcanza un ataque que añade una herida moderada por veneno, solo recibes una leve por el veneno."
+"t": "Si tienes más o menos una hora, puedes usar tus recursos para fabricar una dosis de veneno de contacto para un arma. Un arma untada con él (aplicarlo con cuidado requiere una Última acción) hace 2 de daño adicional hasta que uses una recuperación de una hora o más. Tu experiencia con el veneno te da otros beneficios relacionados: ganas un recurso en detectar, identificar y resistir venenos; tus tiradas de defensa contra veneno se facilitan, y recibes 2 de daño de Velocidad menos por veneno (si el veneno hace daño de Velocidad) o la gravedad de las heridas por veneno baja un paso (grave a moderada, moderada a leve, leve a ninguna). Por ejemplo, si te alcanza un ataque que añade una herida moderada por veneno, solo recibes una leve por el veneno."
 },
 "hunts/better-sneak-attack": {
 "n": "Ataque furtivo mejorado",
 "c": "",
-"t": "Al usar Ataque furtivo, ganas un recurso en el ataque. En tu siguiente turno, el objetivo recibe 5 de daño adicional (ignora la armadura). Puede evitarlo haciendo una recuperación, usando cualquier habilidad que lo cure o usando su acción para atender la herida. Capacitador."
+"t": "Al usar Ataque furtivo, ganas un recurso en el ataque. En tu siguiente turno, el objetivo recibe 5 de daño adicional (ignora la armadura). Puede evitarlo usando una recuperación, usando cualquier habilidad que lo cure o usando su acción para atender la herida. Capacitador."
 },
 "hunts/sprint-and-grab": {
 "n": "Carrera y agarre",
@@ -1448,7 +1448,7 @@
 "hunts/hunters-drive": {
 "n": "Impulso del cazador",
 "c": "5 Intelecto",
-"t": "Ganas mayor destreza en la caza. Si tu presa está a menos de 16 km, tu velocidad de movimiento se duplica mientras intentas alcanzarla. Ganas un recurso adicional en las tareas relacionadas con tu presa. Dura hasta que hagas una recuperación de diez minutos o más. Capacitador."
+"t": "Ganas mayor destreza en la caza. Si tu presa está a menos de 16 km, tu velocidad de movimiento se duplica mientras intentas alcanzarla. Ganas un recurso adicional en las tareas relacionadas con tu presa. Dura hasta que uses una recuperación de diez minutos o más. Capacitador."
 },
 "hunts/escape-plan": {
 "n": "Plan de huida",
@@ -1483,12 +1483,12 @@
 "infiltrates/natural-sneak": {
 "n": "Sigilo natural",
 "c": "2+ Intelecto",
-"t": "Cuando tiras para forzar cerraduras, percepción, robar bolsillos o sigilo y sacas menos de 6, cuenta como un 6 (así no hay intrusión del DJ si sacas un 1). Esta habilidad se renueva al hacer una recuperación. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Capacitador. En el rango 3: el resultado mínimo de esta habilidad sube a 9."
+"t": "Cuando tiras para forzar cerraduras, percepción, robar bolsillos o sigilo y sacas menos de 6, cuenta como un 6 (así no hay intrusión del DJ si sacas un 1). Esta habilidad se renueva al usar una recuperación. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Capacitador. En el rango 3: el resultado mínimo de esta habilidad sube a 9."
 },
 "infiltrates/awareness": {
 "n": "Alerta",
 "c": "3 Intelecto",
-"t": "Te vuelves hiperconsciente de tu entorno hasta que hagas una recuperación de diez minutos o más. Percibes a todos los seres vivos a alcance largo (y su posición general). Usando una acción para concentrarte, puedes elegir a uno e intentar averiguar su estado de salud general y su nivel de poder. Acción."
+"t": "Te vuelves hiperconsciente de tu entorno hasta que uses una recuperación de diez minutos o más. Percibes a todos los seres vivos a alcance largo (y su posición general). Usando una acción para concentrarte, puedes elegir a uno e intentar averiguar su estado de salud general y su nivel de poder. Acción."
 },
 "infiltrates/flight-not-fight": {
 "n": "Huir, no luchar",
@@ -1498,7 +1498,7 @@
 "infiltrates/blend-in": {
 "n": "Pasar desapercibido",
 "c": "4 Intelecto",
-"t": "Cambiando tu postura, tu expresión y quizá tu ropa, pareces alguien sin importancia pero que encaja donde estés; por ejemplo, un conserje en un edificio de oficinas, un celador en un hospital o un administrativo en una comisaría. La gente puede verte, pero las criaturas de nivel 3 o inferior no dan importancia a tu presencia. Si te ve una de nivel superior, puedes intentar una tarea de Intelecto contra su nivel para seguir pareciendo irrelevante. Mientras pasas desapercibido, ganas dos recursos en tareas de esquivar y sigilo. El efecto termina si haces algo que llame la atención sobre tu presencia o posición (atacar, usar una habilidad, mover un objeto grande, etc.) o si haces una recuperación de diez minutos o más. Funciona aunque el PNJ te vea por una cámara de seguridad o un artefacto similar. Intentar engañar a un animal (como un perro guardián o policía) se dificulta. Acción para iniciar."
+"t": "Cambiando tu postura, tu expresión y quizá tu ropa, pareces alguien sin importancia pero que encaja donde estés; por ejemplo, un conserje en un edificio de oficinas, un celador en un hospital o un administrativo en una comisaría. La gente puede verte, pero las criaturas de nivel 3 o inferior no dan importancia a tu presencia. Si te ve una de nivel superior, puedes intentar una tarea de Intelecto contra su nivel para seguir pareciendo irrelevante. Mientras pasas desapercibido, ganas dos recursos en tareas de esquivar y sigilo. El efecto termina si haces algo que llame la atención sobre tu presencia o posición (atacar, usar una habilidad, mover un objeto grande, etc.) o si usas una recuperación de diez minutos o más. Funciona aunque el PNJ te vea por una cámara de seguridad o un artefacto similar. Intentar engañar a un animal (como un perro guardián o policía) se dificulta. Acción para iniciar."
 },
 "infiltrates/defend-and-respond": {
 "n": "Defender y responder",
@@ -1508,7 +1508,7 @@
 "infiltrates/scrutinize-defenses": {
 "n": "Escrutar defensas",
 "c": "3+ Intelecto",
-"t": "Cuando pasas más o menos una hora explorando a fondo una zona de no más de una distancia larga de diámetro (directamente, con grabaciones de vigilancia o planos, o interrogando a gente que la conoce), puedes hacer al DJ una pregunta sobre los sistemas y procedimientos defensivos de la zona, y debe responderte con la verdad; por ejemplo, cada cuánto pasan los guardias por un punto, con qué van armados (si lo van) o si hay alarmas electrónicas o mágicas. Esta habilidad se reinicia al hacer una recuperación de diez horas. Esfuerzo: haz una pregunta más. Acción para iniciar; una hora para completar."
+"t": "Cuando pasas más o menos una hora explorando a fondo una zona de no más de una distancia larga de diámetro (directamente, con grabaciones de vigilancia o planos, o interrogando a gente que la conoce), puedes hacer al DJ una pregunta sobre los sistemas y procedimientos defensivos de la zona, y debe responderte con la verdad; por ejemplo, cada cuánto pasan los guardias por un punto, con qué van armados (si lo van) o si hay alarmas electrónicas o mágicas. Esta habilidad se reinicia al usar una recuperación de diez horas. Esfuerzo: haz una pregunta más. Acción para iniciar; una hora para completar."
 },
 "infiltrates/convenient-device": {
 "n": "Herramienta oportuna",
@@ -1518,7 +1518,7 @@
 "infiltrates/invisibility": {
 "n": "Invisibilidad",
 "c": "4+ Intelecto",
-"t": "Te vuelves invisible. El efecto termina si haces algo que revele tu presencia o posición (atacar, usar una habilidad, mover un objeto grande, etc.). Esfuerzo: usa la habilidad sobre una criatura que toques en vez de sobre ti; dura hasta que haga algo que revele su presencia o hasta que tú (no ella) hagas una recuperación de diez minutos o más. Acción para iniciar."
+"t": "Te vuelves invisible. El efecto termina si haces algo que revele tu presencia o posición (atacar, usar una habilidad, mover un objeto grande, etc.). Esfuerzo: usa la habilidad sobre una criatura que toques en vez de sobre ti; dura hasta que haga algo que revele su presencia o hasta que tú (no ella) uses una recuperación de diez minutos o más. Acción para iniciar."
 },
 "infiltrates/persistence-training": {
 "n": "Entrenamiento de persistencia",
@@ -1528,7 +1528,7 @@
 "infiltrates/brainwashing": {
 "n": "Lavado de cerebro",
 "c": "6+ Intelecto",
-"t": "Usas engaños, mentiras bien dichas y sustancias que afectan a la mente (u otros medios, como magia o alta tecnología, según tu género) para controlar las acciones de otra criatura que toques. Tiene que ser de nivel 3 o inferior y tienes que superar un ataque de Intelecto contra ella. El control dura hasta que hagas una recuperación de diez minutos o más y, si puedes verla, decides caso por caso si sigue tus órdenes o actúa libremente. Al terminar, no recuerda haber sido controlada ni nada de lo que hizo bajo tu mando. Esfuerzo: sube en 1 el nivel máximo de la criatura a la que puedes afectar. Acción para iniciar."
+"t": "Usas engaños, mentiras bien dichas y sustancias que afectan a la mente (u otros medios, como magia o alta tecnología, según tu género) para controlar las acciones de otra criatura que toques. Tiene que ser de nivel 3 o inferior y tienes que superar un ataque de Intelecto contra ella. El control dura hasta que uses una recuperación de diez minutos o más y, si puedes verla, decides caso por caso si sigue tus órdenes o actúa libremente. Al terminar, no recuerda haber sido controlada ni nada de lo que hizo bajo tu mando. Esfuerzo: sube en 1 el nivel máximo de la criatura a la que puedes afectar. Acción para iniciar."
 },
 "infiltrates/spring-away": {
 "n": "Apartarse de un salto",
@@ -1543,7 +1543,7 @@
 "leads/always-witty": {
 "n": "Siempre ingenioso",
 "c": "",
-"t": "Cada vez que haces una recuperación, si tu reserva de Intelecto no está llena, recuperas 1 punto extra en ella. Puedes elegir esta habilidad hasta tres veces."
+"t": "Cada vez que usas una recuperación, si tu reserva de Intelecto no está llena, recuperas 1 punto extra en ella. Puedes elegir esta habilidad hasta tres veces."
 },
 "leads/lighting-a-fire-under-them": {
 "n": "Meterles prisa",
@@ -1558,7 +1558,7 @@
 "leads/natural-leader": {
 "n": "Líder nato",
 "c": "3+ Intelecto",
-"t": "Cuando tiras para regatear, engañar, encantar, interrogar o intimidar a un personaje y sacas menos de 9, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Esta habilidad se renueva al hacer una recuperación. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Capacitador. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+"t": "Cuando tiras para regatear, engañar, encantar, interrogar o intimidar a un personaje y sacas menos de 9, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Esta habilidad se renueva al usar una recuperación. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Capacitador. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
 },
 "leads/advanced-command": {
 "n": "Orden avanzada",
@@ -1578,7 +1578,7 @@
 "leads/captivate-or-inspire": {
 "n": "Cautivar o inspirar",
 "c": "",
-"t": "Puedes usar esta habilidad de una de dos formas. Cautivar: tus palabras mantienen la atención de todos los PNJ que las oyen mientras hablas. Inspirar: tus palabras inspiran a todos los PNJ que las oyen, que hacen las tareas como si fueran un nivel superior hasta que hagas una recuperación de una hora o más. En ambos casos, eliges a qué PNJ afecta. Si atacan a alguien del público mientras intentas hablarles, pierdes su atención. Acción para iniciar."
+"t": "Puedes usar esta habilidad de una de dos formas. Cautivar: tus palabras mantienen la atención de todos los PNJ que las oyen mientras hablas. Inspirar: tus palabras inspiran a todos los PNJ que las oyen, que hacen las tareas como si fueran un nivel superior hasta que uses una recuperación de una hora o más. En ambos casos, eliges a qué PNJ afecta. Si atacan a alguien del público mientras intentas hablarles, pierdes su atención. Acción para iniciar."
 },
 "leads/improved-follower": {
 "n": "Seguidor mejorado",
@@ -1613,7 +1613,7 @@
 "masters-telekinesis/steady-hand": {
 "n": "Mano firme",
 "c": "1 Intelecto",
-"t": "Usando la telequinesis para estabilizarte o mejorar tu agarre, ganas un nivel gratuito de Esfuerzo para una tarea física que no sea de combate. No puedes volver a usarla hasta después de hacer una recuperación. Capacitador."
+"t": "Usando la telequinesis para estabilizarte o mejorar tu agarre, ganas un nivel gratuito de Esfuerzo para una tarea física que no sea de combate. No puedes volver a usarla hasta después de usar una recuperación. Capacitador."
 },
 "masters-telekinesis/telekinesis": {
 "n": "Telequinesis",
@@ -1623,22 +1623,22 @@
 "masters-telekinesis/deflect-attacks": {
 "n": "Desviar ataques",
 "c": "4 Intelecto",
-"t": "Bloqueas, desvías o esquivas automáticamente cualquier ataque con proyectiles a distancia (sin tirada). Sin embargo, en tu siguiente turno después de recibir ataques con proyectiles, todas tus demás acciones se dificultan. Dura hasta que hagas una recuperación de diez minutos o más. Acción para iniciar."
+"t": "Bloqueas, desvías o esquivas automáticamente cualquier ataque con proyectiles a distancia (sin tirada). Sin embargo, en tu siguiente turno después de recibir ataques con proyectiles, todas tus demás acciones se dificultan. Dura hasta que uses una recuperación de diez minutos o más. Acción para iniciar."
 },
 "masters-telekinesis/energize-object": {
 "n": "Energizar objeto",
 "c": "2 Intelecto",
-"t": "Canalizas energía en un objeto (como un arma cuerpo a cuerpo o a distancia). Hasta que hagas una recuperación de una hora o más, cada ataque con el objeto energizado hace 1 de daño adicional de energía (si el arma dispara proyectiles, como las balas de un rifle, el daño se aplica a los proyectiles). La energía se disipa si dejas de empuñar o llevar el objeto, pero como acción extra en tu turno puedes energizar otro objeto. Acción."
+"t": "Canalizas energía en un objeto (como un arma cuerpo a cuerpo o a distancia). Hasta que uses una recuperación de una hora o más, cada ataque con el objeto energizado hace 1 de daño adicional de energía (si el arma dispara proyectiles, como las balas de un rifle, el daño se aplica a los proyectiles). La energía se disipa si dejas de empuñar o llevar el objeto, pero como acción extra en tu turno puedes energizar otro objeto. Acción."
 },
 "masters-telekinesis/armoring-debris": {
 "n": "Escombros protectores",
 "c": "5 Intelecto",
-"t": "Usas pequeños objetos cercanos del entorno (piedras, objetos rotos, terrones, etc.) para interceptar los ataques que te llegan hasta que hagas una recuperación de diez minutos o más. Esto te permite bloquear mejor las heridas (las tareas de bloqueo se facilitan un paso adicional; las de esquivar no se ven afectadas). Acción para iniciar."
+"t": "Usas pequeños objetos cercanos del entorno (piedras, objetos rotos, terrones, etc.) para interceptar los ataques que te llegan hasta que uses una recuperación de diez minutos o más. Esto te permite bloquear mejor las heridas (las tareas de bloqueo se facilitan un paso adicional; las de esquivar no se ven afectadas). Acción para iniciar."
 },
 "masters-telekinesis/enhance-strength": {
 "n": "Potenciar la fuerza",
 "c": "3+ Intelecto",
-"t": "Hasta que hagas una recuperación de diez minutos o más, usas la telequinesis para potenciar tus acciones físicas. Cuando tiras en una tarea de fuerza bruta, como mover un objeto pesado o derribar una puerta, y sacas menos de 9, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Acción para iniciar."
+"t": "Hasta que uses una recuperación de diez minutos o más, usas la telequinesis para potenciar tus acciones físicas. Cuando tiras en una tarea de fuerza bruta, como mover un objeto pesado o derribar una puerta, y sacas menos de 9, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Acción para iniciar."
 },
 "masters-telekinesis/apportation": {
 "n": "Aporte",
@@ -1704,7 +1704,7 @@
 "masters-weaponry/perfect-attack": {
 "n": "Ataque perfecto",
 "c": "2+ Potencia o Velocidad",
-"t": "Ataca con tu arma elegida. Si sacas menos de 9, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Si aciertas, el ataque hace el daño normal. No te permite acertar un ataque imposible, como cortar a alguien a kilómetro y medio o disparar una flecha a la luna. Esta habilidad se renueva al hacer una recuperación. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Acción. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+"t": "Ataca con tu arma elegida. Si sacas menos de 9, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Si aciertas, el ataque hace el daño normal. No te permite acertar un ataque imposible, como cortar a alguien a kilómetro y medio o disparar una flecha a la luna. Esta habilidad se renueva al usar una recuperación. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Acción. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
 },
 "masters-weaponry/throw-weapon": {
 "n": "Lanzar el arma",
@@ -1829,12 +1829,12 @@
 "moves-like-the-wind/speed-surge": {
 "n": "Arrebato de velocidad",
 "c": "",
-"t": "Recuperas de inmediato 1d6 + 6 puntos en tu reserva de Velocidad. Esta habilidad se renueva al hacer una recuperación de diez horas. Capacitador."
+"t": "Recuperas de inmediato 1d6 + 6 puntos en tu reserva de Velocidad. Esta habilidad se renueva al usar una recuperación de diez horas. Capacitador."
 },
 "moves-like-the-wind/up-to-speed": {
 "n": "A toda velocidad",
 "c": "",
-"t": "Si no haces más que moverte durante tres acciones seguidas, aceleras muchísimo y puedes moverte hasta unos 320 km/h (unos 600 m por asalto) durante diez minutos o unos 60 km. Después tienes que parar y hacer una recuperación. Capacitador."
+"t": "Si no haces más que moverte durante tres acciones seguidas, aceleras muchísimo y puedes moverte hasta unos 320 km/h (unos 600 m por asalto) durante diez minutos o unos 60 km. Después tienes que parar y usar una recuperación. Capacitador."
 },
 "stands-like-a-bastion/battle-competence": {
 "n": "Competencia en batalla",
@@ -1849,7 +1849,7 @@
 "never-says-die/determination": {
 "n": "Determinación",
 "c": "",
-"t": "Cuando repites una tarea fallida, además del nivel de Esfuerzo que tienes que usar, ganas un nivel gratuito de Esfuerzo. No puedes volver a usarla hasta después de hacer una recuperación. Capacitador."
+"t": "Cuando repites una tarea fallida, además del nivel de Esfuerzo que tienes que usar, ganas un nivel gratuito de Esfuerzo. No puedes volver a usarla hasta después de usar una recuperación. Capacitador."
 },
 "never-says-die/push-on-through": {
 "n": "Seguir adelante",
@@ -1864,7 +1864,7 @@
 "never-says-die/always-mighty": {
 "n": "Siempre poderoso",
 "c": "",
-"t": "Cada vez que haces una recuperación, si tu reserva de Potencia no está llena, recuperas 1 punto extra en ella. Puedes elegir esta habilidad hasta tres veces."
+"t": "Cada vez que usas una recuperación, si tu reserva de Potencia no está llena, recuperas 1 punto extra en ella. Puedes elegir esta habilidad hasta tres veces."
 },
 "never-says-die/ignore-the-pain": {
 "n": "Ignorar el dolor",
@@ -1879,7 +1879,7 @@
 "never-says-die/hidden-reserves": {
 "n": "Reservas ocultas",
 "c": "",
-"t": "Cuando haces una recuperación de una acción, sumas +1 a tu Ventaja de Potencia y de Velocidad hasta que hagas una recuperación de diez minutos o más. Capacitador."
+"t": "Cuando usas una recuperación de una acción, sumas +1 a tu Ventaja de Potencia y de Velocidad hasta que uses una recuperación de diez minutos o más. Capacitador."
 },
 "never-says-die/increasing-determination": {
 "n": "Determinación creciente",
@@ -1894,7 +1894,7 @@
 "never-says-die/not-dead-yet": {
 "n": "Aún no estoy muerto",
 "c": "",
-"t": "Cuando normalmente morirías, en vez de eso quedas inconsciente durante un asalto y luego despiertas. Al despertar así, ganas de inmediato 1d6 + 6 puntos para repartir entre tus reservas y eliminas una herida moderada y una grave. Tras usarla, tus tareas se dificultan hasta que hagas una recuperación de diez horas. Si vuelves a morir antes de esa recuperación, mueres de verdad. Puedes elegir esta habilidad dos veces; la segunda vez, la curación sube a 1d6 + 12 y eliminas el doble de heridas."
+"t": "Cuando normalmente morirías, en vez de eso quedas inconsciente durante un asalto y luego despiertas. Al despertar así, ganas de inmediato 1d6 + 6 puntos para repartir entre tus reservas y eliminas una herida moderada y una grave. Tras usarla, tus tareas se dificultan hasta que uses una recuperación de diez horas. Si vuelves a morir antes de esa recuperación, mueres de verdad. Puedes elegir esta habilidad dos veces; la segunda vez, la curación sube a 1d6 + 12 y eliminas el doble de heridas."
 },
 "never-says-die/final-defiance": {
 "n": "Desafío final",
@@ -1904,7 +1904,7 @@
 "never-says-die/ignore-affliction": {
 "n": "Ignorar aflicciones",
 "c": "5 Potencia",
-"t": "Hasta que hagas una recuperación de una hora o más, ignoras cualquier estado o aflicción no deseados (como enfermedad, parálisis, control mental, una extremidad rota, etc., pero no el daño) y actúas como si no te afectaran. Si el estado duraría normalmente menos de una hora, queda anulado del todo. Puedes usarla aunque el estado te impida actuar. Acción."
+"t": "Hasta que uses una recuperación de una hora o más, ignoras cualquier estado o aflicción no deseados (como enfermedad, parálisis, control mental, una extremidad rota, etc., pero no el daño) y actúas como si no te afectaran. Si el estado duraría normalmente menos de una hora, queda anulado del todo. Puedes usarla aunque el estado te impida actuar. Acción."
 },
 "performs-feats-of-strength": {
 "n": "Hace proezas de fuerza",
@@ -1914,7 +1914,7 @@
 "performs-feats-of-strength/always-mighty": {
 "n": "Siempre poderoso",
 "c": "",
-"t": "Cada vez que haces una recuperación, si tu reserva de Potencia no está llena, recuperas 1 punto extra en ella. Puedes elegir esta habilidad hasta tres veces."
+"t": "Cada vez que usas una recuperación, si tu reserva de Potencia no está llena, recuperas 1 punto extra en ella. Puedes elegir esta habilidad hasta tres veces."
 },
 "performs-feats-of-strength/hitting-harder": {
 "n": "Golpear más fuerte",
@@ -1939,7 +1939,7 @@
 "performs-feats-of-strength/naturally-strong": {
 "n": "Fuerte por naturaleza",
 "c": "2+ Potencia",
-"t": "Cuando tiras para cargar, trepar, saltar o destrozar y sacas menos de 9, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Esta habilidad se renueva al hacer una recuperación. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Capacitador. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+"t": "Cuando tiras para cargar, trepar, saltar o destrozar y sacas menos de 9, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Esta habilidad se renueva al usar una recuperación. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Capacitador. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
 },
 "performs-feats-of-strength/iron-fist": {
 "n": "Puño de hierro",
@@ -1989,7 +1989,7 @@
 "quells-evil/sense-evil": {
 "n": "Percibir el mal",
 "c": "2+ Intelecto",
-"t": "Cuando usas una acción para percibir muertos vivientes, demonios o criaturas similares (o criaturas poseídas por demonios) a alcance inmediato, si sacas 9 o menos, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Dura hasta que hagas una recuperación de diez minutos o más. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Acción para iniciar. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+"t": "Cuando usas una acción para percibir muertos vivientes, demonios o criaturas similares (o criaturas poseídas por demonios) a alcance inmediato, si sacas 9 o menos, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Dura hasta que uses una recuperación de diez minutos o más. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Acción para iniciar. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
 },
 "quells-evil/tribulation": {
 "n": "Tribulación",
@@ -1999,12 +1999,12 @@
 "quells-evil/invisibility-to-evil": {
 "n": "Invisible al mal",
 "c": "2+ Intelecto",
-"t": "Tú o un aliado que toques os volvéis de hecho invisibles para muertos vivientes, demonios o criaturas similares de nivel 3 o inferior hasta que hagas una recuperación de diez minutos o más. El efecto termina si el objetivo hace algo que revele su presencia o posición (atacar, usar una habilidad, mover un objeto grande, etc.). Esfuerzo: sube en 1 el nivel máximo de los enemigos que no pueden percibir al objetivo invisible. Acción para iniciar."
+"t": "Tú o un aliado que toques os volvéis de hecho invisibles para muertos vivientes, demonios o criaturas similares de nivel 3 o inferior hasta que uses una recuperación de diez minutos o más. El efecto termina si el objetivo hace algo que revele su presencia o posición (atacar, usar una habilidad, mover un objeto grande, etc.). Esfuerzo: sube en 1 el nivel máximo de los enemigos que no pueden percibir al objetivo invisible. Acción para iniciar."
 },
 "quells-evil/shield-against-evil": {
 "n": "Escudo contra el mal",
 "c": "1 Intelecto",
-"t": "Te bendices a ti o a un aliado que toques con protección contra muertos vivientes, demonios o criaturas similares hasta que hagas una recuperación de diez minutos o más. La protección facilita las tiradas de defensa contra ese tipo de criaturas y da inmunidad a la influencia mental, el miedo y la posesión (de cualquier origen). Acción."
+"t": "Te bendices a ti o a un aliado que toques con protección contra muertos vivientes, demonios o criaturas similares hasta que uses una recuperación de diez minutos o más. La protección facilita las tiradas de defensa contra ese tipo de criaturas y da inmunidad a la influencia mental, el miedo y la posesión (de cualquier origen). Acción."
 },
 "quells-evil/blast-evil": {
 "n": "Fulminar el mal",
@@ -2014,27 +2014,27 @@
 "quells-evil/unearth-evil": {
 "n": "Desenterrar el mal",
 "c": "4+ Intelecto",
-"t": "Detectas el leve rastro de muertos vivientes, demonios o criaturas similares desde muy lejos. Al usar esta habilidad, generas un «mapa de calor» mental de las criaturas que cumplen los requisitos en un radio de 16 km, con una precisión de unos 30 m. Requiere entre una hora y un día entero de concentración, según lo que el DJ considere adecuado por tiempo, distancia u otras circunstancias, pero no sabes de antemano cuánto tardará. Las criaturas de nivel 4 o superior saben que algo se ha fijado en ellas, aunque no necesariamente qué. Esfuerzo: una vez establecida la ubicación de cada objetivo, conservas la percepción de dónde están (si se mueven, conoces su nueva posición) hasta que hagas una recuperación de una hora o más (requiere dos niveles de Esfuerzo). Acción para iniciar."
+"t": "Detectas el leve rastro de muertos vivientes, demonios o criaturas similares desde muy lejos. Al usar esta habilidad, generas un «mapa de calor» mental de las criaturas que cumplen los requisitos en un radio de 16 km, con una precisión de unos 30 m. Requiere entre una hora y un día entero de concentración, según lo que el DJ considere adecuado por tiempo, distancia u otras circunstancias, pero no sabes de antemano cuánto tardará. Las criaturas de nivel 4 o superior saben que algo se ha fijado en ellas, aunque no necesariamente qué. Esfuerzo: una vez establecida la ubicación de cada objetivo, conservas la percepción de dónde están (si se mueven, conoces su nueva posición) hasta que uses una recuperación de una hora o más (requiere dos niveles de Esfuerzo). Acción para iniciar."
 },
 "quells-evil/rebuke-evil": {
 "n": "Increpar al mal",
 "c": "4+ Intelecto",
-"t": "Increpas a un muerto viviente, demonio o criatura similar a alcance corto contra el que superes un ataque de Intelecto. Hace todo lo posible por cumplir el objetivo que le indiques, aunque le cause daño a él o a sus aliados, hasta que hagas una recuperación de diez minutos o más. Esfuerzo: afecta a un enemigo más (tirada de ataque aparte contra cada uno); tienes que dar la misma orden a todos. Última acción."
+"t": "Increpas a un muerto viviente, demonio o criatura similar a alcance corto contra el que superes un ataque de Intelecto. Hace todo lo posible por cumplir el objetivo que le indiques, aunque le cause daño a él o a sus aliados, hasta que uses una recuperación de diez minutos o más. Esfuerzo: afecta a un enemigo más (tirada de ataque aparte contra cada uno); tienes que dar la misma orden a todos. Última acción."
 },
 "quells-evil/righteous-cloak": {
 "n": "Manto justo",
 "c": "4 Intelecto",
-"t": "Brillas con una luz sana y haces automáticamente 4 de daño (sin tirada) a quien intente tocarte o golpearte con un ataque cuerpo a cuerpo. Mientras está activo, si quieres, una luz brillante ilumina una zona corta a tu alrededor. Dura hasta que hagas una recuperación de diez minutos o más. Capacitador."
+"t": "Brillas con una luz sana y haces automáticamente 4 de daño (sin tirada) a quien intente tocarte o golpearte con un ataque cuerpo a cuerpo. Mientras está activo, si quieres, una luz brillante ilumina una zona corta a tu alrededor. Dura hasta que uses una recuperación de diez minutos o más. Capacitador."
 },
 "quells-evil/shrug-off-evil": {
 "n": "Sacudirse el mal",
 "c": "",
-"t": "Eres inmune a la influencia mental, el miedo y la posesión (de cualquier origen). Ignoras una herida causada por muertos vivientes, demonios o criaturas similares; este aspecto de la habilidad se renueva tras hacer una recuperación de diez horas. Capacitador."
+"t": "Eres inmune a la influencia mental, el miedo y la posesión (de cualquier origen). Ignoras una herida causada por muertos vivientes, demonios o criaturas similares; este aspecto de la habilidad se renueva tras usar una recuperación de diez horas. Capacitador."
 },
 "quells-evil/fence-out-evil": {
 "n": "Cercar el mal",
 "c": "6+ Intelecto",
-"t": "Rodeas una zona corta con un muro transparente e inmaterial de luz purificadora hasta que hagas una recuperación de diez minutos o más. Al aparecer, cada muerto viviente, demonio o criatura similar dentro de la zona (o que entre en ella) recibe automáticamente cada asalto 3 de daño de la luz (ignora la armadura; sin tirada de ataque). Además, cada asalto puedes intentar como tu acción un ataque de Intelecto contra una de esas criaturas de la zona; si aciertas, queda afectada como si hubieras usado con éxito Increpar al mal contra ella. Acción para iniciar; acción para cada uso dirigido."
+"t": "Rodeas una zona corta con un muro transparente e inmaterial de luz purificadora hasta que uses una recuperación de diez minutos o más. Al aparecer, cada muerto viviente, demonio o criatura similar dentro de la zona (o que entre en ella) recibe automáticamente cada asalto 3 de daño de la luz (ignora la armadura; sin tirada de ataque). Además, cada asalto puedes intentar como tu acción un ataque de Intelecto contra una de esas criaturas de la zona; si aciertas, queda afectada como si hubieras usado con éxito Increpar al mal contra ella. Acción para iniciar; acción para cada uso dirigido."
 },
 "quells-evil/supreme-retribution": {
 "n": "Retribución suprema",
@@ -2049,12 +2049,12 @@
 "reveres-a-supernatural-force/defensive-precognition": {
 "n": "Precognición defensiva",
 "c": "4 Intelecto",
-"t": "Esquivas automáticamente todos los ataques a distancia (sin tirada). Sin embargo, en tu siguiente turno después de recibir un ataque a distancia, todas tus demás acciones se dificultan. Dura hasta que hagas una recuperación de diez minutos o más. Acción para iniciar."
+"t": "Esquivas automáticamente todos los ataques a distancia (sin tirada). Sin embargo, en tu siguiente turno después de recibir un ataque a distancia, todas tus demás acciones se dificultan. Dura hasta que uses una recuperación de diez minutos o más. Acción para iniciar."
 },
 "reveres-a-supernatural-force/use-the-force": {
 "n": "Usar la fuerza",
 "c": "2 Intelecto",
-"t": "Ganas un recurso en una tarea que no sea de combate que intentes este turno. No puedes volver a usarla hasta después de hacer una recuperación. Capacitador."
+"t": "Ganas un recurso en una tarea que no sea de combate que intentes este turno. No puedes volver a usarla hasta después de usar una recuperación. Capacitador."
 },
 "reveres-a-supernatural-force/telepathic-message": {
 "n": "Mensaje telepático",
@@ -2114,7 +2114,7 @@
 "rides-the-lightning/lightning-hand": {
 "n": "Mano de relámpago",
 "c": "1 Intelecto",
-"t": "Tus manos crepitan de electricidad, lo que te permite hacer un ataque de toque o un ataque de descarga eléctrica a alcance largo que hace 4 de daño. También, si empuñas un arma, crepita de electricidad y hace 1 de daño adicional; esta versión dura hasta que hagas una recuperación de diez minutos o más. Acción para el toque; capacitador para el arma."
+"t": "Tus manos crepitan de electricidad, lo que te permite hacer un ataque de toque o un ataque de descarga eléctrica a alcance largo que hace 4 de daño. También, si empuñas un arma, crepita de electricidad y hace 1 de daño adicional; esta versión dura hasta que uses una recuperación de diez minutos o más. Acción para el toque; capacitador para el arma."
 },
 "rides-the-lightning/thunder-crash": {
 "n": "Estruendo de trueno",
@@ -2139,12 +2139,12 @@
 "rides-the-lightning/deafening-bolt": {
 "n": "Rayo ensordecedor",
 "c": "3 Intelecto",
-"t": "Lanzas un rayo contra un objetivo a alcance largo. Si aciertas, recibe 5 de daño y queda ensordecido hasta que hagas una recuperación de diez minutos o más: no oye nada y sus tareas de defensa se dificultan. Acción."
+"t": "Lanzas un rayo contra un objetivo a alcance largo. Si aciertas, recibe 5 de daño y queda ensordecido hasta que uses una recuperación de diez minutos o más: no oye nada y sus tareas de defensa se dificultan. Acción."
 },
 "rides-the-lightning/electric-armor": {
 "n": "Armadura eléctrica",
 "c": "3 Intelecto",
-"t": "Los relámpagos crepitan por tu cuerpo hasta que hagas una recuperación de diez minutos o más. La electricidad no te daña, pero hace automáticamente 3 de daño a quien intente tocarte o golpearte con un ataque cuerpo a cuerpo (sin tirada). Mientras está activa, ignoras las heridas moderadas y leves por electricidad y puedes hacer un ataque de toque que hace 2 de daño eléctrico. Capacitador."
+"t": "Los relámpagos crepitan por tu cuerpo hasta que uses una recuperación de diez minutos o más. La electricidad no te daña, pero hace automáticamente 3 de daño a quien intente tocarte o golpearte con un ataque cuerpo a cuerpo (sin tirada). Mientras está activa, ignoras las heridas moderadas y leves por electricidad y puedes hacer un ataque de toque que hace 2 de daño eléctrico. Capacitador."
 },
 "rides-the-lightning/bolts-of-power": {
 "n": "Rayos de poder",
@@ -2154,12 +2154,12 @@
 "rides-the-lightning/subsonic-rumble": {
 "n": "Retumbo subsónico",
 "c": "5 Intelecto",
-"t": "Emites un inquietante retumbo subsónico que la mayoría de criaturas vivas no oye pero que les afecta igualmente. Con las criaturas a alcance corto, los intentos de encantarlas, intimidarlas o asustarlas se facilitan dos pasos. Sigues emitiéndolo hasta que hagas una recuperación de diez minutos o más. Acción para iniciar."
+"t": "Emites un inquietante retumbo subsónico que la mayoría de criaturas vivas no oye pero que les afecta igualmente. Con las criaturas a alcance corto, los intentos de encantarlas, intimidarlas o asustarlas se facilitan dos pasos. Sigues emitiéndolo hasta que uses una recuperación de diez minutos o más. Acción para iniciar."
 },
 "rides-the-lightning/discharge": {
 "n": "Descarga",
 "c": "5+ Intelecto",
-"t": "Adquieres un brillo, un tono o una descarga de energía crepitante visible, inofensiva salvo que decidas dirigirla hacia fuera. Mientras está activa, como acción puedes golpear a hasta tres objetivos a alcance corto (tiradas de ataque de Intelecto separadas); si aciertas, haces 4 de daño. Dura hasta que hagas una recuperación de diez minutos o más. Esfuerzo: aumenta el efecto sobre un objetivo para que, además de recibir daño, pierda su siguiente turno. Acción para iniciar."
+"t": "Adquieres un brillo, un tono o una descarga de energía crepitante visible, inofensiva salvo que decidas dirigirla hacia fuera. Mientras está activa, como acción puedes golpear a hasta tres objetivos a alcance corto (tiradas de ataque de Intelecto separadas); si aciertas, haces 4 de daño. Dura hasta que uses una recuperación de diez minutos o más. Esfuerzo: aumenta el efecto sobre un objetivo para que, además de recibir daño, pierda su siguiente turno. Acción para iniciar."
 },
 "rides-the-lightning/electric-flight": {
 "n": "Vuelo eléctrico",
@@ -2174,7 +2174,7 @@
 "rides-the-lightning/wall-of-lightning": {
 "n": "Muro de relámpagos",
 "c": "8 Intelecto",
-"t": "Creas una barrera de electricidad crepitante formada por seis paneles de 3,5 × 3,5 m, de 2,5 cm de grosor cada uno, dispuestos como quieras. El muro es una barrera de nivel 7. Uno o ambos lados crepitan de electricidad sobrante: quien esté a distancia inmediata de un lado cargado recibe 10 de daño (sin tirada), o el doble si lo atraviesa. Dura hasta que hagas una recuperación de diez minutos o más. Acción para crearlo."
+"t": "Creas una barrera de electricidad crepitante formada por seis paneles de 3,5 × 3,5 m, de 2,5 cm de grosor cada uno, dispuestos como quieras. El muro es una barrera de nivel 7. Uno o ambos lados crepitan de electricidad sobrante: quien esté a distancia inmediata de un lado cargado recibe 10 de daño (sin tirada), o el doble si lo atraviesa. Dura hasta que uses una recuperación de diez minutos o más. Acción para crearlo."
 },
 "sneaks-through-the-shadows": {
 "n": "Se escabulle entre las sombras",
@@ -2184,7 +2184,7 @@
 "sneaks-through-the-shadows/always-speedy": {
 "n": "Siempre veloz",
 "c": "",
-"t": "Cada vez que haces una recuperación, si tu reserva de Velocidad no está llena, recuperas 1 punto extra en ella. Puedes elegir esta habilidad hasta tres veces."
+"t": "Cada vez que usas una recuperación, si tu reserva de Velocidad no está llena, recuperas 1 punto extra en ella. Puedes elegir esta habilidad hasta tres veces."
 },
 "sneaks-through-the-shadows/eyes-adjusted": {
 "n": "Ojos acostumbrados",
@@ -2194,7 +2194,7 @@
 "sneaks-through-the-shadows/natural-sneak": {
 "n": "Sigilo natural",
 "c": "2+ Intelecto",
-"t": "Cuando tiras en una tarea de forzar cerraduras, percepción, robar bolsillos o sigilo y sacas menos de 6, cuenta como un 6 (así no hay intrusión del DJ si sacas un 1). Esta habilidad se renueva al hacer una recuperación. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Capacitador. En el rango 3: el resultado mínimo de esta habilidad sube a 9."
+"t": "Cuando tiras en una tarea de forzar cerraduras, percepción, robar bolsillos o sigilo y sacas menos de 6, cuenta como un 6 (así no hay intrusión del DJ si sacas un 1). Esta habilidad se renueva al usar una recuperación. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Capacitador. En el rango 3: el resultado mínimo de esta habilidad sube a 9."
 },
 "sneaks-through-the-shadows/underworld-contacts": {
 "n": "Contactos en los bajos fondos",
@@ -2219,7 +2219,7 @@
 "sneaks-through-the-shadows/dirty-fighter": {
 "n": "Luchador sucio",
 "c": "2 Velocidad",
-"t": "Haz un ataque de Velocidad contra un enemigo a alcance largo al que quieras distraer, cegar, molestar, entorpecer o estorbar de otro modo. Si aciertas, dificultas sus ataques y defensas hasta que hagas una recuperación de diez minutos o más. Acción."
+"t": "Haz un ataque de Velocidad contra un enemigo a alcance largo al que quieras distraer, cegar, molestar, entorpecer o estorbar de otro modo. Si aciertas, dificultas sus ataques y defensas hasta que uses una recuperación de diez minutos o más. Acción."
 },
 "sneaks-through-the-shadows/slippery-customer": {
 "n": "Escurridizo",
@@ -2239,7 +2239,7 @@
 "solves-mysteries/investigative-knack": {
 "n": "Olfato de investigador",
 "c": "2+ Intelecto",
-"t": "Tienes buen ojo para el detalle y captas señales sutiles de que alguien miente u oculta información. Cuando estudias una zona en busca de pistas o hablas con alguien (o lo interrogas) para obtener información, si sacas 9 o menos en tu tarea de percepción, interacción o reconocer intenciones, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Dura hasta que hagas una recuperación de diez minutos o más. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Acción para iniciar. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+"t": "Tienes buen ojo para el detalle y captas señales sutiles de que alguien miente u oculta información. Cuando estudias una zona en busca de pistas o hablas con alguien (o lo interrogas) para obtener información, si sacas 9 o menos en tu tarea de percepción, interacción o reconocer intenciones, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Dura hasta que uses una recuperación de diez minutos o más. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Acción para iniciar. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
 },
 "solves-mysteries/sense-weakness": {
 "n": "Percibir debilidades",
@@ -2254,7 +2254,7 @@
 "solves-mysteries/master-of-disguise": {
 "n": "Maestro del disfraz",
 "c": "2+ Intelecto",
-"t": "Puedes crear un disfraz como Última acción en vez del minuto o más que suele requerirse. Cuando tiras en una tarea de disfraz y sacas menos de 6, cuenta como un 6 (así no hay intrusión del DJ si sacas un 1). Esta habilidad se renueva al hacer una recuperación. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Capacitador. En el rango 3: el resultado mínimo de esta habilidad sube a 9."
+"t": "Puedes crear un disfraz como Última acción en vez del minuto o más que suele requerirse. Cuando tiras en una tarea de disfraz y sacas menos de 6, cuenta como un 6 (así no hay intrusión del DJ si sacas un 1). Esta habilidad se renueva al usar una recuperación. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Capacitador. En el rango 3: el resultado mínimo de esta habilidad sube a 9."
 },
 "solves-mysteries/out-of-harms-way": {
 "n": "Fuera de peligro",
@@ -2269,7 +2269,7 @@
 "solves-mysteries/ditch-assumption": {
 "n": "Descartar suposiciones",
 "c": "4 Intelecto",
-"t": "Tras observar e investigar con cuidado (interrogar a uno o más PNJ sobre un tema, registrar una zona o un archivo, replantearte lo que creías o algo similar), ves claro un asunto: el DJ te señala una suposición falsa que tienes sobre tu investigación actual. Por ejemplo, si has llegado a creer un dato erróneo, el DJ te lo dice; o si tienes varios posibles sospechosos de un delito, el DJ descarta a uno. Sin embargo, si no trabajas con información falsa ni sigues una pista falsa, y no tienes sospechosos incorrectos que descartar, no averiguas nada. Esta habilidad se renueva tras hacer una recuperación de diez horas. Diez minutos para iniciar."
+"t": "Tras observar e investigar con cuidado (interrogar a uno o más PNJ sobre un tema, registrar una zona o un archivo, replantearte lo que creías o algo similar), ves claro un asunto: el DJ te señala una suposición falsa que tienes sobre tu investigación actual. Por ejemplo, si has llegado a creer un dato erróneo, el DJ te lo dice; o si tienes varios posibles sospechosos de un delito, el DJ descarta a uno. Sin embargo, si no trabajas con información falsa ni sigues una pista falsa, y no tienes sospechosos incorrectos que descartar, no averiguas nada. Esta habilidad se renueva tras usar una recuperación de diez horas. Diez minutos para iniciar."
 },
 "solves-mysteries/defend-and-respond": {
 "n": "Defender y responder",
@@ -2279,7 +2279,7 @@
 "solves-mysteries/lead-by-inquiry": {
 "n": "Guiar con preguntas",
 "c": "",
-"t": "Cuando tú y cualquier número de aliados pasáis juntos una recuperación de diez horas (tuya o suya), los aliados cuentan como entrenados en percepción y reconocer intenciones. El beneficio se mantiene mientras sigas a distancia larga de ellos; a más distancia queda en suspenso, pero se reanuda automáticamente si vuelves a su alcance. Termina si haces una recuperación de diez horas lejos de ellos. Capacitador."
+"t": "Cuando tú y cualquier número de aliados pasáis juntos una recuperación de diez horas (tuya o suya), los aliados cuentan como entrenados en percepción y reconocer intenciones. El beneficio se mantiene mientras sigas a distancia larga de ellos; a más distancia queda en suspenso, pero se reanuda automáticamente si vuelves a su alcance. Termina si usas una recuperación de diez horas lejos de ellos. Capacitador."
 },
 "solves-mysteries/defuse-situation": {
 "n": "Desactivar la situación",
@@ -2289,7 +2289,7 @@
 "solves-mysteries/infer-thoughts": {
 "n": "Inferir pensamientos",
 "c": "4+ Intelecto",
-"t": "Si tratas con un objetivo de nivel 4 o inferior o lo estudias durante al menos un asalto, comprendes tan bien sus pensamientos superficiales que en la práctica le lees la mente (sin tirada), aunque no quiera. Tienes que poder verlo. Una vez que captas lo que piensa (por su lenguaje corporal, su forma de hablar y lo que dice y calla), puedes seguir infiriendo sus pensamientos superficiales hasta que hagas una recuperación de diez minutos o más, mientras puedas verlo y oírlo. Esfuerzo: sube en 1 el nivel máximo del objetivo al que puedes afectar. Acción para preparar; acción para iniciar."
+"t": "Si tratas con un objetivo de nivel 4 o inferior o lo estudias durante al menos un asalto, comprendes tan bien sus pensamientos superficiales que en la práctica le lees la mente (sin tirada), aunque no quiera. Tienes que poder verlo. Una vez que captas lo que piensa (por su lenguaje corporal, su forma de hablar y lo que dice y calla), puedes seguir infiriendo sus pensamientos superficiales hasta que uses una recuperación de diez minutos o más, mientras puedas verlo y oírlo. Esfuerzo: sube en 1 el nivel máximo del objetivo al que puedes afectar. Acción para preparar; acción para iniciar."
 },
 "solves-mysteries/knowing-the-unknown": {
 "n": "Conocer lo desconocido",
@@ -2304,12 +2304,12 @@
 "speaks-for-the-land/healing-fruit": {
 "n": "Fruto sanador",
 "c": "1 Intelecto",
-"t": "Infundes magia curativa en un fruto o semilla. La criatura que lo come recupera 1d6 en una reserva a su elección o se cura una herida leve. No puede volver a obtener este beneficio hasta que haga una recuperación de diez minutos o más. Un fruto sin comer pierde automáticamente su magia curativa cuando haces una recuperación de diez minutos o más. Acción."
+"t": "Infundes magia curativa en un fruto o semilla. La criatura que lo come recupera 1d6 en una reserva a su elección o se cura una herida leve. No puede volver a obtener este beneficio hasta que use una recuperación de diez minutos o más. Un fruto sin comer pierde automáticamente su magia curativa cuando usas una recuperación de diez minutos o más. Acción."
 },
 "speaks-for-the-land/seeds-of-fury": {
 "n": "Semillas de furia",
 "c": "1 Intelecto",
-"t": "Lanzas al aire un puñado de semillas que se prenden y vuelan hacia un objetivo a alcance largo, arañando el aire con estelas de humo retorcidas. Si aciertas, hace 3 de daño y prende fuego al objetivo, que recibe 1 de daño adicional por asalto hasta que use una acción para apagar las llamas o hasta que hagas una recuperación de diez minutos o más. Acción para iniciar."
+"t": "Lanzas al aire un puñado de semillas que se prenden y vuelan hacia un objetivo a alcance largo, arañando el aire con estelas de humo retorcidas. Si aciertas, hace 3 de daño y prende fuego al objetivo, que recibe 1 de daño adicional por asalto hasta que use una acción para apagar las llamas o hasta que uses una recuperación de diez minutos o más. Acción para iniciar."
 },
 "speaks-for-the-land/wild-affinity": {
 "n": "Afinidad salvaje",
@@ -2324,17 +2324,17 @@
 "speaks-for-the-land/natures-grip": {
 "n": "Presa de la naturaleza",
 "c": "3+ Intelecto",
-"t": "Haz un ataque de Intelecto contra un enemigo a alcance corto. Si aciertas, ramas, hierba u otra vegetación natural lo enredan y lo sujetan hasta que hagas una recuperación de diez minutos o más. No puede moverse de donde está y sus tareas físicas (incluidos ataques y defensa) se dificultan. Si intenta soltarse, puedes seguir reteniéndolo con otra tirada de Intelecto. También puedes usar esta habilidad para apartar plantas enredadoras en una zona inmediata a alcance corto y dejar un espacio despejado. Esfuerzo: haz 3 de daño el asalto en que el enemigo queda sujeto por primera vez. Acción."
+"t": "Haz un ataque de Intelecto contra un enemigo a alcance corto. Si aciertas, ramas, hierba u otra vegetación natural lo enredan y lo sujetan hasta que uses una recuperación de diez minutos o más. No puede moverse de donde está y sus tareas físicas (incluidos ataques y defensa) se dificultan. Si intenta soltarse, puedes seguir reteniéndolo con otra tirada de Intelecto. También puedes usar esta habilidad para apartar plantas enredadoras en una zona inmediata a alcance corto y dejar un espacio despejado. Esfuerzo: haz 3 de daño el asalto en que el enemigo queda sujeto por primera vez. Acción."
 },
 "speaks-for-the-land/natures-voice": {
 "n": "Voz de la naturaleza",
 "c": "3+ Intelecto",
-"t": "Haz una tirada de ataque de Intelecto para calmar a una bestia no humana a alcance largo que pueda verte. Tienes que hablarle (aunque no necesita entender tus palabras). Se mantiene tranquila hasta que hagas una recuperación de diez minutos o más o mientras sigas usando tu acción para calmarla. Esfuerzo: afecta a una bestia más (2 de Intelecto). Acción."
+"t": "Haz una tirada de ataque de Intelecto para calmar a una bestia no humana a alcance largo que pueda verte. Tienes que hablarle (aunque no necesita entender tus palabras). Se mantiene tranquila hasta que uses una recuperación de diez minutos o más o mientras sigas usando tu acción para calmarla. Esfuerzo: afecta a una bestia más (2 de Intelecto). Acción."
 },
 "speaks-for-the-land/moon-shape": {
 "n": "Forma lunar",
 "c": "4+ Intelecto",
-"t": "Te conviertes en una bestia primigenia regida por la furia y el instinto hasta que hagas una recuperación de una hora o más. No puedes activarla si no estás a la luz de la luna (al menos media luna). En forma bestial, sumas 8 puntos a tu reserva de Potencia y 2 a la de Velocidad, y +2 a tu Ventaja de Potencia y de Velocidad. Como intrusión del DJ, puedes entrar en cólera y atacar a toda criatura viva a alcance corto; la cólera dura hasta que vuelvas a tu forma normal. Volver a propósito a tu forma normal es una tarea de Intelecto de dificultad 2. De vuelta a tu forma normal, quedas dificultado hasta que hagas una recuperación de una hora o más. Además, si no mataste y devoraste al menos una criatura de buen tamaño en forma bestial, tus tareas se dificultan hasta que hagas una recuperación de diez horas. Esfuerzo: actívala aunque no estés a la luz de la luna. Acción para cambiar; acción para volver."
+"t": "Te conviertes en una bestia primigenia regida por la furia y el instinto hasta que uses una recuperación de una hora o más. No puedes activarla si no estás a la luz de la luna (al menos media luna). En forma bestial, sumas 8 puntos a tu reserva de Potencia y 2 a la de Velocidad, y +2 a tu Ventaja de Potencia y de Velocidad. Como intrusión del DJ, puedes entrar en cólera y atacar a toda criatura viva a alcance corto; la cólera dura hasta que vuelvas a tu forma normal. Volver a propósito a tu forma normal es una tarea de Intelecto de dificultad 2. De vuelta a tu forma normal, quedas dificultado hasta que uses una recuperación de una hora o más. Además, si no mataste y devoraste al menos una criatura de buen tamaño en forma bestial, tus tareas se dificultan hasta que uses una recuperación de diez horas. Esfuerzo: actívala aunque no estés a la luz de la luna. Acción para cambiar; acción para volver."
 },
 "speaks-for-the-land/wilderness-encouragement": {
 "n": "Ánimo de la naturaleza",
@@ -2344,12 +2344,12 @@
 "speaks-for-the-land/insect-eruption": {
 "n": "Erupción de insectos",
 "c": "6 Intelecto",
-"t": "Llamas a un enjambre de insectos que te obedece hasta que hagas una recuperación de diez minutos o más. Aparecen a alcance largo y hacen lo que les ordenes. Dificultan automáticamente a cualquier número de enemigos a ese alcance (sin tirada). Si usas una acción para concentrar el enjambre en una zona inmediata, puedes hacer un ataque de Intelecto contra cada enemigo de esa zona; si aciertas, recibe 2 de daño. Puedes usar el enjambre para mover objetos pesados con su esfuerzo colectivo, roer muros de madera y otras acciones propias de un enjambre sobrenatural. No puedes usarla donde los insectos no pueden llegar, como una habitación sellada. Acción para iniciar."
+"t": "Llamas a un enjambre de insectos que te obedece hasta que uses una recuperación de diez minutos o más. Aparecen a alcance largo y hacen lo que les ordenes. Dificultan automáticamente a cualquier número de enemigos a ese alcance (sin tirada). Si usas una acción para concentrar el enjambre en una zona inmediata, puedes hacer un ataque de Intelecto contra cada enemigo de esa zona; si aciertas, recibe 2 de daño. Puedes usar el enjambre para mover objetos pesados con su esfuerzo colectivo, roer muros de madera y otras acciones propias de un enjambre sobrenatural. No puedes usarla donde los insectos no pueden llegar, como una habitación sellada. Acción para iniciar."
 },
 "speaks-for-the-land/call-the-storm": {
 "n": "Llamar a la tormenta",
 "c": "7 Intelecto",
-"t": "Creas nubes de tormenta oscuras y retumbantes en una zona muy larga. Como acción, puedes hacer un ataque de Intelecto para alcanzar a un enemigo con un rayo y hacerle 4 de daño (puedes usar Esfuerzo en el ataque o el daño con normalidad). Dura hasta que hagas una recuperación de diez minutos o más. Tres acciones para iniciar; acción para invocar un rayo."
+"t": "Creas nubes de tormenta oscuras y retumbantes en una zona muy larga. Como acción, puedes hacer un ataque de Intelecto para alcanzar a un enemigo con un rayo y hacerle 4 de daño (puedes usar Esfuerzo en el ataque o el daño con normalidad). Dura hasta que uses una recuperación de diez minutos o más. Tres acciones para iniciar; acción para invocar un rayo."
 },
 "speaks-for-the-land/earthshake": {
 "n": "Sacudida de tierra",
@@ -2405,7 +2405,7 @@
 "stands-like-a-bastion/inspiring-defense": {
 "n": "Defensa inspiradora",
 "c": "",
-"t": "Cuando superas una tirada de defensa contra un ataque que te habría asestado un golpe o efecto especialmente poderoso (a juicio del DJ), recuperas 4 puntos de tu reserva de Potencia. Cada uso después del primero devuelve 1 punto menos; esto se renueva tras hacer una recuperación de diez horas. Capacitador."
+"t": "Cuando superas una tirada de defensa contra un ataque que te habría asestado un golpe o efecto especialmente poderoso (a juicio del DJ), recuperas 4 puntos de tu reserva de Potencia. Cada uso después del primero devuelve 1 punto menos; esto se renueva tras usar una recuperación de diez horas. Capacitador."
 },
 "stands-like-a-bastion/tower-of-will": {
 "n": "Torre de voluntad",
@@ -2485,7 +2485,7 @@
 "strikes-with-mystic-might/perfected-form": {
 "n": "Forma perfeccionada",
 "c": "",
-"t": "Tu fuente mística te imbuye hasta que hagas una recuperación de una hora o más y te da 3 puntos que puedes sumar a cualquiera de tus reservas, aunque superen su máximo normal. Los puntos duran hasta que los gastes o termine la duración. Además, mientras dura, tus ojos y manos brillan con el poder de tu fuente mística y haces 3 de daño adicional con tus ataques desarmados. Esta habilidad se renueva tras tu siguiente recuperación de una hora o más. Última acción."
+"t": "Tu fuente mística te imbuye hasta que uses una recuperación de una hora o más y te da 3 puntos que puedes sumar a cualquiera de tus reservas, aunque superen su máximo normal. Los puntos duran hasta que los gastes o termine la duración. Además, mientras dura, tus ojos y manos brillan con el poder de tu fuente mística y haces 3 de daño adicional con tus ataques desarmados. Esta habilidad se renueva tras tu siguiente recuperación de una hora o más. Última acción."
 },
 "tends-to-the-wounded": {
 "n": "Atiende a los heridos",
@@ -2495,12 +2495,12 @@
 "tends-to-the-wounded/easing-the-pain": {
 "n": "Aliviar el dolor",
 "c": "",
-"t": "Los aliados a alcance inmediato (tú incluido) que hacen una recuperación suman +1 a su tirada."
+"t": "Los aliados a alcance inmediato (tú incluido) que usan una recuperación suman +1 a su tirada."
 },
 "tends-to-the-wounded/healing-hand": {
 "n": "Mano sanadora",
 "c": "1+ Intelecto",
-"t": "Con un toque, reduces un paso la gravedad de una herida (salvo que el objetivo no pueda recibir más heridas de esa gravedad menor). Una herida leve curada desaparece del todo, una moderada pasa a leve o una grave pasa a moderada. Cada vez que usas Mano sanadora, el coste en Intelecto sube en 1; vuelve a 1 tras hacer una recuperación. Última acción."
+"t": "Con un toque, reduces un paso la gravedad de una herida (salvo que el objetivo no pueda recibir más heridas de esa gravedad menor). Una herida leve curada desaparece del todo, una moderada pasa a leve o una grave pasa a moderada. Cada vez que usas Mano sanadora, el coste en Intelecto sube en 1; vuelve a 1 tras usar una recuperación. Última acción."
 },
 "tends-to-the-wounded/alleviate-malady": {
 "n": "Aliviar dolencias",
@@ -2510,27 +2510,27 @@
 "tends-to-the-wounded/healing-beacon": {
 "n": "Faro sanador",
 "c": "3 Intelecto",
-"t": "Uno de tus aliados se cura automáticamente cada vez que usas tu poder curativo. Elige un aliado como tu faro sanador. Hasta que hagas una recuperación de una hora o más, cuando usas Mano sanadora o una habilidad similar, el aliado faro también reduce la gravedad de una de sus heridas (siempre que no sea más grave que la que curas). Tiene que estar a alcance corto de ti para obtener esta curación, y no la obtiene si lo curas directamente. Acción para iniciar."
+"t": "Uno de tus aliados se cura automáticamente cada vez que usas tu poder curativo. Elige un aliado como tu faro sanador. Hasta que uses una recuperación de una hora o más, cuando usas Mano sanadora o una habilidad similar, el aliado faro también reduce la gravedad de una de sus heridas (siempre que no sea más grave que la que curas). Tiene que estar a alcance corto de ti para obtener esta curación, y no la obtiene si lo curas directamente. Acción para iniciar."
 },
 "tends-to-the-wounded/font-of-healing": {
 "n": "Fuente de curación",
 "c": "",
-"t": "Tienes dentro un poder curativo al que otros pueden acceder con un toque. Si un aliado usa su acción para tocarte y gasta 2 de Intelecto, elige si se cura dos heridas leves o una moderada, o (si gasta 5 de Intelecto) una grave. Una vez la usa, no puede volver a hacerlo hasta después de hacer una recuperación de diez horas. Capacitador."
+"t": "Tienes dentro un poder curativo al que otros pueden acceder con un toque. Si un aliado usa su acción para tocarte y gasta 2 de Intelecto, elige si se cura dos heridas leves o una moderada, o (si gasta 5 de Intelecto) una grave. Una vez la usa, no puede volver a hacerlo hasta después de usar una recuperación de diez horas. Capacitador."
 },
 "tends-to-the-wounded/font-of-recovery": {
 "n": "Fuente de recuperación",
 "c": "",
-"t": "Tienes dentro un poder reparador al que otros pueden acceder con un toque. Si un aliado usa su acción para tocarte y gasta 1 de Intelecto, elige si recupera 1d6 puntos de Potencia o 1d6 de Velocidad. Una vez la usa, no puede volver a hacerlo hasta después de hacer una recuperación de diez horas. Capacitador."
+"t": "Tienes dentro un poder reparador al que otros pueden acceder con un toque. Si un aliado usa su acción para tocarte y gasta 1 de Intelecto, elige si recupera 1d6 puntos de Potencia o 1d6 de Velocidad. Una vez la usa, no puede volver a hacerlo hasta después de usar una recuperación de diez horas. Capacitador."
 },
 "tends-to-the-wounded/healing-shield": {
 "n": "Escudo sanador",
 "c": "",
-"t": "Refuerzas la salud de un aliado con poder curativo para protegerlo de las heridas. Elige un aliado a alcance corto: gana un recurso que puede usar en una tirada de bloqueo a su elección y que se gasta al usarlo. Esta habilidad se renueva al hacer una recuperación. Capacitador."
+"t": "Refuerzas la salud de un aliado con poder curativo para protegerlo de las heridas. Elige un aliado a alcance corto: gana un recurso que puede usar en una tirada de bloqueo a su elección y que se gasta al usarlo. Esta habilidad se renueva al usar una recuperación. Capacitador."
 },
 "tends-to-the-wounded/resuscitate": {
 "n": "Reanimar",
 "c": "5+ Intelecto",
-"t": "Puedes reanimar a un PJ herido que toques: se cura, a su elección, una herida grave, una moderada o tres leves. Si el personaje ha muerto por heridas pero sigue de una pieza y ha pasado menos de un minuto desde que murió, puedes reanimarlo como se indica si superas una tarea de curación de nivel 6. Si la usas sobre un PNJ muerto sin salud, que sigue de una pieza y lleva menos de un minuto muerto, lo reanimas con 1 de salud. Cada vez que usas Reanimar, el coste en Intelecto sube en 3; vuelve a su valor base tras hacer una recuperación. Acción."
+"t": "Puedes reanimar a un PJ herido que toques: se cura, a su elección, una herida grave, una moderada o tres leves. Si el personaje ha muerto por heridas pero sigue de una pieza y ha pasado menos de un minuto desde que murió, puedes reanimarlo como se indica si superas una tarea de curación de nivel 6. Si la usas sobre un PNJ muerto sin salud, que sigue de una pieza y lleva menos de un minuto muerto, lo reanimas con 1 de salud. Cada vez que usas Reanimar, el coste en Intelecto sube en 3; vuelve a su valor base tras usar una recuperación. Acción."
 },
 "tends-to-the-wounded/ranged-healer": {
 "n": "Sanador a distancia",
@@ -2540,12 +2540,12 @@
 "tends-to-the-wounded/rewind-time": {
 "n": "Rebobinar el tiempo",
 "c": "5 Intelecto",
-"t": "Rebobinas el tiempo unos segundos para que alguien deshaga lo que acaba de hacer y haga otra acción. Elige una criatura a alcance corto que haya actuado la última. El tiempo retrocede justo antes de esa acción y vuelve a ser su turno: puede repetir la misma acción o intentar otra cosa. No sabe lo que hizo antes ni que invertiste el tiempo, pero quizá note que hiciste algo. Esta habilidad se renueva al hacer una recuperación. Capacitador."
+"t": "Rebobinas el tiempo unos segundos para que alguien deshaga lo que acaba de hacer y haga otra acción. Elige una criatura a alcance corto que haya actuado la última. El tiempo retrocede justo antes de esa acción y vuelve a ser su turno: puede repetir la misma acción o intentar otra cosa. No sabe lo que hizo antes ni que invertiste el tiempo, pero quizá note que hiciste algo. Esta habilidad se renueva al usar una recuperación. Capacitador."
 },
 "tends-to-the-wounded/greater-healing-hand": {
 "n": "Mano sanadora mayor",
 "c": "4+ Intelecto",
-"t": "Eliminas todas las heridas leves de un personaje que toques, reduces dos heridas moderadas a leves o reduces dos graves a moderadas. Cada vez que la usas, el coste en Intelecto sube en 2; vuelve a su valor base tras hacer una recuperación. Capacitador."
+"t": "Eliminas todas las heridas leves de un personaje que toques, reduces dos heridas moderadas a leves o reduces dos graves a moderadas. Cada vez que la usas, el coste en Intelecto sube en 2; vuelve a su valor base tras usar una recuperación. Capacitador."
 },
 "tends-to-the-wounded/superior-healer": {
 "n": "Sanador superior",
@@ -2575,7 +2575,7 @@
 "walks-through-walls/defensive-phasing": {
 "n": "Desfase defensivo",
 "c": "2 Intelecto o Velocidad",
-"t": "Hasta que hagas una recuperación de diez minutos o más, ganas un recurso en tus tareas de esquivar porque cambias selectivamente de fase para que algunos ataques te atraviesen sin daño. Acción para iniciar."
+"t": "Hasta que uses una recuperación de diez minutos o más, ganas un recurso en tus tareas de esquivar porque cambias selectivamente de fase para que algunos ataques te atraviesen sin daño. Acción para iniciar."
 },
 "walks-through-walls/phase-grasp": {
 "n": "Agarre de fase",
@@ -2615,7 +2615,7 @@
 "walks-through-walls/untouchable": {
 "n": "Intocable",
 "c": "6 Intelecto",
-"t": "Cambias tu estado de fase de modo que ni afectas ni te afecta la materia ni la energía normales. Solo te afectan los ataques mentales y las energías, artefactos o habilidades transdimensionales especiales, pero del mismo modo no puedes atacar, tocar ni afectar físicamente nada. Dura hasta que hagas una recuperación de diez minutos o más. Acción para iniciar."
+"t": "Cambias tu estado de fase de modo que ni afectas ni te afecta la materia ni la energía normales. Solo te afectan los ataques mentales y las energías, artefactos o habilidades transdimensionales especiales, pero del mismo modo no puedes atacar, tocar ni afectar físicamente nada. Dura hasta que uses una recuperación de diez minutos o más. Acción para iniciar."
 },
 "walks-through-walls/phase-foe": {
 "n": "Desfasar enemigo",
@@ -2640,17 +2640,17 @@
 "wears-a-sheen-of-ice/ice-armor": {
 "n": "Armadura de hielo",
 "c": "1 Intelecto",
-"t": "Cubres tu cuerpo con una capa de hielo hasta que hagas una recuperación de diez minutos o más, lo que facilita tus tiradas de defensa de Potencia para bloquear ataques. Además, la gravedad de las heridas por efectos de frío y hielo usados contra ti baja un paso (grave a moderada, moderada a leve, leve a ninguna); por ejemplo, si te alcanza una descarga de frío que causa una herida moderada, recibes una leve. Puedes hacer contra un enemigo un ataque desarmado ligero de «toque gélido» que hace 2 de daño de frío con la armadura de hielo si aciertas. Capacitador."
+"t": "Cubres tu cuerpo con una capa de hielo hasta que uses una recuperación de diez minutos o más, lo que facilita tus tiradas de defensa de Potencia para bloquear ataques. Además, la gravedad de las heridas por efectos de frío y hielo usados contra ti baja un paso (grave a moderada, moderada a leve, leve a ninguna); por ejemplo, si te alcanza una descarga de frío que causa una herida moderada, recibes una leve. Puedes hacer contra un enemigo un ataque desarmado ligero de «toque gélido» que hace 2 de daño de frío con la armadura de hielo si aciertas. Capacitador."
 },
 "wears-a-sheen-of-ice/lower-temperature": {
 "n": "Bajar la temperatura",
 "c": "1 Intelecto",
-"t": "Enfrías hasta 15 °C una zona inmediata hasta que hagas una recuperación de diez minutos o más (esto reduce dos pasos la gravedad de las heridas por entornos calurosos). El efecto se centra en ti y se mueve contigo. Acción."
+"t": "Enfrías hasta 15 °C una zona inmediata hasta que uses una recuperación de diez minutos o más (esto reduce dos pasos la gravedad de las heridas por entornos calurosos). El efecto se centra en ti y se mueve contigo. Acción."
 },
 "wears-a-sheen-of-ice/frost-bolt": {
 "n": "Rayo de escarcha",
 "c": "2 Intelecto",
-"t": "Emites un rayo de frío intenso contra un enemigo a alcance corto. Si acierta, hace 4 de daño de frío. En vez de atacar con el rayo, puedes intensificar el frío de la Armadura de hielo en tus manos, sumando 2 de daño a tu toque gélido y a tus armas cuerpo a cuerpo y a distancia; este aspecto de la habilidad dura hasta que hagas una recuperación de diez minutos o más. Acción; acción para iniciar el frío más intenso."
+"t": "Emites un rayo de frío intenso contra un enemigo a alcance corto. Si acierta, hace 4 de daño de frío. En vez de atacar con el rayo, puedes intensificar el frío de la Armadura de hielo en tus manos, sumando 2 de daño a tu toque gélido y a tus armas cuerpo a cuerpo y a distancia; este aspecto de la habilidad dura hasta que uses una recuperación de diez minutos o más. Acción; acción para iniciar el frío más intenso."
 },
 "wears-a-sheen-of-ice/ice-slide": {
 "n": "Tobogán de hielo",
@@ -2660,12 +2660,12 @@
 "wears-a-sheen-of-ice/ice-creation": {
 "n": "Creación de hielo",
 "c": "4+ Intelecto",
-"t": "Creas un objeto de tu tamaño o menor de hielo de nivel 3. Es tosco y no puede tener partes móviles: una espada, un escudo, un muro pequeño, una escalera corta, etc. Si no estás a alcance corto del objeto, se rompe o se derrite cuando haces una recuperación de diez minutos o más. Puedes elegir esta habilidad varias veces; cada vez adicional duplicas el tamaño base del objeto que puedes crear. Esfuerzo: duplica el tamaño máximo del objeto. Aumenta en una categoría de alcance la distancia a la que puede estar de ti. Acción."
+"t": "Creas un objeto de tu tamaño o menor de hielo de nivel 3. Es tosco y no puede tener partes móviles: una espada, un escudo, un muro pequeño, una escalera corta, etc. Si no estás a alcance corto del objeto, se rompe o se derrite cuando usas una recuperación de diez minutos o más. Puedes elegir esta habilidad varias veces; cada vez adicional duplicas el tamaño base del objeto que puedes crear. Esfuerzo: duplica el tamaño máximo del objeto. Aumenta en una categoría de alcance la distancia a la que puede estar de ti. Acción."
 },
 "wears-a-sheen-of-ice/winters-grip": {
 "n": "Presa del invierno",
 "c": "3+ Intelecto",
-"t": "Haz un ataque de Intelecto contra un enemigo a alcance corto. Si aciertas, queda retenido por una capa de hielo hasta que hagas una recuperación de diez minutos o más o hasta que use una acción para soltarse. No puede moverse de donde está y sus tareas físicas (incluidos ataques y defensa) se dificultan. Si la Armadura de hielo está activa y en su lugar tocas al enemigo, el ataque de Intelecto se facilita y sumas los 2 de daño de tu toque gélido. Esfuerzo: haz 3 de daño de frío el asalto en que el enemigo queda retenido por primera vez. Acción."
+"t": "Haz un ataque de Intelecto contra un enemigo a alcance corto. Si aciertas, queda retenido por una capa de hielo hasta que uses una recuperación de diez minutos o más o hasta que use una acción para soltarse. No puede moverse de donde está y sus tareas físicas (incluidos ataques y defensa) se dificultan. Si la Armadura de hielo está activa y en su lugar tocas al enemigo, el ataque de Intelecto se facilita y sumas los 2 de daño de tu toque gélido. Esfuerzo: haz 3 de daño de frío el asalto en que el enemigo queda retenido por primera vez. Acción."
 },
 "wears-a-sheen-of-ice/improved-ice-armor": {
 "n": "Armadura de hielo mejorada",
@@ -2675,12 +2675,12 @@
 "wears-a-sheen-of-ice/cold-burst": {
 "n": "Estallido de frío",
 "c": "5+ Intelecto",
-"t": "Emites un estallido de frío de alcance corto en todas direcciones desde ti. Haz un ataque de Intelecto contra cualquier número de criaturas a ese alcance; si aciertas, reciben 5 de daño de frío. Cada nivel de Esfuerzo para daño extra sube el daño en 2 puntos, o en 1 si fallas el ataque. Esfuerzo: intenta cegar a todos los objetivos que alcances (una segunda tirada de ataque con éxito contra un objetivo lo ciega, dificultando dos pasos todas las tareas que dependen de la vista, hasta que hagas una recuperación de diez minutos o más). Acción."
+"t": "Emites un estallido de frío de alcance corto en todas direcciones desde ti. Haz un ataque de Intelecto contra cualquier número de criaturas a ese alcance; si aciertas, reciben 5 de daño de frío. Cada nivel de Esfuerzo para daño extra sube el daño en 2 puntos, o en 1 si fallas el ataque. Esfuerzo: intenta cegar a todos los objetivos que alcances (una segunda tirada de ataque con éxito contra un objetivo lo ciega, dificultando dos pasos todas las tareas que dependen de la vista, hasta que uses una recuperación de diez minutos o más). Acción."
 },
 "wears-a-sheen-of-ice/ice-monster": {
 "n": "Monstruo de hielo",
 "c": "6 Intelecto",
-"t": "Creas un autómata de nieve o hielo de tu forma y tamaño aproximados, que dura hasta que hagas una recuperación de diez minutos o más. Este aliado PNJ actúa como le indiques cada asalto. Dirigirlo es una acción, y solo puedes darle órdenes si estás a alcance largo de él. Sin órdenes, sigue cumpliendo la anterior. También puedes darle una acción programada sencilla, como «Espera aquí y ataca a quien se acerque a alcance corto hasta matarlo». Acción para crearlo; acción para dirigirlo. (Autómata: nivel 5; Armadura 1; sus ataques contundentes hacen 6 de daño, la mitad por frío intenso.)"
+"t": "Creas un autómata de nieve o hielo de tu forma y tamaño aproximados, que dura hasta que uses una recuperación de diez minutos o más. Este aliado PNJ actúa como le indiques cada asalto. Dirigirlo es una acción, y solo puedes darle órdenes si estás a alcance largo de él. Sin órdenes, sigue cumpliendo la anterior. También puedes darle una acción programada sencilla, como «Espera aquí y ataca a quien se acerque a alcance corto hasta matarlo». Acción para crearlo; acción para dirigirlo. (Autómata: nivel 5; Armadura 1; sus ataques contundentes hacen 6 de daño, la mitad por frío intenso.)"
 },
 "wears-a-sheen-of-ice/winter-gauntlets": {
 "n": "Guanteletes del invierno",
@@ -2690,12 +2690,12 @@
 "fights-unarmed/knock-out": {
 "n": "Noquear",
 "c": "5+ Potencia",
-"t": "Haz un ataque cuerpo a cuerpo dificultado contra un enemigo de nivel 3 o inferior. Si aciertas, en vez de hacer daño lo dejas inconsciente hasta que hagas una recuperación de diez minutos o más (o hasta que alguien use una acción para reanimarlo). Esfuerzo: sube en 1 el nivel máximo del enemigo al que puedes afectar. Acción."
+"t": "Haz un ataque cuerpo a cuerpo dificultado contra un enemigo de nivel 3 o inferior. Si aciertas, en vez de hacer daño lo dejas inconsciente hasta que uses una recuperación de diez minutos o más (o hasta que alguien use una acción para reanimarlo). Esfuerzo: sube en 1 el nivel máximo del enemigo al que puedes afectar. Acción."
 },
 "fuses-flesh-and-steel/deep-reserves": {
 "n": "Reservas profundas",
 "c": "",
-"t": "Cuando otros están agotados, tú puedes seguir. Puedes transferir hasta 6 puntos entre tus reservas en cualquier combinación, a razón de 1 punto por asalto; por ejemplo, 3 de Velocidad a Potencia y 3 de Intelecto a Potencia, lo que llevaría seis asaltos en total. Esta habilidad se renueva al hacer una recuperación de diez horas. Acción."
+"t": "Cuando otros están agotados, tú puedes seguir. Puedes transferir hasta 6 puntos entre tus reservas en cualquier combinación, a razón de 1 punto por asalto; por ejemplo, 3 de Velocidad a Potencia y 3 de Intelecto a Potencia, lo que llevaría seis asaltos en total. Esta habilidad se renueva al usar una recuperación de diez horas. Acción."
 },
 "carries-a-gun/keen-eye": {
 "n": "Vista aguda",
@@ -2735,7 +2735,7 @@
 "changes-shape/soothe-the-savage": {
 "n": "Calmar a la fiera",
 "c": "2 Intelecto",
-"t": "Haz una tirada de ataque de Intelecto para calmar a una bestia no humana a alcance corto que pueda verte. Tienes que hablarle (aunque no necesita entender tus palabras). Se mantiene tranquila hasta que hagas una recuperación de diez minutos o más o mientras sigas usando tu acción para calmarla. Acción."
+"t": "Haz una tirada de ataque de Intelecto para calmar a una bestia no humana a alcance corto que pueda verte. Tienes que hablarle (aunque no necesita entender tus palabras). Se mantiene tranquila hasta que uses una recuperación de diez minutos o más o mientras sigas usando tu acción para calmarla. Acción."
 },
 "carries-a-gun": {
 "n": "Lleva un arma de fuego",
@@ -2751,7 +2751,7 @@
 "carries-a-gun/excellent-gunner": {
 "n": "Tirador excelente",
 "c": "",
-"t": "Puedes usar libremente las armas de fuego sin penalización. Haces 1 de daño adicional con ellas. En un ataque con arma de fuego puedes tirar dos veces y quedarte con el mejor resultado; esto se renueva al hacer una recuperación de diez minutos o más. Capacitador."
+"t": "Puedes usar libremente las armas de fuego sin penalización. Haces 1 de daño adicional con ellas. En un ataque con arma de fuego puedes tirar dos veces y quedarte con el mejor resultado; esto se renueva al usar una recuperación de diez minutos o más. Capacitador."
 },
 "carries-a-gun/careful-shot": {
 "n": "Disparo cuidadoso",
@@ -2811,12 +2811,12 @@
 "changes-shape/shapechanger-healing": {
 "n": "Curación del cambiaformas",
 "c": "",
-"t": "Cuando te transformas en un animal, te curas una herida de cualquier gravedad. Esta habilidad se renueva tras hacer una recuperación de diez horas. Capacitador."
+"t": "Cuando te transformas en un animal, te curas una herida de cualquier gravedad. Esta habilidad se renueva tras usar una recuperación de diez horas. Capacitador."
 },
 "changes-shape/animal-scrying": {
 "n": "Vista animal",
 "c": "4+ Intelecto",
-"t": "Si conoces la ubicación general de un animal que te sea amistoso y esté a menos de 1,6 km, puedes percibir a través de sus sentidos hasta que hagas una recuperación de diez minutos o más. Para activarla tienes que estar en forma animal o en una forma parecida a la de ese animal. Esfuerzo: actívala aunque no estés en forma animal ni en una parecida. Acción para establecer."
+"t": "Si conoces la ubicación general de un animal que te sea amistoso y esté a menos de 1,6 km, puedes percibir a través de sus sentidos hasta que uses una recuperación de diez minutos o más. Para activarla tienes que estar en forma animal o en una forma parecida a la de ese animal. Esfuerzo: actívala aunque no estés en forma animal ni en una parecida. Acción para establecer."
 },
 "changes-shape/movement": {
 "n": "Adaptación de movimiento",
@@ -2831,7 +2831,7 @@
 "changes-shape/not-dead-yet": {
 "n": "Aún no estoy muerto",
 "c": "",
-"t": "Cuando normalmente morirías, en vez de eso quedas inconsciente durante un asalto y luego despiertas. Al despertar así, ganas de inmediato 1d6 + 6 puntos para repartir entre tus reservas y eliminas una herida moderada y una grave. Tras usarla, tus tareas se dificultan hasta que hagas una recuperación de diez horas. Si vuelves a morir antes de esa recuperación, mueres de verdad. Puedes elegir esta habilidad dos veces; la segunda vez, la curación sube a 1d6 + 12 y eliminas el doble de heridas."
+"t": "Cuando normalmente morirías, en vez de eso quedas inconsciente durante un asalto y luego despiertas. Al despertar así, ganas de inmediato 1d6 + 6 puntos para repartir entre tus reservas y eliminas una herida moderada y una grave. Tras usarla, tus tareas se dificultan hasta que uses una recuperación de diez horas. Si vuelves a morir antes de esa recuperación, mueres de verdad. Puedes elegir esta habilidad dos veces; la segunda vez, la curación sube a 1d6 + 12 y eliminas el doble de heridas."
 },
 "changes-shape/hard-to-see": {
 "n": "Difícil de ver",
@@ -2841,7 +2841,7 @@
 "changes-shape/lend-animal-shape": {
 "n": "Prestar forma animal",
 "c": "6+ Intelecto",
-"t": "Te transformas en un animal como con Forma animal, y una criatura dispuesta a alcance inmediato también se transforma en un animal de ese tipo (oso, tigre, lobo, etc.) hasta que hagas una recuperación de diez minutos o más, como si usara tu habilidad Forma animal. Todas las criaturas que se transforman contigo deben ser de tu tamaño o menores. Una criatura puede volver a su forma normal como acción, pero después no puede volver a la forma animal. Que una criatura (tú u otra) cambie de forma no afecta a las demás afectadas por esta habilidad. Esfuerzo: afecta a una criatura más. Acción."
+"t": "Te transformas en un animal como con Forma animal, y una criatura dispuesta a alcance inmediato también se transforma en un animal de ese tipo (oso, tigre, lobo, etc.) hasta que uses una recuperación de diez minutos o más, como si usara tu habilidad Forma animal. Todas las criaturas que se transforman contigo deben ser de tu tamaño o menores. Una criatura puede volver a su forma normal como acción, pero después no puede volver a la forma animal. Que una criatura (tú u otra) cambie de forma no afecta a las demás afectadas por esta habilidad. Esfuerzo: afecta a una criatura más. Acción."
 },
 "changes-shape/lethal-capability": {
 "n": "Capacidad letal",
@@ -2856,7 +2856,7 @@
 "talks-to-machines/charm-machine": {
 "n": "Encantar máquina",
 "c": "2 Intelecto",
-"t": "Con una tirada de ataque de Intelecto con éxito, convences a una máquina o autómata sin inteligencia a alcance inmediato de que le «caes bien». Una máquina a la que le caes bien tiene un 50 % menos de probabilidades de funcionar si su función te causaría daño; por ejemplo, si un enemigo intenta detonar cerca de ti una bomba con un detonador al que le caes bien, hay un 50 % de que no explote. Le caes bien hasta que hagas una recuperación de diez minutos o más. Acción para iniciar."
+"t": "Con una tirada de ataque de Intelecto con éxito, convences a una máquina o autómata sin inteligencia a alcance inmediato de que le «caes bien». Una máquina a la que le caes bien tiene un 50 % menos de probabilidades de funcionar si su función te causaría daño; por ejemplo, si un enemigo intenta detonar cerca de ti una bomba con un detonador al que le caes bien, hay un 50 % de que no explote. Le caes bien hasta que uses una recuperación de diez minutos o más. Acción para iniciar."
 },
 "talks-to-machines/control-electric-device": {
 "n": "Controlar artefacto eléctrico",
@@ -2871,7 +2871,7 @@
 "talks-to-machines/coaxing-power": {
 "n": "Potencia persuadida",
 "c": "2 Intelecto",
-"t": "Aumentas la potencia o el funcionamiento de una máquina para que funcione un nivel por encima de lo normal hasta que hagas una recuperación de una hora o más. Acción para iniciar."
+"t": "Aumentas la potencia o el funcionamiento de una máquina para que funcione un nivel por encima de lo normal hasta que uses una recuperación de una hora o más. Acción para iniciar."
 },
 "talks-to-machines/locate-machine": {
 "n": "Localizar máquina",
@@ -2881,12 +2881,12 @@
 "talks-to-machines/machine-control": {
 "n": "Control de máquinas",
 "c": "2+ Intelecto",
-"t": "Usas tu conocimiento de órdenes y controles robóticos contra un robot, sistema mecanizado o máquina inteligente a alcance corto (o a alcance corto de un artefacto desde el que puedas transmitir señales a distancia). Elige si quieres dar órdenes a una criatura o desactivar a varias, y haz tiradas de ataque de Intelecto separadas contra cada objetivo. Si sacas menos de 6, cuenta como un 6 (así no hay intrusión del DJ si sacas un 1). Ordenar: el éxito te da el control activo del objetivo hasta que hagas una recuperación de diez minutos o más, y le ordenas tareas sencillas en tu nombre mientras te concentras. Desactivar: el éxito deja a los objetivos afectados sin poder actuar mientras te concentres en ellos. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Acción para iniciar. En el rango 3: el resultado mínimo de esta habilidad sube a 9."
+"t": "Usas tu conocimiento de órdenes y controles robóticos contra un robot, sistema mecanizado o máquina inteligente a alcance corto (o a alcance corto de un artefacto desde el que puedas transmitir señales a distancia). Elige si quieres dar órdenes a una criatura o desactivar a varias, y haz tiradas de ataque de Intelecto separadas contra cada objetivo. Si sacas menos de 6, cuenta como un 6 (así no hay intrusión del DJ si sacas un 1). Ordenar: el éxito te da el control activo del objetivo hasta que uses una recuperación de diez minutos o más, y le ordenas tareas sencillas en tu nombre mientras te concentras. Desactivar: el éxito deja a los objetivos afectados sin poder actuar mientras te concentres en ellos. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Acción para iniciar. En el rango 3: el resultado mínimo de esta habilidad sube a 9."
 },
 "talks-to-machines/disable-mechanism": {
 "n": "Inutilizar mecanismo",
 "c": "3+ Intelecto",
-"t": "Con un ataque de Intelecto con éxito para piratear una máquina, robot o artefacto (inteligente o no) a alcance inmediato, lo perturbas de una de estas formas: • Todas sus tareas se dificultan hasta que hagas una recuperación de diez minutos o más. • Su velocidad se reduce a la mitad. • No puede actuar durante un asalto. • La gravedad de sus ataques baja un paso (mínimo una herida leve) hasta que hagas una recuperación de diez minutos o más. Tienes que tocar la máquina, el robot o el artefacto para perturbarlo (si haces un ataque, no hace daño). Esfuerzo: aumenta el alcance hasta donde alcances a ver directamente (con tus propios ojos, no por una cámara remota u otra interfaz). Elige como objetivo una máquina a través de una interfaz de red a la que tengas acceso sin restricciones (requiere dos niveles de Esfuerzo). Acción."
+"t": "Con un ataque de Intelecto con éxito para piratear una máquina, robot o artefacto (inteligente o no) a alcance inmediato, lo perturbas de una de estas formas: • Todas sus tareas se dificultan hasta que uses una recuperación de diez minutos o más. • Su velocidad se reduce a la mitad. • No puede actuar durante un asalto. • La gravedad de sus ataques baja un paso (mínimo una herida leve) hasta que uses una recuperación de diez minutos o más. Tienes que tocar la máquina, el robot o el artefacto para perturbarlo (si haces un ataque, no hace daño). Esfuerzo: aumenta el alcance hasta donde alcances a ver directamente (con tus propios ojos, no por una cámara remota u otra interfaz). Elige como objetivo una máquina a través de una interfaz de red a la que tengas acceso sin restricciones (requiere dos niveles de Esfuerzo). Acción."
 },
 "talks-to-machines/quick-control": {
 "n": "Control rápido",
@@ -2921,7 +2921,7 @@
 "fuses-mind-and-machine/awareness": {
 "n": "Consciencia",
 "c": "3 Intelecto",
-"t": "Adquieres una hiperconsciencia de tu entorno hasta que hagas una recuperación de diez minutos o más. Eres consciente de todos los seres vivos a alcance largo (incluida su posición general). Usando una acción para concentrarte, puedes elegir a uno e intentar averiguar su estado de salud general y su nivel de poder. Acción."
+"t": "Adquieres una hiperconsciencia de tu entorno hasta que uses una recuperación de diez minutos o más. Eres consciente de todos los seres vivos a alcance largo (incluida su posición general). Usando una acción para concentrarte, puedes elegir a uno e intentar averiguar su estado de salud general y su nivel de poder. Acción."
 },
 "works-for-a-living/hard-won-resilience": {
 "n": "Resistencia curtida",
@@ -2936,7 +2936,7 @@
 "fuses-mind-and-machine/data-processor": {
 "n": "Procesador de datos",
 "c": "1+ Intelecto",
-"t": "Recurriendo a información almacenada y a la capacidad de procesar datos entrantes a velocidades asombrosas, tienes entrenamiento temporal en una tarea mental. Cada vez que activas esta habilidad, elige una habilidad de Intelecto, como piratería, defensa de Intelecto, una habilidad de conocimiento o percepción; tienes entrenamiento en ella hasta que hagas una recuperación de diez minutos o más. Normalmente solo puedes usar esta habilidad para entrenarte en una habilidad a la vez; activarla de nuevo sustituye el uso anterior por una nueva habilidad entrenada. Esfuerzo: aumenta en uno el número máximo de habilidades entrenadas temporales. Acción para iniciar."
+"t": "Recurriendo a información almacenada y a la capacidad de procesar datos entrantes a velocidades asombrosas, tienes entrenamiento temporal en una tarea mental. Cada vez que activas esta habilidad, elige una habilidad de Intelecto, como piratería, defensa de Intelecto, una habilidad de conocimiento o percepción; tienes entrenamiento en ella hasta que uses una recuperación de diez minutos o más. Normalmente solo puedes usar esta habilidad para entrenarte en una habilidad a la vez; activarla de nuevo sustituye el uso anterior por una nueva habilidad entrenada. Esfuerzo: aumenta en uno el número máximo de habilidades entrenadas temporales. Acción para iniciar."
 },
 "fuses-mind-and-machine/think-fast": {
 "n": "Pensar rápido",
@@ -2946,7 +2946,7 @@
 "fuses-mind-and-machine/wireless-interface": {
 "n": "Interfaz inalámbrica",
 "c": "1+ Intelecto",
-"t": "Puedes comunicarte mentalmente con máquinas a alcance corto. La comunicación es bidireccional, pero la máquina debe estar dispuesta y ser capaz de comunicarse. No necesitas ver al objetivo, pero debes saber que está dentro del alcance. Puedes tener más de un contacto activo a la vez, pero debes establecer contacto con cada máquina por separado. Una vez establecido el contacto, las tareas relacionadas con esa máquina llevan la mitad del tiempo normal, y las tareas que son una acción pasan a ser una primera acción. Cada contacto dura hasta que hagas una recuperación de diez minutos o más. Esfuerzo: aumenta la duración para que dure hasta que hagas una recuperación de una hora o más. Aumenta el alcance un paso (largo, muy largo, 1,5 km, 15 km o cualquier punto del planeta). Acción para establecer contacto."
+"t": "Puedes comunicarte mentalmente con máquinas a alcance corto. La comunicación es bidireccional, pero la máquina debe estar dispuesta y ser capaz de comunicarse. No necesitas ver al objetivo, pero debes saber que está dentro del alcance. Puedes tener más de un contacto activo a la vez, pero debes establecer contacto con cada máquina por separado. Una vez establecido el contacto, las tareas relacionadas con esa máquina llevan la mitad del tiempo normal, y las tareas que son una acción pasan a ser una primera acción. Cada contacto dura hasta que uses una recuperación de diez minutos o más. Esfuerzo: aumenta la duración para que dure hasta que uses una recuperación de una hora o más. Aumenta el alcance un paso (largo, muy largo, 1,5 km, 15 km o cualquier punto del planeta). Acción para establecer contacto."
 },
 "fuses-mind-and-machine/analytic-processor": {
 "n": "Procesador analítico",
@@ -2956,7 +2956,7 @@
 "fuses-mind-and-machine/machine-reading": {
 "n": "Leer máquinas",
 "c": "2 Intelecto",
-"t": "Puedes leer los «pensamientos» superficiales de una máquina a alcance corto, aunque no quiera. Debes poder verla. Una vez establecido el contacto, puedes leer los pensamientos de la máquina hasta que hagas una recuperación de diez minutos o más. Acción para iniciar."
+"t": "Puedes leer los «pensamientos» superficiales de una máquina a alcance corto, aunque no quiera. Debes poder verla. Una vez establecido el contacto, puedes leer los pensamientos de la máquina hasta que uses una recuperación de diez minutos o más. Acción para iniciar."
 },
 "fuses-mind-and-machine/action-processor": {
 "n": "Procesador de acción",
@@ -2971,12 +2971,12 @@
 "fuses-mind-and-machine/locked-skill": {
 "n": "Habilidad fijada",
 "c": "",
-"t": "Cuando activas Procesador de datos, elige una de las habilidades en las que te da entrenamiento; esa es tu habilidad «fijada». Tu entrenamiento en ella dura hasta que hagas una recuperación de diez horas. Si vuelves a activar Procesador de datos antes de esa recuperación, puedes reiniciar la duración de tu habilidad fijada o elegir otra como fijada. Puedes elegir esta habilidad hasta tres veces. Cada vez, tu número máximo de habilidades fijadas aumenta en uno. Capacitador."
+"t": "Cuando activas Procesador de datos, elige una de las habilidades en las que te da entrenamiento; esa es tu habilidad «fijada». Tu entrenamiento en ella dura hasta que uses una recuperación de diez horas. Si vuelves a activar Procesador de datos antes de esa recuperación, puedes reiniciar la duración de tu habilidad fijada o elegir otra como fijada. Puedes elegir esta habilidad hasta tres veces. Cada vez, tu número máximo de habilidades fijadas aumenta en uno. Capacitador."
 },
 "fuses-mind-and-machine/precognition": {
 "n": "Precognición",
 "c": "6 Intelecto",
-"t": "Percibes vagamente el futuro hasta que hagas una recuperación de diez minutos o más. Durante ese tiempo obtienes estos beneficios: • Obtienes una ventaja en las tareas de defensa. • Puedes predecir las acciones de quienes te rodean. Obtienes una ventaja para ver a través de engaños e intentos de traicionarte, así como para evitar trampas y emboscadas. • Sabes lo que la gente probablemente está pensando y lo que va a decir antes de que lo diga. Obtienes una ventaja en todas las tareas de interacción. Capacitador."
+"t": "Percibes vagamente el futuro hasta que uses una recuperación de diez minutos o más. Durante ese tiempo obtienes estos beneficios: • Ganas un recurso en las tareas de defensa. • Puedes predecir las acciones de quienes te rodean. Ganas un recurso para ver a través de engaños e intentos de traicionarte, así como para evitar trampas y emboscadas. • Sabes lo que la gente probablemente está pensando y lo que va a decir antes de que lo diga. Ganas un recurso en todas las tareas de interacción. Capacitador."
 },
 "fuses-mind-and-machine/machine-enhancement": {
 "n": "Mejora mecánica",
@@ -2996,7 +2996,7 @@
 "works-for-a-living/fitting-in": {
 "n": "Pasar desapercibido",
 "c": "2 Intelecto",
-"t": "Puedes mezclarte entre cualquier criatura inteligente salvo las clases altas o las autoridades. Los trabajadores o la gente corriente aún pueden verte, pero los de nivel 3 o menos no dan importancia a tu presencia. Si te ve una criatura de nivel superior, puedes intentar una tarea de Intelecto contra su nivel para conservar tu aspecto de persona sin importancia. Este efecto termina si haces algo que llame la atención sobre tu presencia o posición (atacar, usar una habilidad, mover un objeto grande, etc.) o si haces una recuperación de diez minutos o más. Acción para iniciar."
+"t": "Puedes mezclarte entre cualquier criatura inteligente salvo las clases altas o las autoridades. Los trabajadores o la gente corriente aún pueden verte, pero los de nivel 3 o menos no dan importancia a tu presencia. Si te ve una criatura de nivel superior, puedes intentar una tarea de Intelecto contra su nivel para conservar tu aspecto de persona sin importancia. Este efecto termina si haces algo que llame la atención sobre tu presencia o posición (atacar, usar una habilidad, mover un objeto grande, etc.) o si usas una recuperación de diez minutos o más. Acción para iniciar."
 },
 "works-for-a-living/handy": {
 "n": "Manitas",
@@ -3006,7 +3006,7 @@
 "works-for-a-living/muscles-of-iron": {
 "n": "Músculos de hierro",
 "c": "2 Potencia",
-"t": "Hasta que hagas una recuperación de diez minutos o más, todas las acciones de Potencia que intentes, salvo las tiradas de ataque, se facilitan. Capacitador."
+"t": "Hasta que uses una recuperación de diez minutos o más, todas las acciones de Potencia que intentes, salvo las tiradas de ataque, se facilitan. Capacitador."
 },
 "works-for-a-living/danger-instinct": {
 "n": "Instinto ante el peligro",
@@ -3021,12 +3021,12 @@
 "works-for-a-living/eye-for-detail": {
 "n": "Ojo para el detalle",
 "c": "2 Intelecto",
-"t": "Cuando pasas unos cinco minutos explorando a fondo una zona de no más de una distancia corta de diámetro o un objeto al que tienes acceso directo, puedes hacerle al DJ una pregunta sobre la zona o el objeto. El DJ debe responderte con la verdad. Esta habilidad se reinicia cuando haces una recuperación de diez horas. Cinco minutos para explorar la zona o el objeto."
+"t": "Cuando pasas unos cinco minutos explorando a fondo una zona de no más de una distancia corta de diámetro o un objeto al que tienes acceso directo, puedes hacerle al DJ una pregunta sobre la zona o el objeto. El DJ debe responderte con la verdad. Esta habilidad se reinicia cuando usas una recuperación de diez horas. Cinco minutos para explorar la zona o el objeto."
 },
 "works-for-a-living/improvise": {
 "n": "Improvisar",
 "c": "3 Intelecto",
-"t": "Si no tienes entrenamiento en una tarea, puedes improvisar para obtener una ventaja en ella: una herramienta que apañas, una idea repentina o pura suerte. La ventaja dura hasta que hagas una recuperación de diez minutos o más. Capacitador."
+"t": "Si no tienes entrenamiento en una tarea, puedes improvisar para ganar un recurso en ella: una herramienta que apañas, una idea repentina o pura suerte. El recurso dura hasta que uses una recuperación de diez minutos o más. Capacitador."
 },
 "works-for-a-living/device-insight": {
 "n": "Comprensión de artefactos",
@@ -3046,6 +3046,6 @@
 "works-for-a-living/on-the-crew": {
 "n": "De la cuadrilla",
 "c": "4+ Intelecto",
-"t": "Mientras trabajas con un equipo de al menos otros dos aliados, les das una breve arenga y os concedes a ti y a ellos una de estas habilidades hasta que hagas una recuperación de diez minutos o más: • +1 de daño en los ataques. • Ignorar la primera herida leve recibida. • Sumar +6 a la siguiente recuperación. Última acción para iniciar."
+"t": "Mientras trabajas con un equipo de al menos otros dos aliados, les das una breve arenga y os concedes a ti y a ellos una de estas habilidades hasta que uses una recuperación de diez minutos o más: • +1 de daño en los ataques. • Ignorar la primera herida leve recibida. • Sumar +6 a la siguiente recuperación. Última acción para iniciar."
 }
 }

@@ -2,7 +2,7 @@
 "dom-manifest-nimbus": {
 "n": "Manifestar nimbo",
 "c": "",
-"t": "Las criaturas y objetos tocados por una chispa divina (o que tienen desplazamientos divinos) manifiestan un nimbo, que normalmente solo ven otras criaturas con nimbo. El tuyo aparece como uno o más puntos de luz brillante, quizá runas resplandecientes, que flotan cerca de tu cabeza; a medida que ganas desplazamientos divinos, pueden aumentar. Con el DJ puedes diseñar otro estilo de nimbo, como una sombra o llamas. Así, los PJ y otras criaturas tocadas por lo divino siempre se reconocen entre sí, igual que reconocen las cifras, los artefactos y otros objetos de origen divino. Como parte de cualquier otra acción puedes hacer visible tu nimbo a las criaturas normales, o apagarlo. Si lo haces visible a criaturas no divinas, a veces sirve de recurso a favor en tareas de interacción, si el DJ lo considera apropiado; aunque los no creyentes pueden decidir colgar al falso dios ahí mismo. Enabler."
+"t": "Las criaturas y objetos tocados por una chispa divina (o que tienen desplazamientos divinos) manifiestan un nimbo, que normalmente solo ven otras criaturas con nimbo. El tuyo aparece como uno o más puntos de luz brillante, quizá runas resplandecientes, que flotan cerca de tu cabeza; a medida que ganas desplazamientos divinos, pueden aumentar. Con el DJ puedes diseñar otro estilo de nimbo, como una sombra o llamas. Así, los PJ y otras criaturas tocadas por lo divino siempre se reconocen entre sí, igual que reconocen las cifras, los artefactos y otros objetos de origen divino. Como parte de cualquier otra acción puedes hacer visible tu nimbo a las criaturas normales, o apagarlo. Si lo haces visible a criaturas no divinas, a veces sirve de recurso a favor en tareas de interacción, si el DJ lo considera apropiado; aunque los no creyentes pueden decidir colgar al falso dios ahí mismo. Capacitador."
 },
 "dom-steal-name": {
 "n": "Robar el nombre",
@@ -17,12 +17,12 @@
 "dom-divine-combatant": {
 "n": "Combatiente divino",
 "c": "",
-"t": "Cuando luchas contra un serafín o un raver, estás entrenado en ataques y defensa. Además, puedes elegir a un serafín o raver a alcance inmediato y favorecerlo con tu atención divina, lo que facilita sus tareas, o entorpecerlo con tu desfavor divino, lo que las dificulta. Solo puedes favorecer o desfavorecer a un objetivo a la vez. Enabler."
+"t": "Cuando luchas contra un serafín o un raver, estás entrenado en ataques y defensa. Además, puedes elegir a un serafín o raver a alcance inmediato y favorecerlo con tu atención divina, lo que facilita sus tareas, o entorpecerlo con tu desfavor divino, lo que las dificulta. Solo puedes favorecer o desfavorecer a un objetivo a la vez. Capacitador."
 },
 "dom-call-seraph": {
 "n": "Llamar a un serafín",
 "c": "",
-"t": "Un serafín de nivel 3 de tu tamaño acude desde el Éter, te acompaña y sigue tus instrucciones. Definís los detalles con el DJ, aunque tiene los rasgos generales de su tipo de criatura, incluida la capacidad de volar una distancia corta cada asalto (aunque, como criatura de nivel 3, no tiene fuerza para llevarte más allá de una distancia corta cada vez, por ejemplo para cruzar un pequeño abismo). Seguramente tirarás tú por él cuando actúe. En combate no suele atacar por su cuenta, sino que te ayuda: en tu acción, si está a tu lado, es un recurso a favor en un ataque de tu turno. Si lo destruyen, normalmente se rehace a partir de sus restos en tres días; si se impide, puedes llamar a otro tras unos días proyectando tu mente en el Éter. Cada vez que subes de rango, tu serafín sube un nivel. Enabler. [Funciona como un seguidor del CCR (p. 307), con el nivel que fija GotF.]"
+"t": "Un serafín de nivel 3 de tu tamaño acude desde el Éter, te acompaña y sigue tus instrucciones. Definís los detalles con el DJ, aunque tiene los rasgos generales de su tipo de criatura, incluida la capacidad de volar una distancia corta cada asalto (aunque, como criatura de nivel 3, no tiene fuerza para llevarte más allá de una distancia corta cada vez, por ejemplo para cruzar un pequeño abismo). Seguramente tirarás tú por él cuando actúe. En combate no suele atacar por su cuenta, sino que te ayuda: en tu acción, si está a tu lado, es un recurso a favor en un ataque de tu turno. Si lo destruyen, normalmente se rehace a partir de sus restos en tres días; si se impide, puedes llamar a otro tras unos días proyectando tu mente en el Éter. Cada vez que subes de rango, tu serafín sube un nivel. Capacitador. [Funciona como un seguidor del CCR (p. 307), con el nivel que fija GotF.]"
 },
 "dom-bolster-nimbus": {
 "n": "Reforzar el nimbo",
@@ -32,12 +32,12 @@
 "dom-divine-conveyance": {
 "n": "Montura divina",
 "c": "",
-"t": "Aparece ante ti una criatura o vehículo de nivel 4 que te sirve de montura: un león, un mono gigante, un águila gigante, un elefante, un carro que se conduce solo u otra cosa que acordéis con el DJ. Llega enjaezada como solo lo estaría la montura de un dios, con bardas que le dan +1 a Armadura. Cuando no la necesitas se disuelve en el Éter, y vuelve en diez minutos cuando la llamas. Seguramente tirarás tú por ella cuando actúe. En combate no suele atacar por su cuenta, sino que te ayuda: en tu acción, si vas montado, es un recurso a favor en un ataque de tu turno. Si la matan, su alma y su cuerpo se regeneran en una semana, devueltos a la vida por tu aura. Cada vez que subes de rango, tu montura sube un nivel. Enabler."
+"t": "Aparece ante ti una criatura o vehículo de nivel 4 que te sirve de montura: un león, un mono gigante, un águila gigante, un elefante, un carro que se conduce solo u otra cosa que acordéis con el DJ. Llega enjaezada como solo lo estaría la montura de un dios, con bardas que le dan +1 a Armadura. Cuando no la necesitas se disuelve en el Éter, y vuelve en diez minutos cuando la llamas. Seguramente tirarás tú por ella cuando actúe. En combate no suele atacar por su cuenta, sino que te ayuda: en tu acción, si vas montado, es un recurso a favor en un ataque de tu turno. Si la matan, su alma y su cuerpo se regeneran en una semana, devueltos a la vida por tu aura. Cada vez que subes de rango, tu montura sube un nivel. Capacitador."
 },
 "dom-disciple": {
 "n": "Discípulo",
 "c": "",
-"t": "Ganas un discípulo PNJ de nivel 3 completamente entregado a ti. Definís los detalles con el DJ. Seguramente tirarás tú por él cuando actúe. En combate no suele atacar por su cuenta, sino que te ayuda: en tu acción, si está a tu lado, es un recurso a favor en un ataque de tu turno. Si muere, ganas otro tras al menos dos semanas y algo de proselitismo. Cada vez que subes de rango, tu discípulo sube un nivel. Enabler. [Funciona como un seguidor del CCR (p. 307), con el nivel que fija GotF.]"
+"t": "Ganas un discípulo PNJ de nivel 3 completamente entregado a ti. Definís los detalles con el DJ. Seguramente tirarás tú por él cuando actúe. En combate no suele atacar por su cuenta, sino que te ayuda: en tu acción, si está a tu lado, es un recurso a favor en un ataque de tu turno. Si muere, ganas otro tras al menos dos semanas y algo de proselitismo. Cada vez que subes de rango, tu discípulo sube un nivel. Capacitador. [Funciona como un seguidor del CCR (p. 307), con el nivel que fija GotF.]"
 },
 "dom-omniscience-lesser": {
 "n": "Omnisciencia menor",
@@ -57,7 +57,7 @@
 "dom-immortality": {
 "n": "Inmortalidad",
 "c": "",
-"t": "No puedes morir por causas naturales. No envejeces ni necesitas comer, dormir ni respirar (aunque puedes hacerlo si quieres, y sigues necesitando descansar en calma para recuperarte). Solo puedes morir por violencia, magia, traumatismo u otras circunstancias especiales. Enabler."
+"t": "No puedes morir por causas naturales. No envejeces ni necesitas comer, dormir ni respirar (aunque puedes hacerlo si quieres, y sigues necesitando descansar en calma para recuperarte). Solo puedes morir por violencia, magia, traumatismo u otras circunstancias especiales. Capacitador."
 },
 "dom-mask": {
 "n": "Máscara",
@@ -67,7 +67,7 @@
 "dom-band-of-disciples": {
 "n": "Banda de discípulos",
 "c": "",
-"t": "Ganas seis discípulos PNJ de nivel 2 completamente entregados a ti. Definís los detalles con el DJ. Si uno muere, ganas otro tras al menos dos semanas y un reclutamiento adecuado. Cada vez que subes de rango, tu banda sube un nivel. Enabler. [Funcionan como seguidores del CCR (p. 307).]"
+"t": "Ganas seis discípulos PNJ de nivel 2 completamente entregados a ti. Definís los detalles con el DJ. Si uno muere, ganas otro tras al menos dos semanas y un reclutamiento adecuado. Cada vez que subes de rango, tu banda sube un nivel. Capacitador. [Funcionan como seguidores del CCR (p. 307).]"
 },
 "dom-confer-ability": {
 "n": "Conferir habilidad",
@@ -92,7 +92,7 @@
 "dom-inspired-seraph": {
 "n": "Serafín inspirado",
 "c": "",
-"t": "Ganas los beneficios de la habilidad de rango 2 Llamar a un serafín y además bendices a tu serafín con dos capacidades nuevas; estas son algunas opciones (acuerda otra con el DJ si lo prefieres). Bendición de protección (Blessing of Protection): el serafín alza un aura de protección a su alrededor y en 3 m durante un minuto (o hasta que lo destruyan); no puede repetirla hasta después de tu siguiente recuperación. A los PJ protegidos les facilita el bloqueo; a los PNJ y criaturas les da +1 a Armadura. Acción. Bendición de cifra (Cypher Blessing): el serafín puede llevar una cifra más por ti. Enabler. Duro (Tough): tu serafín suma 15 de salud y +1 a Armadura. Virtud (Virtue): tu serafín puede manifestar una de las éticas de los serafines de la virtud (valor, humildad…), pero no gana desplazamientos. [Adaptación: la Bendición de protección daba +1 a Armadura a todos.]"
+"t": "Ganas los beneficios de la habilidad de rango 2 Llamar a un serafín y además bendices a tu serafín con dos capacidades nuevas; estas son algunas opciones (acuerda otra con el DJ si lo prefieres). Bendición de protección (Blessing of Protection): el serafín alza un aura de protección a su alrededor y en 3 m durante un minuto (o hasta que lo destruyan); no puede repetirla hasta después de tu siguiente recuperación. A los PJ protegidos les facilita el bloqueo; a los PNJ y criaturas les da +1 a Armadura. Acción. Bendición de cifra (Cypher Blessing): el serafín puede llevar una cifra más por ti. Capacitador. Duro (Tough): tu serafín suma 15 de salud y +1 a Armadura. Virtud (Virtue): tu serafín puede manifestar una de las éticas de los serafines de la virtud (valor, humildad…), pero no gana desplazamientos. [Adaptación: la Bendición de protección daba +1 a Armadura a todos.]"
 },
 "dom-control-weather": {
 "n": "Controlar el clima",
@@ -122,7 +122,7 @@
 "dom-twist-of-fate": {
 "n": "Giro del destino",
 "c": "",
-"t": "Cuando sacas un 1, puedes repetir la tirada. Tienes que quedarte con el nuevo resultado, aunque sea otro 1. Enabler."
+"t": "Cuando sacas un 1, puedes repetir la tirada. Tienes que quedarte con el nuevo resultado, aunque sea otro 1. Capacitador."
 },
 "dom-usurp-cypher": {
 "n": "Usurpar cifra",

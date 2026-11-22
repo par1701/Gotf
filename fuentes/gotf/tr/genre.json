@@ -2,7 +2,7 @@
  "genre-a-bit-of-magic": {
   "n": "Un poco de magia",
   "c": "",
-  "t": "Cada día puedes elegir un efecto mágico distinto y lanzarlo como conjuro. Elige una cifra manifiesta de poder bajo o medio. Puedes lanzar ese conjuro como acción por 3 de Intelecto si es de poder bajo o 5 de Intelecto si es de poder medio. Este conjuro no cuenta para tu límite de cifras y, a diferencia de una cifra, no lo pierdes al lanzarlo. Al hacer una recuperación de diez horas puedes cambiar de cifra. Diez minutos para preparar una cifra como conjuro; acción para lanzarla. En el rango 6: puedes elegir una cifra de poder bajo, medio o avanzado; una de poder avanzado se lanza como acción por 7 de Intelecto."
+  "t": "Cada día puedes elegir un efecto mágico distinto y lanzarlo como conjuro. Elige una cifra manifiesta de poder bajo o medio. Puedes lanzar ese conjuro como acción por 3 de Intelecto si es de poder bajo o 5 de Intelecto si es de poder medio. Este conjuro no cuenta para tu límite de cifras y, a diferencia de una cifra, no lo pierdes al lanzarlo. Al usar una recuperación de diez horas puedes cambiar de cifra. Diez minutos para preparar una cifra como conjuro; acción para lanzarla. En el rango 6: puedes elegir una cifra de poder bajo, medio o avanzado; una de poder avanzado se lanza como acción por 7 de Intelecto."
  },
  "genre-cypher-use": {
   "n": "Uso de cifras",
@@ -27,7 +27,7 @@
  "genre-elemental-protection": {
   "n": "Protección elemental",
   "c": "4+ Intelecto",
-  "t": "Tú y cada criatura que designes a alcance inmediato ganáis protección contra un tipo de daño de energía (como fuego, electricidad o frío): la gravedad de las heridas de esa energía baja un paso (grave a moderada, moderada a leve, leve a ninguna). La protección dura para cada criatura hasta que haga una recuperación de una hora o más; que uno la termine no afecta a la duración de los demás. Esfuerzo: reduce la gravedad de la herida otro paso. Acción."
+  "t": "Tú y cada criatura que designes a alcance inmediato ganáis protección contra un tipo de daño de energía (como fuego, electricidad o frío): la gravedad de las heridas de esa energía baja un paso (grave a moderada, moderada a leve, leve a ninguna). La protección dura para cada criatura hasta que use una recuperación de una hora o más; que uno la termine no afecta a la duración de los demás. Esfuerzo: reduce la gravedad de la herida otro paso. Acción."
  },
  "genre-enhanced-stat": {
   "n": "Atributo mejorado",
@@ -47,12 +47,12 @@
  "genre-fury": {
   "n": "Furia",
   "c": "3 Potencia",
-  "t": "Tus ataques cuerpo a cuerpo hacen +2 de daño. Dura hasta que hagas una recuperación de diez minutos o más. Acción."
+  "t": "Tus ataques cuerpo a cuerpo hacen +2 de daño. Dura hasta que uses una recuperación de diez minutos o más. Acción."
  },
  "genre-pry-open-defense": {
   "n": "Forzar defensas",
   "c": "4 Intelecto",
-  "t": "Con un ataque de Intelecto con éxito, desgarras las defensas de una criatura a alcance largo. Sus defensas mágicas (como un conjuro de protección) quedan anuladas. Si no tiene defensas mágicas, su armadura baja en 2. Si no tiene defensas mágicas ni armadura, sus tareas de defensa quedan dificultadas. Dura hasta que hagas una recuperación de diez minutos o más. Acción."
+  "t": "Con un ataque de Intelecto con éxito, desgarras las defensas de una criatura a alcance largo. Sus defensas mágicas (como un conjuro de protección) quedan anuladas. Si no tiene defensas mágicas, su armadura baja en 2. Si no tiene defensas mágicas ni armadura, sus tareas de defensa quedan dificultadas. Dura hasta que uses una recuperación de diez minutos o más. Acción."
  },
  "genre-puncturing-attack": {
   "n": "Ataque perforante",
@@ -67,7 +67,7 @@
  "genre-strategize": {
   "n": "Planificar",
   "c": "4 Intelecto",
-  "t": "Tener un plan de acción antes de afrontar un desafío mejora las probabilidades de éxito, aunque luego se cambie o se descarte al ponerlo en práctica. Si tus aliados y tú dedicáis al menos diez minutos a repasar un plan y tratáis de ejecutarlo antes de que hagas una recuperación de diez horas, el DJ te da un dato útil sobre la situación, de inmediato si se os ha pasado algo o en algún momento durante la ejecución. El plan debe ser concreto y ejecutable para obtener este beneficio. Diez minutos para activar."
+  "t": "Tener un plan de acción antes de afrontar un desafío mejora las probabilidades de éxito, aunque luego se cambie o se descarte al ponerlo en práctica. Si tus aliados y tú dedicáis al menos diez minutos a repasar un plan y tratáis de ejecutarlo antes de que uses una recuperación de diez horas, el DJ te da un dato útil sobre la situación, de inmediato si se os ha pasado algo o en algún momento durante la ejecución. El plan debe ser concreto y ejecutable para obtener este beneficio. Diez minutos para activar."
  },
  "genre-tough": {
   "n": "Duro",
@@ -92,12 +92,12 @@
  "genre-inspire-action": {
   "n": "Inspirar acción",
   "c": "4 Intelecto",
-  "t": "Si un aliado puede verte y entenderte con facilidad, puedes indicarle que haga una acción. Si decide hacer exactamente esa acción, puede hacerla de inmediato como acción adicional, sin que le impida hacer su acción normal en su turno. Acción."
+  "t": "Si un aliado puede verte y entenderte con facilidad, puedes indicarle que haga una acción. Si decide hacer exactamente esa acción, puede hacerla de inmediato como acción extra, sin que le impida hacer su acción normal en su turno. Acción."
  },
  "genre-invisibility": {
   "n": "Invisibilidad",
   "c": "4+ Intelecto",
-  "t": "Te vuelves invisible. El efecto termina si haces algo que revele tu presencia o posición (atacar, usar una habilidad, mover un objeto grande, etc.) o haces una recuperación de diez minutos o más. Esfuerzo: usa la habilidad sobre una criatura que toques; se vuelve invisible ella (en vez de ti) hasta que haga una recuperación de diez minutos o más. Acción."
+  "t": "Te vuelves invisible. El efecto termina si haces algo que revele tu presencia o posición (atacar, usar una habilidad, mover un objeto grande, etc.) o usas una recuperación de diez minutos o más. Esfuerzo: usa la habilidad sobre una criatura que toques; se vuelve invisible ella (en vez de ti) hasta que use una recuperación de diez minutos o más. Acción."
  },
  "genre-jump-attack": {
   "n": "Ataque en salto",
@@ -107,7 +107,7 @@
  "genre-magic-portal": {
   "n": "Portal mágico",
   "c": "6 Intelecto",
-  "t": "Creas un túnel a través del espacio que permite viajar a un lugar a alcance largo. Tienes que poder ver ese lugar o saber que existe (como tras una puerta cerrada o un espacio abierto bajo tierra debajo de ti). El agujero en la realidad es lo bastante grande para ti y criaturas de tu tamaño o menores. Lo que entra por él sale de inmediato por el otro lado. Sigue abierto hasta que hagas una recuperación de diez minutos o más. Acción."
+  "t": "Creas un túnel a través del espacio que permite viajar a un lugar a alcance largo. Tienes que poder ver ese lugar o saber que existe (como tras una puerta cerrada o un espacio abierto bajo tierra debajo de ti). El agujero en la realidad es lo bastante grande para ti y criaturas de tu tamaño o menores. Lo que entra por él sale de inmediato por el otro lado. Sigue abierto hasta que uses una recuperación de diez minutos o más. Acción."
  },
  "genre-mask": {
   "n": "Máscara",
@@ -122,7 +122,7 @@
  "genre-spellbreaker": {
   "n": "Rompeconjuros",
   "c": "4+ Intelecto",
-  "t": "Terminas al instante un efecto mágico en curso (creado por una habilidad de personaje, una cifra o un artefacto mágico) a alcance inmediato si superas un ataque de Intelecto contra él. Si apuntas a una cifra o artefacto mágico y superas el ataque, no funciona hasta que hagas una recuperación de diez minutos o más. Esfuerzo: usa esta habilidad como capacitador, en respuesta a un ataque cuando no es tu turno. Acción (capacitador si la usas a la defensiva)."
+  "t": "Terminas al instante un efecto mágico en curso (creado por una habilidad de personaje, una cifra o un artefacto mágico) a alcance inmediato si superas un ataque de Intelecto contra él. Si apuntas a una cifra o artefacto mágico y superas el ataque, no funciona hasta que uses una recuperación de diez minutos o más. Esfuerzo: usa esta habilidad como capacitador, en respuesta a un ataque cuando no es tu turno. Acción (capacitador si la usas a la defensiva)."
  },
  "genre-spin-attack": {
   "n": "Ataque giratorio",
@@ -132,6 +132,6 @@
  "genre-will-of-a-leader": {
   "n": "Voluntad de líder",
   "c": "9 Intelecto",
-  "t": "Refuerzas la entrega y las capacidades de tus aliados con un discurso inspirador de al menos un minuto. Todos los aliados a alcance inmediato (tú incluido) suman +1 de Ventaja a un atributo (cada uno elige el suyo). Dura hasta que hagan una recuperación de una hora o más; que uno la termine no afecta a la duración de los demás. Un minuto para completar."
+  "t": "Refuerzas la entrega y las capacidades de tus aliados con un discurso inspirador de al menos un minuto. Todos los aliados a alcance inmediato (tú incluido) suman +1 de Ventaja a un atributo (cada uno elige el suyo). Dura hasta que usen una recuperación de una hora o más; que uno la termine no afecta a la duración de los demás. Un minuto para completar."
  }
 }

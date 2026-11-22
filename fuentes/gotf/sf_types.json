@@ -105,7 +105,7 @@
     "en": "Modify Device",
     "es": "Modificar artefacto",
     "cost_es": "3 Intelecto",
-    "text_es": "Apañas rápidamente un equipo o una fuente de energía para repararlo o mejorarlo. Necesitas acceso a piezas y herramientas adecuadas. Reparar: si superas una tarea de ingeniería (dificultad igual al nivel del artefacto + 1), reparas temporalmente un equipo roto o una fuente de energía inactiva para sacarle unos cuantos usos más. Mejorar: si superas una tarea de ingeniería de dificultad 3, haces que el artefacto funcione un 25 % por encima de sus especificaciones. Cuando haces una recuperación de diez horas, el artefacto se rompe y necesita una reparación completa (no otra tarea de Modificar artefacto) para recuperar su funcionamiento original. Por ejemplo, podrías forzar un desintegrador medio para que haga 1 de daño adicional, modificar una impresora de comida para que cada taza de café salga más rica, modificar el motor de una nave espacial para mejorar su aceleración un 25 %, etc. Tanto si lo reparas como si lo mejoras, el artefacto pasa a tener un agotamiento de 1–6 en 1d20 (compruébalo en cada uso). Diez minutos para completar. En el rango 3: el agotamiento del artefacto modificado mejora a 1–2 en 1d20. (Reparar del todo un artefacto, en lugar del apaño de Modificar artefacto, suele ser posible, pero normalmente requiere al menos unos días, herramientas y piezas especializadas y gastar puntos de recurso [CCR, p. 314].)"
+    "text_es": "Apañas rápidamente un equipo o una fuente de energía para repararlo o mejorarlo. Necesitas acceso a piezas y herramientas adecuadas. Reparar: si superas una tarea de ingeniería (dificultad igual al nivel del artefacto + 1), reparas temporalmente un equipo roto o una fuente de energía inactiva para sacarle unos cuantos usos más. Mejorar: si superas una tarea de ingeniería de dificultad 3, haces que el artefacto funcione un 25 % por encima de sus especificaciones. Cuando usas una recuperación de diez horas, el artefacto se rompe y necesita una reparación completa (no otra tarea de Modificar artefacto) para recuperar su funcionamiento original. Por ejemplo, podrías forzar un desintegrador medio para que haga 1 de daño adicional, modificar una impresora de comida para que cada taza de café salga más rica, modificar el motor de una nave espacial para mejorar su aceleración un 25 %, etc. Tanto si lo reparas como si lo mejoras, el artefacto pasa a tener un agotamiento de 1–6 en 1d20 (compruébalo en cada uso). Diez minutos para completar. En el rango 3: el agotamiento del artefacto modificado mejora a 1–2 en 1d20. (Reparar del todo un artefacto, en lugar del apaño de Modificar artefacto, suele ser posible, pero normalmente requiere al menos unos días, herramientas y piezas especializadas y gastar puntos de recurso [CCR, p. 314].)"
    }
   ],
   "bundle_es": "Un juego de herramientas de ingeniería, ropa adecuada, una mochila, un dispositivo inteligente (gafas, insignia, anillo o similar), un respirador, una tienda ambiental, un cortapernos, una luz perenne, raciones y agua para dos días, un neceser de aseo y un antifaz y dinero suficiente para comprar un objeto de precio moderado.",
@@ -221,7 +221,7 @@
     "en": "Spin Identity",
     "es": "Inventar identidad",
     "cost_es": "2+ Intelecto",
-    "text_es": "Cuando tiras para convencer a una criatura inteligente (incluidos ordenadores y sistemas de vigilancia) de que eres alguien o algo distinto de lo que eres y sacas menos de 6, cuenta como un 6 (así no hay intrusión del DJ si sacas un 1). No te permite hacerte pasar por una persona concreta: convences a los presentes de que eres alguien a quien no conocen de cierta categoría de personas. «Soy del gobierno.» «Solo soy un simple viajero que va a lo suyo.» «Me envía tu comandante.» Los usos con éxito duran hasta que hagas una recuperación de diez minutos o más, salvo que tus actos u otras circunstancias revelen antes tu verdadera identidad. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Acción. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+    "text_es": "Cuando tiras para convencer a una criatura inteligente (incluidos ordenadores y sistemas de vigilancia) de que eres alguien o algo distinto de lo que eres y sacas menos de 6, cuenta como un 6 (así no hay intrusión del DJ si sacas un 1). No te permite hacerte pasar por una persona concreta: convences a los presentes de que eres alguien a quien no conocen de cierta categoría de personas. «Soy del gobierno.» «Solo soy un simple viajero que va a lo suyo.» «Me envía tu comandante.» Los usos con éxito duran hasta que uses una recuperación de diez minutos o más, salvo que tus actos u otras circunstancias revelen antes tu verdadera identidad. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Acción. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
    }
   ],
   "bundle_es": "Una hoja molecular, ropa adecuada, armadura de impacto en aerosol (diez usos), ropa y accesorios extra para disfrazarte, un dispositivo inteligente (gafas, insignia, anillo o similar), una mochila, un respirador, una tienda ambiental, un traje de vacío de un solo uso, una luz perenne, raciones y agua para dos días, un neceser de aseo y un antifaz y dinero suficiente para comprar un objeto de precio moderado.",
@@ -267,7 +267,7 @@
     "en": "Born to Pilot",
     "es": "Piloto nato",
     "cost_es": "2+ Intelecto",
-    "text_es": "Cuando tiras para pilotar una nave espacial y sacas menos de 9, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Las tareas de pilotaje incluyen maniobras concretas como atracar la nave con seguridad, girarla o acelerarla lo bastante despacio para evitar gravedades peligrosamente altas durante periodos prolongados, notar algo raro en los sensores, etc. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Esta habilidad se renueva al hacer una recuperación. Acción. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+    "text_es": "Cuando tiras para pilotar una nave espacial y sacas menos de 9, cuenta como un 9 (así no hay intrusión del DJ si sacas un 1). Las tareas de pilotaje incluyen maniobras concretas como atracar la nave con seguridad, girarla o acelerarla lo bastante despacio para evitar gravedades peligrosamente altas durante periodos prolongados, notar algo raro en los sensores, etc. Esfuerzo: sube en 3 el resultado mínimo de esta habilidad. Esta habilidad se renueva al usar una recuperación. Acción. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
    },
    {
     "en": "Expert Space Pilot",
@@ -339,7 +339,7 @@
     "en": "Push Implant",
     "es": "Implante de empuje",
     "cost_es": "",
-    "text_es": "Después de atacar, puedes activar un implante de combate para hacer un ataque adicional como acción extra en tu turno. Hacerlo te causa una herida moderada. Esta habilidad se renueva tras hacer una recuperación de diez horas. Capacitador."
+    "text_es": "Después de atacar, puedes activar un implante de combate para hacer un ataque adicional como acción extra en tu turno. Hacerlo te causa una herida moderada. Esta habilidad se renueva tras usar una recuperación de diez horas. Capacitador."
    }
   ],
   "bundle_es": "Un rifle de vacío y una batería de energía para armas (50 disparos), ropa adecuada, un mono blindado, ropa y accesorios extra para disfrazarte, un dispositivo inteligente (gafas, insignia, anillo o similar), una mochila, un respirador, una tienda ambiental, un traje de vacío de un solo uso, unas esposas (atan las muñecas del sujeto), una luz perenne, raciones y agua para dos días, un neceser de aseo y un antifaz y dinero suficiente para comprar un objeto de precio moderado.",
@@ -395,13 +395,13 @@
     "en": "Flex Skill",
     "es": "Habilidad flexible",
     "cost_es": "",
-    "text_es": "Elige una tarea (que no sea de ataque ni de defensa) en la que te concentrarás. Durante el resto del día quedas entrenado en ella. No puedes usarla con una habilidad en la que ya estés entrenado para especializarte. Esta habilidad se renueva al hacer una recuperación de diez horas. Capacitador. (Los androides suelen lograrlo ampliando datos que ya descargaron, comprimieron y almacenaron en su sistema, aunque a veces acceder a una habilidad especializada puede requerir conectarse a un nodo de datos externo.)"
+    "text_es": "Elige una tarea (que no sea de ataque ni de defensa) en la que te concentrarás. Durante el resto del día quedas entrenado en ella. No puedes usarla con una habilidad en la que ya estés entrenado para especializarte. Esta habilidad se renueva al usar una recuperación de diez horas. Capacitador. (Los androides suelen lograrlo ampliando datos que ya descargaron, comprimieron y almacenaron en su sistema, aunque a veces acceder a una habilidad especializada puede requerir conectarse a un nodo de datos externo.)"
    },
    {
     "en": "Machine Not Flesh",
     "es": "Máquina, no carne",
     "cost_es": "",
-    "text_es": "Eres una máquina inteligente y sofisticada de forma más o menos humanoide; acuerda los detalles con el DJ. Esto te da los siguientes beneficios: • Ganas +4 puntos adicionales que repartes de forma permanente entre tus reservas. • Ganas +1 de Ventaja adicional en una reserva a tu elección. • Tu cuerpo no biológico es inmune a los venenos y enfermedades comunes y al vacío del espacio, y no necesitas comer, beber ni respirar (aunque sí descansar y hacer recuperaciones). • Si puedes conectarte a un conducto eléctrico, una estación de carga o un lugar similar que te dé energía, puedes hacer una recuperación extra de una acción cada día. • Facilitas cualquier tarea de piratería que intentes. Tu naturaleza de máquina también tiene inconvenientes: • En vez de curación, tratar tus heridas requiere ingeniería. Los métodos de curación acelerada pensados para criaturas biológicas (como la habilidad Médico preparado del tipo Médico) no te afectan en absoluto. • Si no puedes conectarte a una fuente de energía adecuada durante tu recuperación de diez horas, pierdes tu recuperación normal de una acción y la adicional (conectado a la energía) hasta que lo hagas. • Algunos biológicos miran por encima del hombro a los androides. A criterio del DJ, tus tareas de interacción positiva con ellos se dificultan. (Las tareas de reparación para tratar, es decir, eliminar, tus heridas leves, moderadas y graves son de nivel 1, 3 y 5, respectivamente.)"
+    "text_es": "Eres una máquina inteligente y sofisticada de forma más o menos humanoide; acuerda los detalles con el DJ. Esto te da los siguientes beneficios: • Ganas +4 puntos adicionales que repartes de forma permanente entre tus reservas. • Ganas +1 de Ventaja adicional en una reserva a tu elección. • Tu cuerpo no biológico es inmune a los venenos y enfermedades comunes y al vacío del espacio, y no necesitas comer, beber ni respirar (aunque sí descansar y usar recuperaciones). • Si puedes conectarte a un conducto eléctrico, una estación de carga o un lugar similar que te dé energía, puedes usar una recuperación extra de una acción cada día. • Facilitas cualquier tarea de piratería que intentes. Tu naturaleza de máquina también tiene inconvenientes: • En vez de curación, tratar tus heridas requiere ingeniería. Los métodos de curación acelerada pensados para criaturas biológicas (como la habilidad Médico preparado del tipo Médico) no te afectan en absoluto. • Si no puedes conectarte a una fuente de energía adecuada durante tu recuperación de diez horas, pierdes tu recuperación normal de una acción y la adicional (conectado a la energía) hasta que lo hagas. • Algunos biológicos miran por encima del hombro a los androides. A criterio del DJ, tus tareas de interacción positiva con ellos se dificultan. (Las tareas de reparación para tratar, es decir, eliminar, tus heridas leves, moderadas y graves son de nivel 1, 3 y 5, respectivamente.)"
    }
   ],
   "bundle_es": "Un desintegrador pesado, cinco baterías de energía para armas (50 disparos cada una), ropa adecuada, armadura de impacto en aerosol (diez usos), ropa y accesorios extra para disfrazarte, un dispositivo inteligente (gafas, insignia, anillo o similar), una mochila, prismáticos, una palanca, intoxicante digital (funciona con androides), una bolsa de herramientas ligeras, una luz perenne y un antifaz y dinero suficiente para comprar un objeto de precio moderado.",
@@ -505,7 +505,7 @@
     "en": "Mind Reading",
     "es": "Leer mentes",
     "cost_es": "2 Intelecto",
-    "text_es": "Puedes leer los pensamientos superficiales de una criatura que veas a alcance corto. Si no está dispuesta, tienes que hacer un ataque de Intelecto contra ella para leerlos. Una vez establecido el contacto, puedes leer sus pensamientos hasta que hagas una recuperación de diez minutos o más. Acción."
+    "text_es": "Puedes leer los pensamientos superficiales de una criatura que veas a alcance corto. Si no está dispuesta, tienes que hacer un ataque de Intelecto contra ella para leerlos. Una vez establecido el contacto, puedes leer sus pensamientos hasta que uses una recuperación de diez minutos o más. Acción."
    },
    {
     "en": "Onslaught",
@@ -517,7 +517,7 @@
     "en": "Psychic Veil",
     "es": "Velo psíquico",
     "cost_es": "1 Intelecto",
-    "text_es": "Tu aspecto se distorsiona como si se viera a través del aura visual de una migraña hasta que hagas una recuperación de diez minutos o más. La distorsión no interfiere en tus acciones, pero tus tiradas de esquivar y de defensa de Intelecto se facilitan. Mientras está activa, la distorsión te protege de los ataques mentales y reduce un paso la gravedad de sus heridas (grave a moderada, moderada a leve, leve a ninguna). Por ejemplo, si te alcanza una descarga psíquica que causa una herida moderada, recibes una leve. Capacitador."
+    "text_es": "Tu aspecto se distorsiona como si se viera a través del aura visual de una migraña hasta que uses una recuperación de diez minutos o más. La distorsión no interfiere en tus acciones, pero tus tiradas de esquivar y de defensa de Intelecto se facilitan. Mientras está activa, la distorsión te protege de los ataques mentales y reduce un paso la gravedad de sus heridas (grave a moderada, moderada a leve, leve a ninguna). Por ejemplo, si te alcanza una descarga psíquica que causa una herida moderada, recibes una leve. Capacitador."
    }
   ],
   "bundle_es": "Una mochila de carga, ropa adecuada, una dosis de suero de adaptación espacial válida para un mes, un dispositivo inteligente (gafas, insignia, anillo o similar), una mochila, un respirador, una tienda ambiental, un traje de vacío de un solo uso, una luz perenne, raciones y agua para dos días, un neceser de aseo y un antifaz y dinero suficiente para comprar un objeto de precio moderado.",
@@ -621,7 +621,7 @@
     "en": "Audacious Blast",
     "es": "Disparo audaz",
     "cost_es": "1 Velocidad",
-    "text_es": "Atacas con un desintegrador (u otra arma a distancia propia del género) de una forma que arriesga más a fallar pero da un beneficio adicional. Tu rango de intrusión del DJ en este ataque sube en 2 (de 1 a 1–3 en el d20), pero si aciertas eliges uno de estos efectos adicionales. Disparo desarmante: el ataque hace 1 de daño menos, pero el enemigo suelta algo que lleve en una mano (como un arma o un escudo); para recuperarlo tiene que usar una acción. Precisión perforante: el enemigo recibe +2 de daño. Acción. (Intrusiones del DJ sugeridas: el desintegrador se queda sin energía; el disparo rebota y te causa a ti o a un aliado una herida moderada; el ataque llama la atención de otros hostiles.)"
+    "text_es": "Atacas con un desintegrador (u otra arma a distancia propia del género) de una forma que arriesga más a fallar pero da un beneficio adicional. Tu margen de intrusión del DJ en este ataque sube en 2 (de 1 a 1–3 en el d20), pero si aciertas eliges uno de estos efectos adicionales. Disparo desarmante: el ataque hace 1 de daño menos, pero el enemigo suelta algo que lleve en una mano (como un arma o un escudo); para recuperarlo tiene que usar una acción. Precisión perforante: el enemigo recibe +2 de daño. Acción. (Intrusiones del DJ sugeridas: el desintegrador se queda sin energía; el disparo rebota y te causa a ti o a un aliado una herida moderada; el ataque llama la atención de otros hostiles.)"
    },
    {
     "en": "Cypher Use",
@@ -633,7 +633,7 @@
     "en": "Redline Maneuver",
     "es": "Maniobra al límite",
     "cost_es": "1 Velocidad o Intelecto",
-    "text_es": "Intentas una maniobra arriesgada pilotando la nave: el rango de intrusión del DJ de tu tarea sube en 2 y llevas la nave «al límite», más allá de su margen normal de funcionamiento. Si superas una tarea de dificultad 2 (o quizá más, según cómo valore el DJ la situación), consigues algo normalmente desaconsejable al pilotar una nave. Por ejemplo, podrías disparar sus armas mientras metes la nave entera en una espiral acelerada, quizá directamente contra el enjambre de cazas en vez de huir, para romper su coordinación y quizá provocar un par de choques; rozar la corona (o incluso la cromosfera) de una estrella para despistar a tus perseguidores; saltar a FTL más deprisa de lo normal o más cerca de una fuente gravitatoria de lo que se suele considerar posible; o recorrer en FTL mucha más distancia o más deprisa de lo que suele salirle bien a la nave. Acción. (Intrusiones del DJ sugeridas: fallan los motores FTL; la nave sufre daños importantes; la consola de alguien a bordo explota y le causa una herida moderada.)"
+    "text_es": "Intentas una maniobra arriesgada pilotando la nave: el margen de intrusión del DJ de tu tarea sube en 2 y llevas la nave «al límite», más allá de su margen normal de funcionamiento. Si superas una tarea de dificultad 2 (o quizá más, según cómo valore el DJ la situación), consigues algo normalmente desaconsejable al pilotar una nave. Por ejemplo, podrías disparar sus armas mientras metes la nave entera en una espiral acelerada, quizá directamente contra el enjambre de cazas en vez de huir, para romper su coordinación y quizá provocar un par de choques; rozar la corona (o incluso la cromosfera) de una estrella para despistar a tus perseguidores; saltar a FTL más deprisa de lo normal o más cerca de una fuente gravitatoria de lo que se suele considerar posible; o recorrer en FTL mucha más distancia o más deprisa de lo que suele salirle bien a la nave. Acción. (Intrusiones del DJ sugeridas: fallan los motores FTL; la nave sufre daños importantes; la consola de alguien a bordo explota y le causa una herida moderada.)"
    }
   ],
   "bundle_es": "Un desintegrador medio y una batería de energía para armas (50 disparos), ropa adecuada, una capa de impacto, un dispositivo inteligente (gafas, insignia, anillo o similar), una mochila, un respirador, una tienda ambiental, una «esfera compañera» (usa las estadísticas del autón), una luz perenne, raciones y agua para dos días, un neceser de aseo y un antifaz y dinero suficiente para comprar un objeto de precio moderado.",
@@ -809,7 +809,7 @@
     "en": "Sneak Attack",
     "es": "Ataque furtivo",
     "cost_es": "1 Velocidad",
-    "text_es": "Si usas un arma ligera para atacar a un enemigo en alguna de las condiciones siguientes, tu ataque inflige +5 de daño. (Esta habilidad no funciona con armas medias ni pesadas.) • Atacas por sorpresa. • Un aliado usa su acción para facilitar tu ataque. • Las defensas de tu enemigo están obstaculizadas por alguna otra distracción directa en curso. • Tu enemigo no puede hacer su siguiente turno por algún ataque o situación incapacitante. Primera acción."
+    "text_es": "Si usas un arma ligera para atacar a un enemigo en alguna de las condiciones siguientes, tu ataque inflige +5 de daño. (Esta habilidad no funciona con armas medias ni pesadas.) • Atacas por sorpresa. • Un aliado usa su acción para facilitar tu ataque. • Las defensas de tu enemigo están dificultadas por alguna otra distracción directa en curso. • Tu enemigo no puede hacer su siguiente turno por algún ataque o situación incapacitante. Primera acción."
    }
   ],
   "bundle_es": "Una pistola media (con 10 balas), ropa adecuada, una bolsa de bienes de trueque (unos caramelos, un par de pilas, unos mecheros, etc.), un hacha de mano, una mochila, un saco de dormir, unos prismáticos, una caña de pescar con aparejos, una olla de hierro fundido, un librillo de cerillas, dos velas, un martillo y un cuchillo oxidado. Tu personaje empieza también con dinero o bienes de trueque equivalentes a un objeto de precio moderado.",
@@ -914,7 +914,7 @@
   "abilities": [
    {
     "en": "Despite My Wounds",
-    "es": "A pesar de mis heridas",
+    "es": "Pese a mis heridas",
     "cost_es": "",
     "text_es": "Mientras tengas dos o más heridas moderadas o una herida grave, obtienes una nueva tirada gratuita en una acción cada asalto (como si hubieras gastado 1 PX). Capacitador."
    },
@@ -922,7 +922,7 @@
     "en": "Enhanced Scavenging",
     "es": "Rebusca mejorada",
     "cost_es": "2+ Intelecto",
-    "text_es": "Cuando tiras para rebuscar algo útil en el paisaje postapocalíptico y sacas menos de 9, trata la tirada como un 9. (Esto significa que no hay intrusión del DJ si sacas un 1.) El efecto mejorado dura hasta que haces una recuperación de diez minutos o más. Esfuerzo: aumenta en 3 el resultado mínimo de esta habilidad. Capacitador. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
+    "text_es": "Cuando tiras para rebuscar algo útil en el paisaje postapocalíptico y sacas menos de 9, trata la tirada como un 9. (Esto significa que no hay intrusión del DJ si sacas un 1.) El efecto mejorado dura hasta que usas una recuperación de diez minutos o más. Esfuerzo: aumenta en 3 el resultado mínimo de esta habilidad. Capacitador. En el rango 3: el resultado mínimo de esta habilidad sube a 12."
    },
    {
     "en": "Get Out",
@@ -982,7 +982,7 @@
     "en": "Inspiring Suggestion",
     "es": "Sugerencia inspiradora",
     "cost_es": "2 Intelecto",
-    "text_es": "Cuando haces una sugerencia útil a un aliado, tiene más posibilidades de lograr lo que intenta. Elige un aliado que pueda verte y entenderte y sugiérele una acción concreta, como «ataca al líder» o «trepa por el muro». Si el aliado decide hacer exactamente esa acción, obtiene dos ventajas en esa tarea. Primera acción."
+    "text_es": "Cuando haces una sugerencia útil a un aliado, tiene más posibilidades de lograr lo que intenta. Elige un aliado que pueda verte y entenderte y sugiérele una acción concreta, como «ataca al líder» o «trepa por el muro». Si el aliado decide hacer exactamente esa acción, gana dos recursos en esa tarea. Primera acción."
    },
    {
     "en": "Wasteland Healer",
