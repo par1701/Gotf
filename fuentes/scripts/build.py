@@ -130,5 +130,9 @@ assert all(k in data['skills_es'] for k in RW['skills'])
 assert all(any(t['en']==n for t in data['types']) for n in RW['hist_types'])
 data['skills_real']=RW['skills'];data['rw']={k:RW[k] for k in ('hist_types','bg','bundle','own')}
 data['bg_gotf']=json.load(open('/home/claude/gotf/bg_gotf.json'))
+# --- Æon (Trinity Continuum): Aptitudes psíquicas como focos; ver scripts/aeon.py ---
+AE=json.load(open(G+'../aeon/aeon.json'))
+data['foci']+=AE['foci'];data['genre']+=AE['genre']
+data['aeon']={k:AE[k] for k in AE if k not in ('foci','genre')}
 json.dump(data,open('/home/claude/site/data.json','w'),ensure_ascii=False,separators=(',',':'))
 print(data['stats'], os.path.getsize('/home/claude/site/data.json'))
