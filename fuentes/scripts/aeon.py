@@ -117,9 +117,56 @@ for name,body in items(nd):
         nm_=re.sub(r'\s*\((?:entrenamiento|habilidad)[^)]*\)$','',name);h=cap(html(body[0]))
         opts.append({'id':'genre-aeon-'+slug(nm_),'level':'mid','en':'G Force Tolerance','es':nm_,'cost':'','cost_es':'','text_es':re.sub(r'<[^>]+>','',h),'text_html':h,'genre':'aeon','src':'Mission Report: Nidavellir','train':True,'req':{}})
 genre+=opts
+# cambios de poder psi
+rg=dict(top)['Reglas generales de los psiones']
+cp=dict(sections(rg,3))['Cambios de poder psi']
+shifts=[{'id':'sh-'+slug(m.group(1)),'es':m.group(1),'text_html':cap(html(m.group(2)))} for m in re.finditer(r'(?m)^- \*\*(.+?):\*\*\s*(.*)$',cp)]
+shifts_intro=html(cp.split('\n\n')[0])
+# opciones que se pagan con puntos de recurso: rasgos del documento principal, aumentos grandes y arma inteligente del de equipo
+def pts(t):
+    m=re.search(r'(\d)(?: (?:a|o) (\d))?',t); a=int(m.group(1)); return [a,int(m.group(2)) if m.group(2) else a]
+PREQ={'Blue Box':{'ord':'ord-las-legiones'},'Garden':{'ord':'ord-upeo-wa-macho'}}
+prop=[]
+for blk,src in [(re.split(r'(?m)^\*\*Con puntos de recurso:\*\*',dict(sections(pt_,3))['Opciones de orden (Prometheus Unbound)'])[1],'Prometheus Unbound'),(re.split(r'(?m)^\*\*Con puntos de recurso:\*\*',re.split(r'(?m)^### ',tf)[0])[1],'Terra Firma')]:
+    for m in re.finditer(r'(?m)^- \*\*(.+?), ([\d a-zo]+) puntos?:\*\*\s*(.*)$',blk):
+        es,en=split_en(m.group(1)); h=cap(html(m.group(3)))
+        prop.append({'id':'rp-'+slug(es),'es':es,'en':en,'pts':pts(m.group(2)),'src':src,'text_html':h,'req':PREQ.get(en,{})})
+eqmd=open(os.path.join(B,'equipo.md')).read()
+ag=re.split(r'(?m)^### Aumentos grandes.*$',eqmd)[1].split('\n## ')[0]
+for line in ag.split('\n'):
+    c=[x.strip() for x in line.strip('|').split('|')] if line.startswith('|') else []
+    if len(c)==3 and c[0] not in ('Aumento','---'):
+        es,en=split_en(c[0]); prop.append({'id':'rp-'+slug(es),'es':es,'en':en,'pts':pts(c[1]),'src':'Aumento grande','text_html':cap(html(c[2])),'req':{},'note':c[1] if not re.fullmatch(r'\d( (a|o) \d)?',c[1]) else ''})
+prop.append({'id':'rp-sistema-de-arma-inteligente','es':'Sistema de arma inteligente implantado','en':'Implanted Smart Weapon System','pts':[3,3],'src':'Mission Report: Nidavellir','req':{},
+  'text_html':cap(html(re.search(r'(?m)^- \*\*Arma inteligente \(Smart Weapon, 2\):\*\*\s*(.*)$',eqmd).group(1)))})
+# bioware: toda pieza del documento de equipo con Tolerancia (tecnología Ψ)
+bio=[];sec='';seen=set()
+L=eqmd.split('\n');i=0
+while i<len(L):
+    l=L[i]
+    if l.startswith('#'): sec=l.lstrip('#').strip()
+    if l.startswith('|') and i+1<len(L) and re.match(r'^\|\s*-{3}',L[i+1]):
+        hdr=[x.strip() for x in l.strip('|').split('|')]; j=i+2; rows=[hdr] if 'Toleran' not in l and 'Precio' not in l and 'Categoría' not in l and 'Nivel' not in l else []
+        while j<len(L) and L[j].startswith('|'): rows.append([x.strip() for x in L[j].strip('|').split('|')]); j+=1
+        ti=hdr.index('Tolerancia') if 'Tolerancia' in hdr else None; pi=hdr.index('Precio') if 'Precio' in hdr else None
+        for r in rows:
+            if len(r)!=len(hdr): continue
+            tol=None
+            if ti is not None and r is not hdr: m=re.match(r'^(\d)',r[ti]); tol=int(m.group(1)) if m else None
+            if tol is None:
+                m=re.search(r'Tolerancia (\d)',' '.join(r[1:])); tol=int(m.group(1)) if m else None
+            if not tol: continue
+            nm=re.sub(r'\\','',r[0]); key=(nm,sec)
+            if re.match(r'^[+\d]',nm): continue
+            if key in seen: continue
+            seen.add(key)
+            price=r[pi] if pi is not None and r is not hdr else r[-1]
+            bio.append({'id':'bio-'+str(len(bio)),'es':nm,'sec':sec,'tol':tol,'price':re.sub(r'\\','',price)})
+        i=j; continue
+    i+=1
 # reglas generales (para la guía)
 rg=dict(top)['Reglas generales de los psiones']
-out={'foci':foci,'orders':orders,'orders_intro':html(intro_ord),'genre':genre,'tipos_md':html(dict(sections(pt,3))['Tipos']),'psiones_md':html(dict(sections(pt,3))['Psiones']),
+out={'shifts':shifts,'shifts_intro':shifts_intro,'rpopts':prop,'bioware':bio,'foci':foci,'orders':orders,'orders_intro':html(intro_ord),'genre':genre,'tipos_md':html(dict(sections(pt,3))['Tipos']),'psiones_md':html(dict(sections(pt,3))['Psiones']),
      'recursos_md':html(dict(sections(pt,3))['Contactos, recursos y riqueza']),'reglas_html':html(rg)}
 json.dump(out,open(os.path.join(B,'aeon.json'),'w'),ensure_ascii=False,indent=0)
-print(len(foci),'aptitudes;',len(orders),'órdenes;',len(genre),'habilidades de género')
+print(len(bio),'bioware;',len(prop),'opciones con PR;',len(shifts),'cambios;',len(foci),'aptitudes;',len(orders),'órdenes;',len(genre),'habilidades de género')

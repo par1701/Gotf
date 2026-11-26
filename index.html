@@ -345,8 +345,9 @@ const stepsAeon=()=>`
 <li><b>Aptitud</b> (foco): en el rango 1 eliges cuatro habilidades, al menos tres de tu Aptitud; la cuarta puede ser de un Modo auxiliar: la fila 1 de un Modo de otra Aptitud, más los dos poderes básicos de esa Aptitud. Cada habilidad pide la fila anterior de su columna. Ganas los dos poderes básicos de tu Aptitud. Más tarde puedes ganar otros Modos auxiliares con el avance «Modo auxiliar», en lugar de uno de los cuatro del rango.</li>
 <li><b>PsiE y reserva Psi</b>: PsiE 2 en los rangos 1 y 2, 3 en los rangos 3 y 4, 4 en el 5 y 5 en el 6 (6 con la trascendencia). Puedes empezar con PsiE 3 a cambio de dos incapacidades; Cuantakinesis y Teletransporte lo exigen. La reserva Psi es 5 × PsiE, con su propia Ventaja (puedes poner en ella el +1 de Ventaja del tipo).</li>
 <li><b>Orden</b>: afiliación, no foco. Da su beneficio a todos sus miembros, sean de su Aptitud o no.</li>
-<li><b>Cambios de poder psi</b>: uno en el rango 1 y otro en el rango 4 (Poder, Ataque único o Alcance aumentado). El creador aún no los gestiona: anótalos a mano.</li>
-<li><b>Puntos de recurso</b>: 3 iniciales, que se pueden gastar al crear el personaje o guardar.</li>
+<li><b>Cambios de poder psi</b>: uno en el rango 1 y otro en el rango 4 (Poder, Ataque único o Alcance aumentado), cada uno sobre una habilidad de tu Aptitud.</li>
+<li><b>Puntos de recurso</b>: 3 iniciales, que se pueden gastar al crear el personaje o guardar: en opciones de orden y rasgos, aumentos grandes, contactos o seguidores.</li>
+<li><b>Bioware</b>: cada pieza formateada cuenta su Tolerancia; el máximo es PsiE + 3. Orgotek (y el rasgo Afiliado de Orgotek) da una pieza sin coste, dos desde el rango 4.</li>
 <li><b>Equipo y cifras</b>: el lote de equipo del tipo, cambiado por lo equivalente de Æon (documento «Equipo y bioware»). Las cifras son no físicas por defecto; las manifiestas son raras.</li>
 </ol>
 <p><b>Al subir de rango</b> [CCR, p. 313–314]: 4 avances de 4 PX, como siempre. Además, en cada rango ganas gratis una habilidad de tu Aptitud de cualquier fila, siempre que tengas la anterior de su columna. En los rangos 3 y 6, una habilidad de género: de ciencia ficción, psíquica o una opción de orden o rasgo (las de requisito de orden, Aptitud o Modo solo se pueden elegir si lo cumples). Los rasgos de entrenamiento también se pueden tomar como habilidad al crear el personaje o con un avance.</p>`;
@@ -477,6 +478,12 @@ function aeReqOk(g){const r=g.req||{};if(r.apt&&S.focus!==r.apt)return false;if(
   if(r.aux&&!auxIds().some(id=>id.startsWith(r.aux+'-')))return false;if(r.mode&&!S.fa.some(id=>id.startsWith(r.mode+'-')))return false;
   if(r.need){const n=DALL.genre.find(x=>x.id===r.need);if(!S.genre.includes(r.need)&&!(n&&trainedKeys().includes(n.en)))return false}return true}
 const trainedKeys=()=>[...S.sk,S.sk3,...advList().filter(x=>x.k==='skill').map(x=>x.a['k'+x.i])].filter(Boolean);
+// cambios de poder psi (rangos 1 y 4), opciones con puntos de recurso y bioware formateado
+const rpSpent=()=>Object.entries(S.rpo||{}).reduce((a,[k,v])=>a+(+v||0),0);
+const tolMax=()=>psiE()+3+(+(S.rpo||{})['rp-tolerancia-aumentada']||0);
+const bioList=()=>(S.bio||[]).map(b=>({...b,d:DALL.aeon.bioware.find(x=>x.id===b.id)})).filter(b=>b.d);
+const orgFree=()=>(S.aorder==='ord-orgotek'||+(S.rpo||{})['rp-afiliado-de-orgotek'])?(+S.tier>=4?2:1):0;
+function rpReqOk(o){const r=o.req||{};return !r.ord||S.aorder===r.ord}
 const aeTrait=k=>AEON()?DALL.genre.find(g=>g.train&&g.en===k):null;
 const aeSkOk=k=>{const g=aeTrait(k);return !g||aeReqOk(g)};
 // Modos auxiliares: la fila 1 de un Modo de otra Aptitud (la cuarta habilidad inicial o el avance «Modo auxiliar»)
@@ -544,6 +551,7 @@ function renderForm(){if(applySetting())renderGuide();Object.defineProperty(S,'_
       h+=`</div>`}
   }
   if(f&&f.aeon)h+=aePicks(f,need);
+  if(AEON())h+=aeExtra(f,calc());
   else if(f){
     h+=`<h3>Habilidades de foco (${S.fa.length} de ${need})</h3><p class="note">2 de rango 1 y 1 gratis al llegar a cada rango, de tu rango o inferior y conectada en el árbol a una que ya tengas [CCR, p. 145 y 313].</p>`;
     if(hasAb('Wider Use'))h+=`<p class="note">Uso más amplio: además de las 2 de rango 1, eliges una de rango 2 [CCR, p. 133].</p>`;
@@ -581,8 +589,21 @@ function aeForm(){const f=D.foci.find(x=>x.id===S.focus),o=DALL.aeon.orders.find
   let h=`<h3>3. Aptitud y orden</h3><div class="field"><label for="c-focus">Aptitud (foco)</label><select id="c-focus"><option value="">— elige —</option>${D.foci.map(x=>`<option value="${x.id}" ${x.id===S.focus?'selected':''}>${esc(x.es+' ('+x.en+') — '+x.who)}</option>`).join('')}</select></div>`;
   h+=`<div class="field"><label for="c-aorder">Orden psi (afiliación, no foco)</label><select id="c-aorder"><option value="">Independiente (sin beneficio de orden)</option>${DALL.aeon.orders.map(x=>`<option value="${x.id}" ${x.id===S.aorder?'selected':''}>${esc(x.es)} · cámara de ${esc(x.apt)}</option>`).join('')}</select>${o?`<p class="note"><b>${esc(o.ben)}.</b> ${o.ben_html}</p>`:''}</div>`;
   h+=`<div class="field"><label class="opt"><input type="checkbox" id="c-psi3" ${psi3()?'checked':''} ${mustPsi3()?'disabled':''}><span>Empezar con PsiE 3 a cambio de dos incapacidades en habilidades significativas (sin la habilidad extra que suelen dar)${mustPsi3()?'. <b>Obligatorio para tu Aptitud.</b>':''}</span></label>${psi3()?skillSel('c-pin0',(S.pinab||[])[0],'primera incapacidad')+'<div style="height:6px"></div>'+skillSel('c-pin1',(S.pinab||[])[1],'segunda incapacidad'):''}</div>`;
-  if(f){h+=`<p class="note">PsiE ${psiE()} · reserva Psi ${5*psiE()} · Tolerancia máxima ${psiE()+3}. Poderes básicos: ${f.basics.map(b=>esc(b.es)).join(' y ')}.</p>`;
+  if(f){h+=`<p class="note">PsiE ${psiE()} · reserva Psi ${5*psiE()} · Tolerancia máxima ${tolMax()}. Poderes básicos: ${f.basics.map(b=>esc(b.es)).join(' y ')}.</p>`;
     h+=`<div class="field"><label for="c-aux0">Cuarta habilidad inicial: de tu Aptitud o de un Modo auxiliar</label>${auxSel('c-aux0',S.aux0||'')}<p class="note">Un Modo auxiliar da la fila 1 de un Modo de otra Aptitud y, si no los tenías, los dos poderes básicos de esa Aptitud. Funciona siempre al nivel de la fila 1: no se puede forzar, ni combinar con otros poderes, ni usar en modo creativo; el tope de niveles de efecto es 1. Cuantakinesis y Teletransporte exigen PsiE 3. Más adelante se consiguen otros con el avance «Modo auxiliar». No cuentan para la disfunción.</p></div>`}
+  return h}
+function aeExtra(f,c){const t=+S.tier,A=DALL.aeon;let h='';
+  if(f){h+=`<h3>Cambios de poder psi</h3>${A.shifts_intro}`;
+    for(const r of [1,4]){if(t<r)continue;const v=(S.ash||{})[r]||{};
+      h+=`<div class="field"><label>Cambio del rango ${r}</label><select data-ashc="${r}"><option value="">— categoría —</option>${A.shifts.map(x=>`<option value="${x.id}" ${x.id===v.c?'selected':''}>${esc(x.es)}</option>`).join('')}</select><div style="height:6px"></div><select data-asha="${r}"><option value="">— habilidad —</option>${S.fa.map(id=>abById(f,id)).sort((a,b)=>a.col-b.col||a.tier-b.tier).map(a=>`<option value="${a.id}" ${a.id===v.a?'selected':''}>${esc(abLab(f,a)+' · '+a.es)}</option>`).join('')}</select>${v.c?`<p class="note">${A.shifts.find(x=>x.id===v.c).text_html}</p>`:''}</div>`}}
+  const rp=c.rp,sp=rpSpent();
+  h+=`<h3>Opciones con puntos de recurso (${sp} de ${rp})</h3><p class="note">Rasgos de orden, de <em>Terra Firma</em>, aumentos grandes y el sistema de arma inteligente. Cada opción cuesta los puntos indicados; las de requisito de orden solo con esa orden. El resto de requisitos (trasfondo, cargo) los valida el DJ.</p>${sp>rp?`<p class="note"><b>Te pasas: gastas ${sp} y tienes ${rp}.</b></p>`:''}`;
+  h+=A.rpopts.map(o=>{const v=+(S.rpo||{})[o.id]||0,ok=v||rpReqOk(o),[mn,mx]=o.pts;
+    return `<label class="opt ${ok?'':'dis'}"><span style="flex:1"><b>${nm(o)}</b> <span class="badge">${esc(o.src)}</span> <span class="badge">${mn===mx?mn:mn+'–'+mx} PR</span>${o.note?` <span class="note">(${esc(o.note)})</span>`:''}<small>${esc(o.text_html.replace(/<[^>]+>/g,' ').slice(0,150))}…</small></span><select data-rpo="${o.id}" ${ok?'':'disabled'} style="width:80px"><option value="0">—</option>${Array.from({length:mx-mn+1},(_,i)=>mn+i).map(n=>`<option value="${n}" ${n===v?'selected':''}>${n}</option>`).join('')}</select></label>`}).join('');
+  const bl=bioList(),tm=tolMax(),ft=bl.filter(b=>b.fmt!==false).reduce((a,b)=>a+b.d.tol,0),of=orgFree();
+  h+=`<h3>Bioware (Tolerancia ${ft} de ${tm})</h3><p class="note">Tolerancia máxima: PsiE + 3${tm>psiE()+3?' + Tolerancia aumentada':''}. No puedes formatear una pieza con más Tolerancia que tu máximo. Si tocas o usas a la vez piezas formateadas que suman más, tus tareas psi se dificultan 1 paso por punto de exceso. ${of?`Acceso a bioware: ${of} pieza${of>1?'s':''} de Orgotek sin coste.`:''}</p>`;
+  h+=`<div class="field"><select id="c-bioadd"><option value="">— añadir pieza —</option>${[...new Set(A.bioware.map(b=>b.sec))].map(sec=>`<optgroup label="${esc(sec)}">${A.bioware.filter(b=>b.sec===sec).map(b=>`<option value="${b.id}">${esc(b.es)} · Tolerancia ${b.tol} · ${esc(b.price)}</option>`).join('')}</optgroup>`).join('')}</select></div>`;
+  h+=bl.map((b,i)=>`<div class="opt"><span style="flex:1"><b>${esc(b.d.es)}</b> <span class="badge">Tolerancia ${b.d.tol}</span> <span class="note">${esc(b.d.sec)} · ${esc(b.d.price)}</span>${b.d.tol>tm?' <span class="badge p">supera tu máximo</span>':''}<br><label><input type="checkbox" data-biofmt="${i}" ${b.fmt!==false?'checked':''}> formateada</label>${of?` <label><input type="checkbox" data-bioorg="${i}" ${b.org?'checked':''}> de Orgotek</label>`:''}</span><button type="button" data-biodel="${i}">Quitar</button></div>`).join('');
   return h}
 function aePicks(f,need){const nm_=aeNM(f);
   let h=`<h3>Habilidades de la Aptitud (${S.fa.length} de ${need})</h3><p class="note">Rango 1: cuatro habilidades. Cada columna es un Modo: para coger una fila necesitas la anterior de su columna; no hay límite de fila por rango. Al subir de rango ganas una más de cualquier fila, y otra con el avance «Otro: otra habilidad de foco». La fila 6 solo en el rango 6, con la trascendencia (las cinco de un Modo y al menos tres de otro). La cuarta habilidad inicial puede ser de un Modo auxiliar (en «Aptitud y orden»).</p>`;
@@ -637,11 +658,11 @@ function renderSheet(){if(document.body.classList.contains('psheet'))document.ti
   h+=`<div class="pools" ${AEON()?'style="grid-template-columns:repeat(4,1fr)"':''}>${POOL.map((n,i)=>`<div>${n}<strong>${c.p[i]}</strong>Ventaja ${c.edge[i]}</div>`).join('')}${AEON()?`<div>Psi<strong>${5*psiE()}</strong>Ventaja ${c.edge[3]}</div>`:''}</div>`;
   h+=`<table style="margin-top:10px"><tbody>
    ${bgTxt(ty)?`<tr><th>Trasfondo</th><td>${esc(bgTxt(ty))}</td></tr>`:''}${RL?RL.rows.map(([k,v])=>`<tr><th>${k}</th><td>${esc(v)}</td></tr>`).join(''):''}
-   <tr><th>Rango</th><td>${t}</td></tr>${AEON()?(()=>{const o=DALL.aeon.orders.find(x=>x.id===S.aorder);return `<tr><th>PsiE</th><td>${psiE()}${aeTrans()?' (trascendente)':''} · Tolerancia máxima ${psiE()+3} · recupera ${psiE()} Psi cada diez minutos sin usar poderes</td></tr><tr><th>Orden</th><td>${o?esc(o.es)+' · '+esc(o.ben):'Independiente'}</td></tr>`})():''}${L?`<tr><th>Categoría</th><td>${L.si.rank}${L.si.alt?' (tipo adaptado)':''}</td></tr>`:''}<tr><th>Esfuerzo</th><td>${L?L.eff:c.effort}</td></tr>
+   <tr><th>Rango</th><td>${t}</td></tr>${AEON()?(()=>{const o=DALL.aeon.orders.find(x=>x.id===S.aorder);return `<tr><th>PsiE</th><td>${psiE()}${aeTrans()?' (trascendente)':''} · Tolerancia máxima ${tolMax()} · recupera ${psiE()} Psi cada diez minutos sin usar poderes</td></tr><tr><th>Orden</th><td>${o?esc(o.es)+' · '+esc(o.ben):'Independiente'}</td></tr>`})():''}${L?`<tr><th>Categoría</th><td>${L.si.rank}${L.si.alt?' (tipo adaptado)':''}</td></tr>`:''}<tr><th>Esfuerzo</th><td>${L?L.eff:c.effort}</td></tr>
    <tr><th>Heridas</th><td>${L?L.wnd:`${c.w[0]} leves · ${c.w[1]} moderadas · ${c.w[2]} graves`}</td></tr>
    <tr><th>Recuperación</th><td>${L?L.rec:'1d6 + '+(t+c.rec)}</td></tr><tr><th>Límite de cifras</th><td>${c.cyphers}</td></tr>
    <tr><th>Armas</th><td>${c.weapons}</td></tr><tr><th>Armadura</th><td>${c.armor}</td></tr>
-   ${t>1?`<tr><th>Avances</th><td>${c.nadv} de ${4*(t-1)} · ${c.rp} puntos de recurso${AEON()?' (3 iniciales incluidos)':''}</td></tr>`:AEON()?`<tr><th>Puntos de recurso</th><td>3 iniciales</td></tr>`:''}
+   ${t>1?`<tr><th>Avances</th><td>${c.nadv} de ${4*(t-1)} · ${c.rp} puntos de recurso${AEON()?' (3 iniciales incluidos)':''}</td></tr>`:''}${AEON()?`<tr><th>Puntos de recurso</th><td>${c.rp} · gastados ${rpSpent()} · quedan ${c.rp-rpSpent()}</td></tr>`:''}
   </tbody></table>`;
   if(!RW()||ty){const A_=attacks();h+=`<h3>Ataques</h3><p class="note">Daño base: ligera 2, media 4, pesada 6; los puñetazos y patadas son armas ligeras [CCR, p. 238]. Las armas que no usas libremente dificultan el ataque.</p><table><tbody>${A_.rows.map(([n,d,s])=>`<tr><th>${esc(n)}</th><td><b>${d}</b> de daño${s.length?` <span class="note">(${esc(s.join(', '))})</span>`:''}</td></tr>`).join('')}</tbody></table>${A_.cond.length?`<p class="note">Bonos que dependen del arma o la situación (ver la habilidad): ${esc(A_.cond.join('; '))}.</p>`:''}`}
   const tr_=c.skills.filter(x=>x[0]!=='I'),inab=c.skills.filter(x=>x[0]==='I');
@@ -656,6 +677,7 @@ function renderSheet(){if(document.body.classList.contains('psheet'))document.ti
   if(f&&f.aeon){const o=DALL.aeon.orders.find(x=>x.id===S.aorder);h+=`<h3>Aptitud: ${esc(f.es)} (${esc(f.who)})</h3>`+f.basics.map(b=>`<div class="ab"><b>Básico · ${nm(b)}.</b> ${tx(b)}</div>`).join('')+S.fa.map(id=>abById(f,id)).sort((a,b)=>a.col-b.col||a.tier-b.tier).map(a=>`<div class="ab"><b>${abLab(f,a)} · ${nm(a)}${cost(a)}.</b> ${tx(a)}</div>`).join('');
     const ax=auxIds().map(auxAb).filter(Boolean);
     if(ax.length)h+=`<h3>Modos auxiliares</h3>`+ax.map(({f:g,a})=>`<div class="ab"><b>F1 · ${esc(g.modes[a.col].es)} (${esc(g.es)}) · ${nm(a)}${cost(a)}.</b> ${tx(a)}</div>`).join('')+auxBasics().map(g=>g.basics.map(b=>`<div class="ab"><b>Básico de ${esc(g.es)} · ${nm(b)}.</b> ${tx(b)}</div>`).join('')).join('')+`<p class="note">Siempre al nivel de la fila 1: no se pueden forzar, combinar ni usar en modo creativo; tope de niveles de efecto 1.</p>`;
+    {const sh=[1,4].map(r=>(S.ash||{})[r]).filter(v=>v&&v.c);if(sh.length)h+=`<h3>Cambios de poder psi</h3>`+sh.map(v=>{const x=DALL.aeon.shifts.find(y=>y.id===v.c),a=v.a?abById(f,v.a):null;return `<div class="ab"><b>${esc(x.es)}${a?' · '+esc(a.es):''}.</b> ${x.text_html}</div>`}).join('')}
     if(o&&o.ben_html)h+=`<h3>Orden: ${esc(o.es)}</h3><div class="ab"><b>${esc(o.ben)}.</b> ${o.ben_html}</div>`;
     if(f.eq_es)h+=`<p><b>Equipo adicional:</b> ${esc(f.eq_es)}</p>`}
   else if(f){h+=`<h3>Foco</h3>`+S.fa.map(id=>abById(f,id)).sort((a,b)=>a.tier-b.tier).map(a=>`<div class="ab"><b>R${a.tier} · ${nm(a)}${cost(a)}.</b> ${tx(a)}</div>`).join('');
@@ -670,6 +692,9 @@ function renderSheet(){if(document.body.classList.contains('psheet'))document.ti
   {const sp=sphList().filter(x=>x.n);if(sp.length)h+=`<h3>Esferas y Gracia</h3>`+sp.map(x=>`<span class="pill">${esc(x.n)} ×${x.v}</span>`).join('')+` <span class="pill"><b>Gracia ${gracia()}</b></span>`}
   if(sh.length)h+=`<h3>Desplazamientos de categoría</h3>`+sh.map(([k,v])=>`<span class="pill">${SHIFTS[k]} ×${v}</span>`).join('');
   }
+  if(AEON()){const ro=DALL.aeon.rpopts.filter(o=>+(S.rpo||{})[o.id]);if(ro.length)h+=`<h3>Opciones con puntos de recurso</h3>`+ro.map(o=>`<div class="ab"><b>${nm(o)} · ${S.rpo[o.id]} PR.</b> <span class="badge">${esc(o.src)}</span> ${o.text_html}</div>`).join('');
+    const bl=bioList(),tm=tolMax(),ft=bl.filter(b=>b.fmt!==false).reduce((a,b)=>a+b.d.tol,0),of=orgFree(),no=bl.filter(b=>b.org).length;
+    if(bl.length)h+=`<h3>Bioware</h3><table><tbody>${bl.map(b=>`<tr><th>${esc(b.d.es)}</th><td>Tolerancia ${b.d.tol}${b.fmt!==false?' · formateada':' · sin formatear'}${b.org?' · de Orgotek':' · '+esc(b.d.price)}${b.d.tol>tm?' · <b>supera tu máximo: no se puede formatear</b>':''}</td></tr>`).join('')}</tbody></table><p class="note">Tolerancia de las piezas formateadas: <b>${ft} de ${tm}</b>.${ft>tm?` Si las tocas o usas a la vez, tus tareas psi se dificultan ${ft-tm} paso${ft-tm>1?'s':''}.`:''}${no>of?` <b>Tienes ${no} piezas de Orgotek y el acceso da ${of}.</b>`:''}</p>`}
   if(ty)h+=`<h3>Equipo</h3><p>${tx(ty,'bundle')}</p>${AEON()?`<p class="note">${AE_EQ}</p>`:''}`;else if(RL)h+=`<h3>Equipo</h3><p>${esc(RL.eq)}</p>`;
   const lib=LIB(),ids=Object.keys(lib).sort((a,b)=>lib[a].name.localeCompare(lib[b].name,'es'));
   h+=`<div class="noprint" style="margin-top:16px"><p><button id="psave">Guardar</button> <button id="pdf">Exportar PDF</button> <button id="copy">Copiar ficha</button> <button id="reset">Nuevo personaje</button></p>
@@ -709,7 +734,10 @@ async function exportSheetPDF(){
   if(ty)ab.push('TIPO: '+nmTxt(ty),...ty.abilities.map(a=>`• ${nmTxt(a)}${cst(a)}. ${txt(a)}`),'');
   if(L&&L.si.alt)ab.push(`• ${nmTxt(D.sh_superheroics)}. ${txt(D.sh_superheroics)}`,'');
   if(L){ab.push('SUPERHÉROE: categoría '+L.si.rank+' · Superheroicidades en '+POOL[+S.shp||0]+(hasAb('Super Combatant')&&S.scomb?' · Supercombatiente: '+S.scomb:''));if(L.o)ab.push(`• Origen · ${nmTxt(L.o)}${cst(L.o)}. ${txt(L.o)}`);if(L.sh.length)ab.push('• Cambios de poder: '+L.sh.join(', ')+(S.pshd?'. '+S.pshd:''));ab.push('')}
-  if(f&&f.aeon){const o=DALL.aeon.orders.find(x=>x.id===S.aorder);ab.push(`PSI: PsiE ${psiE()} · reserva ${5*psiE()} · Ventaja ${c.edge[3]} · Tolerancia máxima ${psiE()+3}`,'APTITUD: '+f.es+' ('+f.who+')',...f.basics.map(b=>`• Básico · ${nmTxt(b)}. ${b.text_html.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim()}`),...S.fa.map(id=>abById(f,id)).sort((a,b)=>a.col-b.col||a.tier-b.tier).map(a=>`• ${abLab(f,a)} · ${nmTxt(a)}${cst(a)}. ${txt(a)}`),'');const ax=auxIds().map(auxAb).filter(Boolean),pl=h_=>h_.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim();if(ax.length)ab.push('MODOS AUXILIARES (siempre fila 1)',...ax.map(({f:g,a})=>`• F1 · ${g.modes[a.col].es} (${g.es}) · ${nmTxt(a)}${cst(a)}. ${txt(a)}`),...auxBasics().flatMap(g=>g.basics.map(b=>`• Básico de ${g.es} · ${nmTxt(b)}. ${pl(b.text_html)}`)),'');if(o)ab.push('ORDEN: '+o.es+' · '+o.ben+(o.ben_html?'. '+o.ben_html.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim():''),'')}
+  if(f&&f.aeon){const o=DALL.aeon.orders.find(x=>x.id===S.aorder);ab.push(`PSI: PsiE ${psiE()} · reserva ${5*psiE()} · Ventaja ${c.edge[3]} · Tolerancia máxima ${tolMax()}`,'APTITUD: '+f.es+' ('+f.who+')',...f.basics.map(b=>`• Básico · ${nmTxt(b)}. ${b.text_html.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim()}`),...S.fa.map(id=>abById(f,id)).sort((a,b)=>a.col-b.col||a.tier-b.tier).map(a=>`• ${abLab(f,a)} · ${nmTxt(a)}${cst(a)}. ${txt(a)}`),'');const ax=auxIds().map(auxAb).filter(Boolean),pl=h_=>h_.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim();if(ax.length)ab.push('MODOS AUXILIARES (siempre fila 1)',...ax.map(({f:g,a})=>`• F1 · ${g.modes[a.col].es} (${g.es}) · ${nmTxt(a)}${cst(a)}. ${txt(a)}`),...auxBasics().flatMap(g=>g.basics.map(b=>`• Básico de ${g.es} · ${nmTxt(b)}. ${pl(b.text_html)}`)),'');{const sh=[1,4].map(r=>(S.ash||{})[r]).filter(v=>v&&v.c);if(sh.length)ab.push('CAMBIOS DE PODER PSI',...sh.map(v=>{const x=DALL.aeon.shifts.find(y=>y.id===v.c),a=v.a?abById(f,v.a):null;return `• ${x.es}${a?' · '+a.es:''}. ${pl(x.text_html)}`}),'')}
+    {const ro=DALL.aeon.rpopts.filter(o=>+(S.rpo||{})[o.id]);if(ro.length)ab.push(`OPCIONES CON PUNTOS DE RECURSO (${rpSpent()} de ${c.rp})`,...ro.map(o=>`• ${nmTxt(o)} · ${S.rpo[o.id]} PR. ${pl(o.text_html)}`),'')}
+    {const bl=bioList();if(bl.length){const ft=bl.filter(b=>b.fmt!==false).reduce((a,b)=>a+b.d.tol,0);ab.push(`BIOWARE (Tolerancia ${ft} de ${tolMax()})`,...bl.map(b=>`• ${b.d.es} · Tolerancia ${b.d.tol}${b.fmt!==false?' · formateada':''}${b.org?' · de Orgotek':''}`),'')}}
+    if(o)ab.push('ORDEN: '+o.es+' · '+o.ben+(o.ben_html?'. '+o.ben_html.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim():''),'')}
   else if(f)ab.push('FOCO: '+nmTxt(f),...S.fa.map(id=>abById(f,id)).sort((a,b)=>a.tier-b.tier).map(a=>`• R${a.tier} · ${nmTxt(a)}${cst(a)}. ${txt(a)}`),'');
   if(L&&L.f2)ab.push('SEGUNDO FOCO: '+nmTxt(L.f2),...L.fa2.map(a=>`• R${a.tier} · ${nmTxt(a)}${cst(a)}. ${txt(a)}`),'');
   {const tr=AEON()?[...new Set(c.skills.filter(x=>x[0]!=='I').map(x=>x[1]))].map(aeTrait).filter(Boolean):[];if(tr.length)ab.push('RASGOS DE ENTRENAMIENTO',...tr.map(g=>`• ${nmTxt(g)}. ${g.text_es}`),'')}
@@ -761,7 +789,7 @@ function bind(){
     else if(d.ov!==undefined){S.ov=S.ov||[0,0,0];S.ov[+d.ov]=Math.max(0,Math.min(12,+el.value||0))}
     else if(d.psh!==undefined){S.psh=S.psh||{};S.psh[d.psh]=Math.max(0,Math.min(3,+el.value||0))}
     else if(d.fa2){if(el.checked)S.fa2.push(d.fa2);else{S.fa2=S.fa2.filter(x=>x!==d.fa2);trimPicks()}}
-    else if(el.id==='c-aorder')S.aorder=el.value;else if(el.id==='c-aux0'){S.aux0=el.value;trimPicks()}else if(el.id==='c-psi3')S.psi3=el.checked;else if(el.id==='c-pin0'||el.id==='c-pin1'){(S.pinab=S.pinab||['',''])[+el.id.slice(-1)]=el.value}
+    else if(el.id==='c-aorder')S.aorder=el.value;else if(d.ashc){((S.ash=S.ash||{})[d.ashc]=S.ash[d.ashc]||{}).c=el.value}else if(d.asha){((S.ash=S.ash||{})[d.asha]=S.ash[d.asha]||{}).a=el.value}else if(d.rpo){(S.rpo=S.rpo||{})[d.rpo]=+el.value;if(!+el.value)delete S.rpo[d.rpo]}else if(el.id==='c-bioadd'){if(el.value)(S.bio=S.bio||[]).push({id:el.value,fmt:true})}else if(d.biofmt!==undefined){S.bio[+d.biofmt].fmt=el.checked}else if(d.bioorg!==undefined){S.bio[+d.bioorg].org=el.checked}else if(el.id==='c-aux0'){S.aux0=el.value;trimPicks()}else if(el.id==='c-psi3')S.psi3=el.checked;else if(el.id==='c-pin0'||el.id==='c-pin1'){(S.pinab=S.pinab||['',''])[+el.id.slice(-1)]=el.value}
     else if(el.id==='c-sk3')S.sk3=el.value;else if(el.id==='c-inab')S.inab=el.value;
     else if(d.sk!==undefined)S.sk[+d.sk]=el.value;
     else if(d.alloc!==undefined)S.alloc[+d.alloc]=Math.max(0,Math.min(6,+el.value||0));
@@ -783,7 +811,7 @@ function bind(){
     else if(d.dsh!==undefined){(S.dsh=S.dsh||{})[d.dsh]=Math.max(0,Math.min(3,+el.value||0))}
     save();renderForm();renderSheet()});
   $('#form').addEventListener('input',e=>{if(e.target.dataset.atk!==undefined&&e.target.dataset.f==='n'){const A=(S.atk=S.atk||{}),v=A[e.target.dataset.atk]=A[e.target.dataset.atk]||{};v.n=e.target.value;save();renderSheet();return}if(e.target.id==='c-name'){S.name=e.target.value;save();renderSheet()}if(e.target.id==='c-bgc'){S.bgc=e.target.value;save();renderSheet()}if(e.target.id==='c-domn'){S.dominion=e.target.value;save();renderSheet()}if(e.target.id==='c-profn'){S.profn=e.target.value;save();renderSheet()}if(e.target.id==='c-rwxw'){S.rwxw=e.target.value;save();renderSheet()}if(e.target.id==='c-scomb'){S.scomb=e.target.value;save();renderSheet()}if(e.target.id==='c-pshd'){S.pshd=e.target.value;save();renderSheet()}});
-  $('#form').addEventListener('click',e=>{if(e.target.id==='c-bgroll'){S.bg=String(1+Math.floor(Math.random()*20));save();renderForm();renderSheet()}});
+  $('#form').addEventListener('click',e=>{if(e.target.dataset.biodel!==undefined){S.bio.splice(+e.target.dataset.biodel,1);save();renderForm();renderSheet();return}if(e.target.id==='c-bgroll'){S.bg=String(1+Math.floor(Math.random()*20));save();renderForm();renderSheet()}});
   $('#sheet').addEventListener('click',async e=>{
     if(e.target.id==='copy'){try{await navigator.clipboard.writeText(sheetText());$('#copymsg').textContent='Ficha copiada.'}catch(err){$('#copymsg').textContent='No se pudo copiar; selecciona el texto de la ficha.'}}
     if(e.target.id==='reset'){S=BLANK();save();renderForm();renderSheet()}
@@ -801,6 +829,8 @@ function trimPicks(){
   const t=+S.tier;
   for(const r of Object.keys(S.adv))if(+r>t)delete S.adv[r];
   const f=D.foci.find(x=>x.id===S.focus);
+  if(AEON()){if(t<4&&S.ash)delete S.ash[4];for(const r of Object.keys(S.ash||{}))if(S.ash[r].a&&!S.fa.includes(S.ash[r].a))S.ash[r].a='';
+    for(const o of DALL.aeon.rpopts)if(S.rpo&&S.rpo[o.id]&&!rpReqOk(o))delete S.rpo[o.id]}
   if(AEON()){const ok=id=>{const x=auxAb(id);return x&&auxOk(x.f)};if(S.aux0&&!ok(S.aux0))S.aux0='';for(const {k,a,i} of advList())if(k==='aux'&&a['x'+i]&&!ok(a['x'+i]))a['x'+i]=''}
   if(f&&f.aeon){const valid=l=>{const k=[];let ch=true;while(ch){ch=false;for(const id of l){const a=abById(f,id);if(!k.includes(id)&&a.tier&&aeAvail(f,k,a)){k.push(id);ch=true}}}return l.filter(id=>k.includes(id))};
     S.fa=valid(valid(S.fa).slice(0,focusNeed(t)))}

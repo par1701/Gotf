@@ -1,4 +1,1330 @@
 {
+"shifts": [
+{
+"id": "sh-poder",
+"es": "Poder",
+"text_html": "Una habilidad concreta suma +3 al daño y mejora un escalón su efecto (alcance, radio, duración u objetivos), pero no facilita su tirada de ataque."
+},
+{
+"id": "sh-ataque-unico",
+"es": "Ataque único",
+"text_html": "Un ataque concreto del foco facilita su tirada de ataque y suma +3 al daño."
+},
+{
+"id": "sh-alcance-aumentado",
+"es": "Alcance aumentado",
+"text_html": "El alcance de una habilidad sube un escalón: tacto o inmediato pasa a corto, corto a largo y largo a muy largo."
+}
+],
+"shifts_intro": "",
+"rpopts": [
+{
+"id": "rp-caja-azul",
+"es": "Caja azul",
+"en": "Blue Box",
+"pts": [
+1,
+3
+],
+"src": "Prometheus Unbound",
+"text_html": "Solo miembros de los Evocati de las Legiones. Tienes alijos secretos con el equipo de infantería de las Legiones y puedes usar uno por campaña. Cada punto más añade una opción: un equipo por personaje jugador, o usar dos alijos por campaña.",
+"req": {
+"ord": "ord-las-legiones"
+}
+},
+{
+"id": "rp-favor-del-leviatan",
+"es": "Favor del Leviatán",
+"en": "Leviathan’s Favor",
+"pts": [
+1,
+3
+],
+"src": "Prometheus Unbound",
+"text_html": "Solo pilotos de naves de salto. Tus tareas a bordo de tu nave se facilitan 1 paso y las tareas largas sobre sus sistemas avanzan más rápido. La nave te tiene una actitud positiva igual a los puntos gastados, y puedes crear un vínculo con ella.",
+"req": {}
+},
+{
+"id": "rp-plan-de-extraccion",
+"es": "Plan de extracción",
+"en": "Extraction Plan",
+"pts": [
+1,
+5
+],
+"src": "Prometheus Unbound",
+"text_html": "Cuando escapar parece imposible, añades a la escena un detalle que lo permite, como un guardia sobornado, un plano del alcantarillado o un conductor esperando. Funciona como una intrusión del jugador sin gastar PX, una vez por escena y tantas veces por sesión como puntos tengas.",
+"req": {}
+},
+{
+"id": "rp-afiliado-de-orgotek",
+"es": "Afiliado de Orgotek",
+"en": "Psi Orgotek Affiliate",
+"pts": [
+2,
+2
+],
+"src": "Prometheus Unbound",
+"text_html": "Fuiste empleado de Orgotek y sigues siendo miembro aunque pertenezcas a otra orden. Puedes recibir el beneficio de Orgotek, Acceso a bioware. Tus tratos con los miembros de tu otra orden se dificultan 1 paso, porque nunca acaban de fiarse.",
+"req": {}
+},
+{
+"id": "rp-jardin",
+"es": "Jardín",
+"en": "Garden",
+"pts": [
+2,
+2
+],
+"src": "Prometheus Unbound",
+"text_html": "Solo miembros de Upeo wa Macho. Una parcela de 1000 m² en la ciudad de Freedom, en el Mundo de Ruan.",
+"req": {
+"ord": "ord-upeo-wa-macho"
+}
+},
+{
+"id": "rp-companero-monstruo",
+"es": "Compañero monstruo",
+"en": "Monster Buddy",
+"pts": [
+3,
+3
+],
+"src": "Terra Firma",
+"text_html": "Trasfondo de fanático de los monstruos. Una criatura de las tierras arrasadas (o un robot, si el DJ lo permite) es tu seguidor y obedece órdenes razonables sin tirar. Leal, es de nivel 3; rebelde, de nivel 5, y una vez por sesión, tras un fallo tuyo, el DJ puede hacer que cause un problema.",
+"req": {}
+},
+{
+"id": "rp-bunker",
+"es": "Búnker",
+"en": "Bunker",
+"pts": [
+1,
+3
+],
+"src": "Terra Firma",
+"text_html": "Un escondite secreto en zonas cerradas de una arcología o en barrios en ruinas. Con 1 punto, pequeño o fácil de encontrar; con 3, grande o muy bien oculto. Encontrarte allí se dificulta 1 paso (2 con 3 puntos), y dentro tus tareas de ciencia, supervivencia o tecnología se facilitan igual.",
+"req": {}
+},
+{
+"id": "rp-aliado-se",
+"es": "Aliado SE",
+"en": "ES Ally",
+"pts": [
+3,
+3
+],
+"src": "Terra Firma",
+"text_html": "Una Sentiencia Evolucionada de Nippon es tu seguidor (datos en <em>Terra Firma</em>, pág. 110). Te ayuda y no actúa contra ti, pero tiene sus propios fines, poco humanos, y te pedirá ayuda con ellos.",
+"req": {}
+},
+{
+"id": "rp-honor-entre-ladrones",
+"es": "Honor entre ladrones",
+"en": "Honor Among Thieves",
+"pts": [
+2,
+2
+],
+"src": "Terra Firma",
+"text_html": "Una red de contactos del hampa y el mercado negro para favores, dinero e información. Puedes recurrir a ellos tres veces antes de que te pidan algo a cambio, y su actitud contigo empieza un paso mejor.",
+"req": {}
+},
+{
+"id": "rp-el-mercado-adecuado",
+"es": "El mercado adecuado",
+"en": "The Right Market",
+"pts": [
+1,
+1
+],
+"src": "Terra Firma",
+"text_html": "Una vez por sesión encuentras comprador para mercancía ilegal, sin gastar un contacto, aunque haya que negociar. Esos compradores pueden intentar estafarte o pedirte algo peligroso.",
+"req": {}
+},
+{
+"id": "rp-conversion-anfibia",
+"es": "Conversión anfibia",
+"en": "Amphibious Conversion",
+"pts": [
+2,
+2
+],
+"src": "Aumento grande",
+"text_html": "Aguantas la respiración 30 minutos y luego tiras cada 15; ves con poca luz sin penalización; hablas bajo el agua; inmune a la descompresión; aguantas hasta −20 °C; nadas el doble de rápido y sin obstáculo bajo el agua. Versión visible: lo social sobre tu aspecto se dificulta 1 paso ante quien desconfía de Oceanía o de los humanos modificados. Versión discreta: nadas a velocidad normal y sin penalización social",
+"req": {},
+"note": ""
+},
+{
+"id": "rp-conversion-acuatica",
+"es": "Conversión acuática",
+"en": "Aquatic Conversion",
+"pts": [
+2,
+2
+],
+"src": "Aumento grande",
+"text_html": "Lo de la anfibia y además respiras agua, tu piel es armadura ligera que no estorba, te mueves una distancia larga por asalto bajo el agua y tienes sonar a alcance muy largo. En tierra, moverte y maniobrar se dificulta 1 paso; necesitas el triple de agua; lo social sobre tu aspecto, dificultado 1 paso",
+"req": {},
+"note": ""
+},
+{
+"id": "rp-mejora-informatica",
+"es": "Mejora informática",
+"en": "Computer Enhancement",
+"pts": [
+2,
+2
+],
+"src": "Aumento grande",
+"text_html": "Solo criminales, espías o científicos con autorización. Tareas informáticas facilitadas 1 paso, pilotar con ordenador también; minicomp y realidad aumentada sin aparatos; cálculo, lectura rápida y memoria facilitados 1 paso; orientarte con OpNet facilitado 1 paso. Si se sabe, inspirar confianza se dificulta 1 paso. Un electrokinético con Tecnokinesis fila 3 que supere su seguridad de nivel 5 te altera la percepción",
+"req": {},
+"note": "2 (1 para un psion con biocomp)"
+},
+{
+"id": "rp-biocomp-integrado",
+"es": "Biocomp integrado",
+"en": "Psion Biocomp Enhancement",
+"pts": [
+1,
+1
+],
+"src": "Aumento grande",
+"text_html": "Para biokinéticos con Compartimentar o electrokinéticos con Tecnokinesis fila 2. La mejora informática sin penalización social; manipularte con poderes aberrantes es de dificultad 5 más alta",
+"req": {},
+"note": ""
+},
+{
+"id": "rp-tolerancia-aumentada",
+"es": "Tolerancia aumentada",
+"en": "Increased Tolerance",
+"pts": [
+1,
+3
+],
+"src": "Aumento grande",
+"text_html": "+1 de Tolerancia máxima por punto",
+"req": {},
+"note": ""
+},
+{
+"id": "rp-adaptacion-a-gravedad-baja",
+"es": "Adaptación a gravedad baja",
+"en": "Low-Gravity Adaptation",
+"pts": [
+1,
+2
+],
+"src": "Aumento grande",
+"text_html": "Con 1, vives meses en gravedad baja o cero sin problemas ni penalizaciones al moverte. Con 2, además tus pies son manos: trepar facilitado 1 paso y agarrar facilitado 1 paso en menos de 0,1 G",
+"req": {},
+"note": ""
+},
+{
+"id": "rp-adaptacion-a-marte",
+"es": "Adaptación a Marte",
+"en": "Mars Adaptation",
+"pts": [
+1,
+1
+],
+"src": "Aumento grande",
+"text_html": "Sin problemas en gravedad baja; aguantas la respiración 30 minutos; aguantas hasta −20 °C; tu piel es armadura ligera que no estorba",
+"req": {},
+"note": ""
+},
+{
+"id": "rp-acceso-a-ciberware",
+"es": "Acceso a ciberware",
+"en": "Cyberware Access",
+"pts": [
+1,
+3
+],
+"src": "Aumento grande",
+"text_html": "Solo agentes nihonjin. Tienes tantos implantes de hardtech como puntos, sin pagarlos, y los cambias entre sesiones en instalaciones médicas de Nippon",
+"req": {},
+"note": ""
+},
+{
+"id": "rp-sistema-de-arma-inteligente",
+"es": "Sistema de arma inteligente implantado",
+"en": "Implanted Smart Weapon System",
+"pts": [
+3,
+3
+],
+"src": "Mission Report: Nidavellir",
+"req": {},
+"text_html": "Solo funciona si el tirador tiene un sistema de arma inteligente. Con él, los ataques con esa arma se facilitan 1 paso. Además, las tareas que no son ataques y en las que sirve la información del sistema (mirar tras una esquina, farolear sobre la munición que te queda) se facilitan 1 paso."
+}
+],
+"bioware": [
+{
+"id": "bio-0",
+"es": "Arnés de combate Mako",
+"sec": "Armaduras",
+"tol": 1,
+"price": "Muy caro"
+},
+{
+"id": "bio-1",
+"es": "Arnés de combate Araña (Spider)",
+"sec": "Armaduras",
+"tol": 1,
+"price": "Muy caro"
+},
+{
+"id": "bio-2",
+"es": "Traje ambiental biológico (BES)",
+"sec": "Armaduras",
+"tol": 1,
+"price": "Caro"
+},
+{
+"id": "bio-3",
+"es": "BioVARG",
+"sec": "Armaduras",
+"tol": 2,
+"price": "Exorbitante"
+},
+{
+"id": "bio-4",
+"es": "Armadura de biotejido (Bioweave Armor)",
+"sec": "Armaduras",
+"tol": 1,
+"price": "Caro"
+},
+{
+"id": "bio-5",
+"es": "Armadura cambiante (Shifting Armor)",
+"sec": "Armaduras",
+"tol": 1,
+"price": "Muy caro"
+},
+{
+"id": "bio-6",
+"es": "Biocarabina de flechettes Orgotek Scorpion",
+"sec": "Armas a distancia",
+"tol": 1,
+"price": "Caro"
+},
+{
+"id": "bio-7",
+"es": "Guante láser Orgotek MiniPulse-L",
+"sec": "Armas a distancia",
+"tol": 1,
+"price": "De precio moderado"
+},
+{
+"id": "bio-8",
+"es": "Guantelete láser Orgotek Pulse-L",
+"sec": "Armas a distancia",
+"tol": 1,
+"price": "Muy caro"
+},
+{
+"id": "bio-9",
+"es": "Pistola táser Orgotek Electric Eel",
+"sec": "Armas a distancia",
+"tol": 1,
+"price": "De precio moderado"
+},
+{
+"id": "bio-10",
+"es": "Carabina de red Orgotek Spinneret",
+"sec": "Armas a distancia",
+"tol": 1,
+"price": "De precio moderado"
+},
+{
+"id": "bio-11",
+"es": "Electroláser (Electrolaser)",
+"sec": "Guanteletes psi",
+"tol": 2,
+"price": "Muy caro"
+},
+{
+"id": "bio-12",
+"es": "Potenciador (Enhancer)",
+"sec": "Guanteletes psi",
+"tol": 2,
+"price": "Exorbitante"
+},
+{
+"id": "bio-13",
+"es": "De fuerza (Force)",
+"sec": "Guanteletes psi",
+"tol": 1,
+"price": "Muy caro"
+},
+{
+"id": "bio-14",
+"es": "Certero (Sureshot)",
+"sec": "Guanteletes psi",
+"tol": 2,
+"price": "Muy caro"
+},
+{
+"id": "bio-15",
+"es": "Biogarras Orgotek Tiger (BioClaws)",
+"sec": "Armas cuerpo a cuerpo",
+"tol": 1,
+"price": "Barato, más una cirugía menor"
+},
+{
+"id": "bio-16",
+"es": "Guantelete venenoso Alchemy BW-2",
+"sec": "Armas cuerpo a cuerpo",
+"tol": 1,
+"price": "Caro"
+},
+{
+"id": "bio-17",
+"es": "Guantelete táser Orgotek Lightning",
+"sec": "Armas cuerpo a cuerpo",
+"tol": 1,
+"price": "De precio moderado"
+},
+{
+"id": "bio-18",
+"es": "Orgotek Tortoise (biocomp)",
+"sec": "Minicomps y biocomps",
+"tol": 1,
+"price": "De precio moderado"
+},
+{
+"id": "bio-19",
+"es": "Branquias (Gillbreather)",
+"sec": "Bioaplicaciones y aumentos comerciales",
+"tol": 1,
+"price": "De precio moderado"
+},
+{
+"id": "bio-20",
+"es": "Cápsula ARES",
+"sec": "Bioaplicaciones psiónicas",
+"tol": 4,
+"price": "Exorbitante"
+},
+{
+"id": "bio-21",
+"es": "Aumentador de interfaz (IAD)",
+"sec": "Bioaplicaciones psiónicas",
+"tol": 3,
+"price": "Muy caro"
+},
+{
+"id": "bio-22",
+"es": "Mochila de maniobra espacial (SMP)",
+"sec": "Bioaplicaciones psiónicas",
+"tol": 1,
+"price": "De precio moderado"
+},
+{
+"id": "bio-23",
+"es": "SMP para neutrales",
+"sec": "Bioaplicaciones psiónicas",
+"tol": 2,
+"price": "Caro"
+},
+{
+"id": "bio-24",
+"es": "Casco teleportacional (Teleportational Helm)",
+"sec": "Bioaplicaciones psiónicas",
+"tol": 3,
+"price": "Muy caro"
+},
+{
+"id": "bio-25",
+"es": "Amplificador de transmasión (TEAR)",
+"sec": "Bioaplicaciones psiónicas",
+"tol": 2,
+"price": "Caro"
+},
+{
+"id": "bio-26",
+"es": "Traje camaleón (Chameleon Suit)",
+"sec": "Equipo de espionaje",
+"tol": 1,
+"price": "Caro"
+},
+{
+"id": "bio-27",
+"es": "Pinzas (Grippers)",
+"sec": "Equipo de espionaje",
+"tol": 1,
+"price": "De precio moderado; injertadas, caro"
+},
+{
+"id": "bio-28",
+"es": "Moto andadora Orgotek Formica",
+"sec": "Vehículos de tierra",
+"tol": 2,
+"price": "Caro"
+},
+{
+"id": "bio-29",
+"es": "Todoterreno (ATV)",
+"sec": "Vehículos de tierra",
+"tol": 2,
+"price": "Muy caro"
+},
+{
+"id": "bio-30",
+"es": "Submarino militar biotech",
+"sec": "Vehículos acuáticos",
+"tol": 2,
+"price": "Exorbitante, con respaldo"
+},
+{
+"id": "bio-31",
+"es": "Bioglobo qin (Bioblimp)",
+"sec": "Vehículos aéreos",
+"tol": 2,
+"price": "Muy caro"
+},
+{
+"id": "bio-32",
+"es": "Caza biotech Orgotek Locust",
+"sec": "Naves espaciales",
+"tol": 3,
+"price": "Exorbitante, con respaldo"
+},
+{
+"id": "bio-33",
+"es": "Fragata de asalto Orgotek Scarab",
+"sec": "Naves espaciales",
+"tol": 3,
+"price": "Exorbitante, con respaldo"
+},
+{
+"id": "bio-34",
+"es": "Nave de salto Leviatán",
+"sec": "Naves espaciales",
+"tol": 3,
+"price": "Exorbitante, con respaldo"
+},
+{
+"id": "bio-35",
+"es": "Cápsula de regeneración (Regen Pod)",
+"sec": "Orden Esculapia",
+"tol": 2,
+"price": "Exorbitante"
+},
+{
+"id": "bio-36",
+"es": "Inyector variable (Variable Injector)",
+"sec": "Orden Esculapia",
+"tol": 1,
+"price": "Caro"
+},
+{
+"id": "bio-37",
+"es": "Comeflujo (Flux Eater)",
+"sec": "Chitra Bhanu",
+"tol": 3,
+"price": "Muy caro, cuando salga a la venta"
+},
+{
+"id": "bio-38",
+"es": "Barrera noética (Noetic Barrier)",
+"sec": "Chitra Bhanu",
+"tol": 1,
+"price": "Solo a través de la orden"
+},
+{
+"id": "bio-39",
+"es": "Máscara psíquica (Psychic Mask)",
+"sec": "Chitra Bhanu",
+"tol": 2,
+"price": "Muy caro; solo Chitra Bhanu y Norça"
+},
+{
+"id": "bio-40",
+"es": "Traje de blindaje noético (Shielding Suit)",
+"sec": "Chitra Bhanu",
+"tol": 1,
+"price": "Caro, añadido a la armadura"
+},
+{
+"id": "bio-41",
+"es": "Blanqueador noético (Flashwhimper)",
+"sec": "ISRA",
+"tol": 2,
+"price": "Muy caro; no sale de la orden"
+},
+{
+"id": "bio-42",
+"es": "Repetidor focal (Focal Relay)",
+"sec": "ISRA",
+"tol": 1,
+"price": "Caro"
+},
+{
+"id": "bio-43",
+"es": "Motor de tango (Tango Engine)",
+"sec": "ISRA",
+"tol": 2,
+"price": "Muy caro"
+},
+{
+"id": "bio-44",
+"es": "Prótesis de memoria de trabajo (Working Memory Prosthesis)",
+"sec": "ISRA",
+"tol": 1,
+"price": "Caro"
+},
+{
+"id": "bio-45",
+"es": "Lanzadera Tiburón de Puntas Negras (Black-Tipped Shark)",
+"sec": "Las Legiones",
+"tol": 3,
+"price": "Exorbitante; solo las Legiones"
+},
+{
+"id": "bio-46",
+"es": "Caza de ataque Viuda Negra (Black Widow)",
+"sec": "Las Legiones",
+"tol": 3,
+"price": "Exorbitante, con respaldo; solo las Legiones"
+},
+{
+"id": "bio-47",
+"es": "Implante de secuestro corporal (Bodyjack Implant)",
+"sec": "Ministerio de Asuntos Noéticos",
+"tol": 3,
+"price": "Exorbitante, con respaldo"
+},
+{
+"id": "bio-48",
+"es": "Esquirla de mente compartida (Mind-Share Shard)",
+"sec": "Ministerio de Asuntos Noéticos",
+"tol": 1,
+"price": "Caro"
+},
+{
+"id": "bio-49",
+"es": "Defensor",
+"sec": "Norça",
+"tol": 1,
+"price": "Caro por cada 100 m²"
+},
+{
+"id": "bio-50",
+"es": "Flor de agua (Flor de Água)",
+"sec": "Norça",
+"tol": 1,
+"price": "Muy caro, con lámparas UV"
+},
+{
+"id": "bio-51",
+"es": "Traductor cromático (Chromatic Translator)",
+"sec": "Orgotek",
+"tol": 2,
+"price": "Exorbitante"
+},
+{
+"id": "bio-52",
+"es": "Campo de interrupción de clarividencia (CIF)",
+"sec": "Orgotek",
+"tol": 4,
+"price": "Exorbitante, con respaldo"
+},
+{
+"id": "bio-53",
+"es": "Matriz de modulación electrokinética (EMM)",
+"sec": "Orgotek",
+"tol": 4,
+"price": "Exorbitante, con respaldo"
+},
+{
+"id": "bio-54",
+"es": "Manto visual (Visual Cloak)",
+"sec": "Orgotek",
+"tol": 5,
+"price": "Exorbitante, con respaldo"
+},
+{
+"id": "bio-55",
+"es": "Escudo parpadeante (Flickershield)",
+"sec": "Upeo wa Macho",
+"tol": 2,
+"price": "Muy caro"
+},
+{
+"id": "bio-56",
+"es": "Baliza noética (Noetic Beacon)",
+"sec": "Upeo wa Macho",
+"tol": 4,
+"price": "Exorbitante"
+},
+{
+"id": "bio-57",
+"es": "Amplificador SPEED",
+"sec": "Upeo wa Macho",
+"tol": 2,
+"price": "Muy caro"
+},
+{
+"id": "bio-58",
+"es": "Casco de visión espacial (Spatial Sight Helmet)",
+"sec": "Upeo wa Macho",
+"tol": 1,
+"price": "Caro"
+},
+{
+"id": "bio-59",
+"es": "Casco teleportacional Mark II",
+"sec": "Upeo wa Macho",
+"tol": 4,
+"price": "Exorbitante, con respaldo"
+},
+{
+"id": "bio-60",
+"es": "Crucero ligero clase Karwe",
+"sec": "Upeo wa Macho",
+"tol": 3,
+"price": "Exorbitante, con respaldo"
+},
+{
+"id": "bio-61",
+"es": "Nave colonia clase Nyangumi",
+"sec": "Upeo wa Macho",
+"tol": 3,
+"price": "Exorbitante, con respaldo"
+},
+{
+"id": "bio-62",
+"es": "Dron insecto (Bug Drone)",
+"sec": "Drones biotech",
+"tol": 2,
+"price": "De precio moderado"
+},
+{
+"id": "bio-63",
+"es": "Dron de operaciones (Operations Drone)",
+"sec": "Drones biotech",
+"tol": 2,
+"price": "Caro"
+},
+{
+"id": "bio-64",
+"es": "Subdron (Subdrone)",
+"sec": "Drones biotech",
+"tol": 2,
+"price": "Caro"
+},
+{
+"id": "bio-65",
+"es": "Teledron (Teledrone)",
+"sec": "Drones biotech",
+"tol": 2,
+"price": "De precio moderado"
+},
+{
+"id": "bio-66",
+"es": "Biodoble (Biodecoy)",
+"sec": "Drones biotech",
+"tol": 1,
+"price": "Caro"
+},
+{
+"id": "bio-67",
+"es": "Biovigilante (Bioguard)",
+"sec": "Drones biotech",
+"tol": 1,
+"price": "Exorbitante"
+},
+{
+"id": "bio-68",
+"es": "Mochila alada (Wingpack)",
+"sec": "Vehículos biotech",
+"tol": 2,
+"price": "Muy caro"
+},
+{
+"id": "bio-69",
+"es": "Acuacápsula (Aquapod)",
+"sec": "Vehículos biotech",
+"tol": 2,
+"price": "Muy caro"
+},
+{
+"id": "bio-70",
+"es": "Microrreactor (Microjet)",
+"sec": "Vehículos biotech",
+"tol": 2,
+"price": "Muy caro"
+},
+{
+"id": "bio-71",
+"es": "Coche aéreo (Air Car)",
+"sec": "Vehículos biotech",
+"tol": 2,
+"price": "Caro"
+},
+{
+"id": "bio-72",
+"es": "Convertible (Convertacar)",
+"sec": "Vehículos biotech",
+"tol": 2,
+"price": "Muy caro"
+},
+{
+"id": "bio-73",
+"es": "Acarreador qin (Qin Hauler)",
+"sec": "Vehículos biotech",
+"tol": 2,
+"price": "Muy caro"
+},
+{
+"id": "bio-74",
+"es": "Calamar (Squidcraft)",
+"sec": "Vehículos biotech",
+"tol": 2,
+"price": "Muy caro"
+},
+{
+"id": "bio-75",
+"es": "Explorador Upeo (Upeo Explorer)",
+"sec": "Vehículos biotech",
+"tol": 2,
+"price": "Exorbitante, con respaldo"
+},
+{
+"id": "bio-76",
+"es": "Respirador (Breather)",
+"sec": "Bioaplicaciones civiles",
+"tol": 2,
+"price": "Caro"
+},
+{
+"id": "bio-77",
+"es": "Máscara electrónica (E-Mask)",
+"sec": "Bioaplicaciones civiles",
+"tol": 1,
+"price": "De precio moderado (caro para neutrales)"
+},
+{
+"id": "bio-78",
+"es": "Guantelete de manipulación (Manipulation Gauntlet)",
+"sec": "Bioaplicaciones civiles",
+"tol": 1,
+"price": "De precio moderado (caro para neutrales)"
+},
+{
+"id": "bio-79",
+"es": "Micrófono noético (Noetic Bug)",
+"sec": "Bioaplicaciones civiles",
+"tol": 1,
+"price": "De precio moderado"
+},
+{
+"id": "bio-80",
+"es": "Corona de potenciación telepática (Telepathic Enhancement Crown)",
+"sec": "Bioaplicaciones civiles",
+"tol": 2,
+"price": "Caro"
+},
+{
+"id": "bio-81",
+"es": "Kit de regeneración de tejidos (Tissue Regeneration Kit)",
+"sec": "Bioaplicaciones civiles",
+"tol": 2,
+"price": "Caro"
+},
+{
+"id": "bio-82",
+"es": "Traje de realidad virtual (VR Suit)",
+"sec": "Bioaplicaciones civiles",
+"tol": 1,
+"price": "De precio moderado"
+},
+{
+"id": "bio-83",
+"es": "Manta de Orgotek",
+"sec": "Vehículos militares",
+"tol": 2,
+"price": "Exorbitante, con respaldo"
+},
+{
+"id": "bio-84",
+"es": "Funda de púas (Barb Sheath)",
+"sec": "Armaduras nuevas",
+"tol": 1,
+"price": "Muy caro (el texto dice caro)"
+},
+{
+"id": "bio-85",
+"es": "Lanzamisiles contenidos (Contained Missile Launcher)",
+"sec": "Armas nuevas",
+"tol": 2,
+"price": "Exorbitante"
+},
+{
+"id": "bio-86",
+"es": "Cañón de rayos (Lightning Cannon)",
+"sec": "Armas nuevas",
+"tol": 2,
+"price": "Exorbitante"
+},
+{
+"id": "bio-87",
+"es": "Aberscopio (Aberscope)",
+"sec": "Equipo militar",
+"tol": 1,
+"price": "De precio moderado (caro para neutrales)"
+},
+{
+"id": "bio-88",
+"es": "Cañón de rayos de escala VARG",
+"sec": "VARG",
+"tol": 2,
+"price": "Muy caro"
+},
+{
+"id": "bio-89",
+"es": "Cañón de rayos mayor de escala VARG",
+"sec": "VARG",
+"tol": 2,
+"price": "Exorbitante, con respaldo"
+},
+{
+"id": "bio-90",
+"es": "Fantasma (Phantom)",
+"sec": "VARG",
+"tol": 4,
+"price": "Blindaje adicional 1, carrera aumentada, arma 1 ×2, sigiloso, supraciencia 2"
+},
+{
+"id": "bio-91",
+"es": "Pez de Plata (Silverfish)",
+"sec": "VARG",
+"tol": 4,
+"price": "Blindaje adicional 1, carrera aumentada, arma 2, arma 1 ×2, supraciencia 2"
+},
+{
+"id": "bio-92",
+"es": "Argento (Argent)",
+"sec": "VARG",
+"tol": 5,
+"price": "Blindaje adicional 1, carrera aumentada, arma 2, arma 1, supraciencia 3"
+},
+{
+"id": "bio-93",
+"es": "Comadreja (Weasel)",
+"sec": "VARG",
+"tol": 3,
+"price": "Carrera aumentada, arma 1 ×2, sigiloso, supraciencia 1"
+},
+{
+"id": "bio-94",
+"es": "Boto",
+"sec": "VARG",
+"tol": 3,
+"price": "Blindaje adicional, carrera aumentada o patas múltiples, propulsión submarina, supraciencia 1"
+},
+{
+"id": "bio-95",
+"es": "Cucaracha (Cockroach)",
+"sec": "VARG",
+"tol": 4,
+"price": "Blindaje adicional 1, carrera aumentada, patas múltiples ×3, supraciencia 2, propulsores, herramientas"
+},
+{
+"id": "bio-96",
+"es": "Kraken",
+"sec": "VARG",
+"tol": 3,
+"price": "Blindaje adicional 2, patas múltiples ×2, supraciencia 1, arma 2, arma 1 ×2"
+},
+{
+"id": "bio-97",
+"es": "Mercurio (Mercury)",
+"sec": "VARG",
+"tol": 4,
+"price": "Blindaje adicional 2, carrera aumentada, carga, retrorreactores, supraciencia 3, arma 1"
+},
+{
+"id": "bio-98",
+"es": "Arma Secreta (Norça, *Prometheus Unbound*)",
+"sec": "VARG",
+"tol": 4,
+"price": "Blindaje adicional 1, carrera aumentada, arma 1 ×2, supraciencia 2"
+},
+{
+"id": "bio-99",
+"es": "Diata (Upeo, *Prometheus Unbound*)",
+"sec": "VARG",
+"tol": 4,
+"price": "Carrera aumentada, sigiloso, arma 1 ×2, supraciencia 2"
+},
+{
+"id": "bio-100",
+"es": "Biolanzadera (Bioshuttle)",
+"sec": "Naves espaciales nuevas (Spacecraft, Tasty Bit)",
+"tol": 3,
+"price": "Exorbitante"
+},
+{
+"id": "bio-101",
+"es": "Nave de salto clase Bundi (Bundi-class Jump Ship)",
+"sec": "Naves espaciales nuevas (Spacecraft, Tasty Bit)",
+"tol": 3,
+"price": "Exorbitante, con respaldo"
+},
+{
+"id": "bio-102",
+"es": "Fragata de escolta clase Chui (Chui-class Escort Frigate)",
+"sec": "Naves espaciales nuevas (Spacecraft, Tasty Bit)",
+"tol": 3,
+"price": "Exorbitante, con respaldo"
+},
+{
+"id": "bio-103",
+"es": "Estimulador de regeneración (Regeneration Stimulator)",
+"sec": "Medicina y vida cotidiana",
+"tol": 2,
+"price": "Exorbitante"
+},
+{
+"id": "bio-104",
+"es": "Calamar atador (Binder Squid)",
+"sec": "Medicina y vida cotidiana",
+"tol": 1,
+"price": "Caro"
+},
+{
+"id": "bio-105",
+"es": "Glándula berserker (Berserker Gland)",
+"sec": "Bioaplicaciones Code Indigo",
+"tol": 1,
+"price": "Muy caro"
+},
+{
+"id": "bio-106",
+"es": "Pistola de hueso (Bone Pistol)",
+"sec": "Bioaplicaciones Code Indigo",
+"tol": 2,
+"price": "Muy caro"
+},
+{
+"id": "bio-107",
+"es": "Visualizador forzado (Forced Visualizer)",
+"sec": "Bioaplicaciones Code Indigo",
+"tol": 2,
+"price": "Exorbitante"
+},
+{
+"id": "bio-108",
+"es": "Marca de identidad (Identity Brand)",
+"sec": "Bioaplicaciones Code Indigo",
+"tol": 1,
+"price": "Caro"
+},
+{
+"id": "bio-109",
+"es": "Corte largo (Long Cut)",
+"sec": "Bioaplicaciones Code Indigo",
+"tol": 2,
+"price": "Muy caro"
+},
+{
+"id": "bio-110",
+"es": "Alchemy BW-3 Oleander",
+"sec": "Cuerpo a cuerpo",
+"tol": 1,
+"price": "Muy caro"
+},
+{
+"id": "bio-111",
+"es": "Biosystems Jaguatirica",
+"sec": "Cuerpo a cuerpo",
+"tol": 1,
+"price": "Caro"
+},
+{
+"id": "bio-112",
+"es": "Islinger & Lenz Kugeltreffer 9K",
+"sec": "Cuerpo a cuerpo",
+"tol": 1,
+"price": "De precio moderado"
+},
+{
+"id": "bio-113",
+"es": "Islinger & Lenz MB1 «Silk Edge»",
+"sec": "Cuerpo a cuerpo",
+"tol": 1,
+"price": "Caro"
+},
+{
+"id": "bio-114",
+"es": "Biosystems Class II Laser «Escorpião»",
+"sec": "Armas de fuego civiles",
+"tol": 1,
+"price": "De precio moderado"
+},
+{
+"id": "bio-115",
+"es": "Biosystems Class III Laser «Tarântula»",
+"sec": "Armas de fuego civiles",
+"tol": 1,
+"price": "Muy caro"
+},
+{
+"id": "bio-116",
+"es": "Islinger & Lenz Æon-Spezialagent",
+"sec": "Armas de fuego civiles",
+"tol": 1,
+"price": "Muy caro"
+},
+{
+"id": "bio-117",
+"es": "Orgotek Bombardier",
+"sec": "Armas de fuego civiles",
+"tol": 1,
+"price": "De precio moderado"
+},
+{
+"id": "bio-118",
+"es": "Orgotek Whisper Gene",
+"sec": "Armas de fuego civiles",
+"tol": 1,
+"price": "De precio moderado"
+},
+{
+"id": "bio-119",
+"es": "Islinger & Lenz 429XB Flechette Carbine",
+"sec": "Armas de fuego militares",
+"tol": 1,
+"price": "Exorbitante, con respaldo"
+},
+{
+"id": "bio-120",
+"es": "Islinger & Lenz Strix .88X",
+"sec": "Armas de fuego militares",
+"tol": 1,
+"price": "Exorbitante"
+},
+{
+"id": "bio-121",
+"es": "Nullarbor Engineering Milites Laser Rifle",
+"sec": "Armas de fuego militares",
+"tol": 1,
+"price": "Caro"
+},
+{
+"id": "bio-122",
+"es": "Orgotek Sandbox Tree",
+"sec": "Armas pesadas y montadas",
+"tol": 1,
+"price": "Muy caro"
+},
+{
+"id": "bio-123",
+"es": "Alchemy Cryo-Veil V2",
+"sec": "Armas psi",
+"tol": 3,
+"price": "Muy caro"
+},
+{
+"id": "bio-124",
+"es": "Banji-Xuejin «Kǒnghè Zhě» (alabarda)",
+"sec": "Armas psi",
+"tol": 3,
+"price": "Exorbitante"
+},
+{
+"id": "bio-125",
+"es": "British Biosystemics Cheatcode",
+"sec": "Armas psi",
+"tol": 2,
+"price": "Caro"
+},
+{
+"id": "bio-126",
+"es": "British Biosystemics Static-9",
+"sec": "Armas psi",
+"tol": 1,
+"price": "Caro"
+},
+{
+"id": "bio-127",
+"es": "Flor Negra Rayo de Luz",
+"sec": "Armas psi",
+"tol": 2,
+"price": "Caro"
+},
+{
+"id": "bio-128",
+"es": "Islinger & Lenz Vitascope «Schmerzarzt»",
+"sec": "Armas psi",
+"tol": 1,
+"price": "Caro"
+},
+{
+"id": "bio-129",
+"es": "Islinger & Lenz Schwitzkasten",
+"sec": "Armas psi",
+"tol": 1,
+"price": "Muy caro"
+},
+{
+"id": "bio-130",
+"es": "Orgotek Echidna M1",
+"sec": "Armas psi",
+"tol": 2,
+"price": "Muy caro"
+},
+{
+"id": "bio-131",
+"es": "Orgotek Echidna M1AR",
+"sec": "Armas psi",
+"tol": 2,
+"price": "Muy caro"
+},
+{
+"id": "bio-132",
+"es": "Orgotek Echidna M1HC",
+"sec": "Armas psi",
+"tol": 2,
+"price": "Exorbitante"
+},
+{
+"id": "bio-133",
+"es": "Orgotek Pit Viper",
+"sec": "Armas psi",
+"tol": 2,
+"price": "Exorbitante"
+},
+{
+"id": "bio-134",
+"es": "Orgotek PK-1 Bastion",
+"sec": "Armas psi",
+"tol": 2,
+"price": "Exorbitante, con respaldo"
+},
+{
+"id": "bio-135",
+"es": "Orgotek PK-2 Bastion",
+"sec": "Armas psi",
+"tol": 2,
+"price": "Exorbitante, con respaldo"
+},
+{
+"id": "bio-136",
+"es": "Flor Negra Náuseas",
+"sec": "Armas psi",
+"tol": 2,
+"price": "Caro"
+},
+{
+"id": "bio-137",
+"es": "Xuejin Mindforge Systems Fēi Dāo",
+"sec": "Armas psi",
+"tol": 3,
+"price": "Muy caro"
+},
+{
+"id": "bio-138",
+"es": "Xuejin Mindforge Systems Guī Léi",
+"sec": "Armas psi",
+"tol": 2,
+"price": "Caro"
+},
+{
+"id": "bio-139",
+"es": "Xuejin Mindforge Systems Liè Weí Bī",
+"sec": "Armas psi",
+"tol": 2,
+"price": "Muy caro"
+},
+{
+"id": "bio-140",
+"es": "Xuejin Mindforge Systems Shīmíng",
+"sec": "Armas psi",
+"tol": 2,
+"price": "Caro"
+},
+{
+"id": "bio-141",
+"es": "Xuejin Mindforge Systems Shù Bá",
+"sec": "Armas psi",
+"tol": 2,
+"price": "Caro"
+},
+{
+"id": "bio-142",
+"es": "Biosystems Class VII Laser Array",
+"sec": "Armas de naves",
+"tol": 1,
+"price": "Caro"
+},
+{
+"id": "bio-143",
+"es": "Orgotek Hedgehog PDC",
+"sec": "Armas de naves",
+"tol": 1,
+"price": "De precio moderado"
+},
+{
+"id": "bio-144",
+"es": "Orgotek Summers",
+"sec": "Armas de naves",
+"tol": 1,
+"price": "Exorbitante, con respaldo"
+},
+{
+"id": "bio-145",
+"es": "Yamatetsu-Orgotek LWS-14 «Spindle»",
+"sec": "Armas de naves",
+"tol": 1,
+"price": "Exorbitante, con respaldo"
+},
+{
+"id": "bio-146",
+"es": "Fragata médica clase Nightingale",
+"sec": "Naves con nombre propio",
+"tol": 3,
+"price": "Exorbitante, con respaldo"
+},
+{
+"id": "bio-147",
+"es": "Todoterreno de emergencias (Emergency Response ATV)",
+"sec": "Naves con nombre propio",
+"tol": 3,
+"price": "Exorbitante"
+},
+{
+"id": "bio-148",
+"es": "Nave de desembarco clase Orca (Orca-class Troop Drop Ship)",
+"sec": "Naves con nombre propio",
+"tol": 3,
+"price": "Exorbitante, con respaldo"
+},
+{
+"id": "bio-149",
+"es": "Corbeta clase Workhorse",
+"sec": "Naves con nombre propio",
+"tol": 3,
+"price": "Exorbitante, con respaldo"
+},
+{
+"id": "bio-150",
+"es": "Cañonera clase Wasp",
+"sec": "Naves con nombre propio",
+"tol": 3,
+"price": "Exorbitante, con respaldo"
+},
+{
+"id": "bio-151",
+"es": "Windjammer Explorer de Nkumbe Industries",
+"sec": "Naves con nombre propio",
+"tol": 3,
+"price": "Exorbitante, con respaldo"
+}
+],
 "foci": [
 {
 "id": "apt-clarividencia",
