@@ -21,7 +21,7 @@ Web: repositorio `par1701/gotf` (GitHub Pages). Archivos publicados en la raíz:
 - `fuentes/gotf/`: datos extraídos y traducidos. `tr/*.json` son las traducciones (focos, tipos, género). `sf_*.json`: ciencia ficción.
 - `fuentes/scripts/build.py`: une todo en `data.json`. `trf.py` (`F()`) añade traducciones de focos; `sfput.py` (`put()`) tipos de CF; `reuse.py` reutiliza traducciones idénticas.
 - `fuentes/sheet/gen.py`: genera `hoja_es.pdf` (hoja oficial traducida). Necesita la hoja oficial rellenable de Monte Cook Games como `orig.pdf` (no incluida).
-- `index.html`: `SETTINGS` define cada ambientación (género, tipos, lista de habilidades, focos sugeridos, textos). `applySetting()` filtra `DALL` en `D`. `GOTF()` activa la capa divina; `AEON()` la de psiones de Æon (`aeForm()`, `aePicks()`, `aeAvail()`, `psiE()`, `aeGuide()`). Sin `#guia` ni `#creador` en la URL se muestra la portada neutra (`renderHome()`), desde la que se elige la ambientación.
+- `index.html`: `SETTINGS` define cada ambientación (género, tipos, lista de habilidades, focos sugeridos, textos). `applySetting()` filtra `DALL` en `D`. `GOTF()` activa la capa divina; `AEON()` la de psiones de Æon (`aeForm()`, `aePicks()`, `aeAvail()`, `psiE()`, `aeGuide()`; Modos auxiliares en `S.aux0` y en el avance `aux`, con `auxIds()`, `auxSel()`, `auxBasics()`). Sin `#guia` ni `#creador` en la URL se muestra la portada neutra (`renderHome()`), desde la que se elige la ambientación.
 - `fuentes/aeon/aptitudes.md`: exportación en Markdown del documento «Æon a Cypher — Aptitudes psíquicas». `fuentes/scripts/aeon.py` saca de él `fuentes/aeon/aeon.json` (Aptitudes como focos con `col` = Modo y `tier` = fila, órdenes, habilidades de género psíquicas, textos de la guía); `build.py` lo añade a `data.json`. Si el documento cambia: exportarlo de nuevo, `python3 fuentes/scripts/aeon.py` y `build.py`.
 
 ## Hecho
@@ -32,7 +32,7 @@ Web: repositorio `par1701/gotf` (GitHub Pages). Archivos publicados en la raíz:
 
 ## Pendiente
 
-- Æon, fase 2: Modos auxiliares, cambios de poder psi (rangos 1 y 4), opciones de orden de Prometheus Unbound, Terra Firma y Nidavellir, y equipo de Æon.
+- Æon, fase 2: cambios de poder psi (rangos 1 y 4), opciones de orden de Prometheus Unbound, Terra Firma y Nidavellir, y equipo de Æon.
 
 - Fase 3: superhéroes (7 tipos por rango, cambios de poder, habilidades de origen, Superheroics, adaptar tipos alternativos).
 - Fase 4: mundo real (solo personaje núcleo, habilidades del mundo real, habilidad extra en rangos 3 y 6, excepción de armas).

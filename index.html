@@ -342,7 +342,7 @@ const stepsAeon=()=>`
 <li><b>Personaje núcleo</b> [CCR, p. 10–13]: 8 de Potencia, 8 de Velocidad y 8 de Intelecto, más 6 puntos a repartir. Ventaja 0, Esfuerzo 1, límite de 2 cifras. Aguanta 3 heridas leves, 3 moderadas y 3 graves. Usa libremente armas ligeras y ninguna armadura. Empieza con 2 habilidades de la lista de ciencia ficción (opcionalmente una tercera a cambio de una incapacidad).</li>
 <li><b>Descriptor</b> [CCR, p. 24]. No hay especies: todos son humanos.</li>
 <li><b>Tipo</b>: uno de los de ciencia ficción dura o space opera, salvo Psiónico y Androide.</li>
-<li><b>Aptitud</b> (foco): en el rango 1 eliges cuatro habilidades, al menos tres de tu Aptitud; la cuarta puede ser de un Modo auxiliar. Cada habilidad pide la fila anterior de su columna. Ganas los dos poderes básicos de la Aptitud.</li>
+<li><b>Aptitud</b> (foco): en el rango 1 eliges cuatro habilidades, al menos tres de tu Aptitud; la cuarta puede ser de un Modo auxiliar: la fila 1 de un Modo de otra Aptitud, más los dos poderes básicos de esa Aptitud. Cada habilidad pide la fila anterior de su columna. Ganas los dos poderes básicos de tu Aptitud. Más tarde puedes ganar otros Modos auxiliares con el avance «Modo auxiliar», en lugar de uno de los cuatro del rango.</li>
 <li><b>PsiE y reserva Psi</b>: PsiE 2 en los rangos 1 y 2, 3 en los rangos 3 y 4, 4 en el 5 y 5 en el 6 (6 con la trascendencia). Puedes empezar con PsiE 3 a cambio de dos incapacidades; Cuantakinesis y Teletransporte lo exigen. La reserva Psi es 5 × PsiE, con su propia Ventaja (puedes poner en ella el +1 de Ventaja del tipo).</li>
 <li><b>Orden</b>: afiliación, no foco. Da su beneficio a todos sus miembros, sean de su Aptitud o no.</li>
 <li><b>Cambios de poder psi</b>: uno en el rango 1 y otro en el rango 4 (Poder, Ataque único o Alcance aumentado). El creador aún no los gestiona: anótalos a mano.</li>
@@ -362,7 +362,7 @@ const POOL=['Potencia','Velocidad','Intelecto'],PEN=['Might','Speed','Intellect'
 let SK={};
 const skEs=k=>{const es=(D&&D.skills_es[k])||SK[k];return es?`${es} (${k})`:k};
 const NUM={one:1,two:2,three:3,four:4,five:5,an:1,a:1};
-const ADV=[['pools','Aumentar capacidades: +4 a las reservas'],['edge','Hacia la perfección: +1 a una Ventaja'],['effort','Esfuerzo extra: +1 al Esfuerzo'],['skill','Habilidad: entrenarte (o especializarte) en una habilidad'],['o-recovery','Otro: +2 a las recuperaciones'],['o-focus','Otro: otra habilidad de foco'],['o-armor','Otro: usar libremente todas las armaduras'],['o-weapons','Otro: usar libremente todas las armas'],['o-genre','Otro: otra habilidad de género (rango 3 o más)']];
+const ADV=[['pools','Aumentar capacidades: +4 a las reservas'],['edge','Hacia la perfección: +1 a una Ventaja'],['effort','Esfuerzo extra: +1 al Esfuerzo'],['skill','Habilidad: entrenarte (o especializarte) en una habilidad'],['o-recovery','Otro: +2 a las recuperaciones'],['o-focus','Otro: otra habilidad de foco'],['o-armor','Otro: usar libremente todas las armaduras'],['o-weapons','Otro: usar libremente todas las armas'],['o-genre','Otro: otra habilidad de género (rango 3 o más)'],['aux','Modo auxiliar: la fila 1 de un Modo de otra Aptitud']];
 function descSkills(d){ if(!d)return[];const s=d.skills_en||'';const m=s.match(/Trained in (.*)/);if(!m)return[];return m[1].replace(/, or similar/,'').split(/, or |, | or /).map(x=>x.trim()).filter(Boolean)}
 const advDone=r=>{const a=S.adv[r]||{};return [0,1,2,3].every(i=>a['s'+i])};
 const tierFrom=()=>{let t=1;while(t<6&&advDone(t))t++;return t};
@@ -450,7 +450,7 @@ function atkForm(){const ch=ownAbs().map(o=>({o,c:dmgChoice(o)})).filter(x=>x.c&
 const extraFocus=()=>advList().filter(x=>x.k==='o-focus').length;
 const dMode=r=>(S.domMode||{})[r]||'dom';
 const domFocus=()=>{if(!GOTF())return 0;let n=0;for(let r=2;r<=+S.tier;r++)if(dMode(r)==='focus')n++;return n};
-const focusNeed=t=>AEON()?4+(t-1)+extraFocus():2+(t-1)+extraFocus()+domFocus()+(hasAb('Wider Use')?1:0);
+const focusNeed=t=>AEON()?4+(t-1)+extraFocus()-(S.aux0?1:0):2+(t-1)+extraFocus()+domFocus()+(hasAb('Wider Use')?1:0);
 const ftop=()=>hasAb('Wider Use')?Math.max(+S.tier,2):+S.tier;
 function domOwned(upTo=+S.tier){const own=[{r:1,a:D.dominion.find(x=>x.tier===1)}];
   for(let r=2;r<=upTo;r++){if(dMode(r)!=='dom')continue;const a=D.dominion.find(x=>x.id===S.dom[r]);if(a)own.push({r,a});
@@ -472,6 +472,13 @@ const aeTrans=()=>{if(!AEON()||+S.tier<6)return false;const f=D.foci.find(x=>x.i
 const psiE=()=>{const t=+S.tier;if(aeTrans())return 6;return Math.max(t>=6?5:t>=5?4:t>=3?3:2,psi3()?3:0)};
 const aeNM=f=>[0,1,2].map(c=>f?S.fa.filter(id=>abById(f,id).col===c).length:0);
 const EPOOL=()=>AEON()?[...POOL,'Psi']:POOL;
+// Modos auxiliares: la fila 1 de un Modo de otra Aptitud (la cuarta habilidad inicial o el avance «Modo auxiliar»)
+const auxIds=()=>AEON()?[S.aux0,...advList().filter(x=>x.k==='aux').map(x=>x.a['x'+x.i])].filter(Boolean):[];
+const auxAb=id=>{for(const f of D.foci){const a=f.abilities.find(x=>x.id===id);if(a)return {f,a}}return null};
+const auxOk=f=>f.id!==S.focus&&(!['apt-cuantakinesis','apt-teletransporte'].includes(f.id)||psiE()>=3);
+function auxSel(id,val,data=''){const taken=auxIds().filter(x=>x!==val);
+  return `<select id="${id}" ${data}><option value="">— ${id==='c-aux0'?'de mi Aptitud':'elige Modo'} —</option>${D.foci.filter(f=>f.id!==S.focus).map(f=>`<optgroup label="${esc(f.es)}${auxOk(f)?'':' (exige PsiE 3)'}">${f.modes.map((m,c)=>{const a=f.abilities.find(x=>x.col===c&&x.tier===1);return `<option value="${a.id}" ${a.id===val?'selected':''} ${!auxOk(f)||taken.includes(a.id)?'disabled':''}>${esc(m.es)}: ${esc(a.es)}${a.cost?' ('+esc(a.cost)+')':''}</option>`}).join('')}</optgroup>`).join('')}</select>`}
+const auxBasics=()=>{const seen=new Set();return auxIds().map(auxAb).filter(Boolean).filter(({f})=>f.id!==S.focus&&!seen.has(f.id)&&seen.add(f.id)).map(({f})=>f)};
 const abLab=(f,a)=>f&&f.aeon?`F${a.tier} · ${f.modes[a.col].es}`:`R${a.tier}`;
 function aeAvail(f,owned,a){if(owned.includes(a.id))return false;if(a.tier===1)return true;
   const prev=f.abilities.find(b=>b.col===a.col&&b.tier===a.tier-1);if(!prev||!owned.includes(prev.id))return false;
@@ -521,9 +528,10 @@ function renderForm(){if(applySetting())renderGuide();Object.defineProperty(S,'_
     for(let r=1;r<=t;r++){const a=S.adv[r]=S.adv[r]||{};const slots=r<t||t<6?4:3;
       h+=`<div class="card" style="margin:8px 0"><b>${r<t?`Rango ${r} (completado, subiste al ${r+1})`:`Rango ${r} (en curso)`}</b>`;
       for(let i=0;i<slots;i++){const v=a['s'+i]||'';const used=[0,1,2,3].filter(j=>j!==i).map(j=>a['s'+j]);const otherUsed=used.some(u=>u&&u.startsWith('o-'));
-        h+=`<div class="field"><select data-adv="${r}" data-slot="${i}" aria-label="Avance ${i+1}"><option value="">— avance ${i+1} —</option>${ADV.filter(([k])=>k===v||(!used.includes(k)&&!(k.startsWith('o-')&&otherUsed)&&!(k==='o-genre'&&r<3)&&!(RW()&&(k==='o-focus'||(k==='o-genre'&&!ty_))))).map(([k,l])=>`<option value="${k}" ${k===v?'selected':''}>${l}</option>`).join('')}</select>`;
+        h+=`<div class="field"><select data-adv="${r}" data-slot="${i}" aria-label="Avance ${i+1}"><option value="">— avance ${i+1} —</option>${ADV.filter(([k])=>k===v||(!used.includes(k)&&!(k.startsWith('o-')&&otherUsed)&&!(k==='o-genre'&&r<3)&&!(RW()&&(k==='o-focus'||(k==='o-genre'&&!ty_)))&&!(k==='aux'&&!AEON()))).map(([k,l])=>`<option value="${k}" ${k===v?'selected':''}>${l}</option>`).join('')}</select>`;
         if(v==='pools'){const pv=a['p'+i]||[0,0,0];h+=`<div class="pools" style="margin-top:6px">${POOL.map((p,j)=>`<label>${p}<input type="number" min="0" max="4" data-advp="${r}" data-slot="${i}" data-j="${j}" value="${+pv[j]||0}"></label>`).join('')}</div>`}
         if(v==='edge')h+=`<select data-adve="${r}" data-slot="${i}" style="margin-top:6px">${EPOOL().map((p,j)=>`<option value="${j}" ${+(a['e'+i]||0)===j?'selected':''}>Ventaja de ${p}</option>`).join('')}</select>`;
+        if(v==='aux')h+=`<div style="margin-top:6px">${auxSel('adv-x'+r+i,a['x'+i],`data-advx="${r}" data-slot="${i}"`)}</div>`;
         if(v==='skill')h+=`<div style="margin-top:6px">${skillSel('adv-k'+r+i,a['k'+i],'habilidad',`data-advk="${r}" data-slot="${i}"`,k=>advTR(r,k))}</div><p class="note">En rango 2 o más también vale atacar o defensa; especializarse en ataque o defensa, desde el rango 4.</p>`;
         h+=`</div>`}
       h+=`</div>`}
@@ -566,10 +574,11 @@ function aeForm(){const f=D.foci.find(x=>x.id===S.focus),o=DALL.aeon.orders.find
   let h=`<h3>3. Aptitud y orden</h3><div class="field"><label for="c-focus">Aptitud (foco)</label><select id="c-focus"><option value="">— elige —</option>${D.foci.map(x=>`<option value="${x.id}" ${x.id===S.focus?'selected':''}>${esc(x.es+' ('+x.en+') — '+x.who)}</option>`).join('')}</select></div>`;
   h+=`<div class="field"><label for="c-aorder">Orden psi (afiliación, no foco)</label><select id="c-aorder"><option value="">Independiente (sin beneficio de orden)</option>${DALL.aeon.orders.map(x=>`<option value="${x.id}" ${x.id===S.aorder?'selected':''}>${esc(x.es)} · cámara de ${esc(x.apt)}</option>`).join('')}</select>${o?`<p class="note"><b>${esc(o.ben)}.</b> ${o.ben_html}</p>`:''}</div>`;
   h+=`<div class="field"><label class="opt"><input type="checkbox" id="c-psi3" ${psi3()?'checked':''} ${mustPsi3()?'disabled':''}><span>Empezar con PsiE 3 a cambio de dos incapacidades en habilidades significativas (sin la habilidad extra que suelen dar)${mustPsi3()?'. <b>Obligatorio para tu Aptitud.</b>':''}</span></label>${psi3()?skillSel('c-pin0',(S.pinab||[])[0],'primera incapacidad')+'<div style="height:6px"></div>'+skillSel('c-pin1',(S.pinab||[])[1],'segunda incapacidad'):''}</div>`;
-  if(f)h+=`<p class="note">PsiE ${psiE()} · reserva Psi ${5*psiE()} · Tolerancia máxima ${psiE()+3}. Poderes básicos: ${f.basics.map(b=>esc(b.es)).join(' y ')}.</p>`;
+  if(f){h+=`<p class="note">PsiE ${psiE()} · reserva Psi ${5*psiE()} · Tolerancia máxima ${psiE()+3}. Poderes básicos: ${f.basics.map(b=>esc(b.es)).join(' y ')}.</p>`;
+    h+=`<div class="field"><label for="c-aux0">Cuarta habilidad inicial: de tu Aptitud o de un Modo auxiliar</label>${auxSel('c-aux0',S.aux0||'')}<p class="note">Un Modo auxiliar da la fila 1 de un Modo de otra Aptitud y, si no los tenías, los dos poderes básicos de esa Aptitud. Funciona siempre al nivel de la fila 1: no se puede forzar, ni combinar con otros poderes, ni usar en modo creativo; el tope de niveles de efecto es 1. Cuantakinesis y Teletransporte exigen PsiE 3. Más adelante se consiguen otros con el avance «Modo auxiliar». No cuentan para la disfunción.</p></div>`}
   return h}
 function aePicks(f,need){const nm_=aeNM(f);
-  let h=`<h3>Habilidades de la Aptitud (${S.fa.length} de ${need})</h3><p class="note">Rango 1: cuatro habilidades. Cada columna es un Modo: para coger una fila necesitas la anterior de su columna; no hay límite de fila por rango. Al subir de rango ganas una más de cualquier fila, y otra con el avance «Otro: otra habilidad de foco». La fila 6 solo en el rango 6, con la trascendencia (las cinco de un Modo y al menos tres de otro). La cuarta habilidad inicial puede ser de un Modo auxiliar: el creador aún no los gestiona, anótalo a mano.</p>`;
+  let h=`<h3>Habilidades de la Aptitud (${S.fa.length} de ${need})</h3><p class="note">Rango 1: cuatro habilidades. Cada columna es un Modo: para coger una fila necesitas la anterior de su columna; no hay límite de fila por rango. Al subir de rango ganas una más de cualquier fila, y otra con el avance «Otro: otra habilidad de foco». La fila 6 solo en el rango 6, con la trascendencia (las cinco de un Modo y al menos tres de otro). La cuarta habilidad inicial puede ser de un Modo auxiliar (en «Aptitud y orden»).</p>`;
   h+=`<div class="grid">${f.modes.map((m,c)=>`<div><div class="tier">${esc(m.es)} <span class="en">(${esc(m.en)})</span> · NM ${nm_[c]}</div>${f.abilities.filter(a=>a.col===c).sort((a,b)=>a.tier-b.tier).map(a=>{const on=S.fa.includes(a.id),ok=on||(S.fa.length<need&&aeAvail(f,S.fa,a));
     return `<label class="opt ${ok?'':'dis'}"><input type="checkbox" data-fa="${a.id}" ${on?'checked':''} ${ok?'':'disabled'}><span><b>F${a.tier} · ${nm(a)}</b>${cost(a)}<small>${esc((a.text_es||'').slice(0,120))}…</small></span></label>`}).join('')}</div>`).join('')}</div>`;
   return h}
@@ -637,6 +646,8 @@ function renderSheet(){if(document.body.classList.contains('psheet'))document.ti
     if(L.o)h+=`<div class="ab"><b>Origen · ${nm(L.o)}${cost(L.o)}.</b> ${tx(L.o)}</div>`;
     if(L.sh.length)h+=`<p>${L.sh.map(x=>`<span class="pill">${esc(x)}</span>`).join(' ')}</p>`;if(S.pshd)h+=`<p class="note">${esc(S.pshd)}</p>`}
   if(f&&f.aeon){const o=DALL.aeon.orders.find(x=>x.id===S.aorder);h+=`<h3>Aptitud: ${esc(f.es)} (${esc(f.who)})</h3>`+f.basics.map(b=>`<div class="ab"><b>Básico · ${nm(b)}.</b> ${tx(b)}</div>`).join('')+S.fa.map(id=>abById(f,id)).sort((a,b)=>a.col-b.col||a.tier-b.tier).map(a=>`<div class="ab"><b>${abLab(f,a)} · ${nm(a)}${cost(a)}.</b> ${tx(a)}</div>`).join('');
+    const ax=auxIds().map(auxAb).filter(Boolean);
+    if(ax.length)h+=`<h3>Modos auxiliares</h3>`+ax.map(({f:g,a})=>`<div class="ab"><b>F1 · ${esc(g.modes[a.col].es)} (${esc(g.es)}) · ${nm(a)}${cost(a)}.</b> ${tx(a)}</div>`).join('')+auxBasics().map(g=>g.basics.map(b=>`<div class="ab"><b>Básico de ${esc(g.es)} · ${nm(b)}.</b> ${tx(b)}</div>`).join('')).join('')+`<p class="note">Siempre al nivel de la fila 1: no se pueden forzar, combinar ni usar en modo creativo; tope de niveles de efecto 1.</p>`;
     if(o&&o.ben_html)h+=`<h3>Orden: ${esc(o.es)}</h3><div class="ab"><b>${esc(o.ben)}.</b> ${o.ben_html}</div>`;
     if(f.eq_es)h+=`<p><b>Equipo adicional:</b> ${esc(f.eq_es)}</p>`}
   else if(f){h+=`<h3>Foco</h3>`+S.fa.map(id=>abById(f,id)).sort((a,b)=>a.tier-b.tier).map(a=>`<div class="ab"><b>R${a.tier} · ${nm(a)}${cost(a)}.</b> ${tx(a)}</div>`).join('');
@@ -690,7 +701,7 @@ async function exportSheetPDF(){
   if(ty)ab.push('TIPO: '+nmTxt(ty),...ty.abilities.map(a=>`• ${nmTxt(a)}${cst(a)}. ${txt(a)}`),'');
   if(L&&L.si.alt)ab.push(`• ${nmTxt(D.sh_superheroics)}. ${txt(D.sh_superheroics)}`,'');
   if(L){ab.push('SUPERHÉROE: categoría '+L.si.rank+' · Superheroicidades en '+POOL[+S.shp||0]+(hasAb('Super Combatant')&&S.scomb?' · Supercombatiente: '+S.scomb:''));if(L.o)ab.push(`• Origen · ${nmTxt(L.o)}${cst(L.o)}. ${txt(L.o)}`);if(L.sh.length)ab.push('• Cambios de poder: '+L.sh.join(', ')+(S.pshd?'. '+S.pshd:''));ab.push('')}
-  if(f&&f.aeon){const o=DALL.aeon.orders.find(x=>x.id===S.aorder);ab.push(`PSI: PsiE ${psiE()} · reserva ${5*psiE()} · Ventaja ${c.edge[3]} · Tolerancia máxima ${psiE()+3}`,'APTITUD: '+f.es+' ('+f.who+')',...f.basics.map(b=>`• Básico · ${nmTxt(b)}. ${b.text_html.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim()}`),...S.fa.map(id=>abById(f,id)).sort((a,b)=>a.col-b.col||a.tier-b.tier).map(a=>`• ${abLab(f,a)} · ${nmTxt(a)}${cst(a)}. ${txt(a)}`),'');if(o)ab.push('ORDEN: '+o.es+' · '+o.ben+(o.ben_html?'. '+o.ben_html.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim():''),'')}
+  if(f&&f.aeon){const o=DALL.aeon.orders.find(x=>x.id===S.aorder);ab.push(`PSI: PsiE ${psiE()} · reserva ${5*psiE()} · Ventaja ${c.edge[3]} · Tolerancia máxima ${psiE()+3}`,'APTITUD: '+f.es+' ('+f.who+')',...f.basics.map(b=>`• Básico · ${nmTxt(b)}. ${b.text_html.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim()}`),...S.fa.map(id=>abById(f,id)).sort((a,b)=>a.col-b.col||a.tier-b.tier).map(a=>`• ${abLab(f,a)} · ${nmTxt(a)}${cst(a)}. ${txt(a)}`),'');const ax=auxIds().map(auxAb).filter(Boolean),pl=h_=>h_.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim();if(ax.length)ab.push('MODOS AUXILIARES (siempre fila 1)',...ax.map(({f:g,a})=>`• F1 · ${g.modes[a.col].es} (${g.es}) · ${nmTxt(a)}${cst(a)}. ${txt(a)}`),...auxBasics().flatMap(g=>g.basics.map(b=>`• Básico de ${g.es} · ${nmTxt(b)}. ${pl(b.text_html)}`)),'');if(o)ab.push('ORDEN: '+o.es+' · '+o.ben+(o.ben_html?'. '+o.ben_html.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim():''),'')}
   else if(f)ab.push('FOCO: '+nmTxt(f),...S.fa.map(id=>abById(f,id)).sort((a,b)=>a.tier-b.tier).map(a=>`• R${a.tier} · ${nmTxt(a)}${cst(a)}. ${txt(a)}`),'');
   if(L&&L.f2)ab.push('SEGUNDO FOCO: '+nmTxt(L.f2),...L.fa2.map(a=>`• R${a.tier} · ${nmTxt(a)}${cst(a)}. ${txt(a)}`),'');
   const g=S.genre.map(id=>D.genre.find(x=>x.id===id)).filter(Boolean);if(g.length)ab.push(('HABILIDADES '+GWA()).toUpperCase(),...g.map(a=>`• ${nmTxt(a)}${cst(a)}. ${txt(a)}`),'');
@@ -741,7 +752,7 @@ function bind(){
     else if(d.ov!==undefined){S.ov=S.ov||[0,0,0];S.ov[+d.ov]=Math.max(0,Math.min(12,+el.value||0))}
     else if(d.psh!==undefined){S.psh=S.psh||{};S.psh[d.psh]=Math.max(0,Math.min(3,+el.value||0))}
     else if(d.fa2){if(el.checked)S.fa2.push(d.fa2);else{S.fa2=S.fa2.filter(x=>x!==d.fa2);trimPicks()}}
-    else if(el.id==='c-aorder')S.aorder=el.value;else if(el.id==='c-psi3')S.psi3=el.checked;else if(el.id==='c-pin0'||el.id==='c-pin1'){(S.pinab=S.pinab||['',''])[+el.id.slice(-1)]=el.value}
+    else if(el.id==='c-aorder')S.aorder=el.value;else if(el.id==='c-aux0'){S.aux0=el.value;trimPicks()}else if(el.id==='c-psi3')S.psi3=el.checked;else if(el.id==='c-pin0'||el.id==='c-pin1'){(S.pinab=S.pinab||['',''])[+el.id.slice(-1)]=el.value}
     else if(el.id==='c-sk3')S.sk3=el.value;else if(el.id==='c-inab')S.inab=el.value;
     else if(d.sk!==undefined)S.sk[+d.sk]=el.value;
     else if(d.alloc!==undefined)S.alloc[+d.alloc]=Math.max(0,Math.min(6,+el.value||0));
@@ -750,6 +761,7 @@ function bind(){
     else if(d.advp){const a=S.adv[d.advp];const pv=a['p'+d.slot]=a['p'+d.slot]||[0,0,0];pv[+d.j]=Math.max(0,Math.min(4,+el.value||0))}
     else if(d.adve){S.adv[d.adve]['e'+d.slot]=+el.value}
     else if(d.advk){S.adv[d.advk]['k'+d.slot]=el.value}
+    else if(d.advx){S.adv[d.advx]['x'+d.slot]=el.value}
     else if(d.fa){if(el.checked)S.fa.push(d.fa);else{S.fa=S.fa.filter(x=>x!==d.fa);trimPicks()}}
     else if(d.genre){if(el.checked)S.genre.push(d.genre);else S.genre=S.genre.filter(x=>x!==d.genre)}
     else if(d.dom){S.dom[d.dom]=el.value}
@@ -780,6 +792,7 @@ function trimPicks(){
   const t=+S.tier;
   for(const r of Object.keys(S.adv))if(+r>t)delete S.adv[r];
   const f=D.foci.find(x=>x.id===S.focus);
+  if(AEON()){const ok=id=>{const x=auxAb(id);return x&&auxOk(x.f)};if(S.aux0&&!ok(S.aux0))S.aux0='';for(const {k,a,i} of advList())if(k==='aux'&&a['x'+i]&&!ok(a['x'+i]))a['x'+i]=''}
   if(f&&f.aeon){const valid=l=>{const k=[];let ch=true;while(ch){ch=false;for(const id of l){const a=abById(f,id);if(!k.includes(id)&&a.tier&&aeAvail(f,k,a)){k.push(id);ch=true}}}return l.filter(id=>k.includes(id))};
     S.fa=valid(valid(S.fa).slice(0,focusNeed(t)))}
   else if(f){const kept=[],tt=ftop();for(const id of S.fa){const a=abById(f,id);if(a.tier<=tt&&(a.tier===1||focusAvail(f,kept,a,tt)))kept.push(id)}
