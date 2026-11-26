@@ -229,7 +229,6 @@ Rasgos nuevos de *Prometheus Unbound* que solo puede tomar quien cumple el requi
 **Como habilidad de género de rango 3:**
 
 - **Hiperperceptivo (Hyperperceptive):** solo clarividentes. Tus tareas de Sintonía, y las de entrar en el dhikr o mantenerlo, se facilitan 1 paso.
-- **Dejarse llevar (Go With the Flow):** solo miembros de ISRA que no sean clarividentes. Cuando actúas con un aviso previo, psiónico o no, eliges un efecto: facilitar 2 pasos una acción; ignorar todos los obstáculos de una acción; o, como acción, dificultar 1 paso la siguiente tarea de un objetivo. Cada aviso solo se aprovecha una vez, y el DJ decide si se aplica.
 - **Psicocomunión (Psycommunion):** solo telépatas del Ministerio. Mantienes cualquier número de conversaciones de Habla mental o de Red sin penalización. En combate, si estás en una Red, tu iniciativa se facilita 1 paso.
 - **Mentor cuantakinético (Quantakinetic Mentor):** solo miembros de Norça con Cuantakinesis como Modo auxiliar. Un Chitra Bhanu te enseña: tus tareas de entender o aplicar la teoría noética se facilitan 1 paso. Sabes que la orden sobrevive.
 - **Nómada (Nomad):** solo miembros de Upeo wa Macho, de los Long Riders. Tu PsiE cuenta 2 más para el tiempo de tránsito y la espera de tus saltos, y para nada más.
@@ -243,6 +242,7 @@ Rasgos nuevos de *Prometheus Unbound* que solo puede tomar quien cumple el requi
   - Cambiar de plantilla cuesta 1 Psi y es instantáneo; la inactiva no se detecta.
   - Para dejarla accesible a otros, por ejemplo para modificarla, comprometes 1 Psi.
   - Los poderes de Vitakinesis afectan a la plantilla activa. Si cambias a una plantilla sana, te libras de los efectos de Algesis.
+- **Dejarse llevar (Go With the Flow):** solo miembros de ISRA que no sean clarividentes. Cuando actúas con un aviso previo, psiónico o no, eliges un efecto: facilitar 2 pasos una acción; ignorar todos los obstáculos de una acción; o, como acción, dificultar 1 paso la siguiente tarea de un objetivo. Cada aviso solo se aprovecha una vez, y el DJ decide si se aplica.
 
 * **Fan al-Basira avanzado:** requiere Fan al-Basira. Capacitador. **Inversión causal:** mientras estás en guardia (la acción de vigilar de C2), puedes responder a un ataque cuerpo a cuerpo con un ataque inmediato que no hace daño y solo desarma, agarra, derriba o empuja.
 
@@ -274,6 +274,9 @@ Sendas de *Terra Firma* que solo sirven de trasfondo, sin rasgo especial: Fantas
 **Como habilidad de género de rango 3:**
 
 - **Ráfaga de inspiración (Flurry of Inspiration):** trasfondo de científico loco. Al fabricar supraciencia, el tiempo entre hitos baja un escalón; en el más bajo, el hito se completa en una escena.
+
+**Como habilidad de género de rango 6:**
+
 - **Cuanto más grandes son (The Bigger They Are):** trasfondo de cazador de monstruos. Contra un enemigo de mayor tamaño que tú, ignoras los obstáculos por escala al atacarlo y al defenderte de él.
 
 **Como entrenamiento o como habilidad de género de rango 3:**
@@ -1568,7 +1571,7 @@ Convertidos de los ejemplos de Æon. Las cifras salen de la tabla de arquetipos;
 - Se puede superar el tope de niveles de efecto aplicando niveles de Esfuerzo al efecto, que se pagan y limitan como Esfuerzo. Viene de C2, donde las opciones de una habilidad se compran con niveles de Esfuerzo.
 - Los niveles de efecto se pagan antes de tirar y se pierden si fallas, como el Esfuerzo de C2.
 - Terminología: la del glosario fijado del proyecto, como el creador de personajes (dificultar, recurso, cifra, de precio moderado). Los Edges de Æon se llaman rasgos, para no confundirlos con la Ventaja de las reservas.
-- Opciones de orden y rasgos (Prometheus Unbound, Terra Firma, Player's Guide, Nidavellir): las de habilidad de género se eligen en el rango 3 o 6; las de entrenamiento se pueden tomar como entrenamiento o como habilidad de género de rango 3; las de puntos de recurso siguen pagándose con puntos.
+- Opciones de orden y rasgos (Prometheus Unbound, Terra Firma, Player's Guide, Nidavellir): las de habilidad de género se eligen en el rango 3 o 6; las de entrenamiento se pueden tomar como entrenamiento o como habilidad de género de rango 3; las de puntos de recurso siguen pagándose con puntos. Dejarse llevar (•••) y Cuanto más grandes son (••••) pasan al rango 6 por su coste y su efecto.
 
 ### Supuestos míos (revisar)
 

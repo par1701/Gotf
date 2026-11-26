@@ -2691,23 +2691,6 @@
 }
 },
 {
-"id": "genre-aeon-dejarse-llevar",
-"level": "mid",
-"en": "Go With the Flow",
-"es": "Dejarse llevar",
-"cost": "",
-"cost_es": "",
-"text_es": "Solo miembros de ISRA que no sean clarividentes. Cuando actúas con un aviso previo, psiónico o no, eliges un efecto: facilitar 2 pasos una acción; ignorar todos los obstáculos de una acción; o, como acción, dificultar 1 paso la siguiente tarea de un objetivo. Cada aviso solo se aprovecha una vez, y el DJ decide si se aplica.",
-"text_html": "Solo miembros de ISRA que no sean clarividentes. Cuando actúas con un aviso previo, psiónico o no, eliges un efecto: facilitar 2 pasos una acción; ignorar todos los obstáculos de una acción; o, como acción, dificultar 1 paso la siguiente tarea de un objetivo. Cada aviso solo se aprovecha una vez, y el DJ decide si se aplica.",
-"genre": "aeon",
-"src": "Prometheus Unbound",
-"train": false,
-"req": {
-"ord": "ord-isra",
-"noapt": "apt-clarividencia"
-}
-},
-{
 "id": "genre-aeon-psicocomunion",
 "level": "mid",
 "en": "Psycommunion",
@@ -2789,6 +2772,23 @@
 "req": {
 "apt": "apt-biokinesis",
 "ord": "ord-norca"
+}
+},
+{
+"id": "genre-aeon-dejarse-llevar",
+"level": "high",
+"en": "Go With the Flow",
+"es": "Dejarse llevar",
+"cost": "",
+"cost_es": "",
+"text_es": "Solo miembros de ISRA que no sean clarividentes. Cuando actúas con un aviso previo, psiónico o no, eliges un efecto: facilitar 2 pasos una acción; ignorar todos los obstáculos de una acción; o, como acción, dificultar 1 paso la siguiente tarea de un objetivo. Cada aviso solo se aprovecha una vez, y el DJ decide si se aplica.",
+"text_html": "Solo miembros de ISRA que no sean clarividentes. Cuando actúas con un aviso previo, psiónico o no, eliges un efecto: facilitar 2 pasos una acción; ignorar todos los obstáculos de una acción; o, como acción, dificultar 1 paso la siguiente tarea de un objetivo. Cada aviso solo se aprovecha una vez, y el DJ decide si se aplica.",
+"genre": "aeon",
+"src": "Prometheus Unbound",
+"train": false,
+"req": {
+"ord": "ord-isra",
+"noapt": "apt-clarividencia"
 }
 },
 {
@@ -2909,7 +2909,7 @@
 },
 {
 "id": "genre-aeon-cuanto-mas-grandes-son",
-"level": "mid",
+"level": "high",
 "en": "The Bigger They Are",
 "es": "Cuanto más grandes son",
 "cost": "",
