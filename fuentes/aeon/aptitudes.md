@@ -246,13 +246,13 @@ Rasgos nuevos de *Prometheus Unbound* que solo puede tomar quien cumple el requi
 
 * **Fan al-Basira avanzado:** requiere Fan al-Basira. Capacitador. **Inversión causal:** mientras estás en guardia (la acción de vigilar de C2), puedes responder a un ataque cuerpo a cuerpo con un ataque inmediato que no hace daño y solo desarma, agarra, derriba o empuja.
 
-**Como entrenamiento en una habilidad.** Se toman como cualquier otra habilidad de C2, al crear el personaje o con un avance:
+**Como entrenamiento o como habilidad de género de rango 3:** se toman como cualquier otra habilidad de C2 (al crear el personaje o con un avance), o como habilidad de género en el rango 3 o con el avance «Otro: otra habilidad de género».
 
 - **Empatía alienígena (Alien Empathy):** solo Oficiales de Asuntos Alienígenas del Ministerio. Los obstáculos que vienen de las diferencias entre alienígenas y humanos se reducen 1 paso.
 - **Intuición brillante (Brilliant Insight):** solo científicos o miembros de Chitra Bhanu. Entender o descifrar un misterio científico.
 - **Flexibilidad forzada (Forced Flexibility):** requiere estar entrenado en curar. Curas con equipo improvisado sin penalización, y las tareas en las que te ayuda tu formación médica, como consolar o reparar equipo médico, se facilitan 1 paso.
 - **Conciencia geopolítica (Geopolitical Awareness):** sin tirar sabes las fronteras y quién manda oficialmente en cada sitio; si no puedes saberlo, tienes una fuente fiable.
-- **Explorador intrépido (Fearless Explorer):** al explorar un lugar nuevo, sea un obstáculo físico, social o intelectual, ignoras 1 paso de dificultads.
+- **Explorador intrépido (Fearless Explorer):** al explorar un lugar nuevo, sea un obstáculo físico, social o intelectual, ignoras 1 paso de dificultad.
 - **Transporte seguro (Safe Transport):** requiere estar entrenado en pilotar. Tratar a un paciente en el vehículo que pilotas no se dificulta por el movimiento. A criterio del DJ, tampoco otras tareas delicadas a bordo, como desactivar una bomba.
 
 **Con puntos de recurso:**
@@ -276,7 +276,7 @@ Sendas de *Terra Firma* que solo sirven de trasfondo, sin rasgo especial: Fantas
 - **Ráfaga de inspiración (Flurry of Inspiration):** trasfondo de científico loco. Al fabricar supraciencia, el tiempo entre hitos baja un escalón; en el más bajo, el hito se completa en una escena.
 - **Cuanto más grandes son (The Bigger They Are):** trasfondo de cazador de monstruos. Contra un enemigo de mayor tamaño que tú, ignoras los obstáculos por escala al atacarlo y al defenderte de él.
 
-**Como entrenamiento en una habilidad:**
+**Como entrenamiento o como habilidad de género de rango 3:**
 
 - **Maña con la tecnología perdida (Knack for Lost Tech):** trasfondo de las ruinas nova. Ignoras los obstáculos por desconocer tecnología extraña, alienígena o antigua, también al repararla.
 - **Amigo de todos los monstruos (Friend to All Monsters):** trasfondo de fanático de los monstruos. Siempre puedes tratar socialmente con monstruos, bestias y robots no humanos, y su actitud hacia ti empieza un paso mejor.
@@ -298,11 +298,11 @@ Sendas de *Terra Firma* que solo sirven de trasfondo, sin rasgo especial: Fantas
 - **Honor entre ladrones (Honor Among Thieves), 2 puntos:** una red de contactos del hampa y el mercado negro para favores, dinero e información. Puedes recurrir a ellos tres veces antes de que te pidan algo a cambio, y su actitud contigo empieza un paso mejor.
 - **El mercado adecuado (The Right Market), 1 punto:** una vez por sesión encuentras comprador para mercancía ilegal, sin gastar un contacto, aunque haya que negociar. Esos compradores pueden intentar estafarte o pedirte algo peligroso.
 
-Del *Player's Guide* quedan fuera los Dones y los rasgos inspirados, que son de Talentos; los rasgos ligadas a sus organizaciones de la época actual (Acento impecable, Hombre de negro, Contacto criminal); y las propias de los kuliltui y del Microverso.
+Del *Player's Guide* quedan fuera los Dones y los rasgos inspirados, que son de Talentos; los rasgos ligados a sus organizaciones de la época actual (Acento impecable, Hombre de negro, Contacto criminal); y las propias de los kuliltui y del Microverso.
 
 ### Opciones de Mission Report: Nidavellir
 
-- **Tolerancia a la fuerza G (entrenamiento):** las tareas para resistir aceleraciones, deceleraciones o fuerzas G extremas se facilitan 1 paso. En Æon es un rasgo de 1 o 2 que pide Aguante o Resolución 3.
+- **Tolerancia a la fuerza G (entrenamiento o habilidad de género de rango 3):** las tareas para resistir aceleraciones, deceleraciones o fuerzas G extremas se facilitan 1 paso. En Æon es un rasgo de 1 o 2 que pide Aguante o Resolución 3.
 - **Sistema de arma inteligente implantado (3 puntos de recurso):** está en el documento de equipo, con la etiqueta Arma inteligente.
 - **Sendas** Especialista en primer contacto, Alta Flota de Nippon y Piloto de VARG: no se usan, como las demás sendas. Sus rasgos especiales necesitan un trasfondo equivalente que apruebe el DJ.
 
@@ -1568,6 +1568,7 @@ Convertidos de los ejemplos de Æon. Las cifras salen de la tabla de arquetipos;
 - Se puede superar el tope de niveles de efecto aplicando niveles de Esfuerzo al efecto, que se pagan y limitan como Esfuerzo. Viene de C2, donde las opciones de una habilidad se compran con niveles de Esfuerzo.
 - Los niveles de efecto se pagan antes de tirar y se pierden si fallas, como el Esfuerzo de C2.
 - Terminología: la del glosario fijado del proyecto, como el creador de personajes (dificultar, recurso, cifra, de precio moderado). Los Edges de Æon se llaman rasgos, para no confundirlos con la Ventaja de las reservas.
+- Opciones de orden y rasgos (Prometheus Unbound, Terra Firma, Player's Guide, Nidavellir): las de habilidad de género se eligen en el rango 3 o 6; las de entrenamiento se pueden tomar como entrenamiento o como habilidad de género de rango 3; las de puntos de recurso siguen pagándose con puntos.
 
 ### Supuestos míos (revisar)
 

@@ -80,6 +80,43 @@ for h,b in sections(gs,3):
     for mm in re.finditer(r'(?m)^- \*\*(.+?):\*\*\s*(.*)$',b):
         es,en=split_en(mm.group(1)); en=en or es
         genre.append({'id':'genre-aeon-'+slug(es),'level':lvl,'en':en,'es':es,'cost':'','cost_es':'','text_es':re.sub(r'<[^>]+>','',cap(html(mm.group(2)))),'text_html':cap(html(mm.group(2))),'genre':'aeon'})
+# opciones de orden y rasgos: de género (rango 3 o 6) y de entrenamiento (también de género de rango 3); las de puntos de recurso no
+REQ={'Hyperperceptive':{'apt':'apt-clarividencia'},'Go With the Flow':{'ord':'ord-isra','noapt':'apt-clarividencia'},'Psycommunion':{'apt':'apt-telepatia','ord':'ord-ministerio-de-asuntos-noeticos'},
+ 'Quantakinetic Mentor':{'ord':'ord-norca','aux':'apt-cuantakinesis'},'Nomad':{'ord':'ord-upeo-wa-macho'},'Fan al-Basira':{'ord':'ord-isra','mode':'apt-clarividencia-2'},
+ 'Auxiliary Template':{'apt':'apt-biokinesis','ord':'ord-norca'},'Fan al-Basira avanzado':{'need':'genre-aeon-fan-al-basira'},'Alien Empathy':{'ord':'ord-ministerio-de-asuntos-noeticos'},
+ 'Combat Diver':{'need':'genre-aeon-buceador-experto'}}
+opts=[]
+def items(block):
+    out=[];cur=None
+    for line in block.split('\n'):
+        m=re.match(r'^[-*] \*\*(.+?):?\*\*:?\s*(.*)$',line)
+        if m: cur=[m.group(1).rstrip(':'),[m.group(2)]];out.append(cur);continue
+        if cur and re.match(r'^\s+[-*] ',line): cur[1].append(line.strip())
+        elif cur and line.strip()=='' : pass
+        elif cur and not line.startswith(('**','#')) and line.strip(): cur[1].append(line)
+        else: cur=None if line.startswith(('**','#')) else cur
+    return out
+def grab(text,src):
+    for m in re.finditer(r'(?ms)^\*\*Como (.+?)\*\*(.*?)(?=^\*\*Como |^\*\*Con puntos|^### |^## |^Los rasgos Aptitud|^Del \*Player|\Z)',text):
+        kind=m.group(1)
+        lvl='high' if 'rango 6' in kind else 'mid'; train='entrenamiento' in kind
+        for name,body in items(m.group(2)):
+            es,en=split_en(name); en=en or es
+            src_=src
+            if en.endswith(", *Player's Guide*"): en=en[:-len(", *Player's Guide*")]; src_="Player's Guide"
+            first=body[0]; rest=[b for b in body[1:]]
+            h=cap(html(first+('\n\n'+'\n'.join(rest) if rest else '')))
+            opts.append({'id':'genre-aeon-'+slug(es),'level':lvl,'en':en,'es':es,'cost':'','cost_es':'','text_es':re.sub(r'<[^>]+>','',h),'text_html':h,'genre':'aeon','src':src_,'train':train,'req':REQ.get(en,{})})
+pt_=dict(top)['Personajes: tipos y órdenes']
+grab(dict(sections(pt_,3))['Opciones de orden (Prometheus Unbound)'],'Prometheus Unbound')
+tf=dict(top)["Opciones de Terra Firma y del Player's Guide"]
+grab(re.split(r'(?m)^### ',tf)[0],'Terra Firma')
+nd=dict(sections(tf,3))['Opciones de Mission Report: Nidavellir']
+for name,body in items(nd):
+    if 'entrenamiento' in name:
+        nm_=re.sub(r'\s*\((?:entrenamiento|habilidad)[^)]*\)$','',name);h=cap(html(body[0]))
+        opts.append({'id':'genre-aeon-'+slug(nm_),'level':'mid','en':'G Force Tolerance','es':nm_,'cost':'','cost_es':'','text_es':re.sub(r'<[^>]+>','',h),'text_html':h,'genre':'aeon','src':'Mission Report: Nidavellir','train':True,'req':{}})
+genre+=opts
 # reglas generales (para la guía)
 rg=dict(top)['Reglas generales de los psiones']
 out={'foci':foci,'orders':orders,'orders_intro':html(intro_ord),'genre':genre,'tipos_md':html(dict(sections(pt,3))['Tipos']),'psiones_md':html(dict(sections(pt,3))['Psiones']),

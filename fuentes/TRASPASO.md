@@ -32,7 +32,7 @@ Web: repositorio `par1701/gotf` (GitHub Pages). Archivos publicados en la raíz:
 
 ## Pendiente
 
-- Æon, fase 2: cambios de poder psi (rangos 1 y 4), opciones de orden de Prometheus Unbound, Terra Firma y Nidavellir, y equipo de Æon.
+- Æon, fase 2: cambios de poder psi (rangos 1 y 4), opciones de orden y rasgos que se pagan con puntos de recurso, y equipo de Æon. (Las opciones de género y de entrenamiento ya están: `aeReqOk()`, `aeTrait()`; requisitos comprobables en `REQ` de `aeon.py`.)
 
 - Fase 3: superhéroes (7 tipos por rango, cambios de poder, habilidades de origen, Superheroics, adaptar tipos alternativos).
 - Fase 4: mundo real (solo personaje núcleo, habilidades del mundo real, habilidad extra en rangos 3 y 6, excepción de armas).

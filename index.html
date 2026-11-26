@@ -90,8 +90,8 @@ input[type=search],input[type=text],select,input[type=number]{font:16px "Source 
 {
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const nm=x=>x.es?`${esc(x.es)} <span class="en">(${esc(x.en)})</span>`:`${esc(x.en)} <span class="badge p">sin traducir</span>`;
-const nmTxt=x=>x.es?`${x.es} (${x.en})`:x.en;
+const nm=x=>x.es?(x.en&&x.en!==x.es?`${esc(x.es)} <span class="en">(${esc(x.en)})</span>`:esc(x.es)):`${esc(x.en)} <span class="badge p">sin traducir</span>`;
+const nmTxt=x=>x.es?(x.en&&x.en!==x.es?`${x.es} (${x.en})`:x.es):x.en;
 const tx=(x,k='text')=>x[k+'_html']?x[k+'_html']:x[k+'_es']?esc(x[k+'_es']):(x[k+'_en']?`<span class="pend">${esc(x[k+'_en'])}</span>`:'');
 const cost=x=>{const c=x.cost_es||x.cost;return c?` (${esc(c)})`:''};
 let D=null,DALL=null,APPLIED=null;
@@ -121,7 +121,7 @@ function applySetting(){if(!SETTINGS[S.setting])S.setting='gotf';if(APPLIED===S.
   try{localStorage.setItem('cy-setting',S.setting)}catch(e){}
   D=Object.assign({},DALL,{types:DALL.types.filter(t=>st.genre==='super'||(t.genre||'fantasy')===(st.tgen||st.genre)&&(!st.types||st.types.includes(t.en))),foci:st.nofoci?[]:st.aeon?DALL.foci.filter(f=>f.aeon):DALL.foci.filter(f=>(st.gotf&&!f.aeon||f.src==='CCR')&&(!f.genres||f.genres.includes(st.genre))),
     descriptors:DALL.descriptors.filter(d=>st.gotf||d.src==='CCR'),species:DALL.species.filter(x=>(st.sgen||[st.genre]).includes(x.genre||'fantasy')&&(st.gotf||!/GotF/.test(x.ref||''))),genre:DALL.genre.filter(g=>(st.ggen||[st.genre]).includes(g.genre)&&!(st.nomagic&&g.magic))});
-  SK={};DALL[st.skills].forEach(k=>SK[k]=DALL.skills_es[k]);
+  SK={};DALL[st.skills].forEach(k=>SK[k]=DALL.skills_es[k]);if(st.aeon)DALL.genre.filter(g=>g.train).forEach(g=>SK[g.en]=g.es);
   hdr();
   $('#setsel').innerHTML=Object.entries(SETTINGS).map(([k,v])=>`<option value="${k}" ${k===S.setting?'selected':''}>${esc(v.n)}</option>`).join('');
   return true}
@@ -311,7 +311,7 @@ function renderGuide(){
     for(const sb of subsOf())h+=(sb==='_'?'':`<h3>${SUBL[sb]}</h3>`)+D.types.filter(t=>inSub(t,sb)).map(t=>typeHTML(t,true)).join('');
   }}
   h+=`<h2 id="s-fantasia">Habilidades ${GWA()}</h2><p>Una de nivel medio en el rango 3 y una de nivel alto en el rango 6; en el rango 6 también puedes cambiar una de nivel medio por otra. ${RW()?'Solo con un tipo histórico; aquí ya no aparecen las marcadas como magia':SUP()?'Las de fantasía marcadas como magia pueden no estar disponibles según la campaña':SF()?'Consulta con el DJ que encajen en su campaña (en un postapocalipsis quizá ya no exista la tecnología de algunas, como Compañero máquina o Leer mentes). Si ninguna encaja, el DJ puede dejarte elegir una de otra parte, como de un foco':'Las marcadas como magia pueden no estar disponibles según la campaña'} [${ST().gref}].</p>`;
-  for(const [lv,t] of [['mid','Nivel medio (rango 3)'],['high','Nivel alto (rango 6)']]) h+=`<h3>${t}</h3>`+D.genre.filter(x=>x.level===lv).map(a=>`<div class="ab"><b>${nm(a)}${cost(a)}.</b> ${SUP()?`<span class="badge">${a.genre==='scifi'?'Ciencia ficción':'Fantasía'}</span> `:''}${a.genre==='aeon'?'<span class="badge">Psíquica (Æon)</span> ':''}${a.magic?'<span class="badge">Magia</span> ':''}${tx(a)}</div>`).join('');
+  for(const [lv,t] of [['mid','Nivel medio (rango 3)'],['high','Nivel alto (rango 6)']]) h+=`<h3>${t}</h3>`+D.genre.filter(x=>x.level===lv).map(a=>`<div class="ab"><b>${nm(a)}${cost(a)}.</b> ${SUP()?`<span class="badge">${a.genre==='scifi'?'Ciencia ficción':'Fantasía'}</span> `:''}${a.genre==='aeon'?`<span class="badge">${a.src?esc(a.src):'Psíquica (Æon)'}</span> ${a.train?'<span class="badge">También como entrenamiento</span> ':''}`:''}${a.magic?'<span class="badge">Magia</span> ':''}${tx(a)}</div>`).join('');
   if(AEON())h+=aeGuide();
   else if(!RW())h+=`<h2 id="s-focos">Focos</h2><input type="search" id="fq" placeholder="Buscar foco o habilidad…" aria-label="Buscar foco o habilidad"><div id="flist"></div>`;
   if(G_){h+=`<h2 id="s-equivalencias">Los 64 focos que recomienda GotF</h2><table class="stack"><thead><tr><th>Foco de GotF</th><th>Qué usar</th><th>Grado</th></tr></thead><tbody>${D.mapping.map(([g,id,gr])=>{const f=D.foci.find(x=>x.id===id);return `<tr><td>${esc(g)}</td><td>${f?`<a href="#guia" data-focus="${f.id}">${nmTxt(f)}</a>`:'—'}</td><td>${esc(gr)}</td></tr>`}).join('')}</tbody></table>`;
@@ -349,7 +349,7 @@ const stepsAeon=()=>`
 <li><b>Puntos de recurso</b>: 3 iniciales, que se pueden gastar al crear el personaje o guardar.</li>
 <li><b>Equipo y cifras</b>: el lote de equipo del tipo, cambiado por lo equivalente de Æon (documento «Equipo y bioware»). Las cifras son no físicas por defecto; las manifiestas son raras.</li>
 </ol>
-<p><b>Al subir de rango</b> [CCR, p. 313–314]: 4 avances de 4 PX, como siempre. Además, en cada rango ganas gratis una habilidad de tu Aptitud de cualquier fila, siempre que tengas la anterior de su columna. En los rangos 3 y 6, una habilidad de género, también de las psíquicas.</p>`;
+<p><b>Al subir de rango</b> [CCR, p. 313–314]: 4 avances de 4 PX, como siempre. Además, en cada rango ganas gratis una habilidad de tu Aptitud de cualquier fila, siempre que tengas la anterior de su columna. En los rangos 3 y 6, una habilidad de género: de ciencia ficción, psíquica o una opción de orden o rasgo (las de requisito de orden, Aptitud o Modo solo se pueden elegir si lo cumples). Los rasgos de entrenamiento también se pueden tomar como habilidad al crear el personaje o con un avance.</p>`;
 /* ---------- Creador (reglas del Cypher Character Rulebook) ---------- */
 const BLANK=()=>({setting:curSet(),name:'',desc:'',desc2:'',dskill:'',dskill2:'',dpool:0,sp:'',type:'',focus:'',dominion:'',bg:'',bgc:'',tier:1,alloc:[2,2,2],edge:0,mnf:[0,0,0],mnfe:0,sk:['',''],sk3:'',inab:'',fa:[],genre:[],dom:{},domMode:{},domSwap:{},shiftXP:0,shifts:{},sph:['','',''],dsh:{},adv:{},srank:1,salt:'',shp:0,psh:{},pshd:'',orig:'',ov:[0,0,0],scomb:'',focus2:'',fa2:[],profn:'',profk:'',rwx:'',rwxw:'',rwact:false,rweq:'bundle',rwsk3:'',rwsk6:''});
 let S=BLANK();const TITLE=document.title;
@@ -472,6 +472,13 @@ const aeTrans=()=>{if(!AEON()||+S.tier<6)return false;const f=D.foci.find(x=>x.i
 const psiE=()=>{const t=+S.tier;if(aeTrans())return 6;return Math.max(t>=6?5:t>=5?4:t>=3?3:2,psi3()?3:0)};
 const aeNM=f=>[0,1,2].map(c=>f?S.fa.filter(id=>abById(f,id).col===c).length:0);
 const EPOOL=()=>AEON()?[...POOL,'Psi']:POOL;
+// opciones de orden y rasgos: requisitos que el creador puede comprobar (el resto, como el trasfondo, lo valida el DJ)
+function aeReqOk(g){const r=g.req||{};if(r.apt&&S.focus!==r.apt)return false;if(r.noapt&&S.focus===r.noapt)return false;if(r.ord&&S.aorder!==r.ord)return false;
+  if(r.aux&&!auxIds().some(id=>id.startsWith(r.aux+'-')))return false;if(r.mode&&!S.fa.some(id=>id.startsWith(r.mode+'-')))return false;
+  if(r.need){const n=DALL.genre.find(x=>x.id===r.need);if(!S.genre.includes(r.need)&&!(n&&trainedKeys().includes(n.en)))return false}return true}
+const trainedKeys=()=>[...S.sk,S.sk3,...advList().filter(x=>x.k==='skill').map(x=>x.a['k'+x.i])].filter(Boolean);
+const aeTrait=k=>AEON()?DALL.genre.find(g=>g.train&&g.en===k):null;
+const aeSkOk=k=>{const g=aeTrait(k);return !g||aeReqOk(g)};
 // Modos auxiliares: la fila 1 de un Modo de otra Aptitud (la cuarta habilidad inicial o el avance «Modo auxiliar»)
 const auxIds=()=>AEON()?[S.aux0,...advList().filter(x=>x.k==='aux').map(x=>x.a['x'+x.i])].filter(Boolean):[];
 const auxAb=id=>{for(const f of D.foci){const a=f.abilities.find(x=>x.id===id);if(a)return {f,a}}return null};
@@ -494,7 +501,7 @@ const advTR=(r,k)=>!TR(k)||(r>=2&&(r>=4||!advList().some(x=>x.k==='skill'&&x.r<r
 function sanitizeTR(){let ch=false;S.sk=S.sk.map(k=>TR(k)?(ch=true,''):k);if(TR(S.sk3)){S.sk3='';ch=true}if(TR(S.profk)){S.profk='';ch=true}
   for(const {r,i,k,a} of advList())if(k==='skill'&&a['k'+i]&&!advTR(r,a['k'+i])){a['k'+i]='';ch=true}
   if(ch)save();return ch}
-function skillSel(id,val,lab,data='',ok=null){return `<select id="${id}" ${data}><option value="">— ${lab} —</option>${Object.keys(SK).filter(k=>!ok||ok(k)).map(k=>`<option value="${k}" ${k===val?'selected':''}>${esc(skEs(k))}</option>`).join('')}</select>`}
+function skillSel(id,val,lab,data='',ok=null){return `<select id="${id}" ${data}><option value="">— ${lab} —</option>${Object.keys(SK).filter(k=>(!ok||ok(k))&&(k===val||aeSkOk(k))).map(k=>`<option value="${k}" ${k===val?'selected':''}>${esc(skEs(k))}</option>`).join('')}</select>`}
 function renderForm(){if(applySetting())renderGuide();Object.defineProperty(S,'_trmsg',{value:sanitizeTR(),enumerable:false,configurable:true,writable:true});{const nt=tierFrom();if(nt!==+S.tier){S.tier=nt;trimPicks();save()}}
   const opt=(arr,sel,lab)=>`<option value="">— ${lab} —</option>`+arr.map(x=>`<option value="${x.id}" ${x.id===sel?'selected':''}>${esc(nmTxt(x))}</option>`).join('');
   const ty_=D.types.find(x=>x.id===S.type), f=D.foci.find(x=>x.id===S.focus), t=+S.tier, de=D.descriptors.find(x=>x.id===S.desc), de2=D.descriptors.find(x=>x.id===S.desc2);
@@ -549,8 +556,8 @@ function renderForm(){if(applySetting())renderGuide();Object.defineProperty(S,'_
     h+=f2.abilities.slice().sort((a,b)=>a.tier-b.tier).map(a=>{const on=S.fa2.includes(a.id);const ok=on||(S.fa2.length<n2&&focusAvail(f2,S.fa2,a,t)&&(S.fa2.length>=2||a.tier===1));
       return `<label class="opt ${ok?'':'dis'}"><input type="checkbox" data-fa2="${a.id}" ${on?'checked':''} ${ok?'':'disabled'}><span><b>R${a.tier} · ${nm(a)}</b>${cost(a)}<small>${a.text_es?esc(a.text_es.slice(0,140)):esc((a.text_en||'').slice(0,140))}…</small></span></label>`}).join('')}
   if(t>=3){const lims={mid:1+extraGenre(),high:t>=6?1:0};
-    h+=`<h3>Habilidades ${GWA()}</h3><p class="note">Una de nivel medio en el rango 3 y una de nivel alto en el rango 6, más las de los avances «Otro» [${ST().gref} y p. 313].</p>`+D.genre.filter(g=>g.level==='mid'||t>=6).map(g=>{const on=S.genre.includes(g.id);const cnt=S.genre.filter(x=>(D.genre.find(y=>y.id===x)||{}).level===g.level).length;const ok=on||cnt<(g.level==='mid'?lims.mid:lims.high+Math.max(0,0));
-    return `<label class="opt ${ok?'':'dis'}"><input type="checkbox" data-genre="${g.id}" ${on?'checked':''} ${ok?'':'disabled'}><span><b>${g.level==='mid'?'Medio':'Alto'}${SUP()?(g.genre==='scifi'?' (CF)':' (fantasía)'):''}${g.genre==='aeon'?' (psíquica)':''} · ${nm(g)}</b>${cost(g)}</span></label>`}).join('')}
+    h+=`<h3>Habilidades ${GWA()}</h3><p class="note">Una de nivel medio en el rango 3 y una de nivel alto en el rango 6, más las de los avances «Otro» [${ST().gref} y p. 313].</p>`+D.genre.filter(g=>g.level==='mid'||t>=6).map(g=>{const on=S.genre.includes(g.id);const cnt=S.genre.filter(x=>(D.genre.find(y=>y.id===x)||{}).level===g.level).length;const ok=on||cnt<(g.level==='mid'?lims.mid:lims.high+Math.max(0,0))&&(g.genre!=='aeon'||aeReqOk(g));
+    return `<label class="opt ${ok?'':'dis'}"><input type="checkbox" data-genre="${g.id}" ${on?'checked':''} ${ok?'':'disabled'}><span><b>${g.level==='mid'?'Medio':'Alto'}${SUP()?(g.genre==='scifi'?' (CF)':' (fantasía)'):''}${g.genre==='aeon'?(g.src?' ('+esc(g.src)+')':' (psíquica)'):''} · ${nm(g)}</b>${cost(g)}${g.src?`<small>${esc(g.text_es.slice(0,150))}${g.text_es.length>150?'…':''}</small>`:''}</span></label>`}).join('')}
   if(!RW()||ty_)h+=atkForm();
   if(GOTF()){
   h+=`<h3>Dominio</h3><p class="note">Rango 1: Manifestar nimbo. Del 2 al 6, si cumpliste la Obligación de ese rango: una habilidad de dominio de ese rango (además de la de foco) o, si no despiertas una, una habilidad de foco extra (de tu rango o inferior y conectada) que cuenta como de dominio, con su coste pagable desde cualquier reserva. Sin la Obligación no hay beneficios de dominio hasta cumplirla. Desde el rango 3 puedes cambiar además una habilidad de dominio de rango inferior por otra distinta de rango inferior; Manifestar nimbo no se puede cambiar [GotF, cap. 12; la habilidad de foco sustituye a la de tipo: Adaptación].</p>`;
@@ -639,6 +646,7 @@ function renderSheet(){if(document.body.classList.contains('psheet'))document.ti
   if(!RW()||ty){const A_=attacks();h+=`<h3>Ataques</h3><p class="note">Daño base: ligera 2, media 4, pesada 6; los puñetazos y patadas son armas ligeras [CCR, p. 238]. Las armas que no usas libremente dificultan el ataque.</p><table><tbody>${A_.rows.map(([n,d,s])=>`<tr><th>${esc(n)}</th><td><b>${d}</b> de daño${s.length?` <span class="note">(${esc(s.join(', '))})</span>`:''}</td></tr>`).join('')}</tbody></table>${A_.cond.length?`<p class="note">Bonos que dependen del arma o la situación (ver la habilidad): ${esc(A_.cond.join('; '))}.</p>`:''}`}
   const tr_=c.skills.filter(x=>x[0]!=='I'),inab=c.skills.filter(x=>x[0]==='I');
   if(tr_.length||inab.length||sp)h+=`<h3>Habilidades</h3>${tr_.map(([k,v])=>`<span class="pill">${esc(skEs(v))} · ${k==='S'?'especializado':'entrenado'}</span>`).join(' ')}${inab.map(([k,v])=>`<span class="pill">${esc(skEs(v))} · incapacidad</span>`).join(' ')}`;
+  {const tr=AEON()?[...new Set(c.skills.filter(x=>x[0]!=='I').map(x=>x[1]))].map(aeTrait).filter(Boolean):[];if(tr.length)h+=`<h3>Rasgos de entrenamiento</h3>`+tr.map(g=>`<div class="ab"><b>${nm(g)}.</b> <span class="badge">${esc(g.src)}</span> ${tx(g)}</div>`).join('')}
   if(sp)h+=`<h3>Especie</h3><ul>${sp.traits_es.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`;
   if(ty){h+=`<h3>Tipo</h3>`+ty.abilities.map(a=>`<div class="ab"><b>${nm(a)}${cost(a)}.</b> ${tx(a)}</div>`).join('');
     if(L&&L.si.alt)h+=`<div class="ab"><b>${nm(D.sh_superheroics)}.</b> <span class="badge">CCR, p. 129</span> ${tx(D.sh_superheroics)}</div>`}
@@ -704,6 +712,7 @@ async function exportSheetPDF(){
   if(f&&f.aeon){const o=DALL.aeon.orders.find(x=>x.id===S.aorder);ab.push(`PSI: PsiE ${psiE()} · reserva ${5*psiE()} · Ventaja ${c.edge[3]} · Tolerancia máxima ${psiE()+3}`,'APTITUD: '+f.es+' ('+f.who+')',...f.basics.map(b=>`• Básico · ${nmTxt(b)}. ${b.text_html.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim()}`),...S.fa.map(id=>abById(f,id)).sort((a,b)=>a.col-b.col||a.tier-b.tier).map(a=>`• ${abLab(f,a)} · ${nmTxt(a)}${cst(a)}. ${txt(a)}`),'');const ax=auxIds().map(auxAb).filter(Boolean),pl=h_=>h_.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim();if(ax.length)ab.push('MODOS AUXILIARES (siempre fila 1)',...ax.map(({f:g,a})=>`• F1 · ${g.modes[a.col].es} (${g.es}) · ${nmTxt(a)}${cst(a)}. ${txt(a)}`),...auxBasics().flatMap(g=>g.basics.map(b=>`• Básico de ${g.es} · ${nmTxt(b)}. ${pl(b.text_html)}`)),'');if(o)ab.push('ORDEN: '+o.es+' · '+o.ben+(o.ben_html?'. '+o.ben_html.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim():''),'')}
   else if(f)ab.push('FOCO: '+nmTxt(f),...S.fa.map(id=>abById(f,id)).sort((a,b)=>a.tier-b.tier).map(a=>`• R${a.tier} · ${nmTxt(a)}${cst(a)}. ${txt(a)}`),'');
   if(L&&L.f2)ab.push('SEGUNDO FOCO: '+nmTxt(L.f2),...L.fa2.map(a=>`• R${a.tier} · ${nmTxt(a)}${cst(a)}. ${txt(a)}`),'');
+  {const tr=AEON()?[...new Set(c.skills.filter(x=>x[0]!=='I').map(x=>x[1]))].map(aeTrait).filter(Boolean):[];if(tr.length)ab.push('RASGOS DE ENTRENAMIENTO',...tr.map(g=>`• ${nmTxt(g)}. ${g.text_es}`),'')}
   const g=S.genre.map(id=>D.genre.find(x=>x.id===id)).filter(Boolean);if(g.length)ab.push(('HABILIDADES '+GWA()).toUpperCase(),...g.map(a=>`• ${nmTxt(a)}${cst(a)}. ${txt(a)}`),'');
   if(GOTF()){ab.push('DOMINIO'+(S.dominion?': '+S.dominion:''),'• '+nmTxt(D.dominion.find(x=>x.tier===1))+'. '+txt(D.dominion.find(x=>x.tier===1)));
   domOwned().slice(1).forEach(({a})=>ab.push(`• R${a.tier} · ${nmTxt(a)}${cst(a)}. ${txt(a)}`));
@@ -800,7 +809,7 @@ function trimPicks(){
   const f2=D.foci.find(x=>x.id===S.focus2);S.fa2=S.fa2||[];
   if(f2){const kept=[];for(const id of S.fa2){const a=abById(f2,id);if(a.tier<=t&&(a.tier===1||focusAvail(f2,kept,a,t)))kept.push(id)}S.fa2=kept.slice(0,2+(t-1))}
   const mid=1+extraGenre();let m=0;
-  S.genre=S.genre.filter(id=>{const g=D.genre.find(x=>x.id===id);if(!g)return false;if(g.level==='mid'){if(t<3||m>=mid)return false;m++;return true}return t>=6});
+  S.genre=S.genre.filter(id=>{const g=D.genre.find(x=>x.id===id);if(!g)return false;if(g.genre==='aeon'&&AEON()&&!aeReqOk(g))return false;if(g.level==='mid'){if(t<3||m>=mid)return false;m++;return true}return t>=6});
   if(t<3)S.rwsk3='';if(t<6)S.rwsk6='';
   for(const k of ['dom','domMode','domSwap'])for(const r of Object.keys(S[k]||{}))if(+r>t)delete S[k][r];
 }
