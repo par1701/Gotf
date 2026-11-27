@@ -164,9 +164,17 @@ while i<len(L):
             bio.append({'id':'bio-'+str(len(bio)),'es':nm,'sec':sec,'tol':tol,'price':re.sub(r'\\','',price)})
         i=j; continue
     i+=1
+# equipo que cuesta puntos de recurso (además de su precio, si lo tiene): ciberware, reliquias nova
+eqpr=[];sec=''
+for l in eqmd.split('\n'):
+    if l.startswith('#'): sec=l.lstrip('#').strip()
+    if l.startswith('|'):
+        c=[x.strip() for x in l.strip('|').split('|')]
+        m=re.search(r'(\d) PR',c[-1]) if len(c)>2 else None
+        if m: eqpr.append({'es':re.sub(r'\\','',c[0]),'sec':sec,'pts':int(m.group(1)),'price':c[-1]})
 # reglas generales (para la guía)
 rg=dict(top)['Reglas generales de los psiones']
-out={'shifts':shifts,'shifts_intro':shifts_intro,'rpopts':prop,'bioware':bio,'foci':foci,'orders':orders,'orders_intro':html(intro_ord),'genre':genre,'tipos_md':html(dict(sections(pt,3))['Tipos']),'psiones_md':html(dict(sections(pt,3))['Psiones']),
+out={'eqpr':eqpr,'shifts':shifts,'shifts_intro':shifts_intro,'rpopts':prop,'bioware':bio,'foci':foci,'orders':orders,'orders_intro':html(intro_ord),'genre':genre,'tipos_md':html(dict(sections(pt,3))['Tipos']),'psiones_md':html(dict(sections(pt,3))['Psiones']),
      'recursos_md':html(dict(sections(pt,3))['Contactos, recursos y riqueza']),'reglas_html':html(rg)}
 json.dump(out,open(os.path.join(B,'aeon.json'),'w'),ensure_ascii=False,indent=0)
 print(len(bio),'bioware;',len(prop),'opciones con PR;',len(shifts),'cambios;',len(foci),'aptitudes;',len(orders),'órdenes;',len(genre),'habilidades de género')

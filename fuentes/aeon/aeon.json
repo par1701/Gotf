@@ -1,4 +1,90 @@
 {
+"eqpr": [
+{
+"es": "Cara cambiante (Changing Face)",
+"sec": "Cibernética",
+"pts": 2,
+"price": "Muy caro + 2 PR"
+},
+{
+"es": "Copiloto (Copilot)",
+"sec": "Cibernética",
+"pts": 2,
+"price": "Exorbitante + 2 PR; cada habilidad, caro"
+},
+{
+"es": "Sistema cerrado (Enclosed System)",
+"sec": "Cibernética",
+"pts": 1,
+"price": "Muy caro + 1 PR"
+},
+{
+"es": "Regulador neural (Neural Regulator)",
+"sec": "Cibernética",
+"pts": 2,
+"price": "Muy caro + 2 PR"
+},
+{
+"es": "Loro (Parrot)",
+"sec": "Cibernética",
+"pts": 2,
+"price": "Caro + 2 PR"
+},
+{
+"es": "Aceleradores de reflejos (Reflex Boosters)",
+"sec": "Cibernética",
+"pts": 2,
+"price": "Caro + 2 PR"
+},
+{
+"es": "Brazo telescópico (Telescopic Arm)",
+"sec": "Cibernética",
+"pts": 2,
+"price": "Caro + 2 PR"
+},
+{
+"es": "Pistola Kasalivich (K-gun)",
+"sec": "Reliquias de la era nova",
+"pts": 2,
+"price": "2 PR"
+},
+{
+"es": "Proyector desestabilizador de materia (MDP)",
+"sec": "Reliquias de la era nova",
+"pts": 4,
+"price": "4 PR"
+},
+{
+"es": "Desensamblador molecular Mk II (Molecular Disassembler)",
+"sec": "Reliquias de la era nova",
+"pts": 3,
+"price": "3 PR"
+},
+{
+"es": "Traje de salto (Skip Suit)",
+"sec": "Reliquias de la era nova",
+"pts": 3,
+"price": "3 PR"
+},
+{
+"es": "Secuenciador de forma transmodal (Temporary Transmodal Form Sequencer)",
+"sec": "Reliquias de la era nova",
+"pts": 4,
+"price": "4 PR"
+},
+{
+"es": "Transportador dimensional de corto alcance",
+"sec": "Reliquias de la era nova",
+"pts": 3,
+"price": "3 PR"
+},
+{
+"es": "DeVries Tactical «Bondbreaker» (pistola)",
+"sec": "Armas de fuego militares",
+"pts": 5,
+"price": "5 PR (Artefacto)"
+}
+],
 "shifts": [
 {
 "id": "sh-poder",
