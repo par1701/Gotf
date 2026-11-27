@@ -184,17 +184,6 @@ Se usan los tipos de ciencia ficción dura y de space opera, salvo Psiónico (Ps
 
 El tipo Psiónico queda fuera porque sus habilidades duplican las de los focos psíquicos. Androide queda fuera porque en esta época no hay androides jugables.
 
-### Habilidades
-
-Se usa la lista de ciencia ficción del CCR, adaptada a Æon:
-
-- **Pilotaje** es una sola habilidad para cualquier vehículo, nave o maquinaria pesada: sustituye a conducción, pilotaje de naves espaciales y manejo de maquinaria pesada.
-- **Latrocinio (larceny)** sustituye a abrir cerraduras y robar bolsillos, y cubre también los sistemas de seguridad y el trato con el hampa.
-- **Medicina (medicine)** sustituye a curación: diagnóstico, cirugía y fármacos.
-- **Se quitan** saber mágico, porque en Æon no hay magia, y montar.
-- **Soltura en gravedad cero** no está en la lista general: es una familiaridad que concede el DJ, o un entrenamiento que se elige como los rasgos de entrenamiento.
-- **Se añaden** cuidado de animales y oficio, que dan algunos descriptores. Si un descriptor da una habilidad fusionada, da la nueva; saber mágico pasa a saber psíquico.
-
 ### Psiones
 
 - **Psion:** su foco es el de su Aptitud. Es la única forma de tener poderes psíquicos.
@@ -1582,7 +1571,7 @@ Convertidos de los ejemplos de Æon. Las cifras salen de la tabla de arquetipos;
 - Se puede superar el tope de niveles de efecto aplicando niveles de Esfuerzo al efecto, que se pagan y limitan como Esfuerzo. Viene de C2, donde las opciones de una habilidad se compran con niveles de Esfuerzo.
 - Los niveles de efecto se pagan antes de tirar y se pierden si fallas, como el Esfuerzo de C2.
 - Terminología: la del glosario fijado del proyecto, como el creador de personajes (dificultar, recurso, cifra, de precio moderado). Los Edges de Æon se llaman rasgos, para no confundirlos con la Ventaja de las reservas.
-- Opciones de orden y rasgos (Prometheus Unbound, Terra Firma, Player's Guide, Nidavellir): las de habilidad de género se eligen en el rango 3 o 6; las de entrenamiento se pueden tomar como entrenamiento o como habilidad de género de rango 3; las de puntos de recurso siguen pagándose con puntos. Dejarse llevar (•••) y Cuanto más grandes son (••••) pasan al rango 6 por su coste y su efecto. Habilidades: la lista de ciencia ficción del CCR con pilotaje único, latrocinio y medicina, sin saber mágico ni montar, y soltura en gravedad cero como familiaridad o entrenamiento (ver «Habilidades»).
+- Opciones de orden y rasgos (Prometheus Unbound, Terra Firma, Player's Guide, Nidavellir): las de habilidad de género se eligen en el rango 3 o 6; las de entrenamiento se pueden tomar como entrenamiento o como habilidad de género de rango 3; las de puntos de recurso siguen pagándose con puntos. Dejarse llevar (•••) y Cuanto más grandes son (••••) pasan al rango 6 por su coste y su efecto. Habilidades: las de ciencia ficción del CCR, sin cambios; los rasgos de entrenamiento de Æon van aparte.
 
 ### Supuestos míos (revisar)
 

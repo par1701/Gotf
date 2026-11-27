@@ -134,14 +134,5 @@ data['bg_gotf']=json.load(open('/home/claude/gotf/bg_gotf.json'))
 AE=json.load(open(G+'../aeon/aeon.json'))
 data['foci']+=AE['foci'];data['genre']+=AE['genre']
 data['aeon']={k:AE[k] for k in AE if k not in ('foci','genre')}
-# habilidades de Æon: las de CF del CCR con pilotaje único (incluye conducción, naves y maquinaria pesada),
-# latrocinio en lugar de abrir cerraduras y robar bolsillos, medicina en lugar de curación; sin saber mágico ni montar;
-# soltura en gravedad cero va con los rasgos de entrenamiento; se añaden las de los descriptores del CCR que faltan
-data['skills_es'].update({'larceny':'latrocinio','medicine':'medicina'})
-OUT={'driving','heavy equipment operation','piloting spacecraft','healing','lockpicking','pickpocketing','magic lore','riding','zero-g fluency'}
-import unicodedata
-data['skills_aeon']=sorted([k for k in data['skills_sf'] if k not in OUT]+['larceny','medicine','animal care','skilled trade'],key=lambda k:unicodedata.normalize('NFD',data['skills_es'][k]))
-data['skills_aeon_map']={'driving':'piloting','heavy equipment operation':'piloting','piloting spacecraft':'piloting','healing':'medicine','lockpicking':'larceny','pickpocketing':'larceny','magic lore':'psychic lore'}
-assert all(k in data['skills_es'] for k in data['skills_aeon'])
 json.dump(data,open('/home/claude/site/data.json','w'),ensure_ascii=False,separators=(',',':'))
 print(data['stats'], os.path.getsize('/home/claude/site/data.json'))
